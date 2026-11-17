@@ -423,48 +423,128 @@
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
-  function quizAnswerText(answer) {
+  function quizText(value) {
     var container = document.createElement("div");
-    container.innerHTML = answer;
+    container.innerHTML = value;
     return (container.innerText || container.textContent || "").replace(/\s+/g, " ").trim();
   }
 
-  function topicQuizHtml(topic) {
-    if (!topic.interview || !topic.interview.length) return "";
+  function lessonQuiz(topic) {
+    var terms = [];
+    var fallbackTerms = [];
+    var seenTerms = new Set();
+    var seenFallbackTerms = new Set();
+    var source = null;
 
-    var question = topic.interview[0];
-    var answers = topic.interview.map(function (item, index) {
-      return { text: quizAnswerText(item.a), correct: index === 0 };
+    function addTerm(value, fallback) {
+      var term = quizText(value);
+      var key = term.toLowerCase();
+      var seen = fallback ? seenFallbackTerms : seenTerms;
+      if (term.length < 3 || term.length > 90 || seen.has(key)) return;
+      seen.add(key);
+      (fallback ? fallbackTerms : terms).push(term);
+    }
+
+    (topic.sections || []).forEach(function (section) {
+      addTerm(section.h, true);
+
+      var content = document.createElement("div");
+      content.innerHTML = section.html || "";
+      content.querySelectorAll("strong").forEach(function (element) {
+        addTerm(element.textContent);
+      });
+      content.querySelectorAll("em").forEach(function (element) {
+        addTerm(element.textContent, true);
+      });
+
+      if (source) return;
+
+      content.querySelectorAll("p").forEach(function (paragraph) {
+        if (source) return;
+        var keyTerm = paragraph.querySelector("strong, em");
+        var statement = quizText(paragraph.innerHTML);
+        var answer = keyTerm ? quizText(keyTerm.textContent) : "";
+        var answerIndex = statement.toLowerCase().indexOf(answer.toLowerCase());
+        if (answer && answerIndex !== -1 && statement.length >= 30) {
+          source = {
+            answer: answer,
+            question: "Complete the lesson statement: “" +
+              statement.slice(0, answerIndex) + "_____" +
+              statement.slice(answerIndex + answer.length) + "”",
+            explanation: "The lesson states: “" + statement + "”"
+          };
+        }
+      });
+
+      content.querySelectorAll("tr").forEach(function (row) {
+        if (source) return;
+        var cells = row.querySelectorAll("th, td");
+        var keyTerm = cells.length > 1 && cells[0].querySelector("strong, em");
+        var answer = keyTerm ? quizText(keyTerm.textContent) : "";
+        var description = cells.length > 1 ? quizText(cells[1].textContent) : "";
+        if (answer && description.length >= 12) {
+          source = {
+            answer: answer,
+            question: "According to the lesson, which concept matches this description? “" +
+              description + "”",
+            explanation: "The lesson links “" + answer + "” with this description: " + description
+          };
+        }
+      });
     });
+
+    (topic.objectives || []).forEach(function (objective) {
+      addTerm(objective, true);
+    });
+    if (!source) return null;
+
+    var distractors = terms.concat(fallbackTerms).filter(function (term) {
+      return term.toLowerCase() !== source.answer.toLowerCase();
+    });
+    if (distractors.length < 2) return null;
+
     var suffix = topic.id.match(/\d+$/);
-    var shift = (suffix ? parseInt(suffix[0], 10) : 0) % answers.length;
-    answers = answers.slice(shift).concat(answers.slice(0, shift));
-    var correctIndex = answers.findIndex(function (answer) { return answer.correct; });
-    var options = answers.map(function (answer, index) {
+    var seed = suffix ? parseInt(suffix[0], 10) : 0;
+    var start = seed % distractors.length;
+    var options = [source.answer, distractors[start], distractors[(start + 1) % distractors.length]];
+    var shift = seed % options.length;
+    options = options.slice(shift).concat(options.slice(0, shift));
+
+    return {
+      question: source.question,
+      explanation: source.explanation,
+      options: options,
+      correctIndex: options.indexOf(source.answer)
+    };
+  }
+
+  function topicQuizHtml(quiz) {
+    if (!quiz) return "";
+
+    var options = quiz.options.map(function (answer, index) {
       return '<label class="quiz-option" for="topicQuizOption' + index + '">' +
         '<input id="topicQuizOption' + index + '" type="radio" name="topicQuizAnswer" value="' + index + '">' +
-        "<span>" + esc(answer.text) + "</span></label>";
+        "<span>" + esc(answer) + "</span></label>";
     }).join("");
 
     return '<section class="topic-quiz" aria-labelledby="topicQuizHeading">' +
       '<div class="quiz-heading"><span class="quiz-kicker">Knowledge check</span>' +
       '<h2 id="topicQuizHeading">Test your understanding</h2>' +
       '<p>Choose the best answer, then submit to see the explanation.</p></div>' +
-      '<form class="topic-quiz-form" data-correct-index="' + correctIndex + '">' +
-      '<fieldset><legend>' + esc(question.q) + '</legend>' +
+      '<form class="topic-quiz-form" data-correct-index="' + quiz.correctIndex + '">' +
+      '<fieldset><legend>' + esc(quiz.question) + '</legend>' +
       '<div class="quiz-options">' + options + "</div></fieldset>" +
       '<div class="quiz-feedback" id="topicQuizFeedback" role="status" aria-live="polite" hidden></div>' +
       '<button class="btn btn-primary" type="submit">Check answer</button>' +
       "</form></section>";
   }
 
-  function wireTopicQuiz(topic) {
+  function wireTopicQuiz(quiz) {
     var form = document.querySelector(".topic-quiz-form");
     if (!form) return;
 
     var feedback = form.querySelector(".quiz-feedback");
     var correctIndex = Number(form.getAttribute("data-correct-index"));
-    var explanation = quizAnswerText(topic.interview[0].a);
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -478,11 +558,13 @@
       }
 
       var selectedIndex = Number(selected.value);
+      var correctText = form.querySelector('label[for="topicQuizOption' + correctIndex + '"] span').textContent;
       var correct = selectedIndex === correctIndex;
       feedback.className = "quiz-feedback " + (correct ? "is-correct" : "is-incorrect");
       feedback.innerHTML = correct
-        ? "<strong>Correct. Why:</strong> " + esc(explanation)
-        : "<strong>Not quite. Correct answer and why:</strong> " + esc(explanation);
+        ? "<strong>Correct. Why:</strong> " + esc(quiz.explanation)
+        : "<strong>Not quite. Correct answer:</strong> " + esc(correctText) +
+          "<br><strong>Why:</strong> " + esc(quiz.explanation);
 
       form.querySelectorAll(".quiz-option").forEach(function (option, index) {
         if (index === correctIndex) option.classList.add("is-correct");
@@ -499,6 +581,7 @@
     var main = document.getElementById("main");
     if (!main || !topic) return;
 
+    var quiz = lessonQuiz(topic);
     var meta = chapterOf[topic.id];
     var isPractical = topic.id.indexOf("practical") === 0;
     var title = (meta && meta.title) || topic.title;
@@ -575,13 +658,13 @@
         "</ul></section>";
     }
 
-    html += topicQuizHtml(topic);
+    html += topicQuizHtml(quiz);
     html += pagerHtml(topic.id);
 
     main.innerHTML = html;
     wrapCode(main);
     wireMarkButton(topic.id);
-    wireTopicQuiz(topic);
+    wireTopicQuiz(quiz);
     whenGlossaryReady(addTopicGlossary);
   }
 
