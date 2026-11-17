@@ -277,6 +277,45 @@
     });
   }
 
+  /* ---------------- page navigation loader ---------------- */
+
+  function initNavigationLoader() {
+    var sb = document.getElementById("sidebar");
+    if (!sb) return;
+
+    var loader = document.createElement("div");
+    loader.className = "page-loader";
+    loader.setAttribute("role", "status");
+    loader.setAttribute("aria-live", "polite");
+    loader.setAttribute("aria-hidden", "true");
+    loader.innerHTML = '<span class="page-loader-spinner" aria-hidden="true"></span>' +
+      "<span>Loading page…</span>";
+    document.body.appendChild(loader);
+
+    function hide() {
+      loader.classList.remove("is-visible");
+      loader.setAttribute("aria-hidden", "true");
+      document.body.removeAttribute("aria-busy");
+    }
+
+    sb.addEventListener("click", function (e) {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+      var target = e.target;
+      var link = target.closest ? target.closest("a.nav-topic") : null;
+      if (!link || link.hasAttribute("download") ||
+          (link.target && link.target.toLowerCase() !== "_self")) return;
+
+      var destination = new URL(link.href, location.href);
+      if (destination.origin !== location.origin || destination.pathname === location.pathname) return;
+
+      loader.classList.add("is-visible");
+      loader.setAttribute("aria-hidden", "false");
+      document.body.setAttribute("aria-busy", "true");
+    });
+
+    window.addEventListener("pageshow", hide);
+  }
+
   /* ---------------- code blocks ---------------- */
 
   function wrapCode(root) {
@@ -819,6 +858,7 @@
   renderSidebar();
   buildSearch();
   initMobileNav();
+  initNavigationLoader();
   injectGlossaryLink();
   loadGlossaryData();
 
