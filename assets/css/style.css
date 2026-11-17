@@ -372,8 +372,13 @@ img { max-width: 100%; }
   flex: 1;
   min-width: 0;
   max-width: 1000px;
-  margin: 0 auto;
+  align-self: flex-start;
+  margin: 24px auto;
   padding: 30px clamp(16px, 4vw, 46px) 70px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
 }
 
 .main.wide { max-width: 1240px; }
@@ -1095,6 +1100,7 @@ img { max-width: 100%; }
   .search { width: 44px; }
   .search-input { padding-right: 6px; }
   .hero-stats { gap: 18px; }
+  .main { margin: 12px auto; padding: 24px 16px 48px; }
 }
 
 /* ---------------- Glossary & command reference ---------------- */
