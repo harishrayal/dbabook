@@ -423,6 +423,78 @@
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
+  function quizAnswerText(answer) {
+    var container = document.createElement("div");
+    container.innerHTML = answer;
+    return (container.innerText || container.textContent || "").replace(/\s+/g, " ").trim();
+  }
+
+  function topicQuizHtml(topic) {
+    if (!topic.interview || !topic.interview.length) return "";
+
+    var question = topic.interview[0];
+    var answers = topic.interview.map(function (item, index) {
+      return { text: quizAnswerText(item.a), correct: index === 0 };
+    });
+    var suffix = topic.id.match(/\d+$/);
+    var shift = (suffix ? parseInt(suffix[0], 10) : 0) % answers.length;
+    answers = answers.slice(shift).concat(answers.slice(0, shift));
+    var correctIndex = answers.findIndex(function (answer) { return answer.correct; });
+    var options = answers.map(function (answer, index) {
+      return '<label class="quiz-option" for="topicQuizOption' + index + '">' +
+        '<input id="topicQuizOption' + index + '" type="radio" name="topicQuizAnswer" value="' + index + '">' +
+        "<span>" + esc(answer.text) + "</span></label>";
+    }).join("");
+
+    return '<section class="topic-quiz" aria-labelledby="topicQuizHeading">' +
+      '<div class="quiz-heading"><span class="quiz-kicker">Knowledge check</span>' +
+      '<h2 id="topicQuizHeading">Test your understanding</h2>' +
+      '<p>Choose the best answer, then submit to see the explanation.</p></div>' +
+      '<form class="topic-quiz-form" data-correct-index="' + correctIndex + '">' +
+      '<fieldset><legend>' + esc(question.q) + '</legend>' +
+      '<div class="quiz-options">' + options + "</div></fieldset>" +
+      '<div class="quiz-feedback" id="topicQuizFeedback" role="status" aria-live="polite" hidden></div>' +
+      '<button class="btn btn-primary" type="submit">Check answer</button>' +
+      "</form></section>";
+  }
+
+  function wireTopicQuiz(topic) {
+    var form = document.querySelector(".topic-quiz-form");
+    if (!form) return;
+
+    var feedback = form.querySelector(".quiz-feedback");
+    var correctIndex = Number(form.getAttribute("data-correct-index"));
+    var explanation = quizAnswerText(topic.interview[0].a);
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      var selected = form.querySelector('input[name="topicQuizAnswer"]:checked');
+      feedback.hidden = false;
+
+      if (!selected) {
+        feedback.className = "quiz-feedback is-prompt";
+        feedback.textContent = "Select an answer before submitting.";
+        return;
+      }
+
+      var selectedIndex = Number(selected.value);
+      var correct = selectedIndex === correctIndex;
+      feedback.className = "quiz-feedback " + (correct ? "is-correct" : "is-incorrect");
+      feedback.innerHTML = correct
+        ? "<strong>Correct. Why:</strong> " + esc(explanation)
+        : "<strong>Not quite. Correct answer and why:</strong> " + esc(explanation);
+
+      form.querySelectorAll(".quiz-option").forEach(function (option, index) {
+        if (index === correctIndex) option.classList.add("is-correct");
+        else if (index === selectedIndex) option.classList.add("is-incorrect");
+      });
+      form.querySelectorAll('input[name="topicQuizAnswer"]').forEach(function (input) {
+        input.disabled = true;
+      });
+      form.querySelector('button[type="submit"]').disabled = true;
+    });
+  }
+
   function renderTopic(topic) {
     var main = document.getElementById("main");
     if (!main || !topic) return;
@@ -503,11 +575,13 @@
         "</ul></section>";
     }
 
+    html += topicQuizHtml(topic);
     html += pagerHtml(topic.id);
 
     main.innerHTML = html;
     wrapCode(main);
     wireMarkButton(topic.id);
+    wireTopicQuiz(topic);
     whenGlossaryReady(addTopicGlossary);
   }
 
