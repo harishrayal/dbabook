@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQL Server DBA Learning Roadmap — Frontend Developer to DBA</title>
+  <meta name="description" content="Complete SQL Server DBA learning roadmap: 20 chapters, 446 topics, 12 practical labs — theory, diagrams, production scenarios and interview preparation.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="home">
+
+  <header class="topbar">
+    <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu">☰</button>
+    <a class="brand" href="index.html">
+      <span class="logo">DBA</span>
+      <span class="brand-text">SQL Server DBA Roadmap
+        <span class="brand-sub">Frontend Developer → Database Administrator</span>
+      </span>
+    </a>
+    <div class="topbar-spacer"></div>
+    <div class="search">
+      <input class="search-input" id="searchInput" type="search" placeholder="Search topics… e.g. deadlock" autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <button class="icon-btn" id="themeBtn" title="Toggle light/dark theme">◐</button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <main class="main wide">
+
+      <section class="hero">
+        <span class="hero-badge">Complete Learning Roadmap · 4 Phases</span>
+        <h1>SQL Server DBA Learning Roadmap</h1>
+        <p class="hero-sub">
+          A structured path from Frontend Developer to SQL Server Database Administrator —
+          manage development, testing, UAT and production database environments with confidence.
+          Every topic ships with a detailed explanation, an architecture diagram, a real production
+          scenario, hands-on SQL, and interview Q&amp;As.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="topics/ch01-01.html">Start Chapter 1 →</a>
+          <a class="btn btn-ghost-light" id="resumeBtn" href="topics/ch01-01.html">Start learning</a>
+          <a class="btn btn-ghost-light" href="glossary.html">Glossary &amp; commands →</a>
+          <a class="btn btn-ghost-light" href="#practicals">Jump to practicals</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b id="statChapters">20</b><span>Chapters</span></div>
+          <div class="stat"><b id="statTopics">446</b><span>Theory topics</span></div>
+          <div class="stat"><b id="statPracticals">12</b><span>Practical labs</span></div>
+          <div class="stat"><b id="statLessons">458</b><span>Total lessons</span></div>
+          <div class="stat"><b id="doneBadge">0 / 458 completed</b><span>Your progress</span></div>
+        </div>
+        <img class="hero-art" src="assets/img/hero.svg" alt="" onerror="this.remove()">
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">How to use this roadmap</h2>
+        <p class="section-sub">Follow the four phases in order. Don't rush into labs before the theory clicks.</p>
+        <div class="phase-grid">
+          <div class="phase-card">
+            <span class="phase-num">1</span>
+            <h3>Theory</h3>
+            <p>Complete all 20 chapters. Each topic page explains the concept in detail with diagrams.</p>
+          </div>
+          <div class="phase-card">
+            <span class="phase-num">2</span>
+            <h3>Practical exercises</h3>
+            <p>Perform the 12 labs in SQL Server + SSMS: backups, security, Agent, monitoring, performance.</p>
+          </div>
+          <div class="phase-card">
+            <span class="phase-num">3</span>
+            <h3>Production scenarios</h3>
+            <p>Simulate real DBA incidents: log full, disk full, corruption, blocking, service outages.</p>
+          </div>
+          <div class="phase-card">
+            <span class="phase-num">4</span>
+            <h3>Interview &amp; responsibility prep</h3>
+            <p>Answer the interview Q&amp;As on every page and take ownership of production runbooks.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">The 20 chapters</h2>
+        <p class="section-sub">446 theory topics — one page each, with diagrams, scenarios and interview questions.</p>
+        <div class="card-grid" id="chapterGrid"></div>
+      </section>
+
+      <section class="section" id="practicals">
+        <h2 class="section-title">Final practical phase</h2>
+        <p class="section-sub">12 hands-on labs to run in SQL Server and SSMS after the theory is complete.</p>
+        <div class="card-grid" id="practicalGrid"></div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Final learning objectives</h2>
+        <p class="section-sub">By completing this roadmap you will be capable of handling:</p>
+        <ol class="objective-list">
+          <li>Database administration</li>
+          <li>Database installation and configuration</li>
+          <li>Backup and recovery</li>
+          <li>Restore and disaster recovery</li>
+          <li>Database security and permissions</li>
+          <li>SQL Server Agent and automation</li>
+          <li>Monitoring and alerting</li>
+          <li>Performance tuning</li>
+          <li>Blocking and deadlock troubleshooting</li>
+          <li>Database integrity and corruption investigation</li>
+          <li>Capacity planning and maintenance</li>
+          <li>High Availability</li>
+          <li>Disaster Recovery technologies</li>
+          <li>PowerShell automation</li>
+          <li>Production incident management</li>
+          <li>Enterprise database operations</li>
+        </ol>
+      </section>
+
+      <footer class="footer">
+        <span>SQL Server DBA Learning Roadmap — 20 chapters · 446 topics · 12 practicals</span>
+        <span>Complete the theory first. Then practice. Then simulate production.</span>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
