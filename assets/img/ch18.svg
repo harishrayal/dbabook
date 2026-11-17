@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-label="CHAPTER cover art">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="0.55" stop-color="#16203c"/>
+      <stop offset="1" stop-color="#1b1740"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.76" cy="0.3" r="0.85">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#ffffff" stroke-opacity="0.045"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="220" fill="url(#bg)"/>
+  <rect width="640" height="220" fill="url(#grid)"/>
+  <rect width="640" height="220" fill="url(#glow)"/>
+  <circle cx="601.5999999999999" cy="26.4" r="3" fill="#ffffff" fill-opacity="0.5"/>
+  <circle cx="550.4" cy="198" r="2" fill="#ffffff" fill-opacity="0.35"/>
+  <circle cx="396.8" cy="17.6" r="2.5" fill="#ffffff" fill-opacity="0.3"/>
+  <text x="58" y="121.00000000000001" font-family="Segoe UI, Arial, sans-serif" font-size="70" font-weight="800" fill="#f8fafc" fill-opacity="0.96">18</text>
+       <text x="60" y="165" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="6" fill="#94a3b8">CHAPTER</text>
+       <rect x="60" y="182.6" width="70" height="6" rx="3" fill="#2dd4bf"/>
+  <g transform="translate(422,35) scale(1.05)" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="14" width="144" height="96" rx="10" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+       <path d="M10 40 H154" stroke="#cbd5e1" stroke-width="4"/>
+       <circle cx="28" cy="27" r="4" fill="#2dd4bf"/><circle cx="44" cy="27" r="4" fill="#64748b"/><circle cx="60" cy="27" r="4" fill="#64748b"/>
+       <path d="M34 66 L54 84 L34 102" fill="none" stroke="#2dd4bf" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+       <path d="M70 102 H116" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/></g>
+</svg>
