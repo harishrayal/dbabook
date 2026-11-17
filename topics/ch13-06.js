@@ -160,6 +160,312 @@ Query sys.dm_exec_requests for sessions with a blocking_session_id, then find th
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Shared Locks",
+        "The following comparison captures the distinctions that matter most when working with Shared Locks:",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Shared Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Locks fits”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Locks in practice”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Locks”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compatible with other S",
+        "Incompatible with all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Shared Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Shared Locks means”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Locks fits”?",
+      "options": [
+        "The diagram below places Shared Locks alongside the core concepts of blocking and deadlocks.",
+        "Next, verify the result and capture a baseline.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Shared Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Locks in practice”?",
+      "options": [
+        "None",
+        "Default",
+        "The following comparison captures the distinctions that matter most when working with Shared Locks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Shared Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Locks”?",
+      "options": [
+        "None",
+        "The first example establishes the relevant state.",
+        "With Shared Locks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Shared Locks",
+        "The following comparison captures the distinctions that matter most when working with Shared Locks:",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Shared Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Locks fits”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Locks in practice”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Locks”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compatible with other S",
+        "Incompatible with all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Shared Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Shared Locks means”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Locks fits”?",
+      "options": [
+        "The diagram below places Shared Locks alongside the core concepts of blocking and deadlocks.",
+        "Next, verify the result and capture a baseline.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Shared Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Locks in practice”?",
+      "options": [
+        "None",
+        "Default",
+        "The following comparison captures the distinctions that matter most when working with Shared Locks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Shared Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Locks”?",
+      "options": [
+        "None",
+        "The first example establishes the relevant state.",
+        "With Shared Locks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Shared Locks",
+        "The following comparison captures the distinctions that matter most when working with Shared Locks:",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Shared Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Locks fits”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Locks in practice”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Locks”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compatible with other S",
+        "Incompatible with all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Shared Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Shared Locks means”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Locks fits”?",
+      "options": [
+        "The diagram below places Shared Locks alongside the core concepts of blocking and deadlocks.",
+        "Next, verify the result and capture a baseline.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Shared Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Locks in practice”?",
+      "options": [
+        "None",
+        "Default",
+        "The following comparison captures the distinctions that matter most when working with Shared Locks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Shared Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Locks”?",
+      "options": [
+        "None",
+        "The first example establishes the relevant state.",
+        "With Shared Locks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    }
+  ],
   takeaways: [
     "Shared Locks is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

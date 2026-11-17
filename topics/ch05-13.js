@@ -175,6 +175,312 @@ FROM   sys.dm_os_sys_info;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ SQL Server service — Database Engine, SQL Server Agent, Browser, Launchpad — runs as a Windows principal.”",
+      "options": [
+        "absent",
+        "Service Principal Name",
+        "every"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Every SQL Server service — Database Engine, SQL Server Agent, Browser, Launchpad — runs as a Windows principal. That principal is the identity behind every action the service performs: opening data files, writing backups to a share, connecting to linked servers, running Agent job steps, and (if someone enables it) executing xp_cmdshell.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Whatever you choose: _____ where the job workload justifies it, and never an account that is a member of Domain Admins, Enterprise Admins, or the local Administrators group.”",
+      "options": [
+        "Always use -S",
+        "one account for the Database Engine and a separate one for SQL Server Agent",
+        "Service Principal Name"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Whatever you choose: one account for the Database Engine and a separate one for SQL Server Agent where the job workload justifies it, and never an account that is a member of Domain Admins, Enterprise Admins, or the local Administrators group.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The permissions matrix”?",
+      "options": [
+        "This is the table to keep in your runbook.",
+        "Instant file initialisation is lost — data file growth and restore zero the file first and take many times longer",
+        "SQL Server memory can be paged to disk under OS pressure (error 17890 in the error log)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This is the table to keep in your runbook. Each row exists because a feature silently degrades or fails without it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “An _____ is the Active Directory record that binds “the SQL Server service on sql-node-02” to the account that runs it.”",
+      "options": [
+        "both",
+        "SQL Server Configuration Manager",
+        "Service Principal Name"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “An Service Principal Name is the Active Directory record that binds “the SQL Server service on sql-node-02” to the account that runs it. Without a correct SPN, clients fall back to NTLM — which works for a single hop but fails the moment a web tier needs to pass the caller's identity to SQL Server (the classic “double-hop” problem).”"
+    },
+    {
+      "question": "Complete the lesson statement: “Always change service accounts in _____, never in services.msc. Configuration Manager performs the steps that matter: it updates the account, grants the Windows rights above, and…”",
+      "options": [
+        "before",
+        "SQL Server Configuration Manager",
+        "both"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Always change service accounts in SQL Server Configuration Manager, never in services.msc. Configuration Manager performs the steps that matter: it updates the account, grants the Windows rights above, and fixes the ACLs on the instance's registry keys and folders. The Services console does none of that — it only changes who starts the process.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Operational hygiene”?",
+      "options": [
+        "Treat the service account as production configuration: documented, reviewed, and changed only through the runbook.",
+        "SQL Server Configuration Manager",
+        "Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Treat the service account as production configuration: documented, reviewed, and changed only through the runbook.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the service account matters”?",
+      "options": [
+        "dedicated, low-privilege account per service",
+        "Too little privilege",
+        "Two failure modes follow from this, and they pull in opposite directions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two failure modes follow from this, and they pull in opposite directions:”"
+    },
+    {
+      "question": "In the “Choosing the account” table, what is listed for “Local System” under “Verdict”?",
+      "options": [
+        "Too much privilege",
+        "Never in production",
+        "Too little privilege"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Local System” as “Never in production”."
+    },
+    {
+      "question": "Complete the lesson statement: “Note what is _____: no local Administrators group, no Domain Users on the domain controllers, no “full control” on the SQL data root.”",
+      "options": [
+        "absent",
+        "xp_cmdshell and OLE Automation",
+        "Linked servers and Database Mail"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Note what is absent: no local Administrators group, no Domain Users on the domain controllers, no “full control” on the SQL data root. Grant rights on the exact folders the instance uses, not on an entire drive.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Changing the account safely”?",
+      "options": [
+        "Log on as a service",
+        "Perform volume maintenance tasks",
+        "Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later). A CONVENTIONAL memory model plus ifi = N after an account change tells you exactly which rights were lost.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ SQL Server service — Database Engine, SQL Server Agent, Browser, Launchpad — runs as a Windows principal.”",
+      "options": [
+        "absent",
+        "Service Principal Name",
+        "every"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Every SQL Server service — Database Engine, SQL Server Agent, Browser, Launchpad — runs as a Windows principal. That principal is the identity behind every action the service performs: opening data files, writing backups to a share, connecting to linked servers, running Agent job steps, and (if someone enables it) executing xp_cmdshell.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Whatever you choose: _____ where the job workload justifies it, and never an account that is a member of Domain Admins, Enterprise Admins, or the local Administrators group.”",
+      "options": [
+        "Always use -S",
+        "one account for the Database Engine and a separate one for SQL Server Agent",
+        "Service Principal Name"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Whatever you choose: one account for the Database Engine and a separate one for SQL Server Agent where the job workload justifies it, and never an account that is a member of Domain Admins, Enterprise Admins, or the local Administrators group.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The permissions matrix”?",
+      "options": [
+        "This is the table to keep in your runbook.",
+        "Instant file initialisation is lost — data file growth and restore zero the file first and take many times longer",
+        "SQL Server memory can be paged to disk under OS pressure (error 17890 in the error log)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This is the table to keep in your runbook. Each row exists because a feature silently degrades or fails without it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “An _____ is the Active Directory record that binds “the SQL Server service on sql-node-02” to the account that runs it.”",
+      "options": [
+        "both",
+        "SQL Server Configuration Manager",
+        "Service Principal Name"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “An Service Principal Name is the Active Directory record that binds “the SQL Server service on sql-node-02” to the account that runs it. Without a correct SPN, clients fall back to NTLM — which works for a single hop but fails the moment a web tier needs to pass the caller's identity to SQL Server (the classic “double-hop” problem).”"
+    },
+    {
+      "question": "Complete the lesson statement: “Always change service accounts in _____, never in services.msc. Configuration Manager performs the steps that matter: it updates the account, grants the Windows rights above, and…”",
+      "options": [
+        "before",
+        "SQL Server Configuration Manager",
+        "both"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Always change service accounts in SQL Server Configuration Manager, never in services.msc. Configuration Manager performs the steps that matter: it updates the account, grants the Windows rights above, and fixes the ACLs on the instance's registry keys and folders. The Services console does none of that — it only changes who starts the process.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Operational hygiene”?",
+      "options": [
+        "Treat the service account as production configuration: documented, reviewed, and changed only through the runbook.",
+        "SQL Server Configuration Manager",
+        "Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Treat the service account as production configuration: documented, reviewed, and changed only through the runbook.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the service account matters”?",
+      "options": [
+        "dedicated, low-privilege account per service",
+        "Too little privilege",
+        "Two failure modes follow from this, and they pull in opposite directions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two failure modes follow from this, and they pull in opposite directions:”"
+    },
+    {
+      "question": "In the “Choosing the account” table, what is listed for “Local System” under “Verdict”?",
+      "options": [
+        "Too much privilege",
+        "Never in production",
+        "Too little privilege"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Local System” as “Never in production”."
+    },
+    {
+      "question": "Complete the lesson statement: “Note what is _____: no local Administrators group, no Domain Users on the domain controllers, no “full control” on the SQL data root.”",
+      "options": [
+        "absent",
+        "xp_cmdshell and OLE Automation",
+        "Linked servers and Database Mail"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Note what is absent: no local Administrators group, no Domain Users on the domain controllers, no “full control” on the SQL data root. Grant rights on the exact folders the instance uses, not on an entire drive.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Changing the account safely”?",
+      "options": [
+        "Log on as a service",
+        "Perform volume maintenance tasks",
+        "Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later). A CONVENTIONAL memory model plus ifi = N after an account change tells you exactly which rights were lost.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ SQL Server service — Database Engine, SQL Server Agent, Browser, Launchpad — runs as a Windows principal.”",
+      "options": [
+        "absent",
+        "Service Principal Name",
+        "every"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Every SQL Server service — Database Engine, SQL Server Agent, Browser, Launchpad — runs as a Windows principal. That principal is the identity behind every action the service performs: opening data files, writing backups to a share, connecting to linked servers, running Agent job steps, and (if someone enables it) executing xp_cmdshell.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Whatever you choose: _____ where the job workload justifies it, and never an account that is a member of Domain Admins, Enterprise Admins, or the local Administrators group.”",
+      "options": [
+        "Always use -S",
+        "one account for the Database Engine and a separate one for SQL Server Agent",
+        "Service Principal Name"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Whatever you choose: one account for the Database Engine and a separate one for SQL Server Agent where the job workload justifies it, and never an account that is a member of Domain Admins, Enterprise Admins, or the local Administrators group.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The permissions matrix”?",
+      "options": [
+        "This is the table to keep in your runbook.",
+        "Instant file initialisation is lost — data file growth and restore zero the file first and take many times longer",
+        "SQL Server memory can be paged to disk under OS pressure (error 17890 in the error log)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This is the table to keep in your runbook. Each row exists because a feature silently degrades or fails without it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “An _____ is the Active Directory record that binds “the SQL Server service on sql-node-02” to the account that runs it.”",
+      "options": [
+        "both",
+        "SQL Server Configuration Manager",
+        "Service Principal Name"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “An Service Principal Name is the Active Directory record that binds “the SQL Server service on sql-node-02” to the account that runs it. Without a correct SPN, clients fall back to NTLM — which works for a single hop but fails the moment a web tier needs to pass the caller's identity to SQL Server (the classic “double-hop” problem).”"
+    },
+    {
+      "question": "Complete the lesson statement: “Always change service accounts in _____, never in services.msc. Configuration Manager performs the steps that matter: it updates the account, grants the Windows rights above, and…”",
+      "options": [
+        "before",
+        "SQL Server Configuration Manager",
+        "both"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Always change service accounts in SQL Server Configuration Manager, never in services.msc. Configuration Manager performs the steps that matter: it updates the account, grants the Windows rights above, and fixes the ACLs on the instance's registry keys and folders. The Services console does none of that — it only changes who starts the process.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Operational hygiene”?",
+      "options": [
+        "Treat the service account as production configuration: documented, reviewed, and changed only through the runbook.",
+        "SQL Server Configuration Manager",
+        "Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Treat the service account as production configuration: documented, reviewed, and changed only through the runbook.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the service account matters”?",
+      "options": [
+        "dedicated, low-privilege account per service",
+        "Too little privilege",
+        "Two failure modes follow from this, and they pull in opposite directions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two failure modes follow from this, and they pull in opposite directions:”"
+    },
+    {
+      "question": "In the “Choosing the account” table, what is listed for “Local System” under “Verdict”?",
+      "options": [
+        "Too much privilege",
+        "Never in production",
+        "Too little privilege"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Local System” as “Never in production”."
+    },
+    {
+      "question": "Complete the lesson statement: “Note what is _____: no local Administrators group, no Domain Users on the domain controllers, no “full control” on the SQL data root.”",
+      "options": [
+        "absent",
+        "xp_cmdshell and OLE Automation",
+        "Linked servers and Database Mail"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Note what is absent: no local Administrators group, no Domain Users on the domain controllers, no “full control” on the SQL data root. Grant rights on the exact folders the instance uses, not on an entire drive.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Changing the account safely”?",
+      "options": [
+        "Log on as a service",
+        "Perform volume maintenance tasks",
+        "Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Both queries need VIEW SERVER STATE (SQL Server 2019 and earlier) or VIEW SERVER SECURITY STATE (2022 and later). A CONVENTIONAL memory model plus ifi = N after an account change tells you exactly which rights were lost.”"
+    }
+  ],
   takeaways: [
     "The service account is both a security boundary and an availability dependency — pick a dedicated low-privilege account or gMSA",
     "Configuration Manager, not services.msc: it grants rights and repairs ACLs when the account changes",

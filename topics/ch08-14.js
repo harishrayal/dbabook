@@ -179,6 +179,312 @@ NORECOVERY keeps the database in a restoring state so more backups can be applie
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Restoring to a Different Server",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Restoring to a Different Server within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring to a Different Server fits”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "With Restoring to a Different Server, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a Different Server in practice”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Restoring to a Different Server sits inside a larger system.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring to a Different Server”?",
+      "options": [
+        "Restoring to a Different Server sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring to a Different Server. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Use the following as a starting point when investigating Restoring to a Different Server.",
+        "Lowest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Highest",
+        "Restoring to a Different Server"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Restoring to a Different Server with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring to a Different Server means”?",
+      "options": [
+        "Use the following as a starting point when investigating Restoring to a Different Server.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring to a Different Server fits”?",
+      "options": [
+        "The diagram below places Restoring to a Different Server alongside the core concepts of restore and disaster recovery.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Restoring to a Different Server."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Restoring to a Different Server alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a Different Server in practice”?",
+      "options": [
+        "End of the sequence",
+        "Log shipping with reads",
+        "The following comparison captures the distinctions that matter most when working with Restoring to a Different Server:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring to a Different Server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring to a Different Server”?",
+      "options": [
+        "Restoring to a Different Server",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Restoring to a Different Server",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Restoring to a Different Server within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring to a Different Server fits”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "With Restoring to a Different Server, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a Different Server in practice”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Restoring to a Different Server sits inside a larger system.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring to a Different Server”?",
+      "options": [
+        "Restoring to a Different Server sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring to a Different Server. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Use the following as a starting point when investigating Restoring to a Different Server.",
+        "Lowest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Highest",
+        "Restoring to a Different Server"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Restoring to a Different Server with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring to a Different Server means”?",
+      "options": [
+        "Use the following as a starting point when investigating Restoring to a Different Server.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring to a Different Server fits”?",
+      "options": [
+        "The diagram below places Restoring to a Different Server alongside the core concepts of restore and disaster recovery.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Restoring to a Different Server."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Restoring to a Different Server alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a Different Server in practice”?",
+      "options": [
+        "End of the sequence",
+        "Log shipping with reads",
+        "The following comparison captures the distinctions that matter most when working with Restoring to a Different Server:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring to a Different Server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring to a Different Server”?",
+      "options": [
+        "Restoring to a Different Server",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Restoring to a Different Server",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Restoring to a Different Server within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring to a Different Server fits”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "With Restoring to a Different Server, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a Different Server in practice”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Restoring to a Different Server sits inside a larger system.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring to a Different Server”?",
+      "options": [
+        "Restoring to a Different Server sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring to a Different Server. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Use the following as a starting point when investigating Restoring to a Different Server.",
+        "Lowest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Highest",
+        "Restoring to a Different Server"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Restoring to a Different Server with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring to a Different Server means”?",
+      "options": [
+        "Use the following as a starting point when investigating Restoring to a Different Server.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring to a Different Server fits”?",
+      "options": [
+        "The diagram below places Restoring to a Different Server alongside the core concepts of restore and disaster recovery.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Restoring to a Different Server."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Restoring to a Different Server alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a Different Server in practice”?",
+      "options": [
+        "End of the sequence",
+        "Log shipping with reads",
+        "The following comparison captures the distinctions that matter most when working with Restoring to a Different Server:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring to a Different Server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring to a Different Server”?",
+      "options": [
+        "Restoring to a Different Server",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Restoring to a Different Server is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

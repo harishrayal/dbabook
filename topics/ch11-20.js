@@ -188,6 +188,312 @@ Uptime, database states, last successful backups, failed jobs, volume and log fr
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Windows Event Logs sits inside a larger system.",
+        "Windows Event Logs",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Windows Event Logs within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Event Logs fits”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Windows Event Logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Event Logs in practice”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Event Logs”?",
+      "options": [
+        "Windows Event Logs",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Windows Event Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Windows Event Logs",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Windows Event Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Windows Event Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Windows Event Logs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Event Logs means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Windows Event Logs:",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Event Logs fits”?",
+      "options": [
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting.",
+        "Windows Event Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Event Logs in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting.",
+        "The following comparison captures the distinctions that matter most when working with Windows Event Logs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Windows Event Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Event Logs”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Windows Event Logs sits inside a larger system.",
+        "Windows Event Logs",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Windows Event Logs within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Event Logs fits”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Windows Event Logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Event Logs in practice”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Event Logs”?",
+      "options": [
+        "Windows Event Logs",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Windows Event Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Windows Event Logs",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Windows Event Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Windows Event Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Windows Event Logs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Event Logs means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Windows Event Logs:",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Event Logs fits”?",
+      "options": [
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting.",
+        "Windows Event Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Event Logs in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting.",
+        "The following comparison captures the distinctions that matter most when working with Windows Event Logs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Windows Event Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Event Logs”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Windows Event Logs sits inside a larger system.",
+        "Windows Event Logs",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Windows Event Logs within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Event Logs fits”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Windows Event Logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Event Logs in practice”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Event Logs”?",
+      "options": [
+        "Windows Event Logs",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Windows Event Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Windows Event Logs",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Windows Event Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Windows Event Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Windows Event Logs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Event Logs means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Windows Event Logs:",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Event Logs fits”?",
+      "options": [
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting.",
+        "Windows Event Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Event Logs in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting.",
+        "The following comparison captures the distinctions that matter most when working with Windows Event Logs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Windows Event Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Event Logs”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Windows Event Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Windows Event Logs is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

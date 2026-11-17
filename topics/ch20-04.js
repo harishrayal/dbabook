@@ -164,6 +164,312 @@ Uptime, backup success and restore-test results, RPO/RTO adherence, patch levels
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Database Deployment Coordination"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Deployment Coordination within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Deployment Coordination fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Deployment Coordination in practice”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Deployment Coordination”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Deployment Coordination. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Report + exceptions",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Deployment Coordination means”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Deployment Coordination fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Deployment Coordination in practice”?",
+      "options": [
+        "With Database Deployment Coordination, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Deployment Coordination”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Database Deployment Coordination"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Deployment Coordination within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Deployment Coordination fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Deployment Coordination in practice”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Deployment Coordination”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Deployment Coordination. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Report + exceptions",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Deployment Coordination means”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Deployment Coordination fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Deployment Coordination in practice”?",
+      "options": [
+        "With Database Deployment Coordination, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Deployment Coordination”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Database Deployment Coordination"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Deployment Coordination within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Deployment Coordination fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Deployment Coordination in practice”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Deployment Coordination”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Deployment Coordination. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Report + exceptions",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Deployment Coordination means”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Deployment Coordination fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Deployment Coordination alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Deployment Coordination in practice”?",
+      "options": [
+        "With Database Deployment Coordination, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Deployment Coordination:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Deployment Coordination”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    }
+  ],
   takeaways: [
     "Database Deployment Coordination is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -183,6 +183,312 @@ A proxy maps a job step to a credential so the step can run under a different, a
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Maintenance Automation",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Automation within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Automation fits”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Automation in practice”?",
+      "options": [
+        "Notification set on job",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Automation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Automation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database Maintenance Automation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Mail configured",
+        "Database Maintenance Automation",
+        "With Database Maintenance Automation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Automation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Automation means”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Database Maintenance Automation",
+        "Database Maintenance Automation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Automation fits”?",
+      "options": [
+        "Notification set on job",
+        "Database Maintenance Automation sits inside a larger system.",
+        "The diagram below places Database Maintenance Automation alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Automation alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Automation in practice”?",
+      "options": [
+        "Job never runs",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Automation:",
+        "Use the following as a starting point when investigating Database Maintenance Automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Automation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Automation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Database Maintenance Automation.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Maintenance Automation",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Automation within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Automation fits”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Automation in practice”?",
+      "options": [
+        "Notification set on job",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Automation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Automation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database Maintenance Automation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Mail configured",
+        "Database Maintenance Automation",
+        "With Database Maintenance Automation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Automation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Automation means”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Database Maintenance Automation",
+        "Database Maintenance Automation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Automation fits”?",
+      "options": [
+        "Notification set on job",
+        "Database Maintenance Automation sits inside a larger system.",
+        "The diagram below places Database Maintenance Automation alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Automation alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Automation in practice”?",
+      "options": [
+        "Job never runs",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Automation:",
+        "Use the following as a starting point when investigating Database Maintenance Automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Automation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Automation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Database Maintenance Automation.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Maintenance Automation",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Automation within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Automation fits”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Automation in practice”?",
+      "options": [
+        "Notification set on job",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Automation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Automation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database Maintenance Automation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Mail configured",
+        "Database Maintenance Automation",
+        "With Database Maintenance Automation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Automation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Automation means”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Database Maintenance Automation",
+        "Database Maintenance Automation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Automation fits”?",
+      "options": [
+        "Notification set on job",
+        "Database Maintenance Automation sits inside a larger system.",
+        "The diagram below places Database Maintenance Automation alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Automation alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Automation in practice”?",
+      "options": [
+        "Job never runs",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Automation:",
+        "Use the following as a starting point when investigating Database Maintenance Automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Automation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Automation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Database Maintenance Automation.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Maintenance Automation is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

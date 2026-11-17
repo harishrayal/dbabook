@@ -190,6 +190,312 @@ Blocking is one session waiting for a lock held by another — it resolves when 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Use the following as a starting point when investigating Blocking Troubleshooting.",
+        "Blocking Troubleshooting",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Blocking Troubleshooting within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Troubleshooting fits”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "Blocking Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Troubleshooting in practice”?",
+      "options": [
+        "Blocking Troubleshooting",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Troubleshooting”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Theory becomes useful when you can apply it.",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Blocking Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "Blocking Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Blocking Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking Troubleshooting means”?",
+      "options": [
+        "Compatible with other S",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Troubleshooting in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Troubleshooting”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Use the following as a starting point when investigating Blocking Troubleshooting.",
+        "Blocking Troubleshooting",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Blocking Troubleshooting within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Troubleshooting fits”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "Blocking Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Troubleshooting in practice”?",
+      "options": [
+        "Blocking Troubleshooting",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Troubleshooting”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Theory becomes useful when you can apply it.",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Blocking Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "Blocking Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Blocking Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking Troubleshooting means”?",
+      "options": [
+        "Compatible with other S",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Troubleshooting in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Troubleshooting”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Use the following as a starting point when investigating Blocking Troubleshooting.",
+        "Blocking Troubleshooting",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Blocking Troubleshooting within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Troubleshooting fits”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "Blocking Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Troubleshooting in practice”?",
+      "options": [
+        "Blocking Troubleshooting",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Troubleshooting”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Theory becomes useful when you can apply it.",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Blocking Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "Blocking Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Blocking Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking Troubleshooting means”?",
+      "options": [
+        "Compatible with other S",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Blocking Troubleshooting alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Troubleshooting in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Troubleshooting”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Blocking Troubleshooting is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

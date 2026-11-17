@@ -177,6 +177,312 @@ A timeline, impact, root cause, contributing factors, what went well and badly, 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab is a simulation of real on-call work.",
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab is a simulation of real on-call work. For each scenario you will identify symptoms, choose the right first diagnostic, apply a safe mitigation, and record a prevention action — without touching a real production system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The priority in any incident is to restore service first and find the root cause second.",
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The priority in any incident is to restore service first and find the root cause second. Investigating during an outage extends the outage. Protect evidence, mitigate safely, then analyse once users are serving again.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Unlock / reset / firewall",
+        "A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the…",
+        "Work through the incident catalogue in the table."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Work through the incident catalogue in the table. For each, write the first three queries or commands you would run and the safe mitigation you would choose — speed comes from rehearsal, not improvisation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Kill with approval, fix query",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Stop head blocker with approval"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner.",
+        "Correct sequence / verify backup",
+        "Stop head blocker with approval"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner. Blameless reviews surface real causes; blame hides them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Unlock / reset / firewall",
+        "This lab is a simulation of real on-call work.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query. For destructive scenarios such as corruption, reason through the response using the runbook rather than causing damage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The priority in any incident is to restore service first and find the root cause second.",
+        "The method below is the one to apply to every scenario: classify severity, gather evidence, mitigate, verify recovery, communicate, then document prevention.",
+        "Unlock / reset / firewall"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The method below is the one to apply to every scenario: classify severity, gather evidence, mitigate, verify recovery, communicate, then document prevention.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the…",
+        "Page restore from backup",
+        "This lab is a simulation of real on-call work."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the underlying cause and add alerts at 70 and 85 percent.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "This lab is a simulation of real on-call work.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query.",
+        "A runaway query or blocking chain is diagnosed from dm_exec_requests and waits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A runaway query or blocking chain is diagnosed from dm_exec_requests and waits. Identify the head blocker, confirm with the application owner, stop it with approval if needed, then fix the query or index that caused it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Environment check",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab is a simulation of real on-call work.",
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab is a simulation of real on-call work. For each scenario you will identify symptoms, choose the right first diagnostic, apply a safe mitigation, and record a prevention action — without touching a real production system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The priority in any incident is to restore service first and find the root cause second.",
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The priority in any incident is to restore service first and find the root cause second. Investigating during an outage extends the outage. Protect evidence, mitigate safely, then analyse once users are serving again.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Unlock / reset / firewall",
+        "A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the…",
+        "Work through the incident catalogue in the table."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Work through the incident catalogue in the table. For each, write the first three queries or commands you would run and the safe mitigation you would choose — speed comes from rehearsal, not improvisation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Kill with approval, fix query",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Stop head blocker with approval"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner.",
+        "Correct sequence / verify backup",
+        "Stop head blocker with approval"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner. Blameless reviews surface real causes; blame hides them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Unlock / reset / firewall",
+        "This lab is a simulation of real on-call work.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query. For destructive scenarios such as corruption, reason through the response using the runbook rather than causing damage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The priority in any incident is to restore service first and find the root cause second.",
+        "The method below is the one to apply to every scenario: classify severity, gather evidence, mitigate, verify recovery, communicate, then document prevention.",
+        "Unlock / reset / firewall"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The method below is the one to apply to every scenario: classify severity, gather evidence, mitigate, verify recovery, communicate, then document prevention.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the…",
+        "Page restore from backup",
+        "This lab is a simulation of real on-call work."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the underlying cause and add alerts at 70 and 85 percent.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "This lab is a simulation of real on-call work.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query.",
+        "A runaway query or blocking chain is diagnosed from dm_exec_requests and waits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A runaway query or blocking chain is diagnosed from dm_exec_requests and waits. Identify the head blocker, confirm with the application owner, stop it with approval if needed, then fix the query or index that caused it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Environment check",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab is a simulation of real on-call work.",
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab is a simulation of real on-call work. For each scenario you will identify symptoms, choose the right first diagnostic, apply a safe mitigation, and record a prevention action — without touching a real production system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The priority in any incident is to restore service first and find the root cause second.",
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The priority in any incident is to restore service first and find the root cause second. Investigating during an outage extends the outage. Protect evidence, mitigate safely, then analyse once users are serving again.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Unlock / reset / firewall",
+        "A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the…",
+        "Work through the incident catalogue in the table."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Work through the incident catalogue in the table. For each, write the first three queries or commands you would run and the safe mitigation you would choose — speed comes from rehearsal, not improvisation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Kill with approval, fix query",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Stop head blocker with approval"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner.",
+        "Correct sequence / verify backup",
+        "Stop head blocker with approval"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After each scenario, write a short post-incident note: timeline, impact, root cause and one concrete prevention action with an owner. Blameless reviews surface real causes; blame hides them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Unlock / reset / firewall",
+        "This lab is a simulation of real on-call work.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query. For destructive scenarios such as corruption, reason through the response using the runbook rather than causing damage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The priority in any incident is to restore service first and find the root cause second.",
+        "The method below is the one to apply to every scenario: classify severity, gather evidence, mitigate, verify recovery, communicate, then document prevention.",
+        "Unlock / reset / firewall"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The method below is the one to apply to every scenario: classify severity, gather evidence, mitigate, verify recovery, communicate, then document prevention.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the…",
+        "Page restore from backup",
+        "This lab is a simulation of real on-call work."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full transaction log is the classic: check log usage, find why it grew (failed log backup, long transaction, recovery model change), take an emergency log backup, then fix the underlying cause and add alerts at 70 and 85 percent.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "This lab is a simulation of real on-call work.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query.",
+        "A runaway query or blocking chain is diagnosed from dm_exec_requests and waits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A runaway query or blocking chain is diagnosed from dm_exec_requests and waits. Identify the head blocker, confirm with the application owner, stop it with approval if needed, then fix the query or index that caused it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Environment check",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Use your lab instance to reproduce what is safe to reproduce: a full log, a blocking chain, a failed job, a slow query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "Restore service first; root-cause analysis comes after recovery",
     "Severity definitions and a named commander remove debate under pressure",

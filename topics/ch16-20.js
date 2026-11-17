@@ -193,6 +193,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "HA Monitoring and Troubleshooting",
+        "HA Monitoring and Troubleshooting sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine HA Monitoring and Troubleshooting within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where HA Monitoring and Troubleshooting fits”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Use the following as a starting point when investigating HA Monitoring and Troubleshooting.",
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “HA Monitoring and Troubleshooting in practice”?",
+      "options": [
+        "Manual, planned",
+        "HA Monitoring and Troubleshooting",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with HA Monitoring and Troubleshooting”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Theory becomes useful when you can apply it.",
+        "HA Monitoring and Troubleshooting"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to HA Monitoring and Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "HA Monitoring and Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "HA Monitoring and Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates HA Monitoring and Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What HA Monitoring and Troubleshooting means”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where HA Monitoring and Troubleshooting fits”?",
+      "options": [
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “HA Monitoring and Troubleshooting in practice”?",
+      "options": [
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability.",
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with HA Monitoring and Troubleshooting”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:",
+        "The first example establishes the relevant state.",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "HA Monitoring and Troubleshooting",
+        "HA Monitoring and Troubleshooting sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine HA Monitoring and Troubleshooting within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where HA Monitoring and Troubleshooting fits”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Use the following as a starting point when investigating HA Monitoring and Troubleshooting.",
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “HA Monitoring and Troubleshooting in practice”?",
+      "options": [
+        "Manual, planned",
+        "HA Monitoring and Troubleshooting",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with HA Monitoring and Troubleshooting”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Theory becomes useful when you can apply it.",
+        "HA Monitoring and Troubleshooting"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to HA Monitoring and Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "HA Monitoring and Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "HA Monitoring and Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates HA Monitoring and Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What HA Monitoring and Troubleshooting means”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where HA Monitoring and Troubleshooting fits”?",
+      "options": [
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “HA Monitoring and Troubleshooting in practice”?",
+      "options": [
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability.",
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with HA Monitoring and Troubleshooting”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:",
+        "The first example establishes the relevant state.",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "HA Monitoring and Troubleshooting",
+        "HA Monitoring and Troubleshooting sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine HA Monitoring and Troubleshooting within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where HA Monitoring and Troubleshooting fits”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Use the following as a starting point when investigating HA Monitoring and Troubleshooting.",
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “HA Monitoring and Troubleshooting in practice”?",
+      "options": [
+        "Manual, planned",
+        "HA Monitoring and Troubleshooting",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with HA Monitoring and Troubleshooting”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Theory becomes useful when you can apply it.",
+        "HA Monitoring and Troubleshooting"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to HA Monitoring and Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "HA Monitoring and Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "HA Monitoring and Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates HA Monitoring and Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What HA Monitoring and Troubleshooting means”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where HA Monitoring and Troubleshooting fits”?",
+      "options": [
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “HA Monitoring and Troubleshooting in practice”?",
+      "options": [
+        "The diagram below places HA Monitoring and Troubleshooting alongside the core concepts of high availability.",
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with HA Monitoring and Troubleshooting”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with HA Monitoring and Troubleshooting:",
+        "The first example establishes the relevant state.",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "HA Monitoring and Troubleshooting is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

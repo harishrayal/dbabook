@@ -194,6 +194,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Secondary Replica",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Secondary Replica within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Secondary Replica fits”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Next, verify the result and capture a baseline.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary Replica in practice”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Lower",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Secondary Replica”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Theory becomes useful when you can apply it.",
+        "With Secondary Replica, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Secondary Replica. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Secondary Replica sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "With Secondary Replica, prefer measured, reversible changes.",
+        "Secondary Replica"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Secondary Replica with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Secondary Replica means”?",
+      "options": [
+        "Secondary Replica sits inside a larger system.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Secondary Replica"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Secondary Replica fits”?",
+      "options": [
+        "The diagram below places Secondary Replica alongside the core concepts of high availability.",
+        "Lower",
+        "Secondary Replica sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Secondary Replica alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary Replica in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Secondary Replica.",
+        "Automatic, node-level",
+        "The following comparison captures the distinctions that matter most when working with Secondary Replica:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Secondary Replica:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Secondary Replica”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Secondary Replica."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Secondary Replica",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Secondary Replica within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Secondary Replica fits”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Next, verify the result and capture a baseline.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary Replica in practice”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Lower",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Secondary Replica”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Theory becomes useful when you can apply it.",
+        "With Secondary Replica, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Secondary Replica. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Secondary Replica sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "With Secondary Replica, prefer measured, reversible changes.",
+        "Secondary Replica"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Secondary Replica with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Secondary Replica means”?",
+      "options": [
+        "Secondary Replica sits inside a larger system.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Secondary Replica"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Secondary Replica fits”?",
+      "options": [
+        "The diagram below places Secondary Replica alongside the core concepts of high availability.",
+        "Lower",
+        "Secondary Replica sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Secondary Replica alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary Replica in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Secondary Replica.",
+        "Automatic, node-level",
+        "The following comparison captures the distinctions that matter most when working with Secondary Replica:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Secondary Replica:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Secondary Replica”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Secondary Replica."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Secondary Replica",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Secondary Replica within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Secondary Replica fits”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Next, verify the result and capture a baseline.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary Replica in practice”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Lower",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Secondary Replica”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Theory becomes useful when you can apply it.",
+        "With Secondary Replica, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Secondary Replica. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Secondary Replica sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "With Secondary Replica, prefer measured, reversible changes.",
+        "Secondary Replica"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Secondary Replica with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Secondary Replica means”?",
+      "options": [
+        "Secondary Replica sits inside a larger system.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Secondary Replica"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Secondary Replica fits”?",
+      "options": [
+        "The diagram below places Secondary Replica alongside the core concepts of high availability.",
+        "Lower",
+        "Secondary Replica sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Secondary Replica alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary Replica in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Secondary Replica.",
+        "Automatic, node-level",
+        "The following comparison captures the distinctions that matter most when working with Secondary Replica:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Secondary Replica:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Secondary Replica”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Secondary Replica."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Secondary Replica is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

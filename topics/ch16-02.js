@@ -193,6 +193,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "High Availability Versus Disaster Recovery",
+        "High Availability Versus Disaster Recovery is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine High Availability Versus Disaster Recovery within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Availability Versus Disaster Recovery fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "High Availability Versus Disaster Recovery is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Availability Versus Disaster Recovery in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Availability Versus Disaster Recovery”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to High Availability Versus Disaster Recovery. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Automatic, node-level",
+        "High Availability Versus Disaster Recovery"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates High Availability Versus Disaster Recovery with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What High Availability Versus Disaster Recovery means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Availability Versus Disaster Recovery fits”?",
+      "options": [
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability.",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Availability Versus Disaster Recovery in practice”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "High availability keeps a database service reachable through failures.",
+        "The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Availability Versus Disaster Recovery”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "The first example establishes the relevant state.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "High Availability Versus Disaster Recovery",
+        "High Availability Versus Disaster Recovery is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine High Availability Versus Disaster Recovery within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Availability Versus Disaster Recovery fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "High Availability Versus Disaster Recovery is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Availability Versus Disaster Recovery in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Availability Versus Disaster Recovery”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to High Availability Versus Disaster Recovery. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Automatic, node-level",
+        "High Availability Versus Disaster Recovery"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates High Availability Versus Disaster Recovery with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What High Availability Versus Disaster Recovery means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Availability Versus Disaster Recovery fits”?",
+      "options": [
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability.",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Availability Versus Disaster Recovery in practice”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "High availability keeps a database service reachable through failures.",
+        "The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Availability Versus Disaster Recovery”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "The first example establishes the relevant state.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "High Availability Versus Disaster Recovery",
+        "High Availability Versus Disaster Recovery is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine High Availability Versus Disaster Recovery within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Availability Versus Disaster Recovery fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "High Availability Versus Disaster Recovery is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Availability Versus Disaster Recovery in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Availability Versus Disaster Recovery”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to High Availability Versus Disaster Recovery. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Automatic, node-level",
+        "High Availability Versus Disaster Recovery"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates High Availability Versus Disaster Recovery with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What High Availability Versus Disaster Recovery means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Availability Versus Disaster Recovery fits”?",
+      "options": [
+        "The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability.",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places High Availability Versus Disaster Recovery alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Availability Versus Disaster Recovery in practice”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "High availability keeps a database service reachable through failures.",
+        "The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with High Availability Versus Disaster Recovery:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Availability Versus Disaster Recovery”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "The first example establishes the relevant state.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "High Availability Versus Disaster Recovery is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Clustered Indexes",
+        "The following comparison captures the distinctions that matter most when working with Clustered Indexes:",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Clustered Indexes within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Clustered Indexes fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Clustered Indexes in practice”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Clustered Indexes”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Clustered Indexes. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Clustered Indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Clustered Indexes with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Clustered Indexes means”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Clustered Indexes fits”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places Clustered Indexes alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Clustered Indexes alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Clustered Indexes in practice”?",
+      "options": [
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Clustered Indexes:",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Clustered Indexes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Clustered Indexes”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Clustered Indexes",
+        "The following comparison captures the distinctions that matter most when working with Clustered Indexes:",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Clustered Indexes within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Clustered Indexes fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Clustered Indexes in practice”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Clustered Indexes”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Clustered Indexes. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Clustered Indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Clustered Indexes with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Clustered Indexes means”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Clustered Indexes fits”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places Clustered Indexes alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Clustered Indexes alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Clustered Indexes in practice”?",
+      "options": [
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Clustered Indexes:",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Clustered Indexes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Clustered Indexes”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Clustered Indexes",
+        "The following comparison captures the distinctions that matter most when working with Clustered Indexes:",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Clustered Indexes within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Clustered Indexes fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Clustered Indexes in practice”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Clustered Indexes”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Clustered Indexes. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Clustered Indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Clustered Indexes with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Clustered Indexes means”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Clustered Indexes fits”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places Clustered Indexes alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Clustered Indexes alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Clustered Indexes in practice”?",
+      "options": [
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Clustered Indexes:",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Clustered Indexes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Clustered Indexes”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Clustered Indexes is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

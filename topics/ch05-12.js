@@ -190,6 +190,312 @@ SELECT @@SERVERNAME          AS server_name,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ (service name SQLBrowser ) is a separate Windows service installed with the Database Engine.”",
+      "options": [
+        "SQL Server Browser",
+        "1434",
+        "UDP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server Browser (service name SQLBrowser ) is a separate Windows service installed with the Database Engine. There is exactly one Browser per server, no matter how many instances run on it. It is a directory service for instances — it never carries a single row of query data.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Understanding this sequence is what lets you tell a _____ failure from a network failure from a login failure — three errors that look identical to the application team.”",
+      "options": [
+        "UDP",
+        "5022",
+        "resolution"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Follow one connection string through the stack. Understanding this sequence is what lets you tell a resolution failure from a network failure from a login failure — three errors that look identical to the application team.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated production rule: _____”",
+      "options": [
+        "5022",
+        "if any connection string names an instance without a port, the Browser must run.",
+        "UDP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Opinionated production rule: if any connection string names an instance without a port, the Browser must run. Disabling it is a legitimate hardening step, but only after every client has been moved to explicit ports.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Starting and verifying the service”?",
+      "options": [
+        "Check it from the host with PowerShell.",
+        "The port changes at every service start; only the Browser knows it",
+        "Works without it if every client carries the port explicitly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Check it from the host with PowerShell. The service should be Running and Automatic on any server whose clients use instance names:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The Browser carries no data, so the usual “expose as little as possible” logic applies to _____ rather than to the service itself.”",
+      "options": [
+        "Yes",
+        "invisible",
+        "UDP 1434"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The Browser carries no data, so the usual “expose as little as possible” logic applies to UDP 1434 rather than to the service itself. Anyone who can reach it learns the names of every instance on the host — a free reconnaissance service for an attacker mapping your estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting resolution failures”?",
+      "options": [
+        "The instance list itself is built from SSRP replies",
+        "Match the symptom to the layer before touching anything.",
+        "Local connections never use SSRP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Match the symptom to the layer before touching anything. The provider error number tells you where to look:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Its job is to answer SSRP (SQL Server Resolution Protocol) queries sent to _____.”",
+      "options": [
+        "UDP 1434",
+        "only",
+        "Disabled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Its job is to answer SSRP (SQL Server Resolution Protocol) queries sent to UDP 1434. When a client is given a connection string such as sql-node-02\\REPORTS with no port number, the client library must first ask “what port is REPORTS on?”, then open a TCP connection to the port that comes back.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance resolution, step by step”?",
+      "options": [
+        "Local connections use shared memory — they prove nothing about TCP",
+        "resolution",
+        "The port map for a typical server running a default instance, one named instance, and an availability group:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The port map for a typical server running a default instance, one named instance, and an availability group:”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, a server with dynamic ports and a stopped Browser is _____ to every remote client, while server,1433 (the default instance) keeps working — which is why these outages are so confusing.”",
+      "options": [
+        "10061",
+        "invisible",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two consequences worth stating out loud. First, a server with dynamic ports and a stopped Browser is invisible to every remote client, while server,1433 (the default instance) keeps working — which is why these outages are so confusing. Second, with Browser disabled, a renamed or renumbered instance silently breaks every connection string you thought you had fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Starting and verifying the service”?",
+      "options": [
+        "Then confirm what the instance itself reports, so you can compare “what the Browser would advertise” with “what is really listening”:",
+        "Order of operations: confirm the service, confirm the listening port with netstat, confirm the firewall rule, then confirm the connection string.",
+        "Is SQLBrowser running? Is UDP 1434 reachable from the client subnet?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Then confirm what the instance itself reports, so you can compare “what the Browser would advertise” with “what is really listening”:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ (service name SQLBrowser ) is a separate Windows service installed with the Database Engine.”",
+      "options": [
+        "SQL Server Browser",
+        "1434",
+        "UDP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server Browser (service name SQLBrowser ) is a separate Windows service installed with the Database Engine. There is exactly one Browser per server, no matter how many instances run on it. It is a directory service for instances — it never carries a single row of query data.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Understanding this sequence is what lets you tell a _____ failure from a network failure from a login failure — three errors that look identical to the application team.”",
+      "options": [
+        "UDP",
+        "5022",
+        "resolution"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Follow one connection string through the stack. Understanding this sequence is what lets you tell a resolution failure from a network failure from a login failure — three errors that look identical to the application team.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated production rule: _____”",
+      "options": [
+        "5022",
+        "if any connection string names an instance without a port, the Browser must run.",
+        "UDP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Opinionated production rule: if any connection string names an instance without a port, the Browser must run. Disabling it is a legitimate hardening step, but only after every client has been moved to explicit ports.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Starting and verifying the service”?",
+      "options": [
+        "Check it from the host with PowerShell.",
+        "The port changes at every service start; only the Browser knows it",
+        "Works without it if every client carries the port explicitly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Check it from the host with PowerShell. The service should be Running and Automatic on any server whose clients use instance names:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The Browser carries no data, so the usual “expose as little as possible” logic applies to _____ rather than to the service itself.”",
+      "options": [
+        "Yes",
+        "invisible",
+        "UDP 1434"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The Browser carries no data, so the usual “expose as little as possible” logic applies to UDP 1434 rather than to the service itself. Anyone who can reach it learns the names of every instance on the host — a free reconnaissance service for an attacker mapping your estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting resolution failures”?",
+      "options": [
+        "The instance list itself is built from SSRP replies",
+        "Match the symptom to the layer before touching anything.",
+        "Local connections never use SSRP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Match the symptom to the layer before touching anything. The provider error number tells you where to look:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Its job is to answer SSRP (SQL Server Resolution Protocol) queries sent to _____.”",
+      "options": [
+        "UDP 1434",
+        "only",
+        "Disabled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Its job is to answer SSRP (SQL Server Resolution Protocol) queries sent to UDP 1434. When a client is given a connection string such as sql-node-02\\REPORTS with no port number, the client library must first ask “what port is REPORTS on?”, then open a TCP connection to the port that comes back.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance resolution, step by step”?",
+      "options": [
+        "Local connections use shared memory — they prove nothing about TCP",
+        "resolution",
+        "The port map for a typical server running a default instance, one named instance, and an availability group:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The port map for a typical server running a default instance, one named instance, and an availability group:”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, a server with dynamic ports and a stopped Browser is _____ to every remote client, while server,1433 (the default instance) keeps working — which is why these outages are so confusing.”",
+      "options": [
+        "10061",
+        "invisible",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two consequences worth stating out loud. First, a server with dynamic ports and a stopped Browser is invisible to every remote client, while server,1433 (the default instance) keeps working — which is why these outages are so confusing. Second, with Browser disabled, a renamed or renumbered instance silently breaks every connection string you thought you had fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Starting and verifying the service”?",
+      "options": [
+        "Then confirm what the instance itself reports, so you can compare “what the Browser would advertise” with “what is really listening”:",
+        "Order of operations: confirm the service, confirm the listening port with netstat, confirm the firewall rule, then confirm the connection string.",
+        "Is SQLBrowser running? Is UDP 1434 reachable from the client subnet?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Then confirm what the instance itself reports, so you can compare “what the Browser would advertise” with “what is really listening”:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ (service name SQLBrowser ) is a separate Windows service installed with the Database Engine.”",
+      "options": [
+        "SQL Server Browser",
+        "1434",
+        "UDP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server Browser (service name SQLBrowser ) is a separate Windows service installed with the Database Engine. There is exactly one Browser per server, no matter how many instances run on it. It is a directory service for instances — it never carries a single row of query data.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Understanding this sequence is what lets you tell a _____ failure from a network failure from a login failure — three errors that look identical to the application team.”",
+      "options": [
+        "UDP",
+        "5022",
+        "resolution"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Follow one connection string through the stack. Understanding this sequence is what lets you tell a resolution failure from a network failure from a login failure — three errors that look identical to the application team.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated production rule: _____”",
+      "options": [
+        "5022",
+        "if any connection string names an instance without a port, the Browser must run.",
+        "UDP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Opinionated production rule: if any connection string names an instance without a port, the Browser must run. Disabling it is a legitimate hardening step, but only after every client has been moved to explicit ports.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Starting and verifying the service”?",
+      "options": [
+        "Check it from the host with PowerShell.",
+        "The port changes at every service start; only the Browser knows it",
+        "Works without it if every client carries the port explicitly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Check it from the host with PowerShell. The service should be Running and Automatic on any server whose clients use instance names:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The Browser carries no data, so the usual “expose as little as possible” logic applies to _____ rather than to the service itself.”",
+      "options": [
+        "Yes",
+        "invisible",
+        "UDP 1434"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The Browser carries no data, so the usual “expose as little as possible” logic applies to UDP 1434 rather than to the service itself. Anyone who can reach it learns the names of every instance on the host — a free reconnaissance service for an attacker mapping your estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting resolution failures”?",
+      "options": [
+        "The instance list itself is built from SSRP replies",
+        "Match the symptom to the layer before touching anything.",
+        "Local connections never use SSRP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Match the symptom to the layer before touching anything. The provider error number tells you where to look:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Its job is to answer SSRP (SQL Server Resolution Protocol) queries sent to _____.”",
+      "options": [
+        "UDP 1434",
+        "only",
+        "Disabled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Its job is to answer SSRP (SQL Server Resolution Protocol) queries sent to UDP 1434. When a client is given a connection string such as sql-node-02\\REPORTS with no port number, the client library must first ask “what port is REPORTS on?”, then open a TCP connection to the port that comes back.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance resolution, step by step”?",
+      "options": [
+        "Local connections use shared memory — they prove nothing about TCP",
+        "resolution",
+        "The port map for a typical server running a default instance, one named instance, and an availability group:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The port map for a typical server running a default instance, one named instance, and an availability group:”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, a server with dynamic ports and a stopped Browser is _____ to every remote client, while server,1433 (the default instance) keeps working — which is why these outages are so confusing.”",
+      "options": [
+        "10061",
+        "invisible",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two consequences worth stating out loud. First, a server with dynamic ports and a stopped Browser is invisible to every remote client, while server,1433 (the default instance) keeps working — which is why these outages are so confusing. Second, with Browser disabled, a renamed or renumbered instance silently breaks every connection string you thought you had fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Starting and verifying the service”?",
+      "options": [
+        "Then confirm what the instance itself reports, so you can compare “what the Browser would advertise” with “what is really listening”:",
+        "Order of operations: confirm the service, confirm the listening port with netstat, confirm the firewall rule, then confirm the connection string.",
+        "Is SQLBrowser running? Is UDP 1434 reachable from the client subnet?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Then confirm what the instance itself reports, so you can compare “what the Browser would advertise” with “what is really listening”:”"
+    }
+  ],
   takeaways: [
     "SQL Server Browser is a per-server directory service: UDP 1434 in, instance name out — never a data path",
     "Named instances with dynamic ports are unreachable without it; the default instance on 1433 is not affected",

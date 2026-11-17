@@ -175,6 +175,312 @@ WITH CHECKSUMS, STATS = 5;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the process of rebuilding a database from backup media.”",
+      "options": [
+        "back",
+        "Same database, same server",
+        "Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Restoration is the process of rebuilding a database from backup media. It is operator-initiated: someone runs a RESTORE command, SQL Server reads one or more backup files, and a usable database appears at a moment and a location of your choosing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restore, recovery, restart, failover”?",
+      "options": [
+        "Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:",
+        "The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:",
+        "Restoration is used for far more than disasters."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The three phases of a restore”?",
+      "options": [
+        "Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:",
+        "The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:",
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the media before you restore”?",
+      "options": [
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE.",
+        "A DBA running RESTORE",
+        "Three read-only commands tell you what you are about to restore without touching a single production page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three read-only commands tell you what you are about to restore without touching a single production page. Run them first, every time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a successful restore requires”?",
+      "options": [
+        "The final step of a restore ( WITH RECOVERY ), or automatically on service restart",
+        "Restores fail for boring, predictable reasons.",
+        "A DBA running RESTORE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restores fail for boring, predictable reasons. Before starting, confirm:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A backup copies pages _____ in time onto media; a restore reads those pages back and lands them in data and log files.”",
+      "options": [
+        "forward",
+        "Restore",
+        "Recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “It is the exact inverse of a backup. A backup copies pages forward in time onto media; a restore reads those pages back and lands them in data and log files. But a restore is far more than a file copy — SQL Server validates the media, writes pages into the target files, replays the transaction log in LSN order, and finally rolls back anything unfinished so the result is transactionally consistent.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restore, recovery, restart, failover”?",
+      "options": [
+        "Restores fail for boring, predictable reasons.",
+        "after",
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE. Understanding that shared machinery is what makes the options in the rest of this chapter ( NORECOVERY, RECOVERY, STANDBY, STOPAT ) make sense instead of looking like arbitrary keywords.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ returns one row per backup in the file: BackupType (1 = database, 2 = log, 5 = differential), BackupStartDate, FirstLSN / LastLSN, and the database name.”",
+      "options": [
+        "Crash recovery",
+        "HEADERONLY",
+        "Recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “HEADERONLY returns one row per backup in the file: BackupType (1 = database, 2 = log, 5 = differential), BackupStartDate, FirstLSN / LastLSN, and the database name. FILELISTONLY returns the logical names, physical paths, type (D = data, L = log), and sizes of every file in the set — everything you need to prepare WITH MOVE and to check free space.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Equally important is what happens _____ the command succeeds: DBCC CHECKDB, row-count spot checks, login and job verification, and a recorded restore duration.”",
+      "options": [
+        "after",
+        "Crash recovery",
+        "Failover"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Equally important is what happens after the command succeeds: DBCC CHECKDB, row-count spot checks, login and job verification, and a recorded restore duration. A restore that has never been timed, space-checked, and rehearsed is still an assumption — the RTO in your DR plan is a guess until someone has run it end to end.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining restoration”?",
+      "options": [
+        "Restores fail for boring, predictable reasons.",
+        "after",
+        "Restoration is used for far more than disasters."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration is used for far more than disasters. Typical targets:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the process of rebuilding a database from backup media.”",
+      "options": [
+        "back",
+        "Same database, same server",
+        "Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Restoration is the process of rebuilding a database from backup media. It is operator-initiated: someone runs a RESTORE command, SQL Server reads one or more backup files, and a usable database appears at a moment and a location of your choosing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restore, recovery, restart, failover”?",
+      "options": [
+        "Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:",
+        "The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:",
+        "Restoration is used for far more than disasters."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The three phases of a restore”?",
+      "options": [
+        "Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:",
+        "The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:",
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the media before you restore”?",
+      "options": [
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE.",
+        "A DBA running RESTORE",
+        "Three read-only commands tell you what you are about to restore without touching a single production page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three read-only commands tell you what you are about to restore without touching a single production page. Run them first, every time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a successful restore requires”?",
+      "options": [
+        "The final step of a restore ( WITH RECOVERY ), or automatically on service restart",
+        "Restores fail for boring, predictable reasons.",
+        "A DBA running RESTORE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restores fail for boring, predictable reasons. Before starting, confirm:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A backup copies pages _____ in time onto media; a restore reads those pages back and lands them in data and log files.”",
+      "options": [
+        "forward",
+        "Restore",
+        "Recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “It is the exact inverse of a backup. A backup copies pages forward in time onto media; a restore reads those pages back and lands them in data and log files. But a restore is far more than a file copy — SQL Server validates the media, writes pages into the target files, replays the transaction log in LSN order, and finally rolls back anything unfinished so the result is transactionally consistent.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restore, recovery, restart, failover”?",
+      "options": [
+        "Restores fail for boring, predictable reasons.",
+        "after",
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE. Understanding that shared machinery is what makes the options in the rest of this chapter ( NORECOVERY, RECOVERY, STANDBY, STOPAT ) make sense instead of looking like arbitrary keywords.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ returns one row per backup in the file: BackupType (1 = database, 2 = log, 5 = differential), BackupStartDate, FirstLSN / LastLSN, and the database name.”",
+      "options": [
+        "Crash recovery",
+        "HEADERONLY",
+        "Recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “HEADERONLY returns one row per backup in the file: BackupType (1 = database, 2 = log, 5 = differential), BackupStartDate, FirstLSN / LastLSN, and the database name. FILELISTONLY returns the logical names, physical paths, type (D = data, L = log), and sizes of every file in the set — everything you need to prepare WITH MOVE and to check free space.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Equally important is what happens _____ the command succeeds: DBCC CHECKDB, row-count spot checks, login and job verification, and a recorded restore duration.”",
+      "options": [
+        "after",
+        "Crash recovery",
+        "Failover"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Equally important is what happens after the command succeeds: DBCC CHECKDB, row-count spot checks, login and job verification, and a recorded restore duration. A restore that has never been timed, space-checked, and rehearsed is still an assumption — the RTO in your DR plan is a guess until someone has run it end to end.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining restoration”?",
+      "options": [
+        "Restores fail for boring, predictable reasons.",
+        "after",
+        "Restoration is used for far more than disasters."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration is used for far more than disasters. Typical targets:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the process of rebuilding a database from backup media.”",
+      "options": [
+        "back",
+        "Same database, same server",
+        "Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Restoration is the process of rebuilding a database from backup media. It is operator-initiated: someone runs a RESTORE command, SQL Server reads one or more backup files, and a usable database appears at a moment and a location of your choosing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restore, recovery, restart, failover”?",
+      "options": [
+        "Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:",
+        "The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:",
+        "Restoration is used for far more than disasters."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The three phases of a restore”?",
+      "options": [
+        "Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:",
+        "The vocabulary is used loosely in conversation, but in an incident the precision matters — these are four different things:",
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every restore, from a 2 GB sandbox to a 4 TB warehouse, moves through the same three phases:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the media before you restore”?",
+      "options": [
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE.",
+        "A DBA running RESTORE",
+        "Three read-only commands tell you what you are about to restore without touching a single production page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three read-only commands tell you what you are about to restore without touching a single production page. Run them first, every time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a successful restore requires”?",
+      "options": [
+        "The final step of a restore ( WITH RECOVERY ), or automatically on service restart",
+        "Restores fail for boring, predictable reasons.",
+        "A DBA running RESTORE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restores fail for boring, predictable reasons. Before starting, confirm:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A backup copies pages _____ in time onto media; a restore reads those pages back and lands them in data and log files.”",
+      "options": [
+        "forward",
+        "Restore",
+        "Recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “It is the exact inverse of a backup. A backup copies pages forward in time onto media; a restore reads those pages back and lands them in data and log files. But a restore is far more than a file copy — SQL Server validates the media, writes pages into the target files, replays the transaction log in LSN order, and finally rolls back anything unfinished so the result is transactionally consistent.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restore, recovery, restart, failover”?",
+      "options": [
+        "Restores fail for boring, predictable reasons.",
+        "after",
+        "Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice that a restore ends with recovery: the same roll-forward / roll-back machinery SQL Server uses after a power cut is what finishes a RESTORE. Understanding that shared machinery is what makes the options in the rest of this chapter ( NORECOVERY, RECOVERY, STANDBY, STOPAT ) make sense instead of looking like arbitrary keywords.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ returns one row per backup in the file: BackupType (1 = database, 2 = log, 5 = differential), BackupStartDate, FirstLSN / LastLSN, and the database name.”",
+      "options": [
+        "Crash recovery",
+        "HEADERONLY",
+        "Recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “HEADERONLY returns one row per backup in the file: BackupType (1 = database, 2 = log, 5 = differential), BackupStartDate, FirstLSN / LastLSN, and the database name. FILELISTONLY returns the logical names, physical paths, type (D = data, L = log), and sizes of every file in the set — everything you need to prepare WITH MOVE and to check free space.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Equally important is what happens _____ the command succeeds: DBCC CHECKDB, row-count spot checks, login and job verification, and a recorded restore duration.”",
+      "options": [
+        "after",
+        "Crash recovery",
+        "Failover"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Equally important is what happens after the command succeeds: DBCC CHECKDB, row-count spot checks, login and job verification, and a recorded restore duration. A restore that has never been timed, space-checked, and rehearsed is still an assumption — the RTO in your DR plan is a guess until someone has run it end to end.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining restoration”?",
+      "options": [
+        "Restores fail for boring, predictable reasons.",
+        "after",
+        "Restoration is used for far more than disasters."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration is used for far more than disasters. Typical targets:”"
+    }
+  ],
   takeaways: [
     "Restoration rebuilds a database from backup media — backup copies forward, restore reads back",
     "Every restore runs three phases: copy, roll forward (redo), roll back (undo)",

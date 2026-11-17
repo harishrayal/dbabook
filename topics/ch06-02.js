@@ -165,6 +165,312 @@ WHERE  f.type = 0;                -- data files only; log has no SpaceUsed via F
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Orders, you are addressing the _____ side: schemas, tables, indexes, filegroups, and file logical names.”",
+      "options": [
+        "IAM",
+        "logical",
+        "data files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “When you write SELECT … FROM dbo.Orders, you are addressing the logical side: schemas, tables, indexes, filegroups, and file logical names. When Windows Explorer shows E:\\Data\\SalesDB.mdf, it is showing the physical side: bytes on a volume. SQL Server keeps a catalogue that maps one to the other, and every storage operation is really an edit of that mapping.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How an object maps to storage”?",
+      "options": [
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Windows, backups of raw files, attach/detach",
+        "sys.master_files.physical_name, Explorer"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Follow one row of dbo.Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical names, physical paths, and keeping them in sync”?",
+      "options": [
+        "sys.master_files.physical_name, Explorer",
+        "No — never rename or move a live file in the OS",
+        "You can change either independently, but only through SQL Server:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “You can change either independently, but only through SQL Server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the mapping”?",
+      "options": [
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Three views answer nearly every layout question:",
+        "No — never rename or move a live file in the OS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three views answer nearly every layout question:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Rules that keep the two layers aligned”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Two consequences are worth memorising:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Production habits that prevent nearly every \"the files are a mess\" incident:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Two views of the same database”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "logical",
+        "The catalogue is the single source of truth."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The catalogue is the single source of truth. If the physical path in the catalogue no longer matches the file on disk, the database cannot start cleanly, and a copy job that renames files \"for tidiness\" can break a restore months later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How an object maps to storage”?",
+      "options": [
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…",
+        "Two consequences are worth memorising:",
+        "Three views answer nearly every layout question:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two consequences are worth memorising:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical names, physical paths, and keeping them in sync”?",
+      "options": [
+        "Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.",
+        "Three views answer nearly every layout question:",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the mapping”?",
+      "options": [
+        "Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.",
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that decides whether you need space or a shrink.”"
+    },
+    {
+      "question": "In the “Two views of the same database” table, what is listed for “Units” under “Physical layer”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "File path, page, extent, VLF, volume",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Units” as “File path, page, extent, VLF, volume”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Orders, you are addressing the _____ side: schemas, tables, indexes, filegroups, and file logical names.”",
+      "options": [
+        "IAM",
+        "logical",
+        "data files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “When you write SELECT … FROM dbo.Orders, you are addressing the logical side: schemas, tables, indexes, filegroups, and file logical names. When Windows Explorer shows E:\\Data\\SalesDB.mdf, it is showing the physical side: bytes on a volume. SQL Server keeps a catalogue that maps one to the other, and every storage operation is really an edit of that mapping.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How an object maps to storage”?",
+      "options": [
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Windows, backups of raw files, attach/detach",
+        "sys.master_files.physical_name, Explorer"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Follow one row of dbo.Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical names, physical paths, and keeping them in sync”?",
+      "options": [
+        "sys.master_files.physical_name, Explorer",
+        "No — never rename or move a live file in the OS",
+        "You can change either independently, but only through SQL Server:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “You can change either independently, but only through SQL Server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the mapping”?",
+      "options": [
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Three views answer nearly every layout question:",
+        "No — never rename or move a live file in the OS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three views answer nearly every layout question:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Rules that keep the two layers aligned”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Two consequences are worth memorising:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Production habits that prevent nearly every \"the files are a mess\" incident:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Two views of the same database”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "logical",
+        "The catalogue is the single source of truth."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The catalogue is the single source of truth. If the physical path in the catalogue no longer matches the file on disk, the database cannot start cleanly, and a copy job that renames files \"for tidiness\" can break a restore months later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How an object maps to storage”?",
+      "options": [
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…",
+        "Two consequences are worth memorising:",
+        "Three views answer nearly every layout question:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two consequences are worth memorising:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical names, physical paths, and keeping them in sync”?",
+      "options": [
+        "Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.",
+        "Three views answer nearly every layout question:",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the mapping”?",
+      "options": [
+        "Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.",
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that decides whether you need space or a shrink.”"
+    },
+    {
+      "question": "In the “Two views of the same database” table, what is listed for “Units” under “Physical layer”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "File path, page, extent, VLF, volume",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Units” as “File path, page, extent, VLF, volume”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Orders, you are addressing the _____ side: schemas, tables, indexes, filegroups, and file logical names.”",
+      "options": [
+        "IAM",
+        "logical",
+        "data files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “When you write SELECT … FROM dbo.Orders, you are addressing the logical side: schemas, tables, indexes, filegroups, and file logical names. When Windows Explorer shows E:\\Data\\SalesDB.mdf, it is showing the physical side: bytes on a volume. SQL Server keeps a catalogue that maps one to the other, and every storage operation is really an edit of that mapping.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How an object maps to storage”?",
+      "options": [
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Windows, backups of raw files, attach/detach",
+        "sys.master_files.physical_name, Explorer"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Follow one row of dbo.Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical names, physical paths, and keeping them in sync”?",
+      "options": [
+        "sys.master_files.physical_name, Explorer",
+        "No — never rename or move a live file in the OS",
+        "You can change either independently, but only through SQL Server:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “You can change either independently, but only through SQL Server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the mapping”?",
+      "options": [
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Three views answer nearly every layout question:",
+        "No — never rename or move a live file in the OS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three views answer nearly every layout question:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Rules that keep the two layers aligned”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "Orders down the hierarchy — every arrow is a mapping the catalogue maintains for you:",
+        "Two consequences are worth memorising:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Production habits that prevent nearly every \"the files are a mess\" incident:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Two views of the same database”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "logical",
+        "The catalogue is the single source of truth."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The catalogue is the single source of truth. If the physical path in the catalogue no longer matches the file on disk, the database cannot start cleanly, and a copy job that renames files \"for tidiness\" can break a restore months later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How an object maps to storage”?",
+      "options": [
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…",
+        "Two consequences are worth memorising:",
+        "Three views answer nearly every layout question:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two consequences are worth memorising:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical names, physical paths, and keeping them in sync”?",
+      "options": [
+        "Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.",
+        "Three views answer nearly every layout question:",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inspecting the mapping”?",
+      "options": [
+        "Doing it the other way round — moving the file in Explorer and hoping — leaves the catalogue pointing at a path that does not exist, and the database will not come up.",
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that decides whether you need space or a shrink.”"
+    },
+    {
+      "question": "In the “Two views of the same database” table, what is listed for “Units” under “Physical layer”?",
+      "options": [
+        "Production habits that prevent nearly every \"the files are a mess\" incident:",
+        "File path, page, extent, VLF, volume",
+        "FILEPROPERTY(name, 'SpaceUsed') reports pages actually used by the current database, which is how you tell a genuinely full file from one that is merely large — a distinction that…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Units” as “File path, page, extent, VLF, volume”."
+    }
+  ],
   takeaways: [
     "Every database has a logical layer (objects, filegroups, logical file names) and a physical layer (paths, pages, extents)",
     "The catalogue maps one to the other — sys.master_files and sys.database_files are the source of truth",

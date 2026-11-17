@@ -858,12 +858,31 @@ img { max-width: 100%; }
   border: 0;
 }
 
+.quiz-question + .quiz-question {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
 .topic-quiz legend {
   width: 100%;
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.quiz-number {
+  display: inline-grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 12px;
+  vertical-align: middle;
 }
 
 .quiz-options {
@@ -927,7 +946,18 @@ img { max-width: 100%; }
 .quiz-feedback.is-incorrect strong:first-child { color: var(--red); }
 .quiz-feedback.is-prompt { border-color: var(--amber); }
 
-.topic-quiz-form > .btn { margin-top: 16px; }
+.quiz-score {
+  margin-top: 22px;
+  padding: 14px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 9px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.topic-quiz-form > .btn { margin-top: 22px; }
 .topic-quiz-form > .btn:disabled { cursor: default; opacity: .65; }
 
 /* ---------------- Pager ---------------- */

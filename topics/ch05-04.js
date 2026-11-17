@@ -172,6 +172,312 @@ EXEC xp_servicecontrol N'querystate', N'SQLBrowser';</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The first instance installed can be the _____: it answers to the server name alone.”",
+      "options": [
+        "Production rule: assign static ports.",
+        "Only one default instance can exist per server.",
+        "default instance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The first instance installed can be the default instance: it answers to the server name alone. Clients connect with just the hostname — no instance name, no port.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ carries its own identity everywhere:”",
+      "options": [
+        "MSSQLSERVER (clients omit it)",
+        "named instance",
+        "Only one default instance can exist per server."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A named instance carries its own identity everywhere:”"
+    },
+    {
+      "question": "Complete the lesson statement: “By default a named instance picks a _____ at service start and registers it with the SQL Server Browser service (UDP 1434).”",
+      "options": [
+        "dynamic port",
+        "MSSQLSERVER (clients omit it)",
+        "SQL Server (MSSQLSERVER)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “By default a named instance picks a dynamic port at service start and registers it with the SQL Server Browser service (UDP 1434). A client that asks “which port is SQL01PROD on?” gets the current answer, then connects directly to that port.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connection strings and ports, side by side”?",
+      "options": [
+        "NULL — a small trap for inventory scripts",
+        "named instance",
+        "Verify what a connection actually uses before you document it:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Verify what a connection actually uses before you document it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting instance connections”?",
+      "options": [
+        "Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side.",
+        "When “server not found” arrives, walk the chain in order — each step invalidates a whole class of causes:",
+        "named instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When “server not found” arrives, walk the chain in order — each step invalidates a whole class of causes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The default instance”?",
+      "options": [
+        "Only one default instance can exist per server.",
+        "This works — until something changes:",
+        "Production rule: assign static ports."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Only one default instance can exist per server. Everything else is a named instance — including the one you created “just for testing” in 2019 that is still running.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Named instances”?",
+      "options": [
+        "Production rule: assign static ports.",
+        "Verify what a connection actually uses before you document it:",
+        "Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side. The cost is connection complexity — and dynamic ports.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Dynamic ports and the Browser service”?",
+      "options": [
+        "SQL Server Agent (MSSQL$PROD)",
+        "This works — until something changes:",
+        "SQL Server (MSSQL$PROD)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This works — until something changes:”"
+    },
+    {
+      "question": "In the “Connection strings and ports, side by side” table, what is listed for “Default instance” under “Requires Browser?”?",
+      "options": [
+        "No",
+        "SQL Server (MSSQL$PROD)",
+        "SQL Server Agent (MSSQL$PROD)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Default instance” as “No”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting instance connections”?",
+      "options": [
+        "…MSSQL16.PROD… and MSSQL$PRODLoginMode",
+        "Server=SQL01\\PROD;Database=AppDb;… (double backslash in a connection string)",
+        "Most named-instance outages reduce to one of three: Browser stopped, dynamic port changed after restart, or firewall rule missing for the static port."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Most named-instance outages reduce to one of three: Browser stopped, dynamic port changed after restart, or firewall rule missing for the static port. Identify which in minutes, not hours.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The first instance installed can be the _____: it answers to the server name alone.”",
+      "options": [
+        "Production rule: assign static ports.",
+        "Only one default instance can exist per server.",
+        "default instance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The first instance installed can be the default instance: it answers to the server name alone. Clients connect with just the hostname — no instance name, no port.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ carries its own identity everywhere:”",
+      "options": [
+        "MSSQLSERVER (clients omit it)",
+        "named instance",
+        "Only one default instance can exist per server."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A named instance carries its own identity everywhere:”"
+    },
+    {
+      "question": "Complete the lesson statement: “By default a named instance picks a _____ at service start and registers it with the SQL Server Browser service (UDP 1434).”",
+      "options": [
+        "dynamic port",
+        "MSSQLSERVER (clients omit it)",
+        "SQL Server (MSSQLSERVER)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “By default a named instance picks a dynamic port at service start and registers it with the SQL Server Browser service (UDP 1434). A client that asks “which port is SQL01PROD on?” gets the current answer, then connects directly to that port.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connection strings and ports, side by side”?",
+      "options": [
+        "NULL — a small trap for inventory scripts",
+        "named instance",
+        "Verify what a connection actually uses before you document it:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Verify what a connection actually uses before you document it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting instance connections”?",
+      "options": [
+        "Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side.",
+        "When “server not found” arrives, walk the chain in order — each step invalidates a whole class of causes:",
+        "named instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When “server not found” arrives, walk the chain in order — each step invalidates a whole class of causes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The default instance”?",
+      "options": [
+        "Only one default instance can exist per server.",
+        "This works — until something changes:",
+        "Production rule: assign static ports."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Only one default instance can exist per server. Everything else is a named instance — including the one you created “just for testing” in 2019 that is still running.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Named instances”?",
+      "options": [
+        "Production rule: assign static ports.",
+        "Verify what a connection actually uses before you document it:",
+        "Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side. The cost is connection complexity — and dynamic ports.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Dynamic ports and the Browser service”?",
+      "options": [
+        "SQL Server Agent (MSSQL$PROD)",
+        "This works — until something changes:",
+        "SQL Server (MSSQL$PROD)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This works — until something changes:”"
+    },
+    {
+      "question": "In the “Connection strings and ports, side by side” table, what is listed for “Default instance” under “Requires Browser?”?",
+      "options": [
+        "No",
+        "SQL Server (MSSQL$PROD)",
+        "SQL Server Agent (MSSQL$PROD)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Default instance” as “No”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting instance connections”?",
+      "options": [
+        "…MSSQL16.PROD… and MSSQL$PRODLoginMode",
+        "Server=SQL01\\PROD;Database=AppDb;… (double backslash in a connection string)",
+        "Most named-instance outages reduce to one of three: Browser stopped, dynamic port changed after restart, or firewall rule missing for the static port."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Most named-instance outages reduce to one of three: Browser stopped, dynamic port changed after restart, or firewall rule missing for the static port. Identify which in minutes, not hours.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The first instance installed can be the _____: it answers to the server name alone.”",
+      "options": [
+        "Production rule: assign static ports.",
+        "Only one default instance can exist per server.",
+        "default instance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The first instance installed can be the default instance: it answers to the server name alone. Clients connect with just the hostname — no instance name, no port.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ carries its own identity everywhere:”",
+      "options": [
+        "MSSQLSERVER (clients omit it)",
+        "named instance",
+        "Only one default instance can exist per server."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A named instance carries its own identity everywhere:”"
+    },
+    {
+      "question": "Complete the lesson statement: “By default a named instance picks a _____ at service start and registers it with the SQL Server Browser service (UDP 1434).”",
+      "options": [
+        "dynamic port",
+        "MSSQLSERVER (clients omit it)",
+        "SQL Server (MSSQLSERVER)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “By default a named instance picks a dynamic port at service start and registers it with the SQL Server Browser service (UDP 1434). A client that asks “which port is SQL01PROD on?” gets the current answer, then connects directly to that port.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connection strings and ports, side by side”?",
+      "options": [
+        "NULL — a small trap for inventory scripts",
+        "named instance",
+        "Verify what a connection actually uses before you document it:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Verify what a connection actually uses before you document it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting instance connections”?",
+      "options": [
+        "Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side.",
+        "When “server not found” arrives, walk the chain in order — each step invalidates a whole class of causes:",
+        "named instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When “server not found” arrives, walk the chain in order — each step invalidates a whole class of causes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The default instance”?",
+      "options": [
+        "Only one default instance can exist per server.",
+        "This works — until something changes:",
+        "Production rule: assign static ports."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Only one default instance can exist per server. Everything else is a named instance — including the one you created “just for testing” in 2019 that is still running.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Named instances”?",
+      "options": [
+        "Production rule: assign static ports.",
+        "Verify what a connection actually uses before you document it:",
+        "Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Named instances are how you run dev beside prod, isolate applications with different collation or authentication needs, or stage a migration side by side. The cost is connection complexity — and dynamic ports.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Dynamic ports and the Browser service”?",
+      "options": [
+        "SQL Server Agent (MSSQL$PROD)",
+        "This works — until something changes:",
+        "SQL Server (MSSQL$PROD)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This works — until something changes:”"
+    },
+    {
+      "question": "In the “Connection strings and ports, side by side” table, what is listed for “Default instance” under “Requires Browser?”?",
+      "options": [
+        "No",
+        "SQL Server (MSSQL$PROD)",
+        "SQL Server Agent (MSSQL$PROD)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Default instance” as “No”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting instance connections”?",
+      "options": [
+        "…MSSQL16.PROD… and MSSQL$PRODLoginMode",
+        "Server=SQL01\\PROD;Database=AppDb;… (double backslash in a connection string)",
+        "Most named-instance outages reduce to one of three: Browser stopped, dynamic port changed after restart, or firewall rule missing for the static port."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Most named-instance outages reduce to one of three: Browser stopped, dynamic port changed after restart, or firewall rule missing for the static port. Identify which in minutes, not hours.”"
+    }
+  ],
   takeaways: [
     "One default instance per server (MSSQLSERVER, typically 1433); any number of named instances",
     "Named instances default to dynamic ports and need the Browser service on UDP 1434",

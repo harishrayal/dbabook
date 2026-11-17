@@ -185,6 +185,312 @@ Reorganize lightly fragmented indexes (roughly 10-30%) online with low impact; r
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Database Maintenance Plans",
+        "Long transactions",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Plans within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Plans fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Plans in practice”?",
+      "options": [
+        "With Database Maintenance Plans, prefer measured, reversible changes.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Plans”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Plans. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Database Maintenance Plans",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Plans with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Plans means”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Plans fits”?",
+      "options": [
+        "With Database Maintenance Plans, prefer measured, reversible changes.",
+        "No benefit",
+        "The diagram below places Database Maintenance Plans alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Plans alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Plans in practice”?",
+      "options": [
+        "Database Maintenance Plans sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Plans:",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Plans:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Plans”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Maintenance Plans sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Database Maintenance Plans",
+        "Long transactions",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Plans within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Plans fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Plans in practice”?",
+      "options": [
+        "With Database Maintenance Plans, prefer measured, reversible changes.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Plans”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Plans. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Database Maintenance Plans",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Plans with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Plans means”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Plans fits”?",
+      "options": [
+        "With Database Maintenance Plans, prefer measured, reversible changes.",
+        "No benefit",
+        "The diagram below places Database Maintenance Plans alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Plans alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Plans in practice”?",
+      "options": [
+        "Database Maintenance Plans sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Plans:",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Plans:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Plans”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Maintenance Plans sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Database Maintenance Plans",
+        "Long transactions",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Plans within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Plans fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Plans in practice”?",
+      "options": [
+        "With Database Maintenance Plans, prefer measured, reversible changes.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Plans”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Plans. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Database Maintenance Plans",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Plans with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Plans means”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Plans fits”?",
+      "options": [
+        "With Database Maintenance Plans, prefer measured, reversible changes.",
+        "No benefit",
+        "The diagram below places Database Maintenance Plans alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Plans alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Plans in practice”?",
+      "options": [
+        "Database Maintenance Plans sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Plans:",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Plans:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Plans”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Maintenance Plans sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Maintenance Plans is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

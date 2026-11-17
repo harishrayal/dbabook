@@ -188,6 +188,312 @@ SELECT @new_id AS new_order_id;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a stored SELECT statement registered in the catalog.”",
+      "options": [
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "view",
+        "and"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A view is a stored SELECT statement registered in the catalog. Query sales.vw_RecentOrders and SQL Server expands it to the underlying query at run time — a view stores no data of its own (with one important exception, covered below). It behaves like a virtual table you can read, and — under conditions — even write through.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The exception is the _____ (a view with SCHEMABINDING whose result is materialised as a unique clustered index), which physically stores aggregated results and can…”",
+      "options": [
+        "indexed view",
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A view that selects directly from base tables is a simple, expandable text substitute — performance is identical to inlining the query. The exception is the indexed view (a view with SCHEMABINDING whose result is materialised as a unique clustered index), which physically stores aggregated results and can accelerate heavy aggregate queries dramatically — but must obey strict rules (deterministic expressions, no outer joins or many built-ins) and is expensive to maintain on hot write tables.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a named T-SQL program stored in the database.”",
+      "options": [
+        "A saved program — reads and writes",
+        "Input and output parameters, defaults",
+        "stored procedure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A stored procedure is a named T-SQL program stored in the database. Unlike a view, it does something: it can run multiple statements, accept input and output parameters, return status values, and be granted EXECUTE without granting anything else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT and view SELECT…”",
+      "options": [
+        "Result sets, output params, return codes",
+        "Common pitfalls:",
+        "Input and output parameters, defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT and view SELECT “temporarily”; procedures that mix business logic with maintenance tasks; using procedures as the only place logic exists while reports bypass them with raw table access; and creating a view per developer request until the catalog holds 400 near-duplicates.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Views in practice, including the indexed exception”?",
+      "options": [
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "Plan reuse",
+        "Network efficiency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.”"
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “What it is” under “Stored procedure”?",
+      "options": [
+        "Network efficiency",
+        "Governed change",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “What it is” as “A saved program — reads and writes”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Parameters” under “Stored procedure”?",
+      "options": [
+        "and",
+        "Input and output parameters, defaults",
+        "Governed change"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Parameters” as “Input and output parameters, defaults”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Output” under “Stored procedure”?",
+      "options": [
+        "Result sets, output params, return codes",
+        "and",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Output” as “Result sets, output params, return codes”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Permission granted” under “Stored procedure”?",
+      "options": [
+        "A saved program — reads and writes",
+        "Input and output parameters, defaults",
+        "EXECUTE only"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Permission granted” as “EXECUTE only”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Best for” under “Stored procedure”?",
+      "options": [
+        "Result sets, output params, return codes",
+        "Multi-step logic, controlled writes, API-style contracts",
+        "Input and output parameters, defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Best for” as “Multi-step logic, controlled writes, API-style contracts”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a stored SELECT statement registered in the catalog.”",
+      "options": [
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "view",
+        "and"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A view is a stored SELECT statement registered in the catalog. Query sales.vw_RecentOrders and SQL Server expands it to the underlying query at run time — a view stores no data of its own (with one important exception, covered below). It behaves like a virtual table you can read, and — under conditions — even write through.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The exception is the _____ (a view with SCHEMABINDING whose result is materialised as a unique clustered index), which physically stores aggregated results and can…”",
+      "options": [
+        "indexed view",
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A view that selects directly from base tables is a simple, expandable text substitute — performance is identical to inlining the query. The exception is the indexed view (a view with SCHEMABINDING whose result is materialised as a unique clustered index), which physically stores aggregated results and can accelerate heavy aggregate queries dramatically — but must obey strict rules (deterministic expressions, no outer joins or many built-ins) and is expensive to maintain on hot write tables.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a named T-SQL program stored in the database.”",
+      "options": [
+        "A saved program — reads and writes",
+        "Input and output parameters, defaults",
+        "stored procedure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A stored procedure is a named T-SQL program stored in the database. Unlike a view, it does something: it can run multiple statements, accept input and output parameters, return status values, and be granted EXECUTE without granting anything else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT and view SELECT…”",
+      "options": [
+        "Result sets, output params, return codes",
+        "Common pitfalls:",
+        "Input and output parameters, defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT and view SELECT “temporarily”; procedures that mix business logic with maintenance tasks; using procedures as the only place logic exists while reports bypass them with raw table access; and creating a view per developer request until the catalog holds 400 near-duplicates.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Views in practice, including the indexed exception”?",
+      "options": [
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "Plan reuse",
+        "Network efficiency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.”"
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “What it is” under “Stored procedure”?",
+      "options": [
+        "Network efficiency",
+        "Governed change",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “What it is” as “A saved program — reads and writes”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Parameters” under “Stored procedure”?",
+      "options": [
+        "and",
+        "Input and output parameters, defaults",
+        "Governed change"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Parameters” as “Input and output parameters, defaults”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Output” under “Stored procedure”?",
+      "options": [
+        "Result sets, output params, return codes",
+        "and",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Output” as “Result sets, output params, return codes”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Permission granted” under “Stored procedure”?",
+      "options": [
+        "A saved program — reads and writes",
+        "Input and output parameters, defaults",
+        "EXECUTE only"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Permission granted” as “EXECUTE only”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Best for” under “Stored procedure”?",
+      "options": [
+        "Result sets, output params, return codes",
+        "Multi-step logic, controlled writes, API-style contracts",
+        "Input and output parameters, defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Best for” as “Multi-step logic, controlled writes, API-style contracts”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a stored SELECT statement registered in the catalog.”",
+      "options": [
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "view",
+        "and"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A view is a stored SELECT statement registered in the catalog. Query sales.vw_RecentOrders and SQL Server expands it to the underlying query at run time — a view stores no data of its own (with one important exception, covered below). It behaves like a virtual table you can read, and — under conditions — even write through.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The exception is the _____ (a view with SCHEMABINDING whose result is materialised as a unique clustered index), which physically stores aggregated results and can…”",
+      "options": [
+        "indexed view",
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A view that selects directly from base tables is a simple, expandable text substitute — performance is identical to inlining the query. The exception is the indexed view (a view with SCHEMABINDING whose result is materialised as a unique clustered index), which physically stores aggregated results and can accelerate heavy aggregate queries dramatically — but must obey strict rules (deterministic expressions, no outer joins or many built-ins) and is expensive to maintain on hot write tables.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a named T-SQL program stored in the database.”",
+      "options": [
+        "A saved program — reads and writes",
+        "Input and output parameters, defaults",
+        "stored procedure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A stored procedure is a named T-SQL program stored in the database. Unlike a view, it does something: it can run multiple statements, accept input and output parameters, return status values, and be granted EXECUTE without granting anything else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT and view SELECT…”",
+      "options": [
+        "Result sets, output params, return codes",
+        "Common pitfalls:",
+        "Input and output parameters, defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT and view SELECT “temporarily”; procedures that mix business logic with maintenance tasks; using procedures as the only place logic exists while reports bypass them with raw table access; and creating a view per developer request until the catalog holds 400 near-duplicates.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Views in practice, including the indexed exception”?",
+      "options": [
+        "CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.",
+        "Plan reuse",
+        "Network efficiency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “CREATE OR ALTER keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.”"
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “What it is” under “Stored procedure”?",
+      "options": [
+        "Network efficiency",
+        "Governed change",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “What it is” as “A saved program — reads and writes”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Parameters” under “Stored procedure”?",
+      "options": [
+        "and",
+        "Input and output parameters, defaults",
+        "Governed change"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Parameters” as “Input and output parameters, defaults”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Output” under “Stored procedure”?",
+      "options": [
+        "Result sets, output params, return codes",
+        "and",
+        "A saved program — reads and writes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Output” as “Result sets, output params, return codes”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Permission granted” under “Stored procedure”?",
+      "options": [
+        "A saved program — reads and writes",
+        "Input and output parameters, defaults",
+        "EXECUTE only"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Permission granted” as “EXECUTE only”."
+    },
+    {
+      "question": "In the “Choosing between them” table, what is listed for “Best for” under “Stored procedure”?",
+      "options": [
+        "Result sets, output params, return codes",
+        "Multi-step logic, controlled writes, API-style contracts",
+        "Input and output parameters, defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Best for” as “Multi-step logic, controlled writes, API-style contracts”."
+    }
+  ],
   takeaways: [
     "A view is a stored SELECT — a contract over tables, not a copy of data (unless it is indexed)",
     "Views deliver simplification, stability, and column/row-level security for consumers",

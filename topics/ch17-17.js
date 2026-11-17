@@ -181,6 +181,312 @@ It periodically backs up, copies and restores logs to a secondary, giving a warm
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "With Replication Troubleshooting, prefer measured, reversible changes.",
+        "Replication Troubleshooting",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Replication Troubleshooting within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Troubleshooting fits”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Small / static data",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Troubleshooting in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Replication Troubleshooting.",
+        "Hours",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Troubleshooting”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Replication Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "With Replication Troubleshooting, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Replication Troubleshooting sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Replication Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Replication Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Replication Troubleshooting means”?",
+      "options": [
+        "Replication Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Replication Troubleshooting alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Replication Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Replication Troubleshooting alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Troubleshooting in practice”?",
+      "options": [
+        "Replication Troubleshooting",
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with Replication Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Replication Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Troubleshooting”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "The first example establishes the relevant state.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "With Replication Troubleshooting, prefer measured, reversible changes.",
+        "Replication Troubleshooting",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Replication Troubleshooting within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Troubleshooting fits”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Small / static data",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Troubleshooting in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Replication Troubleshooting.",
+        "Hours",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Troubleshooting”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Replication Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "With Replication Troubleshooting, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Replication Troubleshooting sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Replication Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Replication Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Replication Troubleshooting means”?",
+      "options": [
+        "Replication Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Replication Troubleshooting alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Replication Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Replication Troubleshooting alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Troubleshooting in practice”?",
+      "options": [
+        "Replication Troubleshooting",
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with Replication Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Replication Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Troubleshooting”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "The first example establishes the relevant state.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "With Replication Troubleshooting, prefer measured, reversible changes.",
+        "Replication Troubleshooting",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Replication Troubleshooting within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Troubleshooting fits”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Small / static data",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Troubleshooting in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Replication Troubleshooting.",
+        "Hours",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Troubleshooting”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Replication Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "With Replication Troubleshooting, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Replication Troubleshooting sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Replication Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Replication Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Replication Troubleshooting means”?",
+      "options": [
+        "Replication Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Replication Troubleshooting alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Replication Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Replication Troubleshooting alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Troubleshooting in practice”?",
+      "options": [
+        "Replication Troubleshooting",
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with Replication Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Replication Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Troubleshooting”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "The first example establishes the relevant state.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Replication Troubleshooting is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

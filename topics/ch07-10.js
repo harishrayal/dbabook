@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it.",
+        "Backup Compression"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Compression within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compression fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Recovery models control log behaviour.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compression in practice”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "With Backup Compression, prefer measured, reversible changes.",
+        "No"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compression”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "With Backup Compression, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Compression. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Compression",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Compression with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Compression means”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compression fits”?",
+      "options": [
+        "Yes",
+        "The diagram below places Backup Compression alongside the core concepts of backup and recovery strategy.",
+        "No"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Compression alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compression in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Compression:",
+        "Backup Compression sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Compression:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compression”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it.",
+        "Backup Compression"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Compression within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compression fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Recovery models control log behaviour.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compression in practice”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "With Backup Compression, prefer measured, reversible changes.",
+        "No"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compression”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "With Backup Compression, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Compression. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Compression",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Compression with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Compression means”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compression fits”?",
+      "options": [
+        "Yes",
+        "The diagram below places Backup Compression alongside the core concepts of backup and recovery strategy.",
+        "No"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Compression alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compression in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Compression:",
+        "Backup Compression sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Compression:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compression”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it.",
+        "Backup Compression"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Compression within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compression fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Recovery models control log behaviour.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compression in practice”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "With Backup Compression, prefer measured, reversible changes.",
+        "No"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compression”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "With Backup Compression, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Compression. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Compression",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Compression with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Compression means”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compression fits”?",
+      "options": [
+        "Yes",
+        "The diagram below places Backup Compression alongside the core concepts of backup and recovery strategy.",
+        "No"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Compression alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compression in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Compression:",
+        "Backup Compression sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Compression:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compression”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Compression is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

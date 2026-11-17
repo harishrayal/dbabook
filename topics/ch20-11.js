@@ -186,6 +186,312 @@ With a central inventory, standard configurations, automated health and complian
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Migration",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Migration within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Migration fits”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Next, verify the result and capture a baseline.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Migration in practice”?",
+      "options": [
+        "Scheduled",
+        "Maintenance",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Migration”?",
+      "options": [
+        "Scheduled",
+        "Theory becomes useful when you can apply it.",
+        "With Database Migration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Migration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Database Migration sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "With Database Migration, prefer measured, reversible changes.",
+        "Database Migration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Migration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Migration means”?",
+      "options": [
+        "Database Migration",
+        "Environments must stay aligned but distinct.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Migration fits”?",
+      "options": [
+        "The diagram below places Database Migration alongside the core concepts of enterprise DBA operations.",
+        "Maintenance",
+        "Immediate"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Migration alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Migration in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Migration.",
+        "The following comparison captures the distinctions that matter most when working with Database Migration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Migration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Migration”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Migration.",
+        "The first example establishes the relevant state.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Migration",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Migration within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Migration fits”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Next, verify the result and capture a baseline.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Migration in practice”?",
+      "options": [
+        "Scheduled",
+        "Maintenance",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Migration”?",
+      "options": [
+        "Scheduled",
+        "Theory becomes useful when you can apply it.",
+        "With Database Migration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Migration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Database Migration sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "With Database Migration, prefer measured, reversible changes.",
+        "Database Migration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Migration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Migration means”?",
+      "options": [
+        "Database Migration",
+        "Environments must stay aligned but distinct.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Migration fits”?",
+      "options": [
+        "The diagram below places Database Migration alongside the core concepts of enterprise DBA operations.",
+        "Maintenance",
+        "Immediate"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Migration alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Migration in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Migration.",
+        "The following comparison captures the distinctions that matter most when working with Database Migration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Migration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Migration”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Migration.",
+        "The first example establishes the relevant state.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Migration",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Migration within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Migration fits”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Next, verify the result and capture a baseline.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Migration in practice”?",
+      "options": [
+        "Scheduled",
+        "Maintenance",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Migration”?",
+      "options": [
+        "Scheduled",
+        "Theory becomes useful when you can apply it.",
+        "With Database Migration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Migration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Database Migration sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "With Database Migration, prefer measured, reversible changes.",
+        "Database Migration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Migration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Migration means”?",
+      "options": [
+        "Database Migration",
+        "Environments must stay aligned but distinct.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Migration fits”?",
+      "options": [
+        "The diagram below places Database Migration alongside the core concepts of enterprise DBA operations.",
+        "Maintenance",
+        "Immediate"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Migration alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Migration in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Migration.",
+        "The following comparison captures the distinctions that matter most when working with Database Migration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Migration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Migration”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Migration.",
+        "The first example establishes the relevant state.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Migration is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

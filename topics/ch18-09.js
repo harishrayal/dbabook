@@ -181,6 +181,312 @@ Loop over the server list (optionally in parallel), use Invoke-Sqlcmd against ms
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "SQL Server PowerShell Module",
+        "Where-Object",
+        "@params"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server PowerShell Module within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server PowerShell Module fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server PowerShell Module in practice”?",
+      "options": [
+        "With SQL Server PowerShell Module, prefer measured, reversible changes.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server PowerShell Module”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server PowerShell Module. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "SQL Server PowerShell Module",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server PowerShell Module with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server PowerShell Module means”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Daily",
+        "SQL Server PowerShell Module"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server PowerShell Module fits”?",
+      "options": [
+        "With SQL Server PowerShell Module, prefer measured, reversible changes.",
+        "Daily",
+        "The diagram below places SQL Server PowerShell Module alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server PowerShell Module alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server PowerShell Module in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server PowerShell Module.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server PowerShell Module:",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server PowerShell Module:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server PowerShell Module”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Use the following as a starting point when investigating SQL Server PowerShell Module."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "SQL Server PowerShell Module",
+        "Where-Object",
+        "@params"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server PowerShell Module within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server PowerShell Module fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server PowerShell Module in practice”?",
+      "options": [
+        "With SQL Server PowerShell Module, prefer measured, reversible changes.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server PowerShell Module”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server PowerShell Module. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "SQL Server PowerShell Module",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server PowerShell Module with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server PowerShell Module means”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Daily",
+        "SQL Server PowerShell Module"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server PowerShell Module fits”?",
+      "options": [
+        "With SQL Server PowerShell Module, prefer measured, reversible changes.",
+        "Daily",
+        "The diagram below places SQL Server PowerShell Module alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server PowerShell Module alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server PowerShell Module in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server PowerShell Module.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server PowerShell Module:",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server PowerShell Module:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server PowerShell Module”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Use the following as a starting point when investigating SQL Server PowerShell Module."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "SQL Server PowerShell Module",
+        "Where-Object",
+        "@params"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server PowerShell Module within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server PowerShell Module fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server PowerShell Module in practice”?",
+      "options": [
+        "With SQL Server PowerShell Module, prefer measured, reversible changes.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server PowerShell Module”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server PowerShell Module. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "SQL Server PowerShell Module",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server PowerShell Module with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server PowerShell Module means”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Daily",
+        "SQL Server PowerShell Module"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server PowerShell Module fits”?",
+      "options": [
+        "With SQL Server PowerShell Module, prefer measured, reversible changes.",
+        "Daily",
+        "The diagram below places SQL Server PowerShell Module alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server PowerShell Module alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server PowerShell Module in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server PowerShell Module.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server PowerShell Module:",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server PowerShell Module:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server PowerShell Module”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Use the following as a starting point when investigating SQL Server PowerShell Module."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server PowerShell Module is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

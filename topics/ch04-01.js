@@ -194,6 +194,312 @@ ORDER  BY wait_time_ms DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The layered architecture”?",
+      "options": [
+        "runnable",
+        "sys.dm_os_schedulers",
+        "0 has been built from the same three cooperating subsystems, plus the client-facing protocol path:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every version of SQL Server since 7.0 has been built from the same three cooperating subsystems, plus the client-facing protocol path:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Instead it maintains a pool of _____ (thread pool entries) that execute tasks (units of work such as a query, a log write, or a background cleanup).”",
+      "options": [
+        "SQLOS",
+        "workers",
+        "Storage engine"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQLOS does not create an OS thread per query. Instead it maintains a pool of workers (thread pool entries) that execute tasks (units of work such as a query, a log write, or a background cleanup). One scheduler exists per visible logical processor; each scheduler has its own run queue and hands its worker a slice of CPU time before the worker voluntarily yields.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Memory is divided into _____ (mirroring NUMA) and claimed by named memory clerks.”",
+      "options": [
+        "nodes",
+        "SQLOS",
+        "workers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Memory is divided into nodes (mirroring NUMA) and claimed by named memory clerks. The buffer pool (topic ch04-06) and plan cache (ch04-08) are simply the two largest clerks; everything else — lock manager, thread structures, columnstore, replication — takes a slice from the same pool.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “End-to-end path of one batch”?",
+      "options": [
+        "sys.dm_os_schedulers",
+        "sys.dm_os_workers",
+        "Follow a single SELECT through the stack — this path is the backbone of every performance topic that follows:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Follow a single SELECT through the stack — this path is the backbone of every performance topic that follows:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mapping waits to layers”?",
+      "options": [
+        "sys.dm_os_tasks",
+        "The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.",
+        "sys.dm_os_workers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Seeing it live”?",
+      "options": [
+        "Two queries establish the architectural baseline of any instance — how many schedulers are working right now, and which subsystem they are waiting on:",
+        "sys.dm_os_tasks",
+        "sys.dm_os_sys_info"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two queries establish the architectural baseline of any instance — how many schedulers are working right now, and which subsystem they are waiting on:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The layered architecture”?",
+      "options": [
+        "nodes",
+        "which subsystem",
+        "The engines never talk to Windows directly for CPU or I/O — they ask SQLOS."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The engines never talk to Windows directly for CPU or I/O — they ask SQLOS. That separation is why SQL Server manages its own threads instead of one thread per request, and why wait statistics (the DBA's primary diagnostic tool) are generated in the first place.”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, a scheduler with many _____ tasks but no progress means CPU saturation — you will see SOS_SCHEDULER_YIELD.”",
+      "options": [
+        "Worker thread limit",
+        "runnable",
+        "Task"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two consequences matter in production. First, a scheduler with many runnable tasks but no progress means CPU saturation — you will see SOS_SCHEDULER_YIELD. Second, when workers leave SQL's control (calling a web service, linked server, or CLR external code) the scheduler keeps running other work, but those sessions occupy pooled workers and can eventually starve everyone else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Reading memory at clerk level tells you _____ is consuming the instance, not merely that memory is “used”.”",
+      "options": [
+        "which subsystem",
+        "Worker thread limit",
+        "Preemptive switch"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “If MEMORYCLERK_SQLBUFFERPOOL dwarfs everything else, you are looking at data pages; if MEMORYCLERK_SQLPLAN is unexpectedly large, ad-hoc plans are accumulating (see ch04-08). Reading memory at clerk level tells you which subsystem is consuming the instance, not merely that memory is “used”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “End-to-end path of one batch”?",
+      "options": [
+        "which subsystem",
+        "The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.",
+        "Every wait you ever observe is a pause somewhere on this list: PAGEIOLATCH_SH at step 5, LCK_M_X at step 6, CXPACKET during a parallel step 4/5, and so on."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every wait you ever observe is a pause somewhere on this list: PAGEIOLATCH_SH at step 5, LCK_M_X at step 6, CXPACKET during a parallel step 4/5, and so on.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The layered architecture”?",
+      "options": [
+        "runnable",
+        "sys.dm_os_schedulers",
+        "0 has been built from the same three cooperating subsystems, plus the client-facing protocol path:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every version of SQL Server since 7.0 has been built from the same three cooperating subsystems, plus the client-facing protocol path:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Instead it maintains a pool of _____ (thread pool entries) that execute tasks (units of work such as a query, a log write, or a background cleanup).”",
+      "options": [
+        "SQLOS",
+        "workers",
+        "Storage engine"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQLOS does not create an OS thread per query. Instead it maintains a pool of workers (thread pool entries) that execute tasks (units of work such as a query, a log write, or a background cleanup). One scheduler exists per visible logical processor; each scheduler has its own run queue and hands its worker a slice of CPU time before the worker voluntarily yields.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Memory is divided into _____ (mirroring NUMA) and claimed by named memory clerks.”",
+      "options": [
+        "nodes",
+        "SQLOS",
+        "workers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Memory is divided into nodes (mirroring NUMA) and claimed by named memory clerks. The buffer pool (topic ch04-06) and plan cache (ch04-08) are simply the two largest clerks; everything else — lock manager, thread structures, columnstore, replication — takes a slice from the same pool.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “End-to-end path of one batch”?",
+      "options": [
+        "sys.dm_os_schedulers",
+        "sys.dm_os_workers",
+        "Follow a single SELECT through the stack — this path is the backbone of every performance topic that follows:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Follow a single SELECT through the stack — this path is the backbone of every performance topic that follows:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mapping waits to layers”?",
+      "options": [
+        "sys.dm_os_tasks",
+        "The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.",
+        "sys.dm_os_workers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Seeing it live”?",
+      "options": [
+        "Two queries establish the architectural baseline of any instance — how many schedulers are working right now, and which subsystem they are waiting on:",
+        "sys.dm_os_tasks",
+        "sys.dm_os_sys_info"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two queries establish the architectural baseline of any instance — how many schedulers are working right now, and which subsystem they are waiting on:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The layered architecture”?",
+      "options": [
+        "nodes",
+        "which subsystem",
+        "The engines never talk to Windows directly for CPU or I/O — they ask SQLOS."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The engines never talk to Windows directly for CPU or I/O — they ask SQLOS. That separation is why SQL Server manages its own threads instead of one thread per request, and why wait statistics (the DBA's primary diagnostic tool) are generated in the first place.”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, a scheduler with many _____ tasks but no progress means CPU saturation — you will see SOS_SCHEDULER_YIELD.”",
+      "options": [
+        "Worker thread limit",
+        "runnable",
+        "Task"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two consequences matter in production. First, a scheduler with many runnable tasks but no progress means CPU saturation — you will see SOS_SCHEDULER_YIELD. Second, when workers leave SQL's control (calling a web service, linked server, or CLR external code) the scheduler keeps running other work, but those sessions occupy pooled workers and can eventually starve everyone else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Reading memory at clerk level tells you _____ is consuming the instance, not merely that memory is “used”.”",
+      "options": [
+        "which subsystem",
+        "Worker thread limit",
+        "Preemptive switch"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “If MEMORYCLERK_SQLBUFFERPOOL dwarfs everything else, you are looking at data pages; if MEMORYCLERK_SQLPLAN is unexpectedly large, ad-hoc plans are accumulating (see ch04-08). Reading memory at clerk level tells you which subsystem is consuming the instance, not merely that memory is “used”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “End-to-end path of one batch”?",
+      "options": [
+        "which subsystem",
+        "The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.",
+        "Every wait you ever observe is a pause somewhere on this list: PAGEIOLATCH_SH at step 5, LCK_M_X at step 6, CXPACKET during a parallel step 4/5, and so on."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every wait you ever observe is a pause somewhere on this list: PAGEIOLATCH_SH at step 5, LCK_M_X at step 6, CXPACKET during a parallel step 4/5, and so on.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The layered architecture”?",
+      "options": [
+        "runnable",
+        "sys.dm_os_schedulers",
+        "0 has been built from the same three cooperating subsystems, plus the client-facing protocol path:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every version of SQL Server since 7.0 has been built from the same three cooperating subsystems, plus the client-facing protocol path:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Instead it maintains a pool of _____ (thread pool entries) that execute tasks (units of work such as a query, a log write, or a background cleanup).”",
+      "options": [
+        "SQLOS",
+        "workers",
+        "Storage engine"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQLOS does not create an OS thread per query. Instead it maintains a pool of workers (thread pool entries) that execute tasks (units of work such as a query, a log write, or a background cleanup). One scheduler exists per visible logical processor; each scheduler has its own run queue and hands its worker a slice of CPU time before the worker voluntarily yields.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Memory is divided into _____ (mirroring NUMA) and claimed by named memory clerks.”",
+      "options": [
+        "nodes",
+        "SQLOS",
+        "workers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Memory is divided into nodes (mirroring NUMA) and claimed by named memory clerks. The buffer pool (topic ch04-06) and plan cache (ch04-08) are simply the two largest clerks; everything else — lock manager, thread structures, columnstore, replication — takes a slice from the same pool.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “End-to-end path of one batch”?",
+      "options": [
+        "sys.dm_os_schedulers",
+        "sys.dm_os_workers",
+        "Follow a single SELECT through the stack — this path is the backbone of every performance topic that follows:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Follow a single SELECT through the stack — this path is the backbone of every performance topic that follows:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mapping waits to layers”?",
+      "options": [
+        "sys.dm_os_tasks",
+        "The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.",
+        "sys.dm_os_workers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Seeing it live”?",
+      "options": [
+        "Two queries establish the architectural baseline of any instance — how many schedulers are working right now, and which subsystem they are waiting on:",
+        "sys.dm_os_tasks",
+        "sys.dm_os_sys_info"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two queries establish the architectural baseline of any instance — how many schedulers are working right now, and which subsystem they are waiting on:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The layered architecture”?",
+      "options": [
+        "nodes",
+        "which subsystem",
+        "The engines never talk to Windows directly for CPU or I/O — they ask SQLOS."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The engines never talk to Windows directly for CPU or I/O — they ask SQLOS. That separation is why SQL Server manages its own threads instead of one thread per request, and why wait statistics (the DBA's primary diagnostic tool) are generated in the first place.”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, a scheduler with many _____ tasks but no progress means CPU saturation — you will see SOS_SCHEDULER_YIELD.”",
+      "options": [
+        "Worker thread limit",
+        "runnable",
+        "Task"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two consequences matter in production. First, a scheduler with many runnable tasks but no progress means CPU saturation — you will see SOS_SCHEDULER_YIELD. Second, when workers leave SQL's control (calling a web service, linked server, or CLR external code) the scheduler keeps running other work, but those sessions occupy pooled workers and can eventually starve everyone else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Reading memory at clerk level tells you _____ is consuming the instance, not merely that memory is “used”.”",
+      "options": [
+        "which subsystem",
+        "Worker thread limit",
+        "Preemptive switch"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “If MEMORYCLERK_SQLBUFFERPOOL dwarfs everything else, you are looking at data pages; if MEMORYCLERK_SQLPLAN is unexpectedly large, ad-hoc plans are accumulating (see ch04-08). Reading memory at clerk level tells you which subsystem is consuming the instance, not merely that memory is “used”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “End-to-end path of one batch”?",
+      "options": [
+        "which subsystem",
+        "The fastest triage technique in SQL Server: run wait statistics first, then read them as a map of the stack.",
+        "Every wait you ever observe is a pause somewhere on this list: PAGEIOLATCH_SH at step 5, LCK_M_X at step 6, CXPACKET during a parallel step 4/5, and so on."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every wait you ever observe is a pause somewhere on this list: PAGEIOLATCH_SH at step 5, LCK_M_X at step 6, CXPACKET during a parallel step 4/5, and so on.”"
+    }
+  ],
   takeaways: [
     "SQL Server = protocol layer + relational engine + storage engine + SQLOS, with SQLOS owning CPU, memory and I/O for everything above it",
     "SQLOS runs schedulers (one per logical CPU), pooled workers and tasks — not one OS thread per query",

@@ -165,6 +165,312 @@ Compare its plan and runtime stats in Query Store, check for plan changes and st
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Selective lookups",
+        "Performance Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Performance Troubleshooting within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Performance Troubleshooting fits”?",
+      "options": [
+        "Avoid at scale via covering indexes",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Performance Troubleshooting in practice”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Performance Troubleshooting”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Performance Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Performance Troubleshooting means”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Performance Troubleshooting fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The diagram below places Performance Troubleshooting alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Performance Troubleshooting alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Performance Troubleshooting in practice”?",
+      "options": [
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Performance Troubleshooting:",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Performance Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Performance Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "With Performance Troubleshooting, prefer measured, reversible changes.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Selective lookups",
+        "Performance Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Performance Troubleshooting within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Performance Troubleshooting fits”?",
+      "options": [
+        "Avoid at scale via covering indexes",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Performance Troubleshooting in practice”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Performance Troubleshooting”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Performance Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Performance Troubleshooting means”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Performance Troubleshooting fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The diagram below places Performance Troubleshooting alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Performance Troubleshooting alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Performance Troubleshooting in practice”?",
+      "options": [
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Performance Troubleshooting:",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Performance Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Performance Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "With Performance Troubleshooting, prefer measured, reversible changes.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Selective lookups",
+        "Performance Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Performance Troubleshooting within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Performance Troubleshooting fits”?",
+      "options": [
+        "Avoid at scale via covering indexes",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Performance Troubleshooting in practice”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Performance Troubleshooting”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Performance Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Performance Troubleshooting means”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Performance Troubleshooting fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The diagram below places Performance Troubleshooting alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Performance Troubleshooting alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Performance Troubleshooting in practice”?",
+      "options": [
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Performance Troubleshooting:",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Performance Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Performance Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "With Performance Troubleshooting, prefer measured, reversible changes.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    }
+  ],
   takeaways: [
     "Performance Troubleshooting is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

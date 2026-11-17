@@ -178,6 +178,312 @@ It captures log records generated after the last scheduled backup, usually befor
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "RPO and RTO Planning",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine RPO and RTO Planning within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Planning fits”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Planning in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RPO and RTO Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "End of the sequence",
+        "RPO and RTO Planning",
+        "More backups to apply"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates RPO and RTO Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RPO and RTO Planning means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Planning in practice”?",
+      "options": [
+        "With RPO and RTO Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "RPO and RTO Planning",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine RPO and RTO Planning within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Planning fits”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Planning in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RPO and RTO Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "End of the sequence",
+        "RPO and RTO Planning",
+        "More backups to apply"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates RPO and RTO Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RPO and RTO Planning means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Planning in practice”?",
+      "options": [
+        "With RPO and RTO Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "RPO and RTO Planning",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine RPO and RTO Planning within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Planning fits”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Planning in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RPO and RTO Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "End of the sequence",
+        "RPO and RTO Planning",
+        "More backups to apply"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates RPO and RTO Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RPO and RTO Planning means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places RPO and RTO Planning alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Planning in practice”?",
+      "options": [
+        "With RPO and RTO Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RPO and RTO Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "RPO and RTO Planning is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

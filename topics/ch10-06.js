@@ -183,6 +183,312 @@ A proxy maps a job step to a credential so the step can run under a different, a
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job Schedules",
+        "The following comparison captures the distinctions that matter most when working with Job Schedules:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Job Schedules within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Schedules fits”?",
+      "options": [
+        "Job never runs",
+        "Partial completion",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Schedules in practice”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Schedules”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Job never runs",
+        "Partial completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Schedules. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Job Schedules",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Job Schedules with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Schedules means”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Schedules fits”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places Job Schedules alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Schedules alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Schedules in practice”?",
+      "options": [
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Job Schedules:",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Schedules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Schedules”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job Schedules",
+        "The following comparison captures the distinctions that matter most when working with Job Schedules:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Job Schedules within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Schedules fits”?",
+      "options": [
+        "Job never runs",
+        "Partial completion",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Schedules in practice”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Schedules”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Job never runs",
+        "Partial completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Schedules. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Job Schedules",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Job Schedules with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Schedules means”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Schedules fits”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places Job Schedules alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Schedules alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Schedules in practice”?",
+      "options": [
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Job Schedules:",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Schedules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Schedules”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job Schedules",
+        "The following comparison captures the distinctions that matter most when working with Job Schedules:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Job Schedules within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Schedules fits”?",
+      "options": [
+        "Job never runs",
+        "Partial completion",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Schedules in practice”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Schedules”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Job never runs",
+        "Partial completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Schedules. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Job Schedules",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Job Schedules with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Schedules means”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Schedules fits”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places Job Schedules alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Schedules alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Schedules in practice”?",
+      "options": [
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Job Schedules:",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Schedules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Schedules”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Job Schedules is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

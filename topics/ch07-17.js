@@ -193,6 +193,312 @@ ORDER BY bs.backup_start_date DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Each database carries a _____ — a small structure that marks which extents (8 pages, 64 KB) have been modified since the last full backup.”",
+      "options": [
+        "Differentials trade restore speed against backup time.",
+        "differential bitmap",
+        "The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Each database carries a differential bitmap — a small structure that marks which extents (8 pages, 64 KB) have been modified since the last full backup. A differential backup reads that bitmap and copies only the changed extents, plus everything from the transaction log since that point.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The differential base is _____ recorded in msdb at the moment the differential runs.”",
+      "options": [
+        "the most recent full backup of that database",
+        "Differentials trade restore speed against backup time.",
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The differential base is the most recent full backup of that database recorded in msdb at the moment the differential runs. Three rules decide it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Restore order is fixed: _____.”",
+      "options": [
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…",
+        "Long roll-forward during recovery",
+        "full base → most recent differential → every log backup taken after that differential"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Restore order is fixed: full base → most recent differential → every log backup taken after that differential. Each step except the last runs with NORECOVERY so the next restore can be applied.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing a differential cadence”?",
+      "options": [
+        "A regular full backup becomes the new base",
+        "Differentials trade restore speed against backup time.",
+        "Log"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Differentials trade restore speed against backup time. The more churn since the base, the larger the differential grows — so a weekly full plus daily differentials works for stable data but degrades on a write-heavy database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the chain with msdb”?",
+      "options": [
+        "msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:",
+        "A regular full backup becomes the new base",
+        "A COPY ONLY full backup never becomes the base"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a differential backup contains”?",
+      "options": [
+        "A COPY ONLY full backup never becomes the base",
+        "Restoring a full backup re-establishes the base",
+        "That makes differentials fundamentally different from the other types:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “That makes differentials fundamentally different from the other types:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server picks the base”?",
+      "options": [
+        "newer",
+        "The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid.",
+        "Restoring a full backup re-establishes the base"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid. When you restore, SQL Server compares the differential's base with the LSN of the restored full — a mismatch is rejected, because a differential built on one base cannot roll forward another.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Practical notes: if you restore an _____ differential you must first restore the exact full it was built from; restoring a full that is newer than the differential's base makes SQL Server reject the differential.”",
+      "options": [
+        "older",
+        "msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:",
+        "If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken —…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Practical notes: if you restore an older differential you must first restore the exact full it was built from; restoring a full that is newer than the differential's base makes SQL Server reject the differential. And the differential you choose must be the most recent one you intend to skip to — differentials do not stack on each other.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing a differential cadence”?",
+      "options": [
+        "most recent one you intend to skip to",
+        "differential bitmap",
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting the diff drift toward full size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the chain with msdb”?",
+      "options": [
+        "That makes differentials fundamentally different from the other types:",
+        "If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken —…",
+        "differential bitmap"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken — find that out during verification, not during an incident.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Each database carries a _____ — a small structure that marks which extents (8 pages, 64 KB) have been modified since the last full backup.”",
+      "options": [
+        "Differentials trade restore speed against backup time.",
+        "differential bitmap",
+        "The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Each database carries a differential bitmap — a small structure that marks which extents (8 pages, 64 KB) have been modified since the last full backup. A differential backup reads that bitmap and copies only the changed extents, plus everything from the transaction log since that point.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The differential base is _____ recorded in msdb at the moment the differential runs.”",
+      "options": [
+        "the most recent full backup of that database",
+        "Differentials trade restore speed against backup time.",
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The differential base is the most recent full backup of that database recorded in msdb at the moment the differential runs. Three rules decide it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Restore order is fixed: _____.”",
+      "options": [
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…",
+        "Long roll-forward during recovery",
+        "full base → most recent differential → every log backup taken after that differential"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Restore order is fixed: full base → most recent differential → every log backup taken after that differential. Each step except the last runs with NORECOVERY so the next restore can be applied.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing a differential cadence”?",
+      "options": [
+        "A regular full backup becomes the new base",
+        "Differentials trade restore speed against backup time.",
+        "Log"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Differentials trade restore speed against backup time. The more churn since the base, the larger the differential grows — so a weekly full plus daily differentials works for stable data but degrades on a write-heavy database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the chain with msdb”?",
+      "options": [
+        "msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:",
+        "A regular full backup becomes the new base",
+        "A COPY ONLY full backup never becomes the base"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a differential backup contains”?",
+      "options": [
+        "A COPY ONLY full backup never becomes the base",
+        "Restoring a full backup re-establishes the base",
+        "That makes differentials fundamentally different from the other types:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “That makes differentials fundamentally different from the other types:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server picks the base”?",
+      "options": [
+        "newer",
+        "The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid.",
+        "Restoring a full backup re-establishes the base"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid. When you restore, SQL Server compares the differential's base with the LSN of the restored full — a mismatch is rejected, because a differential built on one base cannot roll forward another.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Practical notes: if you restore an _____ differential you must first restore the exact full it was built from; restoring a full that is newer than the differential's base makes SQL Server reject the differential.”",
+      "options": [
+        "older",
+        "msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:",
+        "If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken —…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Practical notes: if you restore an older differential you must first restore the exact full it was built from; restoring a full that is newer than the differential's base makes SQL Server reject the differential. And the differential you choose must be the most recent one you intend to skip to — differentials do not stack on each other.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing a differential cadence”?",
+      "options": [
+        "most recent one you intend to skip to",
+        "differential bitmap",
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting the diff drift toward full size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the chain with msdb”?",
+      "options": [
+        "That makes differentials fundamentally different from the other types:",
+        "If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken —…",
+        "differential bitmap"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken — find that out during verification, not during an incident.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Each database carries a _____ — a small structure that marks which extents (8 pages, 64 KB) have been modified since the last full backup.”",
+      "options": [
+        "Differentials trade restore speed against backup time.",
+        "differential bitmap",
+        "The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Each database carries a differential bitmap — a small structure that marks which extents (8 pages, 64 KB) have been modified since the last full backup. A differential backup reads that bitmap and copies only the changed extents, plus everything from the transaction log since that point.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The differential base is _____ recorded in msdb at the moment the differential runs.”",
+      "options": [
+        "the most recent full backup of that database",
+        "Differentials trade restore speed against backup time.",
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The differential base is the most recent full backup of that database recorded in msdb at the moment the differential runs. Three rules decide it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Restore order is fixed: _____.”",
+      "options": [
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…",
+        "Long roll-forward during recovery",
+        "full base → most recent differential → every log backup taken after that differential"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Restore order is fixed: full base → most recent differential → every log backup taken after that differential. Each step except the last runs with NORECOVERY so the next restore can be applied.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing a differential cadence”?",
+      "options": [
+        "A regular full backup becomes the new base",
+        "Differentials trade restore speed against backup time.",
+        "Log"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Differentials trade restore speed against backup time. The more churn since the base, the larger the differential grows — so a weekly full plus daily differentials works for stable data but degrades on a write-heavy database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the chain with msdb”?",
+      "options": [
+        "msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:",
+        "A regular full backup becomes the new base",
+        "A COPY ONLY full backup never becomes the base"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a differential backup contains”?",
+      "options": [
+        "A COPY ONLY full backup never becomes the base",
+        "Restoring a full backup re-establishes the base",
+        "That makes differentials fundamentally different from the other types:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “That makes differentials fundamentally different from the other types:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server picks the base”?",
+      "options": [
+        "newer",
+        "The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid.",
+        "Restoring a full backup re-establishes the base"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The base is recorded in the backup headers as differential_base_lsn and differential_base_uuid. When you restore, SQL Server compares the differential's base with the LSN of the restored full — a mismatch is rejected, because a differential built on one base cannot roll forward another.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Practical notes: if you restore an _____ differential you must first restore the exact full it was built from; restoring a full that is newer than the differential's base makes SQL Server reject the differential.”",
+      "options": [
+        "older",
+        "msdb records every successful backup with its first/last LSN, type, and duration — enough to prove a chain is intact before anyone needs it:",
+        "If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken —…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Practical notes: if you restore an older differential you must first restore the exact full it was built from; restoring a full that is newer than the differential's base makes SQL Server reject the differential. And the differential you choose must be the most recent one you intend to skip to — differentials do not stack on each other.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing a differential cadence”?",
+      "options": [
+        "most recent one you intend to skip to",
+        "differential bitmap",
+        "A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A useful rule: when a differential consistently exceeds roughly half the size of the full, taking more frequent fulls (or dropping differentials entirely) is cheaper than letting the diff drift toward full size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the chain with msdb”?",
+      "options": [
+        "That makes differentials fundamentally different from the other types:",
+        "If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken —…",
+        "differential bitmap"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If the gap between the full's last_lsn and the differential's differential_base_lsn does not line up, or the base full has already been deleted by retention, the chain is broken — find that out during verification, not during an incident.”"
+    }
+  ],
   takeaways: [
     "A differential copies only extents changed since the differential base (tracked by the differential bitmap)",
     "The base is the most recent regular full backup — COPY ONLY fulls never create or reset it",

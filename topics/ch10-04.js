@@ -163,6 +163,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, or configu
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Jobs fits”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Jobs in practice”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Jobs”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:",
+        "Job history is the diagnostic record.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job never runs",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Jobs means”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Jobs fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Jobs in practice”?",
+      "options": [
+        "With SQL Server Agent Jobs, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Jobs fits”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Jobs in practice”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Jobs”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:",
+        "Job history is the diagnostic record.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job never runs",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Jobs means”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Jobs fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Jobs in practice”?",
+      "options": [
+        "With SQL Server Agent Jobs, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Jobs fits”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Jobs in practice”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Jobs”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:",
+        "Job history is the diagnostic record.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job never runs",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Jobs means”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Jobs fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Jobs in practice”?",
+      "options": [
+        "With SQL Server Agent Jobs, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    }
+  ],
   takeaways: [
     "SQL Server Agent Jobs is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

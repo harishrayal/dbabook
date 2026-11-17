@@ -181,6 +181,312 @@ By impact and urgency against defined levels: total outage or data loss is Sev1,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Transaction Log Full",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Full within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Full fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Full in practice”?",
+      "options": [
+        "With Transaction Log Full, prefer measured, reversible changes.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Full”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Communication is part of the job.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Full. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Communication is part of the job.",
+        "Transaction Log Full",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Full with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Full means”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Full fits”?",
+      "options": [
+        "With Transaction Log Full, prefer measured, reversible changes.",
+        "Failover / restart",
+        "The diagram below places Transaction Log Full alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Full alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Full in practice”?",
+      "options": [
+        "Transaction Log Full sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Full:",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Full:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Full”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Transaction Log Full sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Transaction Log Full",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Full within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Full fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Full in practice”?",
+      "options": [
+        "With Transaction Log Full, prefer measured, reversible changes.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Full”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Communication is part of the job.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Full. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Communication is part of the job.",
+        "Transaction Log Full",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Full with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Full means”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Full fits”?",
+      "options": [
+        "With Transaction Log Full, prefer measured, reversible changes.",
+        "Failover / restart",
+        "The diagram below places Transaction Log Full alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Full alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Full in practice”?",
+      "options": [
+        "Transaction Log Full sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Full:",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Full:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Full”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Transaction Log Full sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Transaction Log Full",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Full within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Full fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Full in practice”?",
+      "options": [
+        "With Transaction Log Full, prefer measured, reversible changes.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Full”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Communication is part of the job.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Full. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Communication is part of the job.",
+        "Transaction Log Full",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Full with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Full means”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Full fits”?",
+      "options": [
+        "With Transaction Log Full, prefer measured, reversible changes.",
+        "Failover / restart",
+        "The diagram below places Transaction Log Full alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Full alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Full in practice”?",
+      "options": [
+        "Transaction Log Full sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Full:",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Full:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Full”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Transaction Log Full sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Transaction Log Full is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

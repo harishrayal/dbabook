@@ -181,6 +181,312 @@ Track daily size from sys.dm_io_virtual_file_stats or a snapshot table, compute 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics Maintenance",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Statistics Maintenance within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Maintenance fits”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Next, verify the result and capture a baseline.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Maintenance in practice”?",
+      "options": [
+        "No benefit",
+        "Online, low impact",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Maintenance”?",
+      "options": [
+        "No benefit",
+        "Theory becomes useful when you can apply it.",
+        "With Statistics Maintenance, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Statistics Maintenance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Maintenance windows must be negotiated and respected.",
+        "Statistics Maintenance sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "With Statistics Maintenance, prefer measured, reversible changes.",
+        "Statistics Maintenance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Statistics Maintenance with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Statistics Maintenance means”?",
+      "options": [
+        "Statistics Maintenance",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Maintenance fits”?",
+      "options": [
+        "The diagram below places Statistics Maintenance alongside the core concepts of capacity planning and database maintenance.",
+        "Online, low impact",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Statistics Maintenance alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Maintenance in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Statistics Maintenance.",
+        "The following comparison captures the distinctions that matter most when working with Statistics Maintenance:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Statistics Maintenance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Maintenance”?",
+      "options": [
+        "Use the following as a starting point when investigating Statistics Maintenance.",
+        "The first example establishes the relevant state.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics Maintenance",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Statistics Maintenance within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Maintenance fits”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Next, verify the result and capture a baseline.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Maintenance in practice”?",
+      "options": [
+        "No benefit",
+        "Online, low impact",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Maintenance”?",
+      "options": [
+        "No benefit",
+        "Theory becomes useful when you can apply it.",
+        "With Statistics Maintenance, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Statistics Maintenance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Maintenance windows must be negotiated and respected.",
+        "Statistics Maintenance sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "With Statistics Maintenance, prefer measured, reversible changes.",
+        "Statistics Maintenance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Statistics Maintenance with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Statistics Maintenance means”?",
+      "options": [
+        "Statistics Maintenance",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Maintenance fits”?",
+      "options": [
+        "The diagram below places Statistics Maintenance alongside the core concepts of capacity planning and database maintenance.",
+        "Online, low impact",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Statistics Maintenance alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Maintenance in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Statistics Maintenance.",
+        "The following comparison captures the distinctions that matter most when working with Statistics Maintenance:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Statistics Maintenance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Maintenance”?",
+      "options": [
+        "Use the following as a starting point when investigating Statistics Maintenance.",
+        "The first example establishes the relevant state.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics Maintenance",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Statistics Maintenance within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Maintenance fits”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Next, verify the result and capture a baseline.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Maintenance in practice”?",
+      "options": [
+        "No benefit",
+        "Online, low impact",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Maintenance”?",
+      "options": [
+        "No benefit",
+        "Theory becomes useful when you can apply it.",
+        "With Statistics Maintenance, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Statistics Maintenance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Maintenance windows must be negotiated and respected.",
+        "Statistics Maintenance sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "With Statistics Maintenance, prefer measured, reversible changes.",
+        "Statistics Maintenance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Statistics Maintenance with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Statistics Maintenance means”?",
+      "options": [
+        "Statistics Maintenance",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Maintenance fits”?",
+      "options": [
+        "The diagram below places Statistics Maintenance alongside the core concepts of capacity planning and database maintenance.",
+        "Online, low impact",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Statistics Maintenance alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Maintenance in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Statistics Maintenance.",
+        "The following comparison captures the distinctions that matter most when working with Statistics Maintenance:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Statistics Maintenance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Maintenance”?",
+      "options": [
+        "Use the following as a starting point when investigating Statistics Maintenance.",
+        "The first example establishes the relevant state.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Statistics Maintenance is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

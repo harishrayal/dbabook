@@ -192,6 +192,312 @@ WITH STOPAT = '2026-11-16T14:07:33',
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ copies the log records generated since the previous log backup (or since the full/differential that started the chain) into a backup file, and advances the chain.”",
+      "options": [
+        "inactive",
+        "log backup",
+        "log backup cadence equals data loss exposure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In FULL or BULK_LOGGED recovery, every change is written to the transaction log first. A log backup copies the log records generated since the previous log backup (or since the full/differential that started the chain) into a backup file, and advances the chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “In FULL recovery, VLFs in the _____ region cannot be reused until a log backup covers them.”",
+      "options": [
+        "inactive",
+        "log backup cadence equals data loss exposure",
+        "Schedule them every few minutes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The log file is a ring of virtual log files (VLFs). In FULL recovery, VLFs in the inactive region cannot be reused until a log backup covers them. When log backups stop, the log grows — indefinitely, until the volume fills.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking log backups”?",
+      "options": [
+        "Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:",
+        "Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise.",
+        "The command is deliberately small — the options that matter are integrity and compression, exactly as with fulls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The command is deliberately small — the options that matter are integrity and compression, exactly as with fulls:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a point in time”?",
+      "options": [
+        "Take a full backup first, then resume log backups",
+        "Point-in-time recovery is the whole reason for the chain.",
+        "Re-establish FULL recovery and restart the chain with a full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Point-in-time recovery is the whole reason for the chain. Restore the full, then the differential, then log backups in order until the chain covers the target moment, and stop there:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why log backups fail”?",
+      "options": [
+        "Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:",
+        "Re-establish FULL recovery and restart the chain with a full backup",
+        "Take a full backup first, then resume log backups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The relationship is direct: _____.”",
+      "options": [
+        "Alert on age",
+        "SQL Server tells you exactly why it is waiting:",
+        "log backup cadence equals data loss exposure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The relationship is direct: log backup cadence equals data loss exposure. With log backups every 15 minutes, the worst-case loss is 15 minutes. With none, everything since the last full or differential is unprotected.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log backups, truncation, and growth”?",
+      "options": [
+        "inactive",
+        "SQL Server tells you exactly why it is waiting:",
+        "Restore up to the gap only; recover the rest from the application — then fix retention"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server tells you exactly why it is waiting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a point in time”?",
+      "options": [
+        "Use STANDBY instead of NORECOVERY when you need to let readers query the database between restores — useful when searching many log files for the right moment.",
+        "Restore up to the gap only; recover the rest from the application — then fix retention",
+        "Point-in-time recovery is the whole reason for the chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use STANDBY instead of NORECOVERY when you need to let readers query the database between restores — useful when searching many log files for the right moment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why log backups fail”?",
+      "options": [
+        "Restore up to the gap only; recover the rest from the application — then fix retention",
+        "Contents",
+        "Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log backups, truncation, and growth”?",
+      "options": [
+        "Prerequisites",
+        "If log_reuse_wait_desc reads LOG_BACKUP, the database is asking for a log backup — not a shrink, not a bigger file.",
+        "Contents"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If log_reuse_wait_desc reads LOG_BACKUP, the database is asking for a log backup — not a shrink, not a bigger file. Shrinking the log without taking the backup simply moves the problem to next week's autogrowth.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ copies the log records generated since the previous log backup (or since the full/differential that started the chain) into a backup file, and advances the chain.”",
+      "options": [
+        "inactive",
+        "log backup",
+        "log backup cadence equals data loss exposure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In FULL or BULK_LOGGED recovery, every change is written to the transaction log first. A log backup copies the log records generated since the previous log backup (or since the full/differential that started the chain) into a backup file, and advances the chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “In FULL recovery, VLFs in the _____ region cannot be reused until a log backup covers them.”",
+      "options": [
+        "inactive",
+        "log backup cadence equals data loss exposure",
+        "Schedule them every few minutes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The log file is a ring of virtual log files (VLFs). In FULL recovery, VLFs in the inactive region cannot be reused until a log backup covers them. When log backups stop, the log grows — indefinitely, until the volume fills.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking log backups”?",
+      "options": [
+        "Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:",
+        "Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise.",
+        "The command is deliberately small — the options that matter are integrity and compression, exactly as with fulls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The command is deliberately small — the options that matter are integrity and compression, exactly as with fulls:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a point in time”?",
+      "options": [
+        "Take a full backup first, then resume log backups",
+        "Point-in-time recovery is the whole reason for the chain.",
+        "Re-establish FULL recovery and restart the chain with a full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Point-in-time recovery is the whole reason for the chain. Restore the full, then the differential, then log backups in order until the chain covers the target moment, and stop there:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why log backups fail”?",
+      "options": [
+        "Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:",
+        "Re-establish FULL recovery and restart the chain with a full backup",
+        "Take a full backup first, then resume log backups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The relationship is direct: _____.”",
+      "options": [
+        "Alert on age",
+        "SQL Server tells you exactly why it is waiting:",
+        "log backup cadence equals data loss exposure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The relationship is direct: log backup cadence equals data loss exposure. With log backups every 15 minutes, the worst-case loss is 15 minutes. With none, everything since the last full or differential is unprotected.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log backups, truncation, and growth”?",
+      "options": [
+        "inactive",
+        "SQL Server tells you exactly why it is waiting:",
+        "Restore up to the gap only; recover the rest from the application — then fix retention"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server tells you exactly why it is waiting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a point in time”?",
+      "options": [
+        "Use STANDBY instead of NORECOVERY when you need to let readers query the database between restores — useful when searching many log files for the right moment.",
+        "Restore up to the gap only; recover the rest from the application — then fix retention",
+        "Point-in-time recovery is the whole reason for the chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use STANDBY instead of NORECOVERY when you need to let readers query the database between restores — useful when searching many log files for the right moment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why log backups fail”?",
+      "options": [
+        "Restore up to the gap only; recover the rest from the application — then fix retention",
+        "Contents",
+        "Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log backups, truncation, and growth”?",
+      "options": [
+        "Prerequisites",
+        "If log_reuse_wait_desc reads LOG_BACKUP, the database is asking for a log backup — not a shrink, not a bigger file.",
+        "Contents"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If log_reuse_wait_desc reads LOG_BACKUP, the database is asking for a log backup — not a shrink, not a bigger file. Shrinking the log without taking the backup simply moves the problem to next week's autogrowth.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ copies the log records generated since the previous log backup (or since the full/differential that started the chain) into a backup file, and advances the chain.”",
+      "options": [
+        "inactive",
+        "log backup",
+        "log backup cadence equals data loss exposure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In FULL or BULK_LOGGED recovery, every change is written to the transaction log first. A log backup copies the log records generated since the previous log backup (or since the full/differential that started the chain) into a backup file, and advances the chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “In FULL recovery, VLFs in the _____ region cannot be reused until a log backup covers them.”",
+      "options": [
+        "inactive",
+        "log backup cadence equals data loss exposure",
+        "Schedule them every few minutes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The log file is a ring of virtual log files (VLFs). In FULL recovery, VLFs in the inactive region cannot be reused until a log backup covers them. When log backups stop, the log grows — indefinitely, until the volume fills.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking log backups”?",
+      "options": [
+        "Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:",
+        "Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise.",
+        "The command is deliberately small — the options that matter are integrity and compression, exactly as with fulls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The command is deliberately small — the options that matter are integrity and compression, exactly as with fulls:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a point in time”?",
+      "options": [
+        "Take a full backup first, then resume log backups",
+        "Point-in-time recovery is the whole reason for the chain.",
+        "Re-establish FULL recovery and restart the chain with a full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Point-in-time recovery is the whole reason for the chain. Restore the full, then the differential, then log backups in order until the chain covers the target moment, and stop there:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why log backups fail”?",
+      "options": [
+        "Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:",
+        "Re-establish FULL recovery and restart the chain with a full backup",
+        "Take a full backup first, then resume log backups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log backup failures deserve faster reactions than full backup failures, because the log only keeps growing while they are absent:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The relationship is direct: _____.”",
+      "options": [
+        "Alert on age",
+        "SQL Server tells you exactly why it is waiting:",
+        "log backup cadence equals data loss exposure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The relationship is direct: log backup cadence equals data loss exposure. With log backups every 15 minutes, the worst-case loss is 15 minutes. With none, everything since the last full or differential is unprotected.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log backups, truncation, and growth”?",
+      "options": [
+        "inactive",
+        "SQL Server tells you exactly why it is waiting:",
+        "Restore up to the gap only; recover the rest from the application — then fix retention"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server tells you exactly why it is waiting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring to a point in time”?",
+      "options": [
+        "Use STANDBY instead of NORECOVERY when you need to let readers query the database between restores — useful when searching many log files for the right moment.",
+        "Restore up to the gap only; recover the rest from the application — then fix retention",
+        "Point-in-time recovery is the whole reason for the chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use STANDBY instead of NORECOVERY when you need to let readers query the database between restores — useful when searching many log files for the right moment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why log backups fail”?",
+      "options": [
+        "Restore up to the gap only; recover the rest from the application — then fix retention",
+        "Contents",
+        "Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Because a missing log backup is unrecoverable by definition, treat every log backup failure as a Sev-3 incident until proven otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log backups, truncation, and growth”?",
+      "options": [
+        "Prerequisites",
+        "If log_reuse_wait_desc reads LOG_BACKUP, the database is asking for a log backup — not a shrink, not a bigger file.",
+        "Contents"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If log_reuse_wait_desc reads LOG_BACKUP, the database is asking for a log backup — not a shrink, not a bigger file. Shrinking the log without taking the backup simply moves the problem to next week's autogrowth.”"
+    }
+  ],
   takeaways: [
     "Log backups capture log records since the previous one — their cadence IS your RPO",
     "They truncate the log; without them, the LDF grows until the volume fails",

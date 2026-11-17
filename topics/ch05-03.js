@@ -164,6 +164,312 @@ ORDER  BY service_name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When you run SQL Server setup and complete the wizard, you install an _____ — a self-contained copy of the database engine.”",
+      "options": [
+        "instance",
+        "security boundary",
+        "databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When you run SQL Server setup and complete the wizard, you install an instance — a self-contained copy of the database engine. One physical server (or VM) can host several instances, each behaving like its own database server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance-level versus database-level”?",
+      "options": [
+        "Set max server memory on every instance; total must leave room for the OS",
+        "Separate volumes, storage QoS, avoid co-locating heavy jobs",
+        "” questions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This distinction answers most “why can't they see it?” questions:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Instances isolate _____, not resources.”",
+      "options": [
+        "database",
+        "configuration and security",
+        "databases"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Instances isolate configuration and security, not resources. On one host, a runaway instance can starve its neighbours:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is installed”?",
+      "options": [
+        "Inventory queries you can run anywhere:",
+        "File placement, filegroups, containment",
+        "User data and transaction logs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Inventory queries you can run anywhere:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When to use multiple instances”?",
+      "options": [
+        "User data and transaction logs",
+        "configuration and security",
+        "Instances are a tool, not a default."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Instances are a tool, not a default. Honest guidance:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Applications connect to an _____, not to a server: the connection string names the host and the instance, and everything downstream — authentication, permissions, backups, jobs — is scoped to that instance.”",
+      "options": [
+        "resources",
+        "instance",
+        "configuration and security"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Applications connect to an instance, not to a server: the connection string names the host and the instance, and everything downstream — authentication, permissions, backups, jobs — is scoped to that instance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A login must exist on the instance _____ map to a user in each database — the classic orphaned user problem after a restore: the login survives in master, but the database user has no matching SID.”",
+      "options": [
+        "and",
+        "resources",
+        "every"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A login must exist on the instance and map to a user in each database — the classic orphaned user problem after a restore: the login survives in master, but the database user has no matching SID. Fix with ALTER USER … WITH LOGIN = … once you understand which layer is missing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instances share everything below them”?",
+      "options": [
+        "Instances are a tool, not a default.",
+        "one instance per production server",
+        "Classic consolidation bug: two instances each left at default max server memory on a 128 GB host — both believe they may use everything, the OS gets squeezed, and paging begins."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Classic consolidation bug: two instances each left at default max server memory on a 128 GB host — both believe they may use everything, the OS gets squeezed, and paging begins. Every instance on a shared box must have an explicit memory budget.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is installed”?",
+      "options": [
+        "Separate volumes, storage QoS, avoid co-locating heavy jobs",
+        "Combine both with a walk of HKLM:SOFTWAREMicrosoftMicrosoft SQL ServerInstance NamesSQL in PowerShell to enumerate instances the DMVs cannot see from inside — a named instance…",
+        "Set max server memory on every instance; total must leave room for the OS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Combine both with a walk of HKLM:SOFTWAREMicrosoftMicrosoft SQL ServerInstance NamesSQL in PowerShell to enumerate instances the DMVs cannot see from inside — a named instance that is stopped will not answer a query, but it is still installed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated default: _____.”",
+      "options": [
+        "one instance per production server",
+        "One instance",
+        "Multiple instances"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Opinionated default: one instance per production server. Add instances only for a named reason, and when you do, give each one explicit memory, port, and backup ownership — never leave shared hosts on defaults.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When you run SQL Server setup and complete the wizard, you install an _____ — a self-contained copy of the database engine.”",
+      "options": [
+        "instance",
+        "security boundary",
+        "databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When you run SQL Server setup and complete the wizard, you install an instance — a self-contained copy of the database engine. One physical server (or VM) can host several instances, each behaving like its own database server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance-level versus database-level”?",
+      "options": [
+        "Set max server memory on every instance; total must leave room for the OS",
+        "Separate volumes, storage QoS, avoid co-locating heavy jobs",
+        "” questions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This distinction answers most “why can't they see it?” questions:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Instances isolate _____, not resources.”",
+      "options": [
+        "database",
+        "configuration and security",
+        "databases"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Instances isolate configuration and security, not resources. On one host, a runaway instance can starve its neighbours:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is installed”?",
+      "options": [
+        "Inventory queries you can run anywhere:",
+        "File placement, filegroups, containment",
+        "User data and transaction logs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Inventory queries you can run anywhere:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When to use multiple instances”?",
+      "options": [
+        "User data and transaction logs",
+        "configuration and security",
+        "Instances are a tool, not a default."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Instances are a tool, not a default. Honest guidance:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Applications connect to an _____, not to a server: the connection string names the host and the instance, and everything downstream — authentication, permissions, backups, jobs — is scoped to that instance.”",
+      "options": [
+        "resources",
+        "instance",
+        "configuration and security"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Applications connect to an instance, not to a server: the connection string names the host and the instance, and everything downstream — authentication, permissions, backups, jobs — is scoped to that instance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A login must exist on the instance _____ map to a user in each database — the classic orphaned user problem after a restore: the login survives in master, but the database user has no matching SID.”",
+      "options": [
+        "and",
+        "resources",
+        "every"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A login must exist on the instance and map to a user in each database — the classic orphaned user problem after a restore: the login survives in master, but the database user has no matching SID. Fix with ALTER USER … WITH LOGIN = … once you understand which layer is missing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instances share everything below them”?",
+      "options": [
+        "Instances are a tool, not a default.",
+        "one instance per production server",
+        "Classic consolidation bug: two instances each left at default max server memory on a 128 GB host — both believe they may use everything, the OS gets squeezed, and paging begins."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Classic consolidation bug: two instances each left at default max server memory on a 128 GB host — both believe they may use everything, the OS gets squeezed, and paging begins. Every instance on a shared box must have an explicit memory budget.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is installed”?",
+      "options": [
+        "Separate volumes, storage QoS, avoid co-locating heavy jobs",
+        "Combine both with a walk of HKLM:SOFTWAREMicrosoftMicrosoft SQL ServerInstance NamesSQL in PowerShell to enumerate instances the DMVs cannot see from inside — a named instance…",
+        "Set max server memory on every instance; total must leave room for the OS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Combine both with a walk of HKLM:SOFTWAREMicrosoftMicrosoft SQL ServerInstance NamesSQL in PowerShell to enumerate instances the DMVs cannot see from inside — a named instance that is stopped will not answer a query, but it is still installed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated default: _____.”",
+      "options": [
+        "one instance per production server",
+        "One instance",
+        "Multiple instances"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Opinionated default: one instance per production server. Add instances only for a named reason, and when you do, give each one explicit memory, port, and backup ownership — never leave shared hosts on defaults.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When you run SQL Server setup and complete the wizard, you install an _____ — a self-contained copy of the database engine.”",
+      "options": [
+        "instance",
+        "security boundary",
+        "databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When you run SQL Server setup and complete the wizard, you install an instance — a self-contained copy of the database engine. One physical server (or VM) can host several instances, each behaving like its own database server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance-level versus database-level”?",
+      "options": [
+        "Set max server memory on every instance; total must leave room for the OS",
+        "Separate volumes, storage QoS, avoid co-locating heavy jobs",
+        "” questions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This distinction answers most “why can't they see it?” questions:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Instances isolate _____, not resources.”",
+      "options": [
+        "database",
+        "configuration and security",
+        "databases"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Instances isolate configuration and security, not resources. On one host, a runaway instance can starve its neighbours:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is installed”?",
+      "options": [
+        "Inventory queries you can run anywhere:",
+        "File placement, filegroups, containment",
+        "User data and transaction logs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Inventory queries you can run anywhere:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When to use multiple instances”?",
+      "options": [
+        "User data and transaction logs",
+        "configuration and security",
+        "Instances are a tool, not a default."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Instances are a tool, not a default. Honest guidance:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Applications connect to an _____, not to a server: the connection string names the host and the instance, and everything downstream — authentication, permissions, backups, jobs — is scoped to that instance.”",
+      "options": [
+        "resources",
+        "instance",
+        "configuration and security"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Applications connect to an instance, not to a server: the connection string names the host and the instance, and everything downstream — authentication, permissions, backups, jobs — is scoped to that instance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A login must exist on the instance _____ map to a user in each database — the classic orphaned user problem after a restore: the login survives in master, but the database user has no matching SID.”",
+      "options": [
+        "and",
+        "resources",
+        "every"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A login must exist on the instance and map to a user in each database — the classic orphaned user problem after a restore: the login survives in master, but the database user has no matching SID. Fix with ALTER USER … WITH LOGIN = … once you understand which layer is missing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instances share everything below them”?",
+      "options": [
+        "Instances are a tool, not a default.",
+        "one instance per production server",
+        "Classic consolidation bug: two instances each left at default max server memory on a 128 GB host — both believe they may use everything, the OS gets squeezed, and paging begins."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Classic consolidation bug: two instances each left at default max server memory on a 128 GB host — both believe they may use everything, the OS gets squeezed, and paging begins. Every instance on a shared box must have an explicit memory budget.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is installed”?",
+      "options": [
+        "Separate volumes, storage QoS, avoid co-locating heavy jobs",
+        "Combine both with a walk of HKLM:SOFTWAREMicrosoftMicrosoft SQL ServerInstance NamesSQL in PowerShell to enumerate instances the DMVs cannot see from inside — a named instance…",
+        "Set max server memory on every instance; total must leave room for the OS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Combine both with a walk of HKLM:SOFTWAREMicrosoftMicrosoft SQL ServerInstance NamesSQL in PowerShell to enumerate instances the DMVs cannot see from inside — a named instance that is stopped will not answer a query, but it is still installed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated default: _____.”",
+      "options": [
+        "one instance per production server",
+        "One instance",
+        "Multiple instances"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Opinionated default: one instance per production server. Add instances only for a named reason, and when you do, give each one explicit memory, port, and backup ownership — never leave shared hosts on defaults.”"
+    }
+  ],
   takeaways: [
     "An instance = one installation of the engine: its own services, system databases, ports, and security boundary",
     "Logins, jobs, and endpoints are instance-level; users, schemas, and objects are database-level",

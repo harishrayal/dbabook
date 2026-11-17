@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Audit and Compliance Requirements",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Audit and Compliance Requirements within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Audit and Compliance Requirements fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Audit and Compliance Requirements in practice”?",
+      "options": [
+        "Audit and Compliance Requirements is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Audit and Compliance Requirements”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Audit and Compliance Requirements is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Audit and Compliance Requirements. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:",
+        "Audit and Compliance Requirements",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Audit and Compliance Requirements with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Audit and Compliance Requirements means”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Audit and Compliance Requirements fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Audit and Compliance Requirements in practice”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Audit and Compliance Requirements”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Audit and Compliance Requirements",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Audit and Compliance Requirements within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Audit and Compliance Requirements fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Audit and Compliance Requirements in practice”?",
+      "options": [
+        "Audit and Compliance Requirements is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Audit and Compliance Requirements”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Audit and Compliance Requirements is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Audit and Compliance Requirements. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:",
+        "Audit and Compliance Requirements",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Audit and Compliance Requirements with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Audit and Compliance Requirements means”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Audit and Compliance Requirements fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Audit and Compliance Requirements in practice”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Audit and Compliance Requirements”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Audit and Compliance Requirements",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Audit and Compliance Requirements within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Audit and Compliance Requirements fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Audit and Compliance Requirements in practice”?",
+      "options": [
+        "Audit and Compliance Requirements is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Audit and Compliance Requirements”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Audit and Compliance Requirements is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Audit and Compliance Requirements. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:",
+        "Audit and Compliance Requirements",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Audit and Compliance Requirements with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Audit and Compliance Requirements means”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Audit and Compliance Requirements fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Audit and Compliance Requirements alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Audit and Compliance Requirements in practice”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Audit and Compliance Requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Audit and Compliance Requirements”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Audit and Compliance Requirements is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

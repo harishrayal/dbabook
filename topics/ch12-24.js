@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "I/O-Intensive Queries",
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine I/O-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where I/O-Intensive Queries fits”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “I/O-Intensive Queries in practice”?",
+      "options": [
+        "I/O-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with I/O-Intensive Queries”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "I/O-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to I/O-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:",
+        "I/O-Intensive Queries",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates I/O-Intensive Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What I/O-Intensive Queries means”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where I/O-Intensive Queries fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “I/O-Intensive Queries in practice”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with I/O-Intensive Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "I/O-Intensive Queries",
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine I/O-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where I/O-Intensive Queries fits”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “I/O-Intensive Queries in practice”?",
+      "options": [
+        "I/O-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with I/O-Intensive Queries”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "I/O-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to I/O-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:",
+        "I/O-Intensive Queries",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates I/O-Intensive Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What I/O-Intensive Queries means”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where I/O-Intensive Queries fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “I/O-Intensive Queries in practice”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with I/O-Intensive Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "I/O-Intensive Queries",
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine I/O-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where I/O-Intensive Queries fits”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “I/O-Intensive Queries in practice”?",
+      "options": [
+        "I/O-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with I/O-Intensive Queries”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "I/O-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to I/O-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:",
+        "I/O-Intensive Queries",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates I/O-Intensive Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What I/O-Intensive Queries means”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where I/O-Intensive Queries fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places I/O-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “I/O-Intensive Queries in practice”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with I/O-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with I/O-Intensive Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "I/O-Intensive Queries is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

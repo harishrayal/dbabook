@@ -186,6 +186,312 @@ Because the increment grows with the file, causing increasingly large and unpred
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "Disk Space Management",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Space Management within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Management fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Disk Space Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Management in practice”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Disk Space Management sits inside a larger system.",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Management”?",
+      "options": [
+        "Disk Space Management sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Space Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "Use the following as a starting point when investigating Disk Space Management.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "Disk Space Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Space Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Space Management means”?",
+      "options": [
+        "Use the following as a starting point when investigating Disk Space Management.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Management fits”?",
+      "options": [
+        "The diagram below places Disk Space Management alongside the core concepts of database storage and file management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Disk Space Management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Space Management alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Management in practice”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "The following comparison captures the distinctions that matter most when working with Disk Space Management:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Space Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Management”?",
+      "options": [
+        "Disk Space Management",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "Disk Space Management",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Space Management within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Management fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Disk Space Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Management in practice”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Disk Space Management sits inside a larger system.",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Management”?",
+      "options": [
+        "Disk Space Management sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Space Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "Use the following as a starting point when investigating Disk Space Management.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "Disk Space Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Space Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Space Management means”?",
+      "options": [
+        "Use the following as a starting point when investigating Disk Space Management.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Management fits”?",
+      "options": [
+        "The diagram below places Disk Space Management alongside the core concepts of database storage and file management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Disk Space Management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Space Management alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Management in practice”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "The following comparison captures the distinctions that matter most when working with Disk Space Management:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Space Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Management”?",
+      "options": [
+        "Disk Space Management",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "Disk Space Management",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Space Management within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Management fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Disk Space Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Management in practice”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Disk Space Management sits inside a larger system.",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Management”?",
+      "options": [
+        "Disk Space Management sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Space Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "Use the following as a starting point when investigating Disk Space Management.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "Disk Space Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Space Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Space Management means”?",
+      "options": [
+        "Use the following as a starting point when investigating Disk Space Management.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Management fits”?",
+      "options": [
+        "The diagram below places Disk Space Management alongside the core concepts of database storage and file management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Disk Space Management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Space Management alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Management in practice”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "The following comparison captures the distinctions that matter most when working with Disk Space Management:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Space Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Management”?",
+      "options": [
+        "Disk Space Management",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Disk Space Management is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

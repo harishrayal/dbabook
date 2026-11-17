@@ -176,6 +176,312 @@ RPO sets how often you must back up (maximum acceptable data loss) and RTO sets 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "System Database Backups",
+        "Use the following as a starting point when investigating System Database Backups."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine System Database Backups within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where System Database Backups fits”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "System Database Backups",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “System Database Backups in practice”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with System Database Backups”?",
+      "options": [
+        "System Database Backups is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to System Database Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "System Database Backups is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "System Database Backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates System Database Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What System Database Backups means”?",
+      "options": [
+        "Base full + latest diff",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where System Database Backups fits”?",
+      "options": [
+        "The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The full backup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “System Database Backups in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with System Database Backups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with System Database Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with System Database Backups”?",
+      "options": [
+        "The full backup",
+        "The first example establishes the relevant state.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "System Database Backups",
+        "Use the following as a starting point when investigating System Database Backups."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine System Database Backups within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where System Database Backups fits”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "System Database Backups",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “System Database Backups in practice”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with System Database Backups”?",
+      "options": [
+        "System Database Backups is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to System Database Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "System Database Backups is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "System Database Backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates System Database Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What System Database Backups means”?",
+      "options": [
+        "Base full + latest diff",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where System Database Backups fits”?",
+      "options": [
+        "The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The full backup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “System Database Backups in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with System Database Backups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with System Database Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with System Database Backups”?",
+      "options": [
+        "The full backup",
+        "The first example establishes the relevant state.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "System Database Backups",
+        "Use the following as a starting point when investigating System Database Backups."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine System Database Backups within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where System Database Backups fits”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "System Database Backups",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “System Database Backups in practice”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with System Database Backups”?",
+      "options": [
+        "System Database Backups is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to System Database Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "System Database Backups is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "System Database Backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates System Database Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What System Database Backups means”?",
+      "options": [
+        "Base full + latest diff",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where System Database Backups fits”?",
+      "options": [
+        "The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The full backup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places System Database Backups alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “System Database Backups in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with System Database Backups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with System Database Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with System Database Backups”?",
+      "options": [
+        "The full backup",
+        "The first example establishes the relevant state.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "System Database Backups is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

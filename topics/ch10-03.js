@@ -183,6 +183,312 @@ A proxy maps a job step to a credential so the step can run under a different, a
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "SQL Server Agent Service",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Service within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Service fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Service in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Service”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Service. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Partial completion",
+        "SQL Server Agent Service",
+        "Job never runs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Service with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Service means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Service fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Service in practice”?",
+      "options": [
+        "With SQL Server Agent Service, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Service”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "SQL Server Agent Service",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Service within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Service fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Service in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Service”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Service. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Partial completion",
+        "SQL Server Agent Service",
+        "Job never runs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Service with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Service means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Service fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Service in practice”?",
+      "options": [
+        "With SQL Server Agent Service, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Service”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "SQL Server Agent Service",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Service within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Service fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Service in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Service”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Service. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Partial completion",
+        "SQL Server Agent Service",
+        "Job never runs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Service with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Service means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Service fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Service alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Service in practice”?",
+      "options": [
+        "With SQL Server Agent Service, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Service:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Service”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Agent Service is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -183,6 +183,312 @@ The log record describing a change is written to disk before the modified data p
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Transaction Log Architecture",
+        "Flush dirty pages, bound recovery",
+        "Evict clean pages"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Architecture within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Architecture fits”?",
+      "options": [
+        "Log durable before data",
+        "Transaction Log Architecture sits inside a larger system.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Architecture in practice”?",
+      "options": [
+        "Unit of data I/O",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Architecture”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Transaction Log Architecture.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "With Transaction Log Architecture, prefer measured, reversible changes.",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Transaction Log Architecture",
+        "Use the following as a starting point when investigating Transaction Log Architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Architecture means”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Architecture fits”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Architecture in practice”?",
+      "options": [
+        "Transaction Log Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Transaction Log Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Transaction Log Architecture",
+        "Flush dirty pages, bound recovery",
+        "Evict clean pages"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Architecture within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Architecture fits”?",
+      "options": [
+        "Log durable before data",
+        "Transaction Log Architecture sits inside a larger system.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Architecture in practice”?",
+      "options": [
+        "Unit of data I/O",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Architecture”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Transaction Log Architecture.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "With Transaction Log Architecture, prefer measured, reversible changes.",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Transaction Log Architecture",
+        "Use the following as a starting point when investigating Transaction Log Architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Architecture means”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Architecture fits”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Architecture in practice”?",
+      "options": [
+        "Transaction Log Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Transaction Log Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Transaction Log Architecture",
+        "Flush dirty pages, bound recovery",
+        "Evict clean pages"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Architecture within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Architecture fits”?",
+      "options": [
+        "Log durable before data",
+        "Transaction Log Architecture sits inside a larger system.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Architecture in practice”?",
+      "options": [
+        "Unit of data I/O",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Architecture”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Transaction Log Architecture.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "With Transaction Log Architecture, prefer measured, reversible changes.",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Transaction Log Architecture",
+        "Use the following as a starting point when investigating Transaction Log Architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Architecture means”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Architecture fits”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Architecture alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Architecture in practice”?",
+      "options": [
+        "Transaction Log Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Transaction Log Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Transaction Log Architecture is a fundamental concept in SQL Server internal architecture",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

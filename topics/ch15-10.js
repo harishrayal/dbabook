@@ -162,6 +162,312 @@ Because deleting or archiving old data at the source is the only way to bend a g
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it.",
+        "Index Maintenance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Maintenance within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance in practice”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "No benefit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Maintenance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Maintenance windows must be negotiated and respected.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Maintenance means”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance fits”?",
+      "options": [
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "No benefit",
+        "The diagram below places Index Maintenance alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Maintenance alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance in practice”?",
+      "options": [
+        "Bulk loads",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance:",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Maintenance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it.",
+        "Index Maintenance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Maintenance within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance in practice”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "No benefit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Maintenance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Maintenance windows must be negotiated and respected.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Maintenance means”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance fits”?",
+      "options": [
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "No benefit",
+        "The diagram below places Index Maintenance alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Maintenance alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance in practice”?",
+      "options": [
+        "Bulk loads",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance:",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Maintenance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it.",
+        "Index Maintenance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Maintenance within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance in practice”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "No benefit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Maintenance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Maintenance windows must be negotiated and respected.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Maintenance means”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance fits”?",
+      "options": [
+        "With Index Maintenance, prefer measured, reversible changes.",
+        "No benefit",
+        "The diagram below places Index Maintenance alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Maintenance alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance in practice”?",
+      "options": [
+        "Bulk loads",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance:",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Maintenance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    }
+  ],
   takeaways: [
     "Index Maintenance is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

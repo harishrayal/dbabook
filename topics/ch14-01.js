@@ -160,6 +160,312 @@ When a small number of pages are damaged, you have FULL recovery model and a ver
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Database Integrity Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Integrity Fundamentals within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Fundamentals fits”?",
+      "options": [
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Fundamentals in practice”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Fundamentals”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Integrity Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Integrity Fundamentals means”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Check log, avoid emergency mode first",
+        "Check log access and space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Fundamentals fits”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Fundamentals in practice”?",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "The following comparison captures the distinctions that matter most when working with Database Integrity Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Integrity Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Check log, avoid emergency mode first",
+        "Check log access and space",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Database Integrity Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Integrity Fundamentals within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Fundamentals fits”?",
+      "options": [
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Fundamentals in practice”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Fundamentals”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Integrity Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Integrity Fundamentals means”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Check log, avoid emergency mode first",
+        "Check log access and space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Fundamentals fits”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Fundamentals in practice”?",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "The following comparison captures the distinctions that matter most when working with Database Integrity Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Integrity Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Check log, avoid emergency mode first",
+        "Check log access and space",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Database Integrity Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Integrity Fundamentals within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Fundamentals fits”?",
+      "options": [
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Fundamentals in practice”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Database Integrity Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Fundamentals”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Integrity Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Integrity Fundamentals means”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Check log, avoid emergency mode first",
+        "Check log access and space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Fundamentals fits”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first",
+        "The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Integrity Fundamentals alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Fundamentals in practice”?",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "The following comparison captures the distinctions that matter most when working with Database Integrity Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Integrity Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Check log, avoid emergency mode first",
+        "Check log access and space",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    }
+  ],
   takeaways: [
     "Database Integrity Fundamentals is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

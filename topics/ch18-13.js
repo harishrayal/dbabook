@@ -160,6 +160,312 @@ Testing on non-production, defaulting to read-only, explicit destructive switche
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Disk Space Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disk Space Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Reports fits”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Reports in practice”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Get-Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Space Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Daily",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "With Disk Space Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Space Reports means”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Reports fits”?",
+      "options": [
+        "Disk Space Reports",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The diagram below places Disk Space Reports alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Disk Space Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Reports in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with Disk Space Reports:",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Space Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Disk Space Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disk Space Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Reports fits”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Reports in practice”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Get-Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Space Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Daily",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "With Disk Space Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Space Reports means”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Reports fits”?",
+      "options": [
+        "Disk Space Reports",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The diagram below places Disk Space Reports alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Disk Space Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Reports in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with Disk Space Reports:",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Space Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Disk Space Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disk Space Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Reports fits”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Reports in practice”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Get-Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Space Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Daily",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "With Disk Space Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Space Reports means”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Space Reports fits”?",
+      "options": [
+        "Disk Space Reports",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The diagram below places Disk Space Reports alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Disk Space Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Space Reports in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with Disk Space Reports:",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Space Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Space Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disk Space Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    }
+  ],
   takeaways: [
     "Disk Space Reports is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -172,6 +172,312 @@ FROM   sys.dm_os_sys_info;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why version matters”?",
+      "options": [
+        "Big data clusters (retired), lightweight profiling, AG improvements",
+        "The version string in the corner of a report decides far more than feature availability:",
+        "Linux support; last version with service packs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The version string in the corner of a report decides far more than feature availability:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Version history at a glance”?",
+      "options": [
+        "Older generations (2012, 2014) are long past extended support — if you meet one in the wild, treat it as a migration project, not a patching task.",
+        "5 ), the OS build, and the last CU applied.",
+        "no service packs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Older generations (2012, 2014) are long past extended support — if you meet one in the wild, treat it as a migration project, not a patching task. Always confirm exact dates against Microsoft's lifecycle page before quoting them in a plan; dates shift for long-term servicing releases.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading your build precisely”?",
+      "options": [
+        "Linux support; last version with service packs",
+        "Big data clusters (retired), lightweight profiling, AG improvements",
+        "“We run SQL Server” is not an inventory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: ““We run SQL Server” is not an inventory. You need version, build, and CU level:”"
+    },
+    {
+      "question": "Complete the lesson statement: “From SQL Server 2017 onwards there are _____.”",
+      "options": [
+        "five years of extended support",
+        "no service packs",
+        "five years of mainstream support"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “From SQL Server 2017 onwards there are no service packs. Servicing is continuous:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Which version for a new build?”?",
+      "options": [
+        "Default advice for production in this era:",
+        "ledger tables, query store hints, Azure integration",
+        "Current release; built for AI workloads, compat level 170"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Default advice for production in this era:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Microsoft's fixed lifecycle gives each version _____ (features, fixes, security) and five years of extended support (security updates only).”",
+      "options": [
+        "Jul 2026 (passed)",
+        "no service packs",
+        "five years of mainstream support"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Microsoft's fixed lifecycle gives each version five years of mainstream support (features, fixes, security) and five years of extended support (security updates only). After that: no patches at all, unless you buy Extended Security Updates (ESU) for up to three more years.”"
+    },
+    {
+      "question": "In the “Version history at a glance” table, what is listed for “SQL Server 2016” under “Notes”?",
+      "options": [
+        "no service packs",
+        "First “cloud-ready” release; always encrypted, query store",
+        "5 ), the OS build, and the last CU applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “SQL Server 2016” as “First “cloud-ready” release; always encrypted, query store”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading your build precisely”?",
+      "options": [
+        "5 ), the OS build, and the last CU applied.",
+        "within two CUs of the latest",
+        "Monthly for a period, then quarterly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “@@VERSION is the raw truth — it includes the exact build (for example 16.0.4105.5 ), the OS build, and the last CU applied. Map build numbers to cumulative updates with Microsoft's build-number table when you need to know whether a specific fix is present.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated rule: keep every instance _____, test in non-production first, and patch on a schedule rather than reactively.”",
+      "options": [
+        "Cumulative Update (CU)",
+        "General Distribution Release (GDR)",
+        "within two CUs of the latest"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Opinionated rule: keep every instance within two CUs of the latest, test in non-production first, and patch on a schedule rather than reactively. A server that has never had a CU applied is carrying every bug Microsoft has already fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Remember the two version axes: the _____ (16.0.x) and the database compatibility level (150, 160, 170 …). You can run an old database at an old compatibility level on a new engine…”",
+      "options": [
+        "Service Pack",
+        "engine version",
+        "General Distribution Release (GDR)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Remember the two version axes: the engine version (16.0.x) and the database compatibility level (150, 160, 170 …). You can run an old database at an old compatibility level on a new engine — that is usually the safest upgrade strategy, raising the level only after testing.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why version matters”?",
+      "options": [
+        "Big data clusters (retired), lightweight profiling, AG improvements",
+        "The version string in the corner of a report decides far more than feature availability:",
+        "Linux support; last version with service packs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The version string in the corner of a report decides far more than feature availability:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Version history at a glance”?",
+      "options": [
+        "Older generations (2012, 2014) are long past extended support — if you meet one in the wild, treat it as a migration project, not a patching task.",
+        "5 ), the OS build, and the last CU applied.",
+        "no service packs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Older generations (2012, 2014) are long past extended support — if you meet one in the wild, treat it as a migration project, not a patching task. Always confirm exact dates against Microsoft's lifecycle page before quoting them in a plan; dates shift for long-term servicing releases.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading your build precisely”?",
+      "options": [
+        "Linux support; last version with service packs",
+        "Big data clusters (retired), lightweight profiling, AG improvements",
+        "“We run SQL Server” is not an inventory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: ““We run SQL Server” is not an inventory. You need version, build, and CU level:”"
+    },
+    {
+      "question": "Complete the lesson statement: “From SQL Server 2017 onwards there are _____.”",
+      "options": [
+        "five years of extended support",
+        "no service packs",
+        "five years of mainstream support"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “From SQL Server 2017 onwards there are no service packs. Servicing is continuous:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Which version for a new build?”?",
+      "options": [
+        "Default advice for production in this era:",
+        "ledger tables, query store hints, Azure integration",
+        "Current release; built for AI workloads, compat level 170"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Default advice for production in this era:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Microsoft's fixed lifecycle gives each version _____ (features, fixes, security) and five years of extended support (security updates only).”",
+      "options": [
+        "Jul 2026 (passed)",
+        "no service packs",
+        "five years of mainstream support"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Microsoft's fixed lifecycle gives each version five years of mainstream support (features, fixes, security) and five years of extended support (security updates only). After that: no patches at all, unless you buy Extended Security Updates (ESU) for up to three more years.”"
+    },
+    {
+      "question": "In the “Version history at a glance” table, what is listed for “SQL Server 2016” under “Notes”?",
+      "options": [
+        "no service packs",
+        "First “cloud-ready” release; always encrypted, query store",
+        "5 ), the OS build, and the last CU applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “SQL Server 2016” as “First “cloud-ready” release; always encrypted, query store”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading your build precisely”?",
+      "options": [
+        "5 ), the OS build, and the last CU applied.",
+        "within two CUs of the latest",
+        "Monthly for a period, then quarterly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “@@VERSION is the raw truth — it includes the exact build (for example 16.0.4105.5 ), the OS build, and the last CU applied. Map build numbers to cumulative updates with Microsoft's build-number table when you need to know whether a specific fix is present.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated rule: keep every instance _____, test in non-production first, and patch on a schedule rather than reactively.”",
+      "options": [
+        "Cumulative Update (CU)",
+        "General Distribution Release (GDR)",
+        "within two CUs of the latest"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Opinionated rule: keep every instance within two CUs of the latest, test in non-production first, and patch on a schedule rather than reactively. A server that has never had a CU applied is carrying every bug Microsoft has already fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Remember the two version axes: the _____ (16.0.x) and the database compatibility level (150, 160, 170 …). You can run an old database at an old compatibility level on a new engine…”",
+      "options": [
+        "Service Pack",
+        "engine version",
+        "General Distribution Release (GDR)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Remember the two version axes: the engine version (16.0.x) and the database compatibility level (150, 160, 170 …). You can run an old database at an old compatibility level on a new engine — that is usually the safest upgrade strategy, raising the level only after testing.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why version matters”?",
+      "options": [
+        "Big data clusters (retired), lightweight profiling, AG improvements",
+        "The version string in the corner of a report decides far more than feature availability:",
+        "Linux support; last version with service packs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The version string in the corner of a report decides far more than feature availability:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Version history at a glance”?",
+      "options": [
+        "Older generations (2012, 2014) are long past extended support — if you meet one in the wild, treat it as a migration project, not a patching task.",
+        "5 ), the OS build, and the last CU applied.",
+        "no service packs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Older generations (2012, 2014) are long past extended support — if you meet one in the wild, treat it as a migration project, not a patching task. Always confirm exact dates against Microsoft's lifecycle page before quoting them in a plan; dates shift for long-term servicing releases.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading your build precisely”?",
+      "options": [
+        "Linux support; last version with service packs",
+        "Big data clusters (retired), lightweight profiling, AG improvements",
+        "“We run SQL Server” is not an inventory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: ““We run SQL Server” is not an inventory. You need version, build, and CU level:”"
+    },
+    {
+      "question": "Complete the lesson statement: “From SQL Server 2017 onwards there are _____.”",
+      "options": [
+        "five years of extended support",
+        "no service packs",
+        "five years of mainstream support"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “From SQL Server 2017 onwards there are no service packs. Servicing is continuous:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Which version for a new build?”?",
+      "options": [
+        "Default advice for production in this era:",
+        "ledger tables, query store hints, Azure integration",
+        "Current release; built for AI workloads, compat level 170"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Default advice for production in this era:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Microsoft's fixed lifecycle gives each version _____ (features, fixes, security) and five years of extended support (security updates only).”",
+      "options": [
+        "Jul 2026 (passed)",
+        "no service packs",
+        "five years of mainstream support"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Microsoft's fixed lifecycle gives each version five years of mainstream support (features, fixes, security) and five years of extended support (security updates only). After that: no patches at all, unless you buy Extended Security Updates (ESU) for up to three more years.”"
+    },
+    {
+      "question": "In the “Version history at a glance” table, what is listed for “SQL Server 2016” under “Notes”?",
+      "options": [
+        "no service packs",
+        "First “cloud-ready” release; always encrypted, query store",
+        "5 ), the OS build, and the last CU applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “SQL Server 2016” as “First “cloud-ready” release; always encrypted, query store”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading your build precisely”?",
+      "options": [
+        "5 ), the OS build, and the last CU applied.",
+        "within two CUs of the latest",
+        "Monthly for a period, then quarterly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “@@VERSION is the raw truth — it includes the exact build (for example 16.0.4105.5 ), the OS build, and the last CU applied. Map build numbers to cumulative updates with Microsoft's build-number table when you need to know whether a specific fix is present.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Opinionated rule: keep every instance _____, test in non-production first, and patch on a schedule rather than reactively.”",
+      "options": [
+        "Cumulative Update (CU)",
+        "General Distribution Release (GDR)",
+        "within two CUs of the latest"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Opinionated rule: keep every instance within two CUs of the latest, test in non-production first, and patch on a schedule rather than reactively. A server that has never had a CU applied is carrying every bug Microsoft has already fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Remember the two version axes: the _____ (16.0.x) and the database compatibility level (150, 160, 170 …). You can run an old database at an old compatibility level on a new engine…”",
+      "options": [
+        "Service Pack",
+        "engine version",
+        "General Distribution Release (GDR)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Remember the two version axes: the engine version (16.0.x) and the database compatibility level (150, 160, 170 …). You can run an old database at an old compatibility level on a new engine — that is usually the safest upgrade strategy, raising the level only after testing.”"
+    }
+  ],
   takeaways: [
     "Each version gets five years of mainstream and five years of extended support, then ESU at most",
     "SQL Server 2016 went out of support in July 2026 — running it unpatched is a security and compliance risk",

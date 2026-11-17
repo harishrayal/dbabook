@@ -181,6 +181,312 @@ Track daily size from sys.dm_io_virtual_file_stats or a snapshot table, compute 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Production Maintenance Checklist sits inside a larger system.",
+        "Production Maintenance Checklist",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Maintenance Checklist within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Maintenance Checklist fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Maintenance Checklist."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Maintenance Checklist in practice”?",
+      "options": [
+        "Long transactions",
+        "Rebuild needing 1.5x space",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Maintenance Checklist”?",
+      "options": [
+        "Production Maintenance Checklist",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Maintenance Checklist. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Production Maintenance Checklist",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Production Maintenance Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Production Maintenance Checklist"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Maintenance Checklist with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Maintenance Checklist means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Maintenance Checklist fits”?",
+      "options": [
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance.",
+        "Production Maintenance Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Maintenance Checklist in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance.",
+        "The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Maintenance Checklist”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Production Maintenance Checklist sits inside a larger system.",
+        "Production Maintenance Checklist",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Maintenance Checklist within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Maintenance Checklist fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Maintenance Checklist."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Maintenance Checklist in practice”?",
+      "options": [
+        "Long transactions",
+        "Rebuild needing 1.5x space",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Maintenance Checklist”?",
+      "options": [
+        "Production Maintenance Checklist",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Maintenance Checklist. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Production Maintenance Checklist",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Production Maintenance Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Production Maintenance Checklist"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Maintenance Checklist with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Maintenance Checklist means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Maintenance Checklist fits”?",
+      "options": [
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance.",
+        "Production Maintenance Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Maintenance Checklist in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance.",
+        "The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Maintenance Checklist”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Production Maintenance Checklist sits inside a larger system.",
+        "Production Maintenance Checklist",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Maintenance Checklist within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Maintenance Checklist fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Maintenance Checklist."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Maintenance Checklist in practice”?",
+      "options": [
+        "Long transactions",
+        "Rebuild needing 1.5x space",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Maintenance Checklist”?",
+      "options": [
+        "Production Maintenance Checklist",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Maintenance Checklist. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Production Maintenance Checklist",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Production Maintenance Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Production Maintenance Checklist"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Maintenance Checklist with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Maintenance Checklist means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Maintenance Checklist fits”?",
+      "options": [
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance.",
+        "Production Maintenance Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Maintenance Checklist in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance.",
+        "The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Maintenance Checklist:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Maintenance Checklist”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Maintenance Checklist alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Production Maintenance Checklist is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

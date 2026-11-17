@@ -188,6 +188,312 @@ Because configuration drifts, paths change and jobs fail silently; only a timed 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Transactional Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transactional Replication within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transactional Replication fits”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transactional Replication in practice”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transactional Replication”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transactional Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Transactional Replication sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transactional Replication",
+        "With Transactional Replication, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Transactional Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transactional Replication means”?",
+      "options": [
+        "Transactional Replication",
+        "Transactional Replication sits inside a larger system.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transactional Replication fits”?",
+      "options": [
+        "Transactional Replication sits inside a larger system.",
+        "The diagram below places Transactional Replication alongside the core concepts of disaster recovery technologies.",
+        "Disconnected sites"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Transactional Replication alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transactional Replication in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transactional Replication:",
+        "Hours",
+        "Log shipping"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transactional Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transactional Replication”?",
+      "options": [
+        "Use the following as a starting point when investigating Transactional Replication.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Transactional Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transactional Replication within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transactional Replication fits”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transactional Replication in practice”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transactional Replication”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transactional Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Transactional Replication sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transactional Replication",
+        "With Transactional Replication, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Transactional Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transactional Replication means”?",
+      "options": [
+        "Transactional Replication",
+        "Transactional Replication sits inside a larger system.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transactional Replication fits”?",
+      "options": [
+        "Transactional Replication sits inside a larger system.",
+        "The diagram below places Transactional Replication alongside the core concepts of disaster recovery technologies.",
+        "Disconnected sites"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Transactional Replication alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transactional Replication in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transactional Replication:",
+        "Hours",
+        "Log shipping"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transactional Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transactional Replication”?",
+      "options": [
+        "Use the following as a starting point when investigating Transactional Replication.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Transactional Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transactional Replication within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transactional Replication fits”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transactional Replication in practice”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transactional Replication”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transactional Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Transactional Replication sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transactional Replication",
+        "With Transactional Replication, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Transactional Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transactional Replication means”?",
+      "options": [
+        "Transactional Replication",
+        "Transactional Replication sits inside a larger system.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transactional Replication fits”?",
+      "options": [
+        "Transactional Replication sits inside a larger system.",
+        "The diagram below places Transactional Replication alongside the core concepts of disaster recovery technologies.",
+        "Disconnected sites"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Transactional Replication alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transactional Replication in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transactional Replication:",
+        "Hours",
+        "Log shipping"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transactional Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transactional Replication”?",
+      "options": [
+        "Use the following as a starting point when investigating Transactional Replication.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Transactional Replication is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

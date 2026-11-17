@@ -170,6 +170,312 @@ $session = New-Object -ComObject Microsoft.Update.Session; $searcher = $session.
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server.”",
+      "options": [
+        "Feature",
+        "Desktop Experience",
+        "Windows Server"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows Server is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server. It shares a kernel with desktop Windows, but it is licensed, configured, and operated differently: no consumer apps, server-grade defaults, and a much heavier emphasis on roles that serve other machines.”"
+    },
+    {
+      "question": "Complete the lesson statement: “What matters more to a DBA is the _____ model: instead of installing one monolithic product, you switch on the capabilities the server needs.”",
+      "options": [
+        "Server Core",
+        "role",
+        "Desktop Experience"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Windows Server ships in editions (Standard and Datacenter being the modern pair) that differ mainly in virtualisation rights and scalability, not in day-to-day behaviour. What matters more to a DBA is the role model: instead of installing one monolithic product, you switch on the capabilities the server needs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's daily toolbox”?",
+      "options": [
+        "Three tools cover most Windows work a DBA performs:",
+        "Roles are installed with Server Manager or PowerShell's Install-WindowsFeature.",
+        "Failover Clustering (needed for FCI), DNS, File Services"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three tools cover most Windows work a DBA performs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Versions, builds, and support lifecycle”?",
+      "options": [
+        "Failover Clustering (needed for FCI), DNS, File Services",
+        ".NET Framework 3.5, which older SQL installers still require",
+        "Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot fix with configuration. Server 2016, 2019, 2022, and 2025 are the modern line; each has a long support phase followed by extended support, during which security patches continue but design changes stop.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the OS interacts with SQL Server”?",
+      "options": [
+        "Familiar, but heavier patch surface",
+        "SQL Server depends on the operating system for four things, and each one is a classic failure point:",
+        ".NET Framework 3.5, which older SQL installers still require"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server depends on the operating system for four things, and each one is a classic failure point:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls on production Windows Servers”?",
+      "options": [
+        "Most Windows-layer outages on database servers are self-inflicted:",
+        "Familiar, but heavier patch surface",
+        "Smaller attack surface; managed remotely with PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most Windows-layer outages on database servers are self-inflicted:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Patch levels and update channels”?",
+      "options": [
+        "Smaller attack surface; managed remotely with PowerShell",
+        "Three tools cover most Windows work a DBA performs:",
+        "Windows Update on a database server is a change-management problem, not a technical one."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Windows Update on a database server is a change-management problem, not a technical one. Patches arrive in categories: security-only updates, cumulative updates,.NET updates, and the optional \"preview\" releases that are effectively next month's test. On a DBA-managed host you care about three things — what is installed, what is pending, and when the machine will reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Server is”?",
+      "options": [
+        "Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot…",
+        "For a DBA the operating system is the floor of the building.",
+        "Run them once on a healthy server and save the output."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For a DBA the operating system is the floor of the building. When the database is slow, the cause is frequently below SQL Server: a full volume, a service running under the wrong account, a firewall rule, a failing disk driver, or a patch that rebooted the box at 3 AM. You do not need to become a Windows administrator, but you must be able to read the OS well enough to separate \"SQL Server has a problem\" from \"the server under SQL Server has a problem\".”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Editions, roles, and features”?",
+      "options": [
+        "Roles are installed with Server Manager or PowerShell's Install-WindowsFeature.",
+        "Current mainstream target for new builds",
+        "Newest platform — verify feature parity before adopting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles are installed with Server Manager or PowerShell's Install-WindowsFeature. A database server typically keeps its role list deliberately short: the fewer features present, the fewer patches, reboots, and surprises.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's daily toolbox”?",
+      "options": [
+        "Two practical rules: never install SQL Server on an OS version that Microsoft's support matrix does not list for that SQL version, and track the OS support end date alongside the…",
+        "Still common in production estates; plan upgrades before extended support ends",
+        "Start with an inventory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Start with an inventory. These commands tell you exactly what you are administering:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server.”",
+      "options": [
+        "Feature",
+        "Desktop Experience",
+        "Windows Server"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows Server is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server. It shares a kernel with desktop Windows, but it is licensed, configured, and operated differently: no consumer apps, server-grade defaults, and a much heavier emphasis on roles that serve other machines.”"
+    },
+    {
+      "question": "Complete the lesson statement: “What matters more to a DBA is the _____ model: instead of installing one monolithic product, you switch on the capabilities the server needs.”",
+      "options": [
+        "Server Core",
+        "role",
+        "Desktop Experience"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Windows Server ships in editions (Standard and Datacenter being the modern pair) that differ mainly in virtualisation rights and scalability, not in day-to-day behaviour. What matters more to a DBA is the role model: instead of installing one monolithic product, you switch on the capabilities the server needs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's daily toolbox”?",
+      "options": [
+        "Three tools cover most Windows work a DBA performs:",
+        "Roles are installed with Server Manager or PowerShell's Install-WindowsFeature.",
+        "Failover Clustering (needed for FCI), DNS, File Services"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three tools cover most Windows work a DBA performs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Versions, builds, and support lifecycle”?",
+      "options": [
+        "Failover Clustering (needed for FCI), DNS, File Services",
+        ".NET Framework 3.5, which older SQL installers still require",
+        "Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot fix with configuration. Server 2016, 2019, 2022, and 2025 are the modern line; each has a long support phase followed by extended support, during which security patches continue but design changes stop.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the OS interacts with SQL Server”?",
+      "options": [
+        "Familiar, but heavier patch surface",
+        "SQL Server depends on the operating system for four things, and each one is a classic failure point:",
+        ".NET Framework 3.5, which older SQL installers still require"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server depends on the operating system for four things, and each one is a classic failure point:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls on production Windows Servers”?",
+      "options": [
+        "Most Windows-layer outages on database servers are self-inflicted:",
+        "Familiar, but heavier patch surface",
+        "Smaller attack surface; managed remotely with PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most Windows-layer outages on database servers are self-inflicted:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Patch levels and update channels”?",
+      "options": [
+        "Smaller attack surface; managed remotely with PowerShell",
+        "Three tools cover most Windows work a DBA performs:",
+        "Windows Update on a database server is a change-management problem, not a technical one."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Windows Update on a database server is a change-management problem, not a technical one. Patches arrive in categories: security-only updates, cumulative updates,.NET updates, and the optional \"preview\" releases that are effectively next month's test. On a DBA-managed host you care about three things — what is installed, what is pending, and when the machine will reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Server is”?",
+      "options": [
+        "Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot…",
+        "For a DBA the operating system is the floor of the building.",
+        "Run them once on a healthy server and save the output."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For a DBA the operating system is the floor of the building. When the database is slow, the cause is frequently below SQL Server: a full volume, a service running under the wrong account, a firewall rule, a failing disk driver, or a patch that rebooted the box at 3 AM. You do not need to become a Windows administrator, but you must be able to read the OS well enough to separate \"SQL Server has a problem\" from \"the server under SQL Server has a problem\".”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Editions, roles, and features”?",
+      "options": [
+        "Roles are installed with Server Manager or PowerShell's Install-WindowsFeature.",
+        "Current mainstream target for new builds",
+        "Newest platform — verify feature parity before adopting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles are installed with Server Manager or PowerShell's Install-WindowsFeature. A database server typically keeps its role list deliberately short: the fewer features present, the fewer patches, reboots, and surprises.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's daily toolbox”?",
+      "options": [
+        "Two practical rules: never install SQL Server on an OS version that Microsoft's support matrix does not list for that SQL version, and track the OS support end date alongside the…",
+        "Still common in production estates; plan upgrades before extended support ends",
+        "Start with an inventory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Start with an inventory. These commands tell you exactly what you are administering:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server.”",
+      "options": [
+        "Feature",
+        "Desktop Experience",
+        "Windows Server"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows Server is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server. It shares a kernel with desktop Windows, but it is licensed, configured, and operated differently: no consumer apps, server-grade defaults, and a much heavier emphasis on roles that serve other machines.”"
+    },
+    {
+      "question": "Complete the lesson statement: “What matters more to a DBA is the _____ model: instead of installing one monolithic product, you switch on the capabilities the server needs.”",
+      "options": [
+        "Server Core",
+        "role",
+        "Desktop Experience"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Windows Server ships in editions (Standard and Datacenter being the modern pair) that differ mainly in virtualisation rights and scalability, not in day-to-day behaviour. What matters more to a DBA is the role model: instead of installing one monolithic product, you switch on the capabilities the server needs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's daily toolbox”?",
+      "options": [
+        "Three tools cover most Windows work a DBA performs:",
+        "Roles are installed with Server Manager or PowerShell's Install-WindowsFeature.",
+        "Failover Clustering (needed for FCI), DNS, File Services"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three tools cover most Windows work a DBA performs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Versions, builds, and support lifecycle”?",
+      "options": [
+        "Failover Clustering (needed for FCI), DNS, File Services",
+        ".NET Framework 3.5, which older SQL installers still require",
+        "Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot fix with configuration. Server 2016, 2019, 2022, and 2025 are the modern line; each has a long support phase followed by extended support, during which security patches continue but design changes stop.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the OS interacts with SQL Server”?",
+      "options": [
+        "Familiar, but heavier patch surface",
+        "SQL Server depends on the operating system for four things, and each one is a classic failure point:",
+        ".NET Framework 3.5, which older SQL installers still require"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server depends on the operating system for four things, and each one is a classic failure point:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls on production Windows Servers”?",
+      "options": [
+        "Most Windows-layer outages on database servers are self-inflicted:",
+        "Familiar, but heavier patch surface",
+        "Smaller attack surface; managed remotely with PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most Windows-layer outages on database servers are self-inflicted:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Patch levels and update channels”?",
+      "options": [
+        "Smaller attack surface; managed remotely with PowerShell",
+        "Three tools cover most Windows work a DBA performs:",
+        "Windows Update on a database server is a change-management problem, not a technical one."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Windows Update on a database server is a change-management problem, not a technical one. Patches arrive in categories: security-only updates, cumulative updates,.NET updates, and the optional \"preview\" releases that are effectively next month's test. On a DBA-managed host you care about three things — what is installed, what is pending, and when the machine will reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Server is”?",
+      "options": [
+        "Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot…",
+        "For a DBA the operating system is the floor of the building.",
+        "Run them once on a healthy server and save the output."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For a DBA the operating system is the floor of the building. When the database is slow, the cause is frequently below SQL Server: a full volume, a service running under the wrong account, a firewall rule, a failing disk driver, or a patch that rebooted the box at 3 AM. You do not need to become a Windows administrator, but you must be able to read the OS well enough to separate \"SQL Server has a problem\" from \"the server under SQL Server has a problem\".”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Editions, roles, and features”?",
+      "options": [
+        "Roles are installed with Server Manager or PowerShell's Install-WindowsFeature.",
+        "Current mainstream target for new builds",
+        "Newest platform — verify feature parity before adopting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles are installed with Server Manager or PowerShell's Install-WindowsFeature. A database server typically keeps its role list deliberately short: the fewer features present, the fewer patches, reboots, and surprises.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's daily toolbox”?",
+      "options": [
+        "Two practical rules: never install SQL Server on an OS version that Microsoft's support matrix does not list for that SQL version, and track the OS support end date alongside the…",
+        "Still common in production estates; plan upgrades before extended support ends",
+        "Start with an inventory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Start with an inventory. These commands tell you exactly what you are administering:”"
+    }
+  ],
   takeaways: [
     "Windows Server is the platform layer under SQL Server: services, NTFS, networking, memory, and logging",
     "Roles are capabilities, features are supporting components — keep a database server's list deliberately short",

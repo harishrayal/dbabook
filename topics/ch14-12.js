@@ -182,6 +182,312 @@ Because it can delete damaged rows or pages to make the database consistent — 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Suspect Database State",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Suspect Database State within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Suspect Database State fits”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Page checksums are the primary detection mechanism.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Suspect Database State in practice”?",
+      "options": [
+        "Absolute last resort",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Suspect Database State”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Suspect Database State. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Suspect Database State sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Minor, non-data issues",
+        "Suspect Database State",
+        "With Suspect Database State, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Suspect Database State with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Suspect Database State means”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Suspect Database State",
+        "Suspect Database State sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Suspect Database State fits”?",
+      "options": [
+        "Absolute last resort",
+        "Suspect Database State sits inside a larger system.",
+        "The diagram below places Suspect Database State alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Suspect Database State alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Suspect Database State in practice”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The following comparison captures the distinctions that matter most when working with Suspect Database State:",
+        "Use the following as a starting point when investigating Suspect Database State."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Suspect Database State:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Suspect Database State”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Suspect Database State.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Suspect Database State",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Suspect Database State within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Suspect Database State fits”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Page checksums are the primary detection mechanism.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Suspect Database State in practice”?",
+      "options": [
+        "Absolute last resort",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Suspect Database State”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Suspect Database State. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Suspect Database State sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Minor, non-data issues",
+        "Suspect Database State",
+        "With Suspect Database State, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Suspect Database State with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Suspect Database State means”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Suspect Database State",
+        "Suspect Database State sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Suspect Database State fits”?",
+      "options": [
+        "Absolute last resort",
+        "Suspect Database State sits inside a larger system.",
+        "The diagram below places Suspect Database State alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Suspect Database State alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Suspect Database State in practice”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The following comparison captures the distinctions that matter most when working with Suspect Database State:",
+        "Use the following as a starting point when investigating Suspect Database State."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Suspect Database State:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Suspect Database State”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Suspect Database State.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Suspect Database State",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Suspect Database State within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Suspect Database State fits”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Page checksums are the primary detection mechanism.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Suspect Database State in practice”?",
+      "options": [
+        "Absolute last resort",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Suspect Database State”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Suspect Database State. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Suspect Database State sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Minor, non-data issues",
+        "Suspect Database State",
+        "With Suspect Database State, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Suspect Database State with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Suspect Database State means”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Suspect Database State",
+        "Suspect Database State sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Suspect Database State fits”?",
+      "options": [
+        "Absolute last resort",
+        "Suspect Database State sits inside a larger system.",
+        "The diagram below places Suspect Database State alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Suspect Database State alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Suspect Database State in practice”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The following comparison captures the distinctions that matter most when working with Suspect Database State:",
+        "Use the following as a starting point when investigating Suspect Database State."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Suspect Database State:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Suspect Database State”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Suspect Database State.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Suspect Database State is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

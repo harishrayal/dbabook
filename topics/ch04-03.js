@@ -184,6 +184,312 @@ ORDER  BY qs.total_worker_time DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The processing pipeline”?",
+      "options": [
+        "Every batch passes through four stages before a single row is read:",
+        "Missing covering index → key lookups or scans",
+        "Plan built for one value, reused for all others"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every batch passes through four stages before a single row is read:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server does not pick the “best” plan — it picks the _____ plan from the alternatives it generates.”",
+      "options": [
+        "Execute",
+        "Access operators",
+        "cheapest estimated"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server does not pick the “best” plan — it picks the cheapest estimated plan from the alternatives it generates. Cost is a unitless figure derived from estimated row counts, estimated CPU work, and estimated I/O (page reads). Inputs include:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Physical operators you will meet”?",
+      "options": [
+        "Non-reusable plans, plan-affecting differences",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:",
+        "Plan built for one value, reused for all others"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When a query is parameterised, the optimizer compiles a plan the first time it sees the statement — a process called _____.”",
+      "options": [
+        "parameter sniffing",
+        "Access operators",
+        "Join operators"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a query is parameterised, the optimizer compiles a plan the first time it sees the statement — a process called parameter sniffing. The plan is then reused for every subsequent execution, whatever the parameter value. That is usually a feature; it becomes an incident when the first value is unrepresentative:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Plan cache and statement statistics”?",
+      "options": [
+        "Parallel plans that do not pay for themselves",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:",
+        "The query processor records per-statement runtime statistics that map directly back to the plan operators:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The query processor records per-statement runtime statistics that map directly back to the plan operators:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where the query processor shows up in incidents”?",
+      "options": [
+        "Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed.",
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query-processor problems have recognisable signatures, distinct from storage or locking problems:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cost-based optimisation”?",
+      "options": [
+        "The optimizer can only be as accurate as its statistics.",
+        "Compare actual vs estimated rows in the plan",
+        "sys.dm_db_stats_properties, update statistics"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The optimizer can only be as accurate as its statistics. A table with 5 million rows where statistics say 100 will get a nested loops plan where a hash join was needed — the plan is internally consistent, perfectly legal, and catastrophically slow. OPTION (RECOMPILE) or an updated statistic is the fix, not a rewrite of the query.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Physical operators you will meet”?",
+      "options": [
+        "The query processor records per-statement runtime statistics that map directly back to the plan operators:",
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem.",
+        "Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed. Parallel plans add Gather Streams, Repartition Streams, and exchange waits ( CXPACKET / CXCONSUMER ).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameters, sniffing, and recompilation”?",
+      "options": [
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "A rising optimizations counter relative to executions means SQL is compiling far more often than it is reusing plans — a strong sign of plan cache pollution or statistics churn.",
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A rising optimizations counter relative to executions means SQL is compiling far more often than it is reusing plans — a strong sign of plan cache pollution or statistics churn.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Plan cache and statement statistics”?",
+      "options": [
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem.",
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "actual execution plan"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem. Join the same DMV to sys.dm_exec_query_plan for the XML plan and to sys.dm_exec_procedure_stats when the statement belongs to a procedure.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The processing pipeline”?",
+      "options": [
+        "Every batch passes through four stages before a single row is read:",
+        "Missing covering index → key lookups or scans",
+        "Plan built for one value, reused for all others"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every batch passes through four stages before a single row is read:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server does not pick the “best” plan — it picks the _____ plan from the alternatives it generates.”",
+      "options": [
+        "Execute",
+        "Access operators",
+        "cheapest estimated"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server does not pick the “best” plan — it picks the cheapest estimated plan from the alternatives it generates. Cost is a unitless figure derived from estimated row counts, estimated CPU work, and estimated I/O (page reads). Inputs include:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Physical operators you will meet”?",
+      "options": [
+        "Non-reusable plans, plan-affecting differences",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:",
+        "Plan built for one value, reused for all others"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When a query is parameterised, the optimizer compiles a plan the first time it sees the statement — a process called _____.”",
+      "options": [
+        "parameter sniffing",
+        "Access operators",
+        "Join operators"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a query is parameterised, the optimizer compiles a plan the first time it sees the statement — a process called parameter sniffing. The plan is then reused for every subsequent execution, whatever the parameter value. That is usually a feature; it becomes an incident when the first value is unrepresentative:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Plan cache and statement statistics”?",
+      "options": [
+        "Parallel plans that do not pay for themselves",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:",
+        "The query processor records per-statement runtime statistics that map directly back to the plan operators:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The query processor records per-statement runtime statistics that map directly back to the plan operators:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where the query processor shows up in incidents”?",
+      "options": [
+        "Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed.",
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query-processor problems have recognisable signatures, distinct from storage or locking problems:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cost-based optimisation”?",
+      "options": [
+        "The optimizer can only be as accurate as its statistics.",
+        "Compare actual vs estimated rows in the plan",
+        "sys.dm_db_stats_properties, update statistics"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The optimizer can only be as accurate as its statistics. A table with 5 million rows where statistics say 100 will get a nested loops plan where a hash join was needed — the plan is internally consistent, perfectly legal, and catastrophically slow. OPTION (RECOMPILE) or an updated statistic is the fix, not a rewrite of the query.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Physical operators you will meet”?",
+      "options": [
+        "The query processor records per-statement runtime statistics that map directly back to the plan operators:",
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem.",
+        "Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed. Parallel plans add Gather Streams, Repartition Streams, and exchange waits ( CXPACKET / CXCONSUMER ).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameters, sniffing, and recompilation”?",
+      "options": [
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "A rising optimizations counter relative to executions means SQL is compiling far more often than it is reusing plans — a strong sign of plan cache pollution or statistics churn.",
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A rising optimizations counter relative to executions means SQL is compiling far more often than it is reusing plans — a strong sign of plan cache pollution or statistics churn.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Plan cache and statement statistics”?",
+      "options": [
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem.",
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "actual execution plan"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem. Join the same DMV to sys.dm_exec_query_plan for the XML plan and to sys.dm_exec_procedure_stats when the statement belongs to a procedure.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The processing pipeline”?",
+      "options": [
+        "Every batch passes through four stages before a single row is read:",
+        "Missing covering index → key lookups or scans",
+        "Plan built for one value, reused for all others"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every batch passes through four stages before a single row is read:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server does not pick the “best” plan — it picks the _____ plan from the alternatives it generates.”",
+      "options": [
+        "Execute",
+        "Access operators",
+        "cheapest estimated"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server does not pick the “best” plan — it picks the cheapest estimated plan from the alternatives it generates. Cost is a unitless figure derived from estimated row counts, estimated CPU work, and estimated I/O (page reads). Inputs include:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Physical operators you will meet”?",
+      "options": [
+        "Non-reusable plans, plan-affecting differences",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:",
+        "Plan built for one value, reused for all others"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When a query is parameterised, the optimizer compiles a plan the first time it sees the statement — a process called _____.”",
+      "options": [
+        "parameter sniffing",
+        "Access operators",
+        "Join operators"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a query is parameterised, the optimizer compiles a plan the first time it sees the statement — a process called parameter sniffing. The plan is then reused for every subsequent execution, whatever the parameter value. That is usually a feature; it becomes an incident when the first value is unrepresentative:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Plan cache and statement statistics”?",
+      "options": [
+        "Parallel plans that do not pay for themselves",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:",
+        "The query processor records per-statement runtime statistics that map directly back to the plan operators:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The query processor records per-statement runtime statistics that map directly back to the plan operators:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where the query processor shows up in incidents”?",
+      "options": [
+        "Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed.",
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "The executor's operators fall into three families, and recognising them in an actual execution plan is the core skill of query tuning:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query-processor problems have recognisable signatures, distinct from storage or locking problems:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cost-based optimisation”?",
+      "options": [
+        "The optimizer can only be as accurate as its statistics.",
+        "Compare actual vs estimated rows in the plan",
+        "sys.dm_db_stats_properties, update statistics"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The optimizer can only be as accurate as its statistics. A table with 5 million rows where statistics say 100 will get a nested loops plan where a hash join was needed — the plan is internally consistent, perfectly legal, and catastrophically slow. OPTION (RECOMPILE) or an updated statistic is the fix, not a rewrite of the query.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Physical operators you will meet”?",
+      "options": [
+        "The query processor records per-statement runtime statistics that map directly back to the plan operators:",
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem.",
+        "Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking operators are legal but dangerous in a chain: three blocking operators in sequence mean the first row is only delivered after the whole input has been processed. Parallel plans add Gather Streams, Repartition Streams, and exchange waits ( CXPACKET / CXCONSUMER ).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameters, sniffing, and recompilation”?",
+      "options": [
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "A rising optimizations counter relative to executions means SQL is compiling far more often than it is reusing plans — a strong sign of plan cache pollution or statistics churn.",
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A rising optimizations counter relative to executions means SQL is compiling far more often than it is reusing plans — a strong sign of plan cache pollution or statistics churn.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Plan cache and statement statistics”?",
+      "options": [
+        "Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem.",
+        "Query-processor problems have recognisable signatures, distinct from storage or locking problems:",
+        "actual execution plan"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reading the ratios matters: high avg_logical_reads with low execution_count is a design problem; modest reads with a huge execution_count is a chatty-calls problem. Join the same DMV to sys.dm_exec_query_plan for the XML plan and to sys.dm_exec_procedure_stats when the statement belongs to a procedure.”"
+    }
+  ],
   takeaways: [
     "Pipeline: parse → algebrize → optimize → execute, with the plan cache short-circuiting the first three on a hit",
     "The optimizer chooses the lowest estimated cost — statistics quality determines whether that is the right plan",

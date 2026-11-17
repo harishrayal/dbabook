@@ -162,6 +162,312 @@ Because deleting or archiving old data at the source is the only way to bend a g
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Maintenance Impact Analysis"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Maintenance Impact Analysis within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Maintenance Impact Analysis fits”?",
+      "options": [
+        "Maintenance Impact Analysis",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance Impact Analysis in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Maintenance Impact Analysis",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Maintenance Impact Analysis”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Maintenance Impact Analysis. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Maintenance Impact Analysis is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Maintenance Impact Analysis means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Maintenance Impact Analysis fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance Impact Analysis in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Maintenance Impact Analysis”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Maintenance Impact Analysis"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Maintenance Impact Analysis within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Maintenance Impact Analysis fits”?",
+      "options": [
+        "Maintenance Impact Analysis",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance Impact Analysis in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Maintenance Impact Analysis",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Maintenance Impact Analysis”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Maintenance Impact Analysis. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Maintenance Impact Analysis is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Maintenance Impact Analysis means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Maintenance Impact Analysis fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance Impact Analysis in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Maintenance Impact Analysis”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Maintenance Impact Analysis"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Maintenance Impact Analysis within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Maintenance Impact Analysis fits”?",
+      "options": [
+        "Maintenance Impact Analysis",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance Impact Analysis in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Maintenance Impact Analysis",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Maintenance Impact Analysis”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Maintenance Impact Analysis. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Maintenance Impact Analysis is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Maintenance Impact Analysis means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Maintenance Impact Analysis fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance Impact Analysis in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "The diagram below places Maintenance Impact Analysis alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Maintenance Impact Analysis”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Maintenance Impact Analysis:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    }
+  ],
   takeaways: [
     "Maintenance Impact Analysis is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

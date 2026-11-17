@@ -178,6 +178,312 @@ DENY overrides GRANT at any scope — a deny on a schema blocks access even if S
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Database Access Reviews",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Access Reviews within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Access Reviews fits”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Access Reviews in practice”?",
+      "options": [
+        "Database Access Reviews is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Roles simplify permission management.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Access Reviews”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Access Reviews is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Access Reviews. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Access Reviews:",
+        "Database Access Reviews",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Access Reviews with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Access Reviews means”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Access Reviews fits”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Access Reviews in practice”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Database Access Reviews:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Access Reviews:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Access Reviews”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Database Access Reviews",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Access Reviews within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Access Reviews fits”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Access Reviews in practice”?",
+      "options": [
+        "Database Access Reviews is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Roles simplify permission management.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Access Reviews”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Access Reviews is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Access Reviews. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Access Reviews:",
+        "Database Access Reviews",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Access Reviews with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Access Reviews means”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Access Reviews fits”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Access Reviews in practice”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Database Access Reviews:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Access Reviews:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Access Reviews”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Database Access Reviews",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Access Reviews within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Access Reviews fits”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Access Reviews in practice”?",
+      "options": [
+        "Database Access Reviews is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Roles simplify permission management.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Access Reviews”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Access Reviews is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Access Reviews. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Access Reviews:",
+        "Database Access Reviews",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Access Reviews with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Access Reviews means”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Access Reviews fits”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Access Reviews alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Access Reviews in practice”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Database Access Reviews:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Access Reviews:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Access Reviews”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Access Reviews is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

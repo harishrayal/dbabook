@@ -186,6 +186,312 @@ Granting only the minimum permissions required for the minimum scope and time. I
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "With Object-Level Permissions, prefer measured, reversible changes.",
+        "Object-Level Permissions"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Object-Level Permissions within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Object-Level Permissions fits”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Object-Level Permissions in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Object-Level Permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Object-Level Permissions”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Object-Level Permissions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Neutral",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Object-Level Permissions",
+        "Object-Level Permissions sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Object-Level Permissions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Object-Level Permissions means”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Object-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Object-Level Permissions fits”?",
+      "options": [
+        "Object-Level Permissions",
+        "The diagram below places Object-Level Permissions alongside the core concepts of SQL Server security and permissions.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Object-Level Permissions alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Object-Level Permissions in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Object-Level Permissions:",
+        "Object-Level Permissions",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Object-Level Permissions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Object-Level Permissions”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "With Object-Level Permissions, prefer measured, reversible changes.",
+        "Object-Level Permissions"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Object-Level Permissions within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Object-Level Permissions fits”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Object-Level Permissions in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Object-Level Permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Object-Level Permissions”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Object-Level Permissions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Neutral",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Object-Level Permissions",
+        "Object-Level Permissions sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Object-Level Permissions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Object-Level Permissions means”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Object-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Object-Level Permissions fits”?",
+      "options": [
+        "Object-Level Permissions",
+        "The diagram below places Object-Level Permissions alongside the core concepts of SQL Server security and permissions.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Object-Level Permissions alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Object-Level Permissions in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Object-Level Permissions:",
+        "Object-Level Permissions",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Object-Level Permissions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Object-Level Permissions”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "With Object-Level Permissions, prefer measured, reversible changes.",
+        "Object-Level Permissions"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Object-Level Permissions within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Object-Level Permissions fits”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Object-Level Permissions in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Object-Level Permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Object-Level Permissions”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Object-Level Permissions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Neutral",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Object-Level Permissions",
+        "Object-Level Permissions sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Object-Level Permissions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Object-Level Permissions means”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Object-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Object-Level Permissions fits”?",
+      "options": [
+        "Object-Level Permissions",
+        "The diagram below places Object-Level Permissions alongside the core concepts of SQL Server security and permissions.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Object-Level Permissions alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Object-Level Permissions in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Object-Level Permissions:",
+        "Object-Level Permissions",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Object-Level Permissions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Object-Level Permissions”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Object-Level Permissions is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

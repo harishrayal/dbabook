@@ -183,6 +183,312 @@ A page is an 8 KB unit of data storage and I/O; an extent is eight contiguous pa
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Log Sequence Numbers (LSNs) sits inside a larger system.",
+        "Log Sequence Numbers (LSNs)",
+        "Log durable before data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Log Sequence Numbers (LSNs) within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Sequence Numbers (LSNs) fits”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Log Sequence Numbers (LSNs)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Sequence Numbers (LSNs) in practice”?",
+      "options": [
+        "Allocation unit",
+        "Log truncation unit",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine parses, compiles and executes queries. Plans are cached and reused; parameterisation and the plan cache are central to understanding consistent versus intermittent performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Sequence Numbers (LSNs)”?",
+      "options": [
+        "Log Sequence Numbers (LSNs)",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Sequence Numbers (LSNs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Log Sequence Numbers (LSNs)",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "Log Sequence Numbers (LSNs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Log Sequence Numbers (LSNs)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Log Sequence Numbers (LSNs) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Sequence Numbers (LSNs) means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Sequence Numbers (LSNs) fits”?",
+      "options": [
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture.",
+        "Log Sequence Numbers (LSNs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Sequence Numbers (LSNs) in practice”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture.",
+        "The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Sequence Numbers (LSNs)”?",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Log Sequence Numbers (LSNs) sits inside a larger system.",
+        "Log Sequence Numbers (LSNs)",
+        "Log durable before data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Log Sequence Numbers (LSNs) within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Sequence Numbers (LSNs) fits”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Log Sequence Numbers (LSNs)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Sequence Numbers (LSNs) in practice”?",
+      "options": [
+        "Allocation unit",
+        "Log truncation unit",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine parses, compiles and executes queries. Plans are cached and reused; parameterisation and the plan cache are central to understanding consistent versus intermittent performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Sequence Numbers (LSNs)”?",
+      "options": [
+        "Log Sequence Numbers (LSNs)",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Sequence Numbers (LSNs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Log Sequence Numbers (LSNs)",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "Log Sequence Numbers (LSNs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Log Sequence Numbers (LSNs)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Log Sequence Numbers (LSNs) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Sequence Numbers (LSNs) means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Sequence Numbers (LSNs) fits”?",
+      "options": [
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture.",
+        "Log Sequence Numbers (LSNs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Sequence Numbers (LSNs) in practice”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture.",
+        "The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Sequence Numbers (LSNs)”?",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Log Sequence Numbers (LSNs) sits inside a larger system.",
+        "Log Sequence Numbers (LSNs)",
+        "Log durable before data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Log Sequence Numbers (LSNs) within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Sequence Numbers (LSNs) fits”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Log Sequence Numbers (LSNs)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Sequence Numbers (LSNs) in practice”?",
+      "options": [
+        "Allocation unit",
+        "Log truncation unit",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine parses, compiles and executes queries. Plans are cached and reused; parameterisation and the plan cache are central to understanding consistent versus intermittent performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Sequence Numbers (LSNs)”?",
+      "options": [
+        "Log Sequence Numbers (LSNs)",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Sequence Numbers (LSNs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The buffer pool caches pages in memory.",
+        "Log Sequence Numbers (LSNs)",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "Log Sequence Numbers (LSNs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Log Sequence Numbers (LSNs)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Log Sequence Numbers (LSNs) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Sequence Numbers (LSNs) means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Sequence Numbers (LSNs) fits”?",
+      "options": [
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture.",
+        "Log Sequence Numbers (LSNs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Sequence Numbers (LSNs) in practice”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture.",
+        "The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Sequence Numbers (LSNs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Sequence Numbers (LSNs)”?",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Sequence Numbers (LSNs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Log Sequence Numbers (LSNs) is a fundamental concept in SQL Server internal architecture",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

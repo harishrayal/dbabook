@@ -183,6 +183,312 @@ The log record describing a change is written to disk before the modified data p
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "SQL Server Startup and Shutdown",
+        "SQL Server Startup and Shutdown sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Startup and Shutdown within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Startup and Shutdown fits”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Startup and Shutdown.",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture.",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine parses, compiles and executes queries. Plans are cached and reused; parameterisation and the plan cache are central to understanding consistent versus intermittent performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Startup and Shutdown in practice”?",
+      "options": [
+        "SQL Server Startup and Shutdown",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Startup and Shutdown”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Startup and Shutdown",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Startup and Shutdown. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pages in the buffer pool are clean if they match disk, dirty if modified. Checkpoints write dirty pages to disk to bound recovery time; the lazy writer evicts pages under memory pressure, flushing dirty pages first.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "SQL Server Startup and Shutdown",
+        "SQL Server Startup and Shutdown is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Startup and Shutdown with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Startup and Shutdown means”?",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Startup and Shutdown fits”?",
+      "options": [
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Startup and Shutdown in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Startup and Shutdown”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "SQL Server Startup and Shutdown",
+        "SQL Server Startup and Shutdown sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Startup and Shutdown within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Startup and Shutdown fits”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Startup and Shutdown.",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture.",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine parses, compiles and executes queries. Plans are cached and reused; parameterisation and the plan cache are central to understanding consistent versus intermittent performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Startup and Shutdown in practice”?",
+      "options": [
+        "SQL Server Startup and Shutdown",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Startup and Shutdown”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Startup and Shutdown",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Startup and Shutdown. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pages in the buffer pool are clean if they match disk, dirty if modified. Checkpoints write dirty pages to disk to bound recovery time; the lazy writer evicts pages under memory pressure, flushing dirty pages first.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "SQL Server Startup and Shutdown",
+        "SQL Server Startup and Shutdown is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Startup and Shutdown with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Startup and Shutdown means”?",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Startup and Shutdown fits”?",
+      "options": [
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Startup and Shutdown in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Startup and Shutdown”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "SQL Server Startup and Shutdown",
+        "SQL Server Startup and Shutdown sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Startup and Shutdown within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Startup and Shutdown fits”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Startup and Shutdown.",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture.",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine parses, compiles and executes queries. Plans are cached and reused; parameterisation and the plan cache are central to understanding consistent versus intermittent performance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Startup and Shutdown in practice”?",
+      "options": [
+        "SQL Server Startup and Shutdown",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Startup and Shutdown”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Startup and Shutdown",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Startup and Shutdown. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pages in the buffer pool are clean if they match disk, dirty if modified. Checkpoints write dirty pages to disk to bound recovery time; the lazy writer evicts pages under memory pressure, flushing dirty pages first.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "SQL Server Startup and Shutdown",
+        "SQL Server Startup and Shutdown is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Startup and Shutdown with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Startup and Shutdown means”?",
+      "options": [
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Startup and Shutdown fits”?",
+      "options": [
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Startup and Shutdown in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:",
+        "The diagram below places SQL Server Startup and Shutdown alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Startup and Shutdown”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Startup and Shutdown:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Startup and Shutdown is a fundamental concept in SQL Server internal architecture",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -160,6 +160,312 @@ When a small number of pages are damaged, you have FULL recovery model and a ver
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The diagram below places Page Corruption alongside the core concepts of database integrity and corruption.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Page Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Page Corruption within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Page Corruption fits”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page Corruption in practice”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Page Corruption”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Page Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Page checksums are the primary detection mechanism.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Page Corruption means”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Page Corruption fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Page Corruption alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Page Corruption alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page Corruption in practice”?",
+      "options": [
+        "With Page Corruption, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Page Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Page Corruption”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Page checksums are the primary detection mechanism.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The diagram below places Page Corruption alongside the core concepts of database integrity and corruption.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Page Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Page Corruption within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Page Corruption fits”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page Corruption in practice”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Page Corruption”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Page Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Page checksums are the primary detection mechanism.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Page Corruption means”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Page Corruption fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Page Corruption alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Page Corruption alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page Corruption in practice”?",
+      "options": [
+        "With Page Corruption, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Page Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Page Corruption”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Page checksums are the primary detection mechanism.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The diagram below places Page Corruption alongside the core concepts of database integrity and corruption.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Page Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Page Corruption within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Page Corruption fits”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page Corruption in practice”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Page Corruption”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Page Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Page checksums are the primary detection mechanism.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Page Corruption means”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Page Corruption fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Page Corruption alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Page Corruption alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page Corruption in practice”?",
+      "options": [
+        "With Page Corruption, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Page Corruption:",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Page Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Page Corruption”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Page checksums are the primary detection mechanism.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    }
+  ],
   takeaways: [
     "Page Corruption is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

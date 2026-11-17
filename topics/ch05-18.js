@@ -170,6 +170,312 @@ WHERE  session_id = @@SPID;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The default port map”?",
+      "options": [
+        "Learn this table; it covers almost every firewall request you will ever make for a Database Engine server:",
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "nothing about loopback needs a firewall rule"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Learn this table; it covers almost every firewall request you will ever make for a Database Engine server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How ports map to instances”?",
+      "options": [
+        "The rule every install needs",
+        "Optional — disable the Browser instead where you can",
+        "One host, several listeners, each with a different reason to exist."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “One host, several listeners, each with a different reason to exist. The diagram below is the shape of a real production server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is really in use”?",
+      "options": [
+        "Only when Broker is in use",
+        "Never document a port from memory — read it from the running system.",
+        "Both directions, node to node — never “any”"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never document a port from memory — read it from the running system. Three vantage points, all worth knowing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Dynamic ports in production”?",
+      "options": [
+        "A dynamic port is chosen at every service start and advertised through the Browser.",
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "static ports for every instance, Browser only where legacy connection strings demand it"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A dynamic port is chosen at every service start and advertised through the Browser. It is convenient at install time and expensive afterwards:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Ports differ not only in number but in _____ may reach them.”",
+      "options": [
+        "Analysis Services and Reporting Services have their own ports — relevant only when those features exist",
+        "One host, several listeners, each with a different reason to exist.",
+        "who"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Ports differ not only in number but in who may reach them. This is how “allow everything” rules get written, and how to avoid them:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Keeping the register honest”?",
+      "options": [
+        "Often the hardest rule to scope correctly",
+        "A port register is only useful if the same process that changes ports updates it:",
+        "Only when Broker is in use"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A port register is only useful if the same process that changes ports updates it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two rules that prevent half of all port disputes: _____, and 5022 is required only between replicas — never from clients.”",
+      "options": [
+        "nothing about loopback needs a firewall rule",
+        "Never document a port from memory — read it from the running system.",
+        "Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two rules that prevent half of all port disputes: nothing about loopback needs a firewall rule, and 5022 is required only between replicas — never from clients.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is really in use”?",
+      "options": [
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "Never document a port from memory — read it from the running system.",
+        "Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used. When they disagree, believe netstat — and then find out why the configuration has not been applied.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Production policy: _____, and one port register that records instance, host, port, and the firewall rule that permits it.”",
+      "options": [
+        "A permanent number",
+        "static ports for every instance, Browser only where legacy connection strings demand it",
+        "A dynamic port is chosen at every service start and advertised through the Browser."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Production policy: static ports for every instance, Browser only where legacy connection strings demand it, and one port register that records instance, host, port, and the firewall rule that permits it. Dynamic ports belong in development, where a restart is not an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Feature endpoints and their reach”?",
+      "options": [
+        "Read that table with an auditor's eye: not one rule needs “any protocol from any address”.",
+        "1433",
+        "1434"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Read that table with an auditor's eye: not one rule needs “any protocol from any address”. Least privilege applies to ports exactly as it applies to logins.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The default port map”?",
+      "options": [
+        "Learn this table; it covers almost every firewall request you will ever make for a Database Engine server:",
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "nothing about loopback needs a firewall rule"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Learn this table; it covers almost every firewall request you will ever make for a Database Engine server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How ports map to instances”?",
+      "options": [
+        "The rule every install needs",
+        "Optional — disable the Browser instead where you can",
+        "One host, several listeners, each with a different reason to exist."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “One host, several listeners, each with a different reason to exist. The diagram below is the shape of a real production server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is really in use”?",
+      "options": [
+        "Only when Broker is in use",
+        "Never document a port from memory — read it from the running system.",
+        "Both directions, node to node — never “any”"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never document a port from memory — read it from the running system. Three vantage points, all worth knowing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Dynamic ports in production”?",
+      "options": [
+        "A dynamic port is chosen at every service start and advertised through the Browser.",
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "static ports for every instance, Browser only where legacy connection strings demand it"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A dynamic port is chosen at every service start and advertised through the Browser. It is convenient at install time and expensive afterwards:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Ports differ not only in number but in _____ may reach them.”",
+      "options": [
+        "Analysis Services and Reporting Services have their own ports — relevant only when those features exist",
+        "One host, several listeners, each with a different reason to exist.",
+        "who"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Ports differ not only in number but in who may reach them. This is how “allow everything” rules get written, and how to avoid them:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Keeping the register honest”?",
+      "options": [
+        "Often the hardest rule to scope correctly",
+        "A port register is only useful if the same process that changes ports updates it:",
+        "Only when Broker is in use"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A port register is only useful if the same process that changes ports updates it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two rules that prevent half of all port disputes: _____, and 5022 is required only between replicas — never from clients.”",
+      "options": [
+        "nothing about loopback needs a firewall rule",
+        "Never document a port from memory — read it from the running system.",
+        "Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two rules that prevent half of all port disputes: nothing about loopback needs a firewall rule, and 5022 is required only between replicas — never from clients.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is really in use”?",
+      "options": [
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "Never document a port from memory — read it from the running system.",
+        "Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used. When they disagree, believe netstat — and then find out why the configuration has not been applied.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Production policy: _____, and one port register that records instance, host, port, and the firewall rule that permits it.”",
+      "options": [
+        "A permanent number",
+        "static ports for every instance, Browser only where legacy connection strings demand it",
+        "A dynamic port is chosen at every service start and advertised through the Browser."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Production policy: static ports for every instance, Browser only where legacy connection strings demand it, and one port register that records instance, host, port, and the firewall rule that permits it. Dynamic ports belong in development, where a restart is not an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Feature endpoints and their reach”?",
+      "options": [
+        "Read that table with an auditor's eye: not one rule needs “any protocol from any address”.",
+        "1433",
+        "1434"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Read that table with an auditor's eye: not one rule needs “any protocol from any address”. Least privilege applies to ports exactly as it applies to logins.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The default port map”?",
+      "options": [
+        "Learn this table; it covers almost every firewall request you will ever make for a Database Engine server:",
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "nothing about loopback needs a firewall rule"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Learn this table; it covers almost every firewall request you will ever make for a Database Engine server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How ports map to instances”?",
+      "options": [
+        "The rule every install needs",
+        "Optional — disable the Browser instead where you can",
+        "One host, several listeners, each with a different reason to exist."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “One host, several listeners, each with a different reason to exist. The diagram below is the shape of a real production server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is really in use”?",
+      "options": [
+        "Only when Broker is in use",
+        "Never document a port from memory — read it from the running system.",
+        "Both directions, node to node — never “any”"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never document a port from memory — read it from the running system. Three vantage points, all worth knowing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Dynamic ports in production”?",
+      "options": [
+        "A dynamic port is chosen at every service start and advertised through the Browser.",
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "static ports for every instance, Browser only where legacy connection strings demand it"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A dynamic port is chosen at every service start and advertised through the Browser. It is convenient at install time and expensive afterwards:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Ports differ not only in number but in _____ may reach them.”",
+      "options": [
+        "Analysis Services and Reporting Services have their own ports — relevant only when those features exist",
+        "One host, several listeners, each with a different reason to exist.",
+        "who"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Ports differ not only in number but in who may reach them. This is how “allow everything” rules get written, and how to avoid them:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Keeping the register honest”?",
+      "options": [
+        "Often the hardest rule to scope correctly",
+        "A port register is only useful if the same process that changes ports updates it:",
+        "Only when Broker is in use"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A port register is only useful if the same process that changes ports updates it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two rules that prevent half of all port disputes: _____, and 5022 is required only between replicas — never from clients.”",
+      "options": [
+        "nothing about loopback needs a firewall rule",
+        "Never document a port from memory — read it from the running system.",
+        "Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two rules that prevent half of all port disputes: nothing about loopback needs a firewall rule, and 5022 is required only between replicas — never from clients.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Discovering what is really in use”?",
+      "options": [
+        "On a new build, the port is assigned at build time and lands in the register before the first client connects.",
+        "Never document a port from memory — read it from the running system.",
+        "Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Windows shows the truth about sockets, SQL Server shows the truth about endpoints, and the session view shows what a real client actually used. When they disagree, believe netstat — and then find out why the configuration has not been applied.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Production policy: _____, and one port register that records instance, host, port, and the firewall rule that permits it.”",
+      "options": [
+        "A permanent number",
+        "static ports for every instance, Browser only where legacy connection strings demand it",
+        "A dynamic port is chosen at every service start and advertised through the Browser."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Production policy: static ports for every instance, Browser only where legacy connection strings demand it, and one port register that records instance, host, port, and the firewall rule that permits it. Dynamic ports belong in development, where a restart is not an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Feature endpoints and their reach”?",
+      "options": [
+        "Read that table with an auditor's eye: not one rule needs “any protocol from any address”.",
+        "1433",
+        "1434"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Read that table with an auditor's eye: not one rule needs “any protocol from any address”. Least privilege applies to ports exactly as it applies to logins.”"
+    }
+  ],
   takeaways: [
     "1433 TCP for default-instance clients, 1434 UDP for Browser lookups, 5022 TCP between AG or mirroring replicas",
     "4022 (Service Broker), 135 (DTC), and 445 (SMB backups) apply only when those features are used",

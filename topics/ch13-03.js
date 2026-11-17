@@ -160,6 +160,312 @@ Query sys.dm_exec_requests for sessions with a blocking_session_id, then find th
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Blocking Chains",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Blocking Chains within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Chains fits”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Chains in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Chains”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking Chains. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking Chains means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Chains fits”?",
+      "options": [
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks.",
+        "Compatible with S",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Chains in practice”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking Chains:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Chains”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Blocking Chains",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Blocking Chains within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Chains fits”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Chains in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Chains”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking Chains. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking Chains means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Chains fits”?",
+      "options": [
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks.",
+        "Compatible with S",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Chains in practice”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking Chains:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Chains”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Blocking Chains",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Blocking Chains within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Chains fits”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Chains in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Chains”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking Chains. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking Chains means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking Chains fits”?",
+      "options": [
+        "The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks.",
+        "Compatible with S",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Blocking Chains alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking Chains in practice”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "The following comparison captures the distinctions that matter most when working with Blocking Chains:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking Chains:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking Chains”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    }
+  ],
   takeaways: [
     "Blocking Chains is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

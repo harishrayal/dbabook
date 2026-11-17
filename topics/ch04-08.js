@@ -203,6 +203,312 @@ ORDER  BY qs.plan_generation_num DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When a batch compiles, SQL Server stores the result — not the text, but the _____ plus the execution context needed to run it.”",
+      "options": [
+        "Recompile storms",
+        "compiled plan",
+        "Same statement, different plans"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “When a batch compiles, SQL Server stores the result — not the text, but the compiled plan plus the execution context needed to run it. The cache holds several object types:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How reuse actually works”?",
+      "options": [
+        "Reuse depends on an exact match of everything that can affect a plan:",
+        "If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would…",
+        "parameter values used at compilation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reuse depends on an exact match of everything that can affect a plan:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ad-hoc pollution and how to measure it”?",
+      "options": [
+        "parameter values used at compilation",
+        "plan_generation_num counts how many times that specific statement was generated into a plan — when it approaches the execution count, the statement is being compiled almost every…",
+        "Applications that build query text by string concatenation submit thousands of unique one-off batches."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Applications that build query text by string concatenation submit thousands of unique one-off batches. Each becomes an Adhoc cache entry — a compiled plan occupying memory, compiled once, reused never. On instances with heavy ORM or dynamic-SQL traffic this routinely reaches hundreds of megabytes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The plan cache has no fixed maximum — it grows toward the difference between _____ and committed server memory and shrinks when other memory clerks (usually the buffer pool) need space.”",
+      "options": [
+        "Plans for each inner statement cached under the proc",
+        "target",
+        "Reused across sessions with matching SET options"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The plan cache has no fixed maximum — it grows toward the difference between target and committed server memory and shrinks when other memory clerks (usually the buffer pool) need space. Under pressure SQL Server evicts idle plans, and the cost of eviction is paid on the next execution:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The plan cache also stores the _____, which is the root of parameter sniffing (ch04-03).”",
+      "options": [
+        "parameter values used at compilation",
+        "Plans for each inner statement cached under the proc",
+        "Reused only if the text matches exactly (after tokenisation)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The plan cache also stores the parameter values used at compilation, which is the root of parameter sniffing (ch04-03). Related cache-side symptoms:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance: what to run and what to avoid”?",
+      "options": [
+        "plan_generation_num counts how many times that specific statement was generated into a plan — when it approaches the execution count, the statement is being compiled almost every…",
+        "A plan cache cleared in production is a CPU spike you chose to create: every statement recompiles at once.",
+        "Plan cache maintenance is mostly about restraint."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Plan cache maintenance is mostly about restraint. The safe operations:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two separate structures are cached: the _____ (the operator tree) and the cached context (session-specific state such as temporary object handles).”",
+      "options": [
+        "Shared via the proc entry that references them",
+        "compiled plan",
+        "Specialised handling"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two separate structures are cached: the compiled plan (the operator tree) and the cached context (session-specific state such as temporary object handles). Memory clerks MEMORYCLERK_SQLPLAN and MEMORYCLERK_SQLEXEC hold them respectively.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How reuse actually works”?",
+      "options": [
+        "dm_exec_cached_plans is the reuse evidence.",
+        "Targeted test of a single regressed statement",
+        "Post-deploy validation in a controlled window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The usecounts column in sys.dm_exec_cached_plans is the reuse evidence. A plan with usecounts = 1 was compiled and never used again — multiply by size_in_bytes across the cache and you can quantify pollution in megabytes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ad-hoc pollution and how to measure it”?",
+      "options": [
+        "Post-deploy validation in a controlled window",
+        "Statements whose optimal plan varies wildly per call",
+        "Mitigations, in order of preference: fix the application to use parameterised queries or procedures; set optimize for ad hoc objects = 1 so the first execution stores only a…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Mitigations, in order of preference: fix the application to use parameterised queries or procedures; set optimize for ad hoc objects = 1 so the first execution stores only a compiled skeleton (a cheap plan) and only the second execution stores the full plan; and reserve DBCC FREEPROCCACHE as a diagnostic, not a cure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Size, pressure, and eviction”?",
+      "options": [
+        "Last resort; plan problems rarely warrant it",
+        "If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would…",
+        "Statements whose optimal plan varies wildly per call"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would have kept.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When a batch compiles, SQL Server stores the result — not the text, but the _____ plus the execution context needed to run it.”",
+      "options": [
+        "Recompile storms",
+        "compiled plan",
+        "Same statement, different plans"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “When a batch compiles, SQL Server stores the result — not the text, but the compiled plan plus the execution context needed to run it. The cache holds several object types:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How reuse actually works”?",
+      "options": [
+        "Reuse depends on an exact match of everything that can affect a plan:",
+        "If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would…",
+        "parameter values used at compilation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reuse depends on an exact match of everything that can affect a plan:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ad-hoc pollution and how to measure it”?",
+      "options": [
+        "parameter values used at compilation",
+        "plan_generation_num counts how many times that specific statement was generated into a plan — when it approaches the execution count, the statement is being compiled almost every…",
+        "Applications that build query text by string concatenation submit thousands of unique one-off batches."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Applications that build query text by string concatenation submit thousands of unique one-off batches. Each becomes an Adhoc cache entry — a compiled plan occupying memory, compiled once, reused never. On instances with heavy ORM or dynamic-SQL traffic this routinely reaches hundreds of megabytes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The plan cache has no fixed maximum — it grows toward the difference between _____ and committed server memory and shrinks when other memory clerks (usually the buffer pool) need space.”",
+      "options": [
+        "Plans for each inner statement cached under the proc",
+        "target",
+        "Reused across sessions with matching SET options"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The plan cache has no fixed maximum — it grows toward the difference between target and committed server memory and shrinks when other memory clerks (usually the buffer pool) need space. Under pressure SQL Server evicts idle plans, and the cost of eviction is paid on the next execution:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The plan cache also stores the _____, which is the root of parameter sniffing (ch04-03).”",
+      "options": [
+        "parameter values used at compilation",
+        "Plans for each inner statement cached under the proc",
+        "Reused only if the text matches exactly (after tokenisation)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The plan cache also stores the parameter values used at compilation, which is the root of parameter sniffing (ch04-03). Related cache-side symptoms:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance: what to run and what to avoid”?",
+      "options": [
+        "plan_generation_num counts how many times that specific statement was generated into a plan — when it approaches the execution count, the statement is being compiled almost every…",
+        "A plan cache cleared in production is a CPU spike you chose to create: every statement recompiles at once.",
+        "Plan cache maintenance is mostly about restraint."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Plan cache maintenance is mostly about restraint. The safe operations:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two separate structures are cached: the _____ (the operator tree) and the cached context (session-specific state such as temporary object handles).”",
+      "options": [
+        "Shared via the proc entry that references them",
+        "compiled plan",
+        "Specialised handling"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two separate structures are cached: the compiled plan (the operator tree) and the cached context (session-specific state such as temporary object handles). Memory clerks MEMORYCLERK_SQLPLAN and MEMORYCLERK_SQLEXEC hold them respectively.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How reuse actually works”?",
+      "options": [
+        "dm_exec_cached_plans is the reuse evidence.",
+        "Targeted test of a single regressed statement",
+        "Post-deploy validation in a controlled window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The usecounts column in sys.dm_exec_cached_plans is the reuse evidence. A plan with usecounts = 1 was compiled and never used again — multiply by size_in_bytes across the cache and you can quantify pollution in megabytes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ad-hoc pollution and how to measure it”?",
+      "options": [
+        "Post-deploy validation in a controlled window",
+        "Statements whose optimal plan varies wildly per call",
+        "Mitigations, in order of preference: fix the application to use parameterised queries or procedures; set optimize for ad hoc objects = 1 so the first execution stores only a…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Mitigations, in order of preference: fix the application to use parameterised queries or procedures; set optimize for ad hoc objects = 1 so the first execution stores only a compiled skeleton (a cheap plan) and only the second execution stores the full plan; and reserve DBCC FREEPROCCACHE as a diagnostic, not a cure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Size, pressure, and eviction”?",
+      "options": [
+        "Last resort; plan problems rarely warrant it",
+        "If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would…",
+        "Statements whose optimal plan varies wildly per call"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would have kept.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When a batch compiles, SQL Server stores the result — not the text, but the _____ plus the execution context needed to run it.”",
+      "options": [
+        "Recompile storms",
+        "compiled plan",
+        "Same statement, different plans"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “When a batch compiles, SQL Server stores the result — not the text, but the compiled plan plus the execution context needed to run it. The cache holds several object types:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How reuse actually works”?",
+      "options": [
+        "Reuse depends on an exact match of everything that can affect a plan:",
+        "If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would…",
+        "parameter values used at compilation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reuse depends on an exact match of everything that can affect a plan:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ad-hoc pollution and how to measure it”?",
+      "options": [
+        "parameter values used at compilation",
+        "plan_generation_num counts how many times that specific statement was generated into a plan — when it approaches the execution count, the statement is being compiled almost every…",
+        "Applications that build query text by string concatenation submit thousands of unique one-off batches."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Applications that build query text by string concatenation submit thousands of unique one-off batches. Each becomes an Adhoc cache entry — a compiled plan occupying memory, compiled once, reused never. On instances with heavy ORM or dynamic-SQL traffic this routinely reaches hundreds of megabytes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The plan cache has no fixed maximum — it grows toward the difference between _____ and committed server memory and shrinks when other memory clerks (usually the buffer pool) need space.”",
+      "options": [
+        "Plans for each inner statement cached under the proc",
+        "target",
+        "Reused across sessions with matching SET options"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The plan cache has no fixed maximum — it grows toward the difference between target and committed server memory and shrinks when other memory clerks (usually the buffer pool) need space. Under pressure SQL Server evicts idle plans, and the cost of eviction is paid on the next execution:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The plan cache also stores the _____, which is the root of parameter sniffing (ch04-03).”",
+      "options": [
+        "parameter values used at compilation",
+        "Plans for each inner statement cached under the proc",
+        "Reused only if the text matches exactly (after tokenisation)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The plan cache also stores the parameter values used at compilation, which is the root of parameter sniffing (ch04-03). Related cache-side symptoms:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Maintenance: what to run and what to avoid”?",
+      "options": [
+        "plan_generation_num counts how many times that specific statement was generated into a plan — when it approaches the execution count, the statement is being compiled almost every…",
+        "A plan cache cleared in production is a CPU spike you chose to create: every statement recompiles at once.",
+        "Plan cache maintenance is mostly about restraint."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Plan cache maintenance is mostly about restraint. The safe operations:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two separate structures are cached: the _____ (the operator tree) and the cached context (session-specific state such as temporary object handles).”",
+      "options": [
+        "Shared via the proc entry that references them",
+        "compiled plan",
+        "Specialised handling"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two separate structures are cached: the compiled plan (the operator tree) and the cached context (session-specific state such as temporary object handles). Memory clerks MEMORYCLERK_SQLPLAN and MEMORYCLERK_SQLEXEC hold them respectively.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How reuse actually works”?",
+      "options": [
+        "dm_exec_cached_plans is the reuse evidence.",
+        "Targeted test of a single regressed statement",
+        "Post-deploy validation in a controlled window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The usecounts column in sys.dm_exec_cached_plans is the reuse evidence. A plan with usecounts = 1 was compiled and never used again — multiply by size_in_bytes across the cache and you can quantify pollution in megabytes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ad-hoc pollution and how to measure it”?",
+      "options": [
+        "Post-deploy validation in a controlled window",
+        "Statements whose optimal plan varies wildly per call",
+        "Mitigations, in order of preference: fix the application to use parameterised queries or procedures; set optimize for ad hoc objects = 1 so the first execution stores only a…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Mitigations, in order of preference: fix the application to use parameterised queries or procedures; set optimize for ad hoc objects = 1 so the first execution stores only a compiled skeleton (a cheap plan) and only the second execution stores the full plan; and reserve DBCC FREEPROCCACHE as a diagnostic, not a cure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Size, pressure, and eviction”?",
+      "options": [
+        "Last resort; plan problems rarely warrant it",
+        "If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would…",
+        "Statements whose optimal plan varies wildly per call"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “If the second query returns large single-use Adhoc rows, you have both a pollution problem and an eviction problem: useless plans are consuming the space that useful plans would have kept.”"
+    }
+  ],
   takeaways: [
     "Plan cache = compiled plans + execution contexts, keyed by text, parameters, and SET options",
     "Reuse is the entire point: usecounts shows whether a plan earned its memory",

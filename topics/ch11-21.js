@@ -187,6 +187,312 @@ They aggregate what sessions spent time waiting on — I/O, locks, latches, logg
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Extended Events Fundamentals",
+        "Extended Events Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Extended Events Fundamentals within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Extended Events Fundamentals fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Extended Events Fundamentals.",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extended Events Fundamentals in practice”?",
+      "options": [
+        "Extended Events Fundamentals",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Extended Events Fundamentals”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Extended Events Fundamentals",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Extended Events Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Extended Events Fundamentals",
+        "Extended Events Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Extended Events Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Extended Events Fundamentals means”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Extended Events Fundamentals fits”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extended Events Fundamentals in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Extended Events Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Extended Events Fundamentals",
+        "Extended Events Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Extended Events Fundamentals within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Extended Events Fundamentals fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Extended Events Fundamentals.",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extended Events Fundamentals in practice”?",
+      "options": [
+        "Extended Events Fundamentals",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Extended Events Fundamentals”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Extended Events Fundamentals",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Extended Events Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Extended Events Fundamentals",
+        "Extended Events Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Extended Events Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Extended Events Fundamentals means”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Extended Events Fundamentals fits”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extended Events Fundamentals in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Extended Events Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Extended Events Fundamentals",
+        "Extended Events Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Extended Events Fundamentals within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Extended Events Fundamentals fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Extended Events Fundamentals.",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extended Events Fundamentals in practice”?",
+      "options": [
+        "Extended Events Fundamentals",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Extended Events Fundamentals”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Extended Events Fundamentals",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Extended Events Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Extended Events Fundamentals",
+        "Extended Events Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Extended Events Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Extended Events Fundamentals means”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Extended Events Fundamentals fits”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extended Events Fundamentals in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:",
+        "The diagram below places Extended Events Fundamentals alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Extended Events Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The following comparison captures the distinctions that matter most when working with Extended Events Fundamentals:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Extended Events Fundamentals is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

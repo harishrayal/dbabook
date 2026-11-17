@@ -183,6 +183,312 @@ ORDER BY pages DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server's storage engine reads and writes exactly one unit: the _____ (8,192 bytes).”",
+      "options": [
+        "8-KB page",
+        "ghost record",
+        "Every data and index page has the same three regions:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server's storage engine reads and writes exactly one unit: the 8-KB page (8,192 bytes). Data files are simply collections of pages, and almost every storage-level question — why did this update split, why did the file grow, what does this corruption error mean — comes back to what is inside a page.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a row is packed”?",
+      "options": [
+        "Ghost (deleted) records awaiting cleanup",
+        "Torn-bit pattern used to detect a partially written page",
+        "A row is a tightly packed byte string — no padding, no alignment, no index over its internals."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A row is a tightly packed byte string — no padding, no alignment, no index over its internals. Its layout is fixed enough that the storage engine can parse it from the status bytes alone:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every row is addressed by a _____ — file:page:slot, internally 8 bytes (2-byte file id, 4-byte page id, 2-byte slot number).”",
+      "options": [
+        "The header answers every question the storage engine asks about a page:",
+        "Row ID (RID)",
+        "Free space is whatever is left in the middle."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every row is addressed by a Row ID (RID) — file:page:slot, internally 8 bytes (2-byte file id, 4-byte page id, 2-byte slot number). Reading a row takes two hops: the RID identifies the page and the slot; the slot array entry gives the byte offset inside the page; the row's status bytes tell SQL Server how to parse the rest.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page types across the database”?",
+      "options": [
+        "Not every page holds user rows.",
+        "A row is a tightly packed byte string — no padding, no alignment, no index over its internals.",
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Not every page holds user rows. The m_type field identifies what a page is:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading pages with DBCC PAGE”?",
+      "options": [
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record",
+        "Index rows only — number of keys and key-column metadata",
+        "DBCC PAGE prints a page's internals."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC PAGE prints a page's internals. Output goes to the client only with trace flag 3604 enabled (2520 also works on modern versions):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The anatomy of an 8-KB page”?",
+      "options": [
+        "Index Allocation Map — extents belonging to an allocation unit",
+        "Every data and index page has the same three regions:",
+        "Shared Allocation Map — mixed extents with free slots"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every data and index page has the same three regions:”"
+    },
+    {
+      "question": "In the “How a row is packed” table, what is listed for “Status byte A” under “Contents”?",
+      "options": [
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record",
+        "Transaction descriptor of the transaction that last touched it",
+        "Ghost (deleted) records awaiting cleanup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Status byte A” as “Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locating rows: slots, RIDs, forwarding, and ghosts”?",
+      "options": [
+        "2-byte column count plus one bit per column — why nullable columns are cheap",
+        "2 bytes per variable column, pointing into the variable-length data",
+        "Rows move, and the bookkeeping differs by structure:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Rows move, and the bookkeeping differs by structure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page types across the database”?",
+      "options": [
+        "varchar and nvarchar values packed in declaration order",
+        "These bitmap pages repeat at fixed intervals — a PFS page every 8,088 pages, GAM and SGAM pages every 511,232 pages (about 4 GB) — so SQL Server never has to scan linearly to find…",
+        "2 bytes per variable column, pointing into the variable-length data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “These bitmap pages repeat at fixed intervals — a PFS page every 8,088 pages, GAM and SGAM pages every 511,232 pages (about 4 GB) — so SQL Server never has to scan linearly to find free space, even in a multi-terabyte file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading pages with DBCC PAGE”?",
+      "options": [
+        "Find the right page numbers first, without guessing:",
+        "varchar and nvarchar values packed in declaration order",
+        "Present when RCSI, snapshot, or temporal versioning applies"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Find the right page numbers first, without guessing:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server's storage engine reads and writes exactly one unit: the _____ (8,192 bytes).”",
+      "options": [
+        "8-KB page",
+        "ghost record",
+        "Every data and index page has the same three regions:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server's storage engine reads and writes exactly one unit: the 8-KB page (8,192 bytes). Data files are simply collections of pages, and almost every storage-level question — why did this update split, why did the file grow, what does this corruption error mean — comes back to what is inside a page.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a row is packed”?",
+      "options": [
+        "Ghost (deleted) records awaiting cleanup",
+        "Torn-bit pattern used to detect a partially written page",
+        "A row is a tightly packed byte string — no padding, no alignment, no index over its internals."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A row is a tightly packed byte string — no padding, no alignment, no index over its internals. Its layout is fixed enough that the storage engine can parse it from the status bytes alone:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every row is addressed by a _____ — file:page:slot, internally 8 bytes (2-byte file id, 4-byte page id, 2-byte slot number).”",
+      "options": [
+        "The header answers every question the storage engine asks about a page:",
+        "Row ID (RID)",
+        "Free space is whatever is left in the middle."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every row is addressed by a Row ID (RID) — file:page:slot, internally 8 bytes (2-byte file id, 4-byte page id, 2-byte slot number). Reading a row takes two hops: the RID identifies the page and the slot; the slot array entry gives the byte offset inside the page; the row's status bytes tell SQL Server how to parse the rest.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page types across the database”?",
+      "options": [
+        "Not every page holds user rows.",
+        "A row is a tightly packed byte string — no padding, no alignment, no index over its internals.",
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Not every page holds user rows. The m_type field identifies what a page is:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading pages with DBCC PAGE”?",
+      "options": [
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record",
+        "Index rows only — number of keys and key-column metadata",
+        "DBCC PAGE prints a page's internals."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC PAGE prints a page's internals. Output goes to the client only with trace flag 3604 enabled (2520 also works on modern versions):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The anatomy of an 8-KB page”?",
+      "options": [
+        "Index Allocation Map — extents belonging to an allocation unit",
+        "Every data and index page has the same three regions:",
+        "Shared Allocation Map — mixed extents with free slots"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every data and index page has the same three regions:”"
+    },
+    {
+      "question": "In the “How a row is packed” table, what is listed for “Status byte A” under “Contents”?",
+      "options": [
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record",
+        "Transaction descriptor of the transaction that last touched it",
+        "Ghost (deleted) records awaiting cleanup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Status byte A” as “Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locating rows: slots, RIDs, forwarding, and ghosts”?",
+      "options": [
+        "2-byte column count plus one bit per column — why nullable columns are cheap",
+        "2 bytes per variable column, pointing into the variable-length data",
+        "Rows move, and the bookkeeping differs by structure:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Rows move, and the bookkeeping differs by structure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page types across the database”?",
+      "options": [
+        "varchar and nvarchar values packed in declaration order",
+        "These bitmap pages repeat at fixed intervals — a PFS page every 8,088 pages, GAM and SGAM pages every 511,232 pages (about 4 GB) — so SQL Server never has to scan linearly to find…",
+        "2 bytes per variable column, pointing into the variable-length data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “These bitmap pages repeat at fixed intervals — a PFS page every 8,088 pages, GAM and SGAM pages every 511,232 pages (about 4 GB) — so SQL Server never has to scan linearly to find free space, even in a multi-terabyte file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading pages with DBCC PAGE”?",
+      "options": [
+        "Find the right page numbers first, without guessing:",
+        "varchar and nvarchar values packed in declaration order",
+        "Present when RCSI, snapshot, or temporal versioning applies"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Find the right page numbers first, without guessing:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server's storage engine reads and writes exactly one unit: the _____ (8,192 bytes).”",
+      "options": [
+        "8-KB page",
+        "ghost record",
+        "Every data and index page has the same three regions:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server's storage engine reads and writes exactly one unit: the 8-KB page (8,192 bytes). Data files are simply collections of pages, and almost every storage-level question — why did this update split, why did the file grow, what does this corruption error mean — comes back to what is inside a page.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a row is packed”?",
+      "options": [
+        "Ghost (deleted) records awaiting cleanup",
+        "Torn-bit pattern used to detect a partially written page",
+        "A row is a tightly packed byte string — no padding, no alignment, no index over its internals."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A row is a tightly packed byte string — no padding, no alignment, no index over its internals. Its layout is fixed enough that the storage engine can parse it from the status bytes alone:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every row is addressed by a _____ — file:page:slot, internally 8 bytes (2-byte file id, 4-byte page id, 2-byte slot number).”",
+      "options": [
+        "The header answers every question the storage engine asks about a page:",
+        "Row ID (RID)",
+        "Free space is whatever is left in the middle."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every row is addressed by a Row ID (RID) — file:page:slot, internally 8 bytes (2-byte file id, 4-byte page id, 2-byte slot number). Reading a row takes two hops: the RID identifies the page and the slot; the slot array entry gives the byte offset inside the page; the row's status bytes tell SQL Server how to parse the rest.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page types across the database”?",
+      "options": [
+        "Not every page holds user rows.",
+        "A row is a tightly packed byte string — no padding, no alignment, no index over its internals.",
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Not every page holds user rows. The m_type field identifies what a page is:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading pages with DBCC PAGE”?",
+      "options": [
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record",
+        "Index rows only — number of keys and key-column metadata",
+        "DBCC PAGE prints a page's internals."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC PAGE prints a page's internals. Output goes to the client only with trace flag 3604 enabled (2520 also works on modern versions):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The anatomy of an 8-KB page”?",
+      "options": [
+        "Index Allocation Map — extents belonging to an allocation unit",
+        "Every data and index page has the same three regions:",
+        "Shared Allocation Map — mixed extents with free slots"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every data and index page has the same three regions:”"
+    },
+    {
+      "question": "In the “How a row is packed” table, what is listed for “Status byte A” under “Contents”?",
+      "options": [
+        "Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record",
+        "Transaction descriptor of the transaction that last touched it",
+        "Ghost (deleted) records awaiting cleanup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Status byte A” as “Flags: versioning info present, forwarded record, NULL bitmap, variable-length columns, ghost record”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locating rows: slots, RIDs, forwarding, and ghosts”?",
+      "options": [
+        "2-byte column count plus one bit per column — why nullable columns are cheap",
+        "2 bytes per variable column, pointing into the variable-length data",
+        "Rows move, and the bookkeeping differs by structure:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Rows move, and the bookkeeping differs by structure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Page types across the database”?",
+      "options": [
+        "varchar and nvarchar values packed in declaration order",
+        "These bitmap pages repeat at fixed intervals — a PFS page every 8,088 pages, GAM and SGAM pages every 511,232 pages (about 4 GB) — so SQL Server never has to scan linearly to find…",
+        "2 bytes per variable column, pointing into the variable-length data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “These bitmap pages repeat at fixed intervals — a PFS page every 8,088 pages, GAM and SGAM pages every 511,232 pages (about 4 GB) — so SQL Server never has to scan linearly to find free space, even in a multi-terabyte file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading pages with DBCC PAGE”?",
+      "options": [
+        "Find the right page numbers first, without guessing:",
+        "varchar and nvarchar values packed in declaration order",
+        "Present when RCSI, snapshot, or temporal versioning applies"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Find the right page numbers first, without guessing:”"
+    }
+  ],
   takeaways: [
     "An 8-KB page = 96-byte header + rows growing forward + slot array growing backward",
     "Rows are found through the slot array — physical offsets are never assumed",

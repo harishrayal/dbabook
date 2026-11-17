@@ -183,6 +183,312 @@ Restore service first using the safest tested mitigation, communicate status at 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Incident Communication sits inside a larger system.",
+        "Incident Communication",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Incident Communication within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Communication fits”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Incident Communication."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Communication in practice”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Communication”?",
+      "options": [
+        "Incident Communication",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Incident Communication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Incident Communication",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Incident Communication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Incident Communication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Incident Communication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Incident Communication means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Incident Communication:",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Communication fits”?",
+      "options": [
+        "The diagram below places Incident Communication alongside the core concepts of production incident management.",
+        "Incident Communication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Incident Communication alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Communication in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The diagram below places Incident Communication alongside the core concepts of production incident management.",
+        "The following comparison captures the distinctions that matter most when working with Incident Communication:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Incident Communication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Communication”?",
+      "options": [
+        "Communication is part of the job.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Incident Communication alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Incident Communication sits inside a larger system.",
+        "Incident Communication",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Incident Communication within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Communication fits”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Incident Communication."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Communication in practice”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Communication”?",
+      "options": [
+        "Incident Communication",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Incident Communication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Incident Communication",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Incident Communication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Incident Communication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Incident Communication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Incident Communication means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Incident Communication:",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Communication fits”?",
+      "options": [
+        "The diagram below places Incident Communication alongside the core concepts of production incident management.",
+        "Incident Communication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Incident Communication alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Communication in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The diagram below places Incident Communication alongside the core concepts of production incident management.",
+        "The following comparison captures the distinctions that matter most when working with Incident Communication:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Incident Communication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Communication”?",
+      "options": [
+        "Communication is part of the job.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Incident Communication alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Incident Communication sits inside a larger system.",
+        "Incident Communication",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Incident Communication within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Communication fits”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Incident Communication."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Communication in practice”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Communication”?",
+      "options": [
+        "Incident Communication",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Incident Communication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Incident Communication",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Incident Communication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Incident Communication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Incident Communication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Incident Communication means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Incident Communication:",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Communication fits”?",
+      "options": [
+        "The diagram below places Incident Communication alongside the core concepts of production incident management.",
+        "Incident Communication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Incident Communication alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Communication in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The diagram below places Incident Communication alongside the core concepts of production incident management.",
+        "The following comparison captures the distinctions that matter most when working with Incident Communication:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Incident Communication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Communication”?",
+      "options": [
+        "Communication is part of the job.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Incident Communication alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Incident Communication is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

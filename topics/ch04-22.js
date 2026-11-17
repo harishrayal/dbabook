@@ -162,6 +162,312 @@ Recovery must process every VLF during analysis and redo, so thousands of small 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Crash Recovery: Analysis, Redo, and Undo"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Crash Recovery: Analysis, Redo, and Undo within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Crash Recovery: Analysis, Redo, and Undo fits”?",
+      "options": [
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Crash Recovery: Analysis, Redo, and Undo in practice”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Crash Recovery: Analysis, Redo, and Undo”?",
+      "options": [
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Crash Recovery: Analysis, Redo, and Undo. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Crash Recovery: Analysis, Redo, and Undo means”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Allocation unit",
+        "Log truncation unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Crash Recovery: Analysis, Redo, and Undo fits”?",
+      "options": [
+        "Unit of data I/O",
+        "Allocation unit",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Crash Recovery: Analysis, Redo, and Undo in practice”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The following comparison captures the distinctions that matter most when working with Crash Recovery: Analysis, Redo, and Undo:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Crash Recovery: Analysis, Redo, and Undo:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Crash Recovery: Analysis, Redo, and Undo”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Unit of data I/O",
+        "Allocation unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Allocation unit",
+        "Log truncation unit",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Crash Recovery: Analysis, Redo, and Undo"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Crash Recovery: Analysis, Redo, and Undo within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Crash Recovery: Analysis, Redo, and Undo fits”?",
+      "options": [
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Crash Recovery: Analysis, Redo, and Undo in practice”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Crash Recovery: Analysis, Redo, and Undo”?",
+      "options": [
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Crash Recovery: Analysis, Redo, and Undo. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Crash Recovery: Analysis, Redo, and Undo means”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Allocation unit",
+        "Log truncation unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Crash Recovery: Analysis, Redo, and Undo fits”?",
+      "options": [
+        "Unit of data I/O",
+        "Allocation unit",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Crash Recovery: Analysis, Redo, and Undo in practice”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The following comparison captures the distinctions that matter most when working with Crash Recovery: Analysis, Redo, and Undo:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Crash Recovery: Analysis, Redo, and Undo:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Crash Recovery: Analysis, Redo, and Undo”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Unit of data I/O",
+        "Allocation unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Allocation unit",
+        "Log truncation unit",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "The relational engine parses, compiles and executes queries.",
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Crash Recovery: Analysis, Redo, and Undo"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Crash Recovery: Analysis, Redo, and Undo within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Crash Recovery: Analysis, Redo, and Undo fits”?",
+      "options": [
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too many VLFs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Crash Recovery: Analysis, Redo, and Undo in practice”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Crash Recovery: Analysis, Redo, and Undo is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Crash Recovery: Analysis, Redo, and Undo”?",
+      "options": [
+        "Understanding internals turns mysterious symptoms into mechanisms: PAGEIOLATCH waits mean physical reads, WRITELOG means log flush latency, and a long recovery often means too…",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Crash Recovery: Analysis, Redo, and Undo. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Write-ahead logging guarantees the log record for a change reaches disk before the data page. A committed transaction's log is durable even if the data page is not yet written, which is what makes crash recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Crash Recovery: Analysis, Redo, and Undo means”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Allocation unit",
+        "Log truncation unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Crash Recovery: Analysis, Redo, and Undo fits”?",
+      "options": [
+        "Unit of data I/O",
+        "Allocation unit",
+        "The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Crash Recovery: Analysis, Redo, and Undo alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Crash Recovery: Analysis, Redo, and Undo in practice”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The following comparison captures the distinctions that matter most when working with Crash Recovery: Analysis, Redo, and Undo:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Crash Recovery: Analysis, Redo, and Undo:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Crash Recovery: Analysis, Redo, and Undo”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Unit of data I/O",
+        "Allocation unit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Allocation unit",
+        "Log truncation unit",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    }
+  ],
   takeaways: [
     "Crash Recovery: Analysis, Redo, and Undo is a fundamental concept in SQL Server internal architecture",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

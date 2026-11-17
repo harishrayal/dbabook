@@ -181,6 +181,312 @@ By impact and urgency against defined levels: total outage or data loss is Sev1,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Root Cause Analysis (RCA)",
+        "Root Cause Analysis (RCA) sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Root Cause Analysis (RCA) within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Root Cause Analysis (RCA) fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Root Cause Analysis (RCA).",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Root Cause Analysis (RCA) in practice”?",
+      "options": [
+        "Root Cause Analysis (RCA)",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Root Cause Analysis (RCA)”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Root Cause Analysis (RCA)",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Root Cause Analysis (RCA). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Communication is part of the job.",
+        "Root Cause Analysis (RCA)",
+        "Root Cause Analysis (RCA) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Root Cause Analysis (RCA) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Root Cause Analysis (RCA) means”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Root Cause Analysis (RCA) fits”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Root Cause Analysis (RCA) in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Root Cause Analysis (RCA)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Root Cause Analysis (RCA)",
+        "Root Cause Analysis (RCA) sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Root Cause Analysis (RCA) within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Root Cause Analysis (RCA) fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Root Cause Analysis (RCA).",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Root Cause Analysis (RCA) in practice”?",
+      "options": [
+        "Root Cause Analysis (RCA)",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Root Cause Analysis (RCA)”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Root Cause Analysis (RCA)",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Root Cause Analysis (RCA). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Communication is part of the job.",
+        "Root Cause Analysis (RCA)",
+        "Root Cause Analysis (RCA) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Root Cause Analysis (RCA) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Root Cause Analysis (RCA) means”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Root Cause Analysis (RCA) fits”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Root Cause Analysis (RCA) in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Root Cause Analysis (RCA)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Root Cause Analysis (RCA)",
+        "Root Cause Analysis (RCA) sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Root Cause Analysis (RCA) within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Root Cause Analysis (RCA) fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Root Cause Analysis (RCA).",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Root Cause Analysis (RCA) in practice”?",
+      "options": [
+        "Root Cause Analysis (RCA)",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Root Cause Analysis (RCA)”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Root Cause Analysis (RCA)",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Root Cause Analysis (RCA). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Communication is part of the job.",
+        "Root Cause Analysis (RCA)",
+        "Root Cause Analysis (RCA) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Root Cause Analysis (RCA) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Root Cause Analysis (RCA) means”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Root Cause Analysis (RCA) fits”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Root Cause Analysis (RCA) in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):",
+        "The diagram below places Root Cause Analysis (RCA) alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Root Cause Analysis (RCA)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The following comparison captures the distinctions that matter most when working with Root Cause Analysis (RCA):"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Root Cause Analysis (RCA) is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

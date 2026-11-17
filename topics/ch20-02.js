@@ -186,6 +186,312 @@ With a central inventory, standard configurations, automated health and complian
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Managing Multiple SQL Server Instances",
+        "Managing Multiple SQL Server Instances is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Managing Multiple SQL Server Instances within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Multiple SQL Server Instances fits”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Managing Multiple SQL Server Instances is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Multiple SQL Server Instances in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Multiple SQL Server Instances”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Managing Multiple SQL Server Instances. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Report + exceptions",
+        "Managing Multiple SQL Server Instances"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Managing Multiple SQL Server Instances with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Managing Multiple SQL Server Instances means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Multiple SQL Server Instances fits”?",
+      "options": [
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations.",
+        "Growth trend",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Multiple SQL Server Instances in practice”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Multiple SQL Server Instances”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The first example establishes the relevant state.",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Managing Multiple SQL Server Instances",
+        "Managing Multiple SQL Server Instances is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Managing Multiple SQL Server Instances within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Multiple SQL Server Instances fits”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Managing Multiple SQL Server Instances is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Multiple SQL Server Instances in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Multiple SQL Server Instances”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Managing Multiple SQL Server Instances. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Report + exceptions",
+        "Managing Multiple SQL Server Instances"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Managing Multiple SQL Server Instances with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Managing Multiple SQL Server Instances means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Multiple SQL Server Instances fits”?",
+      "options": [
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations.",
+        "Growth trend",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Multiple SQL Server Instances in practice”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Multiple SQL Server Instances”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The first example establishes the relevant state.",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Managing Multiple SQL Server Instances",
+        "Managing Multiple SQL Server Instances is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Managing Multiple SQL Server Instances within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Multiple SQL Server Instances fits”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Managing Multiple SQL Server Instances is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Multiple SQL Server Instances in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Multiple SQL Server Instances”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Managing Multiple SQL Server Instances. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Report + exceptions",
+        "Managing Multiple SQL Server Instances"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Managing Multiple SQL Server Instances with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Managing Multiple SQL Server Instances means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Multiple SQL Server Instances fits”?",
+      "options": [
+        "The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations.",
+        "Growth trend",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Managing Multiple SQL Server Instances alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Multiple SQL Server Instances in practice”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Managing Multiple SQL Server Instances:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Multiple SQL Server Instances”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The first example establishes the relevant state.",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Managing Multiple SQL Server Instances is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

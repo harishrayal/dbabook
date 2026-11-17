@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Statistics Updates",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Statistics Updates within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Updates fits”?",
+      "options": [
+        "With Statistics Updates, prefer measured, reversible changes.",
+        "Actual plan",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Updates in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Statistics Updates sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Updates”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics Updates sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Statistics Updates. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "With Statistics Updates, prefer measured, reversible changes.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Statistics Updates sits inside a larger system.",
+        "Statistics Updates",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Statistics Updates with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Statistics Updates means”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Use the following as a starting point when investigating Statistics Updates.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Updates fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Statistics Updates.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "The diagram below places Statistics Updates alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Statistics Updates alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Updates in practice”?",
+      "options": [
+        "Statistics Updates",
+        "The following comparison captures the distinctions that matter most when working with Statistics Updates:",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Statistics Updates:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Updates”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics Updates",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Statistics Updates",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Statistics Updates within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Updates fits”?",
+      "options": [
+        "With Statistics Updates, prefer measured, reversible changes.",
+        "Actual plan",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Updates in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Statistics Updates sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Updates”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics Updates sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Statistics Updates. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "With Statistics Updates, prefer measured, reversible changes.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Statistics Updates sits inside a larger system.",
+        "Statistics Updates",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Statistics Updates with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Statistics Updates means”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Use the following as a starting point when investigating Statistics Updates.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Updates fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Statistics Updates.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "The diagram below places Statistics Updates alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Statistics Updates alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Updates in practice”?",
+      "options": [
+        "Statistics Updates",
+        "The following comparison captures the distinctions that matter most when working with Statistics Updates:",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Statistics Updates:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Updates”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics Updates",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Statistics Updates",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Statistics Updates within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Updates fits”?",
+      "options": [
+        "With Statistics Updates, prefer measured, reversible changes.",
+        "Actual plan",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Updates in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Statistics Updates sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Updates”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics Updates sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Statistics Updates. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "With Statistics Updates, prefer measured, reversible changes.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Statistics Updates sits inside a larger system.",
+        "Statistics Updates",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Statistics Updates with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Statistics Updates means”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Use the following as a starting point when investigating Statistics Updates.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Statistics Updates fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Statistics Updates.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "The diagram below places Statistics Updates alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Statistics Updates alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Statistics Updates in practice”?",
+      "options": [
+        "Statistics Updates",
+        "The following comparison captures the distinctions that matter most when working with Statistics Updates:",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Statistics Updates:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Statistics Updates”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Statistics Updates",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Statistics Updates is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

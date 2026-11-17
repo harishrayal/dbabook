@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Verification"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Verification within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Verification fits”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Verification in practice”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Limited during bulk ops",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Verification”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Verification. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Verification.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Verification",
+        "No",
+        "Yes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Verification with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Verification means”?",
+      "options": [
+        "Backup Verification sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Verification fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places Backup Verification alongside the core concepts of backup and recovery strategy.",
+        "Backup Verification sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Verification alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Verification in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Verification:",
+        "The full backup",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Verification:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Verification”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Verification"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Verification within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Verification fits”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Verification in practice”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Limited during bulk ops",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Verification”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Verification. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Verification.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Verification",
+        "No",
+        "Yes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Verification with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Verification means”?",
+      "options": [
+        "Backup Verification sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Verification fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places Backup Verification alongside the core concepts of backup and recovery strategy.",
+        "Backup Verification sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Verification alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Verification in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Verification:",
+        "The full backup",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Verification:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Verification”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Verification"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Verification within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Verification fits”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Verification in practice”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Limited during bulk ops",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Verification”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Verification. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Verification.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Verification",
+        "No",
+        "Yes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Verification with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Verification means”?",
+      "options": [
+        "Backup Verification sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Verification fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places Backup Verification alongside the core concepts of backup and recovery strategy.",
+        "Backup Verification sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Verification alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Verification in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Verification:",
+        "The full backup",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Verification:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Verification”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Verification is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

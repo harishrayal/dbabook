@@ -162,6 +162,312 @@ WHERE blocking_session_id &lt;&gt; 0;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When an application deploys, the code ships as binaries but the _____: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration.”",
+      "options": [
+        "data layer changes shape",
+        "Before:",
+        "During:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When an application deploys, the code ships as binaries but the data layer changes shape: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration. The DBA's job is not to write the feature — it is to guarantee that the data-layer change is correct, safe, and reversible in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before, during, after”?",
+      "options": [
+        "Does existing data need updating? Is it batched, resumable, and bounded?",
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?",
+        "The DBA's involvement spans three distinct phases, and the value is heavily weighted to the first one:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The DBA's involvement spans three distinct phases, and the value is heavily weighted to the first one:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the deployment review covers”?",
+      "options": [
+        "Additive-first design",
+        "A production deployment review is a checklist, not an art form.",
+        "treating the database step as an afterthought in a code pipeline"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production deployment review is a checklist, not an art form. The items that catch real problems:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deployment mechanics”?",
+      "options": [
+        "Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact.",
+        "Does existing data need updating? Is it batched, resumable, and bounded?",
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact. A typical DACPAC promotion looks like this in one command:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When deployments go wrong”?",
+      "options": [
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?",
+        "New jobs, schedules, operators, or configuration that schema tooling will not carry",
+        "Deployment incidents share a short list of root causes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deployment incidents share a short list of root causes. Knowing them is half the review:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's role in a release”?",
+      "options": [
+        "Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact.",
+        "That makes the DBA a gate, but a useful one.",
+        "Will the deploy rebuild indexes or leave statistics stale for the new query shapes?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “That makes the DBA a gate, but a useful one. The best deployment reviews are not interrogations; they are a short, repeatable conversation with a checklist:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ review the migration script against the release artefact, check estimated duration and lock behaviour on hot tables, confirm the rollback path, and schedule the window.”",
+      "options": [
+        "Before:",
+        "DACPAC / state-based",
+        "ORM-driven migrations"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Before: review the migration script against the release artefact, check estimated duration and lock behaviour on hot tables, confirm the rollback path, and schedule the window. During: apply with the abort-on-error setting enabled, watch blocking and job activity live, and keep the application team on the line. After: run verification queries, confirm statistics and indexes are current, and record what actually changed in the change log.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — add the new column as nullable, deploy code that reads both, backfill, then add constraints in a later release — turns most rollouts into safe, boring steps.”",
+      "options": [
+        "ORM-driven migrations",
+        "No rollback plan",
+        "Additive-first design"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two items deserve emphasis. Additive-first design — add the new column as nullable, deploy code that reads both, backfill, then add constraints in a later release — turns most rollouts into safe, boring steps. And bounded backfills: a single UPDATE across 200 million rows inside one transaction will hold locks and fill the log; batching with a delay keeps the system serving traffic while the data catches up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deployment mechanics”?",
+      "options": [
+        "treating the database step as an afterthought in a code pipeline",
+        "The three main mechanisms, and where each earns its place:",
+        "Deployment incidents share a short list of root causes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The three main mechanisms, and where each earns its place:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The meta-pitfall is _____.”",
+      "options": [
+        "treating the database step as an afterthought in a code pipeline",
+        "No rollback plan",
+        "Breaking change without compatibility"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The meta-pitfall is treating the database step as an afterthought in a code pipeline. Application deployments are automated end to end; if the database step still depends on someone remembering to run a script under time pressure, the organisation has automated everything except the riskiest part.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When an application deploys, the code ships as binaries but the _____: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration.”",
+      "options": [
+        "data layer changes shape",
+        "Before:",
+        "During:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When an application deploys, the code ships as binaries but the data layer changes shape: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration. The DBA's job is not to write the feature — it is to guarantee that the data-layer change is correct, safe, and reversible in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before, during, after”?",
+      "options": [
+        "Does existing data need updating? Is it batched, resumable, and bounded?",
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?",
+        "The DBA's involvement spans three distinct phases, and the value is heavily weighted to the first one:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The DBA's involvement spans three distinct phases, and the value is heavily weighted to the first one:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the deployment review covers”?",
+      "options": [
+        "Additive-first design",
+        "A production deployment review is a checklist, not an art form.",
+        "treating the database step as an afterthought in a code pipeline"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production deployment review is a checklist, not an art form. The items that catch real problems:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deployment mechanics”?",
+      "options": [
+        "Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact.",
+        "Does existing data need updating? Is it batched, resumable, and bounded?",
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact. A typical DACPAC promotion looks like this in one command:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When deployments go wrong”?",
+      "options": [
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?",
+        "New jobs, schedules, operators, or configuration that schema tooling will not carry",
+        "Deployment incidents share a short list of root causes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deployment incidents share a short list of root causes. Knowing them is half the review:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's role in a release”?",
+      "options": [
+        "Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact.",
+        "That makes the DBA a gate, but a useful one.",
+        "Will the deploy rebuild indexes or leave statistics stale for the new query shapes?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “That makes the DBA a gate, but a useful one. The best deployment reviews are not interrogations; they are a short, repeatable conversation with a checklist:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ review the migration script against the release artefact, check estimated duration and lock behaviour on hot tables, confirm the rollback path, and schedule the window.”",
+      "options": [
+        "Before:",
+        "DACPAC / state-based",
+        "ORM-driven migrations"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Before: review the migration script against the release artefact, check estimated duration and lock behaviour on hot tables, confirm the rollback path, and schedule the window. During: apply with the abort-on-error setting enabled, watch blocking and job activity live, and keep the application team on the line. After: run verification queries, confirm statistics and indexes are current, and record what actually changed in the change log.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — add the new column as nullable, deploy code that reads both, backfill, then add constraints in a later release — turns most rollouts into safe, boring steps.”",
+      "options": [
+        "ORM-driven migrations",
+        "No rollback plan",
+        "Additive-first design"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two items deserve emphasis. Additive-first design — add the new column as nullable, deploy code that reads both, backfill, then add constraints in a later release — turns most rollouts into safe, boring steps. And bounded backfills: a single UPDATE across 200 million rows inside one transaction will hold locks and fill the log; batching with a delay keeps the system serving traffic while the data catches up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deployment mechanics”?",
+      "options": [
+        "treating the database step as an afterthought in a code pipeline",
+        "The three main mechanisms, and where each earns its place:",
+        "Deployment incidents share a short list of root causes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The three main mechanisms, and where each earns its place:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The meta-pitfall is _____.”",
+      "options": [
+        "treating the database step as an afterthought in a code pipeline",
+        "No rollback plan",
+        "Breaking change without compatibility"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The meta-pitfall is treating the database step as an afterthought in a code pipeline. Application deployments are automated end to end; if the database step still depends on someone remembering to run a script under time pressure, the organisation has automated everything except the riskiest part.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When an application deploys, the code ships as binaries but the _____: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration.”",
+      "options": [
+        "data layer changes shape",
+        "Before:",
+        "During:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When an application deploys, the code ships as binaries but the data layer changes shape: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration. The DBA's job is not to write the feature — it is to guarantee that the data-layer change is correct, safe, and reversible in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before, during, after”?",
+      "options": [
+        "Does existing data need updating? Is it batched, resumable, and bounded?",
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?",
+        "The DBA's involvement spans three distinct phases, and the value is heavily weighted to the first one:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The DBA's involvement spans three distinct phases, and the value is heavily weighted to the first one:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the deployment review covers”?",
+      "options": [
+        "Additive-first design",
+        "A production deployment review is a checklist, not an art form.",
+        "treating the database step as an afterthought in a code pipeline"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production deployment review is a checklist, not an art form. The items that catch real problems:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deployment mechanics”?",
+      "options": [
+        "Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact.",
+        "Does existing data need updating? Is it batched, resumable, and bounded?",
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact. A typical DACPAC promotion looks like this in one command:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When deployments go wrong”?",
+      "options": [
+        "Which logins, roles, or EXECUTE grants must change — and are they in the script?",
+        "New jobs, schedules, operators, or configuration that schema tooling will not carry",
+        "Deployment incidents share a short list of root causes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deployment incidents share a short list of root causes. Knowing them is half the review:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The DBA's role in a release”?",
+      "options": [
+        "Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact.",
+        "That makes the DBA a gate, but a useful one.",
+        "Will the deploy rebuild indexes or leave statistics stale for the new query shapes?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “That makes the DBA a gate, but a useful one. The best deployment reviews are not interrogations; they are a short, repeatable conversation with a checklist:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ review the migration script against the release artefact, check estimated duration and lock behaviour on hot tables, confirm the rollback path, and schedule the window.”",
+      "options": [
+        "Before:",
+        "DACPAC / state-based",
+        "ORM-driven migrations"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Before: review the migration script against the release artefact, check estimated duration and lock behaviour on hot tables, confirm the rollback path, and schedule the window. During: apply with the abort-on-error setting enabled, watch blocking and job activity live, and keep the application team on the line. After: run verification queries, confirm statistics and indexes are current, and record what actually changed in the change log.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — add the new column as nullable, deploy code that reads both, backfill, then add constraints in a later release — turns most rollouts into safe, boring steps.”",
+      "options": [
+        "ORM-driven migrations",
+        "No rollback plan",
+        "Additive-first design"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two items deserve emphasis. Additive-first design — add the new column as nullable, deploy code that reads both, backfill, then add constraints in a later release — turns most rollouts into safe, boring steps. And bounded backfills: a single UPDATE across 200 million rows inside one transaction will hold locks and fill the log; batching with a delay keeps the system serving traffic while the data catches up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deployment mechanics”?",
+      "options": [
+        "treating the database step as an afterthought in a code pipeline",
+        "The three main mechanisms, and where each earns its place:",
+        "Deployment incidents share a short list of root causes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The three main mechanisms, and where each earns its place:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The meta-pitfall is _____.”",
+      "options": [
+        "treating the database step as an afterthought in a code pipeline",
+        "No rollback plan",
+        "Breaking change without compatibility"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The meta-pitfall is treating the database step as an afterthought in a code pipeline. Application deployments are automated end to end; if the database step still depends on someone remembering to run a script under time pressure, the organisation has automated everything except the riskiest part.”"
+    }
+  ],
   takeaways: [
     "The DBA owns the safety of the data-layer change: review, application, verification, and rollback",
     "Ninety per cent of deployment risk is removed at the review gate, while the change is still text",

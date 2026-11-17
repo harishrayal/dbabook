@@ -184,6 +184,312 @@ Get-ADUser -Identity 'svc_sql' -Properties Enabled, PasswordLastSet, AccountLock
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Windows identifies principals by a _____ such as S-1-5-21-….”",
+      "options": [
+        "Stronger identity",
+        "SPN registration",
+        "security identifier (SID)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows identifies principals by a security identifier (SID) such as S-1-5-21-…. The username is a friendly label, and renaming an account leaves its SID untouched. Deleting and recreating an account with exactly the same name produces a different SID — every permission grant and every SQL login attached to the old SID becomes orphaned.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ exists in the server's SAM database and is scoped to that machine.”",
+      "options": [
+        "Cost",
+        "local account",
+        "SPN registration"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A local account exists in the server's SAM database and is scoped to that machine. A domain account lives in Active Directory, is usable across the estate, and participates in Kerberos authentication. Managed identities in Entra ID extend the same idea to cloud-hosted resources.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Modern SQL Server installations default to _____ named after the service: NT SERVICE\\MSSQLSERVER for the engine and NT SERVICE\\SQLSERVERAGENT for Agent.”",
+      "options": [
+        "virtual accounts",
+        "Cost",
+        "Network Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Modern SQL Server installations default to virtual accounts named after the service: NT SERVICE\\MSSQLSERVER for the engine and NT SERVICE\\SQLSERVERAGENT for Agent. They have no password to expire, are scoped to the local machine, and carry a per-service SID that can be granted rights on the file system. That is why SQL setup can create SQLServerMSSQLUser$SQL01$MSSQLSERVER and grant it access to the data directory without touching a domain account.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Grant permissions to _____, not individuals.”",
+      "options": [
+        "Cost",
+        "Network Service",
+        "groups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Grant permissions to groups, not individuals. Windows supports nested membership: a user belongs to a domain global group, which is a member of a local group on the SQL Server, which holds the right to a folder or a SQL login. Changing a person's access then means one group-membership change, not a hunt through every ACL.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is the default and the right choice for most estates: credentials are managed centrally, passwords never appear in a connection string, and Kerberos can delegate identity through multiple hops.”",
+      "options": [
+        "groups",
+        "Windows authentication",
+        "Network Service"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Windows authentication is the default and the right choice for most estates: credentials are managed centrally, passwords never appear in a connection string, and Kerberos can delegate identity through multiple hops. SQL authentication is sometimes unavoidable for legacy applications or cross-domain access, but it puts password policy, rotation, and storage in the application's hands.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Account lifecycle and production pitfalls”?",
+      "options": [
+        "Most account-related outages are not clever attacks; they are routine maintenance with an unexpected blast radius.",
+        "Central disable, reset, and audit",
+        "Enterprise SQL Server services and DBA groups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most account-related outages are not clever attacks; they are routine maintenance with an unexpected blast radius. Build these checks into change control:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts, SIDs, and why names are only labels”?",
+      "options": [
+        "Service Principal Name",
+        "If a login shows a SID that no longer matches the directory account, drop and recreate the login from Windows, then remap database users with ALTER USER...",
+        "server_principals, but users cannot connect because the Windows SID behind it no longer exists."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This is the root of some of the most confusing incidents in SQL Server: a login still appears in sys.server_principals, but users cannot connect because the Windows SID behind it no longer exists. Conversely, a renamed account continues to work because the SID is stable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For anything domain-joined, use a dedicated _____ for the engine and Agent, and a domain security group for the DBAs.”",
+      "options": [
+        "Password expiry:",
+        "group Managed Service Account (gMSA)",
+        "Service Principal Name"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “For a standalone SQL Server, local groups and virtual accounts are fine. For anything domain-joined, use a dedicated group Managed Service Account (gMSA) for the engine and Agent, and a domain security group for the DBAs. Do not use a person's own account for a service: when that person leaves and the account is disabled, the database service dies at the next restart.”"
+    },
+    {
+      "question": "Complete the lesson statement: “In a domain, a _____ is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group.”",
+      "options": [
+        "gMSA",
+        "Password expiry:",
+        "Account disable:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In a domain, a gMSA is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group. Requirements include a Key Distribution Service root key and a principle group listing the hosts allowed to retrieve the password.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Groups: the only sane way to grant access”?",
+      "options": [
+        "Network Service",
+        "Windows authentication",
+        "Keep a separate group for DBAs with sysadmin rights, a read-only monitoring group, and a deployment group for application releases."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Keep a separate group for DBAs with sysadmin rights, a read-only monitoring group, and a deployment group for application releases. Audit membership quarterly: inherited access accumulates quietly in large organisations.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Windows identifies principals by a _____ such as S-1-5-21-….”",
+      "options": [
+        "Stronger identity",
+        "SPN registration",
+        "security identifier (SID)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows identifies principals by a security identifier (SID) such as S-1-5-21-…. The username is a friendly label, and renaming an account leaves its SID untouched. Deleting and recreating an account with exactly the same name produces a different SID — every permission grant and every SQL login attached to the old SID becomes orphaned.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ exists in the server's SAM database and is scoped to that machine.”",
+      "options": [
+        "Cost",
+        "local account",
+        "SPN registration"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A local account exists in the server's SAM database and is scoped to that machine. A domain account lives in Active Directory, is usable across the estate, and participates in Kerberos authentication. Managed identities in Entra ID extend the same idea to cloud-hosted resources.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Modern SQL Server installations default to _____ named after the service: NT SERVICE\\MSSQLSERVER for the engine and NT SERVICE\\SQLSERVERAGENT for Agent.”",
+      "options": [
+        "virtual accounts",
+        "Cost",
+        "Network Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Modern SQL Server installations default to virtual accounts named after the service: NT SERVICE\\MSSQLSERVER for the engine and NT SERVICE\\SQLSERVERAGENT for Agent. They have no password to expire, are scoped to the local machine, and carry a per-service SID that can be granted rights on the file system. That is why SQL setup can create SQLServerMSSQLUser$SQL01$MSSQLSERVER and grant it access to the data directory without touching a domain account.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Grant permissions to _____, not individuals.”",
+      "options": [
+        "Cost",
+        "Network Service",
+        "groups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Grant permissions to groups, not individuals. Windows supports nested membership: a user belongs to a domain global group, which is a member of a local group on the SQL Server, which holds the right to a folder or a SQL login. Changing a person's access then means one group-membership change, not a hunt through every ACL.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is the default and the right choice for most estates: credentials are managed centrally, passwords never appear in a connection string, and Kerberos can delegate identity through multiple hops.”",
+      "options": [
+        "groups",
+        "Windows authentication",
+        "Network Service"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Windows authentication is the default and the right choice for most estates: credentials are managed centrally, passwords never appear in a connection string, and Kerberos can delegate identity through multiple hops. SQL authentication is sometimes unavoidable for legacy applications or cross-domain access, but it puts password policy, rotation, and storage in the application's hands.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Account lifecycle and production pitfalls”?",
+      "options": [
+        "Most account-related outages are not clever attacks; they are routine maintenance with an unexpected blast radius.",
+        "Central disable, reset, and audit",
+        "Enterprise SQL Server services and DBA groups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most account-related outages are not clever attacks; they are routine maintenance with an unexpected blast radius. Build these checks into change control:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts, SIDs, and why names are only labels”?",
+      "options": [
+        "Service Principal Name",
+        "If a login shows a SID that no longer matches the directory account, drop and recreate the login from Windows, then remap database users with ALTER USER...",
+        "server_principals, but users cannot connect because the Windows SID behind it no longer exists."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This is the root of some of the most confusing incidents in SQL Server: a login still appears in sys.server_principals, but users cannot connect because the Windows SID behind it no longer exists. Conversely, a renamed account continues to work because the SID is stable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For anything domain-joined, use a dedicated _____ for the engine and Agent, and a domain security group for the DBAs.”",
+      "options": [
+        "Password expiry:",
+        "group Managed Service Account (gMSA)",
+        "Service Principal Name"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “For a standalone SQL Server, local groups and virtual accounts are fine. For anything domain-joined, use a dedicated group Managed Service Account (gMSA) for the engine and Agent, and a domain security group for the DBAs. Do not use a person's own account for a service: when that person leaves and the account is disabled, the database service dies at the next restart.”"
+    },
+    {
+      "question": "Complete the lesson statement: “In a domain, a _____ is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group.”",
+      "options": [
+        "gMSA",
+        "Password expiry:",
+        "Account disable:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In a domain, a gMSA is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group. Requirements include a Key Distribution Service root key and a principle group listing the hosts allowed to retrieve the password.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Groups: the only sane way to grant access”?",
+      "options": [
+        "Network Service",
+        "Windows authentication",
+        "Keep a separate group for DBAs with sysadmin rights, a read-only monitoring group, and a deployment group for application releases."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Keep a separate group for DBAs with sysadmin rights, a read-only monitoring group, and a deployment group for application releases. Audit membership quarterly: inherited access accumulates quietly in large organisations.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Windows identifies principals by a _____ such as S-1-5-21-….”",
+      "options": [
+        "Stronger identity",
+        "SPN registration",
+        "security identifier (SID)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows identifies principals by a security identifier (SID) such as S-1-5-21-…. The username is a friendly label, and renaming an account leaves its SID untouched. Deleting and recreating an account with exactly the same name produces a different SID — every permission grant and every SQL login attached to the old SID becomes orphaned.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ exists in the server's SAM database and is scoped to that machine.”",
+      "options": [
+        "Cost",
+        "local account",
+        "SPN registration"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A local account exists in the server's SAM database and is scoped to that machine. A domain account lives in Active Directory, is usable across the estate, and participates in Kerberos authentication. Managed identities in Entra ID extend the same idea to cloud-hosted resources.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Modern SQL Server installations default to _____ named after the service: NT SERVICE\\MSSQLSERVER for the engine and NT SERVICE\\SQLSERVERAGENT for Agent.”",
+      "options": [
+        "virtual accounts",
+        "Cost",
+        "Network Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Modern SQL Server installations default to virtual accounts named after the service: NT SERVICE\\MSSQLSERVER for the engine and NT SERVICE\\SQLSERVERAGENT for Agent. They have no password to expire, are scoped to the local machine, and carry a per-service SID that can be granted rights on the file system. That is why SQL setup can create SQLServerMSSQLUser$SQL01$MSSQLSERVER and grant it access to the data directory without touching a domain account.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Grant permissions to _____, not individuals.”",
+      "options": [
+        "Cost",
+        "Network Service",
+        "groups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Grant permissions to groups, not individuals. Windows supports nested membership: a user belongs to a domain global group, which is a member of a local group on the SQL Server, which holds the right to a folder or a SQL login. Changing a person's access then means one group-membership change, not a hunt through every ACL.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is the default and the right choice for most estates: credentials are managed centrally, passwords never appear in a connection string, and Kerberos can delegate identity through multiple hops.”",
+      "options": [
+        "groups",
+        "Windows authentication",
+        "Network Service"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Windows authentication is the default and the right choice for most estates: credentials are managed centrally, passwords never appear in a connection string, and Kerberos can delegate identity through multiple hops. SQL authentication is sometimes unavoidable for legacy applications or cross-domain access, but it puts password policy, rotation, and storage in the application's hands.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Account lifecycle and production pitfalls”?",
+      "options": [
+        "Most account-related outages are not clever attacks; they are routine maintenance with an unexpected blast radius.",
+        "Central disable, reset, and audit",
+        "Enterprise SQL Server services and DBA groups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most account-related outages are not clever attacks; they are routine maintenance with an unexpected blast radius. Build these checks into change control:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts, SIDs, and why names are only labels”?",
+      "options": [
+        "Service Principal Name",
+        "If a login shows a SID that no longer matches the directory account, drop and recreate the login from Windows, then remap database users with ALTER USER...",
+        "server_principals, but users cannot connect because the Windows SID behind it no longer exists."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This is the root of some of the most confusing incidents in SQL Server: a login still appears in sys.server_principals, but users cannot connect because the Windows SID behind it no longer exists. Conversely, a renamed account continues to work because the SID is stable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For anything domain-joined, use a dedicated _____ for the engine and Agent, and a domain security group for the DBAs.”",
+      "options": [
+        "Password expiry:",
+        "group Managed Service Account (gMSA)",
+        "Service Principal Name"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “For a standalone SQL Server, local groups and virtual accounts are fine. For anything domain-joined, use a dedicated group Managed Service Account (gMSA) for the engine and Agent, and a domain security group for the DBAs. Do not use a person's own account for a service: when that person leaves and the account is disabled, the database service dies at the next restart.”"
+    },
+    {
+      "question": "Complete the lesson statement: “In a domain, a _____ is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group.”",
+      "options": [
+        "gMSA",
+        "Password expiry:",
+        "Account disable:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In a domain, a gMSA is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group. Requirements include a Key Distribution Service root key and a principle group listing the hosts allowed to retrieve the password.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Groups: the only sane way to grant access”?",
+      "options": [
+        "Network Service",
+        "Windows authentication",
+        "Keep a separate group for DBAs with sysadmin rights, a read-only monitoring group, and a deployment group for application releases."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Keep a separate group for DBAs with sysadmin rights, a read-only monitoring group, and a deployment group for application releases. Audit membership quarterly: inherited access accumulates quietly in large organisations.”"
+    }
+  ],
   takeaways: [
     "SIDs define identity; account names are labels — rename is safe, delete-and-recreate is not",
     "Use virtual accounts for standalone servers and gMSAs for domain-joined instances",

@@ -167,6 +167,312 @@ It uses row versioning so readers do not take shared locks that block writers an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Read Uncommitted within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Uncommitted fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Uncommitted in practice”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Held read locks",
+        "Row versioning"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Uncommitted”?",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Read Uncommitted. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "None",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "With Read Uncommitted, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Read Uncommitted means”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Row versioning",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Uncommitted fits”?",
+      "options": [
+        "Held read locks",
+        "Row versioning",
+        "The diagram below places Read Uncommitted alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Read Uncommitted alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Uncommitted in practice”?",
+      "options": [
+        "Compatible with S",
+        "The following comparison captures the distinctions that matter most when working with Read Uncommitted:",
+        "Incompatible with all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Read Uncommitted:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Uncommitted”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Read Uncommitted",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Read Uncommitted within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Uncommitted fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Uncommitted in practice”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Held read locks",
+        "Row versioning"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Uncommitted”?",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Read Uncommitted. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "None",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "With Read Uncommitted, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Read Uncommitted means”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Row versioning",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Uncommitted fits”?",
+      "options": [
+        "Held read locks",
+        "Row versioning",
+        "The diagram below places Read Uncommitted alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Read Uncommitted alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Uncommitted in practice”?",
+      "options": [
+        "Compatible with S",
+        "The following comparison captures the distinctions that matter most when working with Read Uncommitted:",
+        "Incompatible with all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Read Uncommitted:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Uncommitted”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Read Uncommitted",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Read Uncommitted within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Uncommitted fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Uncommitted in practice”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "Held read locks",
+        "Row versioning"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Uncommitted”?",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Read Uncommitted. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "None",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "With Read Uncommitted, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Read Uncommitted means”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Row versioning",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Uncommitted fits”?",
+      "options": [
+        "Held read locks",
+        "Row versioning",
+        "The diagram below places Read Uncommitted alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Read Uncommitted alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Uncommitted in practice”?",
+      "options": [
+        "Compatible with S",
+        "The following comparison captures the distinctions that matter most when working with Read Uncommitted:",
+        "Incompatible with all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Read Uncommitted:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Uncommitted”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Read Uncommitted"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Read Uncommitted",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    }
+  ],
   takeaways: [
     "Read Uncommitted is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

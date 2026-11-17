@@ -187,6 +187,312 @@ They aggregate what sessions spent time waiting on — I/O, locks, latches, logg
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Deadlock Monitoring",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Monitoring fits”?",
+      "options": [
+        "With Deadlock Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Monitoring in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Deadlock Monitoring sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock Monitoring sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "With Deadlock Monitoring, prefer measured, reversible changes.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Deadlock Monitoring sits inside a larger system.",
+        "Deadlock Monitoring",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Deadlock Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Monitoring means”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Use the following as a starting point when investigating Deadlock Monitoring.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Monitoring fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Deadlock Monitoring.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The diagram below places Deadlock Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Deadlock Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Monitoring in practice”?",
+      "options": [
+        "Deadlock Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Monitoring:",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Deadlock Monitoring",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Deadlock Monitoring",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Monitoring fits”?",
+      "options": [
+        "With Deadlock Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Monitoring in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Deadlock Monitoring sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock Monitoring sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "With Deadlock Monitoring, prefer measured, reversible changes.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Deadlock Monitoring sits inside a larger system.",
+        "Deadlock Monitoring",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Deadlock Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Monitoring means”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Use the following as a starting point when investigating Deadlock Monitoring.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Monitoring fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Deadlock Monitoring.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The diagram below places Deadlock Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Deadlock Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Monitoring in practice”?",
+      "options": [
+        "Deadlock Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Monitoring:",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Deadlock Monitoring",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Deadlock Monitoring",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Monitoring fits”?",
+      "options": [
+        "With Deadlock Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Monitoring in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Deadlock Monitoring sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Deadlock Monitoring sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "With Deadlock Monitoring, prefer measured, reversible changes.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Deadlock Monitoring sits inside a larger system.",
+        "Deadlock Monitoring",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Deadlock Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Monitoring means”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Use the following as a starting point when investigating Deadlock Monitoring.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Monitoring fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Deadlock Monitoring.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The diagram below places Deadlock Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Deadlock Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Monitoring in practice”?",
+      "options": [
+        "Deadlock Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Monitoring:",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Deadlock Monitoring",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Deadlock Monitoring is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

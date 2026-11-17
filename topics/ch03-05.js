@@ -192,6 +192,312 @@ Get-Volume -DriveLetter L | Select-Object DriveLetter, Size, SizeRemaining</code
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “It first writes a _____ describing contiguous ranges of sectors, then formats one of those ranges and gives it an identity — a drive letter or a mount-point folder.”",
+      "options": [
+        "drive letter",
+        "partition table",
+        "GPT"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A physical disk is a block device: an SSD, a SAN LUN presented to the host, or a virtual disk in a hypervisor. Windows never lets a file system use the raw device directly. It first writes a partition table describing contiguous ranges of sectors, then formats one of those ranges and gives it an identity — a drive letter or a mount-point folder. That formatted range is a volume.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots.”",
+      "options": [
+        "MBR",
+        "drive letter",
+        "mount point"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two partition-table formats exist, and choosing the wrong one silently caps how much of a LUN you can use. MBR (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots. GPT (GUID Partition Table) is the modern format: 64-bit addressing, 128 partition entries by default, and a backup copy of the table at the end of the disk.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is the familiar choice, but a busy server can present dozens of LUNs and there are only 26 letters.”",
+      "options": [
+        "mount point",
+        "Tool support:",
+        "drive letter"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A volume needs an identity before SQL Server can use it. A drive letter is the familiar choice, but a busy server can present dozens of LUNs and there are only 26 letters. A mount point attaches a volume to an empty folder on an existing NTFS volume, giving you paths such as C:\\Mount\\SQLData01\\ with no letter consumed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “NTFS stores files in _____, also called allocation units.”",
+      "options": [
+        "Tool support:",
+        "clusters",
+        "mount point"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “NTFS stores files in clusters, also called allocation units. The default is 4 KB. SQL Server reads in 8 KB pages and allocates space in 64 KB extents, so a 4 KB cluster means one extent spans sixteen separate clusters — more metadata work and less predictable sequential I/O. Microsoft's storage guidance for SQL Server recommends 64 KB allocation units on data and log volumes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Laying out volumes for SQL Server”?",
+      "options": [
+        "Separate volumes are not about spinning disks any more; on all-flash arrays the reasons are blast radius, growth, backup I/O, and recovery.",
+        "128 by default",
+        "UEFI for the boot disk; data disks work either way"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Separate volumes are not about spinning disks any more; on all-flash arrays the reasons are blast radius, growth, backup I/O, and recovery. A workable production layout looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth, expansion, and thin provisioning”?",
+      "options": [
+        "UEFI for the boot disk; data disks work either way",
+        "CRC checksums plus a backup header",
+        "Volumes fill silently, and SQL Server is very good at filling them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Volumes fill silently, and SQL Server is very good at filling them. Three habits prevent most incidents: monitor free space as a first-class alert, pre-size files, and know how to extend a volume before you need to.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disks, partitions, and volumes”?",
+      "options": [
+        "Allocation unit size is fixed at format time.",
+        "mdf.",
+        "clusters"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DBA normally sees only the last link in the chain: a path such as E:\\SQL\\Data\\Sales.mdf. Everything beneath it — partition style, alignment, volume size, allocation unit — is invisible in T-SQL, yet it determines whether the file can grow, how efficiently writes reach the storage array, and whether tomorrow's restore will even fit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “MBR versus GPT: the partition table”?",
+      "options": [
+        "The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management.",
+        "Supported, but test key escrow, recovery mode, and performance before production",
+        "Not supported on live database files; fine on backup targets that the backup product understands"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management. Nothing is broken; the disk was initialised as MBR, so the extra address space simply cannot be described. Converting MBR to GPT destroys data unless you use a tool that performs an in-place conversion — and that tool is a change with its own risk. Check before you build, not after:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Drive letters and mount points”?",
+      "options": [
+        "clusters",
+        "Allocation unit size is fixed at format time.",
+        "SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE... MODIFY FILE. The advantages are real: no letter exhaustion, a consistent naming scheme across servers, and the ability to add data volumes without re-letttering existing ones. The caveats are equally real:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allocation unit size and formatting”?",
+      "options": [
+        "Choose one convention per estate and enforce it: letters for small standalone servers, mount points for consolidated or SAN-heavy servers, and a register that maps volume GUID to…",
+        "Allocation unit size is fixed at format time.",
+        "SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE..."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Allocation unit size is fixed at format time. Changing it later means rebuilding the volume and moving every file, so it belongs in the build checklist alongside the partition style. Other formatting decisions that matter:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “It first writes a _____ describing contiguous ranges of sectors, then formats one of those ranges and gives it an identity — a drive letter or a mount-point folder.”",
+      "options": [
+        "drive letter",
+        "partition table",
+        "GPT"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A physical disk is a block device: an SSD, a SAN LUN presented to the host, or a virtual disk in a hypervisor. Windows never lets a file system use the raw device directly. It first writes a partition table describing contiguous ranges of sectors, then formats one of those ranges and gives it an identity — a drive letter or a mount-point folder. That formatted range is a volume.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots.”",
+      "options": [
+        "MBR",
+        "drive letter",
+        "mount point"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two partition-table formats exist, and choosing the wrong one silently caps how much of a LUN you can use. MBR (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots. GPT (GUID Partition Table) is the modern format: 64-bit addressing, 128 partition entries by default, and a backup copy of the table at the end of the disk.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is the familiar choice, but a busy server can present dozens of LUNs and there are only 26 letters.”",
+      "options": [
+        "mount point",
+        "Tool support:",
+        "drive letter"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A volume needs an identity before SQL Server can use it. A drive letter is the familiar choice, but a busy server can present dozens of LUNs and there are only 26 letters. A mount point attaches a volume to an empty folder on an existing NTFS volume, giving you paths such as C:\\Mount\\SQLData01\\ with no letter consumed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “NTFS stores files in _____, also called allocation units.”",
+      "options": [
+        "Tool support:",
+        "clusters",
+        "mount point"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “NTFS stores files in clusters, also called allocation units. The default is 4 KB. SQL Server reads in 8 KB pages and allocates space in 64 KB extents, so a 4 KB cluster means one extent spans sixteen separate clusters — more metadata work and less predictable sequential I/O. Microsoft's storage guidance for SQL Server recommends 64 KB allocation units on data and log volumes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Laying out volumes for SQL Server”?",
+      "options": [
+        "Separate volumes are not about spinning disks any more; on all-flash arrays the reasons are blast radius, growth, backup I/O, and recovery.",
+        "128 by default",
+        "UEFI for the boot disk; data disks work either way"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Separate volumes are not about spinning disks any more; on all-flash arrays the reasons are blast radius, growth, backup I/O, and recovery. A workable production layout looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth, expansion, and thin provisioning”?",
+      "options": [
+        "UEFI for the boot disk; data disks work either way",
+        "CRC checksums plus a backup header",
+        "Volumes fill silently, and SQL Server is very good at filling them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Volumes fill silently, and SQL Server is very good at filling them. Three habits prevent most incidents: monitor free space as a first-class alert, pre-size files, and know how to extend a volume before you need to.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disks, partitions, and volumes”?",
+      "options": [
+        "Allocation unit size is fixed at format time.",
+        "mdf.",
+        "clusters"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DBA normally sees only the last link in the chain: a path such as E:\\SQL\\Data\\Sales.mdf. Everything beneath it — partition style, alignment, volume size, allocation unit — is invisible in T-SQL, yet it determines whether the file can grow, how efficiently writes reach the storage array, and whether tomorrow's restore will even fit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “MBR versus GPT: the partition table”?",
+      "options": [
+        "The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management.",
+        "Supported, but test key escrow, recovery mode, and performance before production",
+        "Not supported on live database files; fine on backup targets that the backup product understands"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management. Nothing is broken; the disk was initialised as MBR, so the extra address space simply cannot be described. Converting MBR to GPT destroys data unless you use a tool that performs an in-place conversion — and that tool is a change with its own risk. Check before you build, not after:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Drive letters and mount points”?",
+      "options": [
+        "clusters",
+        "Allocation unit size is fixed at format time.",
+        "SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE... MODIFY FILE. The advantages are real: no letter exhaustion, a consistent naming scheme across servers, and the ability to add data volumes without re-letttering existing ones. The caveats are equally real:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allocation unit size and formatting”?",
+      "options": [
+        "Choose one convention per estate and enforce it: letters for small standalone servers, mount points for consolidated or SAN-heavy servers, and a register that maps volume GUID to…",
+        "Allocation unit size is fixed at format time.",
+        "SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE..."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Allocation unit size is fixed at format time. Changing it later means rebuilding the volume and moving every file, so it belongs in the build checklist alongside the partition style. Other formatting decisions that matter:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “It first writes a _____ describing contiguous ranges of sectors, then formats one of those ranges and gives it an identity — a drive letter or a mount-point folder.”",
+      "options": [
+        "drive letter",
+        "partition table",
+        "GPT"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A physical disk is a block device: an SSD, a SAN LUN presented to the host, or a virtual disk in a hypervisor. Windows never lets a file system use the raw device directly. It first writes a partition table describing contiguous ranges of sectors, then formats one of those ranges and gives it an identity — a drive letter or a mount-point folder. That formatted range is a volume.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots.”",
+      "options": [
+        "MBR",
+        "drive letter",
+        "mount point"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two partition-table formats exist, and choosing the wrong one silently caps how much of a LUN you can use. MBR (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots. GPT (GUID Partition Table) is the modern format: 64-bit addressing, 128 partition entries by default, and a backup copy of the table at the end of the disk.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is the familiar choice, but a busy server can present dozens of LUNs and there are only 26 letters.”",
+      "options": [
+        "mount point",
+        "Tool support:",
+        "drive letter"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A volume needs an identity before SQL Server can use it. A drive letter is the familiar choice, but a busy server can present dozens of LUNs and there are only 26 letters. A mount point attaches a volume to an empty folder on an existing NTFS volume, giving you paths such as C:\\Mount\\SQLData01\\ with no letter consumed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “NTFS stores files in _____, also called allocation units.”",
+      "options": [
+        "Tool support:",
+        "clusters",
+        "mount point"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “NTFS stores files in clusters, also called allocation units. The default is 4 KB. SQL Server reads in 8 KB pages and allocates space in 64 KB extents, so a 4 KB cluster means one extent spans sixteen separate clusters — more metadata work and less predictable sequential I/O. Microsoft's storage guidance for SQL Server recommends 64 KB allocation units on data and log volumes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Laying out volumes for SQL Server”?",
+      "options": [
+        "Separate volumes are not about spinning disks any more; on all-flash arrays the reasons are blast radius, growth, backup I/O, and recovery.",
+        "128 by default",
+        "UEFI for the boot disk; data disks work either way"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Separate volumes are not about spinning disks any more; on all-flash arrays the reasons are blast radius, growth, backup I/O, and recovery. A workable production layout looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth, expansion, and thin provisioning”?",
+      "options": [
+        "UEFI for the boot disk; data disks work either way",
+        "CRC checksums plus a backup header",
+        "Volumes fill silently, and SQL Server is very good at filling them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Volumes fill silently, and SQL Server is very good at filling them. Three habits prevent most incidents: monitor free space as a first-class alert, pre-size files, and know how to extend a volume before you need to.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disks, partitions, and volumes”?",
+      "options": [
+        "Allocation unit size is fixed at format time.",
+        "mdf.",
+        "clusters"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DBA normally sees only the last link in the chain: a path such as E:\\SQL\\Data\\Sales.mdf. Everything beneath it — partition style, alignment, volume size, allocation unit — is invisible in T-SQL, yet it determines whether the file can grow, how efficiently writes reach the storage array, and whether tomorrow's restore will even fit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “MBR versus GPT: the partition table”?",
+      "options": [
+        "The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management.",
+        "Supported, but test key escrow, recovery mode, and performance before production",
+        "Not supported on live database files; fine on backup targets that the backup product understands"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management. Nothing is broken; the disk was initialised as MBR, so the extra address space simply cannot be described. Converting MBR to GPT destroys data unless you use a tool that performs an in-place conversion — and that tool is a change with its own risk. Check before you build, not after:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Drive letters and mount points”?",
+      "options": [
+        "clusters",
+        "Allocation unit size is fixed at format time.",
+        "SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE... MODIFY FILE. The advantages are real: no letter exhaustion, a consistent naming scheme across servers, and the ability to add data volumes without re-letttering existing ones. The caveats are equally real:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allocation unit size and formatting”?",
+      "options": [
+        "Choose one convention per estate and enforce it: letters for small standalone servers, mount points for consolidated or SAN-heavy servers, and a register that maps volume GUID to…",
+        "Allocation unit size is fixed at format time.",
+        "SQL Server fully supports mount-point paths in CREATE DATABASE and ALTER DATABASE..."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Allocation unit size is fixed at format time. Changing it later means rebuilding the volume and moving every file, so it belongs in the build checklist alongside the partition style. Other formatting decisions that matter:”"
+    }
+  ],
   takeaways: [
     "Disk → partition → volume → file system: SQL Server sees the path, but every layer below it affects performance and growth",
     "Use GPT on every new volume; MBR silently caps a disk at 2 TiB",

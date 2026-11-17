@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Slow Query Investigation",
+        "Slow Query Investigation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Slow Query Investigation within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Query Investigation fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Slow Query Investigation.",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Query Investigation in practice”?",
+      "options": [
+        "Slow Query Investigation",
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Query Investigation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Slow Query Investigation",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Slow Query Investigation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Slow Query Investigation",
+        "Slow Query Investigation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Slow Query Investigation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Slow Query Investigation means”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Query Investigation fits”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Query Investigation in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Slow Query Investigation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Query Investigation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Slow Query Investigation",
+        "Slow Query Investigation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Slow Query Investigation within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Query Investigation fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Slow Query Investigation.",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Query Investigation in practice”?",
+      "options": [
+        "Slow Query Investigation",
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Query Investigation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Slow Query Investigation",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Slow Query Investigation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Slow Query Investigation",
+        "Slow Query Investigation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Slow Query Investigation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Slow Query Investigation means”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Query Investigation fits”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Query Investigation in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Slow Query Investigation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Query Investigation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Slow Query Investigation",
+        "Slow Query Investigation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Slow Query Investigation within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Query Investigation fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Slow Query Investigation.",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Query Investigation in practice”?",
+      "options": [
+        "Slow Query Investigation",
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Query Investigation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Slow Query Investigation",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Slow Query Investigation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Slow Query Investigation",
+        "Slow Query Investigation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Slow Query Investigation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Slow Query Investigation means”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Query Investigation fits”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Query Investigation in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:",
+        "The diagram below places Slow Query Investigation alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Slow Query Investigation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Query Investigation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Missing index suggestions are hints, not commands.",
+        "The following comparison captures the distinctions that matter most when working with Slow Query Investigation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Slow Query Investigation is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -178,6 +178,312 @@ It captures log records generated after the last scheduled backup, usually befor
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "WITH MOVE Option",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine WITH MOVE Option within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where WITH MOVE Option fits”?",
+      "options": [
+        "With WITH MOVE Option, prefer measured, reversible changes.",
+        "Lowest",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “WITH MOVE Option in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "WITH MOVE Option sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with WITH MOVE Option”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "WITH MOVE Option sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to WITH MOVE Option. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "With WITH MOVE Option, prefer measured, reversible changes.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "WITH MOVE Option sits inside a larger system.",
+        "WITH MOVE Option",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates WITH MOVE Option with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What WITH MOVE Option means”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Use the following as a starting point when investigating WITH MOVE Option.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where WITH MOVE Option fits”?",
+      "options": [
+        "Use the following as a starting point when investigating WITH MOVE Option.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The diagram below places WITH MOVE Option alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places WITH MOVE Option alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “WITH MOVE Option in practice”?",
+      "options": [
+        "WITH MOVE Option",
+        "The following comparison captures the distinctions that matter most when working with WITH MOVE Option:",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with WITH MOVE Option:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with WITH MOVE Option”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "WITH MOVE Option",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "WITH MOVE Option",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine WITH MOVE Option within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where WITH MOVE Option fits”?",
+      "options": [
+        "With WITH MOVE Option, prefer measured, reversible changes.",
+        "Lowest",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “WITH MOVE Option in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "WITH MOVE Option sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with WITH MOVE Option”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "WITH MOVE Option sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to WITH MOVE Option. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "With WITH MOVE Option, prefer measured, reversible changes.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "WITH MOVE Option sits inside a larger system.",
+        "WITH MOVE Option",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates WITH MOVE Option with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What WITH MOVE Option means”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Use the following as a starting point when investigating WITH MOVE Option.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where WITH MOVE Option fits”?",
+      "options": [
+        "Use the following as a starting point when investigating WITH MOVE Option.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The diagram below places WITH MOVE Option alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places WITH MOVE Option alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “WITH MOVE Option in practice”?",
+      "options": [
+        "WITH MOVE Option",
+        "The following comparison captures the distinctions that matter most when working with WITH MOVE Option:",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with WITH MOVE Option:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with WITH MOVE Option”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "WITH MOVE Option",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "WITH MOVE Option",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine WITH MOVE Option within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where WITH MOVE Option fits”?",
+      "options": [
+        "With WITH MOVE Option, prefer measured, reversible changes.",
+        "Lowest",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “WITH MOVE Option in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "WITH MOVE Option sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with WITH MOVE Option”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "WITH MOVE Option sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to WITH MOVE Option. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "With WITH MOVE Option, prefer measured, reversible changes.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "WITH MOVE Option sits inside a larger system.",
+        "WITH MOVE Option",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates WITH MOVE Option with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What WITH MOVE Option means”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Use the following as a starting point when investigating WITH MOVE Option.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where WITH MOVE Option fits”?",
+      "options": [
+        "Use the following as a starting point when investigating WITH MOVE Option.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The diagram below places WITH MOVE Option alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places WITH MOVE Option alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “WITH MOVE Option in practice”?",
+      "options": [
+        "WITH MOVE Option",
+        "The following comparison captures the distinctions that matter most when working with WITH MOVE Option:",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with WITH MOVE Option:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with WITH MOVE Option”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "WITH MOVE Option",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "WITH MOVE Option is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

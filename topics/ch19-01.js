@@ -161,6 +161,312 @@ A timeline, impact, root cause, contributing factors, what went well and badly, 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Production Incident Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Production Incident Fundamentals within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Incident Fundamentals fits”?",
+      "options": [
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Prioritisation weighs impact and urgency.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Incident Fundamentals in practice”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Incident Fundamentals”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Incident Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job.",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Incident Fundamentals means”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Incident Fundamentals fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Incident Fundamentals in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Production Incident Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Incident Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Incident Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Production Incident Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Production Incident Fundamentals within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Incident Fundamentals fits”?",
+      "options": [
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Prioritisation weighs impact and urgency.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Incident Fundamentals in practice”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Incident Fundamentals”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Incident Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job.",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Incident Fundamentals means”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Incident Fundamentals fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Incident Fundamentals in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Production Incident Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Incident Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Incident Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Production Incident Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Production Incident Fundamentals within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Incident Fundamentals fits”?",
+      "options": [
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Prioritisation weighs impact and urgency.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Incident Fundamentals in practice”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Production Incident Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Incident Fundamentals”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Incident Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job.",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Incident Fundamentals means”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Incident Fundamentals fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Production Incident Fundamentals alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Incident Fundamentals in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Production Incident Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Incident Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Incident Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    }
+  ],
   takeaways: [
     "Production Incident Fundamentals is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

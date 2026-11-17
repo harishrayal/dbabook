@@ -173,6 +173,312 @@ Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL16.INST\Set
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Features versus shared features”?",
+      "options": [
+        "The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:",
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "SQL Server setup groups what you install into two categories:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server setup groups what you install into two categories:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The Database Engine feature”?",
+      "options": [
+        "post-install configuration checklist",
+        "The engine is the reason you are here — and it carries optional sub-features that are often ticked without thought:",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The engine is the reason you are here — and it carries optional sub-features that are often ticked without thought:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server features: AS, RS, IS”?",
+      "options": [
+        "The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:",
+        "post-install configuration checklist"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What setup does and does not configure”?",
+      "options": [
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "SSMS is no longer installed by setup",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Knowing the boundary between “installed” and “configured” prevents post-install surprises:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying what is installed”?",
+      "options": [
+        "Dedicated server or VM; memory-hungry",
+        "Ask the services and the registry — both, because they tell different stories:",
+        "SSMS is no longer installed by setup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Ask the services and the registry — both, because they tell different stories:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Features versus shared features”?",
+      "options": [
+        "The distinction matters operationally: server features get their own services, ports, patching, and monitoring; shared features mostly do not.",
+        "ETL server; often separate from production OLTP",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The distinction matters operationally: server features get their own services, ports, patching, and monitoring; shared features mostly do not. Every feature you add is attack surface, patch surface, and something that must be explained in the next security review.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The Database Engine feature”?",
+      "options": [
+        "max server memory, MAXDOP, or auth-mode hardening",
+        "Extended events, alerts, or Audit specifications",
+        "Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them. Features added “in case” become unpatched, unmonitored services within a year.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server features: AS, RS, IS”?",
+      "options": [
+        "Extended events, alerts, or Audit specifications",
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "max server memory, MAXDOP, or auth-mode hardening"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your production queries for the same CPU and memory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Everything on the right-hand column is the _____ — the subject of the next topics.”",
+      "options": [
+        "post-install configuration checklist",
+        "Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them.",
+        "Always; this is the feature you install first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Everything on the right-hand column is the post-install configuration checklist — the subject of the next topics. An instance straight out of the wizard is installed, not production-ready.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying what is installed”?",
+      "options": [
+        "post-install configuration checklist",
+        "Application databases, logins, or jobs",
+        "Cross-check both against the build document."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Cross-check both against the build document. If the registry shows a feature nobody can explain, you have found either an undocumented decision or the answer to your next security-review question.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Features versus shared features”?",
+      "options": [
+        "The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:",
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "SQL Server setup groups what you install into two categories:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server setup groups what you install into two categories:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The Database Engine feature”?",
+      "options": [
+        "post-install configuration checklist",
+        "The engine is the reason you are here — and it carries optional sub-features that are often ticked without thought:",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The engine is the reason you are here — and it carries optional sub-features that are often ticked without thought:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server features: AS, RS, IS”?",
+      "options": [
+        "The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:",
+        "post-install configuration checklist"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What setup does and does not configure”?",
+      "options": [
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "SSMS is no longer installed by setup",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Knowing the boundary between “installed” and “configured” prevents post-install surprises:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying what is installed”?",
+      "options": [
+        "Dedicated server or VM; memory-hungry",
+        "Ask the services and the registry — both, because they tell different stories:",
+        "SSMS is no longer installed by setup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Ask the services and the registry — both, because they tell different stories:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Features versus shared features”?",
+      "options": [
+        "The distinction matters operationally: server features get their own services, ports, patching, and monitoring; shared features mostly do not.",
+        "ETL server; often separate from production OLTP",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The distinction matters operationally: server features get their own services, ports, patching, and monitoring; shared features mostly do not. Every feature you add is attack surface, patch surface, and something that must be explained in the next security review.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The Database Engine feature”?",
+      "options": [
+        "max server memory, MAXDOP, or auth-mode hardening",
+        "Extended events, alerts, or Audit specifications",
+        "Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them. Features added “in case” become unpatched, unmonitored services within a year.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server features: AS, RS, IS”?",
+      "options": [
+        "Extended events, alerts, or Audit specifications",
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "max server memory, MAXDOP, or auth-mode hardening"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your production queries for the same CPU and memory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Everything on the right-hand column is the _____ — the subject of the next topics.”",
+      "options": [
+        "post-install configuration checklist",
+        "Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them.",
+        "Always; this is the feature you install first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Everything on the right-hand column is the post-install configuration checklist — the subject of the next topics. An instance straight out of the wizard is installed, not production-ready.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying what is installed”?",
+      "options": [
+        "post-install configuration checklist",
+        "Application databases, logins, or jobs",
+        "Cross-check both against the build document."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Cross-check both against the build document. If the registry shows a feature nobody can explain, you have found either an undocumented decision or the answer to your next security-review question.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Features versus shared features”?",
+      "options": [
+        "The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:",
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "SQL Server setup groups what you install into two categories:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server setup groups what you install into two categories:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The Database Engine feature”?",
+      "options": [
+        "post-install configuration checklist",
+        "The engine is the reason you are here — and it carries optional sub-features that are often ticked without thought:",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The engine is the reason you are here — and it carries optional sub-features that are often ticked without thought:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server features: AS, RS, IS”?",
+      "options": [
+        "The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:",
+        "post-install configuration checklist"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The three classic companion features are separate products with separate lifecycles — they do not belong on the database server by default:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What setup does and does not configure”?",
+      "options": [
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "SSMS is no longer installed by setup",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Knowing the boundary between “installed” and “configured” prevents post-install surprises:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying what is installed”?",
+      "options": [
+        "Dedicated server or VM; memory-hungry",
+        "Ask the services and the registry — both, because they tell different stories:",
+        "SSMS is no longer installed by setup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Ask the services and the registry — both, because they tell different stories:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Features versus shared features”?",
+      "options": [
+        "The distinction matters operationally: server features get their own services, ports, patching, and monitoring; shared features mostly do not.",
+        "ETL server; often separate from production OLTP",
+        "Knowing the boundary between “installed” and “configured” prevents post-install surprises:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The distinction matters operationally: server features get their own services, ports, patching, and monitoring; shared features mostly do not. Every feature you add is attack surface, patch surface, and something that must be explained in the next security review.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The Database Engine feature”?",
+      "options": [
+        "max server memory, MAXDOP, or auth-mode hardening",
+        "Extended events, alerts, or Audit specifications",
+        "Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them. Features added “in case” become unpatched, unmonitored services within a year.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server features: AS, RS, IS”?",
+      "options": [
+        "Extended events, alerts, or Audit specifications",
+        "Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your…",
+        "max server memory, MAXDOP, or auth-mode hardening"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Co-locating them on the OLTP host is occasionally justified for a small estate — but only with resource caps, because SSIS dataflow and SSRS rendering compete directly with your production queries for the same CPU and memory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Everything on the right-hand column is the _____ — the subject of the next topics.”",
+      "options": [
+        "post-install configuration checklist",
+        "Opinionated rule: install the bare Database Engine, then add Replication or Full-Text through a change request when a workload needs them.",
+        "Always; this is the feature you install first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Everything on the right-hand column is the post-install configuration checklist — the subject of the next topics. An instance straight out of the wizard is installed, not production-ready.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying what is installed”?",
+      "options": [
+        "post-install configuration checklist",
+        "Application databases, logins, or jobs",
+        "Cross-check both against the build document."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Cross-check both against the build document. If the registry shows a feature nobody can explain, you have found either an undocumented decision or the answer to your next security-review question.”"
+    }
+  ],
   takeaways: [
     "Server features run as their own services; shared features support them — know the difference",
     "Production default: Database Engine only; add Replication, Full-Text, SSIS, SSRS, SSAS by change request",

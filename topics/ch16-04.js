@@ -165,6 +165,312 @@ Quorum is the majority requirement that decides which nodes may own the cluster;
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The diagram below places Failover Fundamentals alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "Failover Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failover Fundamentals within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Fundamentals fits”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Fundamentals in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Fundamentals”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failover Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Automatic, node-level",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failover Fundamentals means”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Fundamentals fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Failover Fundamentals alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failover Fundamentals alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Fundamentals in practice”?",
+      "options": [
+        "With Failover Fundamentals, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failover Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The diagram below places Failover Fundamentals alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "Failover Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failover Fundamentals within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Fundamentals fits”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Fundamentals in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Fundamentals”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failover Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Automatic, node-level",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failover Fundamentals means”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Fundamentals fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Failover Fundamentals alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failover Fundamentals alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Fundamentals in practice”?",
+      "options": [
+        "With Failover Fundamentals, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failover Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The diagram below places Failover Fundamentals alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "Failover Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failover Fundamentals within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Fundamentals fits”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Fundamentals in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Fundamentals”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failover Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Automatic, node-level",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failover Fundamentals means”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Fundamentals fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Failover Fundamentals alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failover Fundamentals alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Fundamentals in practice”?",
+      "options": [
+        "With Failover Fundamentals, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Failover Fundamentals:",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failover Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    }
+  ],
   takeaways: [
     "Failover Fundamentals is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

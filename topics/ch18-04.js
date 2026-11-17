@@ -160,6 +160,312 @@ Testing on non-production, defaulting to read-only, explicit destructive switche
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Arrays and Loops"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Arrays and Loops within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Arrays and Loops fits”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Arrays and Loops in practice”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Arrays and Loops”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Arrays and Loops. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Get-Service",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Arrays and Loops means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Arrays and Loops fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Arrays and Loops in practice”?",
+      "options": [
+        "With Arrays and Loops, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Arrays and Loops:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Arrays and Loops”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Arrays and Loops"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Arrays and Loops within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Arrays and Loops fits”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Arrays and Loops in practice”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Arrays and Loops”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Arrays and Loops. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Get-Service",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Arrays and Loops means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Arrays and Loops fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Arrays and Loops in practice”?",
+      "options": [
+        "With Arrays and Loops, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Arrays and Loops:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Arrays and Loops”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Arrays and Loops"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Arrays and Loops within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Arrays and Loops fits”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Arrays and Loops in practice”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Arrays and Loops”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Arrays and Loops. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Get-Service",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Arrays and Loops means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Arrays and Loops fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Arrays and Loops alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Arrays and Loops in practice”?",
+      "options": [
+        "With Arrays and Loops, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Arrays and Loops:",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Arrays and Loops:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Arrays and Loops”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    }
+  ],
   takeaways: [
     "Arrays and Loops is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -183,6 +183,312 @@ A proxy maps a job step to a credential so the step can run under a different, a
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job History",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Job History within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job History fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job History in practice”?",
+      "options": [
+        "With Job History, prefer measured, reversible changes.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job History”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job History. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job History",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Job History with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job History means”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job History fits”?",
+      "options": [
+        "With Job History, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "The diagram below places Job History alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job History alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job History in practice”?",
+      "options": [
+        "Job History sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Job History:",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job History:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job History”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Job History sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job History",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Job History within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job History fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job History in practice”?",
+      "options": [
+        "With Job History, prefer measured, reversible changes.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job History”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job History. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job History",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Job History with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job History means”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job History fits”?",
+      "options": [
+        "With Job History, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "The diagram below places Job History alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job History alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job History in practice”?",
+      "options": [
+        "Job History sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Job History:",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job History:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job History”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Job History sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job History",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Job History within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job History fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job History in practice”?",
+      "options": [
+        "With Job History, prefer measured, reversible changes.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job History”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job History. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job History",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Job History with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job History means”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job History fits”?",
+      "options": [
+        "With Job History, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "The diagram below places Job History alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job History alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job History in practice”?",
+      "options": [
+        "Job History sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Job History:",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job History:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job History”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Job History sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Job History is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

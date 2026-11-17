@@ -162,6 +162,312 @@ Use ALTER DATABASE ... MODIFY FILE to change the catalogued path, take the datab
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "Adding Data Files"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Adding Data Files within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Data Files fits”?",
+      "options": [
+        "Transaction log, recovery",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Data Files in practice”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Data Files”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Adding Data Files. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Adding Data Files means”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Data Files fits”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The diagram below places Adding Data Files alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Adding Data Files alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Data Files in practice”?",
+      "options": [
+        "Only with monitoring",
+        "The following comparison captures the distinctions that matter most when working with Adding Data Files:",
+        "Avoid on large files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Adding Data Files:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Data Files”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Adding Data Files, prefer measured, reversible changes.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "Adding Data Files"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Adding Data Files within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Data Files fits”?",
+      "options": [
+        "Transaction log, recovery",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Data Files in practice”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Data Files”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Adding Data Files. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Adding Data Files means”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Data Files fits”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The diagram below places Adding Data Files alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Adding Data Files alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Data Files in practice”?",
+      "options": [
+        "Only with monitoring",
+        "The following comparison captures the distinctions that matter most when working with Adding Data Files:",
+        "Avoid on large files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Adding Data Files:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Data Files”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Adding Data Files, prefer measured, reversible changes.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "Adding Data Files"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Adding Data Files within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Data Files fits”?",
+      "options": [
+        "Transaction log, recovery",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Data Files in practice”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Data Files”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Adding Data Files. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Adding Data Files means”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Data Files fits”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The diagram below places Adding Data Files alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Adding Data Files alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Data Files in practice”?",
+      "options": [
+        "Only with monitoring",
+        "The following comparison captures the distinctions that matter most when working with Adding Data Files:",
+        "Avoid on large files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Adding Data Files:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Data Files”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Adding Data Files, prefer measured, reversible changes.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    }
+  ],
   takeaways: [
     "Adding Data Files is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

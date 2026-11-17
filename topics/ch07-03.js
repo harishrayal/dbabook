@@ -199,6 +199,312 @@ WITH   RECOVERY;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a transactionally consistent copy of the entire database, captured as of the moment the backup starts.”",
+      "options": [
+        "full backup",
+        "Backup header and LSNs",
+        "while the backup runs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A full backup is a transactionally consistent copy of the entire database, captured as of the moment the backup starts. It reads every allocated page in the database — rows, index pages, allocation pages, free-space metadata — plus enough of the transaction log to make the copy consistent when it is restored.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Anatomy of the BACKUP DATABASE statement”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Scheduling the full backup”?",
+      "options": [
+        "Human-readable label stored in msdb — invaluable when hunting sets during an incident",
+        "The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay.",
+        "Computes a checksum per page during the backup and stores it in the set"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay. Scheduling decisions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring the full backup”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Human-readable label stored in msdb — invaluable when hunting sets during an incident",
+        "Progress messages every n percent so long runs are observable in the job history"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The full backup is almost never restored alone — it is the first step of a sequence. Restoring with NORECOVERY leaves the database ready for differentials and logs; RECOVERY (the default) brings it online and ends the sequence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When to skip a full backup”?",
+      "options": [
+        "Progress messages every n percent so long runs are observable in the job history",
+        "Destination media: local/UNC path, Azure Blob URL, or tape",
+        "There are exactly two situations where you should not take a plain full backup:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “There are exactly two situations where you should not take a plain full backup:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Pages modified _____ are tracked via the differential bitmap: the backup captures the state as of its start, not as of its finish.”",
+      "options": [
+        "Cadence rule",
+        "while the backup runs",
+        "Duration trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Pages modified while the backup runs are tracked via the differential bitmap: the backup captures the state as of its start, not as of its finish. That is why a full backup taken during business hours still restores cleanly.”"
+    },
+    {
+      "question": "In the “Anatomy of the BACKUP DATABASE statement” table, what is listed for “INIT / FORMAT” under “Purpose”?",
+      "options": [
+        "INIT overwrites the first media family; FORMAT reinitialises the media. Without them, backups append to an existing file forever",
+        "The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay.",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “INIT / FORMAT” as “INIT overwrites the first media family; FORMAT reinitialises the media. Without them, backups append to an existing file forever”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Scheduling the full backup”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “History is already in msdb — use it to size the window instead of guessing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring the full backup”?",
+      "options": [
+        "There are exactly two situations where you should not take a plain full backup:",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated instance at least monthly. A full backup that has never been read end-to-end by a restore is a file, not a backup.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____e what a full backup does not do: in FULL recovery it does not break the transaction log chain — log backups continue across it.”",
+      "options": [
+        "not",
+        "Enormous, mostly static databases",
+        "Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Note what a full backup does not do: in FULL recovery it does not break the transaction log chain — log backups continue across it. It does, however, reset the differential base, which is exactly why an unplanned full backup in the middle of a week deserves a COPY_ONLY clause.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a transactionally consistent copy of the entire database, captured as of the moment the backup starts.”",
+      "options": [
+        "full backup",
+        "Backup header and LSNs",
+        "while the backup runs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A full backup is a transactionally consistent copy of the entire database, captured as of the moment the backup starts. It reads every allocated page in the database — rows, index pages, allocation pages, free-space metadata — plus enough of the transaction log to make the copy consistent when it is restored.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Anatomy of the BACKUP DATABASE statement”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Scheduling the full backup”?",
+      "options": [
+        "Human-readable label stored in msdb — invaluable when hunting sets during an incident",
+        "The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay.",
+        "Computes a checksum per page during the backup and stores it in the set"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay. Scheduling decisions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring the full backup”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Human-readable label stored in msdb — invaluable when hunting sets during an incident",
+        "Progress messages every n percent so long runs are observable in the job history"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The full backup is almost never restored alone — it is the first step of a sequence. Restoring with NORECOVERY leaves the database ready for differentials and logs; RECOVERY (the default) brings it online and ends the sequence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When to skip a full backup”?",
+      "options": [
+        "Progress messages every n percent so long runs are observable in the job history",
+        "Destination media: local/UNC path, Azure Blob URL, or tape",
+        "There are exactly two situations where you should not take a plain full backup:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “There are exactly two situations where you should not take a plain full backup:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Pages modified _____ are tracked via the differential bitmap: the backup captures the state as of its start, not as of its finish.”",
+      "options": [
+        "Cadence rule",
+        "while the backup runs",
+        "Duration trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Pages modified while the backup runs are tracked via the differential bitmap: the backup captures the state as of its start, not as of its finish. That is why a full backup taken during business hours still restores cleanly.”"
+    },
+    {
+      "question": "In the “Anatomy of the BACKUP DATABASE statement” table, what is listed for “INIT / FORMAT” under “Purpose”?",
+      "options": [
+        "INIT overwrites the first media family; FORMAT reinitialises the media. Without them, backups append to an existing file forever",
+        "The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay.",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “INIT / FORMAT” as “INIT overwrites the first media family; FORMAT reinitialises the media. Without them, backups append to an existing file forever”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Scheduling the full backup”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “History is already in msdb — use it to size the window instead of guessing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring the full backup”?",
+      "options": [
+        "There are exactly two situations where you should not take a plain full backup:",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated instance at least monthly. A full backup that has never been read end-to-end by a restore is a file, not a backup.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____e what a full backup does not do: in FULL recovery it does not break the transaction log chain — log backups continue across it.”",
+      "options": [
+        "not",
+        "Enormous, mostly static databases",
+        "Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Note what a full backup does not do: in FULL recovery it does not break the transaction log chain — log backups continue across it. It does, however, reset the differential base, which is exactly why an unplanned full backup in the middle of a week deserves a COPY_ONLY clause.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a transactionally consistent copy of the entire database, captured as of the moment the backup starts.”",
+      "options": [
+        "full backup",
+        "Backup header and LSNs",
+        "while the backup runs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A full backup is a transactionally consistent copy of the entire database, captured as of the moment the backup starts. It reads every allocated page in the database — rows, index pages, allocation pages, free-space metadata — plus enough of the transaction log to make the copy consistent when it is restored.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Anatomy of the BACKUP DATABASE statement”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Scheduling the full backup”?",
+      "options": [
+        "Human-readable label stored in msdb — invaluable when hunting sets during an incident",
+        "The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay.",
+        "Computes a checksum per page during the backup and stores it in the set"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay. Scheduling decisions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring the full backup”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Human-readable label stored in msdb — invaluable when hunting sets during an incident",
+        "Progress messages every n percent so long runs are observable in the job history"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The full backup is almost never restored alone — it is the first step of a sequence. Restoring with NORECOVERY leaves the database ready for differentials and logs; RECOVERY (the default) brings it online and ends the sequence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When to skip a full backup”?",
+      "options": [
+        "Progress messages every n percent so long runs are observable in the job history",
+        "Destination media: local/UNC path, Azure Blob URL, or tape",
+        "There are exactly two situations where you should not take a plain full backup:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “There are exactly two situations where you should not take a plain full backup:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Pages modified _____ are tracked via the differential bitmap: the backup captures the state as of its start, not as of its finish.”",
+      "options": [
+        "Cadence rule",
+        "while the backup runs",
+        "Duration trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Pages modified while the backup runs are tracked via the differential bitmap: the backup captures the state as of its start, not as of its finish. That is why a full backup taken during business hours still restores cleanly.”"
+    },
+    {
+      "question": "In the “Anatomy of the BACKUP DATABASE statement” table, what is listed for “INIT / FORMAT” under “Purpose”?",
+      "options": [
+        "INIT overwrites the first media family; FORMAT reinitialises the media. Without them, backups append to an existing file forever",
+        "The full backup defines the upper bound of restore effort: everything after it (differentials and logs) only shortens the replay.",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “INIT / FORMAT” as “INIT overwrites the first media family; FORMAT reinitialises the media. Without them, backups append to an existing file forever”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Scheduling the full backup”?",
+      "options": [
+        "The full backup is almost never restored alone — it is the first step of a sequence.",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “History is already in msdb — use it to size the window instead of guessing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring the full backup”?",
+      "options": [
+        "There are exactly two situations where you should not take a plain full backup:",
+        "Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated…",
+        "History is already in msdb — use it to size the window instead of guessing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Before any of this is attempted in an incident, the set must be readable: RESTORE VERIFYONLY FROM DISK = … WITH CHECKSUM on every full backup, and a full restore into an isolated instance at least monthly. A full backup that has never been read end-to-end by a restore is a file, not a backup.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____e what a full backup does not do: in FULL recovery it does not break the transaction log chain — log backups continue across it.”",
+      "options": [
+        "not",
+        "Enormous, mostly static databases",
+        "Production full backups should be explicit about media handling, integrity, and naming — defaults will eventually surprise you."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Note what a full backup does not do: in FULL recovery it does not break the transaction log chain — log backups continue across it. It does, however, reset the differential base, which is exactly why an unplanned full backup in the middle of a week deserves a COPY_ONLY clause.”"
+    }
+  ],
   takeaways: [
     "A full backup reads every allocated page plus the log needed to restore a consistent state",
     "Always use INIT, COMPRESSION, CHECKSUM, and a timestamped NAME in production backup jobs",

@@ -188,6 +188,312 @@ Logins and other server-level objects live in master and are not part of a user 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Medium",
+        "Highest",
+        "Orphaned Users After Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Orphaned Users After Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Orphaned Users After Restoration fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Orphaned Users After Restoration sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Orphaned Users After Restoration in practice”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "End of the sequence",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Orphaned Users After Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Orphaned Users After Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Orphaned Users After Restoration",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Orphaned Users After Restoration",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Orphaned Users After Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Orphaned Users After Restoration means”?",
+      "options": [
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Orphaned Users After Restoration fits”?",
+      "options": [
+        "Orphaned Users After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Orphaned Users After Restoration in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Orphaned Users After Restoration:",
+        "Orphaned Users After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Orphaned Users After Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Orphaned Users After Restoration”?",
+      "options": [
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Medium",
+        "Highest",
+        "Orphaned Users After Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Orphaned Users After Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Orphaned Users After Restoration fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Orphaned Users After Restoration sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Orphaned Users After Restoration in practice”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "End of the sequence",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Orphaned Users After Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Orphaned Users After Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Orphaned Users After Restoration",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Orphaned Users After Restoration",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Orphaned Users After Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Orphaned Users After Restoration means”?",
+      "options": [
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Orphaned Users After Restoration fits”?",
+      "options": [
+        "Orphaned Users After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Orphaned Users After Restoration in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Orphaned Users After Restoration:",
+        "Orphaned Users After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Orphaned Users After Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Orphaned Users After Restoration”?",
+      "options": [
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Medium",
+        "Highest",
+        "Orphaned Users After Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Orphaned Users After Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Orphaned Users After Restoration fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Orphaned Users After Restoration sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Orphaned Users After Restoration in practice”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "End of the sequence",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Orphaned Users After Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Orphaned Users After Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Orphaned Users After Restoration",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Orphaned Users After Restoration",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Orphaned Users After Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Orphaned Users After Restoration means”?",
+      "options": [
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Orphaned Users After Restoration fits”?",
+      "options": [
+        "Orphaned Users After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Orphaned Users After Restoration in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Orphaned Users After Restoration:",
+        "Orphaned Users After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Orphaned Users After Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Orphaned Users After Restoration”?",
+      "options": [
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The diagram below places Orphaned Users After Restoration alongside the core concepts of restore and disaster recovery.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Orphaned Users After Restoration is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

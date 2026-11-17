@@ -178,6 +178,312 @@ Physical corruption is damaged page bytes or I/O errors detected by checksums; l
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Error Logs",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Error Logs within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Next, verify the result and capture a baseline.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Minor, non-data issues",
+        "Rebuild indexes",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Minor, non-data issues",
+        "Theory becomes useful when you can apply it.",
+        "With SQL Server Error Logs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Error Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "SQL Server Error Logs sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "With SQL Server Error Logs, prefer measured, reversible changes.",
+        "SQL Server Error Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Error Logs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Error Logs means”?",
+      "options": [
+        "SQL Server Error Logs",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Absolute last resort"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database integrity and corruption.",
+        "Rebuild indexes",
+        "Absolute last resort"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Error Logs alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Error Logs.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Error Logs.",
+        "The first example establishes the relevant state.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Error Logs",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Error Logs within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Next, verify the result and capture a baseline.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Minor, non-data issues",
+        "Rebuild indexes",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Minor, non-data issues",
+        "Theory becomes useful when you can apply it.",
+        "With SQL Server Error Logs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Error Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "SQL Server Error Logs sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "With SQL Server Error Logs, prefer measured, reversible changes.",
+        "SQL Server Error Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Error Logs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Error Logs means”?",
+      "options": [
+        "SQL Server Error Logs",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Absolute last resort"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database integrity and corruption.",
+        "Rebuild indexes",
+        "Absolute last resort"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Error Logs alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Error Logs.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Error Logs.",
+        "The first example establishes the relevant state.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Error Logs",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Error Logs within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Next, verify the result and capture a baseline.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Minor, non-data issues",
+        "Rebuild indexes",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Minor, non-data issues",
+        "Theory becomes useful when you can apply it.",
+        "With SQL Server Error Logs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Error Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "SQL Server Error Logs sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "With SQL Server Error Logs, prefer measured, reversible changes.",
+        "SQL Server Error Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Error Logs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Error Logs means”?",
+      "options": [
+        "SQL Server Error Logs",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Absolute last resort"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database integrity and corruption.",
+        "Rebuild indexes",
+        "Absolute last resort"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Error Logs alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Error Logs.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Error Logs.",
+        "The first example establishes the relevant state.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Error Logs is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

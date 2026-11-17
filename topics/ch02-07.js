@@ -178,6 +178,312 @@ ORDER  BY c.course_name, s.full_name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing.”",
+      "options": [
+        "One-to-many",
+        "Can a parent exist without children, and children without parents?",
+        "relationship"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A relationship is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing. Two questions define every relationship:”"
+    },
+    {
+      "question": "Complete the lesson statement: “In a one-to-_____ relationship, one parent row is referenced by zero, one, or many child rows.”",
+      "options": [
+        "Do children carry their own attributes?",
+        "many",
+        "Can a parent exist without children, and children without parents?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In a one-to-many relationship, one parent row is referenced by zero, one, or many child rows. The foreign key goes on the many side — always. A customer does not store a list of orders; each order stores the customer's key.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is rare and deliberate.”",
+      "options": [
+        "One-to-one",
+        "Do children carry their own attributes?",
+        "Is the pair unique?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “One-to-one is rare and deliberate. The child table's primary key is the foreign key — one profile row per user, at most. Legitimate uses: splitting rarely-updated or heavily-referenced columns out of a hot table, isolating sensitive columns with their own permissions, or holding data that is genuinely optional per parent. Two one-to-one tables sharing only a key often signal a table that should be merged.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing cardinality in real designs”?",
+      "options": [
+        "Common pitfalls:",
+        "Cardinality",
+        "Design questions that settle the relationship before any DDL runs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Design questions that settle the relationship before any DDL runs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a relationship actually is”?",
+      "options": [
+        "Optionality",
+        "The three cardinalities cover nearly every real schema.",
+        "Cardinality"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The three cardinalities cover nearly every real schema. Each one has exactly one correct place for the foreign key, and putting it anywhere else produces a design that cannot be enforced by the engine.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “One-to-many: the workhorse”?",
+      "options": [
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”.",
+        "Optionality",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This pattern scales from “one user owns many documents” to “one server hosts many databases”. When you see a repeating group or a comma-separated list inside a parent column, you are looking at a one-to-many relationship that has not been modelled yet.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ cannot be expressed with a single foreign key — both sides can hold many.”",
+      "options": [
+        "The three cardinalities cover nearly every real schema.",
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”.",
+        "Many-to-many"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Many-to-many cannot be expressed with a single foreign key — both sides can hold many. The answer is always the same: a junction (bridge) table containing both foreign keys, with a composite primary key that makes each pairing appear at most once:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ FK placed on the parent (“Customer.order_id” storing only the first order); comma-separated values in a column doing a junction table's…”",
+      "options": [
+        "The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.",
+        "Common pitfalls:",
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: FK placed on the parent (“Customer.order_id” storing only the first order); comma-separated values in a column doing a junction table's job; junction tables missing their composite key, so enrolments duplicate silently; and assuming one-to-one forever, then needing a migration when the second row finally arrives.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “One-to-one and many-to-many”?",
+      "options": [
+        "The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.",
+        "One-to-many",
+        "Can a parent exist without children, and children without parents?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.”"
+    },
+    {
+      "question": "In the “One-to-one and many-to-many” table, what is listed for “One-to-many” under “Example”?",
+      "options": [
+        "Can a parent exist without children, and children without parents?",
+        "Do children carry their own attributes?",
+        "Customer → Orders"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “One-to-many” as “Customer → Orders”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing.”",
+      "options": [
+        "One-to-many",
+        "Can a parent exist without children, and children without parents?",
+        "relationship"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A relationship is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing. Two questions define every relationship:”"
+    },
+    {
+      "question": "Complete the lesson statement: “In a one-to-_____ relationship, one parent row is referenced by zero, one, or many child rows.”",
+      "options": [
+        "Do children carry their own attributes?",
+        "many",
+        "Can a parent exist without children, and children without parents?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In a one-to-many relationship, one parent row is referenced by zero, one, or many child rows. The foreign key goes on the many side — always. A customer does not store a list of orders; each order stores the customer's key.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is rare and deliberate.”",
+      "options": [
+        "One-to-one",
+        "Do children carry their own attributes?",
+        "Is the pair unique?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “One-to-one is rare and deliberate. The child table's primary key is the foreign key — one profile row per user, at most. Legitimate uses: splitting rarely-updated or heavily-referenced columns out of a hot table, isolating sensitive columns with their own permissions, or holding data that is genuinely optional per parent. Two one-to-one tables sharing only a key often signal a table that should be merged.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing cardinality in real designs”?",
+      "options": [
+        "Common pitfalls:",
+        "Cardinality",
+        "Design questions that settle the relationship before any DDL runs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Design questions that settle the relationship before any DDL runs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a relationship actually is”?",
+      "options": [
+        "Optionality",
+        "The three cardinalities cover nearly every real schema.",
+        "Cardinality"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The three cardinalities cover nearly every real schema. Each one has exactly one correct place for the foreign key, and putting it anywhere else produces a design that cannot be enforced by the engine.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “One-to-many: the workhorse”?",
+      "options": [
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”.",
+        "Optionality",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This pattern scales from “one user owns many documents” to “one server hosts many databases”. When you see a repeating group or a comma-separated list inside a parent column, you are looking at a one-to-many relationship that has not been modelled yet.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ cannot be expressed with a single foreign key — both sides can hold many.”",
+      "options": [
+        "The three cardinalities cover nearly every real schema.",
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”.",
+        "Many-to-many"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Many-to-many cannot be expressed with a single foreign key — both sides can hold many. The answer is always the same: a junction (bridge) table containing both foreign keys, with a composite primary key that makes each pairing appear at most once:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ FK placed on the parent (“Customer.order_id” storing only the first order); comma-separated values in a column doing a junction table's…”",
+      "options": [
+        "The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.",
+        "Common pitfalls:",
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: FK placed on the parent (“Customer.order_id” storing only the first order); comma-separated values in a column doing a junction table's job; junction tables missing their composite key, so enrolments duplicate silently; and assuming one-to-one forever, then needing a migration when the second row finally arrives.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “One-to-one and many-to-many”?",
+      "options": [
+        "The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.",
+        "One-to-many",
+        "Can a parent exist without children, and children without parents?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.”"
+    },
+    {
+      "question": "In the “One-to-one and many-to-many” table, what is listed for “One-to-many” under “Example”?",
+      "options": [
+        "Can a parent exist without children, and children without parents?",
+        "Do children carry their own attributes?",
+        "Customer → Orders"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “One-to-many” as “Customer → Orders”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing.”",
+      "options": [
+        "One-to-many",
+        "Can a parent exist without children, and children without parents?",
+        "relationship"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A relationship is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing. Two questions define every relationship:”"
+    },
+    {
+      "question": "Complete the lesson statement: “In a one-to-_____ relationship, one parent row is referenced by zero, one, or many child rows.”",
+      "options": [
+        "Do children carry their own attributes?",
+        "many",
+        "Can a parent exist without children, and children without parents?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In a one-to-many relationship, one parent row is referenced by zero, one, or many child rows. The foreign key goes on the many side — always. A customer does not store a list of orders; each order stores the customer's key.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is rare and deliberate.”",
+      "options": [
+        "One-to-one",
+        "Do children carry their own attributes?",
+        "Is the pair unique?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “One-to-one is rare and deliberate. The child table's primary key is the foreign key — one profile row per user, at most. Legitimate uses: splitting rarely-updated or heavily-referenced columns out of a hot table, isolating sensitive columns with their own permissions, or holding data that is genuinely optional per parent. Two one-to-one tables sharing only a key often signal a table that should be merged.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing cardinality in real designs”?",
+      "options": [
+        "Common pitfalls:",
+        "Cardinality",
+        "Design questions that settle the relationship before any DDL runs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Design questions that settle the relationship before any DDL runs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a relationship actually is”?",
+      "options": [
+        "Optionality",
+        "The three cardinalities cover nearly every real schema.",
+        "Cardinality"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The three cardinalities cover nearly every real schema. Each one has exactly one correct place for the foreign key, and putting it anywhere else produces a design that cannot be enforced by the engine.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “One-to-many: the workhorse”?",
+      "options": [
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”.",
+        "Optionality",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This pattern scales from “one user owns many documents” to “one server hosts many databases”. When you see a repeating group or a comma-separated list inside a parent column, you are looking at a one-to-many relationship that has not been modelled yet.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ cannot be expressed with a single foreign key — both sides can hold many.”",
+      "options": [
+        "The three cardinalities cover nearly every real schema.",
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”.",
+        "Many-to-many"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Many-to-many cannot be expressed with a single foreign key — both sides can hold many. The answer is always the same: a junction (bridge) table containing both foreign keys, with a composite primary key that makes each pairing appear at most once:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ FK placed on the parent (“Customer.order_id” storing only the first order); comma-separated values in a column doing a junction table's…”",
+      "options": [
+        "The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.",
+        "Common pitfalls:",
+        "This pattern scales from “one user owns many documents” to “one server hosts many databases”."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: FK placed on the parent (“Customer.order_id” storing only the first order); comma-separated values in a column doing a junction table's job; junction tables missing their composite key, so enrolments duplicate silently; and assuming one-to-one forever, then needing a migration when the second row finally arrives.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “One-to-one and many-to-many”?",
+      "options": [
+        "The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.",
+        "One-to-many",
+        "Can a parent exist without children, and children without parents?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The junction table can carry its own attributes — enrolled_on, grade, quantity — which is exactly why junctions are modelled as tables rather than lists.”"
+    },
+    {
+      "question": "In the “One-to-one and many-to-many” table, what is listed for “One-to-many” under “Example”?",
+      "options": [
+        "Can a parent exist without children, and children without parents?",
+        "Do children carry their own attributes?",
+        "Customer → Orders"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “One-to-many” as “Customer → Orders”."
+    }
+  ],
   takeaways: [
     "Cardinality (1:1, 1:N, M:N) plus optionality define every relationship — the FK goes on the side that can hold many",
     "One-to-many is the default shape of relational design; index the FK column on the child",

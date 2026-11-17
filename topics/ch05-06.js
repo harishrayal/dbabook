@@ -177,6 +177,312 @@ ORDER  BY database_id, type_desc;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “CPU and memory”?",
+      "options": [
+        "There is no universal core count — but there are rules of thumb that avoid the common disasters:",
+        "Never let Windows and SQL data share a spindle",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “There is no universal core count — but there are rules of thumb that avoid the common disasters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage — the part people get wrong”?",
+      "options": [
+        "A paging file on the data volume competes with log writes",
+        "Real-time scanning of 8 KB pages causes latency spikes",
+        "Nearly every “SQL Server is slow” investigation eventually reaches disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Nearly every “SQL Server is slow” investigation eventually reaches disk. Lay volumes out correctly at build time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “OS-level settings that affect SQL Server”?",
+      "options": [
+        "Shared by every session; temp tables and sorts live here",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up.",
+        "Sequential writes, zero tolerance for stalls — log write latency above ~20 ms hurts"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Software prerequisites”?",
+      "options": [
+        "What setup expects to find (or installs itself):",
+        "Shared by every session; temp tables and sorts live here",
+        "Backup I/O must never compete with the live log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “What setup expects to find (or installs itself):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The pre-install checklist”?",
+      "options": [
+        "Backup I/O must never compete with the live log",
+        "Never let Windows and SQL data share a spindle",
+        "A ten-minute check that saves a ten-hour incident:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A ten-minute check that saves a ten-hour incident:”"
+    },
+    {
+      "question": "In the “CPU and memory” table, what is listed for “Small internal app” under “Notes”?",
+      "options": [
+        "Balanced/power-saving throttles CPUs mid-workload",
+        "Set max server memory explicitly",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Small internal app” as “Set max server memory explicitly”."
+    },
+    {
+      "question": "Complete the lesson statement: “Two more storage decisions: enable _____ for data files (the “Perform Volume Maintenance Tasks” right) so growth does not stall for minutes, and set file growth in fixed increments…”",
+      "options": [
+        "instant file initialization",
+        "Set max server memory explicitly",
+        "Leave 4 GB for the OS; tempdb on fast storage"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two more storage decisions: enable instant file initialization for data files (the “Perform Volume Maintenance Tasks” right) so growth does not stall for minutes, and set file growth in fixed increments — percent growth on a 500 GB file triggers multi-gigabyte autogrowth events that block writes.”"
+    },
+    {
+      "question": "In the “OS-level settings that affect SQL Server” table, what is listed for “Power plan” under “Why”?",
+      "options": [
+        "Sequential writes, zero tolerance for stalls — log write latency above ~20 ms hurts",
+        "Shared by every session; temp tables and sorts live here",
+        "Balanced/power-saving throttles CPUs mid-workload"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Power plan” as “Balanced/power-saving throttles CPUs mid-workload”."
+    },
+    {
+      "question": "Complete the lesson statement: “Also pre-create the _____ and the service accounts with passwords that will not rotate without notice.”",
+      "options": [
+        "Memory-hungry; separate from OLTP where possible",
+        "domain groups for SQL administrators",
+        "Watch NUMA boundaries; Standard caps at 128 GB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Also pre-create the domain groups for SQL administrators and the service accounts with passwords that will not rotate without notice. Doing this after installation, during an incident, is how shared “sqlservice” accounts with unknown passwords get invented.”"
+    },
+    {
+      "question": "In the “The pre-install checklist” table, what is listed for “☐” under “Tool”?",
+      "options": [
+        "Get-ComputerInfo",
+        "Shared by every session; temp tables and sorts live here",
+        "Backup I/O must never compete with the live log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “☐” as “Get-ComputerInfo”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “CPU and memory”?",
+      "options": [
+        "There is no universal core count — but there are rules of thumb that avoid the common disasters:",
+        "Never let Windows and SQL data share a spindle",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “There is no universal core count — but there are rules of thumb that avoid the common disasters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage — the part people get wrong”?",
+      "options": [
+        "A paging file on the data volume competes with log writes",
+        "Real-time scanning of 8 KB pages causes latency spikes",
+        "Nearly every “SQL Server is slow” investigation eventually reaches disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Nearly every “SQL Server is slow” investigation eventually reaches disk. Lay volumes out correctly at build time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “OS-level settings that affect SQL Server”?",
+      "options": [
+        "Shared by every session; temp tables and sorts live here",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up.",
+        "Sequential writes, zero tolerance for stalls — log write latency above ~20 ms hurts"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Software prerequisites”?",
+      "options": [
+        "What setup expects to find (or installs itself):",
+        "Shared by every session; temp tables and sorts live here",
+        "Backup I/O must never compete with the live log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “What setup expects to find (or installs itself):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The pre-install checklist”?",
+      "options": [
+        "Backup I/O must never compete with the live log",
+        "Never let Windows and SQL data share a spindle",
+        "A ten-minute check that saves a ten-hour incident:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A ten-minute check that saves a ten-hour incident:”"
+    },
+    {
+      "question": "In the “CPU and memory” table, what is listed for “Small internal app” under “Notes”?",
+      "options": [
+        "Balanced/power-saving throttles CPUs mid-workload",
+        "Set max server memory explicitly",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Small internal app” as “Set max server memory explicitly”."
+    },
+    {
+      "question": "Complete the lesson statement: “Two more storage decisions: enable _____ for data files (the “Perform Volume Maintenance Tasks” right) so growth does not stall for minutes, and set file growth in fixed increments…”",
+      "options": [
+        "instant file initialization",
+        "Set max server memory explicitly",
+        "Leave 4 GB for the OS; tempdb on fast storage"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two more storage decisions: enable instant file initialization for data files (the “Perform Volume Maintenance Tasks” right) so growth does not stall for minutes, and set file growth in fixed increments — percent growth on a 500 GB file triggers multi-gigabyte autogrowth events that block writes.”"
+    },
+    {
+      "question": "In the “OS-level settings that affect SQL Server” table, what is listed for “Power plan” under “Why”?",
+      "options": [
+        "Sequential writes, zero tolerance for stalls — log write latency above ~20 ms hurts",
+        "Shared by every session; temp tables and sorts live here",
+        "Balanced/power-saving throttles CPUs mid-workload"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Power plan” as “Balanced/power-saving throttles CPUs mid-workload”."
+    },
+    {
+      "question": "Complete the lesson statement: “Also pre-create the _____ and the service accounts with passwords that will not rotate without notice.”",
+      "options": [
+        "Memory-hungry; separate from OLTP where possible",
+        "domain groups for SQL administrators",
+        "Watch NUMA boundaries; Standard caps at 128 GB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Also pre-create the domain groups for SQL administrators and the service accounts with passwords that will not rotate without notice. Doing this after installation, during an incident, is how shared “sqlservice” accounts with unknown passwords get invented.”"
+    },
+    {
+      "question": "In the “The pre-install checklist” table, what is listed for “☐” under “Tool”?",
+      "options": [
+        "Get-ComputerInfo",
+        "Shared by every session; temp tables and sorts live here",
+        "Backup I/O must never compete with the live log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “☐” as “Get-ComputerInfo”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “CPU and memory”?",
+      "options": [
+        "There is no universal core count — but there are rules of thumb that avoid the common disasters:",
+        "Never let Windows and SQL data share a spindle",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “There is no universal core count — but there are rules of thumb that avoid the common disasters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage — the part people get wrong”?",
+      "options": [
+        "A paging file on the data volume competes with log writes",
+        "Real-time scanning of 8 KB pages causes latency spikes",
+        "Nearly every “SQL Server is slow” investigation eventually reaches disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Nearly every “SQL Server is slow” investigation eventually reaches disk. Lay volumes out correctly at build time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “OS-level settings that affect SQL Server”?",
+      "options": [
+        "Shared by every session; temp tables and sorts live here",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up.",
+        "Sequential writes, zero tolerance for stalls — log write latency above ~20 ms hurts"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Software prerequisites”?",
+      "options": [
+        "What setup expects to find (or installs itself):",
+        "Shared by every session; temp tables and sorts live here",
+        "Backup I/O must never compete with the live log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “What setup expects to find (or installs itself):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The pre-install checklist”?",
+      "options": [
+        "Backup I/O must never compete with the live log",
+        "Never let Windows and SQL data share a spindle",
+        "A ten-minute check that saves a ten-hour incident:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A ten-minute check that saves a ten-hour incident:”"
+    },
+    {
+      "question": "In the “CPU and memory” table, what is listed for “Small internal app” under “Notes”?",
+      "options": [
+        "Balanced/power-saving throttles CPUs mid-workload",
+        "Set max server memory explicitly",
+        "Antivirus exclusions are the sneakiest: latency climbs gradually after the security team deploys a new agent, and the database looks healthy until the log write queue backs up."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Small internal app” as “Set max server memory explicitly”."
+    },
+    {
+      "question": "Complete the lesson statement: “Two more storage decisions: enable _____ for data files (the “Perform Volume Maintenance Tasks” right) so growth does not stall for minutes, and set file growth in fixed increments…”",
+      "options": [
+        "instant file initialization",
+        "Set max server memory explicitly",
+        "Leave 4 GB for the OS; tempdb on fast storage"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two more storage decisions: enable instant file initialization for data files (the “Perform Volume Maintenance Tasks” right) so growth does not stall for minutes, and set file growth in fixed increments — percent growth on a 500 GB file triggers multi-gigabyte autogrowth events that block writes.”"
+    },
+    {
+      "question": "In the “OS-level settings that affect SQL Server” table, what is listed for “Power plan” under “Why”?",
+      "options": [
+        "Sequential writes, zero tolerance for stalls — log write latency above ~20 ms hurts",
+        "Shared by every session; temp tables and sorts live here",
+        "Balanced/power-saving throttles CPUs mid-workload"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Power plan” as “Balanced/power-saving throttles CPUs mid-workload”."
+    },
+    {
+      "question": "Complete the lesson statement: “Also pre-create the _____ and the service accounts with passwords that will not rotate without notice.”",
+      "options": [
+        "Memory-hungry; separate from OLTP where possible",
+        "domain groups for SQL administrators",
+        "Watch NUMA boundaries; Standard caps at 128 GB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Also pre-create the domain groups for SQL administrators and the service accounts with passwords that will not rotate without notice. Doing this after installation, during an incident, is how shared “sqlservice” accounts with unknown passwords get invented.”"
+    },
+    {
+      "question": "In the “The pre-install checklist” table, what is listed for “☐” under “Tool”?",
+      "options": [
+        "Get-ComputerInfo",
+        "Shared by every session; temp tables and sorts live here",
+        "Backup I/O must never compete with the live log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “☐” as “Get-ComputerInfo”."
+    }
+  ],
   takeaways: [
     "Separate OS, data, log, tempdb, and backup storage — shared volumes cause the classic outages",
     "Set max server memory explicitly; leave headroom for the OS and other services",

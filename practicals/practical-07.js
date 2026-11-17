@@ -192,6 +192,312 @@ Compare its plan and runtime stats in Query Store, check for plan changes and st
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again. Guessing is not tuning.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "An execution plan is the optimiser's roadmap.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the optimiser's roadmap. Actual plans show row counts and expensive operators such as scans, sorts and key lookups — the evidence you need before changing anything.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Load a table with deliberately inconvenient data and run a query filtering on a function-wrapped column, such as YEAR(OrderDate).",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Actual execution plan"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Load a table with deliberately inconvenient data and run a query filtering on a function-wrapped column, such as YEAR(OrderDate). Capture the plan — it will scan because the function prevents a seek.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions…",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions…",
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions visible in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Use a local instance with a scratch database large enough to produce meaningful plans — a few hundred thousand rows is plenty.",
+        "Actual execution plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use a local instance with a scratch database large enough to produce meaningful plans — a few hundred thousand rows is plenty. Enable the actual execution plan in SSMS (Ctrl+M) as you work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Actual execution plan",
+        "Query stats",
+        "Follow the loop below for each experiment: capture a baseline, inspect the plan, make one targeted change, then re-run and compare duration and reads with SET STATISTICS."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Follow the loop below for each experiment: capture a baseline, inspect the plan, make one targeted change, then re-run and compare duration and reads with SET STATISTICS.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Small tables / no usable index",
+        "Rewrite the predicate as a range (OrderDate >= start AND OrderDate < end), confirm an index seek appears, and compare logical reads.",
+        "Selective lookups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Rewrite the predicate as a range (OrderDate >= start AND OrderDate < end), confirm an index seek appears, and compare logical reads. This usually delivers the largest win in the whole lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering. Then update statistics and note how estimates improve.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Page life expectancy",
+        "This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again. Guessing is not tuning.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "An execution plan is the optimiser's roadmap.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the optimiser's roadmap. Actual plans show row counts and expensive operators such as scans, sorts and key lookups — the evidence you need before changing anything.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Load a table with deliberately inconvenient data and run a query filtering on a function-wrapped column, such as YEAR(OrderDate).",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Actual execution plan"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Load a table with deliberately inconvenient data and run a query filtering on a function-wrapped column, such as YEAR(OrderDate). Capture the plan — it will scan because the function prevents a seek.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions…",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions…",
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions visible in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Use a local instance with a scratch database large enough to produce meaningful plans — a few hundred thousand rows is plenty.",
+        "Actual execution plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use a local instance with a scratch database large enough to produce meaningful plans — a few hundred thousand rows is plenty. Enable the actual execution plan in SSMS (Ctrl+M) as you work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Actual execution plan",
+        "Query stats",
+        "Follow the loop below for each experiment: capture a baseline, inspect the plan, make one targeted change, then re-run and compare duration and reads with SET STATISTICS."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Follow the loop below for each experiment: capture a baseline, inspect the plan, make one targeted change, then re-run and compare duration and reads with SET STATISTICS.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Small tables / no usable index",
+        "Rewrite the predicate as a range (OrderDate >= start AND OrderDate < end), confirm an index seek appears, and compare logical reads.",
+        "Selective lookups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Rewrite the predicate as a range (OrderDate >= start AND OrderDate < end), confirm an index seek appears, and compare logical reads. This usually delivers the largest win in the whole lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering. Then update statistics and note how estimates improve.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Page life expectancy",
+        "This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again. Guessing is not tuning.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "An execution plan is the optimiser's roadmap.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the optimiser's roadmap. Actual plans show row counts and expensive operators such as scans, sorts and key lookups — the evidence you need before changing anything.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Load a table with deliberately inconvenient data and run a query filtering on a function-wrapped column, such as YEAR(OrderDate).",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Actual execution plan"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Load a table with deliberately inconvenient data and run a query filtering on a function-wrapped column, such as YEAR(OrderDate). Capture the plan — it will scan because the function prevents a seek.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions…",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions…",
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enable Query Store on the database and re-run the queries; use its reports to see the queries, their plans and runtime stats over time — the tool that makes plan regressions visible in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Use a local instance with a scratch database large enough to produce meaningful plans — a few hundred thousand rows is plenty.",
+        "Actual execution plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use a local instance with a scratch database large enough to produce meaningful plans — a few hundred thousand rows is plenty. Enable the actual execution plan in SSMS (Ctrl+M) as you work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Actual execution plan",
+        "Query stats",
+        "Follow the loop below for each experiment: capture a baseline, inspect the plan, make one targeted change, then re-run and compare duration and reads with SET STATISTICS."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Follow the loop below for each experiment: capture a baseline, inspect the plan, make one targeted change, then re-run and compare duration and reads with SET STATISTICS.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Small tables / no usable index",
+        "Rewrite the predicate as a range (OrderDate >= start AND OrderDate < end), confirm an index seek appears, and compare logical reads.",
+        "Selective lookups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Rewrite the predicate as a range (OrderDate >= start AND OrderDate < end), confirm an index seek appears, and compare logical reads. This usually delivers the largest win in the whole lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Create a nonclustered index and observe a lookup disappear when you add an included column to make the index covering. Then update statistics and note how estimates improve.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Page life expectancy",
+        "This lab teaches performance tuning as a measurement loop: baseline, identify, change one thing, measure again.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "Tune with a measurement loop: baseline, change one thing, measure again",
     "Functions on columns destroy SARGability — prefer range predicates",

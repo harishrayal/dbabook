@@ -186,6 +186,312 @@ Granting only the minimum permissions required for the minimum scope and time. I
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Roles simplify permission management.",
+        "Authenticate to the instance",
+        "Database Users"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Users within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Users fits”?",
+      "options": [
+        "Bundle permissions",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Map a login into a database"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Users in practice”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Users”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Users. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Bundle permissions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Users",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Users with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Users means”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "With Database Users, prefer measured, reversible changes.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Users fits”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The diagram below places Database Users alongside the core concepts of SQL Server security and permissions.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Users alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Users in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Users:",
+        "Neutral",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Users:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Users”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Roles simplify permission management.",
+        "Authenticate to the instance",
+        "Database Users"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Users within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Users fits”?",
+      "options": [
+        "Bundle permissions",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Map a login into a database"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Users in practice”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Users”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Users. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Bundle permissions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Users",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Users with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Users means”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "With Database Users, prefer measured, reversible changes.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Users fits”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The diagram below places Database Users alongside the core concepts of SQL Server security and permissions.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Users alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Users in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Users:",
+        "Neutral",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Users:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Users”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Roles simplify permission management.",
+        "Authenticate to the instance",
+        "Database Users"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Users within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Users fits”?",
+      "options": [
+        "Bundle permissions",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Map a login into a database"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Users in practice”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Users”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Users. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Bundle permissions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Users",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Users with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Users means”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "With Database Users, prefer measured, reversible changes.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Users fits”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The diagram below places Database Users alongside the core concepts of SQL Server security and permissions.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Users alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Users in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Users:",
+        "Neutral",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Users:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Users”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Users is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

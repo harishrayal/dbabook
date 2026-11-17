@@ -182,6 +182,312 @@ Passing a hashtable of parameters to a cmdlet with @params instead of a long pos
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Where-Object",
+        "PowerShell Scripts",
+        "Get-Service"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Scripts within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Scripts fits”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "@params",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Scripts in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Scripts”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Theory becomes useful when you can apply it.",
+        "@params"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Scripts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "PowerShell Scripts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates PowerShell Scripts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Scripts means”?",
+      "options": [
+        "Daily",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "With PowerShell Scripts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Scripts fits”?",
+      "options": [
+        "The diagram below places PowerShell Scripts alongside the core concepts of PowerShell automation for DBAs.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "With PowerShell Scripts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places PowerShell Scripts alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Scripts in practice”?",
+      "options": [
+        "PowerShell Scripts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Scripts:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Scripts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Scripts”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Where-Object",
+        "PowerShell Scripts",
+        "Get-Service"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Scripts within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Scripts fits”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "@params",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Scripts in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Scripts”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Theory becomes useful when you can apply it.",
+        "@params"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Scripts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "PowerShell Scripts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates PowerShell Scripts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Scripts means”?",
+      "options": [
+        "Daily",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "With PowerShell Scripts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Scripts fits”?",
+      "options": [
+        "The diagram below places PowerShell Scripts alongside the core concepts of PowerShell automation for DBAs.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "With PowerShell Scripts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places PowerShell Scripts alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Scripts in practice”?",
+      "options": [
+        "PowerShell Scripts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Scripts:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Scripts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Scripts”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Where-Object",
+        "PowerShell Scripts",
+        "Get-Service"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Scripts within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Scripts fits”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "@params",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Scripts in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Scripts”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Theory becomes useful when you can apply it.",
+        "@params"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Scripts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "PowerShell Scripts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates PowerShell Scripts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Scripts means”?",
+      "options": [
+        "Daily",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "With PowerShell Scripts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Scripts fits”?",
+      "options": [
+        "The diagram below places PowerShell Scripts alongside the core concepts of PowerShell automation for DBAs.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "With PowerShell Scripts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places PowerShell Scripts alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Scripts in practice”?",
+      "options": [
+        "PowerShell Scripts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Scripts:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Scripts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Scripts”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "PowerShell Scripts is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

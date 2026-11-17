@@ -163,6 +163,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, or configu
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job never runs",
+        "Job Owners"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Job Owners within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Owners fits”?",
+      "options": [
+        "Missed window",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Partial completion"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Owners in practice”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Owners”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Owners. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Owners means”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Owners fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places Job Owners alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Owners alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Owners in practice”?",
+      "options": [
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Job Owners:",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Owners:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Owners”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Job Owners, prefer measured, reversible changes.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job never runs",
+        "Job Owners"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Job Owners within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Owners fits”?",
+      "options": [
+        "Missed window",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Partial completion"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Owners in practice”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Owners”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Owners. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Owners means”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Owners fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places Job Owners alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Owners alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Owners in practice”?",
+      "options": [
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Job Owners:",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Owners:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Owners”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Job Owners, prefer measured, reversible changes.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job never runs",
+        "Job Owners"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Job Owners within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Owners fits”?",
+      "options": [
+        "Missed window",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Partial completion"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Owners in practice”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Owners”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Owners. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Owners means”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Owners fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places Job Owners alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Owners alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Owners in practice”?",
+      "options": [
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Job Owners:",
+        "Enabled alert"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Owners:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Owners”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Job Owners, prefer measured, reversible changes.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    }
+  ],
   takeaways: [
     "Job Owners is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -167,6 +167,312 @@ It uses row versioning so readers do not take shared locks that block writers an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Deadlock Cycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Cycle within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Cycle fits”?",
+      "options": [
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Row versioning"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Cycle in practice”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Compatible with S",
+        "Deadlock Cycle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Cycle”?",
+      "options": [
+        "Deadlock Cycle",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Cycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Cycle means”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Cycle fits”?",
+      "options": [
+        "Deadlock Cycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Cycle in practice”?",
+      "options": [
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Cycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Cycle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Deadlock Cycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Cycle within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Cycle fits”?",
+      "options": [
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Row versioning"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Cycle in practice”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Compatible with S",
+        "Deadlock Cycle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Cycle”?",
+      "options": [
+        "Deadlock Cycle",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Cycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Cycle means”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Cycle fits”?",
+      "options": [
+        "Deadlock Cycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Cycle in practice”?",
+      "options": [
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Cycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Cycle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Deadlock Cycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Cycle within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Cycle fits”?",
+      "options": [
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Row versioning"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Cycle in practice”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Compatible with S",
+        "Deadlock Cycle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Cycle”?",
+      "options": [
+        "Deadlock Cycle",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Cycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Cycle means”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Cycle fits”?",
+      "options": [
+        "Deadlock Cycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Cycle in practice”?",
+      "options": [
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Cycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Cycle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Deadlock Cycle alongside the core concepts of blocking and deadlocks.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Cycle:",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    }
+  ],
   takeaways: [
     "Deadlock Cycle is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

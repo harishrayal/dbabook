@@ -181,6 +181,312 @@ By impact and urgency against defined levels: total outage or data loss is Sev1,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "SQL Server Service Stopped",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Service Stopped within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Stopped fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Stopped in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Stopped”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Service Stopped. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Service Stopped",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Service Stopped with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Service Stopped means”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Stopped fits”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places SQL Server Service Stopped alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Service Stopped alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Stopped in practice”?",
+      "options": [
+        "Kill blocker / fix query",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:",
+        "Log backup / grow"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Stopped”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "SQL Server Service Stopped",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Service Stopped within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Stopped fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Stopped in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Stopped”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Service Stopped. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Service Stopped",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Service Stopped with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Service Stopped means”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Stopped fits”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places SQL Server Service Stopped alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Service Stopped alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Stopped in practice”?",
+      "options": [
+        "Kill blocker / fix query",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:",
+        "Log backup / grow"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Stopped”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "SQL Server Service Stopped",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Service Stopped within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Stopped fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Stopped in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Stopped”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Service Stopped. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Service Stopped",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Service Stopped with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Service Stopped means”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Stopped fits”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places SQL Server Service Stopped alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Service Stopped alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Stopped in practice”?",
+      "options": [
+        "Kill blocker / fix query",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:",
+        "Log backup / grow"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Service Stopped:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Stopped”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Service Stopped is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

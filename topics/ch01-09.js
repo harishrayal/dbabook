@@ -180,6 +180,312 @@ ORDER  BY r.blocking_session_id DESC, r.wait_time DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ is an unplanned interruption of a service, or a degradation serious enough to need urgent restoration.”",
+      "options": [
+        "incident",
+        "What is the scope?",
+        "Is it blocking, failing, or slow?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “An incident is an unplanned interruption of a service, or a degradation serious enough to need urgent restoration. The definition matters because it triggers a process — severity, roles, communication — rather than an improvised heroic effort. Three related terms are worth separating:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The incident lifecycle”?",
+      "options": [
+        "Escalation is not a failure; it is a routing decision.",
+        "with evidence",
+        "Every incident follows the same shape."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every incident follows the same shape. The organisation's job is to make the shape predictable so responders can think about the problem instead of the process:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triage under pressure”?",
+      "options": [
+        "Immediate for Sev1, same day otherwise",
+        "The first five minutes of an incident are structured fact-gathering.",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first five minutes of an incident are structured fact-gathering. For a database incident, the sequence is almost always the same — one query often answers most of it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation: when and to whom”?",
+      "options": [
+        "Escalation is not a failure; it is a routing decision.",
+        "The incident is not over when service is restored.",
+        "The tell of a healthy culture is whether incidents get reported quickly and early."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Escalation is not a failure; it is a routing decision. The DBA escalates when the problem leaves their control — and the triggers should be written down so nobody has to decide them from memory at 3 AM:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “After the incident”?",
+      "options": [
+        "with evidence",
+        "not",
+        "The incident is not over when service is restored."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The incident is not over when service is restored. The post-incident review is where the organisation pays or declines the debt:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What counts as an incident”?",
+      "options": [
+        "incident",
+        "Severity sets the response.",
+        "The tell of a healthy culture is whether incidents get reported quickly and early."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity sets the response. Most organisations run a four-level scale, and the DBA needs to know instantly which one they are in:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — restarting the failing component, failing over, or killing the head blocker buys the time to investigate properly.”",
+      "options": [
+        "Mitigation before root cause",
+        "Reconstruct the timeline",
+        "Find the contributing causes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two principles govern the middle of that diagram. Mitigation before root cause — restarting the failing component, failing over, or killing the head blocker buys the time to investigate properly. And service restoration outranks curiosity: understanding why it broke matters less, in the first ten minutes, than ending the user impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triage under pressure”?",
+      "options": [
+        "Immediately, in parallel — never after",
+        "The incident is not over when service is restored.",
+        "From there, the standard fact set — collect it before touching anything:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “From there, the standard fact set — collect it before touching anything:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Escalating _____ is what makes it effective: symptom, scope, what has been tried, the current hypothesis, and the specific help needed.”",
+      "options": [
+        "Update the runbook",
+        "with evidence",
+        "Agree prevention items with owners and dates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Escalating with evidence is what makes it effective: symptom, scope, what has been tried, the current hypothesis, and the specific help needed. “It's slow, please fix” transfers the panic without transferring the information.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “After the incident”?",
+      "options": [
+        "The tell of a healthy culture is whether incidents get reported quickly and early.",
+        "As soon as evidence points there",
+        "Immediately, in parallel — never after"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The tell of a healthy culture is whether incidents get reported quickly and early. The tell of an unhealthy one is the incident that nobody knew about until the customer complained — which is almost always a detection and escalation failure, not a technical one.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ is an unplanned interruption of a service, or a degradation serious enough to need urgent restoration.”",
+      "options": [
+        "incident",
+        "What is the scope?",
+        "Is it blocking, failing, or slow?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “An incident is an unplanned interruption of a service, or a degradation serious enough to need urgent restoration. The definition matters because it triggers a process — severity, roles, communication — rather than an improvised heroic effort. Three related terms are worth separating:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The incident lifecycle”?",
+      "options": [
+        "Escalation is not a failure; it is a routing decision.",
+        "with evidence",
+        "Every incident follows the same shape."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every incident follows the same shape. The organisation's job is to make the shape predictable so responders can think about the problem instead of the process:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triage under pressure”?",
+      "options": [
+        "Immediate for Sev1, same day otherwise",
+        "The first five minutes of an incident are structured fact-gathering.",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first five minutes of an incident are structured fact-gathering. For a database incident, the sequence is almost always the same — one query often answers most of it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation: when and to whom”?",
+      "options": [
+        "Escalation is not a failure; it is a routing decision.",
+        "The incident is not over when service is restored.",
+        "The tell of a healthy culture is whether incidents get reported quickly and early."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Escalation is not a failure; it is a routing decision. The DBA escalates when the problem leaves their control — and the triggers should be written down so nobody has to decide them from memory at 3 AM:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “After the incident”?",
+      "options": [
+        "with evidence",
+        "not",
+        "The incident is not over when service is restored."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The incident is not over when service is restored. The post-incident review is where the organisation pays or declines the debt:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What counts as an incident”?",
+      "options": [
+        "incident",
+        "Severity sets the response.",
+        "The tell of a healthy culture is whether incidents get reported quickly and early."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity sets the response. Most organisations run a four-level scale, and the DBA needs to know instantly which one they are in:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — restarting the failing component, failing over, or killing the head blocker buys the time to investigate properly.”",
+      "options": [
+        "Mitigation before root cause",
+        "Reconstruct the timeline",
+        "Find the contributing causes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two principles govern the middle of that diagram. Mitigation before root cause — restarting the failing component, failing over, or killing the head blocker buys the time to investigate properly. And service restoration outranks curiosity: understanding why it broke matters less, in the first ten minutes, than ending the user impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triage under pressure”?",
+      "options": [
+        "Immediately, in parallel — never after",
+        "The incident is not over when service is restored.",
+        "From there, the standard fact set — collect it before touching anything:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “From there, the standard fact set — collect it before touching anything:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Escalating _____ is what makes it effective: symptom, scope, what has been tried, the current hypothesis, and the specific help needed.”",
+      "options": [
+        "Update the runbook",
+        "with evidence",
+        "Agree prevention items with owners and dates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Escalating with evidence is what makes it effective: symptom, scope, what has been tried, the current hypothesis, and the specific help needed. “It's slow, please fix” transfers the panic without transferring the information.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “After the incident”?",
+      "options": [
+        "The tell of a healthy culture is whether incidents get reported quickly and early.",
+        "As soon as evidence points there",
+        "Immediately, in parallel — never after"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The tell of a healthy culture is whether incidents get reported quickly and early. The tell of an unhealthy one is the incident that nobody knew about until the customer complained — which is almost always a detection and escalation failure, not a technical one.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ is an unplanned interruption of a service, or a degradation serious enough to need urgent restoration.”",
+      "options": [
+        "incident",
+        "What is the scope?",
+        "Is it blocking, failing, or slow?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “An incident is an unplanned interruption of a service, or a degradation serious enough to need urgent restoration. The definition matters because it triggers a process — severity, roles, communication — rather than an improvised heroic effort. Three related terms are worth separating:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The incident lifecycle”?",
+      "options": [
+        "Escalation is not a failure; it is a routing decision.",
+        "with evidence",
+        "Every incident follows the same shape."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every incident follows the same shape. The organisation's job is to make the shape predictable so responders can think about the problem instead of the process:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triage under pressure”?",
+      "options": [
+        "Immediate for Sev1, same day otherwise",
+        "The first five minutes of an incident are structured fact-gathering.",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first five minutes of an incident are structured fact-gathering. For a database incident, the sequence is almost always the same — one query often answers most of it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation: when and to whom”?",
+      "options": [
+        "Escalation is not a failure; it is a routing decision.",
+        "The incident is not over when service is restored.",
+        "The tell of a healthy culture is whether incidents get reported quickly and early."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Escalation is not a failure; it is a routing decision. The DBA escalates when the problem leaves their control — and the triggers should be written down so nobody has to decide them from memory at 3 AM:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “After the incident”?",
+      "options": [
+        "with evidence",
+        "not",
+        "The incident is not over when service is restored."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The incident is not over when service is restored. The post-incident review is where the organisation pays or declines the debt:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What counts as an incident”?",
+      "options": [
+        "incident",
+        "Severity sets the response.",
+        "The tell of a healthy culture is whether incidents get reported quickly and early."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity sets the response. Most organisations run a four-level scale, and the DBA needs to know instantly which one they are in:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — restarting the failing component, failing over, or killing the head blocker buys the time to investigate properly.”",
+      "options": [
+        "Mitigation before root cause",
+        "Reconstruct the timeline",
+        "Find the contributing causes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two principles govern the middle of that diagram. Mitigation before root cause — restarting the failing component, failing over, or killing the head blocker buys the time to investigate properly. And service restoration outranks curiosity: understanding why it broke matters less, in the first ten minutes, than ending the user impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triage under pressure”?",
+      "options": [
+        "Immediately, in parallel — never after",
+        "The incident is not over when service is restored.",
+        "From there, the standard fact set — collect it before touching anything:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “From there, the standard fact set — collect it before touching anything:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Escalating _____ is what makes it effective: symptom, scope, what has been tried, the current hypothesis, and the specific help needed.”",
+      "options": [
+        "Update the runbook",
+        "with evidence",
+        "Agree prevention items with owners and dates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Escalating with evidence is what makes it effective: symptom, scope, what has been tried, the current hypothesis, and the specific help needed. “It's slow, please fix” transfers the panic without transferring the information.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “After the incident”?",
+      "options": [
+        "The tell of a healthy culture is whether incidents get reported quickly and early.",
+        "As soon as evidence points there",
+        "Immediately, in parallel — never after"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The tell of a healthy culture is whether incidents get reported quickly and early. The tell of an unhealthy one is the incident that nobody knew about until the customer complained — which is almost always a detection and escalation failure, not a technical one.”"
+    }
+  ],
   takeaways: [
     "Incidents interrupt service, problems explain it, changes prevent it — each has its own process",
     "Classify severity immediately and never under-classify an outage while waiting for certainty",

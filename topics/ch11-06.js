@@ -187,6 +187,312 @@ They aggregate what sessions spent time waiting on — I/O, locks, latches, logg
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Memory Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Memory Monitoring:",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Memory Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory Monitoring fits”?",
+      "options": [
+        "Finds the bottleneck",
+        "Finds head blockers",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory Monitoring in practice”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Memory Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Memory Monitoring",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Memory Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Memory Monitoring means”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory Monitoring fits”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The diagram below places Memory Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Memory Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory Monitoring in practice”?",
+      "options": [
+        "Any overnight failure",
+        "The following comparison captures the distinctions that matter most when working with Memory Monitoring:",
+        "Approaching 90%"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Memory Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Memory Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Memory Monitoring:",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Memory Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory Monitoring fits”?",
+      "options": [
+        "Finds the bottleneck",
+        "Finds head blockers",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory Monitoring in practice”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Memory Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Memory Monitoring",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Memory Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Memory Monitoring means”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory Monitoring fits”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The diagram below places Memory Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Memory Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory Monitoring in practice”?",
+      "options": [
+        "Any overnight failure",
+        "The following comparison captures the distinctions that matter most when working with Memory Monitoring:",
+        "Approaching 90%"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Memory Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Memory Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Memory Monitoring:",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Memory Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory Monitoring fits”?",
+      "options": [
+        "Finds the bottleneck",
+        "Finds head blockers",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory Monitoring in practice”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Memory Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Memory Monitoring",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Memory Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Memory Monitoring means”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory Monitoring fits”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The diagram below places Memory Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Memory Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory Monitoring in practice”?",
+      "options": [
+        "Any overnight failure",
+        "The following comparison captures the distinctions that matter most when working with Memory Monitoring:",
+        "Approaching 90%"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Memory Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Memory Monitoring is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

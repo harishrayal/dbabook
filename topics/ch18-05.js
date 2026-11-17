@@ -182,6 +182,312 @@ Passing a hashtable of parameters to a cmdlet with @params instead of a long pos
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Conditions:",
+        "Conditions",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Conditions within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Conditions fits”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Get-Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conditions in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Conditions”?",
+      "options": [
+        "Get-Service",
+        "Theory becomes useful when you can apply it.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Conditions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "@params",
+        "Theory becomes useful when you can apply it.",
+        "Conditions"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Conditions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Conditions means”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Conditions fits”?",
+      "options": [
+        "The diagram below places Conditions alongside the core concepts of PowerShell automation for DBAs.",
+        "Next, verify the result and capture a baseline.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Conditions alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conditions in practice”?",
+      "options": [
+        "Daily",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The following comparison captures the distinctions that matter most when working with Conditions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Conditions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Conditions”?",
+      "options": [
+        "Daily",
+        "The first example establishes the relevant state.",
+        "With Conditions, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Conditions:",
+        "Conditions",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Conditions within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Conditions fits”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Get-Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conditions in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Conditions”?",
+      "options": [
+        "Get-Service",
+        "Theory becomes useful when you can apply it.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Conditions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "@params",
+        "Theory becomes useful when you can apply it.",
+        "Conditions"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Conditions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Conditions means”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Conditions fits”?",
+      "options": [
+        "The diagram below places Conditions alongside the core concepts of PowerShell automation for DBAs.",
+        "Next, verify the result and capture a baseline.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Conditions alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conditions in practice”?",
+      "options": [
+        "Daily",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The following comparison captures the distinctions that matter most when working with Conditions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Conditions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Conditions”?",
+      "options": [
+        "Daily",
+        "The first example establishes the relevant state.",
+        "With Conditions, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Conditions:",
+        "Conditions",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Conditions within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Conditions fits”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Get-Service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conditions in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Conditions”?",
+      "options": [
+        "Get-Service",
+        "Theory becomes useful when you can apply it.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Conditions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "@params",
+        "Theory becomes useful when you can apply it.",
+        "Conditions"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Conditions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Conditions means”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Conditions fits”?",
+      "options": [
+        "The diagram below places Conditions alongside the core concepts of PowerShell automation for DBAs.",
+        "Next, verify the result and capture a baseline.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Conditions alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conditions in practice”?",
+      "options": [
+        "Daily",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The following comparison captures the distinctions that matter most when working with Conditions:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Conditions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Conditions”?",
+      "options": [
+        "Daily",
+        "The first example establishes the relevant state.",
+        "With Conditions, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Conditions is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

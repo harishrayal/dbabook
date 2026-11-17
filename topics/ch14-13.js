@@ -160,6 +160,312 @@ When a small number of pages are damaged, you have FULL recovery model and a ver
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Page checksums are the primary detection mechanism.",
+        "Recovery Pending State"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Recovery Pending State within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Recovery Pending State fits”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery Pending State in practice”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Absolute last resort",
+        "The following comparison captures the distinctions that matter most when working with Recovery Pending State:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Recovery Pending State”?",
+      "options": [
+        "Rebuild indexes",
+        "Absolute last resort",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Recovery Pending State. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Minor, non-data issues",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "With Recovery Pending State, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Recovery Pending State means”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Recovery Pending State",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Recovery Pending State fits”?",
+      "options": [
+        "Absolute last resort",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "The diagram below places Recovery Pending State alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Recovery Pending State alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery Pending State in practice”?",
+      "options": [
+        "Recovery Pending State",
+        "The following comparison captures the distinctions that matter most when working with Recovery Pending State:",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Recovery Pending State:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Recovery Pending State”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Recovery Pending State",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Page checksums are the primary detection mechanism.",
+        "Recovery Pending State"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Recovery Pending State within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Recovery Pending State fits”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery Pending State in practice”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Absolute last resort",
+        "The following comparison captures the distinctions that matter most when working with Recovery Pending State:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Recovery Pending State”?",
+      "options": [
+        "Rebuild indexes",
+        "Absolute last resort",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Recovery Pending State. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Minor, non-data issues",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "With Recovery Pending State, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Recovery Pending State means”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Recovery Pending State",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Recovery Pending State fits”?",
+      "options": [
+        "Absolute last resort",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "The diagram below places Recovery Pending State alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Recovery Pending State alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery Pending State in practice”?",
+      "options": [
+        "Recovery Pending State",
+        "The following comparison captures the distinctions that matter most when working with Recovery Pending State:",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Recovery Pending State:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Recovery Pending State”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Recovery Pending State",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Page checksums are the primary detection mechanism.",
+        "Recovery Pending State"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Recovery Pending State within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Recovery Pending State fits”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery Pending State in practice”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Absolute last resort",
+        "The following comparison captures the distinctions that matter most when working with Recovery Pending State:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Recovery Pending State”?",
+      "options": [
+        "Rebuild indexes",
+        "Absolute last resort",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Recovery Pending State. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Minor, non-data issues",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "With Recovery Pending State, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Recovery Pending State means”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Recovery Pending State",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Recovery Pending State fits”?",
+      "options": [
+        "Absolute last resort",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "The diagram below places Recovery Pending State alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Recovery Pending State alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery Pending State in practice”?",
+      "options": [
+        "Recovery Pending State",
+        "The following comparison captures the distinctions that matter most when working with Recovery Pending State:",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Recovery Pending State:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Recovery Pending State”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Recovery Pending State",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    }
+  ],
   takeaways: [
     "Recovery Pending State is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

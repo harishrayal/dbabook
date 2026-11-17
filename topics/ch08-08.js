@@ -179,6 +179,312 @@ NORECOVERY keeps the database in a restoring state so more backups can be applie
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "End of the sequence",
+        "RECOVERY Option",
+        "More backups to apply"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine RECOVERY Option within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RECOVERY Option fits”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RECOVERY Option in practice”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RECOVERY Option”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Theory becomes useful when you can apply it.",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RECOVERY Option. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "RECOVERY Option"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates RECOVERY Option with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RECOVERY Option means”?",
+      "options": [
+        "Lowest",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "With RECOVERY Option, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RECOVERY Option fits”?",
+      "options": [
+        "The diagram below places RECOVERY Option alongside the core concepts of restore and disaster recovery.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "With RECOVERY Option, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places RECOVERY Option alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RECOVERY Option in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The following comparison captures the distinctions that matter most when working with RECOVERY Option:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RECOVERY Option:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RECOVERY Option”?",
+      "options": [
+        "RECOVERY Option sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "End of the sequence",
+        "RECOVERY Option",
+        "More backups to apply"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine RECOVERY Option within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RECOVERY Option fits”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RECOVERY Option in practice”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RECOVERY Option”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Theory becomes useful when you can apply it.",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RECOVERY Option. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "RECOVERY Option"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates RECOVERY Option with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RECOVERY Option means”?",
+      "options": [
+        "Lowest",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "With RECOVERY Option, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RECOVERY Option fits”?",
+      "options": [
+        "The diagram below places RECOVERY Option alongside the core concepts of restore and disaster recovery.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "With RECOVERY Option, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places RECOVERY Option alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RECOVERY Option in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The following comparison captures the distinctions that matter most when working with RECOVERY Option:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RECOVERY Option:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RECOVERY Option”?",
+      "options": [
+        "RECOVERY Option sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "End of the sequence",
+        "RECOVERY Option",
+        "More backups to apply"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine RECOVERY Option within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RECOVERY Option fits”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RECOVERY Option in practice”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RECOVERY Option”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Theory becomes useful when you can apply it.",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RECOVERY Option. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "RECOVERY Option"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates RECOVERY Option with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RECOVERY Option means”?",
+      "options": [
+        "Lowest",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "With RECOVERY Option, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RECOVERY Option fits”?",
+      "options": [
+        "The diagram below places RECOVERY Option alongside the core concepts of restore and disaster recovery.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "With RECOVERY Option, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places RECOVERY Option alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RECOVERY Option in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The following comparison captures the distinctions that matter most when working with RECOVERY Option:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RECOVERY Option:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RECOVERY Option”?",
+      "options": [
+        "RECOVERY Option sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Highest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "RECOVERY Option is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

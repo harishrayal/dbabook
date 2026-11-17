@@ -178,6 +178,312 @@ It captures log records generated after the last scheduled backup, usually befor
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Cross-Version Restoration",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cross-Version Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Version Restoration fits”?",
+      "options": [
+        "Highest",
+        "Cross-Version Restoration sits inside a larger system.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Version Restoration in practice”?",
+      "options": [
+        "More backups to apply",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Version Restoration”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Cross-Version Restoration.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Version Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "With Cross-Version Restoration, prefer measured, reversible changes.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Cross-Version Restoration",
+        "Use the following as a starting point when investigating Cross-Version Restoration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cross-Version Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Version Restoration means”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Version Restoration fits”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Version Restoration in practice”?",
+      "options": [
+        "Cross-Version Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Version Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Cross-Version Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Cross-Version Restoration",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cross-Version Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Version Restoration fits”?",
+      "options": [
+        "Highest",
+        "Cross-Version Restoration sits inside a larger system.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Version Restoration in practice”?",
+      "options": [
+        "More backups to apply",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Version Restoration”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Cross-Version Restoration.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Version Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "With Cross-Version Restoration, prefer measured, reversible changes.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Cross-Version Restoration",
+        "Use the following as a starting point when investigating Cross-Version Restoration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cross-Version Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Version Restoration means”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Version Restoration fits”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Version Restoration in practice”?",
+      "options": [
+        "Cross-Version Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Version Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Cross-Version Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Cross-Version Restoration",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cross-Version Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Version Restoration fits”?",
+      "options": [
+        "Highest",
+        "Cross-Version Restoration sits inside a larger system.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Version Restoration in practice”?",
+      "options": [
+        "More backups to apply",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Version Restoration”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Cross-Version Restoration.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Version Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "With Cross-Version Restoration, prefer measured, reversible changes.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Cross-Version Restoration",
+        "Use the following as a starting point when investigating Cross-Version Restoration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cross-Version Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Version Restoration means”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Version Restoration fits”?",
+      "options": [
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cross-Version Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Version Restoration in practice”?",
+      "options": [
+        "Cross-Version Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:",
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Version Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Version Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Cross-Version Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Cross-Version Restoration is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -193,6 +193,312 @@ GROUP BY latest_diff.database_name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server tracks which extents (8 × 8 KB pages) have changed since the last full backup in the _____ — a small structure stored in the database.”",
+      "options": [
+        "The differential outgrows its savings",
+        "The base ages past policy",
+        "differential bitmap"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server tracks which extents (8 × 8 KB pages) have changed since the last full backup in the differential bitmap — a small structure stored in the database. A differential backup reads only the extents marked as changed, which makes it dramatically smaller and faster than a full backup on a database where only a fraction of data changes per day.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The differential base”?",
+      "options": [
+        "Second, NORECOVERY, then logs",
+        "Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful.",
+        "Yes, relative to the base — not to other differentials"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful. The relationship looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking and restoring a differential”?",
+      "options": [
+        "The syntax is the ordinary BACKUP DATABASE with one keyword.",
+        "The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly…",
+        "Extents changed since the base full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The syntax is the ordinary BACKUP DATABASE with one keyword. Note it still uses COMPRESSION and CHECKSUM — differentials deserve the same integrity treatment as fulls.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When a new full is required”?",
+      "options": [
+        "Yes, relative to the base — not to other differentials",
+        "Second, NORECOVERY, then logs",
+        "The differential base has a lifespan."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The differential base has a lifespan. Take a fresh full backup whenever:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What goes wrong in practice”?",
+      "options": [
+        "Clears the extents it captured",
+        "Differential problems are almost always visible in msdb before they hurt:",
+        "Second, NORECOVERY, then logs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Differential problems are almost always visible in msdb before they hurt:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The differential base”?",
+      "options": [
+        "msdb records the link between each differential and its base through the differential_base_guid column of backupset.",
+        "not",
+        "Differential problems are almost always visible in msdb before they hurt:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “msdb records the link between each differential and its base through the differential_base_guid column of backupset. That is how the restore engine knows which full a differential belongs to — and how you can audit the relationship:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking and restoring a differential”?",
+      "options": [
+        "Second, NORECOVERY, then logs",
+        "Clears the extents it captured",
+        "The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly wrong database. That safety check is also why guessing at restore order never works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “COPY_ONLY full backups are the exception: they do _____ reset the differential base, so an ad-hoc copy taken by a vendor cannot silently invalidate your schedule.”",
+      "options": [
+        "Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful.",
+        "not",
+        "Differential takes as long as a full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “COPY_ONLY full backups are the exception: they do not reset the differential base, so an ad-hoc copy taken by a vendor cannot silently invalidate your schedule.”"
+    },
+    {
+      "question": "In the “Taking and restoring a differential” table, what is listed for “Reads” under “Differential”?",
+      "options": [
+        "Extents changed since the base full",
+        "full backup",
+        "differential base"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Reads” as “Extents changed since the base full”."
+    },
+    {
+      "question": "In the “Taking and restoring a differential” table, what is listed for “Depends on” under “Differential”?",
+      "options": [
+        "differential base",
+        "clears the marks",
+        "One full backup (the base)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Depends on” as “One full backup (the base)”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server tracks which extents (8 × 8 KB pages) have changed since the last full backup in the _____ — a small structure stored in the database.”",
+      "options": [
+        "The differential outgrows its savings",
+        "The base ages past policy",
+        "differential bitmap"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server tracks which extents (8 × 8 KB pages) have changed since the last full backup in the differential bitmap — a small structure stored in the database. A differential backup reads only the extents marked as changed, which makes it dramatically smaller and faster than a full backup on a database where only a fraction of data changes per day.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The differential base”?",
+      "options": [
+        "Second, NORECOVERY, then logs",
+        "Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful.",
+        "Yes, relative to the base — not to other differentials"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful. The relationship looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking and restoring a differential”?",
+      "options": [
+        "The syntax is the ordinary BACKUP DATABASE with one keyword.",
+        "The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly…",
+        "Extents changed since the base full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The syntax is the ordinary BACKUP DATABASE with one keyword. Note it still uses COMPRESSION and CHECKSUM — differentials deserve the same integrity treatment as fulls.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When a new full is required”?",
+      "options": [
+        "Yes, relative to the base — not to other differentials",
+        "Second, NORECOVERY, then logs",
+        "The differential base has a lifespan."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The differential base has a lifespan. Take a fresh full backup whenever:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What goes wrong in practice”?",
+      "options": [
+        "Clears the extents it captured",
+        "Differential problems are almost always visible in msdb before they hurt:",
+        "Second, NORECOVERY, then logs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Differential problems are almost always visible in msdb before they hurt:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The differential base”?",
+      "options": [
+        "msdb records the link between each differential and its base through the differential_base_guid column of backupset.",
+        "not",
+        "Differential problems are almost always visible in msdb before they hurt:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “msdb records the link between each differential and its base through the differential_base_guid column of backupset. That is how the restore engine knows which full a differential belongs to — and how you can audit the relationship:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking and restoring a differential”?",
+      "options": [
+        "Second, NORECOVERY, then logs",
+        "Clears the extents it captured",
+        "The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly wrong database. That safety check is also why guessing at restore order never works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “COPY_ONLY full backups are the exception: they do _____ reset the differential base, so an ad-hoc copy taken by a vendor cannot silently invalidate your schedule.”",
+      "options": [
+        "Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful.",
+        "not",
+        "Differential takes as long as a full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “COPY_ONLY full backups are the exception: they do not reset the differential base, so an ad-hoc copy taken by a vendor cannot silently invalidate your schedule.”"
+    },
+    {
+      "question": "In the “Taking and restoring a differential” table, what is listed for “Reads” under “Differential”?",
+      "options": [
+        "Extents changed since the base full",
+        "full backup",
+        "differential base"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Reads” as “Extents changed since the base full”."
+    },
+    {
+      "question": "In the “Taking and restoring a differential” table, what is listed for “Depends on” under “Differential”?",
+      "options": [
+        "differential base",
+        "clears the marks",
+        "One full backup (the base)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Depends on” as “One full backup (the base)”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server tracks which extents (8 × 8 KB pages) have changed since the last full backup in the _____ — a small structure stored in the database.”",
+      "options": [
+        "The differential outgrows its savings",
+        "The base ages past policy",
+        "differential bitmap"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server tracks which extents (8 × 8 KB pages) have changed since the last full backup in the differential bitmap — a small structure stored in the database. A differential backup reads only the extents marked as changed, which makes it dramatically smaller and faster than a full backup on a database where only a fraction of data changes per day.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The differential base”?",
+      "options": [
+        "Second, NORECOVERY, then logs",
+        "Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful.",
+        "Yes, relative to the base — not to other differentials"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful. The relationship looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking and restoring a differential”?",
+      "options": [
+        "The syntax is the ordinary BACKUP DATABASE with one keyword.",
+        "The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly…",
+        "Extents changed since the base full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The syntax is the ordinary BACKUP DATABASE with one keyword. Note it still uses COMPRESSION and CHECKSUM — differentials deserve the same integrity treatment as fulls.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When a new full is required”?",
+      "options": [
+        "Yes, relative to the base — not to other differentials",
+        "Second, NORECOVERY, then logs",
+        "The differential base has a lifespan."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The differential base has a lifespan. Take a fresh full backup whenever:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What goes wrong in practice”?",
+      "options": [
+        "Clears the extents it captured",
+        "Differential problems are almost always visible in msdb before they hurt:",
+        "Second, NORECOVERY, then logs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Differential problems are almost always visible in msdb before they hurt:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The differential base”?",
+      "options": [
+        "msdb records the link between each differential and its base through the differential_base_guid column of backupset.",
+        "not",
+        "Differential problems are almost always visible in msdb before they hurt:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “msdb records the link between each differential and its base through the differential_base_guid column of backupset. That is how the restore engine knows which full a differential belongs to — and how you can audit the relationship:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking and restoring a differential”?",
+      "options": [
+        "Second, NORECOVERY, then logs",
+        "Clears the extents it captured",
+        "The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The restore engine enforces the dependency: if you attempt a differential without its matching base, the restore fails with an LSN/guid mismatch rather than producing a subtly wrong database. That safety check is also why guessing at restore order never works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “COPY_ONLY full backups are the exception: they do _____ reset the differential base, so an ad-hoc copy taken by a vendor cannot silently invalidate your schedule.”",
+      "options": [
+        "Because every differential is measured against a single full backup, that base must be present and restorable for any differential to be useful.",
+        "not",
+        "Differential takes as long as a full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “COPY_ONLY full backups are the exception: they do not reset the differential base, so an ad-hoc copy taken by a vendor cannot silently invalidate your schedule.”"
+    },
+    {
+      "question": "In the “Taking and restoring a differential” table, what is listed for “Reads” under “Differential”?",
+      "options": [
+        "Extents changed since the base full",
+        "full backup",
+        "differential base"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Reads” as “Extents changed since the base full”."
+    },
+    {
+      "question": "In the “Taking and restoring a differential” table, what is listed for “Depends on” under “Differential”?",
+      "options": [
+        "differential base",
+        "clears the marks",
+        "One full backup (the base)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Depends on” as “One full backup (the base)”."
+    }
+  ],
   takeaways: [
     "Differentials back up only extents changed since the last full — the differential bitmap decides",
     "They are cumulative against the base full, never chained to each other",

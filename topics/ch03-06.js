@@ -168,6 +168,312 @@ icacls "E:\\SQL\\Data" /remove:g "BUILTIN\\Users" /T</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Every NTFS file and folder carries a _____.”",
+      "options": [
+        "security descriptor",
+        "SACL",
+        "not attached to the account"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every NTFS file and folder carries a security descriptor. The part that controls day-to-day access is the DACL (Discretionary Access Control List): an ordered list of ACEs (Access Control Entries). Each ACE grants or denies a set of rights to a trustee — identified internally by a security identifier (SID), not by the friendly name you see in the dialog.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Windows builds an _____ at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened.”",
+      "options": [
+        "SACL",
+        "not attached to the account",
+        "access token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows builds an access token at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened. The result is the effective permission. Four rules govern almost every surprise:”"
+    },
+    {
+      "question": "Complete the lesson statement: “An ACE on E:\\SQL marked _____ is inherited by everything beneath it; Windows shows it greyed out in the Advanced Security Settings dialog.”",
+      "options": [
+        "your",
+        "Apply to: this folder, subfolders and files",
+        "not attached to the account"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Permissions flow downwards. An ACE on E:\\SQL marked Apply to: this folder, subfolders and files is inherited by everything beneath it; Windows shows it greyed out in the Advanced Security Settings dialog. A permission applied directly to a child is explicit and survives a parent change unless you deliberately re-enable inheritance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “bak, Windows applies the _____ and the NTFS permission, and the more restrictive of the two wins.”",
+      "options": [
+        "share permission",
+        "your",
+        "access token"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Network shares add a second, independent permission layer. When a database is backed up to \\\\fileserver\\sqlbackup\\Full.bak, Windows applies the share permission and the NTFS permission, and the more restrictive of the two wins. A principal with Full Control on the share but only Read on the folder gets Read — backups fail. A principal with Full Control on the folder but Read on the share also gets Read.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The service logs in as a virtual account ( NT SERVICE\\MSSQLSERVER ) or a domain service account; either way, the _____ must have read/write access to data and log files, the error log directory, backup destinations, and any file-table or FILESTREAM paths.”",
+      "options": [
+        "access token",
+        "effective permission",
+        "engine's token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “During setup, SQL Server creates per-service groups such as SQLServerMSSQLUser$SQL01$MSSQLSERVER and grants them the rights needed on the instance directories. The service logs in as a virtual account ( NT SERVICE\\MSSQLSERVER ) or a domain service account; either way, the engine's token must have read/write access to data and log files, the error log directory, backup destinations, and any file-table or FILESTREAM paths.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server reports permission failures in characteristically unhelpful ways: _____ during backup or restore, a database stuck in RESTORING or SUSPECT, or a service that refuses to start.”",
+      "options": [
+        "Allow entries accumulate.",
+        "Operating system error 5 (Access is denied)",
+        "effective permission"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL Server reports permission failures in characteristically unhelpful ways: Operating system error 5 (Access is denied) during backup or restore, a database stuck in RESTORING or SUSPECT, or a service that refuses to start. Work the problem in this order:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The key mental shift: permissions are _____ you used to log in.”",
+      "options": [
+        "not attached to the account",
+        "Deny wins.",
+        "Explicit beats inherited."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The key mental shift: permissions are not attached to the account you used to log in. They are attached to the object and evaluated against the SIDs in the requesting process's token. SQL Server runs as a service account, so your Administrator rights are irrelevant to whether the engine can open a file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allow, deny, and effective access”?",
+      "options": [
+        "A restore fails with OS error 5 even though the file exists",
+        "share permission",
+        "Prefer allows to denies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prefer allows to denies. Grant the smallest useful set of rights to a dedicated group, and reserve deny entries for genuinely exceptional cases — their precedence makes them hard to reason about at 3 AM.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inheritance, moves, and copies”?",
+      "options": [
+        "Resist the shortcut of granting Everyone Full Control to \"make it work\".",
+        "Three operations produce most SQL Server permission incidents:",
+        "engine's token"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three operations produce most SQL Server permission incidents:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Enable _____ if users should not see files they cannot open, and never rely on a mapped drive for SQL Server — the service runs in session 0 and does not inherit your drive mappings.”",
+      "options": [
+        "access-based enumeration",
+        "Ownership matters.",
+        "Apply to: this folder, subfolders and files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The standard design is deliberately simple: open the share broadly (Full Control for a dedicated group), then do all real authorisation with NTFS. That leaves one place to audit and one place to change. Enable access-based enumeration if users should not see files they cannot open, and never rely on a mapped drive for SQL Server — the service runs in session 0 and does not inherit your drive mappings. Use the UNC path.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Every NTFS file and folder carries a _____.”",
+      "options": [
+        "security descriptor",
+        "SACL",
+        "not attached to the account"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every NTFS file and folder carries a security descriptor. The part that controls day-to-day access is the DACL (Discretionary Access Control List): an ordered list of ACEs (Access Control Entries). Each ACE grants or denies a set of rights to a trustee — identified internally by a security identifier (SID), not by the friendly name you see in the dialog.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Windows builds an _____ at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened.”",
+      "options": [
+        "SACL",
+        "not attached to the account",
+        "access token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows builds an access token at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened. The result is the effective permission. Four rules govern almost every surprise:”"
+    },
+    {
+      "question": "Complete the lesson statement: “An ACE on E:\\SQL marked _____ is inherited by everything beneath it; Windows shows it greyed out in the Advanced Security Settings dialog.”",
+      "options": [
+        "your",
+        "Apply to: this folder, subfolders and files",
+        "not attached to the account"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Permissions flow downwards. An ACE on E:\\SQL marked Apply to: this folder, subfolders and files is inherited by everything beneath it; Windows shows it greyed out in the Advanced Security Settings dialog. A permission applied directly to a child is explicit and survives a parent change unless you deliberately re-enable inheritance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “bak, Windows applies the _____ and the NTFS permission, and the more restrictive of the two wins.”",
+      "options": [
+        "share permission",
+        "your",
+        "access token"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Network shares add a second, independent permission layer. When a database is backed up to \\\\fileserver\\sqlbackup\\Full.bak, Windows applies the share permission and the NTFS permission, and the more restrictive of the two wins. A principal with Full Control on the share but only Read on the folder gets Read — backups fail. A principal with Full Control on the folder but Read on the share also gets Read.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The service logs in as a virtual account ( NT SERVICE\\MSSQLSERVER ) or a domain service account; either way, the _____ must have read/write access to data and log files, the error log directory, backup destinations, and any file-table or FILESTREAM paths.”",
+      "options": [
+        "access token",
+        "effective permission",
+        "engine's token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “During setup, SQL Server creates per-service groups such as SQLServerMSSQLUser$SQL01$MSSQLSERVER and grants them the rights needed on the instance directories. The service logs in as a virtual account ( NT SERVICE\\MSSQLSERVER ) or a domain service account; either way, the engine's token must have read/write access to data and log files, the error log directory, backup destinations, and any file-table or FILESTREAM paths.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server reports permission failures in characteristically unhelpful ways: _____ during backup or restore, a database stuck in RESTORING or SUSPECT, or a service that refuses to start.”",
+      "options": [
+        "Allow entries accumulate.",
+        "Operating system error 5 (Access is denied)",
+        "effective permission"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL Server reports permission failures in characteristically unhelpful ways: Operating system error 5 (Access is denied) during backup or restore, a database stuck in RESTORING or SUSPECT, or a service that refuses to start. Work the problem in this order:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The key mental shift: permissions are _____ you used to log in.”",
+      "options": [
+        "not attached to the account",
+        "Deny wins.",
+        "Explicit beats inherited."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The key mental shift: permissions are not attached to the account you used to log in. They are attached to the object and evaluated against the SIDs in the requesting process's token. SQL Server runs as a service account, so your Administrator rights are irrelevant to whether the engine can open a file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allow, deny, and effective access”?",
+      "options": [
+        "A restore fails with OS error 5 even though the file exists",
+        "share permission",
+        "Prefer allows to denies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prefer allows to denies. Grant the smallest useful set of rights to a dedicated group, and reserve deny entries for genuinely exceptional cases — their precedence makes them hard to reason about at 3 AM.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inheritance, moves, and copies”?",
+      "options": [
+        "Resist the shortcut of granting Everyone Full Control to \"make it work\".",
+        "Three operations produce most SQL Server permission incidents:",
+        "engine's token"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three operations produce most SQL Server permission incidents:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Enable _____ if users should not see files they cannot open, and never rely on a mapped drive for SQL Server — the service runs in session 0 and does not inherit your drive mappings.”",
+      "options": [
+        "access-based enumeration",
+        "Ownership matters.",
+        "Apply to: this folder, subfolders and files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The standard design is deliberately simple: open the share broadly (Full Control for a dedicated group), then do all real authorisation with NTFS. That leaves one place to audit and one place to change. Enable access-based enumeration if users should not see files they cannot open, and never rely on a mapped drive for SQL Server — the service runs in session 0 and does not inherit your drive mappings. Use the UNC path.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Every NTFS file and folder carries a _____.”",
+      "options": [
+        "security descriptor",
+        "SACL",
+        "not attached to the account"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every NTFS file and folder carries a security descriptor. The part that controls day-to-day access is the DACL (Discretionary Access Control List): an ordered list of ACEs (Access Control Entries). Each ACE grants or denies a set of rights to a trustee — identified internally by a security identifier (SID), not by the friendly name you see in the dialog.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Windows builds an _____ at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened.”",
+      "options": [
+        "SACL",
+        "not attached to the account",
+        "access token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows builds an access token at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened. The result is the effective permission. Four rules govern almost every surprise:”"
+    },
+    {
+      "question": "Complete the lesson statement: “An ACE on E:\\SQL marked _____ is inherited by everything beneath it; Windows shows it greyed out in the Advanced Security Settings dialog.”",
+      "options": [
+        "your",
+        "Apply to: this folder, subfolders and files",
+        "not attached to the account"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Permissions flow downwards. An ACE on E:\\SQL marked Apply to: this folder, subfolders and files is inherited by everything beneath it; Windows shows it greyed out in the Advanced Security Settings dialog. A permission applied directly to a child is explicit and survives a parent change unless you deliberately re-enable inheritance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “bak, Windows applies the _____ and the NTFS permission, and the more restrictive of the two wins.”",
+      "options": [
+        "share permission",
+        "your",
+        "access token"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Network shares add a second, independent permission layer. When a database is backed up to \\\\fileserver\\sqlbackup\\Full.bak, Windows applies the share permission and the NTFS permission, and the more restrictive of the two wins. A principal with Full Control on the share but only Read on the folder gets Read — backups fail. A principal with Full Control on the folder but Read on the share also gets Read.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The service logs in as a virtual account ( NT SERVICE\\MSSQLSERVER ) or a domain service account; either way, the _____ must have read/write access to data and log files, the error log directory, backup destinations, and any file-table or FILESTREAM paths.”",
+      "options": [
+        "access token",
+        "effective permission",
+        "engine's token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “During setup, SQL Server creates per-service groups such as SQLServerMSSQLUser$SQL01$MSSQLSERVER and grants them the rights needed on the instance directories. The service logs in as a virtual account ( NT SERVICE\\MSSQLSERVER ) or a domain service account; either way, the engine's token must have read/write access to data and log files, the error log directory, backup destinations, and any file-table or FILESTREAM paths.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server reports permission failures in characteristically unhelpful ways: _____ during backup or restore, a database stuck in RESTORING or SUSPECT, or a service that refuses to start.”",
+      "options": [
+        "Allow entries accumulate.",
+        "Operating system error 5 (Access is denied)",
+        "effective permission"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL Server reports permission failures in characteristically unhelpful ways: Operating system error 5 (Access is denied) during backup or restore, a database stuck in RESTORING or SUSPECT, or a service that refuses to start. Work the problem in this order:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The key mental shift: permissions are _____ you used to log in.”",
+      "options": [
+        "not attached to the account",
+        "Deny wins.",
+        "Explicit beats inherited."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The key mental shift: permissions are not attached to the account you used to log in. They are attached to the object and evaluated against the SIDs in the requesting process's token. SQL Server runs as a service account, so your Administrator rights are irrelevant to whether the engine can open a file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allow, deny, and effective access”?",
+      "options": [
+        "A restore fails with OS error 5 even though the file exists",
+        "share permission",
+        "Prefer allows to denies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prefer allows to denies. Grant the smallest useful set of rights to a dedicated group, and reserve deny entries for genuinely exceptional cases — their precedence makes them hard to reason about at 3 AM.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Inheritance, moves, and copies”?",
+      "options": [
+        "Resist the shortcut of granting Everyone Full Control to \"make it work\".",
+        "Three operations produce most SQL Server permission incidents:",
+        "engine's token"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three operations produce most SQL Server permission incidents:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Enable _____ if users should not see files they cannot open, and never rely on a mapped drive for SQL Server — the service runs in session 0 and does not inherit your drive mappings.”",
+      "options": [
+        "access-based enumeration",
+        "Ownership matters.",
+        "Apply to: this folder, subfolders and files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The standard design is deliberately simple: open the share broadly (Full Control for a dedicated group), then do all real authorisation with NTFS. That leaves one place to audit and one place to change. Enable access-based enumeration if users should not see files they cannot open, and never rely on a mapped drive for SQL Server — the service runs in session 0 and does not inherit your drive mappings. Use the UNC path.”"
+    }
+  ],
   takeaways: [
     "Permissions live on the object and are evaluated against the SIDs in the requesting process's token",
     "Explicit deny beats allow; explicit entries beat inherited ones; owner can always change the DACL",

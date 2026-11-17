@@ -163,6 +163,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, or configu
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Index Maintenance Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Maintenance Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance Jobs fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance Jobs in practice”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance Jobs”?",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Maintenance Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database Mail configured",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "With Index Maintenance Jobs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Maintenance Jobs means”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Index Maintenance Jobs",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance Jobs fits”?",
+      "options": [
+        "Notification set on job",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "The diagram below places Index Maintenance Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Maintenance Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance Jobs in practice”?",
+      "options": [
+        "Index Maintenance Jobs",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Maintenance Jobs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Index Maintenance Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Maintenance Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance Jobs fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance Jobs in practice”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance Jobs”?",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Maintenance Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database Mail configured",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "With Index Maintenance Jobs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Maintenance Jobs means”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Index Maintenance Jobs",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance Jobs fits”?",
+      "options": [
+        "Notification set on job",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "The diagram below places Index Maintenance Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Maintenance Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance Jobs in practice”?",
+      "options": [
+        "Index Maintenance Jobs",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Maintenance Jobs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Index Maintenance Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Maintenance Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance Jobs fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance Jobs in practice”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notification set on job",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance Jobs”?",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Maintenance Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database Mail configured",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "With Index Maintenance Jobs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Maintenance Jobs means”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Index Maintenance Jobs",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Maintenance Jobs fits”?",
+      "options": [
+        "Notification set on job",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "The diagram below places Index Maintenance Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Maintenance Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Maintenance Jobs in practice”?",
+      "options": [
+        "Index Maintenance Jobs",
+        "The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Maintenance Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Maintenance Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Maintenance Jobs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    }
+  ],
   takeaways: [
     "Index Maintenance Jobs is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

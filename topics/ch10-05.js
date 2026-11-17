@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Job Steps:",
+        "Job Steps",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Job Steps within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Steps fits”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job never runs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Steps in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Steps”?",
+      "options": [
+        "Job never runs",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Steps. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job never runs",
+        "Partial completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job Steps"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Job Steps with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Steps means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Steps fits”?",
+      "options": [
+        "The diagram below places Job Steps alongside the core concepts of SQL Server Agent and automation.",
+        "Next, verify the result and capture a baseline.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Job Steps alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Steps in practice”?",
+      "options": [
+        "Database Mail configured",
+        "Enabled alert",
+        "The following comparison captures the distinctions that matter most when working with Job Steps:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Steps:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Steps”?",
+      "options": [
+        "Database Mail configured",
+        "The first example establishes the relevant state.",
+        "With Job Steps, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Job Steps:",
+        "Job Steps",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Job Steps within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Steps fits”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job never runs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Steps in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Steps”?",
+      "options": [
+        "Job never runs",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Steps. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job never runs",
+        "Partial completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job Steps"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Job Steps with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Steps means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Steps fits”?",
+      "options": [
+        "The diagram below places Job Steps alongside the core concepts of SQL Server Agent and automation.",
+        "Next, verify the result and capture a baseline.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Job Steps alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Steps in practice”?",
+      "options": [
+        "Database Mail configured",
+        "Enabled alert",
+        "The following comparison captures the distinctions that matter most when working with Job Steps:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Steps:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Steps”?",
+      "options": [
+        "Database Mail configured",
+        "The first example establishes the relevant state.",
+        "With Job Steps, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Job Steps:",
+        "Job Steps",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Job Steps within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Steps fits”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job never runs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Steps in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Steps”?",
+      "options": [
+        "Job never runs",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Steps. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job never runs",
+        "Partial completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job Steps"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Job Steps with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Steps means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Steps fits”?",
+      "options": [
+        "The diagram below places Job Steps alongside the core concepts of SQL Server Agent and automation.",
+        "Next, verify the result and capture a baseline.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Job Steps alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Steps in practice”?",
+      "options": [
+        "Database Mail configured",
+        "Enabled alert",
+        "The following comparison captures the distinctions that matter most when working with Job Steps:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Steps:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Steps”?",
+      "options": [
+        "Database Mail configured",
+        "The first example establishes the relevant state.",
+        "With Job Steps, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Job Steps is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

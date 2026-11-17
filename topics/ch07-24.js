@@ -177,6 +177,312 @@ Switching recovery model, restoring with RECOVERY, or taking a non-copy-only ful
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Database Snapshot Versus Backup",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Snapshot Versus Backup within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Snapshot Versus Backup fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Snapshot Versus Backup in practice”?",
+      "options": [
+        "Database Snapshot Versus Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Snapshot Versus Backup”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Snapshot Versus Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Snapshot Versus Backup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:",
+        "Database Snapshot Versus Backup",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Snapshot Versus Backup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Snapshot Versus Backup means”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Snapshot Versus Backup fits”?",
+      "options": [
+        "The full backup",
+        "Base full + latest diff",
+        "The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Snapshot Versus Backup in practice”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Snapshot Versus Backup”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The full backup",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Database Snapshot Versus Backup",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Snapshot Versus Backup within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Snapshot Versus Backup fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Snapshot Versus Backup in practice”?",
+      "options": [
+        "Database Snapshot Versus Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Snapshot Versus Backup”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Snapshot Versus Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Snapshot Versus Backup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:",
+        "Database Snapshot Versus Backup",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Snapshot Versus Backup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Snapshot Versus Backup means”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Snapshot Versus Backup fits”?",
+      "options": [
+        "The full backup",
+        "Base full + latest diff",
+        "The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Snapshot Versus Backup in practice”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Snapshot Versus Backup”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The full backup",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Database Snapshot Versus Backup",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Snapshot Versus Backup within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Snapshot Versus Backup fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Snapshot Versus Backup in practice”?",
+      "options": [
+        "Database Snapshot Versus Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Snapshot Versus Backup”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Snapshot Versus Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Snapshot Versus Backup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:",
+        "Database Snapshot Versus Backup",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Snapshot Versus Backup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Snapshot Versus Backup means”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Snapshot Versus Backup fits”?",
+      "options": [
+        "The full backup",
+        "Base full + latest diff",
+        "The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Snapshot Versus Backup alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Snapshot Versus Backup in practice”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Snapshot Versus Backup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Snapshot Versus Backup”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The full backup",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Snapshot Versus Backup is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

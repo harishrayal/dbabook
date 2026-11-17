@@ -164,6 +164,312 @@ Uptime, backup success and restore-test results, RPO/RTO adherence, patch levels
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Enterprise Database Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Enterprise Database Architecture within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise Database Architecture fits”?",
+      "options": [
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Environments must stay aligned but distinct.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise Database Architecture in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise Database Architecture”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Enterprise Database Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Enterprise Database Architecture means”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise Database Architecture fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise Database Architecture in practice”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise Database Architecture:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Enterprise Database Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise Database Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Enterprise Database Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Enterprise Database Architecture within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise Database Architecture fits”?",
+      "options": [
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Environments must stay aligned but distinct.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise Database Architecture in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise Database Architecture”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Enterprise Database Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Enterprise Database Architecture means”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise Database Architecture fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise Database Architecture in practice”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise Database Architecture:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Enterprise Database Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise Database Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Enterprise Database Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Enterprise Database Architecture within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise Database Architecture fits”?",
+      "options": [
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Environments must stay aligned but distinct.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise Database Architecture in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise Database Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise Database Architecture”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Enterprise Database Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Enterprise Database Architecture means”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise Database Architecture fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Enterprise Database Architecture alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise Database Architecture in practice”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise Database Architecture:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Enterprise Database Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise Database Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    }
+  ],
   takeaways: [
     "Enterprise Database Architecture is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -181,6 +181,312 @@ Loop over the server list (optionally in parallel), use Invoke-Sqlcmd against ms
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Backup Status Reports",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Status Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Reports fits”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Reports in practice”?",
+      "options": [
+        "Backup Status Reports sits inside a larger system.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Reports”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Daily",
+        "Backup Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Status Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Backup Status Reports sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Daily",
+        "Backup Status Reports",
+        "With Backup Status Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Status Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Status Reports means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Reports."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Reports fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Reports.",
+        "The diagram below places Backup Status Reports alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Status Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Reports in practice”?",
+      "options": [
+        "@params",
+        "The following comparison captures the distinctions that matter most when working with Backup Status Reports:",
+        "Where-Object"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Status Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Backup Status Reports"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Backup Status Reports",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Status Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Reports fits”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Reports in practice”?",
+      "options": [
+        "Backup Status Reports sits inside a larger system.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Reports”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Daily",
+        "Backup Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Status Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Backup Status Reports sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Daily",
+        "Backup Status Reports",
+        "With Backup Status Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Status Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Status Reports means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Reports."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Reports fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Reports.",
+        "The diagram below places Backup Status Reports alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Status Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Reports in practice”?",
+      "options": [
+        "@params",
+        "The following comparison captures the distinctions that matter most when working with Backup Status Reports:",
+        "Where-Object"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Status Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Backup Status Reports"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Backup Status Reports",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Status Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Reports fits”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Reports in practice”?",
+      "options": [
+        "Backup Status Reports sits inside a larger system.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Reports”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Daily",
+        "Backup Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Status Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Backup Status Reports sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Daily",
+        "Backup Status Reports",
+        "With Backup Status Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Status Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Status Reports means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Reports."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Reports fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Reports.",
+        "The diagram below places Backup Status Reports alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Status Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Reports in practice”?",
+      "options": [
+        "@params",
+        "The following comparison captures the distinctions that matter most when working with Backup Status Reports:",
+        "Where-Object"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Status Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Backup Status Reports"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Status Reports is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -177,6 +177,312 @@ Switching recovery model, restoring with RECOVERY, or taking a non-copy-only ful
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "3-2-1-1-0 Backup Strategy",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine 3-2-1-1-0 Backup Strategy within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where 3-2-1-1-0 Backup Strategy fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “3-2-1-1-0 Backup Strategy in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with 3-2-1-1-0 Backup Strategy”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to 3-2-1-1-0 Backup Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Base full + latest diff",
+        "3-2-1-1-0 Backup Strategy",
+        "The full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates 3-2-1-1-0 Backup Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What 3-2-1-1-0 Backup Strategy means”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where 3-2-1-1-0 Backup Strategy fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “3-2-1-1-0 Backup Strategy in practice”?",
+      "options": [
+        "With 3-2-1-1-0 Backup Strategy, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with 3-2-1-1-0 Backup Strategy”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backups are the only true protection against data loss.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "3-2-1-1-0 Backup Strategy",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine 3-2-1-1-0 Backup Strategy within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where 3-2-1-1-0 Backup Strategy fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “3-2-1-1-0 Backup Strategy in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with 3-2-1-1-0 Backup Strategy”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to 3-2-1-1-0 Backup Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Base full + latest diff",
+        "3-2-1-1-0 Backup Strategy",
+        "The full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates 3-2-1-1-0 Backup Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What 3-2-1-1-0 Backup Strategy means”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where 3-2-1-1-0 Backup Strategy fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “3-2-1-1-0 Backup Strategy in practice”?",
+      "options": [
+        "With 3-2-1-1-0 Backup Strategy, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with 3-2-1-1-0 Backup Strategy”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backups are the only true protection against data loss.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "3-2-1-1-0 Backup Strategy",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine 3-2-1-1-0 Backup Strategy within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where 3-2-1-1-0 Backup Strategy fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “3-2-1-1-0 Backup Strategy in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with 3-2-1-1-0 Backup Strategy”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to 3-2-1-1-0 Backup Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Base full + latest diff",
+        "3-2-1-1-0 Backup Strategy",
+        "The full backup"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates 3-2-1-1-0 Backup Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What 3-2-1-1-0 Backup Strategy means”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where 3-2-1-1-0 Backup Strategy fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places 3-2-1-1-0 Backup Strategy alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “3-2-1-1-0 Backup Strategy in practice”?",
+      "options": [
+        "With 3-2-1-1-0 Backup Strategy, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with 3-2-1-1-0 Backup Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with 3-2-1-1-0 Backup Strategy”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backups are the only true protection against data loss.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "3-2-1-1-0 Backup Strategy is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

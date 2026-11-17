@@ -191,6 +191,312 @@ A clustered index defines the table's physical row order and there is one per ta
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Actual Execution Plans:",
+        "Actual Execution Plans",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Actual Execution Plans within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Actual Execution Plans fits”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Selective lookups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Actual Execution Plans in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Actual Execution Plans”?",
+      "options": [
+        "Selective lookups",
+        "Theory becomes useful when you can apply it.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Actual Execution Plans. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it.",
+        "Actual Execution Plans"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Actual Execution Plans with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Actual Execution Plans means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Actual Execution Plans fits”?",
+      "options": [
+        "The diagram below places Actual Execution Plans alongside the core concepts of SQL Server performance tuning.",
+        "Next, verify the result and capture a baseline.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Actual Execution Plans alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Actual Execution Plans in practice”?",
+      "options": [
+        "Actual plan",
+        "Query stats",
+        "The following comparison captures the distinctions that matter most when working with Actual Execution Plans:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Actual Execution Plans:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Actual Execution Plans”?",
+      "options": [
+        "Actual plan",
+        "The first example establishes the relevant state.",
+        "With Actual Execution Plans, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Actual Execution Plans:",
+        "Actual Execution Plans",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Actual Execution Plans within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Actual Execution Plans fits”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Selective lookups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Actual Execution Plans in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Actual Execution Plans”?",
+      "options": [
+        "Selective lookups",
+        "Theory becomes useful when you can apply it.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Actual Execution Plans. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it.",
+        "Actual Execution Plans"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Actual Execution Plans with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Actual Execution Plans means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Actual Execution Plans fits”?",
+      "options": [
+        "The diagram below places Actual Execution Plans alongside the core concepts of SQL Server performance tuning.",
+        "Next, verify the result and capture a baseline.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Actual Execution Plans alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Actual Execution Plans in practice”?",
+      "options": [
+        "Actual plan",
+        "Query stats",
+        "The following comparison captures the distinctions that matter most when working with Actual Execution Plans:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Actual Execution Plans:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Actual Execution Plans”?",
+      "options": [
+        "Actual plan",
+        "The first example establishes the relevant state.",
+        "With Actual Execution Plans, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Actual Execution Plans:",
+        "Actual Execution Plans",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Actual Execution Plans within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Actual Execution Plans fits”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Selective lookups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Actual Execution Plans in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Actual Execution Plans”?",
+      "options": [
+        "Selective lookups",
+        "Theory becomes useful when you can apply it.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Actual Execution Plans. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it.",
+        "Actual Execution Plans"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Actual Execution Plans with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Actual Execution Plans means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Actual Execution Plans fits”?",
+      "options": [
+        "The diagram below places Actual Execution Plans alongside the core concepts of SQL Server performance tuning.",
+        "Next, verify the result and capture a baseline.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Actual Execution Plans alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Actual Execution Plans in practice”?",
+      "options": [
+        "Actual plan",
+        "Query stats",
+        "The following comparison captures the distinctions that matter most when working with Actual Execution Plans:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Actual Execution Plans:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Actual Execution Plans”?",
+      "options": [
+        "Actual plan",
+        "The first example establishes the relevant state.",
+        "With Actual Execution Plans, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Actual Execution Plans is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

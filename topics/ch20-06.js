@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change Approval Procedures",
+        "The following comparison captures the distinctions that matter most when working with Change Approval Procedures:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Change Approval Procedures within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Change Approval Procedures fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Change Approval Procedures in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Change Approval Procedures”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Change Approval Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Change Approval Procedures",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Change Approval Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Change Approval Procedures means”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Change Approval Procedures fits”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Change Approval Procedures alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Change Approval Procedures alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Change Approval Procedures in practice”?",
+      "options": [
+        "Immediate",
+        "The following comparison captures the distinctions that matter most when working with Change Approval Procedures:",
+        "Maintenance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Change Approval Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Change Approval Procedures”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change Approval Procedures",
+        "The following comparison captures the distinctions that matter most when working with Change Approval Procedures:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Change Approval Procedures within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Change Approval Procedures fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Change Approval Procedures in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Change Approval Procedures”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Change Approval Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Change Approval Procedures",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Change Approval Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Change Approval Procedures means”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Change Approval Procedures fits”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Change Approval Procedures alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Change Approval Procedures alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Change Approval Procedures in practice”?",
+      "options": [
+        "Immediate",
+        "The following comparison captures the distinctions that matter most when working with Change Approval Procedures:",
+        "Maintenance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Change Approval Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Change Approval Procedures”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change Approval Procedures",
+        "The following comparison captures the distinctions that matter most when working with Change Approval Procedures:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Change Approval Procedures within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Change Approval Procedures fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Change Approval Procedures in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Change Approval Procedures”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Change Approval Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Change Approval Procedures",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Change Approval Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Change Approval Procedures means”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Change Approval Procedures fits”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Change Approval Procedures alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Change Approval Procedures alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Change Approval Procedures in practice”?",
+      "options": [
+        "Immediate",
+        "The following comparison captures the distinctions that matter most when working with Change Approval Procedures:",
+        "Maintenance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Change Approval Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Change Approval Procedures”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Change Approval Procedures is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

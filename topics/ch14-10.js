@@ -160,6 +160,312 @@ When a small number of pages are damaged, you have FULL recovery model and a ver
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Check log access and space",
+        "Theory becomes useful when you can apply it.",
+        "DBCC CHECKTABLE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DBCC CHECKTABLE within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKTABLE fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKTABLE in practice”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Minor, non-data issues"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKTABLE”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBCC CHECKTABLE. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBCC CHECKTABLE means”?",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKTABLE fits”?",
+      "options": [
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "The diagram below places DBCC CHECKTABLE alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBCC CHECKTABLE alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKTABLE in practice”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The following comparison captures the distinctions that matter most when working with DBCC CHECKTABLE:",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBCC CHECKTABLE:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKTABLE”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Rebuild indexes",
+        "Absolute last resort",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Check log access and space",
+        "Theory becomes useful when you can apply it.",
+        "DBCC CHECKTABLE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DBCC CHECKTABLE within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKTABLE fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKTABLE in practice”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Minor, non-data issues"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKTABLE”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBCC CHECKTABLE. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBCC CHECKTABLE means”?",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKTABLE fits”?",
+      "options": [
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "The diagram below places DBCC CHECKTABLE alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBCC CHECKTABLE alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKTABLE in practice”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The following comparison captures the distinctions that matter most when working with DBCC CHECKTABLE:",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBCC CHECKTABLE:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKTABLE”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Rebuild indexes",
+        "Absolute last resort",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Check log access and space",
+        "Theory becomes useful when you can apply it.",
+        "DBCC CHECKTABLE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DBCC CHECKTABLE within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKTABLE fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKTABLE in practice”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Minor, non-data issues"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKTABLE”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBCC CHECKTABLE. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBCC CHECKTABLE means”?",
+      "options": [
+        "Page checksums are the primary detection mechanism.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKTABLE fits”?",
+      "options": [
+        "With DBCC CHECKTABLE, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "The diagram below places DBCC CHECKTABLE alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBCC CHECKTABLE alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKTABLE in practice”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The following comparison captures the distinctions that matter most when working with DBCC CHECKTABLE:",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBCC CHECKTABLE:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKTABLE”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Rebuild indexes",
+        "Absolute last resort",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    }
+  ],
   takeaways: [
     "DBCC CHECKTABLE is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

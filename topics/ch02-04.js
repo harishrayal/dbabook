@@ -182,6 +182,312 @@ ORDER  BY line_id;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a named, structured set of rows and columns that represents one kind of thing — customers, orders, invoices, disk volumes.”",
+      "options": [
+        "fixed by design",
+        "schema",
+        "table"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A table is a named, structured set of rows and columns that represents one kind of thing — customers, orders, invoices, disk volumes. Each table follows the rules of the relational model:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "Range seeks: “all orders in January” reads contiguous pages",
+        "Column choices are made once and lived with for years.",
+        "Sorted by the clustering key"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Column choices are made once and lived with for years. The three decisions that matter most:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How rows are stored: heaps and clustered tables”?",
+      "options": [
+        "Physically, rows live in 8-KB pages.",
+        "Common pitfalls:",
+        "Sorted by the clustering key"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physically, rows live in 8-KB pages. A table is stored one of two ways, and the difference affects almost every read in the system:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____s keep ownership and permissions tidy: the finance role gets finance, the app gets app, and neither can accidentally touch the other's objects.”",
+      "options": [
+        "Nullability",
+        "Default",
+        "schema"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Tables live inside a schema — a namespace inside a database (for example sales.Orders ). Schemas keep ownership and permissions tidy: the finance role gets finance, the app gets app, and neither can accidentally touch the other's objects.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "Column choices are made once and lived with for years.",
+        "A worked example that encodes all three, plus a key so rows are identifiable:",
+        "Virtually every user table"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A worked example that encodes all three, plus a key so rows are identifiable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How rows are stored: heaps and clustered tables”?",
+      "options": [
+        "A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row.",
+        "Clustering key value — reused by every nonclustered index",
+        "Virtually every user table"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row. In a clustered table that pointer is the clustering key, which is why a narrow, stable clustering key (often an int or bigint identity) keeps every secondary index small — a production concern the day the table reaches tens of millions of rows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "A worked example that encodes all three, plus a key so rows are identifiable:",
+        "column",
+        "Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be uniquely addressed by line_id.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows;…”",
+      "options": [
+        "Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be…",
+        "Common pitfalls:",
+        "A worked example that encodes all three, plus a key so rows are identifiable:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows; storing large documents in nvarchar(max) columns that bloat rows and force off-row reads; and using a “misc” table of 60 mostly-NULL columns because “we might need it someday”.”"
+    },
+    {
+      "question": "In the “How rows are stored: heaps and clustered tables” table, what is listed for “Row order” under “Clustered table”?",
+      "options": [
+        "Sorted by the clustering key",
+        "attribute",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Row order” as “Sorted by the clustering key”."
+    },
+    {
+      "question": "In the “How rows are stored: heaps and clustered tables” table, what is listed for “Primary read path” under “Clustered table”?",
+      "options": [
+        "row",
+        "instance",
+        "Range seeks: “all orders in January” reads contiguous pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Primary read path” as “Range seeks: “all orders in January” reads contiguous pages”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a named, structured set of rows and columns that represents one kind of thing — customers, orders, invoices, disk volumes.”",
+      "options": [
+        "fixed by design",
+        "schema",
+        "table"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A table is a named, structured set of rows and columns that represents one kind of thing — customers, orders, invoices, disk volumes. Each table follows the rules of the relational model:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "Range seeks: “all orders in January” reads contiguous pages",
+        "Column choices are made once and lived with for years.",
+        "Sorted by the clustering key"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Column choices are made once and lived with for years. The three decisions that matter most:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How rows are stored: heaps and clustered tables”?",
+      "options": [
+        "Physically, rows live in 8-KB pages.",
+        "Common pitfalls:",
+        "Sorted by the clustering key"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physically, rows live in 8-KB pages. A table is stored one of two ways, and the difference affects almost every read in the system:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____s keep ownership and permissions tidy: the finance role gets finance, the app gets app, and neither can accidentally touch the other's objects.”",
+      "options": [
+        "Nullability",
+        "Default",
+        "schema"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Tables live inside a schema — a namespace inside a database (for example sales.Orders ). Schemas keep ownership and permissions tidy: the finance role gets finance, the app gets app, and neither can accidentally touch the other's objects.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "Column choices are made once and lived with for years.",
+        "A worked example that encodes all three, plus a key so rows are identifiable:",
+        "Virtually every user table"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A worked example that encodes all three, plus a key so rows are identifiable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How rows are stored: heaps and clustered tables”?",
+      "options": [
+        "A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row.",
+        "Clustering key value — reused by every nonclustered index",
+        "Virtually every user table"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row. In a clustered table that pointer is the clustering key, which is why a narrow, stable clustering key (often an int or bigint identity) keeps every secondary index small — a production concern the day the table reaches tens of millions of rows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "A worked example that encodes all three, plus a key so rows are identifiable:",
+        "column",
+        "Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be uniquely addressed by line_id.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows;…”",
+      "options": [
+        "Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be…",
+        "Common pitfalls:",
+        "A worked example that encodes all three, plus a key so rows are identifiable:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows; storing large documents in nvarchar(max) columns that bloat rows and force off-row reads; and using a “misc” table of 60 mostly-NULL columns because “we might need it someday”.”"
+    },
+    {
+      "question": "In the “How rows are stored: heaps and clustered tables” table, what is listed for “Row order” under “Clustered table”?",
+      "options": [
+        "Sorted by the clustering key",
+        "attribute",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Row order” as “Sorted by the clustering key”."
+    },
+    {
+      "question": "In the “How rows are stored: heaps and clustered tables” table, what is listed for “Primary read path” under “Clustered table”?",
+      "options": [
+        "row",
+        "instance",
+        "Range seeks: “all orders in January” reads contiguous pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Primary read path” as “Range seeks: “all orders in January” reads contiguous pages”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a named, structured set of rows and columns that represents one kind of thing — customers, orders, invoices, disk volumes.”",
+      "options": [
+        "fixed by design",
+        "schema",
+        "table"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A table is a named, structured set of rows and columns that represents one kind of thing — customers, orders, invoices, disk volumes. Each table follows the rules of the relational model:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "Range seeks: “all orders in January” reads contiguous pages",
+        "Column choices are made once and lived with for years.",
+        "Sorted by the clustering key"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Column choices are made once and lived with for years. The three decisions that matter most:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How rows are stored: heaps and clustered tables”?",
+      "options": [
+        "Physically, rows live in 8-KB pages.",
+        "Common pitfalls:",
+        "Sorted by the clustering key"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physically, rows live in 8-KB pages. A table is stored one of two ways, and the difference affects almost every read in the system:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____s keep ownership and permissions tidy: the finance role gets finance, the app gets app, and neither can accidentally touch the other's objects.”",
+      "options": [
+        "Nullability",
+        "Default",
+        "schema"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Tables live inside a schema — a namespace inside a database (for example sales.Orders ). Schemas keep ownership and permissions tidy: the finance role gets finance, the app gets app, and neither can accidentally touch the other's objects.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "Column choices are made once and lived with for years.",
+        "A worked example that encodes all three, plus a key so rows are identifiable:",
+        "Virtually every user table"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A worked example that encodes all three, plus a key so rows are identifiable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How rows are stored: heaps and clustered tables”?",
+      "options": [
+        "A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row.",
+        "Clustering key value — reused by every nonclustered index",
+        "Virtually every user table"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row. In a clustered table that pointer is the clustering key, which is why a narrow, stable clustering key (often an int or bigint identity) keeps every secondary index small — a production concern the day the table reaches tens of millions of rows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing the columns”?",
+      "options": [
+        "A worked example that encodes all three, plus a key so rows are identifiable:",
+        "column",
+        "Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be uniquely addressed by line_id.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows;…”",
+      "options": [
+        "Notice what the design does for you: negative quantities and prices are rejected by CHECK constraints, a missing quantity becomes 1 rather than NULL, and every line can be…",
+        "Common pitfalls:",
+        "A worked example that encodes all three, plus a key so rows are identifiable:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows; storing large documents in nvarchar(max) columns that bloat rows and force off-row reads; and using a “misc” table of 60 mostly-NULL columns because “we might need it someday”.”"
+    },
+    {
+      "question": "In the “How rows are stored: heaps and clustered tables” table, what is listed for “Row order” under “Clustered table”?",
+      "options": [
+        "Sorted by the clustering key",
+        "attribute",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Row order” as “Sorted by the clustering key”."
+    },
+    {
+      "question": "In the “How rows are stored: heaps and clustered tables” table, what is listed for “Primary read path” under “Clustered table”?",
+      "options": [
+        "row",
+        "instance",
+        "Range seeks: “all orders in January” reads contiguous pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Primary read path” as “Range seeks: “all orders in January” reads contiguous pages”."
+    }
+  ],
   takeaways: [
     "Tables represent one entity type; columns are fixed attributes, rows are the growing instances",
     "Name tables through schemas (sales.Orders) to keep ownership and permissions clean",

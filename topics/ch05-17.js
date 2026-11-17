@@ -184,6 +184,312 @@ SELECT @@SERVERNAME AS server_name,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Open SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for INSTANCE and set TCP/IP to _____.”",
+      "options": [
+        "The fixed port for that address",
+        "Enabled",
+        "The specific address to bind, or 1433 -style entries left at defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Open SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for INSTANCE and set TCP/IP to Enabled. Two things follow immediately:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Below the protocol list, _____ shows one tab per network interface plus IPAll.”",
+      "options": [
+        "Properties → IP Addresses",
+        "The fixed port for that address",
+        "0 = let SQL Server pick a free port at every start-up; blank = no dynamic port"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Below the protocol list, Properties → IP Addresses shows one tab per network interface plus IPAll. The per-IP tabs let you bind SQL Server to specific addresses; IPAll is the catch-all that applies to any address not configured individually.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "0 = let SQL Server pick a free port at every start-up; blank = no dynamic port",
+        "One fixed inbound rule, reviewable",
+        "Production recommendation: static ports, always."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Production recommendation: static ports, always. Dynamic ports look convenient at install time and then cost you for years:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying changes”?",
+      "options": [
+        "Finally, from the client tier: Test-NetConnection sql-node-02 -Port 1433.",
+        "Never walk away from a port change on “it looks right in Configuration Manager”.",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never walk away from a port change on “it looks right in Configuration Manager”. Confirm the socket from Windows:”"
+    },
+    {
+      "question": "In the “TCP behaviour that bites” table, what is listed for “Idle TDS connections dropped by a firewall or load balancer” under “Mitigation”?",
+      "options": [
+        "Connection pooling with a sensible lifetime; keep-alive configuration on the path",
+        "All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps.",
+        "restart the Database Engine service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Idle TDS connections dropped by a firewall or load balancer” as “Connection pooling with a sensible lifetime; keep-alive configuration on the path”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Common mistakes”?",
+      "options": [
+        "restart the Database Engine service",
+        "IPAll",
+        "All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps. Treat the port like an interface contract — it is consumed by firewalls, probes, aliases, and applications, and it changes only through the runbook.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enabling TCP/IP”?",
+      "options": [
+        "Enabled / Active",
+        "Enable it per instance, not machine-wide: each instance owns its own protocol state, its own ports, and its own restart.",
+        "IPAll"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enable it per instance, not machine-wide: each instance owns its own protocol state, its own ports, and its own restart. The SQL Server Agent has no separate protocol configuration — it talks to the engine locally.”"
+    },
+    {
+      "question": "In the “The IP address tabs and IPAll” table, what is listed for “Enabled / Active” under “Meaning”?",
+      "options": [
+        "Whether this address is offered at all — a “No” here is a common cause of “some clients work, some do not”",
+        "Enabled / Active",
+        "IP Address"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Enabled / Active” as “Whether this address is offered at all — a “No” here is a common cause of “some clients work, some do not””."
+    },
+    {
+      "question": "Complete the lesson statement: “To set a static port: clear _____ in IPAll and type the port into TCP Port, then restart the service.”",
+      "options": [
+        "Never walk away from a port change on “it looks right in Configuration Manager”.",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:",
+        "TCP Dynamic Ports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “To set a static port: clear TCP Dynamic Ports in IPAll and type the port into TCP Port, then restart the service. Choose from a registered range — keep a simple port register (instance → host → port) so two instances never collide, and so the firewall team gets the right number the first time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying changes”?",
+      "options": [
+        "IPAll is where production configuration happens",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:",
+        "TCP Port"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Then confirm from the engine's own point of view — the port a real session arrived on:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Open SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for INSTANCE and set TCP/IP to _____.”",
+      "options": [
+        "The fixed port for that address",
+        "Enabled",
+        "The specific address to bind, or 1433 -style entries left at defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Open SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for INSTANCE and set TCP/IP to Enabled. Two things follow immediately:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Below the protocol list, _____ shows one tab per network interface plus IPAll.”",
+      "options": [
+        "Properties → IP Addresses",
+        "The fixed port for that address",
+        "0 = let SQL Server pick a free port at every start-up; blank = no dynamic port"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Below the protocol list, Properties → IP Addresses shows one tab per network interface plus IPAll. The per-IP tabs let you bind SQL Server to specific addresses; IPAll is the catch-all that applies to any address not configured individually.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "0 = let SQL Server pick a free port at every start-up; blank = no dynamic port",
+        "One fixed inbound rule, reviewable",
+        "Production recommendation: static ports, always."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Production recommendation: static ports, always. Dynamic ports look convenient at install time and then cost you for years:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying changes”?",
+      "options": [
+        "Finally, from the client tier: Test-NetConnection sql-node-02 -Port 1433.",
+        "Never walk away from a port change on “it looks right in Configuration Manager”.",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never walk away from a port change on “it looks right in Configuration Manager”. Confirm the socket from Windows:”"
+    },
+    {
+      "question": "In the “TCP behaviour that bites” table, what is listed for “Idle TDS connections dropped by a firewall or load balancer” under “Mitigation”?",
+      "options": [
+        "Connection pooling with a sensible lifetime; keep-alive configuration on the path",
+        "All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps.",
+        "restart the Database Engine service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Idle TDS connections dropped by a firewall or load balancer” as “Connection pooling with a sensible lifetime; keep-alive configuration on the path”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Common mistakes”?",
+      "options": [
+        "restart the Database Engine service",
+        "IPAll",
+        "All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps. Treat the port like an interface contract — it is consumed by firewalls, probes, aliases, and applications, and it changes only through the runbook.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enabling TCP/IP”?",
+      "options": [
+        "Enabled / Active",
+        "Enable it per instance, not machine-wide: each instance owns its own protocol state, its own ports, and its own restart.",
+        "IPAll"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enable it per instance, not machine-wide: each instance owns its own protocol state, its own ports, and its own restart. The SQL Server Agent has no separate protocol configuration — it talks to the engine locally.”"
+    },
+    {
+      "question": "In the “The IP address tabs and IPAll” table, what is listed for “Enabled / Active” under “Meaning”?",
+      "options": [
+        "Whether this address is offered at all — a “No” here is a common cause of “some clients work, some do not”",
+        "Enabled / Active",
+        "IP Address"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Enabled / Active” as “Whether this address is offered at all — a “No” here is a common cause of “some clients work, some do not””."
+    },
+    {
+      "question": "Complete the lesson statement: “To set a static port: clear _____ in IPAll and type the port into TCP Port, then restart the service.”",
+      "options": [
+        "Never walk away from a port change on “it looks right in Configuration Manager”.",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:",
+        "TCP Dynamic Ports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “To set a static port: clear TCP Dynamic Ports in IPAll and type the port into TCP Port, then restart the service. Choose from a registered range — keep a simple port register (instance → host → port) so two instances never collide, and so the firewall team gets the right number the first time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying changes”?",
+      "options": [
+        "IPAll is where production configuration happens",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:",
+        "TCP Port"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Then confirm from the engine's own point of view — the port a real session arrived on:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Open SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for INSTANCE and set TCP/IP to _____.”",
+      "options": [
+        "The fixed port for that address",
+        "Enabled",
+        "The specific address to bind, or 1433 -style entries left at defaults"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Open SQL Server Configuration Manager → SQL Server Network Configuration → Protocols for INSTANCE and set TCP/IP to Enabled. Two things follow immediately:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Below the protocol list, _____ shows one tab per network interface plus IPAll.”",
+      "options": [
+        "Properties → IP Addresses",
+        "The fixed port for that address",
+        "0 = let SQL Server pick a free port at every start-up; blank = no dynamic port"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Below the protocol list, Properties → IP Addresses shows one tab per network interface plus IPAll. The per-IP tabs let you bind SQL Server to specific addresses; IPAll is the catch-all that applies to any address not configured individually.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "0 = let SQL Server pick a free port at every start-up; blank = no dynamic port",
+        "One fixed inbound rule, reviewable",
+        "Production recommendation: static ports, always."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Production recommendation: static ports, always. Dynamic ports look convenient at install time and then cost you for years:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying changes”?",
+      "options": [
+        "Finally, from the client tier: Test-NetConnection sql-node-02 -Port 1433.",
+        "Never walk away from a port change on “it looks right in Configuration Manager”.",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never walk away from a port change on “it looks right in Configuration Manager”. Confirm the socket from Windows:”"
+    },
+    {
+      "question": "In the “TCP behaviour that bites” table, what is listed for “Idle TDS connections dropped by a firewall or load balancer” under “Mitigation”?",
+      "options": [
+        "Connection pooling with a sensible lifetime; keep-alive configuration on the path",
+        "All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps.",
+        "restart the Database Engine service"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Idle TDS connections dropped by a firewall or load balancer” as “Connection pooling with a sensible lifetime; keep-alive configuration on the path”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Common mistakes”?",
+      "options": [
+        "restart the Database Engine service",
+        "IPAll",
+        "All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “All five share one root cause: the change was treated as a click instead of as a configuration change with verification steps. Treat the port like an interface contract — it is consumed by firewalls, probes, aliases, and applications, and it changes only through the runbook.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enabling TCP/IP”?",
+      "options": [
+        "Enabled / Active",
+        "Enable it per instance, not machine-wide: each instance owns its own protocol state, its own ports, and its own restart.",
+        "IPAll"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enable it per instance, not machine-wide: each instance owns its own protocol state, its own ports, and its own restart. The SQL Server Agent has no separate protocol configuration — it talks to the engine locally.”"
+    },
+    {
+      "question": "In the “The IP address tabs and IPAll” table, what is listed for “Enabled / Active” under “Meaning”?",
+      "options": [
+        "Whether this address is offered at all — a “No” here is a common cause of “some clients work, some do not”",
+        "Enabled / Active",
+        "IP Address"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Enabled / Active” as “Whether this address is offered at all — a “No” here is a common cause of “some clients work, some do not””."
+    },
+    {
+      "question": "Complete the lesson statement: “To set a static port: clear _____ in IPAll and type the port into TCP Port, then restart the service.”",
+      "options": [
+        "Never walk away from a port change on “it looks right in Configuration Manager”.",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:",
+        "TCP Dynamic Ports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “To set a static port: clear TCP Dynamic Ports in IPAll and type the port into TCP Port, then restart the service. Choose from a registered range — keep a simple port register (instance → host → port) so two instances never collide, and so the firewall team gets the right number the first time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying changes”?",
+      "options": [
+        "IPAll is where production configuration happens",
+        "Then confirm from the engine's own point of view — the port a real session arrived on:",
+        "TCP Port"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Then confirm from the engine's own point of view — the port a real session arrived on:”"
+    }
+  ],
   takeaways: [
     "TCP/IP is enabled per instance and only takes effect after a Database Engine service restart",
     "IPAll is where you set production ports: TCP Port for static, TCP Dynamic Ports blank — never both",

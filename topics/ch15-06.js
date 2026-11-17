@@ -185,6 +185,312 @@ Reorganize lightly fragmented indexes (roughly 10-30%) online with low impact; r
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "CPU Capacity Planning",
+        "The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine CPU Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU Capacity Planning fits”?",
+      "options": [
+        "Bulk loads",
+        "Long transactions",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU Capacity Planning in practice”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU Capacity Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Bulk loads",
+        "Long transactions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to CPU Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Long transactions",
+        "Rebuild needing 1.5x space",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "CPU Capacity Planning",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates CPU Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What CPU Capacity Planning means”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU Capacity Planning fits”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The diagram below places CPU Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places CPU Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU Capacity Planning in practice”?",
+      "options": [
+        "Rebuild structure and stats",
+        "The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:",
+        "Online, low impact"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "CPU Capacity Planning",
+        "The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine CPU Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU Capacity Planning fits”?",
+      "options": [
+        "Bulk loads",
+        "Long transactions",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU Capacity Planning in practice”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU Capacity Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Bulk loads",
+        "Long transactions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to CPU Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Long transactions",
+        "Rebuild needing 1.5x space",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "CPU Capacity Planning",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates CPU Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What CPU Capacity Planning means”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU Capacity Planning fits”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The diagram below places CPU Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places CPU Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU Capacity Planning in practice”?",
+      "options": [
+        "Rebuild structure and stats",
+        "The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:",
+        "Online, low impact"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "CPU Capacity Planning",
+        "The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine CPU Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU Capacity Planning fits”?",
+      "options": [
+        "Bulk loads",
+        "Long transactions",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU Capacity Planning in practice”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU Capacity Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Bulk loads",
+        "Long transactions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to CPU Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Long transactions",
+        "Rebuild needing 1.5x space",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "CPU Capacity Planning",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates CPU Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What CPU Capacity Planning means”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU Capacity Planning fits”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The diagram below places CPU Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places CPU Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU Capacity Planning in practice”?",
+      "options": [
+        "Rebuild structure and stats",
+        "The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:",
+        "Online, low impact"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with CPU Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "CPU Capacity Planning is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

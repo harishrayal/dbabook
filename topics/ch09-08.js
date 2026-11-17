@@ -181,6 +181,312 @@ A login authenticates to the server (server scope); a user is the login's mapped
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Map a login into a database",
+        "Login Versus User",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Login Versus User within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Versus User fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Versus User in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Versus User”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Theory becomes useful when you can apply it.",
+        "Bundle permissions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Login Versus User. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Login Versus User"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Login Versus User with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Login Versus User means”?",
+      "options": [
+        "Overridden by DENY",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "With Login Versus User, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Versus User fits”?",
+      "options": [
+        "The diagram below places Login Versus User alongside the core concepts of SQL Server security and permissions.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "With Login Versus User, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Login Versus User alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Versus User in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The following comparison captures the distinctions that matter most when working with Login Versus User:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Login Versus User:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Versus User”?",
+      "options": [
+        "Login Versus User sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Map a login into a database",
+        "Login Versus User",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Login Versus User within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Versus User fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Versus User in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Versus User”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Theory becomes useful when you can apply it.",
+        "Bundle permissions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Login Versus User. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Login Versus User"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Login Versus User with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Login Versus User means”?",
+      "options": [
+        "Overridden by DENY",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "With Login Versus User, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Versus User fits”?",
+      "options": [
+        "The diagram below places Login Versus User alongside the core concepts of SQL Server security and permissions.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "With Login Versus User, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Login Versus User alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Versus User in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The following comparison captures the distinctions that matter most when working with Login Versus User:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Login Versus User:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Versus User”?",
+      "options": [
+        "Login Versus User sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Map a login into a database",
+        "Login Versus User",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Login Versus User within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Versus User fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Versus User in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Versus User”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Theory becomes useful when you can apply it.",
+        "Bundle permissions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Login Versus User. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Login Versus User"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Login Versus User with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Login Versus User means”?",
+      "options": [
+        "Overridden by DENY",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "With Login Versus User, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Versus User fits”?",
+      "options": [
+        "The diagram below places Login Versus User alongside the core concepts of SQL Server security and permissions.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "With Login Versus User, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Login Versus User alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Versus User in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The following comparison captures the distinctions that matter most when working with Login Versus User:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Login Versus User:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Versus User”?",
+      "options": [
+        "Login Versus User sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Login Versus User is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

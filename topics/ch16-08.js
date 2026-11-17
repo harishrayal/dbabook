@@ -193,6 +193,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Automatic with sync commit",
+        "Always On Availability Groups",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Always On Availability Groups within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups fits”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups in practice”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Failover can be automatic, manual or forced.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Theory becomes useful when you can apply it.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Always On Availability Groups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Always On Availability Groups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Always On Availability Groups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Always On Availability Groups means”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "With Always On Availability Groups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups fits”?",
+      "options": [
+        "The diagram below places Always On Availability Groups alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "With Always On Availability Groups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Always On Availability Groups alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Always On Availability Groups sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Always On Availability Groups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The first example establishes the relevant state.",
+        "Always On Availability Groups sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Automatic with sync commit",
+        "Always On Availability Groups",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Always On Availability Groups within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups fits”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups in practice”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Failover can be automatic, manual or forced.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Theory becomes useful when you can apply it.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Always On Availability Groups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Always On Availability Groups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Always On Availability Groups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Always On Availability Groups means”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "With Always On Availability Groups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups fits”?",
+      "options": [
+        "The diagram below places Always On Availability Groups alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "With Always On Availability Groups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Always On Availability Groups alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Always On Availability Groups sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Always On Availability Groups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The first example establishes the relevant state.",
+        "Always On Availability Groups sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Automatic with sync commit",
+        "Always On Availability Groups",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Always On Availability Groups within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups fits”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups in practice”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Failover can be automatic, manual or forced.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Theory becomes useful when you can apply it.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Always On Availability Groups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Always On Availability Groups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Always On Availability Groups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Always On Availability Groups means”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "With Always On Availability Groups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups fits”?",
+      "options": [
+        "The diagram below places Always On Availability Groups alongside the core concepts of high availability.",
+        "Failover can be automatic, manual or forced.",
+        "With Always On Availability Groups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Always On Availability Groups alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Always On Availability Groups sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Always On Availability Groups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The first example establishes the relevant state.",
+        "Always On Availability Groups sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Always On Availability Groups is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

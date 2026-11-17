@@ -165,6 +165,312 @@ Quorum is the majority requirement that decides which nodes may own the cluster;
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic, node-level",
+        "Shared Storage Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Shared Storage Concepts within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Storage Concepts fits”?",
+      "options": [
+        "Manual, planned",
+        "High availability keeps a database service reachable through failures.",
+        "Automatic with sync commit"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Storage Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Storage Concepts”?",
+      "options": [
+        "Automatic with sync commit",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Shared Storage Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Shared Storage Concepts means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Storage Concepts fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The diagram below places Shared Storage Concepts alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Shared Storage Concepts alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Storage Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The following comparison captures the distinctions that matter most when working with Shared Storage Concepts:",
+        "Lower"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Shared Storage Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Storage Concepts”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "With Shared Storage Concepts, prefer measured, reversible changes.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic, node-level",
+        "Shared Storage Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Shared Storage Concepts within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Storage Concepts fits”?",
+      "options": [
+        "Manual, planned",
+        "High availability keeps a database service reachable through failures.",
+        "Automatic with sync commit"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Storage Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Storage Concepts”?",
+      "options": [
+        "Automatic with sync commit",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Shared Storage Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Shared Storage Concepts means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Storage Concepts fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The diagram below places Shared Storage Concepts alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Shared Storage Concepts alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Storage Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The following comparison captures the distinctions that matter most when working with Shared Storage Concepts:",
+        "Lower"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Shared Storage Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Storage Concepts”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "With Shared Storage Concepts, prefer measured, reversible changes.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic, node-level",
+        "Shared Storage Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Shared Storage Concepts within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Storage Concepts fits”?",
+      "options": [
+        "Manual, planned",
+        "High availability keeps a database service reachable through failures.",
+        "Automatic with sync commit"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Storage Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Storage Concepts”?",
+      "options": [
+        "Automatic with sync commit",
+        "Manual, planned",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Shared Storage Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Manual, planned"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Shared Storage Concepts means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Shared Storage Concepts fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The diagram below places Shared Storage Concepts alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Shared Storage Concepts alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Shared Storage Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The following comparison captures the distinctions that matter most when working with Shared Storage Concepts:",
+        "Lower"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Shared Storage Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Shared Storage Concepts”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "With Shared Storage Concepts, prefer measured, reversible changes.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    }
+  ],
   takeaways: [
     "Shared Storage Concepts is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

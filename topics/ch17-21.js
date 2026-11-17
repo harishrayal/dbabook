@@ -180,6 +180,312 @@ Transactional replication streams changes one-way from publisher to subscribers 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "DR Testing and Validation",
+        "Disconnected sites",
+        "DR Testing and Validation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine DR Testing and Validation within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Testing and Validation fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating DR Testing and Validation.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Testing and Validation in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Testing and Validation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "DR Testing and Validation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DR Testing and Validation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DR Testing and Validation",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "DR Testing and Validation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "DR Testing and Validation",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates DR Testing and Validation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DR Testing and Validation means”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Testing and Validation fits”?",
+      "options": [
+        "DR Testing and Validation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Testing and Validation in practice”?",
+      "options": [
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies.",
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DR Testing and Validation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Testing and Validation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "DR Testing and Validation",
+        "Disconnected sites",
+        "DR Testing and Validation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine DR Testing and Validation within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Testing and Validation fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating DR Testing and Validation.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Testing and Validation in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Testing and Validation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "DR Testing and Validation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DR Testing and Validation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DR Testing and Validation",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "DR Testing and Validation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "DR Testing and Validation",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates DR Testing and Validation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DR Testing and Validation means”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Testing and Validation fits”?",
+      "options": [
+        "DR Testing and Validation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Testing and Validation in practice”?",
+      "options": [
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies.",
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DR Testing and Validation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Testing and Validation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "DR Testing and Validation",
+        "Disconnected sites",
+        "DR Testing and Validation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine DR Testing and Validation within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Testing and Validation fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating DR Testing and Validation.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Testing and Validation in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Testing and Validation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "DR Testing and Validation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DR Testing and Validation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DR Testing and Validation",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "DR Testing and Validation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "DR Testing and Validation",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates DR Testing and Validation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DR Testing and Validation means”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Testing and Validation fits”?",
+      "options": [
+        "DR Testing and Validation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Testing and Validation in practice”?",
+      "options": [
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies.",
+        "The following comparison captures the distinctions that matter most when working with DR Testing and Validation:",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DR Testing and Validation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Testing and Validation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places DR Testing and Validation alongside the core concepts of disaster recovery technologies.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "DR Testing and Validation is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

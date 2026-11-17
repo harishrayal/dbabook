@@ -174,6 +174,312 @@ FROM   sys.database_files;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When a data or log file runs out of space, SQL Server tries to extend it — that is _____.”",
+      "options": [
+        "autogrowth",
+        "Both settings extend the file; the difference is what the next increment costs:",
+        "Grows with the file (10% of 2 TB = 200 GB)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a data or log file runs out of space, SQL Server tries to extend it — that is autogrowth. The increment is stored per file ( sys.database_files.is_percent_growth and growth ) and can be expressed in megabytes or as a percentage of the current file size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed increment vs percentage growth”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Both settings extend the file; the difference is what the next increment costs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Both settings extend the file; the difference is what the next increment costs:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The increment should be sized to the _____, not to a round number:”",
+      "options": [
+        "Escalating; log zeroing can stall writes for minutes",
+        "rate of growth",
+        "Low — the cost doubles every time the file doubles"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The increment should be sized to the rate of growth, not to a round number:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a growth event costs”?",
+      "options": [
+        "During a growth event the workload pays for the allocation:",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Fixed-Size Versus Percentage Growth sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “During a growth event the workload pays for the allocation:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The change is metadata-only: it takes effect at the _____ growth event and needs no restart.”",
+      "options": [
+        "A percentage of a possibly enormous file",
+        "Small, unpredictable, non-critical files only",
+        "next"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Change growth with ALTER DATABASE … MODIFY FILE. The change is metadata-only: it takes effect at the next growth event and needs no restart. Two rules prevent surprises — never specify a SIZE smaller than the file's current size, and keep at least one increment of free space on the volume.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "Fixed-Size Versus Percentage Growth",
+        "Small, unpredictable, non-critical files only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Fixed-Size Versus Percentage Growth with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Autogrowth exists so a database does _____ fail the moment it fills up, but it is not a sizing strategy.”",
+      "options": [
+        "not",
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "During a growth event the workload pays for the allocation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Autogrowth exists so a database does not fail the moment it fills up, but it is not a sizing strategy. Every growth event is a real-time allocation on the storage subsystem, and the workload feels it while it happens:”"
+    },
+    {
+      "question": "In the “Fixed increment vs percentage growth” table, what is listed for “Increment size” under “Percentage growth”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Use the following as a starting point when investigating Fixed-Size Versus Percentage Growth.",
+        "Grows with the file (10% of 2 TB = 200 GB)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Increment size” as “Grows with the file (10% of 2 TB = 200 GB)”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing the right increment”?",
+      "options": [
+        "Preferred — predictable",
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the volume should be carrying the difference.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because growth events are visible in file sizes over time rather than in a single DMV, the practical defence is _____: track file size and volume free space on a schedule, alert well before autogrowth becomes urgent, and change growth settings before — not…”",
+      "options": [
+        "capacity monitoring",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because growth events are visible in file sizes over time rather than in a single DMV, the practical defence is capacity monitoring: track file size and volume free space on a schedule, alert well before autogrowth becomes urgent, and change growth settings before — not after — the file becomes large enough for percentage growth to hurt.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When a data or log file runs out of space, SQL Server tries to extend it — that is _____.”",
+      "options": [
+        "autogrowth",
+        "Both settings extend the file; the difference is what the next increment costs:",
+        "Grows with the file (10% of 2 TB = 200 GB)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a data or log file runs out of space, SQL Server tries to extend it — that is autogrowth. The increment is stored per file ( sys.database_files.is_percent_growth and growth ) and can be expressed in megabytes or as a percentage of the current file size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed increment vs percentage growth”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Both settings extend the file; the difference is what the next increment costs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Both settings extend the file; the difference is what the next increment costs:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The increment should be sized to the _____, not to a round number:”",
+      "options": [
+        "Escalating; log zeroing can stall writes for minutes",
+        "rate of growth",
+        "Low — the cost doubles every time the file doubles"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The increment should be sized to the rate of growth, not to a round number:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a growth event costs”?",
+      "options": [
+        "During a growth event the workload pays for the allocation:",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Fixed-Size Versus Percentage Growth sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “During a growth event the workload pays for the allocation:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The change is metadata-only: it takes effect at the _____ growth event and needs no restart.”",
+      "options": [
+        "A percentage of a possibly enormous file",
+        "Small, unpredictable, non-critical files only",
+        "next"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Change growth with ALTER DATABASE … MODIFY FILE. The change is metadata-only: it takes effect at the next growth event and needs no restart. Two rules prevent surprises — never specify a SIZE smaller than the file's current size, and keep at least one increment of free space on the volume.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "Fixed-Size Versus Percentage Growth",
+        "Small, unpredictable, non-critical files only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Fixed-Size Versus Percentage Growth with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Autogrowth exists so a database does _____ fail the moment it fills up, but it is not a sizing strategy.”",
+      "options": [
+        "not",
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "During a growth event the workload pays for the allocation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Autogrowth exists so a database does not fail the moment it fills up, but it is not a sizing strategy. Every growth event is a real-time allocation on the storage subsystem, and the workload feels it while it happens:”"
+    },
+    {
+      "question": "In the “Fixed increment vs percentage growth” table, what is listed for “Increment size” under “Percentage growth”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Use the following as a starting point when investigating Fixed-Size Versus Percentage Growth.",
+        "Grows with the file (10% of 2 TB = 200 GB)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Increment size” as “Grows with the file (10% of 2 TB = 200 GB)”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing the right increment”?",
+      "options": [
+        "Preferred — predictable",
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the volume should be carrying the difference.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because growth events are visible in file sizes over time rather than in a single DMV, the practical defence is _____: track file size and volume free space on a schedule, alert well before autogrowth becomes urgent, and change growth settings before — not…”",
+      "options": [
+        "capacity monitoring",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because growth events are visible in file sizes over time rather than in a single DMV, the practical defence is capacity monitoring: track file size and volume free space on a schedule, alert well before autogrowth becomes urgent, and change growth settings before — not after — the file becomes large enough for percentage growth to hurt.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “When a data or log file runs out of space, SQL Server tries to extend it — that is _____.”",
+      "options": [
+        "autogrowth",
+        "Both settings extend the file; the difference is what the next increment costs:",
+        "Grows with the file (10% of 2 TB = 200 GB)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a data or log file runs out of space, SQL Server tries to extend it — that is autogrowth. The increment is stored per file ( sys.database_files.is_percent_growth and growth ) and can be expressed in megabytes or as a percentage of the current file size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed increment vs percentage growth”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Both settings extend the file; the difference is what the next increment costs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Both settings extend the file; the difference is what the next increment costs:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The increment should be sized to the _____, not to a round number:”",
+      "options": [
+        "Escalating; log zeroing can stall writes for minutes",
+        "rate of growth",
+        "Low — the cost doubles every time the file doubles"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The increment should be sized to the rate of growth, not to a round number:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a growth event costs”?",
+      "options": [
+        "During a growth event the workload pays for the allocation:",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Fixed-Size Versus Percentage Growth sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “During a growth event the workload pays for the allocation:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The change is metadata-only: it takes effect at the _____ growth event and needs no restart.”",
+      "options": [
+        "A percentage of a possibly enormous file",
+        "Small, unpredictable, non-critical files only",
+        "next"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Change growth with ALTER DATABASE … MODIFY FILE. The change is metadata-only: it takes effect at the next growth event and needs no restart. Two rules prevent surprises — never specify a SIZE smaller than the file's current size, and keep at least one increment of free space on the volume.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "Fixed-Size Versus Percentage Growth",
+        "Small, unpredictable, non-critical files only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Fixed-Size Versus Percentage Growth with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Autogrowth exists so a database does _____ fail the moment it fills up, but it is not a sizing strategy.”",
+      "options": [
+        "not",
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "During a growth event the workload pays for the allocation:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Autogrowth exists so a database does not fail the moment it fills up, but it is not a sizing strategy. Every growth event is a real-time allocation on the storage subsystem, and the workload feels it while it happens:”"
+    },
+    {
+      "question": "In the “Fixed increment vs percentage growth” table, what is listed for “Increment size” under “Percentage growth”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Use the following as a starting point when investigating Fixed-Size Versus Percentage Growth.",
+        "Grows with the file (10% of 2 TB = 200 GB)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Increment size” as “Grows with the file (10% of 2 TB = 200 GB)”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing the right increment”?",
+      "options": [
+        "Preferred — predictable",
+        "A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A useful smell test: if a file grows more than once a week, the increment is too small; if you cannot remember the last growth event, the increment is comfortably large and the volume should be carrying the difference.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because growth events are visible in file sizes over time rather than in a single DMV, the practical defence is _____: track file size and volume free space on a schedule, alert well before autogrowth becomes urgent, and change growth settings before — not…”",
+      "options": [
+        "capacity monitoring",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because growth events are visible in file sizes over time rather than in a single DMV, the practical defence is capacity monitoring: track file size and volume free space on a schedule, alert well before autogrowth becomes urgent, and change growth settings before — not after — the file becomes large enough for percentage growth to hurt.”"
+    }
+  ],
   takeaways: [
     "Autogrowth is a safety net, not a sizing strategy — every growth event costs IO and risks failure",
     "Fixed increments keep cost, timing, and free-space requirements predictable; percentage growth escalates with the file",

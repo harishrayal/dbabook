@@ -163,6 +163,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, or configu
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "PowerShell Job Steps"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Job Steps within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Job Steps fits”?",
+      "options": [
+        "PowerShell Job Steps",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Job Steps in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "PowerShell Job Steps",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Job Steps”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Job Steps. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell Job Steps is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Job Steps means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Job Steps fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Job Steps in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Job Steps”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "PowerShell Job Steps"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Job Steps within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Job Steps fits”?",
+      "options": [
+        "PowerShell Job Steps",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Job Steps in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "PowerShell Job Steps",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Job Steps”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Job Steps. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell Job Steps is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Job Steps means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Job Steps fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Job Steps in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Job Steps”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "PowerShell Job Steps"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Job Steps within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Job Steps fits”?",
+      "options": [
+        "PowerShell Job Steps",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Job Steps in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "PowerShell Job Steps",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Job Steps”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Job Steps. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell Job Steps is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Job Steps means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Job Steps fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Job Steps in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "The diagram below places PowerShell Job Steps alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Job Steps”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with PowerShell Job Steps:",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    }
+  ],
   takeaways: [
     "PowerShell Job Steps is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

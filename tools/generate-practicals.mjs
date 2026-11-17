@@ -11,6 +11,7 @@ import { P1 } from "./pk-a.mjs";
 import { P2 } from "./pk-b.mjs";
 import { P3 } from "./pk-c.mjs";
 import { P4 } from "./pk-d.mjs";
+import { addQuizToSource } from "./topic-quiz-generator.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const P = { ...P1, ...P2, ...P3, ...P4 };
@@ -151,7 +152,7 @@ function build(d) {
   d.takeaways.forEach((t, i) => L.push(`    ${q(t)}${i < d.takeaways.length - 1 ? "," : ""}`));
   L.push("  ]");
   L.push("};");
-  return L.join("\n") + "\n";
+  return addQuizToSource(L.join("\n") + "\n");
 }
 
 const FORCE = process.argv.includes("--force");

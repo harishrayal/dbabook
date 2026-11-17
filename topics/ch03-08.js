@@ -178,6 +178,312 @@ ALTER DATABASE Sales SET ONLINE;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “NTFS permissions describe the rules; _____ are about choosing where database files live and which principal can touch them.”",
+      "options": [
+        "No mapped drives.",
+        "file and folder permissions in practice",
+        "Everyone / Authenticated Users"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “NTFS permissions describe the rules; file and folder permissions in practice are about choosing where database files live and which principal can touch them. SQL Server never asks your user account for permission — it opens files as the service identity. A grant you applied while logged in as a Domain Admin tells you nothing about whether the engine can create a backup file at 02:00.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A deliberate folder layout”?",
+      "options": [
+        "The default instance directories under C:\\Program Files\\Microsoft SQL Server\\...",
+        "Applications connect through SQL, never to MDF files",
+        "Too broad for any database path"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The default instance directories under C:\\Program Files\\Microsoft SQL Server\\... are acceptable for a lab, but production databases belong on dedicated volumes with predictable paths. A layout that scales looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the permission matrix”?",
+      "options": [
+        "Requires special SQL configuration and its own ACL design",
+        "Use a script, not a sequence of mouse clicks.",
+        "Before touching an ACL, write down who needs what."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Before touching an ACL, write down who needs what. The matrix is small, and it turns a vague request like \"give the app team access\" into a specific decision:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying permissions”?",
+      "options": [
+        "Note what is absent: application teams never get direct file access to MDF or LDF files.",
+        "Use a script, not a sequence of mouse clicks.",
+        "Before touching an ACL, write down who needs what."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Use a script, not a sequence of mouse clicks. It is reviewable, repeatable on the next node, and it removes the temptation to fix an incident by adding Everyone. PowerShell splatting keeps long commands readable without line-continuation characters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup shares and UNC paths”?",
+      "options": [
+        "bak.",
+        "Note what is absent: application teams never get direct file access to MDF or LDF files.",
+        "A couple of details save future incidents."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Off-host backups usually target a UNC path such as \\\\fileserver\\sqlbackup\\Full\\Sales.bak. Two permission layers apply, and the more restrictive wins: the SMB share ACL and the NTFS ACL on the folder. Keep the share simple and do the detailed authorisation with NTFS:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Moves, restores, and other traps”?",
+      "options": [
+        "A couple of details save future incidents.",
+        "Engine and Agent create and extend files",
+        "Finally, treat permissions as part of the change record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Finally, treat permissions as part of the change record. When a restore or file move is documented with its before-and-after ACLs, the next incident is a five-minute comparison rather than an hour of speculation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why folder permissions are a DBA problem”?",
+      "options": [
+        "Too broad for any database path",
+        "Four categories of file must be considered on every instance:",
+        "Applications connect through SQL, never to MDF files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Four categories of file must be considered on every instance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A deliberate folder layout”?",
+      "options": [
+        "Keep paths reasonably short and use the same structure on every node of an Availability Group or failover cluster.",
+        "Where encryption is required, use SMB encryption or IPsec rather than depending on the physical network.",
+        "Finally, treat permissions as part of the change record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Keep paths reasonably short and use the same structure on every node of an Availability Group or failover cluster. Applications and DBAs then move between servers without relearning the file system, and automation can assume a single convention.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the permission matrix”?",
+      "options": [
+        "Finally, treat permissions as part of the change record.",
+        "Before touching an ACL, write down who needs what.",
+        "Note what is absent: application teams never get direct file access to MDF or LDF files."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Note what is absent: application teams never get direct file access to MDF or LDF files. Bypassing the engine risks corruption that no backup strategy can repair. If a vendor insists on \"just one folder\", give them a dedicated import/export directory — never the database directory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying permissions”?",
+      "options": [
+        "Too broad for any database path",
+        "Then verify what is actually there, including whether entries are inherited or explicit:",
+        "Applications connect through SQL, never to MDF files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Then verify what is actually there, including whether entries are inherited or explicit:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “NTFS permissions describe the rules; _____ are about choosing where database files live and which principal can touch them.”",
+      "options": [
+        "No mapped drives.",
+        "file and folder permissions in practice",
+        "Everyone / Authenticated Users"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “NTFS permissions describe the rules; file and folder permissions in practice are about choosing where database files live and which principal can touch them. SQL Server never asks your user account for permission — it opens files as the service identity. A grant you applied while logged in as a Domain Admin tells you nothing about whether the engine can create a backup file at 02:00.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A deliberate folder layout”?",
+      "options": [
+        "The default instance directories under C:\\Program Files\\Microsoft SQL Server\\...",
+        "Applications connect through SQL, never to MDF files",
+        "Too broad for any database path"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The default instance directories under C:\\Program Files\\Microsoft SQL Server\\... are acceptable for a lab, but production databases belong on dedicated volumes with predictable paths. A layout that scales looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the permission matrix”?",
+      "options": [
+        "Requires special SQL configuration and its own ACL design",
+        "Use a script, not a sequence of mouse clicks.",
+        "Before touching an ACL, write down who needs what."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Before touching an ACL, write down who needs what. The matrix is small, and it turns a vague request like \"give the app team access\" into a specific decision:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying permissions”?",
+      "options": [
+        "Note what is absent: application teams never get direct file access to MDF or LDF files.",
+        "Use a script, not a sequence of mouse clicks.",
+        "Before touching an ACL, write down who needs what."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Use a script, not a sequence of mouse clicks. It is reviewable, repeatable on the next node, and it removes the temptation to fix an incident by adding Everyone. PowerShell splatting keeps long commands readable without line-continuation characters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup shares and UNC paths”?",
+      "options": [
+        "bak.",
+        "Note what is absent: application teams never get direct file access to MDF or LDF files.",
+        "A couple of details save future incidents."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Off-host backups usually target a UNC path such as \\\\fileserver\\sqlbackup\\Full\\Sales.bak. Two permission layers apply, and the more restrictive wins: the SMB share ACL and the NTFS ACL on the folder. Keep the share simple and do the detailed authorisation with NTFS:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Moves, restores, and other traps”?",
+      "options": [
+        "A couple of details save future incidents.",
+        "Engine and Agent create and extend files",
+        "Finally, treat permissions as part of the change record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Finally, treat permissions as part of the change record. When a restore or file move is documented with its before-and-after ACLs, the next incident is a five-minute comparison rather than an hour of speculation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why folder permissions are a DBA problem”?",
+      "options": [
+        "Too broad for any database path",
+        "Four categories of file must be considered on every instance:",
+        "Applications connect through SQL, never to MDF files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Four categories of file must be considered on every instance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A deliberate folder layout”?",
+      "options": [
+        "Keep paths reasonably short and use the same structure on every node of an Availability Group or failover cluster.",
+        "Where encryption is required, use SMB encryption or IPsec rather than depending on the physical network.",
+        "Finally, treat permissions as part of the change record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Keep paths reasonably short and use the same structure on every node of an Availability Group or failover cluster. Applications and DBAs then move between servers without relearning the file system, and automation can assume a single convention.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the permission matrix”?",
+      "options": [
+        "Finally, treat permissions as part of the change record.",
+        "Before touching an ACL, write down who needs what.",
+        "Note what is absent: application teams never get direct file access to MDF or LDF files."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Note what is absent: application teams never get direct file access to MDF or LDF files. Bypassing the engine risks corruption that no backup strategy can repair. If a vendor insists on \"just one folder\", give them a dedicated import/export directory — never the database directory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying permissions”?",
+      "options": [
+        "Too broad for any database path",
+        "Then verify what is actually there, including whether entries are inherited or explicit:",
+        "Applications connect through SQL, never to MDF files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Then verify what is actually there, including whether entries are inherited or explicit:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “NTFS permissions describe the rules; _____ are about choosing where database files live and which principal can touch them.”",
+      "options": [
+        "No mapped drives.",
+        "file and folder permissions in practice",
+        "Everyone / Authenticated Users"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “NTFS permissions describe the rules; file and folder permissions in practice are about choosing where database files live and which principal can touch them. SQL Server never asks your user account for permission — it opens files as the service identity. A grant you applied while logged in as a Domain Admin tells you nothing about whether the engine can create a backup file at 02:00.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A deliberate folder layout”?",
+      "options": [
+        "The default instance directories under C:\\Program Files\\Microsoft SQL Server\\...",
+        "Applications connect through SQL, never to MDF files",
+        "Too broad for any database path"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The default instance directories under C:\\Program Files\\Microsoft SQL Server\\... are acceptable for a lab, but production databases belong on dedicated volumes with predictable paths. A layout that scales looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the permission matrix”?",
+      "options": [
+        "Requires special SQL configuration and its own ACL design",
+        "Use a script, not a sequence of mouse clicks.",
+        "Before touching an ACL, write down who needs what."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Before touching an ACL, write down who needs what. The matrix is small, and it turns a vague request like \"give the app team access\" into a specific decision:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying permissions”?",
+      "options": [
+        "Note what is absent: application teams never get direct file access to MDF or LDF files.",
+        "Use a script, not a sequence of mouse clicks.",
+        "Before touching an ACL, write down who needs what."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Use a script, not a sequence of mouse clicks. It is reviewable, repeatable on the next node, and it removes the temptation to fix an incident by adding Everyone. PowerShell splatting keeps long commands readable without line-continuation characters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup shares and UNC paths”?",
+      "options": [
+        "bak.",
+        "Note what is absent: application teams never get direct file access to MDF or LDF files.",
+        "A couple of details save future incidents."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Off-host backups usually target a UNC path such as \\\\fileserver\\sqlbackup\\Full\\Sales.bak. Two permission layers apply, and the more restrictive wins: the SMB share ACL and the NTFS ACL on the folder. Keep the share simple and do the detailed authorisation with NTFS:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Moves, restores, and other traps”?",
+      "options": [
+        "A couple of details save future incidents.",
+        "Engine and Agent create and extend files",
+        "Finally, treat permissions as part of the change record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Finally, treat permissions as part of the change record. When a restore or file move is documented with its before-and-after ACLs, the next incident is a five-minute comparison rather than an hour of speculation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why folder permissions are a DBA problem”?",
+      "options": [
+        "Too broad for any database path",
+        "Four categories of file must be considered on every instance:",
+        "Applications connect through SQL, never to MDF files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Four categories of file must be considered on every instance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A deliberate folder layout”?",
+      "options": [
+        "Keep paths reasonably short and use the same structure on every node of an Availability Group or failover cluster.",
+        "Where encryption is required, use SMB encryption or IPsec rather than depending on the physical network.",
+        "Finally, treat permissions as part of the change record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Keep paths reasonably short and use the same structure on every node of an Availability Group or failover cluster. Applications and DBAs then move between servers without relearning the file system, and automation can assume a single convention.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the permission matrix”?",
+      "options": [
+        "Finally, treat permissions as part of the change record.",
+        "Before touching an ACL, write down who needs what.",
+        "Note what is absent: application teams never get direct file access to MDF or LDF files."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Note what is absent: application teams never get direct file access to MDF or LDF files. Bypassing the engine risks corruption that no backup strategy can repair. If a vendor insists on \"just one folder\", give them a dedicated import/export directory — never the database directory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Applying and verifying permissions”?",
+      "options": [
+        "Too broad for any database path",
+        "Then verify what is actually there, including whether entries are inherited or explicit:",
+        "Applications connect through SQL, never to MDF files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Then verify what is actually there, including whether entries are inherited or explicit:”"
+    }
+  ],
   takeaways: [
     "Decide the folder layout first: data, log, tempdb, backups, dumps, and integration files each have a role",
     "Write a permission matrix — service account Modify, DBAs Full, everyone else as little as possible",

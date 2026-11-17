@@ -169,6 +169,312 @@ ORDER BY last_full_backup;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The only defence against data loss”?",
+      "options": [
+        "Notice that only three of these are \"the hardware broke\".",
+        "Restore from the most recent backup set",
+        "A database can lose its contents in seconds, and almost none of those paths are reversible."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database can lose its contents in seconds, and almost none of those paths are reversible. Hardware can be replaced, queries can be tuned, permissions can be re-granted — but data that was never written to a recoverable copy is gone. That single fact is why backup and recovery sit at the top of every DBA responsibility list, ahead of performance and ahead of security.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What can destroy a database”?",
+      "options": [
+        "bak on the production server's D: drive is not a backup strategy.",
+        "The threats are wider than most people assume.",
+        "The job of the DBA is therefore not \"run a backup job\"."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The threats are wider than most people assume. Backups are not only for hardware failure — they cover human error, software defects, and hostile action with equal weight:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What counts as a real backup”?",
+      "options": [
+        "bak on the production server's D: drive is not a backup strategy.",
+        "The threats are wider than most people assume.",
+        "Notice that only three of these are \"the hardware broke\"."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A file named ERP_full.bak on the production server's D: drive is not a backup strategy. For a copy of data to qualify as recoverable, it must satisfy five conditions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring adequacy: RPO and RTO”?",
+      "options": [
+        "Notice that only three of these are \"the hardware broke\".",
+        "Restore from the most recent backup set",
+        "Backups are not judged by whether they run, but by the numbers they guarantee under failure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are not judged by whether they run, but by the numbers they guarantee under failure. Two measures define every backup strategy:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The final reason backups are required is also the most uncomfortable: _____.”",
+      "options": [
+        "Separate",
+        "only a restore proves a backup exists",
+        "Consistent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The final reason backups are required is also the most uncomfortable: only a restore proves a backup exists. A job history full of green checkmarks proves only that SQL Server finished reading the data — it does not prove the file survived the copy, the retention policy, the encryption certificate, or the SAN migration.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Backups exist because _____: replication stops when the source is gone, mirroring stops when the disk dies, snapshots are lost with the array, and RAID protects…”",
+      "options": [
+        "every other protection fails under the same conditions",
+        "Versioned",
+        "Verifiable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Backups exist because every other protection fails under the same conditions: replication stops when the source is gone, mirroring stops when the disk dies, snapshots are lost with the array, and RAID protects against a disk failure, not against a dropped DELETE statement. A backup is the only mechanism that takes the data away from the failure domain that destroyed it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What can destroy a database”?",
+      "options": [
+        "Backups are not judged by whether they run, but by the numbers they guarantee under failure.",
+        "The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs.",
+        "Notice that only three of these are \"the hardware broke\"."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice that only three of these are \"the hardware broke\". The rest are caused by people and software — which is exactly why backups must be protected from the same administrators and the same network that run the database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The backup must also include everything required to rebuild the database: data and index pages, schema and object metadata, and _____ to roll the copy forward to a consistent state during restore.”",
+      "options": [
+        "Documented",
+        "enough transaction log",
+        "Verifiable"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The backup must also include everything required to rebuild the database: data and index pages, schema and object metadata, and enough transaction log to roll the copy forward to a consistent state during restore. That last element is why recovery models and log backups (later in this chapter) matter so much.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring adequacy: RPO and RTO”?",
+      "options": [
+        "The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs.",
+        "File/filegroup restore plus log chain",
+        "Off-site copy — the 3-2-1 principle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs. If the business needs 15 minutes, the answer is transaction-log or log-shipping cadence — not a faster full backup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups are not the same as restores”?",
+      "options": [
+        "Off-site copy — the 3-2-1 principle",
+        "Air-gapped or immutable copy taken before the event",
+        "Mature organisations treat restore testing as part of the backup itself:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Mature organisations treat restore testing as part of the backup itself:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The only defence against data loss”?",
+      "options": [
+        "Notice that only three of these are \"the hardware broke\".",
+        "Restore from the most recent backup set",
+        "A database can lose its contents in seconds, and almost none of those paths are reversible."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database can lose its contents in seconds, and almost none of those paths are reversible. Hardware can be replaced, queries can be tuned, permissions can be re-granted — but data that was never written to a recoverable copy is gone. That single fact is why backup and recovery sit at the top of every DBA responsibility list, ahead of performance and ahead of security.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What can destroy a database”?",
+      "options": [
+        "bak on the production server's D: drive is not a backup strategy.",
+        "The threats are wider than most people assume.",
+        "The job of the DBA is therefore not \"run a backup job\"."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The threats are wider than most people assume. Backups are not only for hardware failure — they cover human error, software defects, and hostile action with equal weight:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What counts as a real backup”?",
+      "options": [
+        "bak on the production server's D: drive is not a backup strategy.",
+        "The threats are wider than most people assume.",
+        "Notice that only three of these are \"the hardware broke\"."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A file named ERP_full.bak on the production server's D: drive is not a backup strategy. For a copy of data to qualify as recoverable, it must satisfy five conditions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring adequacy: RPO and RTO”?",
+      "options": [
+        "Notice that only three of these are \"the hardware broke\".",
+        "Restore from the most recent backup set",
+        "Backups are not judged by whether they run, but by the numbers they guarantee under failure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are not judged by whether they run, but by the numbers they guarantee under failure. Two measures define every backup strategy:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The final reason backups are required is also the most uncomfortable: _____.”",
+      "options": [
+        "Separate",
+        "only a restore proves a backup exists",
+        "Consistent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The final reason backups are required is also the most uncomfortable: only a restore proves a backup exists. A job history full of green checkmarks proves only that SQL Server finished reading the data — it does not prove the file survived the copy, the retention policy, the encryption certificate, or the SAN migration.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Backups exist because _____: replication stops when the source is gone, mirroring stops when the disk dies, snapshots are lost with the array, and RAID protects…”",
+      "options": [
+        "every other protection fails under the same conditions",
+        "Versioned",
+        "Verifiable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Backups exist because every other protection fails under the same conditions: replication stops when the source is gone, mirroring stops when the disk dies, snapshots are lost with the array, and RAID protects against a disk failure, not against a dropped DELETE statement. A backup is the only mechanism that takes the data away from the failure domain that destroyed it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What can destroy a database”?",
+      "options": [
+        "Backups are not judged by whether they run, but by the numbers they guarantee under failure.",
+        "The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs.",
+        "Notice that only three of these are \"the hardware broke\"."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice that only three of these are \"the hardware broke\". The rest are caused by people and software — which is exactly why backups must be protected from the same administrators and the same network that run the database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The backup must also include everything required to rebuild the database: data and index pages, schema and object metadata, and _____ to roll the copy forward to a consistent state during restore.”",
+      "options": [
+        "Documented",
+        "enough transaction log",
+        "Verifiable"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The backup must also include everything required to rebuild the database: data and index pages, schema and object metadata, and enough transaction log to roll the copy forward to a consistent state during restore. That last element is why recovery models and log backups (later in this chapter) matter so much.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring adequacy: RPO and RTO”?",
+      "options": [
+        "The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs.",
+        "File/filegroup restore plus log chain",
+        "Off-site copy — the 3-2-1 principle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs. If the business needs 15 minutes, the answer is transaction-log or log-shipping cadence — not a faster full backup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups are not the same as restores”?",
+      "options": [
+        "Off-site copy — the 3-2-1 principle",
+        "Air-gapped or immutable copy taken before the event",
+        "Mature organisations treat restore testing as part of the backup itself:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Mature organisations treat restore testing as part of the backup itself:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The only defence against data loss”?",
+      "options": [
+        "Notice that only three of these are \"the hardware broke\".",
+        "Restore from the most recent backup set",
+        "A database can lose its contents in seconds, and almost none of those paths are reversible."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database can lose its contents in seconds, and almost none of those paths are reversible. Hardware can be replaced, queries can be tuned, permissions can be re-granted — but data that was never written to a recoverable copy is gone. That single fact is why backup and recovery sit at the top of every DBA responsibility list, ahead of performance and ahead of security.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What can destroy a database”?",
+      "options": [
+        "bak on the production server's D: drive is not a backup strategy.",
+        "The threats are wider than most people assume.",
+        "The job of the DBA is therefore not \"run a backup job\"."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The threats are wider than most people assume. Backups are not only for hardware failure — they cover human error, software defects, and hostile action with equal weight:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What counts as a real backup”?",
+      "options": [
+        "bak on the production server's D: drive is not a backup strategy.",
+        "The threats are wider than most people assume.",
+        "Notice that only three of these are \"the hardware broke\"."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A file named ERP_full.bak on the production server's D: drive is not a backup strategy. For a copy of data to qualify as recoverable, it must satisfy five conditions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring adequacy: RPO and RTO”?",
+      "options": [
+        "Notice that only three of these are \"the hardware broke\".",
+        "Restore from the most recent backup set",
+        "Backups are not judged by whether they run, but by the numbers they guarantee under failure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are not judged by whether they run, but by the numbers they guarantee under failure. Two measures define every backup strategy:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The final reason backups are required is also the most uncomfortable: _____.”",
+      "options": [
+        "Separate",
+        "only a restore proves a backup exists",
+        "Consistent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The final reason backups are required is also the most uncomfortable: only a restore proves a backup exists. A job history full of green checkmarks proves only that SQL Server finished reading the data — it does not prove the file survived the copy, the retention policy, the encryption certificate, or the SAN migration.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Backups exist because _____: replication stops when the source is gone, mirroring stops when the disk dies, snapshots are lost with the array, and RAID protects…”",
+      "options": [
+        "every other protection fails under the same conditions",
+        "Versioned",
+        "Verifiable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Backups exist because every other protection fails under the same conditions: replication stops when the source is gone, mirroring stops when the disk dies, snapshots are lost with the array, and RAID protects against a disk failure, not against a dropped DELETE statement. A backup is the only mechanism that takes the data away from the failure domain that destroyed it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What can destroy a database”?",
+      "options": [
+        "Backups are not judged by whether they run, but by the numbers they guarantee under failure.",
+        "The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs.",
+        "Notice that only three of these are \"the hardware broke\"."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice that only three of these are \"the hardware broke\". The rest are caused by people and software — which is exactly why backups must be protected from the same administrators and the same network that run the database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The backup must also include everything required to rebuild the database: data and index pages, schema and object metadata, and _____ to roll the copy forward to a consistent state during restore.”",
+      "options": [
+        "Documented",
+        "enough transaction log",
+        "Verifiable"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The backup must also include everything required to rebuild the database: data and index pages, schema and object metadata, and enough transaction log to roll the copy forward to a consistent state during restore. That last element is why recovery models and log backups (later in this chapter) matter so much.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring adequacy: RPO and RTO”?",
+      "options": [
+        "The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs.",
+        "File/filegroup restore plus log chain",
+        "Off-site copy — the 3-2-1 principle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lesson of the timeline: a nightly full backup means an eight-hour RPO by design, regardless of how the job performs. If the business needs 15 minutes, the answer is transaction-log or log-shipping cadence — not a faster full backup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups are not the same as restores”?",
+      "options": [
+        "Off-site copy — the 3-2-1 principle",
+        "Air-gapped or immutable copy taken before the event",
+        "Mature organisations treat restore testing as part of the backup itself:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Mature organisations treat restore testing as part of the backup itself:”"
+    }
+  ],
   takeaways: [
     "Backups are the only mechanism that removes data from the failure domain that destroyed it",
     "Threats include human error, logic bugs, ransomware, and site loss — not just hardware failure",

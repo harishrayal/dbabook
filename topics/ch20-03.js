@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Managing Dev, Test, UAT, and Production",
+        "Patching and upgrades are planned programmes.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Managing Dev, Test, UAT, and Production within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Dev, Test, UAT, and Production fits”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Dev, Test, UAT, and Production in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Dev, Test, UAT, and Production”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Managing Dev, Test, UAT, and Production. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Last backup per DB",
+        "Managing Dev, Test, UAT, and Production",
+        "Report + exceptions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Managing Dev, Test, UAT, and Production with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Managing Dev, Test, UAT, and Production means”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Dev, Test, UAT, and Production fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Dev, Test, UAT, and Production in practice”?",
+      "options": [
+        "With Managing Dev, Test, UAT, and Production, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Dev, Test, UAT, and Production”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Managing Dev, Test, UAT, and Production",
+        "Patching and upgrades are planned programmes.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Managing Dev, Test, UAT, and Production within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Dev, Test, UAT, and Production fits”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Dev, Test, UAT, and Production in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Dev, Test, UAT, and Production”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Managing Dev, Test, UAT, and Production. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Last backup per DB",
+        "Managing Dev, Test, UAT, and Production",
+        "Report + exceptions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Managing Dev, Test, UAT, and Production with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Managing Dev, Test, UAT, and Production means”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Dev, Test, UAT, and Production fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Dev, Test, UAT, and Production in practice”?",
+      "options": [
+        "With Managing Dev, Test, UAT, and Production, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Dev, Test, UAT, and Production”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Managing Dev, Test, UAT, and Production",
+        "Patching and upgrades are planned programmes.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Managing Dev, Test, UAT, and Production within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Dev, Test, UAT, and Production fits”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Dev, Test, UAT, and Production in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Dev, Test, UAT, and Production”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Managing Dev, Test, UAT, and Production. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Last backup per DB",
+        "Managing Dev, Test, UAT, and Production",
+        "Report + exceptions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Managing Dev, Test, UAT, and Production with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Managing Dev, Test, UAT, and Production means”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Managing Dev, Test, UAT, and Production fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Managing Dev, Test, UAT, and Production alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing Dev, Test, UAT, and Production in practice”?",
+      "options": [
+        "With Managing Dev, Test, UAT, and Production, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Managing Dev, Test, UAT, and Production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Managing Dev, Test, UAT, and Production”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Managing Dev, Test, UAT, and Production is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

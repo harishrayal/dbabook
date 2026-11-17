@@ -179,6 +179,312 @@ ALTER LOGIN sa DISABLE;   -- or rename it and store the password in the vault</c
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “One decision, three outcomes”?",
+      "options": [
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:",
+        "Contain a secret — it ends up in config files, CI variables, and code repositories",
+        "Target number one for attackers; should be disabled or renamed with a long random password"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “At installation (and afterwards, in server properties) you choose how the instance validates a login:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Windows authentication validates the caller's _____ — issued by Active Directory (Kerberos) or the local machine (NTLM).”",
+      "options": [
+        "login hygiene is continuous",
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:",
+        "security token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows authentication validates the caller's security token — issued by Active Directory (Kerberos) or the local machine (NTLM). SQL Server never sees a password; it sees group membership and trusts the domain to have done the hard work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL authentication stores a _____ (master database).”",
+      "options": [
+        "Modern estates — the secure default",
+        "login and password hash inside the instance",
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL authentication stores a login and password hash inside the instance (master database). It works anywhere, from any client, with no domain relationship — which is exactly why it is also the weakest link when unmanaged.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing and changing the mode”?",
+      "options": [
+        "Changing the mode on a live instance:",
+        "Managed per login; policy enforcement only if CHECK_POLICY = ON",
+        "Contain a secret — it ends up in config files, CI variables, and code repositories"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Changing the mode on a live instance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Provisioning and auditing logins”?",
+      "options": [
+        "Contain a secret — it ends up in config files, CI variables, and code repositories",
+        "Target number one for attackers; should be disabled or renamed with a long random password",
+        "Find the current mode and the risky logins:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Find the current mode and the risky logins:”"
+    },
+    {
+      "question": "In the “One decision, three outcomes” table, what is listed for “Windows authentication only” under “Typical use”?",
+      "options": [
+        "Genuinely useful — legacy apps, Linux clients, external integrations",
+        "Modern estates — the secure default",
+        "“app_login” tells you the application connected, not which human ran the query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Windows authentication only” as “Modern estates — the secure default”."
+    },
+    {
+      "question": "Complete the lesson statement: “The known limitation is the _____: a service using Windows auth cannot easily impersonate a user to reach a second server (a linked server or file share) without Kerberos delegation configured.”",
+      "options": [
+        "double hop",
+        "Users connect with their own account — no shared secrets, no password in a config file",
+        "Password complexity, expiry, lockout, and account disablement all happen in Active Directory"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The known limitation is the double hop: a service using Windows auth cannot easily impersonate a user to reach a second server (a linked server or file share) without Kerberos delegation configured. Design for it — use constrained delegation, a service account with explicit rights, or SQL authentication for the service-to-service hop.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL logins are not forbidden — they must be _____: policy checked, inventoried, rotated, and owned.”",
+      "options": [
+        "Password complexity, expiry, lockout, and account disablement all happen in Active Directory",
+        "Events tie to a named person or service account, not to “the app login”",
+        "governed"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL logins are not forbidden — they must be governed: policy checked, inventoried, rotated, and owned. Where possible prefer contained database users, which move the credential into the database itself and survive restores more gracefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing and changing the mode”?",
+      "options": [
+        "login hygiene is continuous",
+        "Never flip to Windows-only “to improve security” without inventorying every SQL login in use — that is a self-inflicted outage.",
+        "Find the current mode and the risky logins:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never flip to Windows-only “to improve security” without inventorying every SQL login in use — that is a self-inflicted outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Authentication mode is set once; _____.”",
+      "options": [
+        "login hygiene is continuous",
+        "Add a user to CORPSQL-ERP-Users and access flows through group membership",
+        "Managed per login; policy enforcement only if CHECK_POLICY = ON"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Audit quarterly: disabled-but-present logins, logins with policy off, members of sysadmin, and any password that has not changed within your rotation policy. Authentication mode is set once; login hygiene is continuous.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “One decision, three outcomes”?",
+      "options": [
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:",
+        "Contain a secret — it ends up in config files, CI variables, and code repositories",
+        "Target number one for attackers; should be disabled or renamed with a long random password"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “At installation (and afterwards, in server properties) you choose how the instance validates a login:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Windows authentication validates the caller's _____ — issued by Active Directory (Kerberos) or the local machine (NTLM).”",
+      "options": [
+        "login hygiene is continuous",
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:",
+        "security token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows authentication validates the caller's security token — issued by Active Directory (Kerberos) or the local machine (NTLM). SQL Server never sees a password; it sees group membership and trusts the domain to have done the hard work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL authentication stores a _____ (master database).”",
+      "options": [
+        "Modern estates — the secure default",
+        "login and password hash inside the instance",
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL authentication stores a login and password hash inside the instance (master database). It works anywhere, from any client, with no domain relationship — which is exactly why it is also the weakest link when unmanaged.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing and changing the mode”?",
+      "options": [
+        "Changing the mode on a live instance:",
+        "Managed per login; policy enforcement only if CHECK_POLICY = ON",
+        "Contain a secret — it ends up in config files, CI variables, and code repositories"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Changing the mode on a live instance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Provisioning and auditing logins”?",
+      "options": [
+        "Contain a secret — it ends up in config files, CI variables, and code repositories",
+        "Target number one for attackers; should be disabled or renamed with a long random password",
+        "Find the current mode and the risky logins:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Find the current mode and the risky logins:”"
+    },
+    {
+      "question": "In the “One decision, three outcomes” table, what is listed for “Windows authentication only” under “Typical use”?",
+      "options": [
+        "Genuinely useful — legacy apps, Linux clients, external integrations",
+        "Modern estates — the secure default",
+        "“app_login” tells you the application connected, not which human ran the query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Windows authentication only” as “Modern estates — the secure default”."
+    },
+    {
+      "question": "Complete the lesson statement: “The known limitation is the _____: a service using Windows auth cannot easily impersonate a user to reach a second server (a linked server or file share) without Kerberos delegation configured.”",
+      "options": [
+        "double hop",
+        "Users connect with their own account — no shared secrets, no password in a config file",
+        "Password complexity, expiry, lockout, and account disablement all happen in Active Directory"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The known limitation is the double hop: a service using Windows auth cannot easily impersonate a user to reach a second server (a linked server or file share) without Kerberos delegation configured. Design for it — use constrained delegation, a service account with explicit rights, or SQL authentication for the service-to-service hop.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL logins are not forbidden — they must be _____: policy checked, inventoried, rotated, and owned.”",
+      "options": [
+        "Password complexity, expiry, lockout, and account disablement all happen in Active Directory",
+        "Events tie to a named person or service account, not to “the app login”",
+        "governed"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL logins are not forbidden — they must be governed: policy checked, inventoried, rotated, and owned. Where possible prefer contained database users, which move the credential into the database itself and survive restores more gracefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing and changing the mode”?",
+      "options": [
+        "login hygiene is continuous",
+        "Never flip to Windows-only “to improve security” without inventorying every SQL login in use — that is a self-inflicted outage.",
+        "Find the current mode and the risky logins:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never flip to Windows-only “to improve security” without inventorying every SQL login in use — that is a self-inflicted outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Authentication mode is set once; _____.”",
+      "options": [
+        "login hygiene is continuous",
+        "Add a user to CORPSQL-ERP-Users and access flows through group membership",
+        "Managed per login; policy enforcement only if CHECK_POLICY = ON"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Audit quarterly: disabled-but-present logins, logins with policy off, members of sysadmin, and any password that has not changed within your rotation policy. Authentication mode is set once; login hygiene is continuous.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “One decision, three outcomes”?",
+      "options": [
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:",
+        "Contain a secret — it ends up in config files, CI variables, and code repositories",
+        "Target number one for attackers; should be disabled or renamed with a long random password"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “At installation (and afterwards, in server properties) you choose how the instance validates a login:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Windows authentication validates the caller's _____ — issued by Active Directory (Kerberos) or the local machine (NTLM).”",
+      "options": [
+        "login hygiene is continuous",
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:",
+        "security token"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows authentication validates the caller's security token — issued by Active Directory (Kerberos) or the local machine (NTLM). SQL Server never sees a password; it sees group membership and trusts the domain to have done the hard work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL authentication stores a _____ (master database).”",
+      "options": [
+        "Modern estates — the secure default",
+        "login and password hash inside the instance",
+        "At installation (and afterwards, in server properties) you choose how the instance validates a login:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL authentication stores a login and password hash inside the instance (master database). It works anywhere, from any client, with no domain relationship — which is exactly why it is also the weakest link when unmanaged.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing and changing the mode”?",
+      "options": [
+        "Changing the mode on a live instance:",
+        "Managed per login; policy enforcement only if CHECK_POLICY = ON",
+        "Contain a secret — it ends up in config files, CI variables, and code repositories"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Changing the mode on a live instance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Provisioning and auditing logins”?",
+      "options": [
+        "Contain a secret — it ends up in config files, CI variables, and code repositories",
+        "Target number one for attackers; should be disabled or renamed with a long random password",
+        "Find the current mode and the risky logins:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Find the current mode and the risky logins:”"
+    },
+    {
+      "question": "In the “One decision, three outcomes” table, what is listed for “Windows authentication only” under “Typical use”?",
+      "options": [
+        "Genuinely useful — legacy apps, Linux clients, external integrations",
+        "Modern estates — the secure default",
+        "“app_login” tells you the application connected, not which human ran the query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Windows authentication only” as “Modern estates — the secure default”."
+    },
+    {
+      "question": "Complete the lesson statement: “The known limitation is the _____: a service using Windows auth cannot easily impersonate a user to reach a second server (a linked server or file share) without Kerberos delegation configured.”",
+      "options": [
+        "double hop",
+        "Users connect with their own account — no shared secrets, no password in a config file",
+        "Password complexity, expiry, lockout, and account disablement all happen in Active Directory"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The known limitation is the double hop: a service using Windows auth cannot easily impersonate a user to reach a second server (a linked server or file share) without Kerberos delegation configured. Design for it — use constrained delegation, a service account with explicit rights, or SQL authentication for the service-to-service hop.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL logins are not forbidden — they must be _____: policy checked, inventoried, rotated, and owned.”",
+      "options": [
+        "Password complexity, expiry, lockout, and account disablement all happen in Active Directory",
+        "Events tie to a named person or service account, not to “the app login”",
+        "governed"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL logins are not forbidden — they must be governed: policy checked, inventoried, rotated, and owned. Where possible prefer contained database users, which move the credential into the database itself and survive restores more gracefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing and changing the mode”?",
+      "options": [
+        "login hygiene is continuous",
+        "Never flip to Windows-only “to improve security” without inventorying every SQL login in use — that is a self-inflicted outage.",
+        "Find the current mode and the risky logins:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never flip to Windows-only “to improve security” without inventorying every SQL login in use — that is a self-inflicted outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Authentication mode is set once; _____.”",
+      "options": [
+        "login hygiene is continuous",
+        "Add a user to CORPSQL-ERP-Users and access flows through group membership",
+        "Managed per login; policy enforcement only if CHECK_POLICY = ON"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Audit quarterly: disabled-but-present logins, logins with policy off, members of sysadmin, and any password that has not changed within your rotation policy. Authentication mode is set once; login hygiene is continuous.”"
+    }
+  ],
   takeaways: [
     "Windows authentication uses domain tokens — SSO, central policy, named auditing; watch the double-hop limit",
     "SQL authentication stores logins in master — convenient for legacy clients, risky when ungoverned",

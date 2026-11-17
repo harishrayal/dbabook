@@ -167,6 +167,312 @@ It uses row versioning so readers do not take shared locks that block writers an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "What Is Blocking?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is Blocking? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is Blocking? fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is Blocking? in practice”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "The diagram below places What Is Blocking?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is Blocking?”?",
+      "options": [
+        "The diagram below places What Is Blocking?",
+        "Isolation levels define how transactions are protected from one another.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is Blocking?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is Blocking? means”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Incompatible with all",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is Blocking? fits”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "The diagram below places What Is Blocking?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is Blocking? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is Blocking? in practice”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is Blocking?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is Blocking?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Incompatible with all",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Compatible with S",
+        "Theory becomes useful when you can apply it.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "What Is Blocking?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is Blocking? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is Blocking? fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is Blocking? in practice”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "The diagram below places What Is Blocking?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is Blocking?”?",
+      "options": [
+        "The diagram below places What Is Blocking?",
+        "Isolation levels define how transactions are protected from one another.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is Blocking?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is Blocking? means”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Incompatible with all",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is Blocking? fits”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "The diagram below places What Is Blocking?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is Blocking? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is Blocking? in practice”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is Blocking?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is Blocking?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Incompatible with all",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Compatible with S",
+        "Theory becomes useful when you can apply it.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "What Is Blocking?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is Blocking? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is Blocking? fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is Blocking? in practice”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "The diagram below places What Is Blocking?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is Blocking?”?",
+      "options": [
+        "The diagram below places What Is Blocking?",
+        "Isolation levels define how transactions are protected from one another.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is Blocking?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is Blocking? means”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Incompatible with all",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is Blocking? fits”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "The diagram below places What Is Blocking?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is Blocking? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is Blocking? in practice”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is Blocking?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is Blocking?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Incompatible with all",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Compatible with S",
+        "Theory becomes useful when you can apply it.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    }
+  ],
   takeaways: [
     "What Is Blocking? is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

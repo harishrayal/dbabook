@@ -182,6 +182,312 @@ Because it can delete damaged rows or pages to make the database consistent — 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Handling a Suspect Database in Production",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Handling a Suspect Database in Production within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Handling a Suspect Database in Production fits”?",
+      "options": [
+        "With Handling a Suspect Database in Production, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Handling a Suspect Database in Production in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Page checksums are the primary detection mechanism.",
+        "Handling a Suspect Database in Production sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Handling a Suspect Database in Production”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Handling a Suspect Database in Production sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Handling a Suspect Database in Production. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "With Handling a Suspect Database in Production, prefer measured, reversible changes.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Handling a Suspect Database in Production sits inside a larger system.",
+        "Handling a Suspect Database in Production",
+        "Absolute last resort"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Handling a Suspect Database in Production with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Handling a Suspect Database in Production means”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Use the following as a starting point when investigating Handling a Suspect Database in Production.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Handling a Suspect Database in Production fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Handling a Suspect Database in Production.",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "The diagram below places Handling a Suspect Database in Production alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Handling a Suspect Database in Production alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Handling a Suspect Database in Production in practice”?",
+      "options": [
+        "Handling a Suspect Database in Production",
+        "The following comparison captures the distinctions that matter most when working with Handling a Suspect Database in Production:",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Handling a Suspect Database in Production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Handling a Suspect Database in Production”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Handling a Suspect Database in Production",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Handling a Suspect Database in Production",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Handling a Suspect Database in Production within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Handling a Suspect Database in Production fits”?",
+      "options": [
+        "With Handling a Suspect Database in Production, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Handling a Suspect Database in Production in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Page checksums are the primary detection mechanism.",
+        "Handling a Suspect Database in Production sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Handling a Suspect Database in Production”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Handling a Suspect Database in Production sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Handling a Suspect Database in Production. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "With Handling a Suspect Database in Production, prefer measured, reversible changes.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Handling a Suspect Database in Production sits inside a larger system.",
+        "Handling a Suspect Database in Production",
+        "Absolute last resort"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Handling a Suspect Database in Production with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Handling a Suspect Database in Production means”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Use the following as a starting point when investigating Handling a Suspect Database in Production.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Handling a Suspect Database in Production fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Handling a Suspect Database in Production.",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "The diagram below places Handling a Suspect Database in Production alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Handling a Suspect Database in Production alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Handling a Suspect Database in Production in practice”?",
+      "options": [
+        "Handling a Suspect Database in Production",
+        "The following comparison captures the distinctions that matter most when working with Handling a Suspect Database in Production:",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Handling a Suspect Database in Production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Handling a Suspect Database in Production”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Handling a Suspect Database in Production",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Handling a Suspect Database in Production",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Handling a Suspect Database in Production within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Handling a Suspect Database in Production fits”?",
+      "options": [
+        "With Handling a Suspect Database in Production, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Handling a Suspect Database in Production in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Page checksums are the primary detection mechanism.",
+        "Handling a Suspect Database in Production sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Handling a Suspect Database in Production”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Handling a Suspect Database in Production sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Handling a Suspect Database in Production. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "With Handling a Suspect Database in Production, prefer measured, reversible changes.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Handling a Suspect Database in Production sits inside a larger system.",
+        "Handling a Suspect Database in Production",
+        "Absolute last resort"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Handling a Suspect Database in Production with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Handling a Suspect Database in Production means”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Use the following as a starting point when investigating Handling a Suspect Database in Production.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Handling a Suspect Database in Production fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Handling a Suspect Database in Production.",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "The diagram below places Handling a Suspect Database in Production alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Handling a Suspect Database in Production alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Handling a Suspect Database in Production in practice”?",
+      "options": [
+        "Handling a Suspect Database in Production",
+        "The following comparison captures the distinctions that matter most when working with Handling a Suspect Database in Production:",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Handling a Suspect Database in Production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Handling a Suspect Database in Production”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Handling a Suspect Database in Production",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Handling a Suspect Database in Production is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -181,6 +181,312 @@ By impact and urgency against defined levels: total outage or data loss is Sev1,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Login Failures",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Login Failures within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Failures fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Login Failures sits inside a larger system.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Failures in practice”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The following comparison captures the distinctions that matter most when working with Login Failures:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Failures”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Login Failures.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Login Failures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "With Login Failures, prefer measured, reversible changes.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Login Failures",
+        "Use the following as a starting point when investigating Login Failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Login Failures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Login Failures means”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places Login Failures alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Failures fits”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Prioritisation weighs impact and urgency.",
+        "The diagram below places Login Failures alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Login Failures alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Failures in practice”?",
+      "options": [
+        "Login Failures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Login Failures:",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Login Failures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Failures”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Login Failures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Login Failures",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Login Failures within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Failures fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Login Failures sits inside a larger system.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Failures in practice”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The following comparison captures the distinctions that matter most when working with Login Failures:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Failures”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Login Failures.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Login Failures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "With Login Failures, prefer measured, reversible changes.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Login Failures",
+        "Use the following as a starting point when investigating Login Failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Login Failures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Login Failures means”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places Login Failures alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Failures fits”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Prioritisation weighs impact and urgency.",
+        "The diagram below places Login Failures alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Login Failures alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Failures in practice”?",
+      "options": [
+        "Login Failures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Login Failures:",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Login Failures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Failures”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Login Failures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Login Failures",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Login Failures within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Failures fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Login Failures sits inside a larger system.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Failures in practice”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The following comparison captures the distinctions that matter most when working with Login Failures:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Failures”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Login Failures.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Login Failures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "With Login Failures, prefer measured, reversible changes.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Login Failures",
+        "Use the following as a starting point when investigating Login Failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Login Failures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Login Failures means”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places Login Failures alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Login Failures fits”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Prioritisation weighs impact and urgency.",
+        "The diagram below places Login Failures alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Login Failures alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Login Failures in practice”?",
+      "options": [
+        "Login Failures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Login Failures:",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Login Failures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Login Failures”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Login Failures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Login Failures is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

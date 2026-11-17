@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Covering Indexes",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Covering Indexes within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Covering Indexes fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Covering Indexes in practice”?",
+      "options": [
+        "With Covering Indexes, prefer measured, reversible changes.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Covering Indexes”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Covering Indexes. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Covering Indexes",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Covering Indexes with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Covering Indexes means”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Covering Indexes fits”?",
+      "options": [
+        "With Covering Indexes, prefer measured, reversible changes.",
+        "Actual plan",
+        "The diagram below places Covering Indexes alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Covering Indexes alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Covering Indexes in practice”?",
+      "options": [
+        "Covering Indexes sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Covering Indexes:",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Covering Indexes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Covering Indexes”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Covering Indexes sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Covering Indexes",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Covering Indexes within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Covering Indexes fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Covering Indexes in practice”?",
+      "options": [
+        "With Covering Indexes, prefer measured, reversible changes.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Covering Indexes”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Covering Indexes. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Covering Indexes",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Covering Indexes with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Covering Indexes means”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Covering Indexes fits”?",
+      "options": [
+        "With Covering Indexes, prefer measured, reversible changes.",
+        "Actual plan",
+        "The diagram below places Covering Indexes alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Covering Indexes alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Covering Indexes in practice”?",
+      "options": [
+        "Covering Indexes sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Covering Indexes:",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Covering Indexes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Covering Indexes”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Covering Indexes sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Covering Indexes",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Covering Indexes within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Covering Indexes fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Covering Indexes in practice”?",
+      "options": [
+        "With Covering Indexes, prefer measured, reversible changes.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Covering Indexes”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Covering Indexes. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Covering Indexes",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Covering Indexes with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Covering Indexes means”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Covering Indexes fits”?",
+      "options": [
+        "With Covering Indexes, prefer measured, reversible changes.",
+        "Actual plan",
+        "The diagram below places Covering Indexes alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Covering Indexes alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Covering Indexes in practice”?",
+      "options": [
+        "Covering Indexes sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Covering Indexes:",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Covering Indexes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Covering Indexes”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Covering Indexes sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Covering Indexes is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

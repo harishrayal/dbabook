@@ -188,6 +188,312 @@ Uptime, database states, last successful backups, failed jobs, volume and log fr
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Daily Health-Check Reports",
+        "Use the following as a starting point when investigating Daily Health-Check Reports."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Daily Health-Check Reports within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Daily Health-Check Reports fits”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Daily Health-Check Reports",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily Health-Check Reports in practice”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Daily Health-Check Reports”?",
+      "options": [
+        "Daily Health-Check Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Daily Health-Check Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Daily Health-Check Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Daily Health-Check Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Daily Health-Check Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Daily Health-Check Reports means”?",
+      "options": [
+        "Finds head blockers",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Finds the bottleneck"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Daily Health-Check Reports fits”?",
+      "options": [
+        "The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting.",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Finds the bottleneck"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily Health-Check Reports in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Daily Health-Check Reports:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Daily Health-Check Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Daily Health-Check Reports”?",
+      "options": [
+        "Finds the bottleneck",
+        "The first example establishes the relevant state.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Daily Health-Check Reports",
+        "Use the following as a starting point when investigating Daily Health-Check Reports."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Daily Health-Check Reports within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Daily Health-Check Reports fits”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Daily Health-Check Reports",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily Health-Check Reports in practice”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Daily Health-Check Reports”?",
+      "options": [
+        "Daily Health-Check Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Daily Health-Check Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Daily Health-Check Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Daily Health-Check Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Daily Health-Check Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Daily Health-Check Reports means”?",
+      "options": [
+        "Finds head blockers",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Finds the bottleneck"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Daily Health-Check Reports fits”?",
+      "options": [
+        "The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting.",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Finds the bottleneck"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily Health-Check Reports in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Daily Health-Check Reports:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Daily Health-Check Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Daily Health-Check Reports”?",
+      "options": [
+        "Finds the bottleneck",
+        "The first example establishes the relevant state.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Daily Health-Check Reports",
+        "Use the following as a starting point when investigating Daily Health-Check Reports."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Daily Health-Check Reports within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Daily Health-Check Reports fits”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Daily Health-Check Reports",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily Health-Check Reports in practice”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Daily Health-Check Reports”?",
+      "options": [
+        "Daily Health-Check Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Daily Health-Check Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Daily Health-Check Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Daily Health-Check Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Daily Health-Check Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Daily Health-Check Reports means”?",
+      "options": [
+        "Finds head blockers",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Finds the bottleneck"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Daily Health-Check Reports fits”?",
+      "options": [
+        "The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting.",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Finds the bottleneck"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Daily Health-Check Reports alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily Health-Check Reports in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Daily Health-Check Reports:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Daily Health-Check Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Daily Health-Check Reports”?",
+      "options": [
+        "Finds the bottleneck",
+        "The first example establishes the relevant state.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Daily Health-Check Reports is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

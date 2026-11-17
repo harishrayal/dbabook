@@ -165,6 +165,312 @@ Compare its plan and runtime stats in Query Store, check for plan changes and st
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query stats",
+        "Page life expectancy",
+        "Parameter Sniffing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Parameter Sniffing within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Parameter Sniffing fits”?",
+      "options": [
+        "Parameter Sniffing",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameter Sniffing in practice”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Parameter Sniffing",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Parameter Sniffing”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Parameter Sniffing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Parameter Sniffing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Parameter Sniffing means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Parameter Sniffing fits”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameter Sniffing in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Parameter Sniffing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Parameter Sniffing”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query stats",
+        "Page life expectancy",
+        "Parameter Sniffing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Parameter Sniffing within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Parameter Sniffing fits”?",
+      "options": [
+        "Parameter Sniffing",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameter Sniffing in practice”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Parameter Sniffing",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Parameter Sniffing”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Parameter Sniffing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Parameter Sniffing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Parameter Sniffing means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Parameter Sniffing fits”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameter Sniffing in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Parameter Sniffing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Parameter Sniffing”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query stats",
+        "Page life expectancy",
+        "Parameter Sniffing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Parameter Sniffing within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Parameter Sniffing fits”?",
+      "options": [
+        "Parameter Sniffing",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameter Sniffing in practice”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Parameter Sniffing",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Parameter Sniffing”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Parameter Sniffing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Parameter Sniffing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Parameter Sniffing means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Parameter Sniffing fits”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Parameter Sniffing in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "The diagram below places Parameter Sniffing alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Parameter Sniffing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Parameter Sniffing”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Parameter Sniffing:",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    }
+  ],
   takeaways: [
     "Parameter Sniffing is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

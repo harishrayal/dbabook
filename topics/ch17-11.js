@@ -181,6 +181,312 @@ It periodically backs up, copies and restores logs to a secondary, giving a warm
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Replication Fundamentals",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Replication Fundamentals within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Fundamentals fits”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Fundamentals in practice”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Fundamentals”?",
+      "options": [
+        "With Replication Fundamentals, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Replication Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Replication Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Replication Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Replication Fundamentals means”?",
+      "options": [
+        "Disconnected sites",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Fundamentals fits”?",
+      "options": [
+        "The diagram below places Replication Fundamentals alongside the core concepts of disaster recovery technologies.",
+        "Small / static data",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Replication Fundamentals alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Fundamentals in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Replication Fundamentals.",
+        "The following comparison captures the distinctions that matter most when working with Replication Fundamentals:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Replication Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Fundamentals”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Replication Fundamentals",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Replication Fundamentals within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Fundamentals fits”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Fundamentals in practice”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Fundamentals”?",
+      "options": [
+        "With Replication Fundamentals, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Replication Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Replication Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Replication Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Replication Fundamentals means”?",
+      "options": [
+        "Disconnected sites",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Fundamentals fits”?",
+      "options": [
+        "The diagram below places Replication Fundamentals alongside the core concepts of disaster recovery technologies.",
+        "Small / static data",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Replication Fundamentals alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Fundamentals in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Replication Fundamentals.",
+        "The following comparison captures the distinctions that matter most when working with Replication Fundamentals:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Replication Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Fundamentals”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Replication Fundamentals",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Replication Fundamentals within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Fundamentals fits”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Fundamentals in practice”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Fundamentals”?",
+      "options": [
+        "With Replication Fundamentals, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Replication Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Replication Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Replication Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Replication Fundamentals means”?",
+      "options": [
+        "Disconnected sites",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Replication Fundamentals fits”?",
+      "options": [
+        "The diagram below places Replication Fundamentals alongside the core concepts of disaster recovery technologies.",
+        "Small / static data",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Replication Fundamentals alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Replication Fundamentals in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Replication Fundamentals.",
+        "The following comparison captures the distinctions that matter most when working with Replication Fundamentals:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Replication Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Replication Fundamentals”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Replication Fundamentals is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

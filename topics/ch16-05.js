@@ -194,6 +194,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):",
+        "SQL Server Failover Cluster Instance (FCI)",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Failover Cluster Instance (FCI) within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Failover Cluster Instance (FCI) fits”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "High availability keeps a database service reachable through failures.",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Failover Cluster Instance (FCI) in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Failover Cluster Instance (FCI)”?",
+      "options": [
+        "Automatic, node-level",
+        "Theory becomes useful when you can apply it.",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Failover Cluster Instance (FCI). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic, node-level",
+        "Automatic with sync commit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Manual, planned",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Failover Cluster Instance (FCI)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Failover Cluster Instance (FCI) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Failover Cluster Instance (FCI) means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Failover Cluster Instance (FCI) fits”?",
+      "options": [
+        "The diagram below places SQL Server Failover Cluster Instance (FCI) alongside the core concepts of high availability.",
+        "Next, verify the result and capture a baseline.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Failover Cluster Instance (FCI) alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Failover Cluster Instance (FCI) in practice”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Lower",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Failover Cluster Instance (FCI)”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "The first example establishes the relevant state.",
+        "With SQL Server Failover Cluster Instance (FCI), prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):",
+        "SQL Server Failover Cluster Instance (FCI)",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Failover Cluster Instance (FCI) within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Failover Cluster Instance (FCI) fits”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "High availability keeps a database service reachable through failures.",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Failover Cluster Instance (FCI) in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Failover Cluster Instance (FCI)”?",
+      "options": [
+        "Automatic, node-level",
+        "Theory becomes useful when you can apply it.",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Failover Cluster Instance (FCI). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic, node-level",
+        "Automatic with sync commit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Manual, planned",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Failover Cluster Instance (FCI)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Failover Cluster Instance (FCI) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Failover Cluster Instance (FCI) means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Failover Cluster Instance (FCI) fits”?",
+      "options": [
+        "The diagram below places SQL Server Failover Cluster Instance (FCI) alongside the core concepts of high availability.",
+        "Next, verify the result and capture a baseline.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Failover Cluster Instance (FCI) alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Failover Cluster Instance (FCI) in practice”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Lower",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Failover Cluster Instance (FCI)”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "The first example establishes the relevant state.",
+        "With SQL Server Failover Cluster Instance (FCI), prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):",
+        "SQL Server Failover Cluster Instance (FCI)",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Failover Cluster Instance (FCI) within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Failover Cluster Instance (FCI) fits”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "High availability keeps a database service reachable through failures.",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Failover Cluster Instance (FCI) in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Failover Cluster Instance (FCI)”?",
+      "options": [
+        "Automatic, node-level",
+        "Theory becomes useful when you can apply it.",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Failover Cluster Instance (FCI). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic, node-level",
+        "Automatic with sync commit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Manual, planned",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Failover Cluster Instance (FCI)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Failover Cluster Instance (FCI) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Failover Cluster Instance (FCI) means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Failover Cluster Instance (FCI) fits”?",
+      "options": [
+        "The diagram below places SQL Server Failover Cluster Instance (FCI) alongside the core concepts of high availability.",
+        "Next, verify the result and capture a baseline.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Failover Cluster Instance (FCI) alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Failover Cluster Instance (FCI) in practice”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "Lower",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Failover Cluster Instance (FCI):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Failover Cluster Instance (FCI)”?",
+      "options": [
+        "Higher (wait for secondary)",
+        "The first example establishes the relevant state.",
+        "With SQL Server Failover Cluster Instance (FCI), prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Failover Cluster Instance (FCI) is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backup Versus Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Versus Replication within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Versus Replication fits”?",
+      "options": [
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Versus Replication in practice”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Versus Replication”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Versus Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Versus Replication",
+        "The following comparison captures the distinctions that matter most when working with Backup Versus Replication:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Versus Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Versus Replication means”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Versus Replication fits”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy.",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Versus Replication in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Versus Replication:",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Versus Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Versus Replication”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backup Versus Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Versus Replication within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Versus Replication fits”?",
+      "options": [
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Versus Replication in practice”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Versus Replication”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Versus Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Versus Replication",
+        "The following comparison captures the distinctions that matter most when working with Backup Versus Replication:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Versus Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Versus Replication means”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Versus Replication fits”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy.",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Versus Replication in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Versus Replication:",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Versus Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Versus Replication”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backup Versus Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Versus Replication within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Versus Replication fits”?",
+      "options": [
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Versus Replication in practice”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Backup Versus Replication is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Versus Replication”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Versus Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Versus Replication",
+        "The following comparison captures the distinctions that matter most when working with Backup Versus Replication:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Versus Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Versus Replication means”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it.",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Versus Replication fits”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy.",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Versus Replication alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Versus Replication in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Versus Replication:",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Versus Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Versus Replication”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Versus Replication is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

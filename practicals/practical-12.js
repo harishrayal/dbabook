@@ -182,6 +182,312 @@ Because systems must be supportable by someone other than their author, especial
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This is the integrating project for the whole roadmap.",
+        "Architecture document",
+        "Configured environment"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This is the integrating project for the whole roadmap. You will combine storage, security, backup, monitoring, performance and automation into one coherent environment that demonstrates end-to-end DBA competence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Architecture document",
+        "Configured environment",
+        "The project flows through the phases below."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The project flows through the phases below. Treat it like a real engagement: design, implement, test, document, then present evidence. A solution without evidence of testing is only a claim.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Recent full + log backups",
+        "Implement the backup strategy derived from your RPO/RTO: full, differential and log backups, compression and checksums, retention, and off-site copies.",
+        "RPO/RTO stated"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Implement the backup strategy derived from your RPO/RTO: full, differential and log backups, compression and checksums, retention, and off-site copies. Then prove it with a documented point-in-time restore to a new database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Portfolio",
+        "Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Evidence pack",
+        "Portfolio",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "The project flows through the phases below.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels.",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels. Every later decision should trace back to these requirements.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Start with the database itself: sensible files and filegroups, a documented schema, constraints, indexes and a least-privilege security model with roles and mapped users.",
+        "This is the integrating project for the whole roadmap.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Start with the database itself: sensible files and filegroups, a documented schema, constraints, indexes and a least-privilege security model with roles and mapped users. Record the design in a short architecture document.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels.",
+        "Environment check",
+        "Add monitoring: a daily health-check script, alerts for log and disk usage, failed-job notifications and an operator."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Add monitoring: a daily health-check script, alerts for log and disk usage, failed-job notifications and an operator. Schedule maintenance jobs for integrity checks, statistics and index maintenance with sensible thresholds.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "The project flows through the phases below.",
+        "Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR…",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR tests. This portfolio is what turns lab work into demonstrable experience.”"
+    },
+    {
+      "question": "In the “Pitfalls and safe practice” table, what is listed for “Design” under “Output”?",
+      "options": [
+        "Architecture document",
+        "This is the integrating project for the whole roadmap.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Design” as “Architecture document”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This is the integrating project for the whole roadmap.",
+        "Architecture document",
+        "Configured environment"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This is the integrating project for the whole roadmap. You will combine storage, security, backup, monitoring, performance and automation into one coherent environment that demonstrates end-to-end DBA competence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Architecture document",
+        "Configured environment",
+        "The project flows through the phases below."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The project flows through the phases below. Treat it like a real engagement: design, implement, test, document, then present evidence. A solution without evidence of testing is only a claim.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Recent full + log backups",
+        "Implement the backup strategy derived from your RPO/RTO: full, differential and log backups, compression and checksums, retention, and off-site copies.",
+        "RPO/RTO stated"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Implement the backup strategy derived from your RPO/RTO: full, differential and log backups, compression and checksums, retention, and off-site copies. Then prove it with a documented point-in-time restore to a new database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Portfolio",
+        "Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Evidence pack",
+        "Portfolio",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "The project flows through the phases below.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels.",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels. Every later decision should trace back to these requirements.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Start with the database itself: sensible files and filegroups, a documented schema, constraints, indexes and a least-privilege security model with roles and mapped users.",
+        "This is the integrating project for the whole roadmap.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Start with the database itself: sensible files and filegroups, a documented schema, constraints, indexes and a least-privilege security model with roles and mapped users. Record the design in a short architecture document.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels.",
+        "Environment check",
+        "Add monitoring: a daily health-check script, alerts for log and disk usage, failed-job notifications and an operator."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Add monitoring: a daily health-check script, alerts for log and disk usage, failed-job notifications and an operator. Schedule maintenance jobs for integrity checks, statistics and index maintenance with sensible thresholds.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "The project flows through the phases below.",
+        "Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR…",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR tests. This portfolio is what turns lab work into demonstrable experience.”"
+    },
+    {
+      "question": "In the “Pitfalls and safe practice” table, what is listed for “Design” under “Output”?",
+      "options": [
+        "Architecture document",
+        "This is the integrating project for the whole roadmap.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Design” as “Architecture document”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This is the integrating project for the whole roadmap.",
+        "Architecture document",
+        "Configured environment"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This is the integrating project for the whole roadmap. You will combine storage, security, backup, monitoring, performance and automation into one coherent environment that demonstrates end-to-end DBA competence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Architecture document",
+        "Configured environment",
+        "The project flows through the phases below."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The project flows through the phases below. Treat it like a real engagement: design, implement, test, document, then present evidence. A solution without evidence of testing is only a claim.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Recent full + log backups",
+        "Implement the backup strategy derived from your RPO/RTO: full, differential and log backups, compression and checksums, retention, and off-site copies.",
+        "RPO/RTO stated"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Implement the backup strategy derived from your RPO/RTO: full, differential and log backups, compression and checksums, retention, and off-site copies. Then prove it with a documented point-in-time restore to a new database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Portfolio",
+        "Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Evidence pack",
+        "Portfolio",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "The project flows through the phases below.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels.",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels. Every later decision should trace back to these requirements.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Start with the database itself: sensible files and filegroups, a documented schema, constraints, indexes and a least-privilege security model with roles and mapped users.",
+        "This is the integrating project for the whole roadmap.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Start with the database itself: sensible files and filegroups, a documented schema, constraints, indexes and a least-privilege security model with roles and mapped users. Record the design in a short architecture document.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels.",
+        "Environment check",
+        "Add monitoring: a daily health-check script, alerts for log and disk usage, failed-job notifications and an operator."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Add monitoring: a daily health-check script, alerts for log and disk usage, failed-job notifications and an operator. Schedule maintenance jobs for integrity checks, statistics and index maintenance with sensible thresholds.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "The project flows through the phases below.",
+        "Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR…",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Finally, document everything: an environment inventory, a restore runbook, an incident runbook, a DR plan with failover and failback steps, and the results of your restore and DR tests. This portfolio is what turns lab work into demonstrable experience.”"
+    },
+    {
+      "question": "In the “Pitfalls and safe practice” table, what is listed for “Design” under “Output”?",
+      "options": [
+        "Architecture document",
+        "This is the integrating project for the whole roadmap.",
+        "Define scope first: one or two databases on a local instance, a named business owner, stated RPO and RTO, and a set of service levels."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Design” as “Architecture document”."
+    }
+  ],
   takeaways: [
     "Start with requirements: RPO, RTO and ownership drive every design decision",
     "Integrate the whole roadmap: storage, security, backup, monitoring, performance, automation",

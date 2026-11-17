@@ -162,6 +162,312 @@ Use ALTER DATABASE ... MODIFY FILE to change the catalogued path, take the datab
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "The diagram below places Database Filegroups alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Database Filegroups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Filegroups fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Filegroups in practice”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Filegroups”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "System objects, boot information",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Filegroups means”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Filegroups fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Database Filegroups alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Filegroups in practice”?",
+      "options": [
+        "With Database Filegroups, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Filegroups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "The diagram below places Database Filegroups alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Database Filegroups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Filegroups fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Filegroups in practice”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Filegroups”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "System objects, boot information",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Filegroups means”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Filegroups fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Database Filegroups alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Filegroups in practice”?",
+      "options": [
+        "With Database Filegroups, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Filegroups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "The diagram below places Database Filegroups alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Database Filegroups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Filegroups fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Filegroups in practice”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Filegroups”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "System objects, boot information",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Filegroups means”?",
+      "options": [
+        "Data file growth and log file growth behave differently.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Filegroups fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Database Filegroups alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Filegroups in practice”?",
+      "options": [
+        "With Database Filegroups, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Database Filegroups:",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Filegroups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    }
+  ],
   takeaways: [
     "Database Filegroups is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

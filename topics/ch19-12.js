@@ -181,6 +181,312 @@ By impact and urgency against defined levels: total outage or data loss is Sev1,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Slow Database Performance",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Slow Database Performance within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Database Performance fits”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Database Performance in practice”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Communication is part of the job.",
+        "Log backup / grow"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Database Performance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Slow Database Performance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Slow Database Performance sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Failover / restart",
+        "Slow Database Performance",
+        "With Slow Database Performance, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Slow Database Performance with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Slow Database Performance means”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Slow Database Performance",
+        "Slow Database Performance sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Database Performance fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Slow Database Performance sits inside a larger system.",
+        "The diagram below places Slow Database Performance alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Slow Database Performance alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Database Performance in practice”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "The following comparison captures the distinctions that matter most when working with Slow Database Performance:",
+        "Use the following as a starting point when investigating Slow Database Performance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Slow Database Performance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Database Performance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Slow Database Performance.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Slow Database Performance",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Slow Database Performance within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Database Performance fits”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Database Performance in practice”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Communication is part of the job.",
+        "Log backup / grow"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Database Performance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Slow Database Performance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Slow Database Performance sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Failover / restart",
+        "Slow Database Performance",
+        "With Slow Database Performance, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Slow Database Performance with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Slow Database Performance means”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Slow Database Performance",
+        "Slow Database Performance sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Database Performance fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Slow Database Performance sits inside a larger system.",
+        "The diagram below places Slow Database Performance alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Slow Database Performance alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Database Performance in practice”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "The following comparison captures the distinctions that matter most when working with Slow Database Performance:",
+        "Use the following as a starting point when investigating Slow Database Performance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Slow Database Performance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Database Performance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Slow Database Performance.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Slow Database Performance",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Slow Database Performance within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Database Performance fits”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Database Performance in practice”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Communication is part of the job.",
+        "Log backup / grow"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Database Performance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Failover / restart",
+        "Log backup / grow"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Slow Database Performance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Slow Database Performance sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Failover / restart",
+        "Slow Database Performance",
+        "With Slow Database Performance, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Slow Database Performance with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Slow Database Performance means”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Slow Database Performance",
+        "Slow Database Performance sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Slow Database Performance fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Slow Database Performance sits inside a larger system.",
+        "The diagram below places Slow Database Performance alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Slow Database Performance alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Slow Database Performance in practice”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "The following comparison captures the distinctions that matter most when working with Slow Database Performance:",
+        "Use the following as a starting point when investigating Slow Database Performance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Slow Database Performance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Slow Database Performance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Slow Database Performance.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Slow Database Performance is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

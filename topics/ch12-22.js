@@ -165,6 +165,312 @@ Compare its plan and runtime stats in Query Store, check for plan changes and st
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "CPU-Intensive Queries"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine CPU-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU-Intensive Queries fits”?",
+      "options": [
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Missing index suggestions are hints, not commands.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU-Intensive Queries in practice”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU-Intensive Queries”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to CPU-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What CPU-Intensive Queries means”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU-Intensive Queries fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU-Intensive Queries in practice”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The following comparison captures the distinctions that matter most when working with CPU-Intensive Queries:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with CPU-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU-Intensive Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "CPU-Intensive Queries"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine CPU-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU-Intensive Queries fits”?",
+      "options": [
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Missing index suggestions are hints, not commands.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU-Intensive Queries in practice”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU-Intensive Queries”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to CPU-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What CPU-Intensive Queries means”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU-Intensive Queries fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU-Intensive Queries in practice”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The following comparison captures the distinctions that matter most when working with CPU-Intensive Queries:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with CPU-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU-Intensive Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "CPU-Intensive Queries"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine CPU-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU-Intensive Queries fits”?",
+      "options": [
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Missing index suggestions are hints, not commands.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU-Intensive Queries in practice”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "CPU-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU-Intensive Queries”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to CPU-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What CPU-Intensive Queries means”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where CPU-Intensive Queries fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places CPU-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CPU-Intensive Queries in practice”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The following comparison captures the distinctions that matter most when working with CPU-Intensive Queries:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with CPU-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with CPU-Intensive Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    }
+  ],
   takeaways: [
     "CPU-Intensive Queries is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

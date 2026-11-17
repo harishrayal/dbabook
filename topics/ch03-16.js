@@ -181,6 +181,312 @@ Windows Event Viewer System and Application logs, SQL Server error log, and the 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "With SQL Server Service Accounts, prefer measured, reversible changes.",
+        "TCP",
+        "SQL Server Service Accounts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Service Accounts within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Accounts fits”?",
+      "options": [
+        "SQL Server Service Accounts sits inside a larger system.",
+        "Windows services are long-running background processes.",
+        "UDP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Accounts in practice”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Accounts”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Service Accounts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "With SQL Server Service Accounts, prefer measured, reversible changes.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server Service Accounts",
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates SQL Server Service Accounts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Service Accounts means”?",
+      "options": [
+        "Windows services are long-running background processes.",
+        "The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Accounts fits”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Accounts in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:",
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "SQL Server Service Accounts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Accounts”?",
+      "options": [
+        "SQL Server Service Accounts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Windows services are long-running background processes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "With SQL Server Service Accounts, prefer measured, reversible changes.",
+        "TCP",
+        "SQL Server Service Accounts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Service Accounts within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Accounts fits”?",
+      "options": [
+        "SQL Server Service Accounts sits inside a larger system.",
+        "Windows services are long-running background processes.",
+        "UDP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Accounts in practice”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Accounts”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Service Accounts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "With SQL Server Service Accounts, prefer measured, reversible changes.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server Service Accounts",
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates SQL Server Service Accounts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Service Accounts means”?",
+      "options": [
+        "Windows services are long-running background processes.",
+        "The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Accounts fits”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Accounts in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:",
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "SQL Server Service Accounts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Accounts”?",
+      "options": [
+        "SQL Server Service Accounts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Windows services are long-running background processes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "With SQL Server Service Accounts, prefer measured, reversible changes.",
+        "TCP",
+        "SQL Server Service Accounts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Service Accounts within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Accounts fits”?",
+      "options": [
+        "SQL Server Service Accounts sits inside a larger system.",
+        "Windows services are long-running background processes.",
+        "UDP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Accounts in practice”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Accounts”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Service Accounts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "With SQL Server Service Accounts, prefer measured, reversible changes.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server Service Accounts",
+        "Use the following as a starting point when investigating SQL Server Service Accounts.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates SQL Server Service Accounts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Service Accounts means”?",
+      "options": [
+        "Windows services are long-running background processes.",
+        "The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Service Accounts fits”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places SQL Server Service Accounts alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Service Accounts in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:",
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "SQL Server Service Accounts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Service Accounts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Service Accounts”?",
+      "options": [
+        "SQL Server Service Accounts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Windows services are long-running background processes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Service Accounts is a fundamental concept in Windows Server and infrastructure for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

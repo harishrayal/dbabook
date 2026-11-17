@@ -164,6 +164,312 @@ Uptime, backup success and restore-test results, RPO/RTO adherence, patch levels
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "With DBA Documentation, prefer measured, reversible changes.",
+        "DBA Documentation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DBA Documentation within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBA Documentation fits”?",
+      "options": [
+        "Maintenance",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Scheduled"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBA Documentation in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBA Documentation”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBA Documentation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBA Documentation",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBA Documentation means”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBA Documentation fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBA Documentation in practice”?",
+      "options": [
+        "DBA Documentation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with DBA Documentation:",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBA Documentation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBA Documentation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "DBA Documentation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "With DBA Documentation, prefer measured, reversible changes.",
+        "DBA Documentation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DBA Documentation within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBA Documentation fits”?",
+      "options": [
+        "Maintenance",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Scheduled"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBA Documentation in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBA Documentation”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBA Documentation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBA Documentation",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBA Documentation means”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBA Documentation fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBA Documentation in practice”?",
+      "options": [
+        "DBA Documentation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with DBA Documentation:",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBA Documentation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBA Documentation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "DBA Documentation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "With DBA Documentation, prefer measured, reversible changes.",
+        "DBA Documentation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DBA Documentation within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBA Documentation fits”?",
+      "options": [
+        "Maintenance",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Scheduled"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBA Documentation in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBA Documentation”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBA Documentation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBA Documentation",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBA Documentation means”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBA Documentation fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBA Documentation in practice”?",
+      "options": [
+        "DBA Documentation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with DBA Documentation:",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBA Documentation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBA Documentation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "DBA Documentation is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The diagram below places DBA Documentation alongside the core concepts of enterprise DBA operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    }
+  ],
   takeaways: [
     "DBA Documentation is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

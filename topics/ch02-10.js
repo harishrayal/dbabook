@@ -162,6 +162,312 @@ ORDER  BY s.user_updates DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row.”",
+      "options": [
+        "INCLUDE columns",
+        "covering",
+        "index"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “An index is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row. Without an index, finding every order for one customer means reading the entire table — a table scan. With an index on customer_id, SQL Server reads a handful of index pages — a seek.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key).”",
+      "options": [
+        "key lookup",
+        "clustered index",
+        "covering"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The clustered index is the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key). A nonclustered index is a separate structure — sorted key columns plus a pointer back to the row.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Key columns, INCLUDE columns, and covering”?",
+      "options": [
+        "Two kinds of columns make up a nonclustered index:",
+        "covering",
+        "A filtered index only serves queries that carry a matching predicate — the WHERE status <&gt; 'VOID' filter must also appear in the querying SQL, and it drops the void rows from…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two kinds of columns make up a nonclustered index:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The cost side of the ledger”?",
+      "options": [
+        "dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.",
+        "Common pitfalls:",
+        "Every index is a maintenance obligation on writes:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every index is a maintenance obligation on writes:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The structure is a _____ (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages.”",
+      "options": [
+        "Blocking risk",
+        "B-tree",
+        "Insert throughput"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The structure is a B-tree (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages. All leaves sit at the same depth, so every lookup costs the same small number of page reads — whether the table holds a thousand rows or a billion.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A nonclustered index on a clustered table stores the _____ as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.”",
+      "options": [
+        "clustering key",
+        "Blocking risk",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A nonclustered index on a clustered table stores the clustering key as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When every column a query touches is in the index, the index is _____ and the plan has no reason to look at the table — eliminating the extra key lookup round-trip per row.”",
+      "options": [
+        "Maintenance",
+        "Plan noise",
+        "covering"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “When every column a query touches is in the index, the index is covering and the plan has no reason to look at the table — eliminating the extra key lookup round-trip per row.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The cost side of the ledger”?",
+      "options": [
+        "Storage pays",
+        "dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.",
+        "Writes pay"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practical policy: start with the clustered key and one index per distinct read pattern; justify every additional index with sys.dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.”"
+    },
+    {
+      "question": "In the “Clustered versus nonclustered” table, what is listed for “Leaf pages contain” under “Nonclustered index”?",
+      "options": [
+        "Key columns + row locator",
+        "Storage pays",
+        "nonclustered index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Leaf pages contain” as “Key columns + row locator”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Key columns, INCLUDE columns, and covering”?",
+      "options": [
+        "nonclustered index",
+        "Key columns",
+        "A filtered index only serves queries that carry a matching predicate — the WHERE status <&gt; 'VOID' filter must also appear in the querying SQL, and it drops the void rows from…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A filtered index only serves queries that carry a matching predicate — the WHERE status <&gt; 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the index entirely, making it smaller and cheaper.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row.”",
+      "options": [
+        "INCLUDE columns",
+        "covering",
+        "index"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “An index is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row. Without an index, finding every order for one customer means reading the entire table — a table scan. With an index on customer_id, SQL Server reads a handful of index pages — a seek.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key).”",
+      "options": [
+        "key lookup",
+        "clustered index",
+        "covering"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The clustered index is the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key). A nonclustered index is a separate structure — sorted key columns plus a pointer back to the row.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Key columns, INCLUDE columns, and covering”?",
+      "options": [
+        "Two kinds of columns make up a nonclustered index:",
+        "covering",
+        "A filtered index only serves queries that carry a matching predicate — the WHERE status 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two kinds of columns make up a nonclustered index:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The cost side of the ledger”?",
+      "options": [
+        "dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.",
+        "Common pitfalls:",
+        "Every index is a maintenance obligation on writes:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every index is a maintenance obligation on writes:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The structure is a _____ (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages.”",
+      "options": [
+        "Blocking risk",
+        "B-tree",
+        "Insert throughput"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The structure is a B-tree (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages. All leaves sit at the same depth, so every lookup costs the same small number of page reads — whether the table holds a thousand rows or a billion.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A nonclustered index on a clustered table stores the _____ as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.”",
+      "options": [
+        "clustering key",
+        "Blocking risk",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A nonclustered index on a clustered table stores the clustering key as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When every column a query touches is in the index, the index is _____ and the plan has no reason to look at the table — eliminating the extra key lookup round-trip per row.”",
+      "options": [
+        "Maintenance",
+        "Plan noise",
+        "covering"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “When every column a query touches is in the index, the index is covering and the plan has no reason to look at the table — eliminating the extra key lookup round-trip per row.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The cost side of the ledger”?",
+      "options": [
+        "Storage pays",
+        "dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.",
+        "Writes pay"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practical policy: start with the clustered key and one index per distinct read pattern; justify every additional index with sys.dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.”"
+    },
+    {
+      "question": "In the “Clustered versus nonclustered” table, what is listed for “Leaf pages contain” under “Nonclustered index”?",
+      "options": [
+        "Key columns + row locator",
+        "Storage pays",
+        "nonclustered index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Leaf pages contain” as “Key columns + row locator”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Key columns, INCLUDE columns, and covering”?",
+      "options": [
+        "nonclustered index",
+        "Key columns",
+        "A filtered index only serves queries that carry a matching predicate — the WHERE status 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A filtered index only serves queries that carry a matching predicate — the WHERE status <> 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the index entirely, making it smaller and cheaper.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row.”",
+      "options": [
+        "INCLUDE columns",
+        "covering",
+        "index"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “An index is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row. Without an index, finding every order for one customer means reading the entire table — a table scan. With an index on customer_id, SQL Server reads a handful of index pages — a seek.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key).”",
+      "options": [
+        "key lookup",
+        "clustered index",
+        "covering"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The clustered index is the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key). A nonclustered index is a separate structure — sorted key columns plus a pointer back to the row.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Key columns, INCLUDE columns, and covering”?",
+      "options": [
+        "Two kinds of columns make up a nonclustered index:",
+        "covering",
+        "A filtered index only serves queries that carry a matching predicate — the WHERE status 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two kinds of columns make up a nonclustered index:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The cost side of the ledger”?",
+      "options": [
+        "dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.",
+        "Common pitfalls:",
+        "Every index is a maintenance obligation on writes:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every index is a maintenance obligation on writes:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The structure is a _____ (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages.”",
+      "options": [
+        "Blocking risk",
+        "B-tree",
+        "Insert throughput"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The structure is a B-tree (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages. All leaves sit at the same depth, so every lookup costs the same small number of page reads — whether the table holds a thousand rows or a billion.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A nonclustered index on a clustered table stores the _____ as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.”",
+      "options": [
+        "clustering key",
+        "Blocking risk",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A nonclustered index on a clustered table stores the clustering key as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When every column a query touches is in the index, the index is _____ and the plan has no reason to look at the table — eliminating the extra key lookup round-trip per row.”",
+      "options": [
+        "Maintenance",
+        "Plan noise",
+        "covering"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “When every column a query touches is in the index, the index is covering and the plan has no reason to look at the table — eliminating the extra key lookup round-trip per row.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The cost side of the ledger”?",
+      "options": [
+        "Storage pays",
+        "dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.",
+        "Writes pay"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practical policy: start with the clustered key and one index per distinct read pattern; justify every additional index with sys.dm_db_index_usage_stats (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.”"
+    },
+    {
+      "question": "In the “Clustered versus nonclustered” table, what is listed for “Leaf pages contain” under “Nonclustered index”?",
+      "options": [
+        "Key columns + row locator",
+        "Storage pays",
+        "nonclustered index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Leaf pages contain” as “Key columns + row locator”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Key columns, INCLUDE columns, and covering”?",
+      "options": [
+        "nonclustered index",
+        "Key columns",
+        "A filtered index only serves queries that carry a matching predicate — the WHERE status 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A filtered index only serves queries that carry a matching predicate — the WHERE status <> 'VOID' filter must also appear in the querying SQL, and it drops the void rows from the index entirely, making it smaller and cheaper.”"
+    }
+  ],
   takeaways: [
     "A B-tree index converts a full table scan into a fixed-depth seek of a few page reads",
     "The clustered index is the table; nonclustered indexes are extra structures paid for on every write",

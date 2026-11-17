@@ -178,6 +178,312 @@ DENY overrides GRANT at any scope — a deny on a schema blocks access even if S
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server Roles",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Roles fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Roles in practice”?",
+      "options": [
+        "With Server Roles, prefer measured, reversible changes.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Server Roles",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server Roles means”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Roles fits”?",
+      "options": [
+        "With Server Roles, prefer measured, reversible changes.",
+        "Overridden by DENY",
+        "The diagram below places Server Roles alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Roles in practice”?",
+      "options": [
+        "Server Roles sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Server Roles:",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Roles”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server Roles",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Roles fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Roles in practice”?",
+      "options": [
+        "With Server Roles, prefer measured, reversible changes.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Server Roles",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server Roles means”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Roles fits”?",
+      "options": [
+        "With Server Roles, prefer measured, reversible changes.",
+        "Overridden by DENY",
+        "The diagram below places Server Roles alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Roles in practice”?",
+      "options": [
+        "Server Roles sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Server Roles:",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Roles”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server Roles",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Roles fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Roles in practice”?",
+      "options": [
+        "With Server Roles, prefer measured, reversible changes.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Server Roles",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server Roles means”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Roles fits”?",
+      "options": [
+        "With Server Roles, prefer measured, reversible changes.",
+        "Overridden by DENY",
+        "The diagram below places Server Roles alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Roles in practice”?",
+      "options": [
+        "Server Roles sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Server Roles:",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Roles”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Server Roles is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

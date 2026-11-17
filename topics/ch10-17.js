@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Mail configured",
+        "SQL Server Agent Proxies",
+        "With SQL Server Agent Proxies, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Proxies within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Proxies fits”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Enabled alert",
+        "Notification set on job"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Proxies in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "Job never runs",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Proxies”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Proxies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "SQL Server Agent Proxies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Proxies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Proxies means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "SQL Server Agent Proxies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Proxies fits”?",
+      "options": [
+        "The diagram below places SQL Server Agent Proxies alongside the core concepts of SQL Server Agent and automation.",
+        "SQL Server Agent Proxies",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Proxies alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Proxies in practice”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Proxies:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Proxies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Proxies”?",
+      "options": [
+        "SQL Server Agent Proxies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Mail configured",
+        "SQL Server Agent Proxies",
+        "With SQL Server Agent Proxies, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Proxies within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Proxies fits”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Enabled alert",
+        "Notification set on job"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Proxies in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "Job never runs",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Proxies”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Proxies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "SQL Server Agent Proxies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Proxies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Proxies means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "SQL Server Agent Proxies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Proxies fits”?",
+      "options": [
+        "The diagram below places SQL Server Agent Proxies alongside the core concepts of SQL Server Agent and automation.",
+        "SQL Server Agent Proxies",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Proxies alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Proxies in practice”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Proxies:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Proxies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Proxies”?",
+      "options": [
+        "SQL Server Agent Proxies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Mail configured",
+        "SQL Server Agent Proxies",
+        "With SQL Server Agent Proxies, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Proxies within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Proxies fits”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Enabled alert",
+        "Notification set on job"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Proxies in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "Job never runs",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Proxies”?",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "Theory becomes useful when you can apply it.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Proxies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Agent Proxies.",
+        "SQL Server Agent Proxies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Proxies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Proxies means”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "SQL Server Agent Proxies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Proxies fits”?",
+      "options": [
+        "The diagram below places SQL Server Agent Proxies alongside the core concepts of SQL Server Agent and automation.",
+        "SQL Server Agent Proxies",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Proxies alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Proxies in practice”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Proxies:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Proxies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Proxies”?",
+      "options": [
+        "SQL Server Agent Proxies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Agent Proxies is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

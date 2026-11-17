@@ -191,6 +191,312 @@ A clustered index defines the table's physical row order and there is one per ta
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Memory-Intensive Queries",
+        "Use the following as a starting point when investigating Memory-Intensive Queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Memory-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory-Intensive Queries fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Memory-Intensive Queries",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory-Intensive Queries in practice”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Missing index suggestions are hints, not commands.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory-Intensive Queries”?",
+      "options": [
+        "Memory-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Memory-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Memory-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Memory-Intensive Queries"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Memory-Intensive Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Memory-Intensive Queries means”?",
+      "options": [
+        "Small tables / no usable index",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Selective lookups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory-Intensive Queries fits”?",
+      "options": [
+        "The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Selective lookups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory-Intensive Queries in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Memory-Intensive Queries:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Memory-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory-Intensive Queries”?",
+      "options": [
+        "Selective lookups",
+        "The first example establishes the relevant state.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Memory-Intensive Queries",
+        "Use the following as a starting point when investigating Memory-Intensive Queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Memory-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory-Intensive Queries fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Memory-Intensive Queries",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory-Intensive Queries in practice”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Missing index suggestions are hints, not commands.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory-Intensive Queries”?",
+      "options": [
+        "Memory-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Memory-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Memory-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Memory-Intensive Queries"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Memory-Intensive Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Memory-Intensive Queries means”?",
+      "options": [
+        "Small tables / no usable index",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Selective lookups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory-Intensive Queries fits”?",
+      "options": [
+        "The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Selective lookups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory-Intensive Queries in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Memory-Intensive Queries:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Memory-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory-Intensive Queries”?",
+      "options": [
+        "Selective lookups",
+        "The first example establishes the relevant state.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Memory-Intensive Queries",
+        "Use the following as a starting point when investigating Memory-Intensive Queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Memory-Intensive Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory-Intensive Queries fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Memory-Intensive Queries",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory-Intensive Queries in practice”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Missing index suggestions are hints, not commands.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory-Intensive Queries”?",
+      "options": [
+        "Memory-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Memory-Intensive Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Memory-Intensive Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Memory-Intensive Queries"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Memory-Intensive Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Memory-Intensive Queries means”?",
+      "options": [
+        "Small tables / no usable index",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Selective lookups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Memory-Intensive Queries fits”?",
+      "options": [
+        "The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Selective lookups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Memory-Intensive Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Memory-Intensive Queries in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Memory-Intensive Queries:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Memory-Intensive Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Memory-Intensive Queries”?",
+      "options": [
+        "Selective lookups",
+        "The first example establishes the relevant state.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Memory-Intensive Queries is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

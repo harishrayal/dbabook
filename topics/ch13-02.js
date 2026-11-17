@@ -191,6 +191,312 @@ Blocking is one session waiting for a lock held by another — it resolves when 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "What Is a Blocked Session?",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine What Is a Blocked Session? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Blocked Session? fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        ":"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Blocked Session? in practice”?",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Blocked Session?”?",
+      "options": [
+        ":",
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is a Blocked Session?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____”",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "What Is a Blocked Session?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates What Is a Blocked Session? with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is a Blocked Session? means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Blocked Session? fits”?",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places What Is a Blocked Session? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Blocked Session? in practice”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        ", prefer measured, reversible changes.",
+        ":"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is a Blocked Session?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Blocked Session?”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "What Is a Blocked Session?",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine What Is a Blocked Session? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Blocked Session? fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        ":"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Blocked Session? in practice”?",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Blocked Session?”?",
+      "options": [
+        ":",
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is a Blocked Session?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____”",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "What Is a Blocked Session?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates What Is a Blocked Session? with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is a Blocked Session? means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Blocked Session? fits”?",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places What Is a Blocked Session? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Blocked Session? in practice”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        ", prefer measured, reversible changes.",
+        ":"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is a Blocked Session?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Blocked Session?”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "What Is a Blocked Session?",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine What Is a Blocked Session? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Blocked Session? fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        ":"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Blocked Session? in practice”?",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Blocked Session?”?",
+      "options": [
+        ":",
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is a Blocked Session?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____”",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "What Is a Blocked Session?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates What Is a Blocked Session? with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is a Blocked Session? means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Blocked Session? fits”?",
+      "options": [
+        "The diagram below places What Is a Blocked Session?",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places What Is a Blocked Session? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Blocked Session? in practice”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        ", prefer measured, reversible changes.",
+        ":"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is a Blocked Session?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Blocked Session?”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "What Is a Blocked Session? is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

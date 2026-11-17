@@ -186,6 +186,312 @@ With a central inventory, standard configurations, automated health and complian
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Vendor and Application Team Coordination",
+        "Use the following as a starting point when investigating Vendor and Application Team Coordination."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Vendor and Application Team Coordination within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Vendor and Application Team Coordination fits”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Vendor and Application Team Coordination",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Vendor and Application Team Coordination in practice”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Vendor and Application Team Coordination”?",
+      "options": [
+        "Vendor and Application Team Coordination is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Theory becomes useful when you can apply it.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Vendor and Application Team Coordination. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Vendor and Application Team Coordination is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Vendor and Application Team Coordination"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Vendor and Application Team Coordination with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Vendor and Application Team Coordination means”?",
+      "options": [
+        "Last backup per DB",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Report + exceptions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Vendor and Application Team Coordination fits”?",
+      "options": [
+        "The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations.",
+        "Environments must stay aligned but distinct.",
+        "Report + exceptions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Vendor and Application Team Coordination in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Vendor and Application Team Coordination:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Vendor and Application Team Coordination:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Vendor and Application Team Coordination”?",
+      "options": [
+        "Report + exceptions",
+        "The first example establishes the relevant state.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Vendor and Application Team Coordination",
+        "Use the following as a starting point when investigating Vendor and Application Team Coordination."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Vendor and Application Team Coordination within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Vendor and Application Team Coordination fits”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Vendor and Application Team Coordination",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Vendor and Application Team Coordination in practice”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Vendor and Application Team Coordination”?",
+      "options": [
+        "Vendor and Application Team Coordination is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Theory becomes useful when you can apply it.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Vendor and Application Team Coordination. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Vendor and Application Team Coordination is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Vendor and Application Team Coordination"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Vendor and Application Team Coordination with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Vendor and Application Team Coordination means”?",
+      "options": [
+        "Last backup per DB",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Report + exceptions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Vendor and Application Team Coordination fits”?",
+      "options": [
+        "The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations.",
+        "Environments must stay aligned but distinct.",
+        "Report + exceptions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Vendor and Application Team Coordination in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Vendor and Application Team Coordination:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Vendor and Application Team Coordination:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Vendor and Application Team Coordination”?",
+      "options": [
+        "Report + exceptions",
+        "The first example establishes the relevant state.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Vendor and Application Team Coordination",
+        "Use the following as a starting point when investigating Vendor and Application Team Coordination."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Vendor and Application Team Coordination within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Vendor and Application Team Coordination fits”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Vendor and Application Team Coordination",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Vendor and Application Team Coordination in practice”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Vendor and Application Team Coordination”?",
+      "options": [
+        "Vendor and Application Team Coordination is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Theory becomes useful when you can apply it.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Vendor and Application Team Coordination. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Vendor and Application Team Coordination is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Vendor and Application Team Coordination"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Vendor and Application Team Coordination with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Vendor and Application Team Coordination means”?",
+      "options": [
+        "Last backup per DB",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Report + exceptions"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Vendor and Application Team Coordination fits”?",
+      "options": [
+        "The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations.",
+        "Environments must stay aligned but distinct.",
+        "Report + exceptions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Vendor and Application Team Coordination alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Vendor and Application Team Coordination in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Vendor and Application Team Coordination:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Vendor and Application Team Coordination:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Vendor and Application Team Coordination”?",
+      "options": [
+        "Report + exceptions",
+        "The first example establishes the relevant state.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Vendor and Application Team Coordination is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

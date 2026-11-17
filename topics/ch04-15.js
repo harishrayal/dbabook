@@ -162,6 +162,312 @@ WHERE  [Operation] IN ('LOP_BEGIN_CKPT', 'LOP_END_CKPT');</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “That something is a _____:”",
+      "options": [
+        "checkpoint",
+        "Cost:",
+        "Default:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because of the buffer pool and the no-force policy, committed data lives in memory for as long as it takes. If SQL Server crashed, recovery would have to replay the entire log since the beginning of time — unless something periodically flushes dirty pages and records how far it got. That something is a checkpoint:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types of checkpoints”?",
+      "options": [
+        "Internal",
+        "Throttling:",
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under full or bulk-logged recovery a checkpoint never truncates the log — a log backup does that, after the checkpoint has passed the oldest dirty page.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Automatic checkpoint frequency is not a timer — it is a _____.”",
+      "options": [
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "log-record budget",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Automatic checkpoint frequency is not a timer — it is a log-record budget. SQL Server estimates how many log records it could replay in the recovery interval, and a checkpoint fires each time that many accumulate. A busy OLTP database checkpoints every few seconds; a nearly idle one may go minutes between them.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Indirect checkpoints (SQL Server 2012+) replace the log-record budget with a _____: the engine computes how many pages it can afford to leave dirty and still recover within the target, then a background writer continuously…”",
+      "options": [
+        "dirty-page budget",
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Indirect checkpoints (SQL Server 2012+) replace the log-record budget with a dirty-page budget: the engine computes how many pages it can afford to leave dirty and still recover within the target, then a background writer continuously flushes toward that number.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A healthy pattern is steady, moderate _____ with gaps between checkpoint records.”",
+      "options": [
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…",
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A healthy pattern is steady, moderate Checkpoint pages/sec with gaps between checkpoint records. A spike to thousands of pages per second means a dirty backlog is being drained at once (storage felt it); a near-zero rate on a write-heavy database means checkpoints are being throttled — look at write latency next.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why checkpoints exist”?",
+      "options": [
+        "Raising the interval is a trade:",
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "Recovery interval is an estimate of redo, not a promise:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery time therefore scales with the log generated since the last checkpoint — not with database size. Everything about checkpoint tuning is really about keeping that window small without flooding the storage subsystem.”"
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Automatic” under “Behaviour”?",
+      "options": [
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion",
+        "Raising the interval is a trade:",
+        "Advantage:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Automatic” as “Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Frequency, throttling, and the recovery interval”?",
+      "options": [
+        "Advantage:",
+        "Cost:",
+        "This is why the classic \"set recovery interval to 300 to reduce checkpoint I/O\" advice is only half of the story — it buys write quiet at the price of a longer worst-case restart."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This is why the classic \"set recovery interval to 300 to reduce checkpoint I/O\" advice is only half of the story — it buys write quiet at the price of a longer worst-case restart.”"
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Indirect” under “Behaviour”?",
+      "options": [
+        "Default:",
+        "Per-database dirty-page budget: a background writer keeps the dirty count low enough to recover within the target. Default for databases created on SQL Server 2016 and later",
+        "Cost:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Indirect” as “Per-database dirty-page budget: a background writer keeps the dirty count low enough to recover within the target. Default for databases created on SQL Server 2016 and later”."
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Manual” under “Behaviour”?",
+      "options": [
+        "Issued by you for the current database; optionally throttled to complete within the requested number of seconds",
+        "Default:",
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Manual” as “Issued by you for the current database; optionally throttled to complete within the requested number of seconds”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “That something is a _____:”",
+      "options": [
+        "checkpoint",
+        "Cost:",
+        "Default:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because of the buffer pool and the no-force policy, committed data lives in memory for as long as it takes. If SQL Server crashed, recovery would have to replay the entire log since the beginning of time — unless something periodically flushes dirty pages and records how far it got. That something is a checkpoint:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types of checkpoints”?",
+      "options": [
+        "Internal",
+        "Throttling:",
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under full or bulk-logged recovery a checkpoint never truncates the log — a log backup does that, after the checkpoint has passed the oldest dirty page.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Automatic checkpoint frequency is not a timer — it is a _____.”",
+      "options": [
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "log-record budget",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Automatic checkpoint frequency is not a timer — it is a log-record budget. SQL Server estimates how many log records it could replay in the recovery interval, and a checkpoint fires each time that many accumulate. A busy OLTP database checkpoints every few seconds; a nearly idle one may go minutes between them.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Indirect checkpoints (SQL Server 2012+) replace the log-record budget with a _____: the engine computes how many pages it can afford to leave dirty and still recover within the target, then a background writer continuously…”",
+      "options": [
+        "dirty-page budget",
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Indirect checkpoints (SQL Server 2012+) replace the log-record budget with a dirty-page budget: the engine computes how many pages it can afford to leave dirty and still recover within the target, then a background writer continuously flushes toward that number.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A healthy pattern is steady, moderate _____ with gaps between checkpoint records.”",
+      "options": [
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…",
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A healthy pattern is steady, moderate Checkpoint pages/sec with gaps between checkpoint records. A spike to thousands of pages per second means a dirty backlog is being drained at once (storage felt it); a near-zero rate on a write-heavy database means checkpoints are being throttled — look at write latency next.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why checkpoints exist”?",
+      "options": [
+        "Raising the interval is a trade:",
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "Recovery interval is an estimate of redo, not a promise:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery time therefore scales with the log generated since the last checkpoint — not with database size. Everything about checkpoint tuning is really about keeping that window small without flooding the storage subsystem.”"
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Automatic” under “Behaviour”?",
+      "options": [
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion",
+        "Raising the interval is a trade:",
+        "Advantage:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Automatic” as “Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Frequency, throttling, and the recovery interval”?",
+      "options": [
+        "Advantage:",
+        "Cost:",
+        "This is why the classic \"set recovery interval to 300 to reduce checkpoint I/O\" advice is only half of the story — it buys write quiet at the price of a longer worst-case restart."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This is why the classic \"set recovery interval to 300 to reduce checkpoint I/O\" advice is only half of the story — it buys write quiet at the price of a longer worst-case restart.”"
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Indirect” under “Behaviour”?",
+      "options": [
+        "Default:",
+        "Per-database dirty-page budget: a background writer keeps the dirty count low enough to recover within the target. Default for databases created on SQL Server 2016 and later",
+        "Cost:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Indirect” as “Per-database dirty-page budget: a background writer keeps the dirty count low enough to recover within the target. Default for databases created on SQL Server 2016 and later”."
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Manual” under “Behaviour”?",
+      "options": [
+        "Issued by you for the current database; optionally throttled to complete within the requested number of seconds",
+        "Default:",
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Manual” as “Issued by you for the current database; optionally throttled to complete within the requested number of seconds”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “That something is a _____:”",
+      "options": [
+        "checkpoint",
+        "Cost:",
+        "Default:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because of the buffer pool and the no-force policy, committed data lives in memory for as long as it takes. If SQL Server crashed, recovery would have to replay the entire log since the beginning of time — unless something periodically flushes dirty pages and records how far it got. That something is a checkpoint:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types of checkpoints”?",
+      "options": [
+        "Internal",
+        "Throttling:",
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under full or bulk-logged recovery a checkpoint never truncates the log — a log backup does that, after the checkpoint has passed the oldest dirty page.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Automatic checkpoint frequency is not a timer — it is a _____.”",
+      "options": [
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "log-record budget",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Automatic checkpoint frequency is not a timer — it is a log-record budget. SQL Server estimates how many log records it could replay in the recovery interval, and a checkpoint fires each time that many accumulate. A busy OLTP database checkpoints every few seconds; a nearly idle one may go minutes between them.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Indirect checkpoints (SQL Server 2012+) replace the log-record budget with a _____: the engine computes how many pages it can afford to leave dirty and still recover within the target, then a background writer continuously…”",
+      "options": [
+        "dirty-page budget",
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Indirect checkpoints (SQL Server 2012+) replace the log-record budget with a dirty-page budget: the engine computes how many pages it can afford to leave dirty and still recover within the target, then a background writer continuously flushes toward that number.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A healthy pattern is steady, moderate _____ with gaps between checkpoint records.”",
+      "options": [
+        "Two details that surprise people: under the simple recovery model an automatic checkpoint also truncates the unused log (and one is queued when the log hits 70% full), while under…",
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A healthy pattern is steady, moderate Checkpoint pages/sec with gaps between checkpoint records. A spike to thousands of pages per second means a dirty backlog is being drained at once (storage felt it); a near-zero rate on a write-heavy database means checkpoints are being throttled — look at write latency next.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why checkpoints exist”?",
+      "options": [
+        "Raising the interval is a trade:",
+        "Recovery time therefore scales with the log generated since the last checkpoint — not with database size.",
+        "Recovery interval is an estimate of redo, not a promise:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery time therefore scales with the log generated since the last checkpoint — not with database size. Everything about checkpoint tuning is really about keeping that window small without flooding the storage subsystem.”"
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Automatic” under “Behaviour”?",
+      "options": [
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion",
+        "Raising the interval is a trade:",
+        "Advantage:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Automatic” as “Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Frequency, throttling, and the recovery interval”?",
+      "options": [
+        "Advantage:",
+        "Cost:",
+        "This is why the classic \"set recovery interval to 300 to reduce checkpoint I/O\" advice is only half of the story — it buys write quiet at the price of a longer worst-case restart."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This is why the classic \"set recovery interval to 300 to reduce checkpoint I/O\" advice is only half of the story — it buys write quiet at the price of a longer worst-case restart.”"
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Indirect” under “Behaviour”?",
+      "options": [
+        "Default:",
+        "Per-database dirty-page budget: a background writer keeps the dirty count low enough to recover within the target. Default for databases created on SQL Server 2016 and later",
+        "Cost:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Indirect” as “Per-database dirty-page budget: a background writer keeps the dirty count low enough to recover within the target. Default for databases created on SQL Server 2016 and later”."
+    },
+    {
+      "question": "In the “The four types of checkpoints” table, what is listed for “Manual” under “Behaviour”?",
+      "options": [
+        "Issued by you for the current database; optionally throttled to complete within the requested number of seconds",
+        "Default:",
+        "Fires when the log grows by the amount SQL Server estimates it can replay within the recovery interval (default target: 1 minute). Runs to completion"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Manual” as “Issued by you for the current database; optionally throttled to complete within the requested number of seconds”."
+    }
+  ],
   takeaways: [
     "Checkpoints flush dirty pages and mark a redo start point — recovery scales with log since the last checkpoint",
     "Four types: automatic (recovery interval), indirect (TARGET_RECOVERY_TIME), manual (CHECKPOINT), internal (backup, shutdown, snapshots)",

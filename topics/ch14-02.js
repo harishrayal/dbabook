@@ -178,6 +178,312 @@ Physical corruption is damaged page bytes or I/O errors detected by checksums; l
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Logical Corruption",
+        "Logical Corruption is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Logical Corruption within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Corruption fits”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Logical Corruption is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Corruption in practice”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Corruption”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Logical Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "The following comparison captures the distinctions that matter most when working with Logical Corruption:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "Check hardware, run CHECKDB",
+        "Logical Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Logical Corruption with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Logical Corruption means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Page checksums are the primary detection mechanism.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Corruption fits”?",
+      "options": [
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption.",
+        "Check log access and space",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Corruption in practice”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "The following comparison captures the distinctions that matter most when working with Logical Corruption:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Logical Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Corruption”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "The first example establishes the relevant state.",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Logical Corruption",
+        "Logical Corruption is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Logical Corruption within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Corruption fits”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Logical Corruption is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Corruption in practice”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Corruption”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Logical Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "The following comparison captures the distinctions that matter most when working with Logical Corruption:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "Check hardware, run CHECKDB",
+        "Logical Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Logical Corruption with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Logical Corruption means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Page checksums are the primary detection mechanism.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Corruption fits”?",
+      "options": [
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption.",
+        "Check log access and space",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Corruption in practice”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "The following comparison captures the distinctions that matter most when working with Logical Corruption:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Logical Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Corruption”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "The first example establishes the relevant state.",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Logical Corruption",
+        "Logical Corruption is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Logical Corruption within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Corruption fits”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "Logical Corruption is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Corruption in practice”?",
+      "options": [
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Corruption”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Logical Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "The following comparison captures the distinctions that matter most when working with Logical Corruption:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain.",
+        "Check hardware, run CHECKDB",
+        "Logical Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Logical Corruption with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Logical Corruption means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Page checksums are the primary detection mechanism.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Corruption fits”?",
+      "options": [
+        "The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption.",
+        "Check log access and space",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Logical Corruption alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Corruption in practice”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "The following comparison captures the distinctions that matter most when working with Logical Corruption:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Logical Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Corruption”?",
+      "options": [
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "The first example establishes the relevant state.",
+        "Check log access and space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Logical Corruption is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

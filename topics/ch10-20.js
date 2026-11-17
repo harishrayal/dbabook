@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Production Job Monitoring sits inside a larger system.",
+        "Production Job Monitoring",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Job Monitoring within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Job Monitoring fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Job Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Job Monitoring in practice”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Job Monitoring”?",
+      "options": [
+        "Production Job Monitoring",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Job Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Production Job Monitoring",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Production Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Production Job Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Job Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Job Monitoring means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Job Monitoring:",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Job Monitoring fits”?",
+      "options": [
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation.",
+        "Production Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Job Monitoring in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation.",
+        "The following comparison captures the distinctions that matter most when working with Production Job Monitoring:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Job Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Job Monitoring”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Production Job Monitoring sits inside a larger system.",
+        "Production Job Monitoring",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Job Monitoring within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Job Monitoring fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Job Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Job Monitoring in practice”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Job Monitoring”?",
+      "options": [
+        "Production Job Monitoring",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Job Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Production Job Monitoring",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Production Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Production Job Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Job Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Job Monitoring means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Job Monitoring:",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Job Monitoring fits”?",
+      "options": [
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation.",
+        "Production Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Job Monitoring in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation.",
+        "The following comparison captures the distinctions that matter most when working with Production Job Monitoring:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Job Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Job Monitoring”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Production Job Monitoring sits inside a larger system.",
+        "Production Job Monitoring",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Job Monitoring within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Job Monitoring fits”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Job Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Job Monitoring in practice”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Job Monitoring”?",
+      "options": [
+        "Production Job Monitoring",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Job Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Production Job Monitoring",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Production Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Production Job Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Job Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Job Monitoring means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Job Monitoring:",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Job Monitoring fits”?",
+      "options": [
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation.",
+        "Production Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Job Monitoring in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation.",
+        "The following comparison captures the distinctions that matter most when working with Production Job Monitoring:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Job Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Job Monitoring”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Job Monitoring alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Production Job Monitoring is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

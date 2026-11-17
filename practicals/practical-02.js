@@ -193,6 +193,312 @@ Run ALTER DATABASE ... MODIFY FILE to set the new path in the catalogue, take th
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "This lab explores physical storage.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab explores physical storage. You will create a scratch database with explicit file definitions so you can see exactly where SQL Server puts bytes on disk, then change that layout and verify the result.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "A database maps logical files to physical files.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab.",
+        "Notice the autogrowth settings."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database maps logical files to physical files. The primary data file (MDF) holds system objects; secondary data files (NDF) extend filegroups; the log file (LDF) is a separate sequential structure. Understanding the mapping is the whole point of this lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "The classic storage mistake is moving a live file in Windows Explorer.",
+        "Notice the autogrowth settings.",
+        "Primary data file"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The classic storage mistake is moving a live file in Windows Explorer. SQL Server tracks paths in its catalogue; changing the path on disk without updating the catalogue leaves the database unable to open its files after a restart.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Growth behaviour",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Use a local Developer or Express instance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Use a local Developer or Express instance. Never run storage experiments against a production database — file moves require taking the database offline, which is an outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages.",
+        "Growth behaviour"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages. The log sits alongside, managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Use fixed MB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notice the autogrowth settings. Fixed growth in megabytes is predictable; percentage growth becomes unpredictable on large files. Set growth deliberately, then confirm with sys.database_files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Growth behaviour",
+        "The classic storage mistake is moving a live file in Windows Explorer.",
+        "Verification is everything in storage work."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Verification is everything in storage work. Query the catalogue for logical names, physical paths, sizes and growth, and query dm_os_volume_stats for free space on the underlying volumes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Verification is everything in storage work.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "This lab explores physical storage.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab explores physical storage. You will create a scratch database with explicit file definitions so you can see exactly where SQL Server puts bytes on disk, then change that layout and verify the result.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "A database maps logical files to physical files.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab.",
+        "Notice the autogrowth settings."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database maps logical files to physical files. The primary data file (MDF) holds system objects; secondary data files (NDF) extend filegroups; the log file (LDF) is a separate sequential structure. Understanding the mapping is the whole point of this lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "The classic storage mistake is moving a live file in Windows Explorer.",
+        "Notice the autogrowth settings.",
+        "Primary data file"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The classic storage mistake is moving a live file in Windows Explorer. SQL Server tracks paths in its catalogue; changing the path on disk without updating the catalogue leaves the database unable to open its files after a restart.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Growth behaviour",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Use a local Developer or Express instance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Use a local Developer or Express instance. Never run storage experiments against a production database — file moves require taking the database offline, which is an outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages.",
+        "Growth behaviour"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages. The log sits alongside, managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Use fixed MB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notice the autogrowth settings. Fixed growth in megabytes is predictable; percentage growth becomes unpredictable on large files. Set growth deliberately, then confirm with sys.database_files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Growth behaviour",
+        "The classic storage mistake is moving a live file in Windows Explorer.",
+        "Verification is everything in storage work."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Verification is everything in storage work. Query the catalogue for logical names, physical paths, sizes and growth, and query dm_os_volume_stats for free space on the underlying volumes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Verification is everything in storage work.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "This lab explores physical storage.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab explores physical storage. You will create a scratch database with explicit file definitions so you can see exactly where SQL Server puts bytes on disk, then change that layout and verify the result.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "A database maps logical files to physical files.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab.",
+        "Notice the autogrowth settings."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database maps logical files to physical files. The primary data file (MDF) holds system objects; secondary data files (NDF) extend filegroups; the log file (LDF) is a separate sequential structure. Understanding the mapping is the whole point of this lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Start by creating a database with one primary data file, one secondary file in a custom filegroup, and a log file — all pre-sized so autogrowth does not fire during the lab."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "The classic storage mistake is moving a live file in Windows Explorer.",
+        "Notice the autogrowth settings.",
+        "Primary data file"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The classic storage mistake is moving a live file in Windows Explorer. SQL Server tracks paths in its catalogue; changing the path on disk without updating the catalogue leaves the database unable to open its files after a restart.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Growth behaviour",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Use a local Developer or Express instance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Use a local Developer or Express instance. Never run storage experiments against a production database — file moves require taking the database offline, which is an outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages.",
+        "Growth behaviour"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Follow the flow below: a database owns filegroups, filegroups own data files, and those files are divided into 8 KB pages. The log sits alongside, managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Notice the autogrowth settings.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Use fixed MB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notice the autogrowth settings. Fixed growth in megabytes is predictable; percentage growth becomes unpredictable on large files. Set growth deliberately, then confirm with sys.database_files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Growth behaviour",
+        "The classic storage mistake is moving a live file in Windows Explorer.",
+        "Verification is everything in storage work."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Verification is everything in storage work. Query the catalogue for logical names, physical paths, sizes and growth, and query dm_os_volume_stats for free space on the underlying volumes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Verification is everything in storage work.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "A database maps logical files to physical paths through the catalogue",
     "Pre-size files and use fixed autogrowth to avoid surprises",

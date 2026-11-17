@@ -161,6 +161,312 @@ A timeline, impact, root cause, contributing factors, what went well and badly, 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Blocking and Deadlocks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Blocking and Deadlocks within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking and Deadlocks fits”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking and Deadlocks in practice”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Kill blocker / fix query",
+        "The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking and Deadlocks”?",
+      "options": [
+        "Log backup / grow",
+        "Kill blocker / fix query",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking and Deadlocks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover / restart",
+        "Prioritisation weighs impact and urgency.",
+        "With Blocking and Deadlocks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking and Deadlocks means”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Blocking and Deadlocks",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking and Deadlocks fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Communication is part of the job.",
+        "The diagram below places Blocking and Deadlocks alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Blocking and Deadlocks alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking and Deadlocks in practice”?",
+      "options": [
+        "Blocking and Deadlocks",
+        "The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking and Deadlocks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking and Deadlocks",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Blocking and Deadlocks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Blocking and Deadlocks within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking and Deadlocks fits”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking and Deadlocks in practice”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Kill blocker / fix query",
+        "The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking and Deadlocks”?",
+      "options": [
+        "Log backup / grow",
+        "Kill blocker / fix query",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking and Deadlocks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover / restart",
+        "Prioritisation weighs impact and urgency.",
+        "With Blocking and Deadlocks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking and Deadlocks means”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Blocking and Deadlocks",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking and Deadlocks fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Communication is part of the job.",
+        "The diagram below places Blocking and Deadlocks alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Blocking and Deadlocks alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking and Deadlocks in practice”?",
+      "options": [
+        "Blocking and Deadlocks",
+        "The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking and Deadlocks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking and Deadlocks",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Blocking and Deadlocks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Blocking and Deadlocks within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking and Deadlocks fits”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Communication is part of the job.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking and Deadlocks in practice”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Kill blocker / fix query",
+        "The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking and Deadlocks”?",
+      "options": [
+        "Log backup / grow",
+        "Kill blocker / fix query",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Blocking and Deadlocks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover / restart",
+        "Prioritisation weighs impact and urgency.",
+        "With Blocking and Deadlocks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Blocking and Deadlocks means”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Blocking and Deadlocks",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Blocking and Deadlocks fits”?",
+      "options": [
+        "Kill blocker / fix query",
+        "Communication is part of the job.",
+        "The diagram below places Blocking and Deadlocks alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Blocking and Deadlocks alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Blocking and Deadlocks in practice”?",
+      "options": [
+        "Blocking and Deadlocks",
+        "The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Blocking and Deadlocks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Blocking and Deadlocks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Blocking and Deadlocks",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    }
+  ],
   takeaways: [
     "Blocking and Deadlocks is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

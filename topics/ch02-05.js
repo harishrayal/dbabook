@@ -183,6 +183,312 @@ WHERE  is_disabled = 1 OR is_not_trusted = 1;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is the column or column set that uniquely identifies every row in a table.”",
+      "options": [
+        "every",
+        "primary key (PK)",
+        "foreign key (FK)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A primary key (PK) is the column or column set that uniquely identifies every row in a table. SQL Server enforces two rules absolutely:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a column in one table holding the primary key (or a unique key) of another.”",
+      "options": [
+        "foreign key (FK)",
+        "every",
+        "Insert/update of a child"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A foreign key (FK) is a column in one table holding the primary key (or a unique key) of another. It declares “this row belongs to that parent”, and the engine enforces the declaration on every write, from every application:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Referential actions: what happens to the children”?",
+      "options": [
+        "Safest default — deletion must be deliberate",
+        "Behavioural twin of NO ACTION in SQL Server",
+        "When a parent row is deleted (or its key updated), the FK action decides the outcome."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a parent row is deleted (or its key updated), the FK action decides the outcome. Choosing this at design time is easy; changing it later is a migration with blast radius.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the keys in T-SQL”?",
+      "options": [
+        "Rare — needs a sensible default parent",
+        "A realistic pair of parent and child tables with an explicit referential design:",
+        "Optional relationships — requires a nullable FK"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A realistic pair of parent and child tables with an explicit referential design:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production pitfalls”?",
+      "options": [
+        "A quick trust check every DBA should run after any migration:",
+        "Rare — needs a sensible default parent",
+        "A realistic pair of parent and child tables with an explicit referential design:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A quick trust check every DBA should run after any migration:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Defining a PK also creates a unique index to enforce it, and by default it becomes the table's _____ — meaning the table's rows are physically stored in PK order.”",
+      "options": [
+        "RESTRICT",
+        "CASCADE",
+        "clustered index"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Defining a PK also creates a unique index to enforce it, and by default it becomes the table's clustered index — meaning the table's rows are physically stored in PK order. That single decision influences read performance for the life of the table, which is why key choice deserves more thought than “make it an int and move on”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Referential actions: what happens to the children”?",
+      "options": [
+        "Uniqueness",
+        "CASCADE is the action people regret most: one DELETE can fan out through several tables, hold locks for minutes, and delete far more than intended.",
+        "Rare — needs a sensible default parent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “CASCADE is the action people regret most: one DELETE can fan out through several tables, hold locks for minutes, and delete far more than intended. In production, cascade only on genuinely dependent, low-value children — never across a chain that includes financial history.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the keys in T-SQL”?",
+      "options": [
+        "Composite keys are equally normal — a junction table's PK spans both foreign keys, which by definition prevents the same pair appearing twice.",
+        "Uniqueness",
+        "NOT NULL"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Composite keys are equally normal — a junction table's PK spans both foreign keys, which by definition prevents the same pair appearing twice.”"
+    },
+    {
+      "question": "In the “Referential actions: what happens to the children” table, what is listed for “NO ACTION (default)” under “Typical use”?",
+      "options": [
+        "NOT NULL",
+        "Natural key",
+        "Safest default — deletion must be deliberate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “NO ACTION (default)” as “Safest default — deletion must be deliberate”."
+    },
+    {
+      "question": "In the “Referential actions: what happens to the children” table, what is listed for “RESTRICT” under “Typical use”?",
+      "options": [
+        "Surrogate key",
+        "Behavioural twin of NO ACTION in SQL Server",
+        "Natural key"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “RESTRICT” as “Behavioural twin of NO ACTION in SQL Server”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is the column or column set that uniquely identifies every row in a table.”",
+      "options": [
+        "every",
+        "primary key (PK)",
+        "foreign key (FK)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A primary key (PK) is the column or column set that uniquely identifies every row in a table. SQL Server enforces two rules absolutely:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a column in one table holding the primary key (or a unique key) of another.”",
+      "options": [
+        "foreign key (FK)",
+        "every",
+        "Insert/update of a child"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A foreign key (FK) is a column in one table holding the primary key (or a unique key) of another. It declares “this row belongs to that parent”, and the engine enforces the declaration on every write, from every application:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Referential actions: what happens to the children”?",
+      "options": [
+        "Safest default — deletion must be deliberate",
+        "Behavioural twin of NO ACTION in SQL Server",
+        "When a parent row is deleted (or its key updated), the FK action decides the outcome."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a parent row is deleted (or its key updated), the FK action decides the outcome. Choosing this at design time is easy; changing it later is a migration with blast radius.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the keys in T-SQL”?",
+      "options": [
+        "Rare — needs a sensible default parent",
+        "A realistic pair of parent and child tables with an explicit referential design:",
+        "Optional relationships — requires a nullable FK"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A realistic pair of parent and child tables with an explicit referential design:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production pitfalls”?",
+      "options": [
+        "A quick trust check every DBA should run after any migration:",
+        "Rare — needs a sensible default parent",
+        "A realistic pair of parent and child tables with an explicit referential design:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A quick trust check every DBA should run after any migration:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Defining a PK also creates a unique index to enforce it, and by default it becomes the table's _____ — meaning the table's rows are physically stored in PK order.”",
+      "options": [
+        "RESTRICT",
+        "CASCADE",
+        "clustered index"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Defining a PK also creates a unique index to enforce it, and by default it becomes the table's clustered index — meaning the table's rows are physically stored in PK order. That single decision influences read performance for the life of the table, which is why key choice deserves more thought than “make it an int and move on”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Referential actions: what happens to the children”?",
+      "options": [
+        "Uniqueness",
+        "CASCADE is the action people regret most: one DELETE can fan out through several tables, hold locks for minutes, and delete far more than intended.",
+        "Rare — needs a sensible default parent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “CASCADE is the action people regret most: one DELETE can fan out through several tables, hold locks for minutes, and delete far more than intended. In production, cascade only on genuinely dependent, low-value children — never across a chain that includes financial history.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the keys in T-SQL”?",
+      "options": [
+        "Composite keys are equally normal — a junction table's PK spans both foreign keys, which by definition prevents the same pair appearing twice.",
+        "Uniqueness",
+        "NOT NULL"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Composite keys are equally normal — a junction table's PK spans both foreign keys, which by definition prevents the same pair appearing twice.”"
+    },
+    {
+      "question": "In the “Referential actions: what happens to the children” table, what is listed for “NO ACTION (default)” under “Typical use”?",
+      "options": [
+        "NOT NULL",
+        "Natural key",
+        "Safest default — deletion must be deliberate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “NO ACTION (default)” as “Safest default — deletion must be deliberate”."
+    },
+    {
+      "question": "In the “Referential actions: what happens to the children” table, what is listed for “RESTRICT” under “Typical use”?",
+      "options": [
+        "Surrogate key",
+        "Behavioural twin of NO ACTION in SQL Server",
+        "Natural key"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “RESTRICT” as “Behavioural twin of NO ACTION in SQL Server”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is the column or column set that uniquely identifies every row in a table.”",
+      "options": [
+        "every",
+        "primary key (PK)",
+        "foreign key (FK)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A primary key (PK) is the column or column set that uniquely identifies every row in a table. SQL Server enforces two rules absolutely:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a column in one table holding the primary key (or a unique key) of another.”",
+      "options": [
+        "foreign key (FK)",
+        "every",
+        "Insert/update of a child"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A foreign key (FK) is a column in one table holding the primary key (or a unique key) of another. It declares “this row belongs to that parent”, and the engine enforces the declaration on every write, from every application:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Referential actions: what happens to the children”?",
+      "options": [
+        "Safest default — deletion must be deliberate",
+        "Behavioural twin of NO ACTION in SQL Server",
+        "When a parent row is deleted (or its key updated), the FK action decides the outcome."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a parent row is deleted (or its key updated), the FK action decides the outcome. Choosing this at design time is easy; changing it later is a migration with blast radius.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the keys in T-SQL”?",
+      "options": [
+        "Rare — needs a sensible default parent",
+        "A realistic pair of parent and child tables with an explicit referential design:",
+        "Optional relationships — requires a nullable FK"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A realistic pair of parent and child tables with an explicit referential design:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production pitfalls”?",
+      "options": [
+        "A quick trust check every DBA should run after any migration:",
+        "Rare — needs a sensible default parent",
+        "A realistic pair of parent and child tables with an explicit referential design:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A quick trust check every DBA should run after any migration:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Defining a PK also creates a unique index to enforce it, and by default it becomes the table's _____ — meaning the table's rows are physically stored in PK order.”",
+      "options": [
+        "RESTRICT",
+        "CASCADE",
+        "clustered index"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Defining a PK also creates a unique index to enforce it, and by default it becomes the table's clustered index — meaning the table's rows are physically stored in PK order. That single decision influences read performance for the life of the table, which is why key choice deserves more thought than “make it an int and move on”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Referential actions: what happens to the children”?",
+      "options": [
+        "Uniqueness",
+        "CASCADE is the action people regret most: one DELETE can fan out through several tables, hold locks for minutes, and delete far more than intended.",
+        "Rare — needs a sensible default parent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “CASCADE is the action people regret most: one DELETE can fan out through several tables, hold locks for minutes, and delete far more than intended. In production, cascade only on genuinely dependent, low-value children — never across a chain that includes financial history.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Building the keys in T-SQL”?",
+      "options": [
+        "Composite keys are equally normal — a junction table's PK spans both foreign keys, which by definition prevents the same pair appearing twice.",
+        "Uniqueness",
+        "NOT NULL"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Composite keys are equally normal — a junction table's PK spans both foreign keys, which by definition prevents the same pair appearing twice.”"
+    },
+    {
+      "question": "In the “Referential actions: what happens to the children” table, what is listed for “NO ACTION (default)” under “Typical use”?",
+      "options": [
+        "NOT NULL",
+        "Natural key",
+        "Safest default — deletion must be deliberate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “NO ACTION (default)” as “Safest default — deletion must be deliberate”."
+    },
+    {
+      "question": "In the “Referential actions: what happens to the children” table, what is listed for “RESTRICT” under “Typical use”?",
+      "options": [
+        "Surrogate key",
+        "Behavioural twin of NO ACTION in SQL Server",
+        "Natural key"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “RESTRICT” as “Behavioural twin of NO ACTION in SQL Server”."
+    }
+  ],
   takeaways: [
     "A primary key guarantees NOT NULL and uniqueness — and by default becomes the clustered index",
     "A foreign key carries the parent's key into the child and makes orphan rows impossible to store",

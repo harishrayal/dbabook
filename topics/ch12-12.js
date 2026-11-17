@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Index Rebuild",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Index Rebuild within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Rebuild fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Rebuild in practice”?",
+      "options": [
+        "Page life expectancy",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Rebuild”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Rebuild. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Index Rebuild sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Actual plan",
+        "Index Rebuild",
+        "With Index Rebuild, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Index Rebuild with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Rebuild means”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Index Rebuild",
+        "Index Rebuild sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Rebuild fits”?",
+      "options": [
+        "Page life expectancy",
+        "Index Rebuild sits inside a larger system.",
+        "The diagram below places Index Rebuild alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Rebuild alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Rebuild in practice”?",
+      "options": [
+        "Selective lookups",
+        "The following comparison captures the distinctions that matter most when working with Index Rebuild:",
+        "Use the following as a starting point when investigating Index Rebuild."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Rebuild:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Rebuild”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Index Rebuild.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Index Rebuild",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Index Rebuild within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Rebuild fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Rebuild in practice”?",
+      "options": [
+        "Page life expectancy",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Rebuild”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Rebuild. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Index Rebuild sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Actual plan",
+        "Index Rebuild",
+        "With Index Rebuild, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Index Rebuild with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Rebuild means”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Index Rebuild",
+        "Index Rebuild sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Rebuild fits”?",
+      "options": [
+        "Page life expectancy",
+        "Index Rebuild sits inside a larger system.",
+        "The diagram below places Index Rebuild alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Rebuild alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Rebuild in practice”?",
+      "options": [
+        "Selective lookups",
+        "The following comparison captures the distinctions that matter most when working with Index Rebuild:",
+        "Use the following as a starting point when investigating Index Rebuild."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Rebuild:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Rebuild”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Index Rebuild.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Index Rebuild",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Index Rebuild within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Rebuild fits”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Rebuild in practice”?",
+      "options": [
+        "Page life expectancy",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Query stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Rebuild”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Rebuild. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Index Rebuild sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Actual plan",
+        "Index Rebuild",
+        "With Index Rebuild, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Index Rebuild with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Rebuild means”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Index Rebuild",
+        "Index Rebuild sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Rebuild fits”?",
+      "options": [
+        "Page life expectancy",
+        "Index Rebuild sits inside a larger system.",
+        "The diagram below places Index Rebuild alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Rebuild alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Rebuild in practice”?",
+      "options": [
+        "Selective lookups",
+        "The following comparison captures the distinctions that matter most when working with Index Rebuild:",
+        "Use the following as a starting point when investigating Index Rebuild."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Rebuild:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Rebuild”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Index Rebuild.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Index Rebuild is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

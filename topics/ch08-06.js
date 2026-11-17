@@ -178,6 +178,312 @@ It captures log records generated after the last scheduled backup, usually befor
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Restoring Transaction Log Backups",
+        "The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Restoring Transaction Log Backups within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Transaction Log Backups fits”?",
+      "options": [
+        "More backups to apply",
+        "End of the sequence",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Transaction Log Backups in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Transaction Log Backups”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "More backups to apply",
+        "End of the sequence"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring Transaction Log Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "End of the sequence",
+        "Log shipping with reads",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Restoring Transaction Log Backups",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Restoring Transaction Log Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring Transaction Log Backups means”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Transaction Log Backups fits”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Restoring Transaction Log Backups alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Restoring Transaction Log Backups alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Transaction Log Backups in practice”?",
+      "options": [
+        "Highest",
+        "The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Transaction Log Backups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Restoring Transaction Log Backups",
+        "The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Restoring Transaction Log Backups within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Transaction Log Backups fits”?",
+      "options": [
+        "More backups to apply",
+        "End of the sequence",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Transaction Log Backups in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Transaction Log Backups”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "More backups to apply",
+        "End of the sequence"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring Transaction Log Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "End of the sequence",
+        "Log shipping with reads",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Restoring Transaction Log Backups",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Restoring Transaction Log Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring Transaction Log Backups means”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Transaction Log Backups fits”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Restoring Transaction Log Backups alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Restoring Transaction Log Backups alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Transaction Log Backups in practice”?",
+      "options": [
+        "Highest",
+        "The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Transaction Log Backups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Restoring Transaction Log Backups",
+        "The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Restoring Transaction Log Backups within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Transaction Log Backups fits”?",
+      "options": [
+        "More backups to apply",
+        "End of the sequence",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Transaction Log Backups in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Transaction Log Backups”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "More backups to apply",
+        "End of the sequence"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring Transaction Log Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "End of the sequence",
+        "Log shipping with reads",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Restoring Transaction Log Backups",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Restoring Transaction Log Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring Transaction Log Backups means”?",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Transaction Log Backups fits”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Restoring Transaction Log Backups alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Restoring Transaction Log Backups alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Transaction Log Backups in practice”?",
+      "options": [
+        "Highest",
+        "The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring Transaction Log Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Transaction Log Backups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Restoring Transaction Log Backups is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

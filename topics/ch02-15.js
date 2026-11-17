@@ -161,6 +161,312 @@ WHERE  order_date = '2026-01-15';
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “…bytes each row occupies, whether comparisons are exact or approximate, whether an index on that column can be _____, and what happens at the boundary when another type (a parameter, a literal, another column) meets it.”",
+      "options": [
+        "seeked",
+        "Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot…",
+        "Identifiers, counts, quantities"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every column's data type determines four things: how many bytes each row occupies, whether comparisons are exact or approximate, whether an index on that column can be seeked, and what happens at the boundary when another type (a parameter, a literal, another column) meets it. Get the type right and the database quietly does the correct, fast thing forever; get it wrong and every query inherits a workaround.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The most consequential numeric decision is _____.”",
+      "options": [
+        "Identifiers, counts, quantities",
+        "Very large identifiers and totals",
+        "exact versus approximate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The most consequential numeric decision is exact versus approximate. Exact types store precisely what you wrote; approximate types store a binary fraction that may differ in the last bits — perfectly fine for scientific measurement, dangerous for money.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "int",
+        "String types differ in encoding, storage, and comparison behaviour:",
+        "Documents and payloads — each read pays off-row I/O"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “String types differ in encoding, storage, and comparison behaviour:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When two types meet in a comparison, SQL Server applies _____ — the “wider” type wins and the other side is converted.”",
+      "options": [
+        "data type precedence",
+        "Status codes, type flags",
+        "Money, rates, measurements — default for currency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When two types meet in a comparison, SQL Server applies data type precedence — the “wider” type wins and the other side is converted. If the column is converted, the index on it cannot be seeked and every row must be converted (a scan). This is the most common cause of a “the index exists but is not used” diagnosis:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Numeric types: exact versus approximate”?",
+      "options": [
+        "bigint",
+        "smallint / tinyint",
+        "Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot promise that.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "decimal(18,4) / numeric",
+        "ller”); plain varchar for machine-generated identifiers; and declare a realistic n — the declared size is a promise used by the optimiser for memory grants, not just a cap.",
+        "smallint / tinyint"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practical guidance: nvarchar for any text a human typed (people's names are the classic varchar casualty — “Müller” becomes “M?ller”); plain varchar for machine-generated identifiers; and declare a realistic n — the declared size is a promise used by the optimiser for memory grants, not just a cap.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conversions: where indexes go to die”?",
+      "options": [
+        "Related traps: varchar parameter against an nvarchar column (the column wins → conversion → scan); implicit rounding when assigning decimal(12,4) into decimal(12,2); and date…",
+        "decimal(18,4) / numeric",
+        "float / real"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Related traps: varchar parameter against an nvarchar column (the column wins → conversion → scan); implicit rounding when assigning decimal(12,4) into decimal(12,2); and date strings that depend on session language settings — prefer typed literals or unambiguous ISO 8601 strings.”"
+    },
+    {
+      "question": "In the “Numeric types: exact versus approximate” table, what is listed for “int” under “Correct use”?",
+      "options": [
+        "float / real",
+        "never",
+        "Identifiers, counts, quantities"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “int” as “Identifiers, counts, quantities”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "money",
+        "For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key).",
+        "never"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key). Use GUIDs at integration boundaries where global uniqueness is required — then map them, rather than clustering a hot table on randomness.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ storing money in float “because Excel does”; choosing varchar(50) for everything (silent truncation errors are actually preferable to…”",
+      "options": [
+        "Common pitfalls:",
+        "For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key).",
+        "Non-Unicode; characters outside the collation's code page become “?”"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: storing money in float “because Excel does”; choosing varchar(50) for everything (silent truncation errors are actually preferable to silent corruption — at least they are loud); legacy datetime with its 3.33 ms rounding; bit columns that quietly mean three different things; and adding a new column as varchar(max) for “temporary” data that is still there four years later.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “…bytes each row occupies, whether comparisons are exact or approximate, whether an index on that column can be _____, and what happens at the boundary when another type (a parameter, a literal, another column) meets it.”",
+      "options": [
+        "seeked",
+        "Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot…",
+        "Identifiers, counts, quantities"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every column's data type determines four things: how many bytes each row occupies, whether comparisons are exact or approximate, whether an index on that column can be seeked, and what happens at the boundary when another type (a parameter, a literal, another column) meets it. Get the type right and the database quietly does the correct, fast thing forever; get it wrong and every query inherits a workaround.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The most consequential numeric decision is _____.”",
+      "options": [
+        "Identifiers, counts, quantities",
+        "Very large identifiers and totals",
+        "exact versus approximate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The most consequential numeric decision is exact versus approximate. Exact types store precisely what you wrote; approximate types store a binary fraction that may differ in the last bits — perfectly fine for scientific measurement, dangerous for money.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "int",
+        "String types differ in encoding, storage, and comparison behaviour:",
+        "Documents and payloads — each read pays off-row I/O"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “String types differ in encoding, storage, and comparison behaviour:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When two types meet in a comparison, SQL Server applies _____ — the “wider” type wins and the other side is converted.”",
+      "options": [
+        "data type precedence",
+        "Status codes, type flags",
+        "Money, rates, measurements — default for currency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When two types meet in a comparison, SQL Server applies data type precedence — the “wider” type wins and the other side is converted. If the column is converted, the index on it cannot be seeked and every row must be converted (a scan). This is the most common cause of a “the index exists but is not used” diagnosis:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Numeric types: exact versus approximate”?",
+      "options": [
+        "bigint",
+        "smallint / tinyint",
+        "Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot promise that.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "decimal(18,4) / numeric",
+        "ller”); plain varchar for machine-generated identifiers; and declare a realistic n — the declared size is a promise used by the optimiser for memory grants, not just a cap.",
+        "smallint / tinyint"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practical guidance: nvarchar for any text a human typed (people's names are the classic varchar casualty — “Müller” becomes “M?ller”); plain varchar for machine-generated identifiers; and declare a realistic n — the declared size is a promise used by the optimiser for memory grants, not just a cap.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conversions: where indexes go to die”?",
+      "options": [
+        "Related traps: varchar parameter against an nvarchar column (the column wins → conversion → scan); implicit rounding when assigning decimal(12,4) into decimal(12,2); and date…",
+        "decimal(18,4) / numeric",
+        "float / real"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Related traps: varchar parameter against an nvarchar column (the column wins → conversion → scan); implicit rounding when assigning decimal(12,4) into decimal(12,2); and date strings that depend on session language settings — prefer typed literals or unambiguous ISO 8601 strings.”"
+    },
+    {
+      "question": "In the “Numeric types: exact versus approximate” table, what is listed for “int” under “Correct use”?",
+      "options": [
+        "float / real",
+        "never",
+        "Identifiers, counts, quantities"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “int” as “Identifiers, counts, quantities”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "money",
+        "For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key).",
+        "never"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key). Use GUIDs at integration boundaries where global uniqueness is required — then map them, rather than clustering a hot table on randomness.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ storing money in float “because Excel does”; choosing varchar(50) for everything (silent truncation errors are actually preferable to…”",
+      "options": [
+        "Common pitfalls:",
+        "For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key).",
+        "Non-Unicode; characters outside the collation's code page become “?”"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: storing money in float “because Excel does”; choosing varchar(50) for everything (silent truncation errors are actually preferable to silent corruption — at least they are loud); legacy datetime with its 3.33 ms rounding; bit columns that quietly mean three different things; and adding a new column as varchar(max) for “temporary” data that is still there four years later.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “…bytes each row occupies, whether comparisons are exact or approximate, whether an index on that column can be _____, and what happens at the boundary when another type (a parameter, a literal, another column) meets it.”",
+      "options": [
+        "seeked",
+        "Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot…",
+        "Identifiers, counts, quantities"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every column's data type determines four things: how many bytes each row occupies, whether comparisons are exact or approximate, whether an index on that column can be seeked, and what happens at the boundary when another type (a parameter, a literal, another column) meets it. Get the type right and the database quietly does the correct, fast thing forever; get it wrong and every query inherits a workaround.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The most consequential numeric decision is _____.”",
+      "options": [
+        "Identifiers, counts, quantities",
+        "Very large identifiers and totals",
+        "exact versus approximate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The most consequential numeric decision is exact versus approximate. Exact types store precisely what you wrote; approximate types store a binary fraction that may differ in the last bits — perfectly fine for scientific measurement, dangerous for money.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "int",
+        "String types differ in encoding, storage, and comparison behaviour:",
+        "Documents and payloads — each read pays off-row I/O"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “String types differ in encoding, storage, and comparison behaviour:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When two types meet in a comparison, SQL Server applies _____ — the “wider” type wins and the other side is converted.”",
+      "options": [
+        "data type precedence",
+        "Status codes, type flags",
+        "Money, rates, measurements — default for currency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When two types meet in a comparison, SQL Server applies data type precedence — the “wider” type wins and the other side is converted. If the column is converted, the index on it cannot be seeked and every row must be converted (a scan). This is the most common cause of a “the index exists but is not used” diagnosis:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Numeric types: exact versus approximate”?",
+      "options": [
+        "bigint",
+        "smallint / tinyint",
+        "Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Money deserves a hard rule: decimal(p,s) with an explicit scale (12,2 for currency, 12,4 for rates), because reconciliation systems compare totals to the penny and floats cannot promise that.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "decimal(18,4) / numeric",
+        "ller”); plain varchar for machine-generated identifiers; and declare a realistic n — the declared size is a promise used by the optimiser for memory grants, not just a cap.",
+        "smallint / tinyint"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practical guidance: nvarchar for any text a human typed (people's names are the classic varchar casualty — “Müller” becomes “M?ller”); plain varchar for machine-generated identifiers; and declare a realistic n — the declared size is a promise used by the optimiser for memory grants, not just a cap.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Conversions: where indexes go to die”?",
+      "options": [
+        "Related traps: varchar parameter against an nvarchar column (the column wins → conversion → scan); implicit rounding when assigning decimal(12,4) into decimal(12,2); and date…",
+        "decimal(18,4) / numeric",
+        "float / real"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Related traps: varchar parameter against an nvarchar column (the column wins → conversion → scan); implicit rounding when assigning decimal(12,4) into decimal(12,2); and date strings that depend on session language settings — prefer typed literals or unambiguous ISO 8601 strings.”"
+    },
+    {
+      "question": "In the “Numeric types: exact versus approximate” table, what is listed for “int” under “Correct use”?",
+      "options": [
+        "float / real",
+        "never",
+        "Identifiers, counts, quantities"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “int” as “Identifiers, counts, quantities”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Character types: the width decisions”?",
+      "options": [
+        "money",
+        "For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key).",
+        "never"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key). Use GUIDs at integration boundaries where global uniqueness is required — then map them, rather than clustering a hot table on randomness.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ storing money in float “because Excel does”; choosing varchar(50) for everything (silent truncation errors are actually preferable to…”",
+      "options": [
+        "Common pitfalls:",
+        "For identifiers, prefer bigint identity over uniqueidentifier: 8 bytes sorted (good clustering key) versus 16 bytes random (fragmenting clustering key).",
+        "Non-Unicode; characters outside the collation's code page become “?”"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: storing money in float “because Excel does”; choosing varchar(50) for everything (silent truncation errors are actually preferable to silent corruption — at least they are loud); legacy datetime with its 3.33 ms rounding; bit columns that quietly mean three different things; and adding a new column as varchar(max) for “temporary” data that is still there four years later.”"
+    }
+  ],
   takeaways: [
     "Data types determine storage, comparison semantics, and whether an index can be seeked",
     "Exact numerics (decimal) for money; float/real are approximate and never appropriate for currency",

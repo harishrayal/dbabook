@@ -186,6 +186,312 @@ Granting only the minimum permissions required for the minimum scope and time. I
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "User-Defined Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine User-Defined Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Roles fits”?",
+      "options": [
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Roles in practice”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Neutral",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Roles”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to User-Defined Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Use the following as a starting point when investigating User-Defined Roles.",
+        "Roles simplify permission management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "User-Defined Roles",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates User-Defined Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What User-Defined Roles means”?",
+      "options": [
+        "User-Defined Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Roles fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places User-Defined Roles alongside the core concepts of SQL Server security and permissions.",
+        "User-Defined Roles sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places User-Defined Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Roles in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with User-Defined Roles:",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with User-Defined Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "User-Defined Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine User-Defined Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Roles fits”?",
+      "options": [
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Roles in practice”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Neutral",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Roles”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to User-Defined Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Use the following as a starting point when investigating User-Defined Roles.",
+        "Roles simplify permission management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "User-Defined Roles",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates User-Defined Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What User-Defined Roles means”?",
+      "options": [
+        "User-Defined Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Roles fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places User-Defined Roles alongside the core concepts of SQL Server security and permissions.",
+        "User-Defined Roles sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places User-Defined Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Roles in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with User-Defined Roles:",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with User-Defined Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "User-Defined Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine User-Defined Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Roles fits”?",
+      "options": [
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Roles in practice”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Neutral",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Roles”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to User-Defined Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Use the following as a starting point when investigating User-Defined Roles.",
+        "Roles simplify permission management.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "User-Defined Roles",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates User-Defined Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What User-Defined Roles means”?",
+      "options": [
+        "User-Defined Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Roles fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places User-Defined Roles alongside the core concepts of SQL Server security and permissions.",
+        "User-Defined Roles sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places User-Defined Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Roles in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with User-Defined Roles:",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with User-Defined Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "User-Defined Roles is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

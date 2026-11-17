@@ -189,6 +189,312 @@ A predicate that compares a bare column to a constant or parameter with simple o
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "SARGable Queries",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SARGable Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SARGable Queries fits”?",
+      "options": [
+        "Page life expectancy",
+        "SARGable Queries sits inside a larger system.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SARGable Queries in practice”?",
+      "options": [
+        "Selective lookups",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with SARGable Queries:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SARGable Queries”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating SARGable Queries.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SARGable Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "With SARGable Queries, prefer measured, reversible changes.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "SARGable Queries",
+        "Use the following as a starting point when investigating SARGable Queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SARGable Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SARGable Queries means”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SARGable Queries fits”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SARGable Queries in practice”?",
+      "options": [
+        "SARGable Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with SARGable Queries:",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SARGable Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SARGable Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SARGable Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "SARGable Queries",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SARGable Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SARGable Queries fits”?",
+      "options": [
+        "Page life expectancy",
+        "SARGable Queries sits inside a larger system.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SARGable Queries in practice”?",
+      "options": [
+        "Selective lookups",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with SARGable Queries:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SARGable Queries”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating SARGable Queries.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SARGable Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "With SARGable Queries, prefer measured, reversible changes.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "SARGable Queries",
+        "Use the following as a starting point when investigating SARGable Queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SARGable Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SARGable Queries means”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SARGable Queries fits”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SARGable Queries in practice”?",
+      "options": [
+        "SARGable Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with SARGable Queries:",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SARGable Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SARGable Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SARGable Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "SARGable Queries",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SARGable Queries within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SARGable Queries fits”?",
+      "options": [
+        "Page life expectancy",
+        "SARGable Queries sits inside a larger system.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SARGable Queries in practice”?",
+      "options": [
+        "Selective lookups",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with SARGable Queries:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SARGable Queries”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating SARGable Queries.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SARGable Queries. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "With SARGable Queries, prefer measured, reversible changes.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "SARGable Queries",
+        "Use the following as a starting point when investigating SARGable Queries."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SARGable Queries with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SARGable Queries means”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SARGable Queries fits”?",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SARGable Queries alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SARGable Queries in practice”?",
+      "options": [
+        "SARGable Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with SARGable Queries:",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SARGable Queries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SARGable Queries”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SARGable Queries is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SARGable Queries is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

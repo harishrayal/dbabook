@@ -179,6 +179,312 @@ It periodically backs up, copies and restores logs to a secondary, giving a warm
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Merge Replication",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Merge Replication within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Merge Replication fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Replication moves data via publication and subscription.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Merge Replication in practice”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Merge Replication sits inside a larger system.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Merge Replication”?",
+      "options": [
+        "Disconnected sites",
+        "Theory becomes useful when you can apply it.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Merge Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Merge Replication."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Merge Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Merge Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Merge Replication means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Merge Replication sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Merge Replication fits”?",
+      "options": [
+        "The diagram below places Merge Replication alongside the core concepts of disaster recovery technologies.",
+        "Merge Replication sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Merge Replication alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Merge Replication in practice”?",
+      "options": [
+        "Log shipping",
+        "Medium",
+        "The following comparison captures the distinctions that matter most when working with Merge Replication:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Merge Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Merge Replication”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Merge Replication",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Merge Replication within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Merge Replication fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Replication moves data via publication and subscription.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Merge Replication in practice”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Merge Replication sits inside a larger system.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Merge Replication”?",
+      "options": [
+        "Disconnected sites",
+        "Theory becomes useful when you can apply it.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Merge Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Merge Replication."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Merge Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Merge Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Merge Replication means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Merge Replication sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Merge Replication fits”?",
+      "options": [
+        "The diagram below places Merge Replication alongside the core concepts of disaster recovery technologies.",
+        "Merge Replication sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Merge Replication alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Merge Replication in practice”?",
+      "options": [
+        "Log shipping",
+        "Medium",
+        "The following comparison captures the distinctions that matter most when working with Merge Replication:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Merge Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Merge Replication”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Merge Replication",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Merge Replication within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Merge Replication fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Replication moves data via publication and subscription.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Merge Replication in practice”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Merge Replication sits inside a larger system.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Merge Replication”?",
+      "options": [
+        "Disconnected sites",
+        "Theory becomes useful when you can apply it.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Merge Replication. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Merge Replication."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Merge Replication"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Merge Replication with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Merge Replication means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Merge Replication sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Merge Replication fits”?",
+      "options": [
+        "The diagram below places Merge Replication alongside the core concepts of disaster recovery technologies.",
+        "Merge Replication sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Merge Replication alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Merge Replication in practice”?",
+      "options": [
+        "Log shipping",
+        "Medium",
+        "The following comparison captures the distinctions that matter most when working with Merge Replication:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Merge Replication:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Merge Replication”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Merge Replication is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

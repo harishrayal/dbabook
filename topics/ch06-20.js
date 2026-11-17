@@ -186,6 +186,312 @@ Because the increment grows with the file, causing increasingly large and unpred
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB Configuration and Sizing sits inside a larger system.",
+        "TempDB Configuration and Sizing",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine TempDB Configuration and Sizing within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Configuration and Sizing fits”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating TempDB Configuration and Sizing."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Configuration and Sizing in practice”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Configuration and Sizing”?",
+      "options": [
+        "TempDB Configuration and Sizing",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Configuration and Sizing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "TempDB Configuration and Sizing",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "TempDB Configuration and Sizing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "TempDB Configuration and Sizing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates TempDB Configuration and Sizing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Configuration and Sizing means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:",
+        "Data file growth and log file growth behave differently.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Configuration and Sizing fits”?",
+      "options": [
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management.",
+        "TempDB Configuration and Sizing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Configuration and Sizing in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Configuration and Sizing”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "The first example establishes the relevant state.",
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB Configuration and Sizing sits inside a larger system.",
+        "TempDB Configuration and Sizing",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine TempDB Configuration and Sizing within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Configuration and Sizing fits”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating TempDB Configuration and Sizing."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Configuration and Sizing in practice”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Configuration and Sizing”?",
+      "options": [
+        "TempDB Configuration and Sizing",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Configuration and Sizing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "TempDB Configuration and Sizing",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "TempDB Configuration and Sizing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "TempDB Configuration and Sizing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates TempDB Configuration and Sizing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Configuration and Sizing means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:",
+        "Data file growth and log file growth behave differently.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Configuration and Sizing fits”?",
+      "options": [
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management.",
+        "TempDB Configuration and Sizing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Configuration and Sizing in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Configuration and Sizing”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "The first example establishes the relevant state.",
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB Configuration and Sizing sits inside a larger system.",
+        "TempDB Configuration and Sizing",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine TempDB Configuration and Sizing within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Configuration and Sizing fits”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating TempDB Configuration and Sizing."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Configuration and Sizing in practice”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Configuration and Sizing”?",
+      "options": [
+        "TempDB Configuration and Sizing",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Configuration and Sizing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "TempDB Configuration and Sizing",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "TempDB Configuration and Sizing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "TempDB Configuration and Sizing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates TempDB Configuration and Sizing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Configuration and Sizing means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:",
+        "Data file growth and log file growth behave differently.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Configuration and Sizing fits”?",
+      "options": [
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management.",
+        "TempDB Configuration and Sizing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Configuration and Sizing in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Configuration and Sizing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Configuration and Sizing”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "The first example establishes the relevant state.",
+        "The diagram below places TempDB Configuration and Sizing alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "TempDB Configuration and Sizing is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

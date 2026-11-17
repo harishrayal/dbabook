@@ -160,6 +160,312 @@ Testing on non-production, defaulting to read-only, explicit destructive switche
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "PowerShell Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Fundamentals within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Fundamentals fits”?",
+      "options": [
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Fundamentals in practice”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Fundamentals”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Fundamentals means”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Where-Object",
+        "@params"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Fundamentals fits”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Fundamentals in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "PowerShell Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Fundamentals within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Fundamentals fits”?",
+      "options": [
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Fundamentals in practice”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Fundamentals”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Fundamentals means”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Where-Object",
+        "@params"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Fundamentals fits”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Fundamentals in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "PowerShell Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine PowerShell Fundamentals within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Fundamentals fits”?",
+      "options": [
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Fundamentals in practice”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Fundamentals”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PowerShell Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PowerShell Fundamentals means”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Where-Object",
+        "@params"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PowerShell Fundamentals fits”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places PowerShell Fundamentals alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PowerShell Fundamentals in practice”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "The following comparison captures the distinctions that matter most when working with PowerShell Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PowerShell Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PowerShell Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    }
+  ],
   takeaways: [
     "PowerShell Fundamentals is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -181,6 +181,312 @@ Loop over the server list (optionally in parallel), use Invoke-Sqlcmd against ms
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "SQL Server Agent Job Monitoring",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Job Monitoring within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Job Monitoring fits”?",
+      "options": [
+        "With SQL Server Agent Job Monitoring, prefer measured, reversible changes.",
+        "Daily",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Job Monitoring in practice”?",
+      "options": [
+        "Get-Service",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Job Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Job Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "With SQL Server Agent Job Monitoring, prefer measured, reversible changes.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring.",
+        "SQL Server Agent Job Monitoring",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Job Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Job Monitoring means”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "SQL Server Agent Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Job Monitoring fits”?",
+      "options": [
+        "SQL Server Agent Job Monitoring",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The diagram below places SQL Server Agent Job Monitoring alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Job Monitoring alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Job Monitoring in practice”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Job Monitoring:",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Job Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Job Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "SQL Server Agent Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "SQL Server Agent Job Monitoring",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Job Monitoring within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Job Monitoring fits”?",
+      "options": [
+        "With SQL Server Agent Job Monitoring, prefer measured, reversible changes.",
+        "Daily",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Job Monitoring in practice”?",
+      "options": [
+        "Get-Service",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Job Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Job Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "With SQL Server Agent Job Monitoring, prefer measured, reversible changes.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring.",
+        "SQL Server Agent Job Monitoring",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Job Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Job Monitoring means”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "SQL Server Agent Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Job Monitoring fits”?",
+      "options": [
+        "SQL Server Agent Job Monitoring",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The diagram below places SQL Server Agent Job Monitoring alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Job Monitoring alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Job Monitoring in practice”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Job Monitoring:",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Job Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Job Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "SQL Server Agent Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "SQL Server Agent Job Monitoring",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Job Monitoring within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Job Monitoring fits”?",
+      "options": [
+        "With SQL Server Agent Job Monitoring, prefer measured, reversible changes.",
+        "Daily",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Job Monitoring in practice”?",
+      "options": [
+        "Get-Service",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Job Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Job Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "With SQL Server Agent Job Monitoring, prefer measured, reversible changes.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating SQL Server Agent Job Monitoring.",
+        "SQL Server Agent Job Monitoring",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Job Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Job Monitoring means”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "SQL Server Agent Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Job Monitoring fits”?",
+      "options": [
+        "SQL Server Agent Job Monitoring",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "The diagram below places SQL Server Agent Job Monitoring alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Job Monitoring alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Job Monitoring in practice”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Job Monitoring:",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Job Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Job Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "SQL Server Agent Job Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Agent Job Monitoring is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

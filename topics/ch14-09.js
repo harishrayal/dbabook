@@ -182,6 +182,312 @@ Because it can delete damaged rows or pages to make the database consistent — 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "DBCC CHECKALLOC",
+        "Check log, avoid emergency mode first",
+        "Check log access and space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine DBCC CHECKALLOC within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKALLOC fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKALLOC in practice”?",
+      "options": [
+        "With DBCC CHECKALLOC, prefer measured, reversible changes.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKALLOC”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBCC CHECKALLOC. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "DBCC CHECKALLOC",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates DBCC CHECKALLOC with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBCC CHECKALLOC means”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKALLOC fits”?",
+      "options": [
+        "With DBCC CHECKALLOC, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "The diagram below places DBCC CHECKALLOC alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBCC CHECKALLOC alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKALLOC in practice”?",
+      "options": [
+        "DBCC CHECKALLOC sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with DBCC CHECKALLOC:",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBCC CHECKALLOC:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKALLOC”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "DBCC CHECKALLOC sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "DBCC CHECKALLOC",
+        "Check log, avoid emergency mode first",
+        "Check log access and space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine DBCC CHECKALLOC within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKALLOC fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKALLOC in practice”?",
+      "options": [
+        "With DBCC CHECKALLOC, prefer measured, reversible changes.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKALLOC”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBCC CHECKALLOC. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "DBCC CHECKALLOC",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates DBCC CHECKALLOC with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBCC CHECKALLOC means”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKALLOC fits”?",
+      "options": [
+        "With DBCC CHECKALLOC, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "The diagram below places DBCC CHECKALLOC alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBCC CHECKALLOC alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKALLOC in practice”?",
+      "options": [
+        "DBCC CHECKALLOC sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with DBCC CHECKALLOC:",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBCC CHECKALLOC:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKALLOC”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "DBCC CHECKALLOC sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "DBCC CHECKALLOC",
+        "Check log, avoid emergency mode first",
+        "Check log access and space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine DBCC CHECKALLOC within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKALLOC fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKALLOC in practice”?",
+      "options": [
+        "With DBCC CHECKALLOC, prefer measured, reversible changes.",
+        "DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DBCC CHECKALLOC checks allocation, CHECKTABLE checks a table and CHECKCATALOG checks system metadata. Running full CHECKDB frequently can be expensive, so large systems sometimes split checks across a rotating schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKALLOC”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DBCC CHECKALLOC. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "DBCC CHECKALLOC",
+        "Page-level restore lets you restore a single damaged page from a recent, verified backup, minimising downtime — but only in FULL recovery model with a suitable log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates DBCC CHECKALLOC with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DBCC CHECKALLOC means”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Minor, non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DBCC CHECKALLOC fits”?",
+      "options": [
+        "With DBCC CHECKALLOC, prefer measured, reversible changes.",
+        "Minor, non-data issues",
+        "The diagram below places DBCC CHECKALLOC alongside the core concepts of database integrity and corruption."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places DBCC CHECKALLOC alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DBCC CHECKALLOC in practice”?",
+      "options": [
+        "DBCC CHECKALLOC sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with DBCC CHECKALLOC:",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DBCC CHECKALLOC:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DBCC CHECKALLOC”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "DBCC CHECKALLOC sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "DBCC CHECKALLOC is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -162,6 +162,312 @@ Use ALTER DATABASE ... MODIFY FILE to change the catalogued path, take the datab
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "TempDB Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine TempDB Architecture within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Architecture fits”?",
+      "options": [
+        "TempDB Architecture",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Architecture in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "TempDB Architecture",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Architecture”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Architecture means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Architecture fits”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places TempDB Architecture alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Architecture in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "TempDB Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine TempDB Architecture within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Architecture fits”?",
+      "options": [
+        "TempDB Architecture",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Architecture in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "TempDB Architecture",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Architecture”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Architecture means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Architecture fits”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places TempDB Architecture alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Architecture in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "TempDB Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine TempDB Architecture within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Architecture fits”?",
+      "options": [
+        "TempDB Architecture",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Architecture in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "TempDB Architecture",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Architecture”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Architecture means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Architecture fits”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places TempDB Architecture alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Architecture in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "The diagram below places TempDB Architecture alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Architecture”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with TempDB Architecture:",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    }
+  ],
   takeaways: [
     "TempDB Architecture is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

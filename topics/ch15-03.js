@@ -185,6 +185,312 @@ Reorganize lightly fragmented indexes (roughly 10-30%) online with low impact; r
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Data File Capacity Planning",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Data File Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Data File Capacity Planning fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data File Capacity Planning in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Data File Capacity Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Data File Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Long transactions",
+        "Data File Capacity Planning",
+        "Bulk loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Data File Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Data File Capacity Planning means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Data File Capacity Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data File Capacity Planning in practice”?",
+      "options": [
+        "With Data File Capacity Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Data File Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Data File Capacity Planning",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Data File Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Data File Capacity Planning fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data File Capacity Planning in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Data File Capacity Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Data File Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Long transactions",
+        "Data File Capacity Planning",
+        "Bulk loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Data File Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Data File Capacity Planning means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Data File Capacity Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data File Capacity Planning in practice”?",
+      "options": [
+        "With Data File Capacity Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Data File Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Data File Capacity Planning",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Data File Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Data File Capacity Planning fits”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data File Capacity Planning in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Data File Capacity Planning”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Data File Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Long transactions",
+        "Data File Capacity Planning",
+        "Bulk loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Data File Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Data File Capacity Planning means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Data File Capacity Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Data File Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data File Capacity Planning in practice”?",
+      "options": [
+        "With Data File Capacity Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Data File Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Data File Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Data File Capacity Planning is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

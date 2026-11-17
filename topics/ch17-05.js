@@ -181,6 +181,312 @@ It periodically backs up, copies and restores logs to a secondary, giving a warm
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:",
+        "Primary and Secondary Databases",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Primary and Secondary Databases within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Primary and Secondary Databases fits”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Disaster recovery protects against site or region loss.",
+        "Hours"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Primary and Secondary Databases in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Primary and Secondary Databases”?",
+      "options": [
+        "Hours",
+        "Theory becomes useful when you can apply it.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Primary and Secondary Databases. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Hours",
+        "Log shipping"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Primary and Secondary Databases"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Primary and Secondary Databases with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Primary and Secondary Databases means”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Primary and Secondary Databases fits”?",
+      "options": [
+        "The diagram below places Primary and Secondary Databases alongside the core concepts of disaster recovery technologies.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Primary and Secondary Databases alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Primary and Secondary Databases in practice”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Primary and Secondary Databases”?",
+      "options": [
+        "With Primary and Secondary Databases, prefer measured, reversible changes.",
+        "The first example establishes the relevant state.",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:",
+        "Primary and Secondary Databases",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Primary and Secondary Databases within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Primary and Secondary Databases fits”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Disaster recovery protects against site or region loss.",
+        "Hours"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Primary and Secondary Databases in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Primary and Secondary Databases”?",
+      "options": [
+        "Hours",
+        "Theory becomes useful when you can apply it.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Primary and Secondary Databases. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Hours",
+        "Log shipping"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Primary and Secondary Databases"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Primary and Secondary Databases with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Primary and Secondary Databases means”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Primary and Secondary Databases fits”?",
+      "options": [
+        "The diagram below places Primary and Secondary Databases alongside the core concepts of disaster recovery technologies.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Primary and Secondary Databases alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Primary and Secondary Databases in practice”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Primary and Secondary Databases”?",
+      "options": [
+        "With Primary and Secondary Databases, prefer measured, reversible changes.",
+        "The first example establishes the relevant state.",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:",
+        "Primary and Secondary Databases",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Primary and Secondary Databases within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Primary and Secondary Databases fits”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Disaster recovery protects against site or region loss.",
+        "Hours"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Primary and Secondary Databases in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Primary and Secondary Databases”?",
+      "options": [
+        "Hours",
+        "Theory becomes useful when you can apply it.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Primary and Secondary Databases. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Hours",
+        "Log shipping"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Primary and Secondary Databases"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Primary and Secondary Databases with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Primary and Secondary Databases means”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Primary and Secondary Databases fits”?",
+      "options": [
+        "The diagram below places Primary and Secondary Databases alongside the core concepts of disaster recovery technologies.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Primary and Secondary Databases alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Primary and Secondary Databases in practice”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Primary and Secondary Databases:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Primary and Secondary Databases”?",
+      "options": [
+        "With Primary and Secondary Databases, prefer measured, reversible changes.",
+        "The first example establishes the relevant state.",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Primary and Secondary Databases is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

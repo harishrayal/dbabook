@@ -186,6 +186,312 @@ Get-Volume | Select-Object DriveLetter, FileSystemLabel,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “What matters for a DBA is not the clock speed on the box label but _____.”",
+      "options": [
+        "max degree of parallelism (MAXDOP)",
+        "cost threshold for parallelism",
+        "how many runnable tasks compete for schedulers"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The CPU executes instructions; SQL Server's schedulers map one-to-one onto logical processors and each running query task occupies a scheduler slot. What matters for a DBA is not the clock speed on the box label but how many runnable tasks compete for schedulers.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RAM: the tier SQL Server lives in”?",
+      "options": [
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit.",
+        "Persistent &gt; logical processors = CPU starvation"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit. A page served from RAM takes microseconds; the same page from disk takes milliseconds — three orders of magnitude, which is why memory sizing beats almost every other tuning step.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage: latency, throughput, and IOPS”?",
+      "options": [
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit.",
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Storage is the slowest tier and the most common bottleneck in production. Three properties describe it, and they fail independently. A device can be fast at one and poor at the other two, so always name which property your workload depends on:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Matching counters to symptoms”?",
+      "options": [
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box.",
+        "Available MBytes",
+        "When a user says \"the server is slow\", triage the three resources in this order — it takes about five minutes:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a user says \"the server is slow\", triage the three resources in this order — it takes about five minutes:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Modern servers group cores and memory into _____ (one per socket).”",
+      "options": [
+        "Latency",
+        "NUMA nodes",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Modern servers group cores and memory into NUMA nodes (one per socket). Memory inside a node is fast to reach; memory on the other socket costs extra hops. SQL Server is NUMA-aware: it allocates memory per node and schedules queries locally when it can.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing and capacity pitfalls”?",
+      "options": [
+        "Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes.",
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "IO waits"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes. When all three counters look unhealthy, find the first domino rather than \"upgrading everything\".”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "IOPS",
+        "Throughput",
+        "CPU, RAM, and Storage Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates CPU, RAM, and Storage Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two SQL settings tie directly to the hardware: _____ caps how many schedulers one query may use, and cost threshold for parallelism decides when a plan may go parallel at all.”",
+      "options": [
+        "CPU",
+        "max degree of parallelism (MAXDOP)",
+        "IO waits"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two SQL settings tie directly to the hardware: max degree of parallelism (MAXDOP) caps how many schedulers one query may use, and cost threshold for parallelism decides when a plan may go parallel at all. Misconfigured, they turn ordinary OLTP workloads into CPU storms.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RAM: the tier SQL Server lives in”?",
+      "options": [
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box.",
+        "measure before you change",
+        "Keep the triage script ready before the incident, not during it:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box. If SQL Server is allowed to consume everything (the default max server memory is effectively unlimited), the OS starts paging, and the whole machine degrades — this is the classic \"SQL Server installed and the server became slow\" story.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server feels storage problems as _____: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans.”",
+      "options": [
+        "Memory",
+        "Storage",
+        "IO waits"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server feels storage problems as IO waits: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans. The transaction log is particularly sensitive — every commit waits for a log write, so log latency multiplies directly into transaction latency.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “What matters for a DBA is not the clock speed on the box label but _____.”",
+      "options": [
+        "max degree of parallelism (MAXDOP)",
+        "cost threshold for parallelism",
+        "how many runnable tasks compete for schedulers"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The CPU executes instructions; SQL Server's schedulers map one-to-one onto logical processors and each running query task occupies a scheduler slot. What matters for a DBA is not the clock speed on the box label but how many runnable tasks compete for schedulers.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RAM: the tier SQL Server lives in”?",
+      "options": [
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit.",
+        "Persistent > logical processors = CPU starvation"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit. A page served from RAM takes microseconds; the same page from disk takes milliseconds — three orders of magnitude, which is why memory sizing beats almost every other tuning step.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage: latency, throughput, and IOPS”?",
+      "options": [
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit.",
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Storage is the slowest tier and the most common bottleneck in production. Three properties describe it, and they fail independently. A device can be fast at one and poor at the other two, so always name which property your workload depends on:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Matching counters to symptoms”?",
+      "options": [
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box.",
+        "Available MBytes",
+        "When a user says \"the server is slow\", triage the three resources in this order — it takes about five minutes:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a user says \"the server is slow\", triage the three resources in this order — it takes about five minutes:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Modern servers group cores and memory into _____ (one per socket).”",
+      "options": [
+        "Latency",
+        "NUMA nodes",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Modern servers group cores and memory into NUMA nodes (one per socket). Memory inside a node is fast to reach; memory on the other socket costs extra hops. SQL Server is NUMA-aware: it allocates memory per node and schedules queries locally when it can.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing and capacity pitfalls”?",
+      "options": [
+        "Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes.",
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "IO waits"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes. When all three counters look unhealthy, find the first domino rather than \"upgrading everything\".”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "IOPS",
+        "Throughput",
+        "CPU, RAM, and Storage Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates CPU, RAM, and Storage Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two SQL settings tie directly to the hardware: _____ caps how many schedulers one query may use, and cost threshold for parallelism decides when a plan may go parallel at all.”",
+      "options": [
+        "CPU",
+        "max degree of parallelism (MAXDOP)",
+        "IO waits"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two SQL settings tie directly to the hardware: max degree of parallelism (MAXDOP) caps how many schedulers one query may use, and cost threshold for parallelism decides when a plan may go parallel at all. Misconfigured, they turn ordinary OLTP workloads into CPU storms.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RAM: the tier SQL Server lives in”?",
+      "options": [
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box.",
+        "measure before you change",
+        "Keep the triage script ready before the incident, not during it:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box. If SQL Server is allowed to consume everything (the default max server memory is effectively unlimited), the OS starts paging, and the whole machine degrades — this is the classic \"SQL Server installed and the server became slow\" story.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server feels storage problems as _____: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans.”",
+      "options": [
+        "Memory",
+        "Storage",
+        "IO waits"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server feels storage problems as IO waits: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans. The transaction log is particularly sensitive — every commit waits for a log write, so log latency multiplies directly into transaction latency.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “What matters for a DBA is not the clock speed on the box label but _____.”",
+      "options": [
+        "max degree of parallelism (MAXDOP)",
+        "cost threshold for parallelism",
+        "how many runnable tasks compete for schedulers"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The CPU executes instructions; SQL Server's schedulers map one-to-one onto logical processors and each running query task occupies a scheduler slot. What matters for a DBA is not the clock speed on the box label but how many runnable tasks compete for schedulers.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RAM: the tier SQL Server lives in”?",
+      "options": [
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit.",
+        "Persistent > logical processors = CPU starvation"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit. A page served from RAM takes microseconds; the same page from disk takes milliseconds — three orders of magnitude, which is why memory sizing beats almost every other tuning step.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage: latency, throughput, and IOPS”?",
+      "options": [
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit.",
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Storage is the slowest tier and the most common bottleneck in production. Three properties describe it, and they fail independently. A device can be fast at one and poor at the other two, so always name which property your workload depends on:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Matching counters to symptoms”?",
+      "options": [
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box.",
+        "Available MBytes",
+        "When a user says \"the server is slow\", triage the three resources in this order — it takes about five minutes:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a user says \"the server is slow\", triage the three resources in this order — it takes about five minutes:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Modern servers group cores and memory into _____ (one per socket).”",
+      "options": [
+        "Latency",
+        "NUMA nodes",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Modern servers group cores and memory into NUMA nodes (one per socket). Memory inside a node is fast to reach; memory on the other socket costs extra hops. SQL Server is NUMA-aware: it allocates memory per node and schedules queries locally when it can.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing and capacity pitfalls”?",
+      "options": [
+        "Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes.",
+        "Storage is the slowest tier and the most common bottleneck in production.",
+        "IO waits"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes. When all three counters look unhealthy, find the first domino rather than \"upgrading everything\".”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "IOPS",
+        "Throughput",
+        "CPU, RAM, and Storage Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates CPU, RAM, and Storage Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two SQL settings tie directly to the hardware: _____ caps how many schedulers one query may use, and cost threshold for parallelism decides when a plan may go parallel at all.”",
+      "options": [
+        "CPU",
+        "max degree of parallelism (MAXDOP)",
+        "IO waits"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two SQL settings tie directly to the hardware: max degree of parallelism (MAXDOP) caps how many schedulers one query may use, and cost threshold for parallelism decides when a plan may go parallel at all. Misconfigured, they turn ordinary OLTP workloads into CPU storms.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RAM: the tier SQL Server lives in”?",
+      "options": [
+        "Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box.",
+        "measure before you change",
+        "Keep the triage script ready before the incident, not during it:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box. If SQL Server is allowed to consume everything (the default max server memory is effectively unlimited), the OS starts paging, and the whole machine degrades — this is the classic \"SQL Server installed and the server became slow\" story.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server feels storage problems as _____: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans.”",
+      "options": [
+        "Memory",
+        "Storage",
+        "IO waits"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server feels storage problems as IO waits: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans. The transaction log is particularly sensitive — every commit waits for a log write, so log latency multiplies directly into transaction latency.”"
+    }
+  ],
   takeaways: [
     "CPU problems show as scheduler pressure; memory problems show as page life drop; storage problems show as IO waits",
     "Set max server memory explicitly — leave the OS 1–4 GB and never let SQL Server starve the host",

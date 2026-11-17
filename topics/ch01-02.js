@@ -162,6 +162,312 @@ ORDER  BY size_mb DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “At that point the role splits along _____, because the four jobs genuinely run on different clocks:”",
+      "options": [
+        "the release",
+        "timescale",
+        "Development DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In a small company one DBA does everything: backups at night, indexes by day, on call at the weekend. Specialisation appears when the estate outgrows one person — multiple instances, several applications, regulated data, and a release train that never stops. At that point the role splits along timescale, because the four jobs genuinely run on different clocks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types side by side”?",
+      "options": [
+        "The clearest way to separate the roles is by what they own and what they are measured on:",
+        "Development DBA.",
+        "Infrastructure DBA."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The clearest way to separate the roles is by what they own and what they are measured on:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "the release",
+        "Infrastructure DBA",
+        "Production DBA."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Production DBA. Starts with monitoring: alerts, failed Agent jobs, backup verification, disk space, blocking. Then the change window — reviewing and applying approved releases — then on-call for incidents, and capacity or housekeeping work squeezed between them. Success is a boring day: nothing paged, nothing lost.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For a _____:”",
+      "options": [
+        "the estate",
+        "schema change",
+        "Infrastructure DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Most database work travels a predictable path. For a schema change:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Judge a position by what it _____, not what it is called.”",
+      "options": [
+        "owns",
+        "the estate",
+        "Database Architect"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Job titles in this field are unreliable. One company's “Production DBA” is another's “Senior Systems DBA”; a small firm may advertise “DBA” and expect all four roles. Judge a position by what it owns, not what it is called. Three pitfalls to recognise early:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the role specialises”?",
+      "options": [
+        "Development DBA.",
+        "Infrastructure DBA.",
+        "The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes. Confusing them is one of the most common organisational mistakes in data teams: a development DBA making an urgent production change is wearing the wrong hat, and production usually notices.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types side by side”?",
+      "options": [
+        "no single role can approve its own change into production",
+        "All four roles should share one estate view.",
+        "incident"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “All four roles should share one estate view. A simple inventory query keeps everyone honest about what is actually running:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Development DBA.",
+        "Production",
+        "Development"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Development DBA. Reviews table designs and indexes before they are coded against, walks through execution plans with developers, builds migration scripts, refreshes and masks test data, and tunes queries in the test environment so production never sees them slow. Success is a release that needs no emergency DBA work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For an _____ the path is shorter: the production DBA is the first responder and coordinates; escalation goes to infrastructure for storage, OS, or…”",
+      "options": [
+        "Development",
+        "Infrastructure",
+        "incident"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “For an incident the path is shorter: the production DBA is the first responder and coordinates; escalation goes to infrastructure for storage, OS, or network faults, to the vendor for engine defects, and to the architect only when the incident exposes a design problem.”"
+    },
+    {
+      "question": "Complete the lesson statement: “If you are the only DBA, adopt the specialisation _____: keep a written checklist per hat, give production the first claim on your attention, and switch hats visibly (close the feature work, open…”",
+      "options": [
+        "Architect",
+        "deliberately",
+        "Infrastructure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “If you are the only DBA, adopt the specialisation deliberately: keep a written checklist per hat, give production the first claim on your attention, and switch hats visibly (close the feature work, open the change record) so one role never silently cannibalises another.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “At that point the role splits along _____, because the four jobs genuinely run on different clocks:”",
+      "options": [
+        "the release",
+        "timescale",
+        "Development DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In a small company one DBA does everything: backups at night, indexes by day, on call at the weekend. Specialisation appears when the estate outgrows one person — multiple instances, several applications, regulated data, and a release train that never stops. At that point the role splits along timescale, because the four jobs genuinely run on different clocks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types side by side”?",
+      "options": [
+        "The clearest way to separate the roles is by what they own and what they are measured on:",
+        "Development DBA.",
+        "Infrastructure DBA."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The clearest way to separate the roles is by what they own and what they are measured on:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "the release",
+        "Infrastructure DBA",
+        "Production DBA."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Production DBA. Starts with monitoring: alerts, failed Agent jobs, backup verification, disk space, blocking. Then the change window — reviewing and applying approved releases — then on-call for incidents, and capacity or housekeeping work squeezed between them. Success is a boring day: nothing paged, nothing lost.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For a _____:”",
+      "options": [
+        "the estate",
+        "schema change",
+        "Infrastructure DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Most database work travels a predictable path. For a schema change:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Judge a position by what it _____, not what it is called.”",
+      "options": [
+        "owns",
+        "the estate",
+        "Database Architect"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Job titles in this field are unreliable. One company's “Production DBA” is another's “Senior Systems DBA”; a small firm may advertise “DBA” and expect all four roles. Judge a position by what it owns, not what it is called. Three pitfalls to recognise early:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the role specialises”?",
+      "options": [
+        "Development DBA.",
+        "Infrastructure DBA.",
+        "The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes. Confusing them is one of the most common organisational mistakes in data teams: a development DBA making an urgent production change is wearing the wrong hat, and production usually notices.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types side by side”?",
+      "options": [
+        "no single role can approve its own change into production",
+        "All four roles should share one estate view.",
+        "incident"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “All four roles should share one estate view. A simple inventory query keeps everyone honest about what is actually running:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Development DBA.",
+        "Production",
+        "Development"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Development DBA. Reviews table designs and indexes before they are coded against, walks through execution plans with developers, builds migration scripts, refreshes and masks test data, and tunes queries in the test environment so production never sees them slow. Success is a release that needs no emergency DBA work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For an _____ the path is shorter: the production DBA is the first responder and coordinates; escalation goes to infrastructure for storage, OS, or…”",
+      "options": [
+        "Development",
+        "Infrastructure",
+        "incident"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “For an incident the path is shorter: the production DBA is the first responder and coordinates; escalation goes to infrastructure for storage, OS, or network faults, to the vendor for engine defects, and to the architect only when the incident exposes a design problem.”"
+    },
+    {
+      "question": "Complete the lesson statement: “If you are the only DBA, adopt the specialisation _____: keep a written checklist per hat, give production the first claim on your attention, and switch hats visibly (close the feature work, open…”",
+      "options": [
+        "Architect",
+        "deliberately",
+        "Infrastructure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “If you are the only DBA, adopt the specialisation deliberately: keep a written checklist per hat, give production the first claim on your attention, and switch hats visibly (close the feature work, open the change record) so one role never silently cannibalises another.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “At that point the role splits along _____, because the four jobs genuinely run on different clocks:”",
+      "options": [
+        "the release",
+        "timescale",
+        "Development DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In a small company one DBA does everything: backups at night, indexes by day, on call at the weekend. Specialisation appears when the estate outgrows one person — multiple instances, several applications, regulated data, and a release train that never stops. At that point the role splits along timescale, because the four jobs genuinely run on different clocks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types side by side”?",
+      "options": [
+        "The clearest way to separate the roles is by what they own and what they are measured on:",
+        "Development DBA.",
+        "Infrastructure DBA."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The clearest way to separate the roles is by what they own and what they are measured on:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "the release",
+        "Infrastructure DBA",
+        "Production DBA."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Production DBA. Starts with monitoring: alerts, failed Agent jobs, backup verification, disk space, blocking. Then the change window — reviewing and applying approved releases — then on-call for incidents, and capacity or housekeeping work squeezed between them. Success is a boring day: nothing paged, nothing lost.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For a _____:”",
+      "options": [
+        "the estate",
+        "schema change",
+        "Infrastructure DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Most database work travels a predictable path. For a schema change:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Judge a position by what it _____, not what it is called.”",
+      "options": [
+        "owns",
+        "the estate",
+        "Database Architect"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Job titles in this field are unreliable. One company's “Production DBA” is another's “Senior Systems DBA”; a small firm may advertise “DBA” and expect all four roles. Judge a position by what it owns, not what it is called. Three pitfalls to recognise early:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the role specialises”?",
+      "options": [
+        "Development DBA.",
+        "Infrastructure DBA.",
+        "The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes. Confusing them is one of the most common organisational mistakes in data teams: a development DBA making an urgent production change is wearing the wrong hat, and production usually notices.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The four types side by side”?",
+      "options": [
+        "no single role can approve its own change into production",
+        "All four roles should share one estate view.",
+        "incident"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “All four roles should share one estate view. A simple inventory query keeps everyone honest about what is actually running:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Development DBA.",
+        "Production",
+        "Development"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Development DBA. Reviews table designs and indexes before they are coded against, walks through execution plans with developers, builds migration scripts, refreshes and masks test data, and tunes queries in the test environment so production never sees them slow. Success is a release that needs no emergency DBA work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For an _____ the path is shorter: the production DBA is the first responder and coordinates; escalation goes to infrastructure for storage, OS, or…”",
+      "options": [
+        "Development",
+        "Infrastructure",
+        "incident"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “For an incident the path is shorter: the production DBA is the first responder and coordinates; escalation goes to infrastructure for storage, OS, or network faults, to the vendor for engine defects, and to the architect only when the incident exposes a design problem.”"
+    },
+    {
+      "question": "Complete the lesson statement: “If you are the only DBA, adopt the specialisation _____: keep a written checklist per hat, give production the first claim on your attention, and switch hats visibly (close the feature work, open…”",
+      "options": [
+        "Architect",
+        "deliberately",
+        "Infrastructure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “If you are the only DBA, adopt the specialisation deliberately: keep a written checklist per hat, give production the first claim on your attention, and switch hats visibly (close the feature work, open the change record) so one role never silently cannibalises another.”"
+    }
+  ],
   takeaways: [
     "The DBA role splits along timescale: production (now), development (release), infrastructure (estate), architecture (years)",
     "Each type owns different things and is measured differently — but all share the same technical foundation",

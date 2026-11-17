@@ -183,6 +183,312 @@ ORDER BY bs.backup_start_date;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Only _____ carry the database forward second by second — which is why PITR exists only in the full (or bulk-logged, with restrictions) recovery model with log backups running.”",
+      "options": [
+        "transaction log backups",
+        "log",
+        "inside the range of the log file being restored"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A full backup takes you to the moment it finished. A differential takes you to when it ran. Only transaction log backups carry the database forward second by second — which is why PITR exists only in the full (or bulk-logged, with restrictions) recovery model with log backups running.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The sequence is always the same: restore the last full (and the most recent differential if you use them) with NORECOVERY, then walk the log chain forward, applying STOPAT on the _____ log restore and finishing with RECOVERY.”",
+      "options": [
+        "inside the range of the log file being restored",
+        "before",
+        "final"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The sequence is always the same: restore the last full (and the most recent differential if you use them) with NORECOVERY, then walk the log chain forward, applying STOPAT on the final log restore and finishing with RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Finding the right log file”?",
+      "options": [
+        "final",
+        "During an incident you will not remember which log covers the target moment.",
+        "Minimally logged operations break the chain for that range"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “During an incident you will not remember which log covers the target moment. Query msdb for the log backups whose window contains it, using backup_start_date and LSNs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls that quietly defeat STOPAT”?",
+      "options": [
+        "Finally: practise STOPAT.",
+        "final",
+        "During an incident you will not remember which log covers the target moment."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Finally: practise STOPAT. The technique is easy in a quiet room and brutal at 3 AM with a hostile clock — a documented runbook with your instance's actual paths is worth more than remembered syntax.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What point-in-time recovery actually means”?",
+      "options": [
+        "Choose a target after the base backup's end time",
+        "Keep NORECOVERY until the final step",
+        "” The mechanism is RESTORE LOG … STOPAT: SQL Server replays log records and stops precisely at the first transaction that begins after the specified time."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PITR answers a specific business question: “The bad delete happened at 14:37:12 — give me the database as it was at 14:37:00, before it.” The mechanism is RESTORE LOG … STOPAT: SQL Server replays log records and stops precisely at the first transaction that begins after the specified time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The full sequence you need is: the last full _____ the target, the last differential after it, then every log from after that differential through the log that covers the target.”",
+      "options": [
+        "Minimally logged operations break the chain for that range",
+        "before",
+        "Log backups form a continuous chain to replay"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The full sequence you need is: the last full before the target, the last differential after it, then every log from after that differential through the log that covers the target. Restore HEADERONLY on each candidate file if you are unsure of its contents:”"
+    },
+    {
+      "question": "In the “Pitfalls that quietly defeat STOPAT” table, what is listed for “Gap in the log chain (missing log backup)” under “Prevention”?",
+      "options": [
+        "Monitor log backup frequency; alert when the last log backup is older than the RPO",
+        "Minimally logged operations break the chain for that range",
+        "final"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Gap in the log chain (missing log backup)” as “Monitor log backup frequency; alert when the last log backup is older than the RPO”."
+    },
+    {
+      "question": "In the “What point-in-time recovery actually means” table, what is listed for “Simple” under “Why”?",
+      "options": [
+        "Switch to full recovery during bulk loads, or accept recovery to the log backup boundary",
+        "Choose a target after the base backup's end time",
+        "No log backups exist; the log is truncated at checkpoint"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Simple” as “No log backups exist; the log is truncated at checkpoint”."
+    },
+    {
+      "question": "In the “Pitfalls that quietly defeat STOPAT” table, what is listed for “Minimal/bulk-logged operation in range” under “Prevention”?",
+      "options": [
+        "before",
+        "Switch to full recovery during bulk loads, or accept recovery to the log backup boundary",
+        "During an incident you will not remember which log covers the target moment."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Minimal/bulk-logged operation in range” as “Switch to full recovery during bulk loads, or accept recovery to the log backup boundary”."
+    },
+    {
+      "question": "In the “What point-in-time recovery actually means” table, what is listed for “Full” under “Why”?",
+      "options": [
+        "Log backups form a continuous chain to replay",
+        "Keep NORECOVERY until the final step",
+        "Normalise all timestamps to UTC before picking STOPAT"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Full” as “Log backups form a continuous chain to replay”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Only _____ carry the database forward second by second — which is why PITR exists only in the full (or bulk-logged, with restrictions) recovery model with log backups running.”",
+      "options": [
+        "transaction log backups",
+        "log",
+        "inside the range of the log file being restored"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A full backup takes you to the moment it finished. A differential takes you to when it ran. Only transaction log backups carry the database forward second by second — which is why PITR exists only in the full (or bulk-logged, with restrictions) recovery model with log backups running.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The sequence is always the same: restore the last full (and the most recent differential if you use them) with NORECOVERY, then walk the log chain forward, applying STOPAT on the _____ log restore and finishing with RECOVERY.”",
+      "options": [
+        "inside the range of the log file being restored",
+        "before",
+        "final"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The sequence is always the same: restore the last full (and the most recent differential if you use them) with NORECOVERY, then walk the log chain forward, applying STOPAT on the final log restore and finishing with RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Finding the right log file”?",
+      "options": [
+        "final",
+        "During an incident you will not remember which log covers the target moment.",
+        "Minimally logged operations break the chain for that range"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “During an incident you will not remember which log covers the target moment. Query msdb for the log backups whose window contains it, using backup_start_date and LSNs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls that quietly defeat STOPAT”?",
+      "options": [
+        "Finally: practise STOPAT.",
+        "final",
+        "During an incident you will not remember which log covers the target moment."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Finally: practise STOPAT. The technique is easy in a quiet room and brutal at 3 AM with a hostile clock — a documented runbook with your instance's actual paths is worth more than remembered syntax.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What point-in-time recovery actually means”?",
+      "options": [
+        "Choose a target after the base backup's end time",
+        "Keep NORECOVERY until the final step",
+        "” The mechanism is RESTORE LOG … STOPAT: SQL Server replays log records and stops precisely at the first transaction that begins after the specified time."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PITR answers a specific business question: “The bad delete happened at 14:37:12 — give me the database as it was at 14:37:00, before it.” The mechanism is RESTORE LOG … STOPAT: SQL Server replays log records and stops precisely at the first transaction that begins after the specified time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The full sequence you need is: the last full _____ the target, the last differential after it, then every log from after that differential through the log that covers the target.”",
+      "options": [
+        "Minimally logged operations break the chain for that range",
+        "before",
+        "Log backups form a continuous chain to replay"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The full sequence you need is: the last full before the target, the last differential after it, then every log from after that differential through the log that covers the target. Restore HEADERONLY on each candidate file if you are unsure of its contents:”"
+    },
+    {
+      "question": "In the “Pitfalls that quietly defeat STOPAT” table, what is listed for “Gap in the log chain (missing log backup)” under “Prevention”?",
+      "options": [
+        "Monitor log backup frequency; alert when the last log backup is older than the RPO",
+        "Minimally logged operations break the chain for that range",
+        "final"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Gap in the log chain (missing log backup)” as “Monitor log backup frequency; alert when the last log backup is older than the RPO”."
+    },
+    {
+      "question": "In the “What point-in-time recovery actually means” table, what is listed for “Simple” under “Why”?",
+      "options": [
+        "Switch to full recovery during bulk loads, or accept recovery to the log backup boundary",
+        "Choose a target after the base backup's end time",
+        "No log backups exist; the log is truncated at checkpoint"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Simple” as “No log backups exist; the log is truncated at checkpoint”."
+    },
+    {
+      "question": "In the “Pitfalls that quietly defeat STOPAT” table, what is listed for “Minimal/bulk-logged operation in range” under “Prevention”?",
+      "options": [
+        "before",
+        "Switch to full recovery during bulk loads, or accept recovery to the log backup boundary",
+        "During an incident you will not remember which log covers the target moment."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Minimal/bulk-logged operation in range” as “Switch to full recovery during bulk loads, or accept recovery to the log backup boundary”."
+    },
+    {
+      "question": "In the “What point-in-time recovery actually means” table, what is listed for “Full” under “Why”?",
+      "options": [
+        "Log backups form a continuous chain to replay",
+        "Keep NORECOVERY until the final step",
+        "Normalise all timestamps to UTC before picking STOPAT"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Full” as “Log backups form a continuous chain to replay”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Only _____ carry the database forward second by second — which is why PITR exists only in the full (or bulk-logged, with restrictions) recovery model with log backups running.”",
+      "options": [
+        "transaction log backups",
+        "log",
+        "inside the range of the log file being restored"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A full backup takes you to the moment it finished. A differential takes you to when it ran. Only transaction log backups carry the database forward second by second — which is why PITR exists only in the full (or bulk-logged, with restrictions) recovery model with log backups running.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The sequence is always the same: restore the last full (and the most recent differential if you use them) with NORECOVERY, then walk the log chain forward, applying STOPAT on the _____ log restore and finishing with RECOVERY.”",
+      "options": [
+        "inside the range of the log file being restored",
+        "before",
+        "final"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The sequence is always the same: restore the last full (and the most recent differential if you use them) with NORECOVERY, then walk the log chain forward, applying STOPAT on the final log restore and finishing with RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Finding the right log file”?",
+      "options": [
+        "final",
+        "During an incident you will not remember which log covers the target moment.",
+        "Minimally logged operations break the chain for that range"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “During an incident you will not remember which log covers the target moment. Query msdb for the log backups whose window contains it, using backup_start_date and LSNs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls that quietly defeat STOPAT”?",
+      "options": [
+        "Finally: practise STOPAT.",
+        "final",
+        "During an incident you will not remember which log covers the target moment."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Finally: practise STOPAT. The technique is easy in a quiet room and brutal at 3 AM with a hostile clock — a documented runbook with your instance's actual paths is worth more than remembered syntax.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What point-in-time recovery actually means”?",
+      "options": [
+        "Choose a target after the base backup's end time",
+        "Keep NORECOVERY until the final step",
+        "” The mechanism is RESTORE LOG … STOPAT: SQL Server replays log records and stops precisely at the first transaction that begins after the specified time."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PITR answers a specific business question: “The bad delete happened at 14:37:12 — give me the database as it was at 14:37:00, before it.” The mechanism is RESTORE LOG … STOPAT: SQL Server replays log records and stops precisely at the first transaction that begins after the specified time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The full sequence you need is: the last full _____ the target, the last differential after it, then every log from after that differential through the log that covers the target.”",
+      "options": [
+        "Minimally logged operations break the chain for that range",
+        "before",
+        "Log backups form a continuous chain to replay"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The full sequence you need is: the last full before the target, the last differential after it, then every log from after that differential through the log that covers the target. Restore HEADERONLY on each candidate file if you are unsure of its contents:”"
+    },
+    {
+      "question": "In the “Pitfalls that quietly defeat STOPAT” table, what is listed for “Gap in the log chain (missing log backup)” under “Prevention”?",
+      "options": [
+        "Monitor log backup frequency; alert when the last log backup is older than the RPO",
+        "Minimally logged operations break the chain for that range",
+        "final"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Gap in the log chain (missing log backup)” as “Monitor log backup frequency; alert when the last log backup is older than the RPO”."
+    },
+    {
+      "question": "In the “What point-in-time recovery actually means” table, what is listed for “Simple” under “Why”?",
+      "options": [
+        "Switch to full recovery during bulk loads, or accept recovery to the log backup boundary",
+        "Choose a target after the base backup's end time",
+        "No log backups exist; the log is truncated at checkpoint"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Simple” as “No log backups exist; the log is truncated at checkpoint”."
+    },
+    {
+      "question": "In the “Pitfalls that quietly defeat STOPAT” table, what is listed for “Minimal/bulk-logged operation in range” under “Prevention”?",
+      "options": [
+        "before",
+        "Switch to full recovery during bulk loads, or accept recovery to the log backup boundary",
+        "During an incident you will not remember which log covers the target moment."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Minimal/bulk-logged operation in range” as “Switch to full recovery during bulk loads, or accept recovery to the log backup boundary”."
+    },
+    {
+      "question": "In the “What point-in-time recovery actually means” table, what is listed for “Full” under “Why”?",
+      "options": [
+        "Log backups form a continuous chain to replay",
+        "Keep NORECOVERY until the final step",
+        "Normalise all timestamps to UTC before picking STOPAT"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Full” as “Log backups form a continuous chain to replay”."
+    }
+  ],
   takeaways: [
     "PITR is a restore technique, not a backup type — it needs full recovery plus a continuous log chain",
     "STOPAT goes only on the final LOG restore, together with RECOVERY",

@@ -181,6 +181,312 @@ A login authenticates to the server (server scope); a user is the login's mapped
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:",
+        "Mixed Authentication Mode",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Mixed Authentication Mode within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Mixed Authentication Mode fits”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mixed Authentication Mode in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Mixed Authentication Mode”?",
+      "options": [
+        "Authenticate to the instance",
+        "Theory becomes useful when you can apply it.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Mixed Authentication Mode. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it.",
+        "Mixed Authentication Mode"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Mixed Authentication Mode with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Mixed Authentication Mode means”?",
+      "options": [
+        "Roles simplify permission management.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Mixed Authentication Mode fits”?",
+      "options": [
+        "The diagram below places Mixed Authentication Mode alongside the core concepts of SQL Server security and permissions.",
+        "Next, verify the result and capture a baseline.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Mixed Authentication Mode alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mixed Authentication Mode in practice”?",
+      "options": [
+        "Overridden by DENY",
+        "Overrides GRANT everywhere",
+        "The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Mixed Authentication Mode”?",
+      "options": [
+        "Overridden by DENY",
+        "The first example establishes the relevant state.",
+        "With Mixed Authentication Mode, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:",
+        "Mixed Authentication Mode",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Mixed Authentication Mode within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Mixed Authentication Mode fits”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mixed Authentication Mode in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Mixed Authentication Mode”?",
+      "options": [
+        "Authenticate to the instance",
+        "Theory becomes useful when you can apply it.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Mixed Authentication Mode. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it.",
+        "Mixed Authentication Mode"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Mixed Authentication Mode with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Mixed Authentication Mode means”?",
+      "options": [
+        "Roles simplify permission management.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Mixed Authentication Mode fits”?",
+      "options": [
+        "The diagram below places Mixed Authentication Mode alongside the core concepts of SQL Server security and permissions.",
+        "Next, verify the result and capture a baseline.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Mixed Authentication Mode alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mixed Authentication Mode in practice”?",
+      "options": [
+        "Overridden by DENY",
+        "Overrides GRANT everywhere",
+        "The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Mixed Authentication Mode”?",
+      "options": [
+        "Overridden by DENY",
+        "The first example establishes the relevant state.",
+        "With Mixed Authentication Mode, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:",
+        "Mixed Authentication Mode",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Mixed Authentication Mode within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Mixed Authentication Mode fits”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mixed Authentication Mode in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Mixed Authentication Mode”?",
+      "options": [
+        "Authenticate to the instance",
+        "Theory becomes useful when you can apply it.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Mixed Authentication Mode. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it.",
+        "Mixed Authentication Mode"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Mixed Authentication Mode with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Mixed Authentication Mode means”?",
+      "options": [
+        "Roles simplify permission management.",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Mixed Authentication Mode fits”?",
+      "options": [
+        "The diagram below places Mixed Authentication Mode alongside the core concepts of SQL Server security and permissions.",
+        "Next, verify the result and capture a baseline.",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Mixed Authentication Mode alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Mixed Authentication Mode in practice”?",
+      "options": [
+        "Overridden by DENY",
+        "Overrides GRANT everywhere",
+        "The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Mixed Authentication Mode:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Mixed Authentication Mode”?",
+      "options": [
+        "Overridden by DENY",
+        "The first example establishes the relevant state.",
+        "With Mixed Authentication Mode, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Mixed Authentication Mode is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

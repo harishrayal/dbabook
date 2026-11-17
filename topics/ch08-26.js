@@ -179,6 +179,312 @@ NORECOVERY keeps the database in a restoring state so more backups can be applie
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Cold, Warm, and Hot Standby",
+        "Cold, Warm, and Hot Standby is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Cold, Warm, and Hot Standby within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cold, Warm, and Hot Standby fits”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Cold, Warm, and Hot Standby is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold, Warm, and Hot Standby in practice”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cold, Warm, and Hot Standby”?",
+      "options": [
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cold, Warm, and Hot Standby. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "More backups to apply",
+        "Cold, Warm, and Hot Standby"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Cold, Warm, and Hot Standby with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cold, Warm, and Hot Standby means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cold, Warm, and Hot Standby fits”?",
+      "options": [
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery.",
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold, Warm, and Hot Standby in practice”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cold, Warm, and Hot Standby”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "The first example establishes the relevant state.",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Cold, Warm, and Hot Standby",
+        "Cold, Warm, and Hot Standby is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Cold, Warm, and Hot Standby within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cold, Warm, and Hot Standby fits”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Cold, Warm, and Hot Standby is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold, Warm, and Hot Standby in practice”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cold, Warm, and Hot Standby”?",
+      "options": [
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cold, Warm, and Hot Standby. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "More backups to apply",
+        "Cold, Warm, and Hot Standby"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Cold, Warm, and Hot Standby with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cold, Warm, and Hot Standby means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cold, Warm, and Hot Standby fits”?",
+      "options": [
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery.",
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold, Warm, and Hot Standby in practice”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cold, Warm, and Hot Standby”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "The first example establishes the relevant state.",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Cold, Warm, and Hot Standby",
+        "Cold, Warm, and Hot Standby is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Cold, Warm, and Hot Standby within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cold, Warm, and Hot Standby fits”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "Cold, Warm, and Hot Standby is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold, Warm, and Hot Standby in practice”?",
+      "options": [
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost.",
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cold, Warm, and Hot Standby”?",
+      "options": [
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cold, Warm, and Hot Standby. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "More backups to apply",
+        "Cold, Warm, and Hot Standby"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Cold, Warm, and Hot Standby with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cold, Warm, and Hot Standby means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cold, Warm, and Hot Standby fits”?",
+      "options": [
+        "The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery.",
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Cold, Warm, and Hot Standby alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold, Warm, and Hot Standby in practice”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cold, Warm, and Hot Standby:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cold, Warm, and Hot Standby”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "The first example establishes the relevant state.",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Cold, Warm, and Hot Standby is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

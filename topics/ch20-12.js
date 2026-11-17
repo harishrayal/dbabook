@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Cross-Server Migration",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cross-Server Migration within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Server Migration fits”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Server Migration in practice”?",
+      "options": [
+        "Immediate",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Maintenance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Server Migration”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Server Migration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Cross-Server Migration sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Scheduled",
+        "Cross-Server Migration",
+        "With Cross-Server Migration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cross-Server Migration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Server Migration means”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Cross-Server Migration",
+        "Cross-Server Migration sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Server Migration fits”?",
+      "options": [
+        "Immediate",
+        "Cross-Server Migration sits inside a larger system.",
+        "The diagram below places Cross-Server Migration alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cross-Server Migration alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Server Migration in practice”?",
+      "options": [
+        "Report + exceptions",
+        "The following comparison captures the distinctions that matter most when working with Cross-Server Migration:",
+        "Use the following as a starting point when investigating Cross-Server Migration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Server Migration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Server Migration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Cross-Server Migration.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Cross-Server Migration",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cross-Server Migration within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Server Migration fits”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Server Migration in practice”?",
+      "options": [
+        "Immediate",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Maintenance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Server Migration”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Server Migration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Cross-Server Migration sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Scheduled",
+        "Cross-Server Migration",
+        "With Cross-Server Migration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cross-Server Migration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Server Migration means”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Cross-Server Migration",
+        "Cross-Server Migration sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Server Migration fits”?",
+      "options": [
+        "Immediate",
+        "Cross-Server Migration sits inside a larger system.",
+        "The diagram below places Cross-Server Migration alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cross-Server Migration alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Server Migration in practice”?",
+      "options": [
+        "Report + exceptions",
+        "The following comparison captures the distinctions that matter most when working with Cross-Server Migration:",
+        "Use the following as a starting point when investigating Cross-Server Migration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Server Migration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Server Migration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Cross-Server Migration.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Cross-Server Migration",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cross-Server Migration within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Server Migration fits”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Server Migration in practice”?",
+      "options": [
+        "Immediate",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Maintenance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Server Migration”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Server Migration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Cross-Server Migration sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Scheduled",
+        "Cross-Server Migration",
+        "With Cross-Server Migration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cross-Server Migration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Server Migration means”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Cross-Server Migration",
+        "Cross-Server Migration sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Server Migration fits”?",
+      "options": [
+        "Immediate",
+        "Cross-Server Migration sits inside a larger system.",
+        "The diagram below places Cross-Server Migration alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cross-Server Migration alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Server Migration in practice”?",
+      "options": [
+        "Report + exceptions",
+        "The following comparison captures the distinctions that matter most when working with Cross-Server Migration:",
+        "Use the following as a starting point when investigating Cross-Server Migration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Server Migration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Server Migration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Cross-Server Migration.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Cross-Server Migration is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

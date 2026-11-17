@@ -200,6 +200,312 @@ ORDER  BY wait_time_ms DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Where the relational engine decides _____ to do, the storage engine does the work of touching data.”",
+      "options": [
+        "Transaction manager / log writer",
+        "Heap",
+        "what"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Where the relational engine decides what to do, the storage engine does the work of touching data. It has four components, each with a distinct failure mode:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Access methods: heaps and b-trees”?",
+      "options": [
+        "Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy.",
+        "Every user table lives in one of two structures, and the access method chosen for it determines the cost of every query against it:",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every user table lives in one of two structures, and the access method chosen for it determines the cost of every query against it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reads: logical, physical, and the latch”?",
+      "options": [
+        "Three different counters get confused constantly, and the distinction matters for diagnosis:",
+        "Write-Ahead Logging (WAL)",
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three different counters get confused constantly, and the distinction matters for diagnosis:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The storage engine follows _____, topic ch04-17 in depth:”",
+      "options": [
+        "Clustered index",
+        "are",
+        "Write-Ahead Logging (WAL)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Modifications never write the data page first. The storage engine follows Write-Ahead Logging (WAL), topic ch04-17 in depth:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locks and latches side by side”?",
+      "options": [
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales.",
+        "Write-Ahead Logging (WAL)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The lock manager and the buffer manager both guard data, but at different levels and timescales. Mixing them up leads to the wrong fix:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring the storage engine”?",
+      "options": [
+        "Two views give you the complete picture — file-level stalls from the DMV, and wait types from the scheduler's perspective:",
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two views give you the complete picture — file-level stalls from the DMV, and wait types from the scheduler's perspective:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ walks 3–4 pages from root to leaf; a scan reads every leaf page in order.”",
+      "options": [
+        "scan",
+        "lookup",
+        "seek"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A seek walks 3–4 pages from root to leaf; a scan reads every leaf page in order. A key/row lookup is a second seek per row — the single most common source of a “good index, terrible plan” incident. Storage-engine tuning is largely the art of removing lookups and scans by covering the query.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reads: logical, physical, and the latch”?",
+      "options": [
+        "Page, extent, allocation structure, internal object",
+        "A query doing 40,000 logical reads and zero physical reads is still expensive — it is burning CPU walking pages in RAM.",
+        "Milliseconds — while a page or structure is touched"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A query doing 40,000 logical reads and zero physical reads is still expensive — it is burning CPU walking pages in RAM. Conversely, a modest number of logical reads with high physical reads means a cold or thrashing buffer pool. The wait type tells you which state you are in: PAGEIOLATCH_SH means “waiting for a disk read to finish so I can latch the page”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writes: the write-ahead path”?",
+      "options": [
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "Page, extent, allocation structure, internal object",
+        "PAGELATCH_SH, PAGELATCH_UP, RESOURCE_SEMAPHORE"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page never made it to disk.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locks and latches side by side”?",
+      "options": [
+        "Physical integrity of an in-memory structure",
+        "Milliseconds — while a page or structure is touched",
+        "Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy. That signature appears with hot pages such as allocation bitmaps, insert-order ranges in a clustered index, and tempdb allocation during heavy ad-hoc work.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Where the relational engine decides _____ to do, the storage engine does the work of touching data.”",
+      "options": [
+        "Transaction manager / log writer",
+        "Heap",
+        "what"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Where the relational engine decides what to do, the storage engine does the work of touching data. It has four components, each with a distinct failure mode:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Access methods: heaps and b-trees”?",
+      "options": [
+        "Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy.",
+        "Every user table lives in one of two structures, and the access method chosen for it determines the cost of every query against it:",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every user table lives in one of two structures, and the access method chosen for it determines the cost of every query against it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reads: logical, physical, and the latch”?",
+      "options": [
+        "Three different counters get confused constantly, and the distinction matters for diagnosis:",
+        "Write-Ahead Logging (WAL)",
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three different counters get confused constantly, and the distinction matters for diagnosis:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The storage engine follows _____, topic ch04-17 in depth:”",
+      "options": [
+        "Clustered index",
+        "are",
+        "Write-Ahead Logging (WAL)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Modifications never write the data page first. The storage engine follows Write-Ahead Logging (WAL), topic ch04-17 in depth:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locks and latches side by side”?",
+      "options": [
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales.",
+        "Write-Ahead Logging (WAL)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The lock manager and the buffer manager both guard data, but at different levels and timescales. Mixing them up leads to the wrong fix:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring the storage engine”?",
+      "options": [
+        "Two views give you the complete picture — file-level stalls from the DMV, and wait types from the scheduler's perspective:",
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two views give you the complete picture — file-level stalls from the DMV, and wait types from the scheduler's perspective:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ walks 3–4 pages from root to leaf; a scan reads every leaf page in order.”",
+      "options": [
+        "scan",
+        "lookup",
+        "seek"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A seek walks 3–4 pages from root to leaf; a scan reads every leaf page in order. A key/row lookup is a second seek per row — the single most common source of a “good index, terrible plan” incident. Storage-engine tuning is largely the art of removing lookups and scans by covering the query.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reads: logical, physical, and the latch”?",
+      "options": [
+        "Page, extent, allocation structure, internal object",
+        "A query doing 40,000 logical reads and zero physical reads is still expensive — it is burning CPU walking pages in RAM.",
+        "Milliseconds — while a page or structure is touched"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A query doing 40,000 logical reads and zero physical reads is still expensive — it is burning CPU walking pages in RAM. Conversely, a modest number of logical reads with high physical reads means a cold or thrashing buffer pool. The wait type tells you which state you are in: PAGEIOLATCH_SH means “waiting for a disk read to finish so I can latch the page”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writes: the write-ahead path”?",
+      "options": [
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "Page, extent, allocation structure, internal object",
+        "PAGELATCH_SH, PAGELATCH_UP, RESOURCE_SEMAPHORE"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page never made it to disk.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locks and latches side by side”?",
+      "options": [
+        "Physical integrity of an in-memory structure",
+        "Milliseconds — while a page or structure is touched",
+        "Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy. That signature appears with hot pages such as allocation bitmaps, insert-order ranges in a clustered index, and tempdb allocation during heavy ad-hoc work.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Where the relational engine decides _____ to do, the storage engine does the work of touching data.”",
+      "options": [
+        "Transaction manager / log writer",
+        "Heap",
+        "what"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Where the relational engine decides what to do, the storage engine does the work of touching data. It has four components, each with a distinct failure mode:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Access methods: heaps and b-trees”?",
+      "options": [
+        "Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy.",
+        "Every user table lives in one of two structures, and the access method chosen for it determines the cost of every query against it:",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every user table lives in one of two structures, and the access method chosen for it determines the cost of every query against it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reads: logical, physical, and the latch”?",
+      "options": [
+        "Three different counters get confused constantly, and the distinction matters for diagnosis:",
+        "Write-Ahead Logging (WAL)",
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three different counters get confused constantly, and the distinction matters for diagnosis:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The storage engine follows _____, topic ch04-17 in depth:”",
+      "options": [
+        "Clustered index",
+        "are",
+        "Write-Ahead Logging (WAL)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Modifications never write the data page first. The storage engine follows Write-Ahead Logging (WAL), topic ch04-17 in depth:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locks and latches side by side”?",
+      "options": [
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales.",
+        "Write-Ahead Logging (WAL)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The lock manager and the buffer manager both guard data, but at different levels and timescales. Mixing them up leads to the wrong fix:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring the storage engine”?",
+      "options": [
+        "Two views give you the complete picture — file-level stalls from the DMV, and wait types from the scheduler's perspective:",
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "The lock manager and the buffer manager both guard data, but at different levels and timescales."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two views give you the complete picture — file-level stalls from the DMV, and wait types from the scheduler's perspective:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ walks 3–4 pages from root to leaf; a scan reads every leaf page in order.”",
+      "options": [
+        "scan",
+        "lookup",
+        "seek"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A seek walks 3–4 pages from root to leaf; a scan reads every leaf page in order. A key/row lookup is a second seek per row — the single most common source of a “good index, terrible plan” incident. Storage-engine tuning is largely the art of removing lookups and scans by covering the query.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reads: logical, physical, and the latch”?",
+      "options": [
+        "Page, extent, allocation structure, internal object",
+        "A query doing 40,000 logical reads and zero physical reads is still expensive — it is burning CPU walking pages in RAM.",
+        "Milliseconds — while a page or structure is touched"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A query doing 40,000 logical reads and zero physical reads is still expensive — it is burning CPU walking pages in RAM. Conversely, a modest number of logical reads with high physical reads means a cold or thrashing buffer pool. The wait type tells you which state you are in: PAGEIOLATCH_SH means “waiting for a disk read to finish so I can latch the page”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writes: the write-ahead path”?",
+      "options": [
+        "This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page…",
+        "Page, extent, allocation structure, internal object",
+        "PAGELATCH_SH, PAGELATCH_UP, RESOURCE_SEMAPHORE"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This ordering is why the log must be sequential and fast, why log-file latency directly caps write throughput, and why crash recovery can replay a log even when the data page never made it to disk.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Locks and latches side by side”?",
+      "options": [
+        "Physical integrity of an in-memory structure",
+        "Milliseconds — while a page or structure is touched",
+        "Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Note the tell: PAGELATCH waits have no blocking session — nothing is “blocking” the request; the physical page itself is busy. That signature appears with hot pages such as allocation bitmaps, insert-order ranges in a clustered index, and tempdb allocation during heavy ad-hoc work.”"
+    }
+  ],
   takeaways: [
     "Storage engine = access methods + buffer manager + lock manager + log writer, each with its own wait-type signature",
     "Logical reads measure query design; physical reads measure cache misses; latches guard pages, locks guard transactions",

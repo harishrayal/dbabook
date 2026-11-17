@@ -182,6 +182,312 @@ ORDER  BY name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "In the “The configuration pages” table, what is listed for “Server Configuration (service accounts & collation)” under “Reversible?”?",
+      "options": [
+        "Rare, but mandatory when the app requires it",
+        "Accounts yes (restart); collation no",
+        "Codes where 'AB12' ≠ 'ab12' (part numbers, tokens)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Server Configuration (service accounts & collation)” as “Accounts yes (restart); collation no”."
+    },
+    {
+      "question": "Complete the lesson statement: “Collation defines _____ for the instance.”",
+      "options": [
+        "character set, sort order, and case/accent sensitivity",
+        "File count:",
+        "Size and growth:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Collation defines character set, sort order, and case/accent sensitivity for the instance. It governs every string comparison, every ORDER BY, every join — and changing it later means rebuilding the system databases, which means restoring every user database afterwards.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Directories done right”?",
+      "options": [
+        "Rare, but mandatory when the app requires it",
+        "tempdb",
+        "INSTNAME — correct for a laptop, wrong for production:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The defaults live under C:Program FilesMicrosoft SQL ServerMSSQLxx.INSTNAME — correct for a laptop, wrong for production:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is recreated at every engine start, so its install-time settings are the ones that matter most:”",
+      "options": [
+        "Placement:",
+        "tempdb",
+        "fixed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “tempdb is recreated at every engine start, so its install-time settings are the ones that matter most:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify after the wizard”?",
+      "options": [
+        "Every setting on those pages should be provable in T-SQL within a minute of installation:",
+        "Dedicated data volume (D:)",
+        "Separate log volume (E:)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every setting on those pages should be provable in T-SQL within a minute of installation:”"
+    },
+    {
+      "question": "In the “The configuration pages” table, what is listed for “Database Engine Configuration → Data Directories” under “Reversible?”?",
+      "options": [
+        "Backup volume or share — never the data volume",
+        "Fastest storage available",
+        "Yes — via ALTER DATABASE … MODIFY FILE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Database Engine Configuration → Data Directories” as “Yes — via ALTER DATABASE … MODIFY FILE”."
+    },
+    {
+      "question": "Complete the lesson statement: “Ask the application team _____ installation: does 'a' = 'A' need to be true?”",
+      "options": [
+        "Windows authentication only",
+        "before",
+        "never Domain Admins"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Ask the application team before installation: does 'a' = 'A' need to be true? Is 'é' equal to 'e'? Getting these answers late is how collation conflicts appear in production joins. Where a single database must differ from the server default, you can set a database-level collation — but note that changing it afterwards does not alter existing columns; existing objects keep the collation they were created with.”"
+    },
+    {
+      "question": "In the “Directories done right” table, what is listed for “Data root” under “Production target”?",
+      "options": [
+        "Dedicated data volume (D:)",
+        "tempdb",
+        "Administrators:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Data root” as “Dedicated data volume (D:)”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ add named individuals or a security group — never Domain Admins, never a shared “sqldbadmin” account.”",
+      "options": [
+        "Mixed",
+        "Accounts yes (restart); collation no",
+        "Administrators:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Administrators: add named individuals or a security group — never Domain Admins, never a shared “sqldbadmin” account. And on the Feature Configuration page, choose authentication deliberately:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify after the wizard”?",
+      "options": [
+        "Mixed mode is not wrong — but it must come with password policy enforced ( CHECK_POLICY = ON ), the sa account disabled or renamed with a strong password, and SQL logins…",
+        "Record the results in the build document.",
+        "Administrators:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Record the results in the build document. The wizard's “Success” message proves files were written — these queries prove the instance was configured the way you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "In the “The configuration pages” table, what is listed for “Server Configuration (service accounts & collation)” under “Reversible?”?",
+      "options": [
+        "Rare, but mandatory when the app requires it",
+        "Accounts yes (restart); collation no",
+        "Codes where 'AB12' ≠ 'ab12' (part numbers, tokens)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Server Configuration (service accounts & collation)” as “Accounts yes (restart); collation no”."
+    },
+    {
+      "question": "Complete the lesson statement: “Collation defines _____ for the instance.”",
+      "options": [
+        "character set, sort order, and case/accent sensitivity",
+        "File count:",
+        "Size and growth:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Collation defines character set, sort order, and case/accent sensitivity for the instance. It governs every string comparison, every ORDER BY, every join — and changing it later means rebuilding the system databases, which means restoring every user database afterwards.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Directories done right”?",
+      "options": [
+        "Rare, but mandatory when the app requires it",
+        "tempdb",
+        "INSTNAME — correct for a laptop, wrong for production:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The defaults live under C:Program FilesMicrosoft SQL ServerMSSQLxx.INSTNAME — correct for a laptop, wrong for production:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is recreated at every engine start, so its install-time settings are the ones that matter most:”",
+      "options": [
+        "Placement:",
+        "tempdb",
+        "fixed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “tempdb is recreated at every engine start, so its install-time settings are the ones that matter most:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify after the wizard”?",
+      "options": [
+        "Every setting on those pages should be provable in T-SQL within a minute of installation:",
+        "Dedicated data volume (D:)",
+        "Separate log volume (E:)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every setting on those pages should be provable in T-SQL within a minute of installation:”"
+    },
+    {
+      "question": "In the “The configuration pages” table, what is listed for “Database Engine Configuration → Data Directories” under “Reversible?”?",
+      "options": [
+        "Backup volume or share — never the data volume",
+        "Fastest storage available",
+        "Yes — via ALTER DATABASE … MODIFY FILE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Database Engine Configuration → Data Directories” as “Yes — via ALTER DATABASE … MODIFY FILE”."
+    },
+    {
+      "question": "Complete the lesson statement: “Ask the application team _____ installation: does 'a' = 'A' need to be true?”",
+      "options": [
+        "Windows authentication only",
+        "before",
+        "never Domain Admins"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Ask the application team before installation: does 'a' = 'A' need to be true? Is 'é' equal to 'e'? Getting these answers late is how collation conflicts appear in production joins. Where a single database must differ from the server default, you can set a database-level collation — but note that changing it afterwards does not alter existing columns; existing objects keep the collation they were created with.”"
+    },
+    {
+      "question": "In the “Directories done right” table, what is listed for “Data root” under “Production target”?",
+      "options": [
+        "Dedicated data volume (D:)",
+        "tempdb",
+        "Administrators:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Data root” as “Dedicated data volume (D:)”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ add named individuals or a security group — never Domain Admins, never a shared “sqldbadmin” account.”",
+      "options": [
+        "Mixed",
+        "Accounts yes (restart); collation no",
+        "Administrators:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Administrators: add named individuals or a security group — never Domain Admins, never a shared “sqldbadmin” account. And on the Feature Configuration page, choose authentication deliberately:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify after the wizard”?",
+      "options": [
+        "Mixed mode is not wrong — but it must come with password policy enforced ( CHECK_POLICY = ON ), the sa account disabled or renamed with a strong password, and SQL logins…",
+        "Record the results in the build document.",
+        "Administrators:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Record the results in the build document. The wizard's “Success” message proves files were written — these queries prove the instance was configured the way you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "In the “The configuration pages” table, what is listed for “Server Configuration (service accounts & collation)” under “Reversible?”?",
+      "options": [
+        "Rare, but mandatory when the app requires it",
+        "Accounts yes (restart); collation no",
+        "Codes where 'AB12' ≠ 'ab12' (part numbers, tokens)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Server Configuration (service accounts & collation)” as “Accounts yes (restart); collation no”."
+    },
+    {
+      "question": "Complete the lesson statement: “Collation defines _____ for the instance.”",
+      "options": [
+        "character set, sort order, and case/accent sensitivity",
+        "File count:",
+        "Size and growth:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Collation defines character set, sort order, and case/accent sensitivity for the instance. It governs every string comparison, every ORDER BY, every join — and changing it later means rebuilding the system databases, which means restoring every user database afterwards.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Directories done right”?",
+      "options": [
+        "Rare, but mandatory when the app requires it",
+        "tempdb",
+        "INSTNAME — correct for a laptop, wrong for production:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The defaults live under C:Program FilesMicrosoft SQL ServerMSSQLxx.INSTNAME — correct for a laptop, wrong for production:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is recreated at every engine start, so its install-time settings are the ones that matter most:”",
+      "options": [
+        "Placement:",
+        "tempdb",
+        "fixed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “tempdb is recreated at every engine start, so its install-time settings are the ones that matter most:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify after the wizard”?",
+      "options": [
+        "Every setting on those pages should be provable in T-SQL within a minute of installation:",
+        "Dedicated data volume (D:)",
+        "Separate log volume (E:)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every setting on those pages should be provable in T-SQL within a minute of installation:”"
+    },
+    {
+      "question": "In the “The configuration pages” table, what is listed for “Database Engine Configuration → Data Directories” under “Reversible?”?",
+      "options": [
+        "Backup volume or share — never the data volume",
+        "Fastest storage available",
+        "Yes — via ALTER DATABASE … MODIFY FILE"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Database Engine Configuration → Data Directories” as “Yes — via ALTER DATABASE … MODIFY FILE”."
+    },
+    {
+      "question": "Complete the lesson statement: “Ask the application team _____ installation: does 'a' = 'A' need to be true?”",
+      "options": [
+        "Windows authentication only",
+        "before",
+        "never Domain Admins"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Ask the application team before installation: does 'a' = 'A' need to be true? Is 'é' equal to 'e'? Getting these answers late is how collation conflicts appear in production joins. Where a single database must differ from the server default, you can set a database-level collation — but note that changing it afterwards does not alter existing columns; existing objects keep the collation they were created with.”"
+    },
+    {
+      "question": "In the “Directories done right” table, what is listed for “Data root” under “Production target”?",
+      "options": [
+        "Dedicated data volume (D:)",
+        "tempdb",
+        "Administrators:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Data root” as “Dedicated data volume (D:)”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ add named individuals or a security group — never Domain Admins, never a shared “sqldbadmin” account.”",
+      "options": [
+        "Mixed",
+        "Accounts yes (restart); collation no",
+        "Administrators:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Administrators: add named individuals or a security group — never Domain Admins, never a shared “sqldbadmin” account. And on the Feature Configuration page, choose authentication deliberately:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify after the wizard”?",
+      "options": [
+        "Mixed mode is not wrong — but it must come with password policy enforced ( CHECK_POLICY = ON ), the sa account disabled or renamed with a strong password, and SQL logins…",
+        "Record the results in the build document.",
+        "Administrators:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Record the results in the build document. The wizard's “Success” message proves files were written — these queries prove the instance was configured the way you intended.”"
+    }
+  ],
   takeaways: [
     "Configuration pages: service accounts & collation, data directories, tempdb, error reporting, admins & auth mode",
     "Collation is a one-way door — confirm case/accent requirements with the application team before setup",

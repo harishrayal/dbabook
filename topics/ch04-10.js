@@ -212,6 +212,312 @@ ORDER  BY t.transaction_begin_time;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ closes the gap with one rule: the log record for a change must be flushed to the LDF before the modified data page is written to the MDF/NDF.”",
+      "options": [
+        "Truncation",
+        "Shrinking",
+        "Write-Ahead Logging"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Data pages are modified in memory (the buffer pool) and written to disk much later. That design is fast, but it means the log is the only durable record of what happened. Write-Ahead Logging closes the gap with one rule: the log record for a change must be flushed to the LDF before the modified data page is written to the MDF/NDF.”"
+    },
+    {
+      "question": "Complete the lesson statement: “An LSN is a tuple — _____ — which uniquely locates any record in the file and forms the chain recovery follows.”",
+      "options": [
+        "FULL",
+        "virtual log file id, block, offset",
+        "Shrinking"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Log records are small, self-describing, and written in LSN (log sequence number) order. An LSN is a tuple — virtual log file id, block, offset — which uniquely locates any record in the file and forms the chain recovery follows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ marks space occupied by records that are no longer needed for recovery or point-in-time restore as reusable — the file size stays the same, the space becomes available again.”",
+      "options": [
+        "Truncation",
+        "FULL",
+        "BULK_LOGGED"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The LDF never needs to hold every record ever written. Truncation marks space occupied by records that are no longer needed for recovery or point-in-time restore as reusable — the file size stays the same, the space becomes available again. Shrinking is a different, rarely appropriate operation that returns files to the OS (see the operations chapter).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery models and the backup chain”?",
+      "options": [
+        "Normal; verify checkpoints are occurring",
+        "Run/repair the log backup job",
+        "The recovery model decides how much log is kept and whether you can recover to a moment in time:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The recovery model decides how much log is kept and whether you can recover to a moment in time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the log”?",
+      "options": [
+        "Find it — sys.dm_tran_database_transactions",
+        "Four DMVs cover log health: usage percentage, VLF structure, reuse blocker, and I/O latency.",
+        "Run/repair the log backup job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Four DMVs cover log health: usage percentage, VLF structure, reuse blocker, and I/O latency.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth events and sizing rules”?",
+      "options": [
+        "Log growth is expensive: each event must zero-initialise the new space, holding a log lock while it does.",
+        "Find it — sys.dm_tran_database_transactions",
+        "Check AG/replication latency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log growth is expensive: each event must zero-initialise the new space, holding a log lock while it does. Practical rules:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because the log holds enough information to _____ (reapply committed work) and undo (roll back uncommitted work), recovery after a crash needs only the log — the data file may be seconds or hours stale.”",
+      "options": [
+        "Fixed increments",
+        "Pre-size it",
+        "redo"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Because the log holds enough information to redo (reapply committed work) and undo (roll back uncommitted work), recovery after a crash needs only the log — the data file may be seconds or hours stale. Everything about log design follows from this: sequential writes, no page splits, no reads of unrelated pages, and a flush at every commit.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Only _____ changes generate log records — logical operations like UPDATE become row-level page modifications.”",
+      "options": [
+        "Alert on events",
+        "physical",
+        "Pre-size it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Only physical changes generate log records — logical operations like UPDATE become row-level page modifications. Index maintenance, allocation changes, and page splits all log as well, which is why an index rebuild can generate far more log than the table's data size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log reuse: truncation is not shrinking”?",
+      "options": [
+        "log_reuse_wait_desc names the blocker:",
+        "After any incident-driven shrink, re-size the file deliberately to the correct steady-state value — otherwise it will simply grow back on the next peak.",
+        "Truncation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Truncation happens only when nothing blocks it, and sys.databases.log_reuse_wait_desc names the blocker:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A FULL database with no working log backup is the worst of both worlds: the log grows without limit _____ you have no point-in-time restore.”",
+      "options": [
+        "Watch the VLF count",
+        "Position in the log; every record also stores the LSN of its predecessor — the chain",
+        "and"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A FULL database with no working log backup is the worst of both worlds: the log grows without limit and you have no point-in-time restore. If you cannot run log backups on a schedule, SIMPLE is the honest choice — but decide deliberately, because changing back to FULL requires a full backup to restart the chain.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ closes the gap with one rule: the log record for a change must be flushed to the LDF before the modified data page is written to the MDF/NDF.”",
+      "options": [
+        "Truncation",
+        "Shrinking",
+        "Write-Ahead Logging"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Data pages are modified in memory (the buffer pool) and written to disk much later. That design is fast, but it means the log is the only durable record of what happened. Write-Ahead Logging closes the gap with one rule: the log record for a change must be flushed to the LDF before the modified data page is written to the MDF/NDF.”"
+    },
+    {
+      "question": "Complete the lesson statement: “An LSN is a tuple — _____ — which uniquely locates any record in the file and forms the chain recovery follows.”",
+      "options": [
+        "FULL",
+        "virtual log file id, block, offset",
+        "Shrinking"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Log records are small, self-describing, and written in LSN (log sequence number) order. An LSN is a tuple — virtual log file id, block, offset — which uniquely locates any record in the file and forms the chain recovery follows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ marks space occupied by records that are no longer needed for recovery or point-in-time restore as reusable — the file size stays the same, the space becomes available again.”",
+      "options": [
+        "Truncation",
+        "FULL",
+        "BULK_LOGGED"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The LDF never needs to hold every record ever written. Truncation marks space occupied by records that are no longer needed for recovery or point-in-time restore as reusable — the file size stays the same, the space becomes available again. Shrinking is a different, rarely appropriate operation that returns files to the OS (see the operations chapter).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery models and the backup chain”?",
+      "options": [
+        "Normal; verify checkpoints are occurring",
+        "Run/repair the log backup job",
+        "The recovery model decides how much log is kept and whether you can recover to a moment in time:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The recovery model decides how much log is kept and whether you can recover to a moment in time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the log”?",
+      "options": [
+        "Find it — sys.dm_tran_database_transactions",
+        "Four DMVs cover log health: usage percentage, VLF structure, reuse blocker, and I/O latency.",
+        "Run/repair the log backup job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Four DMVs cover log health: usage percentage, VLF structure, reuse blocker, and I/O latency.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth events and sizing rules”?",
+      "options": [
+        "Log growth is expensive: each event must zero-initialise the new space, holding a log lock while it does.",
+        "Find it — sys.dm_tran_database_transactions",
+        "Check AG/replication latency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log growth is expensive: each event must zero-initialise the new space, holding a log lock while it does. Practical rules:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because the log holds enough information to _____ (reapply committed work) and undo (roll back uncommitted work), recovery after a crash needs only the log — the data file may be seconds or hours stale.”",
+      "options": [
+        "Fixed increments",
+        "Pre-size it",
+        "redo"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Because the log holds enough information to redo (reapply committed work) and undo (roll back uncommitted work), recovery after a crash needs only the log — the data file may be seconds or hours stale. Everything about log design follows from this: sequential writes, no page splits, no reads of unrelated pages, and a flush at every commit.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Only _____ changes generate log records — logical operations like UPDATE become row-level page modifications.”",
+      "options": [
+        "Alert on events",
+        "physical",
+        "Pre-size it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Only physical changes generate log records — logical operations like UPDATE become row-level page modifications. Index maintenance, allocation changes, and page splits all log as well, which is why an index rebuild can generate far more log than the table's data size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log reuse: truncation is not shrinking”?",
+      "options": [
+        "log_reuse_wait_desc names the blocker:",
+        "After any incident-driven shrink, re-size the file deliberately to the correct steady-state value — otherwise it will simply grow back on the next peak.",
+        "Truncation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Truncation happens only when nothing blocks it, and sys.databases.log_reuse_wait_desc names the blocker:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A FULL database with no working log backup is the worst of both worlds: the log grows without limit _____ you have no point-in-time restore.”",
+      "options": [
+        "Watch the VLF count",
+        "Position in the log; every record also stores the LSN of its predecessor — the chain",
+        "and"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A FULL database with no working log backup is the worst of both worlds: the log grows without limit and you have no point-in-time restore. If you cannot run log backups on a schedule, SIMPLE is the honest choice — but decide deliberately, because changing back to FULL requires a full backup to restart the chain.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ closes the gap with one rule: the log record for a change must be flushed to the LDF before the modified data page is written to the MDF/NDF.”",
+      "options": [
+        "Truncation",
+        "Shrinking",
+        "Write-Ahead Logging"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Data pages are modified in memory (the buffer pool) and written to disk much later. That design is fast, but it means the log is the only durable record of what happened. Write-Ahead Logging closes the gap with one rule: the log record for a change must be flushed to the LDF before the modified data page is written to the MDF/NDF.”"
+    },
+    {
+      "question": "Complete the lesson statement: “An LSN is a tuple — _____ — which uniquely locates any record in the file and forms the chain recovery follows.”",
+      "options": [
+        "FULL",
+        "virtual log file id, block, offset",
+        "Shrinking"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Log records are small, self-describing, and written in LSN (log sequence number) order. An LSN is a tuple — virtual log file id, block, offset — which uniquely locates any record in the file and forms the chain recovery follows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ marks space occupied by records that are no longer needed for recovery or point-in-time restore as reusable — the file size stays the same, the space becomes available again.”",
+      "options": [
+        "Truncation",
+        "FULL",
+        "BULK_LOGGED"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The LDF never needs to hold every record ever written. Truncation marks space occupied by records that are no longer needed for recovery or point-in-time restore as reusable — the file size stays the same, the space becomes available again. Shrinking is a different, rarely appropriate operation that returns files to the OS (see the operations chapter).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Recovery models and the backup chain”?",
+      "options": [
+        "Normal; verify checkpoints are occurring",
+        "Run/repair the log backup job",
+        "The recovery model decides how much log is kept and whether you can recover to a moment in time:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The recovery model decides how much log is kept and whether you can recover to a moment in time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the log”?",
+      "options": [
+        "Find it — sys.dm_tran_database_transactions",
+        "Four DMVs cover log health: usage percentage, VLF structure, reuse blocker, and I/O latency.",
+        "Run/repair the log backup job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Four DMVs cover log health: usage percentage, VLF structure, reuse blocker, and I/O latency.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth events and sizing rules”?",
+      "options": [
+        "Log growth is expensive: each event must zero-initialise the new space, holding a log lock while it does.",
+        "Find it — sys.dm_tran_database_transactions",
+        "Check AG/replication latency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log growth is expensive: each event must zero-initialise the new space, holding a log lock while it does. Practical rules:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because the log holds enough information to _____ (reapply committed work) and undo (roll back uncommitted work), recovery after a crash needs only the log — the data file may be seconds or hours stale.”",
+      "options": [
+        "Fixed increments",
+        "Pre-size it",
+        "redo"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Because the log holds enough information to redo (reapply committed work) and undo (roll back uncommitted work), recovery after a crash needs only the log — the data file may be seconds or hours stale. Everything about log design follows from this: sequential writes, no page splits, no reads of unrelated pages, and a flush at every commit.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Only _____ changes generate log records — logical operations like UPDATE become row-level page modifications.”",
+      "options": [
+        "Alert on events",
+        "physical",
+        "Pre-size it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Only physical changes generate log records — logical operations like UPDATE become row-level page modifications. Index maintenance, allocation changes, and page splits all log as well, which is why an index rebuild can generate far more log than the table's data size.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log reuse: truncation is not shrinking”?",
+      "options": [
+        "log_reuse_wait_desc names the blocker:",
+        "After any incident-driven shrink, re-size the file deliberately to the correct steady-state value — otherwise it will simply grow back on the next peak.",
+        "Truncation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Truncation happens only when nothing blocks it, and sys.databases.log_reuse_wait_desc names the blocker:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A FULL database with no working log backup is the worst of both worlds: the log grows without limit _____ you have no point-in-time restore.”",
+      "options": [
+        "Watch the VLF count",
+        "Position in the log; every record also stores the LSN of its predecessor — the chain",
+        "and"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A FULL database with no working log backup is the worst of both worlds: the log grows without limit and you have no point-in-time restore. If you cannot run log backups on a schedule, SIMPLE is the honest choice — but decide deliberately, because changing back to FULL requires a full backup to restart the chain.”"
+    }
+  ],
   takeaways: [
     "WAL: log records flush before data pages — that single rule is what makes recovery possible",
     "Log records are chained by LSNs and carry transaction ID, page location, and before/after images",

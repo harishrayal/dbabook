@@ -165,6 +165,312 @@ Compare its plan and runtime stats in Query Store, check for plan changes and st
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Index Reorganize"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Reorganize within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Reorganize fits”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Reorganize in practice”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Index Reorganize:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Reorganize”?",
+      "options": [
+        "Query stats",
+        "Page life expectancy",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Reorganize. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Actual plan",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "With Index Reorganize, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Reorganize means”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Index Reorganize",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Reorganize fits”?",
+      "options": [
+        "Page life expectancy",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "The diagram below places Index Reorganize alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Reorganize alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Reorganize in practice”?",
+      "options": [
+        "Index Reorganize",
+        "The following comparison captures the distinctions that matter most when working with Index Reorganize:",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Reorganize:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Reorganize”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Reorganize",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Index Reorganize"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Reorganize within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Reorganize fits”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Reorganize in practice”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Index Reorganize:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Reorganize”?",
+      "options": [
+        "Query stats",
+        "Page life expectancy",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Reorganize. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Actual plan",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "With Index Reorganize, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Reorganize means”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Index Reorganize",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Reorganize fits”?",
+      "options": [
+        "Page life expectancy",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "The diagram below places Index Reorganize alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Reorganize alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Reorganize in practice”?",
+      "options": [
+        "Index Reorganize",
+        "The following comparison captures the distinctions that matter most when working with Index Reorganize:",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Reorganize:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Reorganize”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Reorganize",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Index Reorganize"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Index Reorganize within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Reorganize fits”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Reorganize in practice”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Page life expectancy",
+        "The following comparison captures the distinctions that matter most when working with Index Reorganize:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Reorganize”?",
+      "options": [
+        "Query stats",
+        "Page life expectancy",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Reorganize. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Actual plan",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "With Index Reorganize, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Reorganize means”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Index Reorganize",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Reorganize fits”?",
+      "options": [
+        "Page life expectancy",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "The diagram below places Index Reorganize alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Index Reorganize alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Reorganize in practice”?",
+      "options": [
+        "Index Reorganize",
+        "The following comparison captures the distinctions that matter most when working with Index Reorganize:",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Reorganize:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Reorganize”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Reorganize",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    }
+  ],
   takeaways: [
     "Index Reorganize is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

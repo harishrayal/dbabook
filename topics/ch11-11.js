@@ -188,6 +188,312 @@ Uptime, database states, last successful backups, failed jobs, volume and log fr
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Status Monitoring",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup Status Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Monitoring fits”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Next, verify the result and capture a baseline.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Monitoring in practice”?",
+      "options": [
+        "Falling rapidly",
+        "Approaching 90%",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Monitoring”?",
+      "options": [
+        "Falling rapidly",
+        "Theory becomes useful when you can apply it.",
+        "With Backup Status Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Status Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Backup Status Monitoring sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "With Backup Status Monitoring, prefer measured, reversible changes.",
+        "Backup Status Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup Status Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Status Monitoring means”?",
+      "options": [
+        "Backup Status Monitoring",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Monitoring fits”?",
+      "options": [
+        "The diagram below places Backup Status Monitoring alongside the core concepts of database monitoring and alerting.",
+        "Approaching 90%",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup Status Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Monitoring in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Monitoring.",
+        "The following comparison captures the distinctions that matter most when working with Backup Status Monitoring:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Status Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Monitoring”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Status Monitoring.",
+        "The first example establishes the relevant state.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Status Monitoring",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup Status Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Monitoring fits”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Next, verify the result and capture a baseline.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Monitoring in practice”?",
+      "options": [
+        "Falling rapidly",
+        "Approaching 90%",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Monitoring”?",
+      "options": [
+        "Falling rapidly",
+        "Theory becomes useful when you can apply it.",
+        "With Backup Status Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Status Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Backup Status Monitoring sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "With Backup Status Monitoring, prefer measured, reversible changes.",
+        "Backup Status Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup Status Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Status Monitoring means”?",
+      "options": [
+        "Backup Status Monitoring",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Monitoring fits”?",
+      "options": [
+        "The diagram below places Backup Status Monitoring alongside the core concepts of database monitoring and alerting.",
+        "Approaching 90%",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup Status Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Monitoring in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Monitoring.",
+        "The following comparison captures the distinctions that matter most when working with Backup Status Monitoring:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Status Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Monitoring”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Status Monitoring.",
+        "The first example establishes the relevant state.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Status Monitoring",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup Status Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Monitoring fits”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Next, verify the result and capture a baseline.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Monitoring in practice”?",
+      "options": [
+        "Falling rapidly",
+        "Approaching 90%",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Monitoring”?",
+      "options": [
+        "Falling rapidly",
+        "Theory becomes useful when you can apply it.",
+        "With Backup Status Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Status Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Backup Status Monitoring sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "With Backup Status Monitoring, prefer measured, reversible changes.",
+        "Backup Status Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup Status Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Status Monitoring means”?",
+      "options": [
+        "Backup Status Monitoring",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Status Monitoring fits”?",
+      "options": [
+        "The diagram below places Backup Status Monitoring alongside the core concepts of database monitoring and alerting.",
+        "Approaching 90%",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup Status Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Status Monitoring in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Status Monitoring.",
+        "The following comparison captures the distinctions that matter most when working with Backup Status Monitoring:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Status Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Status Monitoring”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Status Monitoring.",
+        "The first example establishes the relevant state.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Status Monitoring is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -181,6 +181,312 @@ ORDER  BY h.run_date DESC, h.run_time DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ is a separate Windows service that runs alongside the engine and stores its configuration in the msdb database.”",
+      "options": [
+        "Operating-system (XP)",
+        "SQL Server Agent",
+        "SSIS Package"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The SQL Server Agent is a separate Windows service that runs alongside the engine and stores its configuration in the msdb database. It executes scheduled and event-driven work:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Each step declares a _____ that decides the execution context and what a failure means:”",
+      "options": [
+        "subsystem",
+        "Operating-system (XP)",
+        "quit with failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Each step declares a subsystem that decides the execution context and what a failure means:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security: roles and proxies”?",
+      "options": [
+        "Orchestration, Azure/API calls",
+        "ETL loads",
+        "Agent work runs with real privileges; control who can create it and what it can touch:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Agent work runs with real privileges; control who can create it and what it can touch:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Alerts, operators, and notifications”?",
+      "options": [
+        "Avoid in new work",
+        "Notifications turn a silent failure into a page.",
+        "ETL loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications turn a silent failure into a page. Configure three layers:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing job failures”?",
+      "options": [
+        "The history lives in msdb.",
+        "Avoid in new work",
+        "Agent work runs with real privileges; control who can create it and what it can touch:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The history lives in msdb. These two queries answer 90 % of “what happened last night?”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the Agent is”?",
+      "options": [
+        "Verify the plumbing with a deliberate test failure.",
+        "Job → Notifications → On failure → operator",
+        "Without the Agent service, none of it runs: no backups, no log shipping, no index maintenance, no data freshness checks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Without the Agent service, none of it runs: no backups, no log shipping, no index maintenance, no data freshness checks. This is why “is the Agent running?” appears in every morning health check.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Steps chain by outcome: _____ (stop the job), quit with success (finish), or go to the next step.”",
+      "options": [
+        "msdb fixed roles",
+        "quit with failure",
+        "retry count and retry interval"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Steps chain by outcome: quit with failure (stop the job), quit with success (finish), or go to the next step. Design principle: each step should be restartable — if step 4 fails at 2 AM and you re-run the job, step 1 must not corrupt anything by running twice. Idempotent steps plus explicit “go to next step” logic are what make a job safe to retry.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security: roles and proxies”?",
+      "options": [
+        "Audit this quarterly: list job steps running as sa or as NT SERVICESQLAgent with domain-wide rights, and check proxy accounts that are granted to more logins than necessary.",
+        "Verify the plumbing with a deliberate test failure.",
+        "Job → Notifications → On failure → operator"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Audit this quarterly: list job steps running as sa or as NT SERVICESQLAgent with domain-wide rights, and check proxy accounts that are granted to more logins than necessary. Jobs are an application with privileges — treat them like one.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Alerts, operators, and notifications”?",
+      "options": [
+        "Credential stored in msdb, granted to specific subsystems and logins",
+        "Execute as a login only when cross-database rights are needed",
+        "Two disciplines make this work in practice:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two disciplines make this work in practice:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing job failures”?",
+      "options": [
+        "Red flag: replace with least-privilege proxies",
+        "sp_start_job to re-run after a fix, and sp_update_job to attach notifications.",
+        "Execute as a login only when cross-database rights are needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Useful companions: msdb.dbo.sp_help_job for definition and schedule, msdb.dbo.sp_start_job to re-run after a fix, and sp_update_job to attach notifications. Also check whether history has simply been purged — default retention (all history deleted after 30 days, or capped at 1,000 rows per job) can erase the evidence you need.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ is a separate Windows service that runs alongside the engine and stores its configuration in the msdb database.”",
+      "options": [
+        "Operating-system (XP)",
+        "SQL Server Agent",
+        "SSIS Package"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The SQL Server Agent is a separate Windows service that runs alongside the engine and stores its configuration in the msdb database. It executes scheduled and event-driven work:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Each step declares a _____ that decides the execution context and what a failure means:”",
+      "options": [
+        "subsystem",
+        "Operating-system (XP)",
+        "quit with failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Each step declares a subsystem that decides the execution context and what a failure means:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security: roles and proxies”?",
+      "options": [
+        "Orchestration, Azure/API calls",
+        "ETL loads",
+        "Agent work runs with real privileges; control who can create it and what it can touch:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Agent work runs with real privileges; control who can create it and what it can touch:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Alerts, operators, and notifications”?",
+      "options": [
+        "Avoid in new work",
+        "Notifications turn a silent failure into a page.",
+        "ETL loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications turn a silent failure into a page. Configure three layers:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing job failures”?",
+      "options": [
+        "The history lives in msdb.",
+        "Avoid in new work",
+        "Agent work runs with real privileges; control who can create it and what it can touch:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The history lives in msdb. These two queries answer 90 % of “what happened last night?”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the Agent is”?",
+      "options": [
+        "Verify the plumbing with a deliberate test failure.",
+        "Job → Notifications → On failure → operator",
+        "Without the Agent service, none of it runs: no backups, no log shipping, no index maintenance, no data freshness checks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Without the Agent service, none of it runs: no backups, no log shipping, no index maintenance, no data freshness checks. This is why “is the Agent running?” appears in every morning health check.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Steps chain by outcome: _____ (stop the job), quit with success (finish), or go to the next step.”",
+      "options": [
+        "msdb fixed roles",
+        "quit with failure",
+        "retry count and retry interval"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Steps chain by outcome: quit with failure (stop the job), quit with success (finish), or go to the next step. Design principle: each step should be restartable — if step 4 fails at 2 AM and you re-run the job, step 1 must not corrupt anything by running twice. Idempotent steps plus explicit “go to next step” logic are what make a job safe to retry.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security: roles and proxies”?",
+      "options": [
+        "Audit this quarterly: list job steps running as sa or as NT SERVICESQLAgent with domain-wide rights, and check proxy accounts that are granted to more logins than necessary.",
+        "Verify the plumbing with a deliberate test failure.",
+        "Job → Notifications → On failure → operator"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Audit this quarterly: list job steps running as sa or as NT SERVICESQLAgent with domain-wide rights, and check proxy accounts that are granted to more logins than necessary. Jobs are an application with privileges — treat them like one.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Alerts, operators, and notifications”?",
+      "options": [
+        "Credential stored in msdb, granted to specific subsystems and logins",
+        "Execute as a login only when cross-database rights are needed",
+        "Two disciplines make this work in practice:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two disciplines make this work in practice:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing job failures”?",
+      "options": [
+        "Red flag: replace with least-privilege proxies",
+        "sp_start_job to re-run after a fix, and sp_update_job to attach notifications.",
+        "Execute as a login only when cross-database rights are needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Useful companions: msdb.dbo.sp_help_job for definition and schedule, msdb.dbo.sp_start_job to re-run after a fix, and sp_update_job to attach notifications. Also check whether history has simply been purged — default retention (all history deleted after 30 days, or capped at 1,000 rows per job) can erase the evidence you need.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ is a separate Windows service that runs alongside the engine and stores its configuration in the msdb database.”",
+      "options": [
+        "Operating-system (XP)",
+        "SQL Server Agent",
+        "SSIS Package"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The SQL Server Agent is a separate Windows service that runs alongside the engine and stores its configuration in the msdb database. It executes scheduled and event-driven work:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Each step declares a _____ that decides the execution context and what a failure means:”",
+      "options": [
+        "subsystem",
+        "Operating-system (XP)",
+        "quit with failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Each step declares a subsystem that decides the execution context and what a failure means:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security: roles and proxies”?",
+      "options": [
+        "Orchestration, Azure/API calls",
+        "ETL loads",
+        "Agent work runs with real privileges; control who can create it and what it can touch:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Agent work runs with real privileges; control who can create it and what it can touch:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Alerts, operators, and notifications”?",
+      "options": [
+        "Avoid in new work",
+        "Notifications turn a silent failure into a page.",
+        "ETL loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications turn a silent failure into a page. Configure three layers:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing job failures”?",
+      "options": [
+        "The history lives in msdb.",
+        "Avoid in new work",
+        "Agent work runs with real privileges; control who can create it and what it can touch:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The history lives in msdb. These two queries answer 90 % of “what happened last night?”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the Agent is”?",
+      "options": [
+        "Verify the plumbing with a deliberate test failure.",
+        "Job → Notifications → On failure → operator",
+        "Without the Agent service, none of it runs: no backups, no log shipping, no index maintenance, no data freshness checks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Without the Agent service, none of it runs: no backups, no log shipping, no index maintenance, no data freshness checks. This is why “is the Agent running?” appears in every morning health check.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Steps chain by outcome: _____ (stop the job), quit with success (finish), or go to the next step.”",
+      "options": [
+        "msdb fixed roles",
+        "quit with failure",
+        "retry count and retry interval"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Steps chain by outcome: quit with failure (stop the job), quit with success (finish), or go to the next step. Design principle: each step should be restartable — if step 4 fails at 2 AM and you re-run the job, step 1 must not corrupt anything by running twice. Idempotent steps plus explicit “go to next step” logic are what make a job safe to retry.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security: roles and proxies”?",
+      "options": [
+        "Audit this quarterly: list job steps running as sa or as NT SERVICESQLAgent with domain-wide rights, and check proxy accounts that are granted to more logins than necessary.",
+        "Verify the plumbing with a deliberate test failure.",
+        "Job → Notifications → On failure → operator"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Audit this quarterly: list job steps running as sa or as NT SERVICESQLAgent with domain-wide rights, and check proxy accounts that are granted to more logins than necessary. Jobs are an application with privileges — treat them like one.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Alerts, operators, and notifications”?",
+      "options": [
+        "Credential stored in msdb, granted to specific subsystems and logins",
+        "Execute as a login only when cross-database rights are needed",
+        "Two disciplines make this work in practice:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two disciplines make this work in practice:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing job failures”?",
+      "options": [
+        "Red flag: replace with least-privilege proxies",
+        "sp_start_job to re-run after a fix, and sp_update_job to attach notifications.",
+        "Execute as a login only when cross-database rights are needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Useful companions: msdb.dbo.sp_help_job for definition and schedule, msdb.dbo.sp_start_job to re-run after a fix, and sp_update_job to attach notifications. Also check whether history has simply been purged — default retention (all history deleted after 30 days, or capped at 1,000 rows per job) can erase the evidence you need.”"
+    }
+  ],
   takeaways: [
     "The Agent service runs all scheduled automation; its objects and history live in msdb",
     "A job is steps chained by outcome, triggered by schedules or alerts, with restartable design",

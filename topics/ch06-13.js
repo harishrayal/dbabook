@@ -169,6 +169,312 @@ GO</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why the first size matters”?",
+      "options": [
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "Undersized files",
+        "When you create a database, you choose the starting size of every file and the increment it grows by."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When you create a database, you choose the starting size of every file and the increment it grows by. Those two decisions determine how the database behaves for its first year:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Estimating data volume”?",
+      "options": [
+        "Oversized files",
+        "Data sizing is arithmetic driven by the business, not by the installer:",
+        "Undersized files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data sizing is arithmetic driven by the business, not by the installer:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The log is _____ a percentage of the data — it is sized by transaction behaviour:”",
+      "options": [
+        "not",
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "Data sizing is arithmetic driven by the business, not by the installer:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The log is not a percentage of the data — it is sized by transaction behaviour:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Filegroups and file layout”?",
+      "options": [
+        "Wrong layout",
+        "73 GB",
+        "Decide the physical layout at creation, because moving files later costs downtime:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Decide the physical layout at creation, because moving files later costs downtime:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating the database the right way”?",
+      "options": [
+        "110 GB",
+        "Set initial sizes and fixed growth in the CREATE DATABASE statement itself, so the defaults never get a chance to apply:",
+        "73 GB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Set initial sizes and fixed growth in the CREATE DATABASE statement itself, so the defaults never get a chance to apply:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the first size matters”?",
+      "options": [
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "110 GB",
+        "Throughput and recovery model."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Decide the physical layout at creation, because moving files later costs downtime:",
+        "Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.",
+        "rows per day × row + index width × retention days × overhead factor"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “rows per day × row + index width × retention days × overhead factor”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the log”?",
+      "options": [
+        "Growth increments.",
+        "A practical starting point for OLTP systems with regular log backups is a log of roughly 10–20% of the data file, reviewed after the first month of real telemetry rather than…",
+        "The largest single transaction."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A practical starting point for OLTP systems with regular log backups is a log of roughly 10–20% of the data file, reviewed after the first month of real telemetry rather than trusted as a law of nature.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Filegroups and file layout”?",
+      "options": [
+        "Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.",
+        "Growth increments.",
+        "Data and log on separate volumes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating the database the right way”?",
+      "options": [
+        "Data and log on separate volumes",
+        "Consider a second filegroup",
+        "These ranges are starting points, not answers."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “These ranges are starting points, not answers. Revisit them with measured growth after the first month (see Database Capacity Planning) and adjust the increment — not the panic — if reality runs ahead of the forecast.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why the first size matters”?",
+      "options": [
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "Undersized files",
+        "When you create a database, you choose the starting size of every file and the increment it grows by."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When you create a database, you choose the starting size of every file and the increment it grows by. Those two decisions determine how the database behaves for its first year:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Estimating data volume”?",
+      "options": [
+        "Oversized files",
+        "Data sizing is arithmetic driven by the business, not by the installer:",
+        "Undersized files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data sizing is arithmetic driven by the business, not by the installer:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The log is _____ a percentage of the data — it is sized by transaction behaviour:”",
+      "options": [
+        "not",
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "Data sizing is arithmetic driven by the business, not by the installer:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The log is not a percentage of the data — it is sized by transaction behaviour:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Filegroups and file layout”?",
+      "options": [
+        "Wrong layout",
+        "73 GB",
+        "Decide the physical layout at creation, because moving files later costs downtime:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Decide the physical layout at creation, because moving files later costs downtime:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating the database the right way”?",
+      "options": [
+        "110 GB",
+        "Set initial sizes and fixed growth in the CREATE DATABASE statement itself, so the defaults never get a chance to apply:",
+        "73 GB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Set initial sizes and fixed growth in the CREATE DATABASE statement itself, so the defaults never get a chance to apply:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the first size matters”?",
+      "options": [
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "110 GB",
+        "Throughput and recovery model."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Decide the physical layout at creation, because moving files later costs downtime:",
+        "Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.",
+        "rows per day × row + index width × retention days × overhead factor"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “rows per day × row + index width × retention days × overhead factor”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the log”?",
+      "options": [
+        "Growth increments.",
+        "A practical starting point for OLTP systems with regular log backups is a log of roughly 10–20% of the data file, reviewed after the first month of real telemetry rather than…",
+        "The largest single transaction."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A practical starting point for OLTP systems with regular log backups is a log of roughly 10–20% of the data file, reviewed after the first month of real telemetry rather than trusted as a law of nature.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Filegroups and file layout”?",
+      "options": [
+        "Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.",
+        "Growth increments.",
+        "Data and log on separate volumes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating the database the right way”?",
+      "options": [
+        "Data and log on separate volumes",
+        "Consider a second filegroup",
+        "These ranges are starting points, not answers."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “These ranges are starting points, not answers. Revisit them with measured growth after the first month (see Database Capacity Planning) and adjust the increment — not the panic — if reality runs ahead of the forecast.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why the first size matters”?",
+      "options": [
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "Undersized files",
+        "When you create a database, you choose the starting size of every file and the increment it grows by."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When you create a database, you choose the starting size of every file and the increment it grows by. Those two decisions determine how the database behaves for its first year:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Estimating data volume”?",
+      "options": [
+        "Oversized files",
+        "Data sizing is arithmetic driven by the business, not by the installer:",
+        "Undersized files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data sizing is arithmetic driven by the business, not by the installer:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The log is _____ a percentage of the data — it is sized by transaction behaviour:”",
+      "options": [
+        "not",
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "Data sizing is arithmetic driven by the business, not by the installer:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The log is not a percentage of the data — it is sized by transaction behaviour:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Filegroups and file layout”?",
+      "options": [
+        "Wrong layout",
+        "73 GB",
+        "Decide the physical layout at creation, because moving files later costs downtime:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Decide the physical layout at creation, because moving files later costs downtime:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating the database the right way”?",
+      "options": [
+        "110 GB",
+        "Set initial sizes and fixed growth in the CREATE DATABASE statement itself, so the defaults never get a chance to apply:",
+        "73 GB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Set initial sizes and fixed growth in the CREATE DATABASE statement itself, so the defaults never get a chance to apply:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the first size matters”?",
+      "options": [
+        "The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.",
+        "110 GB",
+        "Throughput and recovery model."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The initial size is also a communication artefact: it tells the storage team what this database needs on day one, and it anchors every capacity conversation that follows.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Decide the physical layout at creation, because moving files later costs downtime:",
+        "Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.",
+        "rows per day × row + index width × retention days × overhead factor"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “rows per day × row + index width × retention days × overhead factor”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the log”?",
+      "options": [
+        "Growth increments.",
+        "A practical starting point for OLTP systems with regular log backups is a log of roughly 10–20% of the data file, reviewed after the first month of real telemetry rather than…",
+        "The largest single transaction."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A practical starting point for OLTP systems with regular log backups is a log of roughly 10–20% of the data file, reviewed after the first month of real telemetry rather than trusted as a law of nature.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Filegroups and file layout”?",
+      "options": [
+        "Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.",
+        "Growth increments.",
+        "Data and log on separate volumes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Whatever you choose, write it down: the file layout, the reasoning, and the date of the first sizing review.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating the database the right way”?",
+      "options": [
+        "Data and log on separate volumes",
+        "Consider a second filegroup",
+        "These ranges are starting points, not answers."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “These ranges are starting points, not answers. Revisit them with measured growth after the first month (see Database Capacity Planning) and adjust the increment — not the panic — if reality runs ahead of the forecast.”"
+    }
+  ],
   takeaways: [
     "Initial sizing is a workload forecast — row rate × width × retention × overhead, plus headroom",
     "Undersized files cause autogrowth storms and VLF churn; oversized files strand scarce volume space",

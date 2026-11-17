@@ -165,6 +165,312 @@ Quorum is the majority requirement that decides which nodes may own the cluster;
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "What Is High Availability (HA)?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is High Availability (HA)? within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is High Availability (HA)? fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is High Availability (HA)? in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The diagram below places What Is High Availability (HA)?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is High Availability (HA)?”?",
+      "options": [
+        "The diagram below places What Is High Availability (HA)?",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is High Availability (HA)?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Failover can be automatic, manual or forced.",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is High Availability (HA)? means”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is High Availability (HA)? fits”?",
+      "options": [
+        "Automatic with sync commit",
+        "Manual, planned",
+        "The diagram below places What Is High Availability (HA)?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is High Availability (HA)? alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is High Availability (HA)? in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        ":",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is High Availability (HA)?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is High Availability (HA)?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Manual, planned",
+        "Theory becomes useful when you can apply it.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "What Is High Availability (HA)?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is High Availability (HA)? within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is High Availability (HA)? fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is High Availability (HA)? in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The diagram below places What Is High Availability (HA)?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is High Availability (HA)?”?",
+      "options": [
+        "The diagram below places What Is High Availability (HA)?",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is High Availability (HA)?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Failover can be automatic, manual or forced.",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is High Availability (HA)? means”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is High Availability (HA)? fits”?",
+      "options": [
+        "Automatic with sync commit",
+        "Manual, planned",
+        "The diagram below places What Is High Availability (HA)?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is High Availability (HA)? alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is High Availability (HA)? in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        ":",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is High Availability (HA)?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is High Availability (HA)?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Manual, planned",
+        "Theory becomes useful when you can apply it.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "What Is High Availability (HA)?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is High Availability (HA)? within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is High Availability (HA)? fits”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is High Availability (HA)? in practice”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The diagram below places What Is High Availability (HA)?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is High Availability (HA)?”?",
+      "options": [
+        "The diagram below places What Is High Availability (HA)?",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is High Availability (HA)?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Failover can be automatic, manual or forced.",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is High Availability (HA)? means”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is High Availability (HA)? fits”?",
+      "options": [
+        "Automatic with sync commit",
+        "Manual, planned",
+        "The diagram below places What Is High Availability (HA)?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is High Availability (HA)? alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is High Availability (HA)? in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        ":",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is High Availability (HA)?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is High Availability (HA)?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Manual, planned",
+        "Theory becomes useful when you can apply it.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    }
+  ],
   takeaways: [
     "What Is High Availability (HA)? is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

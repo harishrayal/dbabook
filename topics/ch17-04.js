@@ -186,6 +186,312 @@ Because configuration drifts, paths change and jobs fail silently; only a timed 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Log Shipping Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Architecture fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Architecture in practice”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Architecture”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Hours",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Log Shipping Architecture",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Log Shipping Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping Architecture means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Architecture fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:",
+        "With Log Shipping Architecture, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Architecture”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Log Shipping Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Architecture fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Architecture in practice”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Architecture”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Hours",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Log Shipping Architecture",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Log Shipping Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping Architecture means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Architecture fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:",
+        "With Log Shipping Architecture, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Architecture”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Log Shipping Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Architecture fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Architecture in practice”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Architecture”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Hours",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Log Shipping Architecture",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Log Shipping Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping Architecture means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Architecture fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Log Shipping Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:",
+        "With Log Shipping Architecture, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Architecture”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Log Shipping Architecture is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

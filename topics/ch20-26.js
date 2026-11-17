@@ -186,6 +186,312 @@ With a central inventory, standard configurations, automated health and complian
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise DBA Weekly Operations",
+        "Enterprise DBA Weekly Operations is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Enterprise DBA Weekly Operations within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise DBA Weekly Operations fits”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise DBA Weekly Operations is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise DBA Weekly Operations in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise DBA Weekly Operations”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Enterprise DBA Weekly Operations. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Report + exceptions",
+        "Enterprise DBA Weekly Operations"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Enterprise DBA Weekly Operations with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Enterprise DBA Weekly Operations means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise DBA Weekly Operations fits”?",
+      "options": [
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations.",
+        "Growth trend",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise DBA Weekly Operations in practice”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise DBA Weekly Operations”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The first example establishes the relevant state.",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise DBA Weekly Operations",
+        "Enterprise DBA Weekly Operations is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Enterprise DBA Weekly Operations within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise DBA Weekly Operations fits”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise DBA Weekly Operations is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise DBA Weekly Operations in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise DBA Weekly Operations”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Enterprise DBA Weekly Operations. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Report + exceptions",
+        "Enterprise DBA Weekly Operations"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Enterprise DBA Weekly Operations with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Enterprise DBA Weekly Operations means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise DBA Weekly Operations fits”?",
+      "options": [
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations.",
+        "Growth trend",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise DBA Weekly Operations in practice”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise DBA Weekly Operations”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The first example establishes the relevant state.",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise DBA Weekly Operations",
+        "Enterprise DBA Weekly Operations is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Enterprise DBA Weekly Operations within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise DBA Weekly Operations fits”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Enterprise DBA Weekly Operations is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise DBA Weekly Operations in practice”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise DBA Weekly Operations”?",
+      "options": [
+        "Patching and upgrades are planned programmes.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Enterprise DBA Weekly Operations. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Report + exceptions",
+        "Enterprise DBA Weekly Operations"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Enterprise DBA Weekly Operations with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Enterprise DBA Weekly Operations means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Enterprise DBA Weekly Operations fits”?",
+      "options": [
+        "The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations.",
+        "Growth trend",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Enterprise DBA Weekly Operations alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Enterprise DBA Weekly Operations in practice”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Enterprise DBA Weekly Operations:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Enterprise DBA Weekly Operations”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The first example establishes the relevant state.",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Enterprise DBA Weekly Operations is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

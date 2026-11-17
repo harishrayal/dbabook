@@ -162,6 +162,312 @@ Because deleting or archiving old data at the source is the only way to bend a g
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Data and log capacity are planned separately.",
+        "Backup Retention Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Retention Management within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Management fits”?",
+      "options": [
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Management in practice”?",
+      "options": [
+        "Maintenance windows must be negotiated and respected.",
+        "Rebuild structure and stats",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Management:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Management”?",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Retention Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "No benefit",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "With Backup Retention Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Retention Management means”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Backup Retention Management",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Management fits”?",
+      "options": [
+        "Rebuild structure and stats",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "The diagram below places Backup Retention Management alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Retention Management alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Management in practice”?",
+      "options": [
+        "Backup Retention Management",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Management:",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Retention Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Management”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Retention Management",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Data and log capacity are planned separately.",
+        "Backup Retention Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Retention Management within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Management fits”?",
+      "options": [
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Management in practice”?",
+      "options": [
+        "Maintenance windows must be negotiated and respected.",
+        "Rebuild structure and stats",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Management:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Management”?",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Retention Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "No benefit",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "With Backup Retention Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Retention Management means”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Backup Retention Management",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Management fits”?",
+      "options": [
+        "Rebuild structure and stats",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "The diagram below places Backup Retention Management alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Retention Management alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Management in practice”?",
+      "options": [
+        "Backup Retention Management",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Management:",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Retention Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Management”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Retention Management",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Data and log capacity are planned separately.",
+        "Backup Retention Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Retention Management within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Management fits”?",
+      "options": [
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Management in practice”?",
+      "options": [
+        "Maintenance windows must be negotiated and respected.",
+        "Rebuild structure and stats",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Management:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Management”?",
+      "options": [
+        "Online, low impact",
+        "Rebuild structure and stats",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Retention Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "No benefit",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "With Backup Retention Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Retention Management means”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Backup Retention Management",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Management fits”?",
+      "options": [
+        "Rebuild structure and stats",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "The diagram below places Backup Retention Management alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Retention Management alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Management in practice”?",
+      "options": [
+        "Backup Retention Management",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Management:",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Retention Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Management”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Retention Management",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    }
+  ],
   takeaways: [
     "Backup Retention Management is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

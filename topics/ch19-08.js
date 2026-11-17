@@ -183,6 +183,312 @@ Restore service first using the safest tested mitigation, communicate status at 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Same hour, frequent updates",
+        "Disk Full",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Full within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Full fits”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Next business day",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Full in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Communication is part of the job.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Full”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Theory becomes useful when you can apply it.",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Full. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Disk Full"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Full with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Full means”?",
+      "options": [
+        "Failover / restart",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "With Disk Full, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Full fits”?",
+      "options": [
+        "The diagram below places Disk Full alongside the core concepts of production incident management.",
+        "Communication is part of the job.",
+        "With Disk Full, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Full alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Full in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The following comparison captures the distinctions that matter most when working with Disk Full:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Full:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Full”?",
+      "options": [
+        "Disk Full sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Same hour, frequent updates",
+        "Disk Full",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Full within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Full fits”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Next business day",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Full in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Communication is part of the job.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Full”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Theory becomes useful when you can apply it.",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Full. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Disk Full"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Full with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Full means”?",
+      "options": [
+        "Failover / restart",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "With Disk Full, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Full fits”?",
+      "options": [
+        "The diagram below places Disk Full alongside the core concepts of production incident management.",
+        "Communication is part of the job.",
+        "With Disk Full, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Full alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Full in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The following comparison captures the distinctions that matter most when working with Disk Full:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Full:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Full”?",
+      "options": [
+        "Disk Full sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Same hour, frequent updates",
+        "Disk Full",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Full within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Full fits”?",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Next business day",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Full in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Communication is part of the job.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Full”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Theory becomes useful when you can apply it.",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Full. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Disk Full"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Full with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Full means”?",
+      "options": [
+        "Failover / restart",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "With Disk Full, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Full fits”?",
+      "options": [
+        "The diagram below places Disk Full alongside the core concepts of production incident management.",
+        "Communication is part of the job.",
+        "With Disk Full, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Full alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Full in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The following comparison captures the distinctions that matter most when working with Disk Full:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Full:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Full”?",
+      "options": [
+        "Disk Full sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Disk Full is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

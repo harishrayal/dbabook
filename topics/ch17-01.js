@@ -188,6 +188,312 @@ Because configuration drifts, paths change and jobs fail silently; only a timed 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Disaster Recovery Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disaster Recovery Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Architecture fits”?",
+      "options": [
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Architecture in practice”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Architecture”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disaster Recovery Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster Recovery Architecture",
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Disaster Recovery Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disaster Recovery Architecture means”?",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Architecture fits”?",
+      "options": [
+        "Medium",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies.",
+        "Log shipping"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Architecture”?",
+      "options": [
+        "Log shipping",
+        "Medium",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Disaster Recovery Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disaster Recovery Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Architecture fits”?",
+      "options": [
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Architecture in practice”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Architecture”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disaster Recovery Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster Recovery Architecture",
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Disaster Recovery Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disaster Recovery Architecture means”?",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Architecture fits”?",
+      "options": [
+        "Medium",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies.",
+        "Log shipping"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Architecture”?",
+      "options": [
+        "Log shipping",
+        "Medium",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Disaster Recovery Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disaster Recovery Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Architecture fits”?",
+      "options": [
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Architecture in practice”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Disaster Recovery Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Architecture”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disaster Recovery Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster Recovery Architecture",
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Disaster Recovery Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disaster Recovery Architecture means”?",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Architecture fits”?",
+      "options": [
+        "Medium",
+        "The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies.",
+        "Log shipping"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Disaster Recovery Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disaster Recovery Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Architecture”?",
+      "options": [
+        "Log shipping",
+        "Medium",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Disaster Recovery Architecture is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

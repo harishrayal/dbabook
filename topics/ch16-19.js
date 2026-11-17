@@ -165,6 +165,312 @@ Quorum is the majority requirement that decides which nodes may own the cluster;
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Lower",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover Testing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failover Testing within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Testing fits”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Failover Testing"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Testing in practice”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Testing”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Failover Testing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failover Testing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "High availability keeps a database service reachable through failures.",
+        "Failover Testing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failover Testing means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover can be automatic, manual or forced.",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Testing fits”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Failover can be automatic, manual or forced.",
+        "The diagram below places Failover Testing alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failover Testing alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Testing in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failover Testing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Testing”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Automatic, node-level",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Lower",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover Testing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failover Testing within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Testing fits”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Failover Testing"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Testing in practice”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Testing”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Failover Testing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failover Testing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "High availability keeps a database service reachable through failures.",
+        "Failover Testing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failover Testing means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover can be automatic, manual or forced.",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Testing fits”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Failover can be automatic, manual or forced.",
+        "The diagram below places Failover Testing alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failover Testing alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Testing in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failover Testing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Testing”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Automatic, node-level",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Lower",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover Testing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failover Testing within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Testing fits”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Failover Testing"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Testing in practice”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Testing”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Failover Testing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failover Testing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "High availability keeps a database service reachable through failures.",
+        "Failover Testing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failover Testing means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover can be automatic, manual or forced.",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failover Testing fits”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Failover can be automatic, manual or forced.",
+        "The diagram below places Failover Testing alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failover Testing alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failover Testing in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failover Testing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failover Testing”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The following comparison captures the distinctions that matter most when working with Failover Testing:",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Automatic, node-level",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    }
+  ],
   takeaways: [
     "Failover Testing is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

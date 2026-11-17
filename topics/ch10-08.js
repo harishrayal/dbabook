@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Partial completion",
+        "Job Notifications",
+        "Job never runs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Job Notifications within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Notifications fits”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Notifications in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Notifications”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Theory becomes useful when you can apply it.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Notifications. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Job Notifications"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Job Notifications with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Notifications means”?",
+      "options": [
+        "Database Mail configured",
+        "Job history is the diagnostic record.",
+        "With Job Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Notifications fits”?",
+      "options": [
+        "The diagram below places Job Notifications alongside the core concepts of SQL Server Agent and automation.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "With Job Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Job Notifications alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Notifications in practice”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The following comparison captures the distinctions that matter most when working with Job Notifications:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Notifications:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Notifications”?",
+      "options": [
+        "Job Notifications sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Partial completion",
+        "Job Notifications",
+        "Job never runs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Job Notifications within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Notifications fits”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Notifications in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Notifications”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Theory becomes useful when you can apply it.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Notifications. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Job Notifications"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Job Notifications with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Notifications means”?",
+      "options": [
+        "Database Mail configured",
+        "Job history is the diagnostic record.",
+        "With Job Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Notifications fits”?",
+      "options": [
+        "The diagram below places Job Notifications alongside the core concepts of SQL Server Agent and automation.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "With Job Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Job Notifications alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Notifications in practice”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The following comparison captures the distinctions that matter most when working with Job Notifications:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Notifications:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Notifications”?",
+      "options": [
+        "Job Notifications sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Partial completion",
+        "Job Notifications",
+        "Job never runs"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Job Notifications within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Notifications fits”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Notifications in practice”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Notifications”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Theory becomes useful when you can apply it.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Notifications. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Job Notifications"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Job Notifications with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Notifications means”?",
+      "options": [
+        "Database Mail configured",
+        "Job history is the diagnostic record.",
+        "With Job Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Notifications fits”?",
+      "options": [
+        "The diagram below places Job Notifications alongside the core concepts of SQL Server Agent and automation.",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "With Job Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Job Notifications alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Notifications in practice”?",
+      "options": [
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The following comparison captures the distinctions that matter most when working with Job Notifications:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Notifications:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Notifications”?",
+      "options": [
+        "Job Notifications sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Job Notifications is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

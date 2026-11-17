@@ -188,6 +188,312 @@ Because configuration drifts, paths change and jobs fail silently; only a timed 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Cross-Region DR Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Cross-Region DR Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Region DR Architecture fits”?",
+      "options": [
+        "Cross-Region DR Architecture sits inside a larger system.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Disconnected sites"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Region DR Architecture in practice”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Region DR Architecture”?",
+      "options": [
+        "Use the following as a starting point when investigating Cross-Region DR Architecture.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Region DR Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Cross-Region DR Architecture",
+        "Use the following as a starting point when investigating Cross-Region DR Architecture.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Cross-Region DR Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Region DR Architecture means”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Region DR Architecture fits”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Region DR Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Cross-Region DR Architecture:",
+        "Replication moves data via publication and subscription.",
+        "Cross-Region DR Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Region DR Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Region DR Architecture”?",
+      "options": [
+        "Cross-Region DR Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Cross-Region DR Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Cross-Region DR Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Region DR Architecture fits”?",
+      "options": [
+        "Cross-Region DR Architecture sits inside a larger system.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Disconnected sites"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Region DR Architecture in practice”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Region DR Architecture”?",
+      "options": [
+        "Use the following as a starting point when investigating Cross-Region DR Architecture.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Region DR Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Cross-Region DR Architecture",
+        "Use the following as a starting point when investigating Cross-Region DR Architecture.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Cross-Region DR Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Region DR Architecture means”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Region DR Architecture fits”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Region DR Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Cross-Region DR Architecture:",
+        "Replication moves data via publication and subscription.",
+        "Cross-Region DR Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Region DR Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Region DR Architecture”?",
+      "options": [
+        "Cross-Region DR Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Cross-Region DR Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Cross-Region DR Architecture within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Region DR Architecture fits”?",
+      "options": [
+        "Cross-Region DR Architecture sits inside a larger system.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Disconnected sites"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Region DR Architecture in practice”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Region DR Architecture”?",
+      "options": [
+        "Use the following as a starting point when investigating Cross-Region DR Architecture.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cross-Region DR Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss.",
+        "Reporting / distribution"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Cross-Region DR Architecture",
+        "Use the following as a starting point when investigating Cross-Region DR Architecture.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Cross-Region DR Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cross-Region DR Architecture means”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cross-Region DR Architecture fits”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Cross-Region DR Architecture alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cross-Region DR Architecture in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Cross-Region DR Architecture:",
+        "Replication moves data via publication and subscription.",
+        "Cross-Region DR Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cross-Region DR Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cross-Region DR Architecture”?",
+      "options": [
+        "Cross-Region DR Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Cross-Region DR Architecture is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

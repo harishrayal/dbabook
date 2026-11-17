@@ -178,6 +178,312 @@ DENY overrides GRANT at any scope — a deny on a schema blocks access even if S
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Fixed Database Roles",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Fixed Database Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Database Roles fits”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Database Roles in practice”?",
+      "options": [
+        "Neutral",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Database Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Fixed Database Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Fixed Database Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Overridden by DENY",
+        "Fixed Database Roles",
+        "With Fixed Database Roles, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Fixed Database Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Fixed Database Roles means”?",
+      "options": [
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Fixed Database Roles",
+        "Fixed Database Roles sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Database Roles fits”?",
+      "options": [
+        "Neutral",
+        "Fixed Database Roles sits inside a larger system.",
+        "The diagram below places Fixed Database Roles alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Fixed Database Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Database Roles in practice”?",
+      "options": [
+        "Authenticate to the instance",
+        "The following comparison captures the distinctions that matter most when working with Fixed Database Roles:",
+        "Use the following as a starting point when investigating Fixed Database Roles."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Fixed Database Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Database Roles”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Fixed Database Roles.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Fixed Database Roles",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Fixed Database Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Database Roles fits”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Database Roles in practice”?",
+      "options": [
+        "Neutral",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Database Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Fixed Database Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Fixed Database Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Overridden by DENY",
+        "Fixed Database Roles",
+        "With Fixed Database Roles, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Fixed Database Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Fixed Database Roles means”?",
+      "options": [
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Fixed Database Roles",
+        "Fixed Database Roles sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Database Roles fits”?",
+      "options": [
+        "Neutral",
+        "Fixed Database Roles sits inside a larger system.",
+        "The diagram below places Fixed Database Roles alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Fixed Database Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Database Roles in practice”?",
+      "options": [
+        "Authenticate to the instance",
+        "The following comparison captures the distinctions that matter most when working with Fixed Database Roles:",
+        "Use the following as a starting point when investigating Fixed Database Roles."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Fixed Database Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Database Roles”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Fixed Database Roles.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Fixed Database Roles",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Fixed Database Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Database Roles fits”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Database Roles in practice”?",
+      "options": [
+        "Neutral",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Database Roles”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Fixed Database Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Fixed Database Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Overridden by DENY",
+        "Fixed Database Roles",
+        "With Fixed Database Roles, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Fixed Database Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Fixed Database Roles means”?",
+      "options": [
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Fixed Database Roles",
+        "Fixed Database Roles sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Database Roles fits”?",
+      "options": [
+        "Neutral",
+        "Fixed Database Roles sits inside a larger system.",
+        "The diagram below places Fixed Database Roles alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Fixed Database Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Database Roles in practice”?",
+      "options": [
+        "Authenticate to the instance",
+        "The following comparison captures the distinctions that matter most when working with Fixed Database Roles:",
+        "Use the following as a starting point when investigating Fixed Database Roles."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Fixed Database Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Database Roles”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Use the following as a starting point when investigating Fixed Database Roles.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Fixed Database Roles is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

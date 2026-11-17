@@ -162,6 +162,312 @@ Because deleting or archiving old data at the source is the only way to bend a g
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Transaction Log Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Capacity Planning fits”?",
+      "options": [
+        "Maintenance windows must be negotiated and respected.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Capacity Planning in practice”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Capacity Planning”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:",
+        "Maintenance windows must be negotiated and respected.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Bulk loads",
+        "Data and log capacity are planned separately.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Capacity Planning means”?",
+      "options": [
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Capacity Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Capacity Planning in practice”?",
+      "options": [
+        "With Transaction Log Capacity Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Data and log capacity are planned separately.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Transaction Log Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Capacity Planning fits”?",
+      "options": [
+        "Maintenance windows must be negotiated and respected.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Capacity Planning in practice”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Capacity Planning”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:",
+        "Maintenance windows must be negotiated and respected.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Bulk loads",
+        "Data and log capacity are planned separately.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Capacity Planning means”?",
+      "options": [
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Capacity Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Capacity Planning in practice”?",
+      "options": [
+        "With Transaction Log Capacity Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Data and log capacity are planned separately.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Transaction Log Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Capacity Planning fits”?",
+      "options": [
+        "Maintenance windows must be negotiated and respected.",
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Capacity Planning in practice”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Capacity Planning”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:",
+        "Maintenance windows must be negotiated and respected.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Bulk loads",
+        "Data and log capacity are planned separately.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Capacity Planning means”?",
+      "options": [
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Capacity Planning fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Capacity Planning in practice”?",
+      "options": [
+        "With Transaction Log Capacity Planning, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Capacity Planning”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Data and log capacity are planned separately.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    }
+  ],
   takeaways: [
     "Transaction Log Capacity Planning is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

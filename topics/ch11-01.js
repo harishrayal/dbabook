@@ -165,6 +165,312 @@ Extended Events is far lighter weight, highly filterable and designed for produc
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Why Database Monitoring Is Required"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Why Database Monitoring Is Required within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Database Monitoring Is Required fits”?",
+      "options": [
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Database Monitoring Is Required in practice”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Database Monitoring Is Required”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Why Database Monitoring Is Required. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Why Database Monitoring Is Required means”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Finds head blockers",
+        "Prevents disk full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Database Monitoring Is Required fits”?",
+      "options": [
+        "Finds the bottleneck",
+        "Finds head blockers",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Database Monitoring Is Required in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with Why Database Monitoring Is Required:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Why Database Monitoring Is Required:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Database Monitoring Is Required”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Why Database Monitoring Is Required"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Why Database Monitoring Is Required within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Database Monitoring Is Required fits”?",
+      "options": [
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Database Monitoring Is Required in practice”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Database Monitoring Is Required”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Why Database Monitoring Is Required. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Why Database Monitoring Is Required means”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Finds head blockers",
+        "Prevents disk full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Database Monitoring Is Required fits”?",
+      "options": [
+        "Finds the bottleneck",
+        "Finds head blockers",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Database Monitoring Is Required in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with Why Database Monitoring Is Required:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Why Database Monitoring Is Required:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Database Monitoring Is Required”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Why Database Monitoring Is Required"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Why Database Monitoring Is Required within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Database Monitoring Is Required fits”?",
+      "options": [
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Database Monitoring Is Required in practice”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Why Database Monitoring Is Required is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Database Monitoring Is Required”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Why Database Monitoring Is Required. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Why Database Monitoring Is Required means”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Finds head blockers",
+        "Prevents disk full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Database Monitoring Is Required fits”?",
+      "options": [
+        "Finds the bottleneck",
+        "Finds head blockers",
+        "The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Why Database Monitoring Is Required alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Database Monitoring Is Required in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with Why Database Monitoring Is Required:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Why Database Monitoring Is Required:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Database Monitoring Is Required”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Finds head blockers",
+        "Prevents disk full",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    }
+  ],
   takeaways: [
     "Why Database Monitoring Is Required is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

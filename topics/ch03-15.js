@@ -172,6 +172,312 @@ It limits the blast radius if the service is compromised and avoids unnecessary 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Windows Performance Monitoring",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "With Windows Performance Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Windows Performance Monitoring within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Performance Monitoring fits”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Performance Monitoring in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Windows Performance Monitoring.",
+        "Windows services are long-running background processes.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Performance Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "NTFS permissions control who can read or change files.",
+        "Use the following as a starting point when investigating Windows Performance Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Windows Performance Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "With Windows Performance Monitoring, prefer measured, reversible changes.",
+        "TCP",
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Windows Performance Monitoring.",
+        "Windows Performance Monitoring",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Windows Performance Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Performance Monitoring means”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "Windows Performance Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Performance Monitoring fits”?",
+      "options": [
+        "Windows Performance Monitoring",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "The diagram below places Windows Performance Monitoring alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Windows Performance Monitoring alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Performance Monitoring in practice”?",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "The following comparison captures the distinctions that matter most when working with Windows Performance Monitoring:",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Windows Performance Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Performance Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Windows Performance Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Windows Performance Monitoring",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "With Windows Performance Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Windows Performance Monitoring within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Performance Monitoring fits”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Performance Monitoring in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Windows Performance Monitoring.",
+        "Windows services are long-running background processes.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Performance Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "NTFS permissions control who can read or change files.",
+        "Use the following as a starting point when investigating Windows Performance Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Windows Performance Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "With Windows Performance Monitoring, prefer measured, reversible changes.",
+        "TCP",
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Windows Performance Monitoring.",
+        "Windows Performance Monitoring",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Windows Performance Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Performance Monitoring means”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "Windows Performance Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Performance Monitoring fits”?",
+      "options": [
+        "Windows Performance Monitoring",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "The diagram below places Windows Performance Monitoring alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Windows Performance Monitoring alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Performance Monitoring in practice”?",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "The following comparison captures the distinctions that matter most when working with Windows Performance Monitoring:",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Windows Performance Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Performance Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Windows Performance Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Windows Performance Monitoring",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "With Windows Performance Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Windows Performance Monitoring within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Performance Monitoring fits”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Performance Monitoring in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Windows Performance Monitoring.",
+        "Windows services are long-running background processes.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Performance Monitoring”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "NTFS permissions control who can read or change files.",
+        "Use the following as a starting point when investigating Windows Performance Monitoring."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Windows Performance Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "With Windows Performance Monitoring, prefer measured, reversible changes.",
+        "TCP",
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Windows Performance Monitoring.",
+        "Windows Performance Monitoring",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Windows Performance Monitoring with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Windows Performance Monitoring means”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "Windows Performance Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Windows Performance Monitoring fits”?",
+      "options": [
+        "Windows Performance Monitoring",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "The diagram below places Windows Performance Monitoring alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Windows Performance Monitoring alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Windows Performance Monitoring in practice”?",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "The following comparison captures the distinctions that matter most when working with Windows Performance Monitoring:",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Windows Performance Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Windows Performance Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Windows Performance Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Windows Performance Monitoring is a fundamental concept in Windows Server and infrastructure for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

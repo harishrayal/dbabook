@@ -190,6 +190,312 @@ Blocking is one session waiting for a lock held by another — it resolves when 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Locks:",
+        "SQL Server Locks",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Locks fits”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Compatible with other S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Locks in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Locks”?",
+      "options": [
+        "Compatible with other S",
+        "Theory becomes useful when you can apply it.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Compatible with other S",
+        "Incompatible with all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Compatible with S",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Locks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Locks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Locks means”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Locks fits”?",
+      "options": [
+        "The diagram below places SQL Server Locks alongside the core concepts of blocking and deadlocks.",
+        "Next, verify the result and capture a baseline.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Locks in practice”?",
+      "options": [
+        "None",
+        "Default",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Locks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Locks”?",
+      "options": [
+        "None",
+        "The first example establishes the relevant state.",
+        "With SQL Server Locks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Locks:",
+        "SQL Server Locks",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Locks fits”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Compatible with other S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Locks in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Locks”?",
+      "options": [
+        "Compatible with other S",
+        "Theory becomes useful when you can apply it.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Compatible with other S",
+        "Incompatible with all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Compatible with S",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Locks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Locks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Locks means”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Locks fits”?",
+      "options": [
+        "The diagram below places SQL Server Locks alongside the core concepts of blocking and deadlocks.",
+        "Next, verify the result and capture a baseline.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Locks in practice”?",
+      "options": [
+        "None",
+        "Default",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Locks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Locks”?",
+      "options": [
+        "None",
+        "The first example establishes the relevant state.",
+        "With SQL Server Locks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Locks:",
+        "SQL Server Locks",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Locks fits”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Compatible with other S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Locks in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Locks”?",
+      "options": [
+        "Compatible with other S",
+        "Theory becomes useful when you can apply it.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Compatible with other S",
+        "Incompatible with all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Compatible with S",
+        "Theory becomes useful when you can apply it.",
+        "SQL Server Locks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Locks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Locks means”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Locks fits”?",
+      "options": [
+        "The diagram below places SQL Server Locks alongside the core concepts of blocking and deadlocks.",
+        "Next, verify the result and capture a baseline.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Locks in practice”?",
+      "options": [
+        "None",
+        "Default",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Locks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Locks”?",
+      "options": [
+        "None",
+        "The first example establishes the relevant state.",
+        "With SQL Server Locks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Locks is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

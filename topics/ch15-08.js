@@ -181,6 +181,312 @@ Track daily size from sys.dm_io_virtual_file_stats or a snapshot table, compute 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Long transactions",
+        "TempDB Capacity Planning",
+        "Bulk loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine TempDB Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Capacity Planning fits”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Capacity Planning in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Capacity Planning”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Theory becomes useful when you can apply it.",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "TempDB Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates TempDB Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Capacity Planning means”?",
+      "options": [
+        "No benefit",
+        "Maintenance windows must be negotiated and respected.",
+        "With TempDB Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Capacity Planning fits”?",
+      "options": [
+        "The diagram below places TempDB Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "With TempDB Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places TempDB Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Capacity Planning in practice”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Capacity Planning:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Capacity Planning”?",
+      "options": [
+        "TempDB Capacity Planning sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Long transactions",
+        "TempDB Capacity Planning",
+        "Bulk loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine TempDB Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Capacity Planning fits”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Capacity Planning in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Capacity Planning”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Theory becomes useful when you can apply it.",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "TempDB Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates TempDB Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Capacity Planning means”?",
+      "options": [
+        "No benefit",
+        "Maintenance windows must be negotiated and respected.",
+        "With TempDB Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Capacity Planning fits”?",
+      "options": [
+        "The diagram below places TempDB Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "With TempDB Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places TempDB Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Capacity Planning in practice”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Capacity Planning:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Capacity Planning”?",
+      "options": [
+        "TempDB Capacity Planning sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Long transactions",
+        "TempDB Capacity Planning",
+        "Bulk loads"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine TempDB Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Capacity Planning fits”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Capacity Planning in practice”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Capacity Planning”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Theory becomes useful when you can apply it.",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics maintenance ensures the optimiser has current data distributions. Auto-update helps but large, rapidly changing tables may need scheduled explicit updates with an appropriate sample.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "TempDB Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates TempDB Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Capacity Planning means”?",
+      "options": [
+        "No benefit",
+        "Maintenance windows must be negotiated and respected.",
+        "With TempDB Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Capacity Planning fits”?",
+      "options": [
+        "The diagram below places TempDB Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "With TempDB Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places TempDB Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Capacity Planning in practice”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The following comparison captures the distinctions that matter most when working with TempDB Capacity Planning:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Capacity Planning”?",
+      "options": [
+        "TempDB Capacity Planning sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "TempDB Capacity Planning is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

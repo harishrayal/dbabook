@@ -183,6 +183,312 @@ Restore service first using the safest tested mitigation, communicate status at 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Server Unavailable:",
+        "Database Server Unavailable",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Server Unavailable within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Server Unavailable fits”?",
+      "options": [
+        "Communication is part of the job.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Server Unavailable in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Server Unavailable”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Theory becomes useful when you can apply it.",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Server Unavailable. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next business day",
+        "Theory becomes useful when you can apply it.",
+        "Database Server Unavailable"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Server Unavailable with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Server Unavailable means”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Server Unavailable fits”?",
+      "options": [
+        "The diagram below places Database Server Unavailable alongside the core concepts of production incident management.",
+        "Next, verify the result and capture a baseline.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Server Unavailable alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Server Unavailable in practice”?",
+      "options": [
+        "Failover / restart",
+        "Log backup / grow",
+        "The following comparison captures the distinctions that matter most when working with Database Server Unavailable:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Server Unavailable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Server Unavailable”?",
+      "options": [
+        "Failover / restart",
+        "The first example establishes the relevant state.",
+        "With Database Server Unavailable, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Server Unavailable:",
+        "Database Server Unavailable",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Server Unavailable within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Server Unavailable fits”?",
+      "options": [
+        "Communication is part of the job.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Server Unavailable in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Server Unavailable”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Theory becomes useful when you can apply it.",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Server Unavailable. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next business day",
+        "Theory becomes useful when you can apply it.",
+        "Database Server Unavailable"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Server Unavailable with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Server Unavailable means”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Server Unavailable fits”?",
+      "options": [
+        "The diagram below places Database Server Unavailable alongside the core concepts of production incident management.",
+        "Next, verify the result and capture a baseline.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Server Unavailable alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Server Unavailable in practice”?",
+      "options": [
+        "Failover / restart",
+        "Log backup / grow",
+        "The following comparison captures the distinctions that matter most when working with Database Server Unavailable:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Server Unavailable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Server Unavailable”?",
+      "options": [
+        "Failover / restart",
+        "The first example establishes the relevant state.",
+        "With Database Server Unavailable, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Server Unavailable:",
+        "Database Server Unavailable",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Server Unavailable within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Server Unavailable fits”?",
+      "options": [
+        "Communication is part of the job.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Server Unavailable in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Server Unavailable”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Theory becomes useful when you can apply it.",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Server Unavailable. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next business day",
+        "Theory becomes useful when you can apply it.",
+        "Database Server Unavailable"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Server Unavailable with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Server Unavailable means”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Server Unavailable fits”?",
+      "options": [
+        "The diagram below places Database Server Unavailable alongside the core concepts of production incident management.",
+        "Next, verify the result and capture a baseline.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Server Unavailable alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Server Unavailable in practice”?",
+      "options": [
+        "Failover / restart",
+        "Log backup / grow",
+        "The following comparison captures the distinctions that matter most when working with Database Server Unavailable:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Server Unavailable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Server Unavailable”?",
+      "options": [
+        "Failover / restart",
+        "The first example establishes the relevant state.",
+        "With Database Server Unavailable, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Server Unavailable is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

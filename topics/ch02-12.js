@@ -168,6 +168,312 @@ GO</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ encapsulate logic that takes input and returns a value — no side effects, safe to use inside queries, deterministic when they should be.”",
+      "options": [
+        "Functions",
+        "Yes — that is usually its purpose",
+        "No — logic fires invisibly on the side"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Functions encapsulate logic that takes input and returns a value — no side effects, safe to use inside queries, deterministic when they should be. Triggers are procedures bound to a table or view that the engine runs automatically when a data change (or certain DDL) happens. One is called by you; the other is called by the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions: three flavours, very different costs”?",
+      "options": [
+        "Not applicable — it decides what the statement means",
+        "Guarding rules, updatable views, steering inserts",
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path. Prefer a view when there is no parameter; prefer a procedure when the logic returns nothing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A DML trigger does not see the table directly — it sees two special in-memory result sets: _____ (the rows as they were before an UPDATE/DELETE) and inserted (the rows as they are after an INSERT/UPDATE).”",
+      "options": [
+        "Hidden logic, blocking, recursion, surprises",
+        "deleted",
+        "Auditing, guarding, cascading side effects"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A DML trigger does not see the table directly — it sees two special in-memory result sets: deleted (the rows as they were before an UPDATE/DELETE) and inserted (the rows as they are after an INSERT/UPDATE). Joining them gives you exactly what changed, set by set — one row per affected row, inside the same statement and transaction.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Triggers are _____ for enforcing what constraints already enforce: NOT NULL, CHECK, UNIQUE, and FOREIGN KEY are declarative, instant, and always-on.”",
+      "options": [
+        "not",
+        "Hidden logic, blocking, recursion, surprises",
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Triggers are not for enforcing what constraints already enforce: NOT NULL, CHECK, UNIQUE, and FOREIGN KEY are declarative, instant, and always-on. A trigger that “double-checks the data” is slower and easier to disable than the constraint it imitates.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Both deserve the same rule: _____ — triggers especially, because nobody expects a SELECT to fire one.”",
+      "options": [
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path.",
+        "An auditing trigger that records exactly what changed — set-based, as the engine intends:",
+        "if a colleague reading the table definition cannot see the behaviour, document it"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both deserve the same rule: if a colleague reading the table definition cannot see the behaviour, document it — triggers especially, because nobody expects a SELECT to fire one.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triggers: the shadow tables”?",
+      "options": [
+        "Inline table-valued function (ITVF)",
+        "An auditing trigger that records exactly what changed — set-based, as the engine intends:",
+        "Scalar UDF"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An auditing trigger that records exactly what changed — set-based, as the engine intends:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ one trigger per table doing three jobs, none documented; row-by-row logic inside a set-based opportunity; forgetting triggers fire per…”",
+      "options": [
+        "Common pitfalls:",
+        "In place of the statement — the original write never happens",
+        "Tables and views (views: the only way to make them writable)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: one trigger per table doing three jobs, none documented; row-by-row logic inside a set-based opportunity; forgetting triggers fire per statement — one UPDATE touching 100,000 rows runs the trigger once, but the trigger's joins to inserted need an index on the trigger table's key to stay fast; recursion (a trigger writing a table that fires itself — controlled by RECURSIVE_TRIGGERS, off by default); and ORDER BY or deferred name resolution mistakes that break the trigger at 3 AM, on the one write path nobody tests.”"
+    },
+    {
+      "question": "In the “Two tools, two jobs” table, what is listed for “Invoked by” under “Trigger”?",
+      "options": [
+        "Multi-statement TVF",
+        "inserted",
+        "The engine, on INSERT/UPDATE/DELETE (or DDL)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Invoked by” as “The engine, on INSERT/UPDATE/DELETE (or DDL)”."
+    },
+    {
+      "question": "In the “AFTER versus INSTEAD OF” table, what is listed for “When it runs” under “INSTEAD OF”?",
+      "options": [
+        "inside the same statement and transaction",
+        "In place of the statement — the original write never happens",
+        "inserted"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “When it runs” as “In place of the statement — the original write never happens”."
+    },
+    {
+      "question": "In the “Two tools, two jobs” table, what is listed for “May modify data?” under “Trigger”?",
+      "options": [
+        "Yes — that is usually its purpose",
+        "inside the same statement and transaction",
+        "statement"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “May modify data?” as “Yes — that is usually its purpose”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ encapsulate logic that takes input and returns a value — no side effects, safe to use inside queries, deterministic when they should be.”",
+      "options": [
+        "Functions",
+        "Yes — that is usually its purpose",
+        "No — logic fires invisibly on the side"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Functions encapsulate logic that takes input and returns a value — no side effects, safe to use inside queries, deterministic when they should be. Triggers are procedures bound to a table or view that the engine runs automatically when a data change (or certain DDL) happens. One is called by you; the other is called by the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions: three flavours, very different costs”?",
+      "options": [
+        "Not applicable — it decides what the statement means",
+        "Guarding rules, updatable views, steering inserts",
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path. Prefer a view when there is no parameter; prefer a procedure when the logic returns nothing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A DML trigger does not see the table directly — it sees two special in-memory result sets: _____ (the rows as they were before an UPDATE/DELETE) and inserted (the rows as they are after an INSERT/UPDATE).”",
+      "options": [
+        "Hidden logic, blocking, recursion, surprises",
+        "deleted",
+        "Auditing, guarding, cascading side effects"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A DML trigger does not see the table directly — it sees two special in-memory result sets: deleted (the rows as they were before an UPDATE/DELETE) and inserted (the rows as they are after an INSERT/UPDATE). Joining them gives you exactly what changed, set by set — one row per affected row, inside the same statement and transaction.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Triggers are _____ for enforcing what constraints already enforce: NOT NULL, CHECK, UNIQUE, and FOREIGN KEY are declarative, instant, and always-on.”",
+      "options": [
+        "not",
+        "Hidden logic, blocking, recursion, surprises",
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Triggers are not for enforcing what constraints already enforce: NOT NULL, CHECK, UNIQUE, and FOREIGN KEY are declarative, instant, and always-on. A trigger that “double-checks the data” is slower and easier to disable than the constraint it imitates.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Both deserve the same rule: _____ — triggers especially, because nobody expects a SELECT to fire one.”",
+      "options": [
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path.",
+        "An auditing trigger that records exactly what changed — set-based, as the engine intends:",
+        "if a colleague reading the table definition cannot see the behaviour, document it"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both deserve the same rule: if a colleague reading the table definition cannot see the behaviour, document it — triggers especially, because nobody expects a SELECT to fire one.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triggers: the shadow tables”?",
+      "options": [
+        "Inline table-valued function (ITVF)",
+        "An auditing trigger that records exactly what changed — set-based, as the engine intends:",
+        "Scalar UDF"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An auditing trigger that records exactly what changed — set-based, as the engine intends:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ one trigger per table doing three jobs, none documented; row-by-row logic inside a set-based opportunity; forgetting triggers fire per…”",
+      "options": [
+        "Common pitfalls:",
+        "In place of the statement — the original write never happens",
+        "Tables and views (views: the only way to make them writable)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: one trigger per table doing three jobs, none documented; row-by-row logic inside a set-based opportunity; forgetting triggers fire per statement — one UPDATE touching 100,000 rows runs the trigger once, but the trigger's joins to inserted need an index on the trigger table's key to stay fast; recursion (a trigger writing a table that fires itself — controlled by RECURSIVE_TRIGGERS, off by default); and ORDER BY or deferred name resolution mistakes that break the trigger at 3 AM, on the one write path nobody tests.”"
+    },
+    {
+      "question": "In the “Two tools, two jobs” table, what is listed for “Invoked by” under “Trigger”?",
+      "options": [
+        "Multi-statement TVF",
+        "inserted",
+        "The engine, on INSERT/UPDATE/DELETE (or DDL)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Invoked by” as “The engine, on INSERT/UPDATE/DELETE (or DDL)”."
+    },
+    {
+      "question": "In the “AFTER versus INSTEAD OF” table, what is listed for “When it runs” under “INSTEAD OF”?",
+      "options": [
+        "inside the same statement and transaction",
+        "In place of the statement — the original write never happens",
+        "inserted"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “When it runs” as “In place of the statement — the original write never happens”."
+    },
+    {
+      "question": "In the “Two tools, two jobs” table, what is listed for “May modify data?” under “Trigger”?",
+      "options": [
+        "Yes — that is usually its purpose",
+        "inside the same statement and transaction",
+        "statement"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “May modify data?” as “Yes — that is usually its purpose”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ encapsulate logic that takes input and returns a value — no side effects, safe to use inside queries, deterministic when they should be.”",
+      "options": [
+        "Functions",
+        "Yes — that is usually its purpose",
+        "No — logic fires invisibly on the side"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Functions encapsulate logic that takes input and returns a value — no side effects, safe to use inside queries, deterministic when they should be. Triggers are procedures bound to a table or view that the engine runs automatically when a data change (or certain DDL) happens. One is called by you; the other is called by the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions: three flavours, very different costs”?",
+      "options": [
+        "Not applicable — it decides what the statement means",
+        "Guarding rules, updatable views, steering inserts",
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path. Prefer a view when there is no parameter; prefer a procedure when the logic returns nothing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A DML trigger does not see the table directly — it sees two special in-memory result sets: _____ (the rows as they were before an UPDATE/DELETE) and inserted (the rows as they are after an INSERT/UPDATE).”",
+      "options": [
+        "Hidden logic, blocking, recursion, surprises",
+        "deleted",
+        "Auditing, guarding, cascading side effects"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A DML trigger does not see the table directly — it sees two special in-memory result sets: deleted (the rows as they were before an UPDATE/DELETE) and inserted (the rows as they are after an INSERT/UPDATE). Joining them gives you exactly what changed, set by set — one row per affected row, inside the same statement and transaction.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Triggers are _____ for enforcing what constraints already enforce: NOT NULL, CHECK, UNIQUE, and FOREIGN KEY are declarative, instant, and always-on.”",
+      "options": [
+        "not",
+        "Hidden logic, blocking, recursion, surprises",
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Triggers are not for enforcing what constraints already enforce: NOT NULL, CHECK, UNIQUE, and FOREIGN KEY are declarative, instant, and always-on. A trigger that “double-checks the data” is slower and easier to disable than the constraint it imitates.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Both deserve the same rule: _____ — triggers especially, because nobody expects a SELECT to fire one.”",
+      "options": [
+        "Write functions for the optimiser: inline TVFs with set-based bodies — never cursors, never multi-statement bodies — in anything on a critical read path.",
+        "An auditing trigger that records exactly what changed — set-based, as the engine intends:",
+        "if a colleague reading the table definition cannot see the behaviour, document it"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both deserve the same rule: if a colleague reading the table definition cannot see the behaviour, document it — triggers especially, because nobody expects a SELECT to fire one.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Triggers: the shadow tables”?",
+      "options": [
+        "Inline table-valued function (ITVF)",
+        "An auditing trigger that records exactly what changed — set-based, as the engine intends:",
+        "Scalar UDF"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An auditing trigger that records exactly what changed — set-based, as the engine intends:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ one trigger per table doing three jobs, none documented; row-by-row logic inside a set-based opportunity; forgetting triggers fire per…”",
+      "options": [
+        "Common pitfalls:",
+        "In place of the statement — the original write never happens",
+        "Tables and views (views: the only way to make them writable)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: one trigger per table doing three jobs, none documented; row-by-row logic inside a set-based opportunity; forgetting triggers fire per statement — one UPDATE touching 100,000 rows runs the trigger once, but the trigger's joins to inserted need an index on the trigger table's key to stay fast; recursion (a trigger writing a table that fires itself — controlled by RECURSIVE_TRIGGERS, off by default); and ORDER BY or deferred name resolution mistakes that break the trigger at 3 AM, on the one write path nobody tests.”"
+    },
+    {
+      "question": "In the “Two tools, two jobs” table, what is listed for “Invoked by” under “Trigger”?",
+      "options": [
+        "Multi-statement TVF",
+        "inserted",
+        "The engine, on INSERT/UPDATE/DELETE (or DDL)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Invoked by” as “The engine, on INSERT/UPDATE/DELETE (or DDL)”."
+    },
+    {
+      "question": "In the “AFTER versus INSTEAD OF” table, what is listed for “When it runs” under “INSTEAD OF”?",
+      "options": [
+        "inside the same statement and transaction",
+        "In place of the statement — the original write never happens",
+        "inserted"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “When it runs” as “In place of the statement — the original write never happens”."
+    },
+    {
+      "question": "In the “Two tools, two jobs” table, what is listed for “May modify data?” under “Trigger”?",
+      "options": [
+        "Yes — that is usually its purpose",
+        "inside the same statement and transaction",
+        "statement"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “May modify data?” as “Yes — that is usually its purpose”."
+    }
+  ],
   takeaways: [
     "Functions return values and cannot modify data; triggers run on data changes and usually do",
     "Inline TVFs are expanded into the plan — the safe function type for hot queries; avoid multi-statement TVFs there",

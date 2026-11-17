@@ -163,6 +163,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, or configu
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job Failure Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Job Failure Troubleshooting within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Failure Troubleshooting fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Failure Troubleshooting in practice”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Database Mail configured"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Failure Troubleshooting”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Failure Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job history is the diagnostic record.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Failure Troubleshooting means”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Failure Troubleshooting fits”?",
+      "options": [
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "The diagram below places Job Failure Troubleshooting alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Failure Troubleshooting alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Failure Troubleshooting in practice”?",
+      "options": [
+        "Job never runs",
+        "The following comparison captures the distinctions that matter most when working with Job Failure Troubleshooting:",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Failure Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Failure Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job Failure Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Job Failure Troubleshooting within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Failure Troubleshooting fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Failure Troubleshooting in practice”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Database Mail configured"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Failure Troubleshooting”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Failure Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job history is the diagnostic record.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Failure Troubleshooting means”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Failure Troubleshooting fits”?",
+      "options": [
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "The diagram below places Job Failure Troubleshooting alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Failure Troubleshooting alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Failure Troubleshooting in practice”?",
+      "options": [
+        "Job never runs",
+        "The following comparison captures the distinctions that matter most when working with Job Failure Troubleshooting:",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Failure Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Failure Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job Failure Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Job Failure Troubleshooting within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Failure Troubleshooting fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Failure Troubleshooting in practice”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Database Mail configured"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Failure Troubleshooting”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Job Failure Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job history is the diagnostic record.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Job Failure Troubleshooting means”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Job Failure Troubleshooting fits”?",
+      "options": [
+        "With Job Failure Troubleshooting, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "The diagram below places Job Failure Troubleshooting alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Job Failure Troubleshooting alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Job Failure Troubleshooting in practice”?",
+      "options": [
+        "Job never runs",
+        "The following comparison captures the distinctions that matter most when working with Job Failure Troubleshooting:",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Job Failure Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Job Failure Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    }
+  ],
   takeaways: [
     "Job Failure Troubleshooting is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

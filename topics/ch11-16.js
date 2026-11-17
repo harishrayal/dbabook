@@ -165,6 +165,312 @@ Extended Events is far lighter weight, highly filterable and designed for produc
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "With Long-Running Query Monitoring, prefer measured, reversible changes.",
+        "Long-Running Query Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Long-Running Query Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Long-Running Query Monitoring fits”?",
+      "options": [
+        "Approaching 90%",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Long-Running Query Monitoring in practice”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Long-Running Query Monitoring”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Long-Running Query Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Long-Running Query Monitoring",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Long-Running Query Monitoring means”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Long-Running Query Monitoring fits”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Long-Running Query Monitoring in practice”?",
+      "options": [
+        "Long-Running Query Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The following comparison captures the distinctions that matter most when working with Long-Running Query Monitoring:",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Long-Running Query Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Long-Running Query Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Long-Running Query Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "With Long-Running Query Monitoring, prefer measured, reversible changes.",
+        "Long-Running Query Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Long-Running Query Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Long-Running Query Monitoring fits”?",
+      "options": [
+        "Approaching 90%",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Long-Running Query Monitoring in practice”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Long-Running Query Monitoring”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Long-Running Query Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Long-Running Query Monitoring",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Long-Running Query Monitoring means”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Long-Running Query Monitoring fits”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Long-Running Query Monitoring in practice”?",
+      "options": [
+        "Long-Running Query Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The following comparison captures the distinctions that matter most when working with Long-Running Query Monitoring:",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Long-Running Query Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Long-Running Query Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Long-Running Query Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "With Long-Running Query Monitoring, prefer measured, reversible changes.",
+        "Long-Running Query Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Long-Running Query Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Long-Running Query Monitoring fits”?",
+      "options": [
+        "Approaching 90%",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Long-Running Query Monitoring in practice”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Finds the bottleneck",
+        "Finds head blockers"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Long-Running Query Monitoring”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Long-Running Query Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Long-Running Query Monitoring",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Long-Running Query Monitoring means”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Long-Running Query Monitoring fits”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Long-Running Query Monitoring in practice”?",
+      "options": [
+        "Long-Running Query Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The following comparison captures the distinctions that matter most when working with Long-Running Query Monitoring:",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Long-Running Query Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Long-Running Query Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Long-Running Query Monitoring is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The diagram below places Long-Running Query Monitoring alongside the core concepts of database monitoring and alerting.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    }
+  ],
   takeaways: [
     "Long-Running Query Monitoring is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

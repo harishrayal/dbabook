@@ -172,6 +172,312 @@ Service state, then listener/protocol state, then network path (ping, Test-NetCo
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "UDP",
+        "Storage and Network Troubleshooting",
+        "TCP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Storage and Network Troubleshooting within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Storage and Network Troubleshooting fits”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Storage and Network Troubleshooting sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage and Network Troubleshooting in practice”?",
+      "options": [
+        "Automatic",
+        "Automatic (named instances)",
+        "NTFS permissions control who can read or change files."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Storage and Network Troubleshooting”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Storage and Network Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "UDP",
+        "Storage and Network Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "Windows services are long-running background processes.",
+        "Storage and Network Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Storage and Network Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Storage and Network Troubleshooting means”?",
+      "options": [
+        "NTFS permissions control who can read or change files.",
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Storage and Network Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Windows services are long-running background processes.",
+        "Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage and Network Troubleshooting in practice”?",
+      "options": [
+        "Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Service accounts are identities with rights.",
+        "The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Storage and Network Troubleshooting”?",
+      "options": [
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "The first example establishes the relevant state.",
+        "Service accounts are identities with rights."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "UDP",
+        "Storage and Network Troubleshooting",
+        "TCP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Storage and Network Troubleshooting within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Storage and Network Troubleshooting fits”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Storage and Network Troubleshooting sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage and Network Troubleshooting in practice”?",
+      "options": [
+        "Automatic",
+        "Automatic (named instances)",
+        "NTFS permissions control who can read or change files."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Storage and Network Troubleshooting”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Storage and Network Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "UDP",
+        "Storage and Network Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "Windows services are long-running background processes.",
+        "Storage and Network Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Storage and Network Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Storage and Network Troubleshooting means”?",
+      "options": [
+        "NTFS permissions control who can read or change files.",
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Storage and Network Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Windows services are long-running background processes.",
+        "Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage and Network Troubleshooting in practice”?",
+      "options": [
+        "Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Service accounts are identities with rights.",
+        "The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Storage and Network Troubleshooting”?",
+      "options": [
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "The first example establishes the relevant state.",
+        "Service accounts are identities with rights."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "UDP",
+        "Storage and Network Troubleshooting",
+        "TCP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Storage and Network Troubleshooting within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Storage and Network Troubleshooting fits”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Storage and Network Troubleshooting sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage and Network Troubleshooting in practice”?",
+      "options": [
+        "Automatic",
+        "Automatic (named instances)",
+        "NTFS permissions control who can read or change files."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Storage and Network Troubleshooting”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Storage and Network Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "UDP",
+        "Storage and Network Troubleshooting"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "Windows services are long-running background processes.",
+        "Storage and Network Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Storage and Network Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Storage and Network Troubleshooting means”?",
+      "options": [
+        "NTFS permissions control who can read or change files.",
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Storage and Network Troubleshooting fits”?",
+      "options": [
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Windows services are long-running background processes.",
+        "Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage and Network Troubleshooting in practice”?",
+      "options": [
+        "Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Service accounts are identities with rights.",
+        "The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Storage and Network Troubleshooting”?",
+      "options": [
+        "The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "The first example establishes the relevant state.",
+        "Service accounts are identities with rights."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Storage and Network Troubleshooting is a fundamental concept in Windows Server and infrastructure for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

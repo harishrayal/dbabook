@@ -180,6 +180,312 @@ Transactional replication streams changes one-way from publisher to subscribers 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log Shipping",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping fits”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Log Shipping",
+        "Hours"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Log Shipping with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping means”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping in practice”?",
+      "options": [
+        "With Log Shipping, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log Shipping",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping fits”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Log Shipping",
+        "Hours"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Log Shipping with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping means”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping in practice”?",
+      "options": [
+        "With Log Shipping, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log Shipping",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping fits”?",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Medium",
+        "Log Shipping",
+        "Hours"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Log Shipping with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping means”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Log Shipping alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping in practice”?",
+      "options": [
+        "With Log Shipping, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Disaster recovery protects against site or region loss.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Log Shipping is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

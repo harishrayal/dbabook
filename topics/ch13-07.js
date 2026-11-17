@@ -167,6 +167,312 @@ It uses row versioning so readers do not take shared locks that block writers an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Compatible with other S",
+        "Exclusive Locks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Exclusive Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Exclusive Locks fits”?",
+      "options": [
+        "Compatible with S",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Incompatible with all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Exclusive Locks in practice”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Exclusive Locks”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Exclusive Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Exclusive Locks means”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Exclusive Locks fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "The diagram below places Exclusive Locks alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Exclusive Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Exclusive Locks in practice”?",
+      "options": [
+        "Held read locks",
+        "The following comparison captures the distinctions that matter most when working with Exclusive Locks:",
+        "Default"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Exclusive Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Exclusive Locks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "None",
+        "Default"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "With Exclusive Locks, prefer measured, reversible changes.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Compatible with other S",
+        "Exclusive Locks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Exclusive Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Exclusive Locks fits”?",
+      "options": [
+        "Compatible with S",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Incompatible with all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Exclusive Locks in practice”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Exclusive Locks”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Exclusive Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Exclusive Locks means”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Exclusive Locks fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "The diagram below places Exclusive Locks alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Exclusive Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Exclusive Locks in practice”?",
+      "options": [
+        "Held read locks",
+        "The following comparison captures the distinctions that matter most when working with Exclusive Locks:",
+        "Default"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Exclusive Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Exclusive Locks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "None",
+        "Default"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "With Exclusive Locks, prefer measured, reversible changes.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Compatible with other S",
+        "Exclusive Locks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Exclusive Locks within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Exclusive Locks fits”?",
+      "options": [
+        "Compatible with S",
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Incompatible with all"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Exclusive Locks in practice”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Exclusive Locks”?",
+      "options": [
+        "Incompatible with all",
+        "Compatible with S",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Exclusive Locks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Exclusive Locks means”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Exclusive Locks fits”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "The diagram below places Exclusive Locks alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Exclusive Locks alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Exclusive Locks in practice”?",
+      "options": [
+        "Held read locks",
+        "The following comparison captures the distinctions that matter most when working with Exclusive Locks:",
+        "Default"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Exclusive Locks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Exclusive Locks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "None",
+        "Default"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "With Exclusive Locks, prefer measured, reversible changes.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    }
+  ],
   takeaways: [
     "Exclusive Locks is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

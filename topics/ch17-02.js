@@ -179,6 +179,312 @@ It periodically backs up, copies and restores logs to a secondary, giving a warm
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Backup and Restore DR Strategy",
+        "Backup and Restore DR Strategy is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup and Restore DR Strategy within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup and Restore DR Strategy fits”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Backup and Restore DR Strategy is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup and Restore DR Strategy in practice”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup and Restore DR Strategy”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup and Restore DR Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Hours",
+        "Backup and Restore DR Strategy"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup and Restore DR Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup and Restore DR Strategy means”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup and Restore DR Strategy fits”?",
+      "options": [
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies.",
+        "Medium",
+        "Minutes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup and Restore DR Strategy in practice”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup and Restore DR Strategy”?",
+      "options": [
+        "Minutes",
+        "The first example establishes the relevant state.",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Backup and Restore DR Strategy",
+        "Backup and Restore DR Strategy is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup and Restore DR Strategy within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup and Restore DR Strategy fits”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Backup and Restore DR Strategy is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup and Restore DR Strategy in practice”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup and Restore DR Strategy”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup and Restore DR Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Hours",
+        "Backup and Restore DR Strategy"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup and Restore DR Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup and Restore DR Strategy means”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup and Restore DR Strategy fits”?",
+      "options": [
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies.",
+        "Medium",
+        "Minutes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup and Restore DR Strategy in practice”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup and Restore DR Strategy”?",
+      "options": [
+        "Minutes",
+        "The first example establishes the relevant state.",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Backup and Restore DR Strategy",
+        "Backup and Restore DR Strategy is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup and Restore DR Strategy within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup and Restore DR Strategy fits”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "Backup and Restore DR Strategy is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup and Restore DR Strategy in practice”?",
+      "options": [
+        "Replication moves data via publication and subscription.",
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies.",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup and Restore DR Strategy”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup and Restore DR Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Hours",
+        "Backup and Restore DR Strategy"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup and Restore DR Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup and Restore DR Strategy means”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Minutes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup and Restore DR Strategy fits”?",
+      "options": [
+        "The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies.",
+        "Medium",
+        "Minutes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup and Restore DR Strategy alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup and Restore DR Strategy in practice”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup and Restore DR Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup and Restore DR Strategy”?",
+      "options": [
+        "Minutes",
+        "The first example establishes the relevant state.",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup and Restore DR Strategy is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

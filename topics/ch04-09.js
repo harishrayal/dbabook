@@ -198,6 +198,312 @@ ALTER DATABASE SalesDB MODIFY FILE
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “File types and filegroups”?",
+      "options": [
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every database has at least two files — a primary data file and a log file — and may have many more:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why add an NDF?”?",
+      "options": [
+        "Enable Perform Volume Maintenance Tasks for the service account",
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "One data file per database is fine for small systems."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “One data file per database is fine for small systems. Multiple secondary files earn their keep for three reasons:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth settings: where outages are born”?",
+      "options": [
+        "Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter.",
+        "An auto-grow event is a maintenance operation happening in the middle of your workload.",
+        "size"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An auto-grow event is a maintenance operation happening in the middle of your workload. Data-file growth takes an allocation and (with instant file initialization enabled) writes only a metadata change; log-file growth must zero-initialise every new byte — which is why log growth on a slow volume can stall writes for minutes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring file usage and latency”?",
+      "options": [
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "Enable Perform Volume Maintenance Tasks for the service account",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “sys.dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now. Together they answer “is this file full, slow, or both?”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Volume space and file placement”?",
+      "options": [
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases). Check free space at the file's own location:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Rules to internalise: a _____ change takes effect immediately (the file grows on disk at once), a path change is only recorded until the file is taken offline and back;…”",
+      "options": [
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "size",
+        "path"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Rules to internalise: a size change takes effect immediately (the file grows on disk at once), a path change is only recorded until the file is taken offline and back; and REMOVE FILE only works on an empty file — SQL Server will not shrink data for you as part of a cleanup. Shrinking is a damage-control operation (after a one-off bulk load), not maintenance (see DBCC SHRINKFILE cautions in the operations chapter).”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a named, ordered collection of data files.”",
+      "options": [
+        "filegroup",
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "All system tables plus any objects not placed elsewhere; starts the filegroup chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A filegroup is a named, ordered collection of data files. The PRIMARY filegroup always exists; user-defined filegroups let you place specific tables and indexes on specific storage. Objects are allocated within their filegroup's files, round-robin across files in practice.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Adding files is _____ a fix for log-file or CPU problems, and for tempdb the classic advice is one file per visible CPU core up to eight, equal in size, with proportional fill disabled only where Microsoft's guidance calls for it.”",
+      "options": [
+        "All system tables plus any objects not placed elsewhere; starts the filegroup chain",
+        "User data only; must belong to a filegroup",
+        "not"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Guidance that has aged well: for large databases, create data files sized equally (to avoid uneven allocation) and prefer a few files over many. Adding files is not a fix for log-file or CPU problems, and for tempdb the classic advice is one file per visible CPU core up to eight, equal in size, with proportional fill disabled only where Microsoft's guidance calls for it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth settings: where outages are born”?",
+      "options": [
+        "Secondary data file",
+        "Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter.",
+        "Primary data file"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter. Count them in monitoring: a database that grows several times a week is telling you its size should be set manually.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring file usage and latency”?",
+      "options": [
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Secondary data file",
+        "Transaction log file"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes correlates directly with transaction throughput.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “File types and filegroups”?",
+      "options": [
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every database has at least two files — a primary data file and a log file — and may have many more:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why add an NDF?”?",
+      "options": [
+        "Enable Perform Volume Maintenance Tasks for the service account",
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "One data file per database is fine for small systems."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “One data file per database is fine for small systems. Multiple secondary files earn their keep for three reasons:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth settings: where outages are born”?",
+      "options": [
+        "Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter.",
+        "An auto-grow event is a maintenance operation happening in the middle of your workload.",
+        "size"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An auto-grow event is a maintenance operation happening in the middle of your workload. Data-file growth takes an allocation and (with instant file initialization enabled) writes only a metadata change; log-file growth must zero-initialise every new byte — which is why log growth on a slow volume can stall writes for minutes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring file usage and latency”?",
+      "options": [
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "Enable Perform Volume Maintenance Tasks for the service account",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “sys.dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now. Together they answer “is this file full, slow, or both?”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Volume space and file placement”?",
+      "options": [
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases). Check free space at the file's own location:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Rules to internalise: a _____ change takes effect immediately (the file grows on disk at once), a path change is only recorded until the file is taken offline and back;…”",
+      "options": [
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "size",
+        "path"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Rules to internalise: a size change takes effect immediately (the file grows on disk at once), a path change is only recorded until the file is taken offline and back; and REMOVE FILE only works on an empty file — SQL Server will not shrink data for you as part of a cleanup. Shrinking is a damage-control operation (after a one-off bulk load), not maintenance (see DBCC SHRINKFILE cautions in the operations chapter).”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a named, ordered collection of data files.”",
+      "options": [
+        "filegroup",
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "All system tables plus any objects not placed elsewhere; starts the filegroup chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A filegroup is a named, ordered collection of data files. The PRIMARY filegroup always exists; user-defined filegroups let you place specific tables and indexes on specific storage. Objects are allocated within their filegroup's files, round-robin across files in practice.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Adding files is _____ a fix for log-file or CPU problems, and for tempdb the classic advice is one file per visible CPU core up to eight, equal in size, with proportional fill disabled only where Microsoft's guidance calls for it.”",
+      "options": [
+        "All system tables plus any objects not placed elsewhere; starts the filegroup chain",
+        "User data only; must belong to a filegroup",
+        "not"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Guidance that has aged well: for large databases, create data files sized equally (to avoid uneven allocation) and prefer a few files over many. Adding files is not a fix for log-file or CPU problems, and for tempdb the classic advice is one file per visible CPU core up to eight, equal in size, with proportional fill disabled only where Microsoft's guidance calls for it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth settings: where outages are born”?",
+      "options": [
+        "Secondary data file",
+        "Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter.",
+        "Primary data file"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter. Count them in monitoring: a database that grows several times a week is telling you its size should be set manually.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring file usage and latency”?",
+      "options": [
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Secondary data file",
+        "Transaction log file"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes correlates directly with transaction throughput.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “File types and filegroups”?",
+      "options": [
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every database has at least two files — a primary data file and a log file — and may have many more:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why add an NDF?”?",
+      "options": [
+        "Enable Perform Volume Maintenance Tasks for the service account",
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "One data file per database is fine for small systems."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “One data file per database is fine for small systems. Multiple secondary files earn their keep for three reasons:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth settings: where outages are born”?",
+      "options": [
+        "Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter.",
+        "An auto-grow event is a maintenance operation happening in the middle of your workload.",
+        "size"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An auto-grow event is a maintenance operation happening in the middle of your workload. Data-file growth takes an allocation and (with instant file initialization enabled) writes only a metadata change; log-file growth must zero-initialise every new byte — which is why log growth on a slow volume can stall writes for minutes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring file usage and latency”?",
+      "options": [
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "Enable Perform Volume Maintenance Tasks for the service account",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “sys.dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now. Together they answer “is this file full, slow, or both?”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Volume space and file placement”?",
+      "options": [
+        "dm_io_virtual_file_stats returns cumulative I/O since the last counter reset, and FILEPROPERTY returns space used right now.",
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Files live on volumes, and volumes fill for reasons that have nothing to do with SQL Server (backups, logs, other databases). Check free space at the file's own location:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Rules to internalise: a _____ change takes effect immediately (the file grows on disk at once), a path change is only recorded until the file is taken offline and back;…”",
+      "options": [
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "size",
+        "path"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Rules to internalise: a size change takes effect immediately (the file grows on disk at once), a path change is only recorded until the file is taken offline and back; and REMOVE FILE only works on an empty file — SQL Server will not shrink data for you as part of a cleanup. Shrinking is a damage-control operation (after a one-off bulk load), not maintenance (see DBCC SHRINKFILE cautions in the operations chapter).”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ is a named, ordered collection of data files.”",
+      "options": [
+        "filegroup",
+        "Every database has at least two files — a primary data file and a log file — and may have many more:",
+        "All system tables plus any objects not placed elsewhere; starts the filegroup chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A filegroup is a named, ordered collection of data files. The PRIMARY filegroup always exists; user-defined filegroups let you place specific tables and indexes on specific storage. Objects are allocated within their filegroup's files, round-robin across files in practice.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Adding files is _____ a fix for log-file or CPU problems, and for tempdb the classic advice is one file per visible CPU core up to eight, equal in size, with proportional fill disabled only where Microsoft's guidance calls for it.”",
+      "options": [
+        "All system tables plus any objects not placed elsewhere; starts the filegroup chain",
+        "User data only; must belong to a filegroup",
+        "not"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Guidance that has aged well: for large databases, create data files sized equally (to avoid uneven allocation) and prefer a few files over many. Adding files is not a fix for log-file or CPU problems, and for tempdb the classic advice is one file per visible CPU core up to eight, equal in size, with proportional fill disabled only where Microsoft's guidance calls for it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Growth settings: where outages are born”?",
+      "options": [
+        "Secondary data file",
+        "Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter.",
+        "Primary data file"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Growth events are visible in the SQL Server error log ( Error 14505 — growth for file … failed) and in the Auto Growth performance counter. Count them in monitoring: a database that grows several times a week is telling you its size should be set manually.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring file usage and latency”?",
+      "options": [
+        "Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes…",
+        "Secondary data file",
+        "Transaction log file"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reading the result: a data file at 95% used_mb is a growth waiting to happen; a file with double-digit avg_read_ms is on bad storage; a log file whose write latency spikes correlates directly with transaction throughput.”"
+    }
+  ],
   takeaways: [
     "MDF is the single primary data file; NDF files are secondary files in filegroups; the LDF never holds data pages",
     "Filegroups map objects to storage — use them to separate hot and archive tiers, not just to hold files",

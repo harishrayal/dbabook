@@ -162,6 +162,312 @@ Use ALTER DATABASE ... MODIFY FILE to change the catalogued path, take the datab
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "With Database File Shrinking, prefer measured, reversible changes.",
+        "Database File Shrinking"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database File Shrinking within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Shrinking fits”?",
+      "options": [
+        "Avoid on large files",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Shrinking in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Shrinking”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database File Shrinking. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database File Shrinking",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database File Shrinking means”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Shrinking fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database File Shrinking alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Shrinking in practice”?",
+      "options": [
+        "Database File Shrinking is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Database File Shrinking:",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database File Shrinking:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Shrinking”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database File Shrinking is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "With Database File Shrinking, prefer measured, reversible changes.",
+        "Database File Shrinking"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database File Shrinking within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Shrinking fits”?",
+      "options": [
+        "Avoid on large files",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Shrinking in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Shrinking”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database File Shrinking. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database File Shrinking",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database File Shrinking means”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Shrinking fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database File Shrinking alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Shrinking in practice”?",
+      "options": [
+        "Database File Shrinking is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Database File Shrinking:",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database File Shrinking:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Shrinking”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database File Shrinking is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "With Database File Shrinking, prefer measured, reversible changes.",
+        "Database File Shrinking"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database File Shrinking within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Shrinking fits”?",
+      "options": [
+        "Avoid on large files",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Shrinking in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Shrinking”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database File Shrinking. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Database File Shrinking",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database File Shrinking means”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Shrinking fits”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database File Shrinking alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Shrinking in practice”?",
+      "options": [
+        "Database File Shrinking is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Database File Shrinking:",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database File Shrinking:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Shrinking”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database File Shrinking is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The diagram below places Database File Shrinking alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    }
+  ],
   takeaways: [
     "Database File Shrinking is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

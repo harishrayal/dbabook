@@ -186,6 +186,312 @@ Granting only the minimum permissions required for the minimum scope and time. I
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Auditing.",
+        "SQL Server Auditing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Auditing within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Auditing fits”?",
+      "options": [
+        "SQL Server Auditing",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Auditing in practice”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "SQL Server Auditing",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Auditing”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Auditing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Auditing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server Auditing",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates SQL Server Auditing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Auditing means”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Authenticate to the instance",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Auditing fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Auditing in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Auditing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Auditing”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Auditing.",
+        "SQL Server Auditing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Auditing within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Auditing fits”?",
+      "options": [
+        "SQL Server Auditing",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Auditing in practice”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "SQL Server Auditing",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Auditing”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Auditing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Auditing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server Auditing",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates SQL Server Auditing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Auditing means”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Authenticate to the instance",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Auditing fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Auditing in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Auditing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Auditing”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating SQL Server Auditing.",
+        "SQL Server Auditing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Auditing within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Auditing fits”?",
+      "options": [
+        "SQL Server Auditing",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Auditing in practice”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "SQL Server Auditing",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Auditing”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Auditing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Auditing is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "SQL Server Auditing",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates SQL Server Auditing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Auditing means”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Authenticate to the instance",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Auditing fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places SQL Server Auditing alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Auditing in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Auditing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Auditing”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Auditing:",
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Auditing is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

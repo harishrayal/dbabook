@@ -177,6 +177,312 @@ Switching recovery model, restoring with RECOVERY, or taking a non-copy-only ful
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Backup Scheduling",
+        "Backup Scheduling sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Scheduling within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Scheduling fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Scheduling.",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Scheduling in practice”?",
+      "options": [
+        "Backup Scheduling",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Scheduling”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Backup Scheduling",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Scheduling. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backup Scheduling",
+        "Backup Scheduling is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Scheduling with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Scheduling means”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Scheduling fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Scheduling in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Scheduling:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Scheduling”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Backup Scheduling",
+        "Backup Scheduling sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Scheduling within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Scheduling fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Scheduling.",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Scheduling in practice”?",
+      "options": [
+        "Backup Scheduling",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Scheduling”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Backup Scheduling",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Scheduling. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backup Scheduling",
+        "Backup Scheduling is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Scheduling with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Scheduling means”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Scheduling fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Scheduling in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Scheduling:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Scheduling”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Backup Scheduling",
+        "Backup Scheduling sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Scheduling within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Scheduling fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Backup Scheduling.",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Scheduling in practice”?",
+      "options": [
+        "Backup Scheduling",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Scheduling”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Backup Scheduling",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Scheduling. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backup Scheduling",
+        "Backup Scheduling is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Scheduling with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Scheduling means”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "Backups are the only true protection against data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Scheduling fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Scheduling in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:",
+        "The diagram below places Backup Scheduling alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Scheduling:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Scheduling”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "The following comparison captures the distinctions that matter most when working with Backup Scheduling:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Scheduling is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

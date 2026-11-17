@@ -192,6 +192,312 @@ Invoke-Sqlcmd -ServerInstance 'PROD-SQL01\\INST1' -Query "SELECT j.name, max(h.r
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why cadence matters”?",
+      "options": [
+        "Today's approved changes reviewed, rollback known, window confirmed",
+        "Notes passed: open issues, pending work, anything to watch",
+        "Production databases degrade continuously and fail suddenly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Production databases degrade continuously and fail suddenly. Cadence is how a DBA converts continuous degradation into scheduled detection — each cycle catches a different class of problem before it becomes an incident:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily: keep the lights on”?",
+      "options": [
+        "Performance and size trends measured against last month",
+        "The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong.",
+        "Steps still match reality after a month of changes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong. Its outputs are evidence, not vibes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Weekly: review, tune, and plan”?",
+      "options": [
+        "The weekly cycle is where the DBA stops reacting and looks at trends.",
+        "Today's approved changes reviewed, rollback known, window confirmed",
+        "Notes passed: open issues, pending work, anything to watch"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The weekly cycle is where the DBA stops reacting and looks at trends. It runs in a quiet window and produces work items for the coming week:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monthly: prove, patch, and audit”?",
+      "options": [
+        "Notes passed: open issues, pending work, anything to watch",
+        "The weekly cycle is where the DBA stops reacting and looks at trends.",
+        "Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Holiday, illness, and project work all interrupt it, so the cycle must be _____: a colleague should be able to pick up the daily check with the document open and reach the same conclusions you would.”",
+      "options": [
+        "access review",
+        "portable",
+        "restore test"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “No cadence survives on goodwill alone. Holiday, illness, and project work all interrupt it, so the cycle must be portable: a colleague should be able to pick up the daily check with the document open and reach the same conclusions you would. Three things make that possible:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the cadence stick”?",
+      "options": [
+        "Any cadence collapses under its first real workload spike unless it is externalised and defended:",
+        "A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned.",
+        "Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Any cadence collapses under its first real workload spike unless it is externalised and defended:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Daily success is _____.”",
+      "options": [
+        "A written rota",
+        "Handover notes at every boundary",
+        "nothing to report"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The three cycles also differ in what counts as success. Daily success is nothing to report. Weekly success is a change made based on evidence. Monthly success is a proof obtained — the restore that worked, the failover that met its RTO, the access list that got shorter.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily: keep the lights on”?",
+      "options": [
+        "Second engineer as witness",
+        "The query is deliberately blunt: anything returned needs an answer today.",
+        "Deputy DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The query is deliberately blunt: anything returned needs an answer today. Databases created ad hoc by developers, restored under a new name, or missed by a backup policy all surface here — they are the ones that fail during a recovery nobody expected.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Weekly: review, tune, and plan”?",
+      "options": [
+        "A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned.",
+        "Known defects and vulnerabilities removed on schedule",
+        "Roles audited, orphaned users removed, excessive grants withdrawn"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned. That habit is what turns a year of DBA work into a defensible record during audits, budget reviews, or an incident investigation six months later.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the only activity that converts “we have backups” into “we can recover” — schedule it the way you would schedule an audit, because it is one.”",
+      "options": [
+        "Escalation contacts",
+        "quiet week",
+        "restore test"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two of these deserve emphasis. The restore test is the only activity that converts “we have backups” into “we can recover” — schedule it the way you would schedule an audit, because it is one. And the access review is where security debt accumulates silently: every contractor account, every temporary grant, every “just for now” sysadmin that outlived its reason.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why cadence matters”?",
+      "options": [
+        "Today's approved changes reviewed, rollback known, window confirmed",
+        "Notes passed: open issues, pending work, anything to watch",
+        "Production databases degrade continuously and fail suddenly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Production databases degrade continuously and fail suddenly. Cadence is how a DBA converts continuous degradation into scheduled detection — each cycle catches a different class of problem before it becomes an incident:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily: keep the lights on”?",
+      "options": [
+        "Performance and size trends measured against last month",
+        "The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong.",
+        "Steps still match reality after a month of changes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong. Its outputs are evidence, not vibes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Weekly: review, tune, and plan”?",
+      "options": [
+        "The weekly cycle is where the DBA stops reacting and looks at trends.",
+        "Today's approved changes reviewed, rollback known, window confirmed",
+        "Notes passed: open issues, pending work, anything to watch"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The weekly cycle is where the DBA stops reacting and looks at trends. It runs in a quiet window and produces work items for the coming week:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monthly: prove, patch, and audit”?",
+      "options": [
+        "Notes passed: open issues, pending work, anything to watch",
+        "The weekly cycle is where the DBA stops reacting and looks at trends.",
+        "Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Holiday, illness, and project work all interrupt it, so the cycle must be _____: a colleague should be able to pick up the daily check with the document open and reach the same conclusions you would.”",
+      "options": [
+        "access review",
+        "portable",
+        "restore test"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “No cadence survives on goodwill alone. Holiday, illness, and project work all interrupt it, so the cycle must be portable: a colleague should be able to pick up the daily check with the document open and reach the same conclusions you would. Three things make that possible:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the cadence stick”?",
+      "options": [
+        "Any cadence collapses under its first real workload spike unless it is externalised and defended:",
+        "A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned.",
+        "Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Any cadence collapses under its first real workload spike unless it is externalised and defended:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Daily success is _____.”",
+      "options": [
+        "A written rota",
+        "Handover notes at every boundary",
+        "nothing to report"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The three cycles also differ in what counts as success. Daily success is nothing to report. Weekly success is a change made based on evidence. Monthly success is a proof obtained — the restore that worked, the failover that met its RTO, the access list that got shorter.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily: keep the lights on”?",
+      "options": [
+        "Second engineer as witness",
+        "The query is deliberately blunt: anything returned needs an answer today.",
+        "Deputy DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The query is deliberately blunt: anything returned needs an answer today. Databases created ad hoc by developers, restored under a new name, or missed by a backup policy all surface here — they are the ones that fail during a recovery nobody expected.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Weekly: review, tune, and plan”?",
+      "options": [
+        "A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned.",
+        "Known defects and vulnerabilities removed on schedule",
+        "Roles audited, orphaned users removed, excessive grants withdrawn"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned. That habit is what turns a year of DBA work into a defensible record during audits, budget reviews, or an incident investigation six months later.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the only activity that converts “we have backups” into “we can recover” — schedule it the way you would schedule an audit, because it is one.”",
+      "options": [
+        "Escalation contacts",
+        "quiet week",
+        "restore test"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two of these deserve emphasis. The restore test is the only activity that converts “we have backups” into “we can recover” — schedule it the way you would schedule an audit, because it is one. And the access review is where security debt accumulates silently: every contractor account, every temporary grant, every “just for now” sysadmin that outlived its reason.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why cadence matters”?",
+      "options": [
+        "Today's approved changes reviewed, rollback known, window confirmed",
+        "Notes passed: open issues, pending work, anything to watch",
+        "Production databases degrade continuously and fail suddenly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Production databases degrade continuously and fail suddenly. Cadence is how a DBA converts continuous degradation into scheduled detection — each cycle catches a different class of problem before it becomes an incident:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily: keep the lights on”?",
+      "options": [
+        "Performance and size trends measured against last month",
+        "The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong.",
+        "Steps still match reality after a month of changes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong. Its outputs are evidence, not vibes:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Weekly: review, tune, and plan”?",
+      "options": [
+        "The weekly cycle is where the DBA stops reacting and looks at trends.",
+        "Today's approved changes reviewed, rollback known, window confirmed",
+        "Notes passed: open issues, pending work, anything to watch"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The weekly cycle is where the DBA stops reacting and looks at trends. It runs in a quiet window and produces work items for the coming week:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monthly: prove, patch, and audit”?",
+      "options": [
+        "Notes passed: open issues, pending work, anything to watch",
+        "The weekly cycle is where the DBA stops reacting and looks at trends.",
+        "Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Holiday, illness, and project work all interrupt it, so the cycle must be _____: a colleague should be able to pick up the daily check with the document open and reach the same conclusions you would.”",
+      "options": [
+        "access review",
+        "portable",
+        "restore test"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “No cadence survives on goodwill alone. Holiday, illness, and project work all interrupt it, so the cycle must be portable: a colleague should be able to pick up the daily check with the document open and reach the same conclusions you would. Three things make that possible:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the cadence stick”?",
+      "options": [
+        "Any cadence collapses under its first real workload spike unless it is externalised and defended:",
+        "A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned.",
+        "Monthly activities are the ones teams skip first when busy — and they are precisely the ones that prove the promises made to the business:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Any cadence collapses under its first real workload spike unless it is externalised and defended:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Daily success is _____.”",
+      "options": [
+        "A written rota",
+        "Handover notes at every boundary",
+        "nothing to report"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The three cycles also differ in what counts as success. Daily success is nothing to report. Weekly success is a change made based on evidence. Monthly success is a proof obtained — the restore that worked, the failover that met its RTO, the access list that got shorter.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Daily: keep the lights on”?",
+      "options": [
+        "Second engineer as witness",
+        "The query is deliberately blunt: anything returned needs an answer today.",
+        "Deputy DBA"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The query is deliberately blunt: anything returned needs an answer today. Databases created ad hoc by developers, restored under a new name, or missed by a backup policy all surface here — they are the ones that fail during a recovery nobody expected.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Weekly: review, tune, and plan”?",
+      "options": [
+        "A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned.",
+        "Known defects and vulnerabilities removed on schedule",
+        "Roles audited, orphaned users removed, excessive grants withdrawn"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A useful discipline: the weekly session ends with a short written summary — three bullets of what changed, what was found, what is planned. That habit is what turns a year of DBA work into a defensible record during audits, budget reviews, or an incident investigation six months later.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the only activity that converts “we have backups” into “we can recover” — schedule it the way you would schedule an audit, because it is one.”",
+      "options": [
+        "Escalation contacts",
+        "quiet week",
+        "restore test"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two of these deserve emphasis. The restore test is the only activity that converts “we have backups” into “we can recover” — schedule it the way you would schedule an audit, because it is one. And the access review is where security debt accumulates silently: every contractor account, every temporary grant, every “just for now” sysadmin that outlived its reason.”"
+    }
+  ],
   takeaways: [
     "Daily catches failures, weekly catches drift, monthly proves recovery — each cycle has a distinct purpose",
     "Every activity produces evidence: a report, a measurement, a written summary — not a feeling that it went fine",

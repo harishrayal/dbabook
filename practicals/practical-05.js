@@ -187,6 +187,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, and config
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "sysschedules",
+        "This lab turns the Agent from a black box into a tool you can inspect and trust.",
+        "sysjobsteps"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab turns the Agent from a black box into a tool you can inspect and trust. You will build a job, watch it run, deliberately make a step fail, and then diagnose the failure from msdb.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "A job is a container of steps; each step can run T-SQL, PowerShell, SSIS or a command.",
+        "sysjobsteps",
+        "sysschedules"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job is a container of steps; each step can run T-SQL, PowerShell, SSIS or a command. Steps execute in order and the outcome of each controls what runs next — that is how you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Job ownership is a frequent hidden cause of failure.",
+        "Create a job with one T-SQL step that writes a timestamp into a log table, and a second step that checks the row count."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Create a job with one T-SQL step that writes a timestamp into a log table, and a second step that checks the row count. Set step two to run only if step one succeeds — the default flow for dependent steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "sysschedules",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "sysjobsteps"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Job ownership is a frequent hidden cause of failure.",
+        "sysschedules",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership is a frequent hidden cause of failure. If the owner is disabled or lacks permissions, the job fails even though the definition looks perfect — always verify owner and history together.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Job ownership is a frequent hidden cause of failure.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Confirm the SQL Server Agent service is running first."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Confirm the SQL Server Agent service is running first. If it is stopped, none of your jobs will ever execute and the symptoms look identical to a broken schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "The flow below shows the lifecycle you will exercise: create job, add steps, set a schedule, run it, then read the history to verify and diagnose.",
+        "Job ownership is a frequent hidden cause of failure."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The flow below shows the lifecycle you will exercise: create job, add steps, set a schedule, run it, then read the history to verify and diagnose.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Attach a schedule that runs every minute for a short test window, then disable it once you have observed a few executions.",
+        "Grant rights or use a proxy",
+        "Configure operator + Database Mail"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Attach a schedule that runs every minute for a short test window, then disable it once you have observed a few executions. Leaving test schedules enabled is a common source of surprise load.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Reassign to a valid service account",
+        "Grant rights or use a proxy",
+        "Configure an operator and set the job to notify on failure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Configure an operator and set the job to notify on failure. Database Mail must be configured for email to work; if mail is unavailable, note the notification configuration even if you cannot send in the lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Reassign to a valid service account",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Start service, set Automatic"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "sysschedules",
+        "This lab turns the Agent from a black box into a tool you can inspect and trust.",
+        "sysjobsteps"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab turns the Agent from a black box into a tool you can inspect and trust. You will build a job, watch it run, deliberately make a step fail, and then diagnose the failure from msdb.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "A job is a container of steps; each step can run T-SQL, PowerShell, SSIS or a command.",
+        "sysjobsteps",
+        "sysschedules"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job is a container of steps; each step can run T-SQL, PowerShell, SSIS or a command. Steps execute in order and the outcome of each controls what runs next — that is how you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Job ownership is a frequent hidden cause of failure.",
+        "Create a job with one T-SQL step that writes a timestamp into a log table, and a second step that checks the row count."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Create a job with one T-SQL step that writes a timestamp into a log table, and a second step that checks the row count. Set step two to run only if step one succeeds — the default flow for dependent steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "sysschedules",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "sysjobsteps"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Job ownership is a frequent hidden cause of failure.",
+        "sysschedules",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership is a frequent hidden cause of failure. If the owner is disabled or lacks permissions, the job fails even though the definition looks perfect — always verify owner and history together.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Job ownership is a frequent hidden cause of failure.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Confirm the SQL Server Agent service is running first."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Confirm the SQL Server Agent service is running first. If it is stopped, none of your jobs will ever execute and the symptoms look identical to a broken schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "The flow below shows the lifecycle you will exercise: create job, add steps, set a schedule, run it, then read the history to verify and diagnose.",
+        "Job ownership is a frequent hidden cause of failure."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The flow below shows the lifecycle you will exercise: create job, add steps, set a schedule, run it, then read the history to verify and diagnose.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Attach a schedule that runs every minute for a short test window, then disable it once you have observed a few executions.",
+        "Grant rights or use a proxy",
+        "Configure operator + Database Mail"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Attach a schedule that runs every minute for a short test window, then disable it once you have observed a few executions. Leaving test schedules enabled is a common source of surprise load.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Reassign to a valid service account",
+        "Grant rights or use a proxy",
+        "Configure an operator and set the job to notify on failure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Configure an operator and set the job to notify on failure. Database Mail must be configured for email to work; if mail is unavailable, note the notification configuration even if you cannot send in the lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Reassign to a valid service account",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Start service, set Automatic"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "sysschedules",
+        "This lab turns the Agent from a black box into a tool you can inspect and trust.",
+        "sysjobsteps"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab turns the Agent from a black box into a tool you can inspect and trust. You will build a job, watch it run, deliberately make a step fail, and then diagnose the failure from msdb.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "A job is a container of steps; each step can run T-SQL, PowerShell, SSIS or a command.",
+        "sysjobsteps",
+        "sysschedules"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job is a container of steps; each step can run T-SQL, PowerShell, SSIS or a command. Steps execute in order and the outcome of each controls what runs next — that is how you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Job ownership is a frequent hidden cause of failure.",
+        "Create a job with one T-SQL step that writes a timestamp into a log table, and a second step that checks the row count."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Create a job with one T-SQL step that writes a timestamp into a log table, and a second step that checks the row count. Set step two to run only if step one succeeds — the default flow for dependent steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "sysschedules",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "sysjobsteps"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Job ownership is a frequent hidden cause of failure.",
+        "sysschedules",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership is a frequent hidden cause of failure. If the owner is disabled or lacks permissions, the job fails even though the definition looks perfect — always verify owner and history together.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Job ownership is a frequent hidden cause of failure.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Confirm the SQL Server Agent service is running first."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Confirm the SQL Server Agent service is running first. If it is stopped, none of your jobs will ever execute and the symptoms look identical to a broken schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "The flow below shows the lifecycle you will exercise: create job, add steps, set a schedule, run it, then read the history to verify and diagnose.",
+        "Job ownership is a frequent hidden cause of failure."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The flow below shows the lifecycle you will exercise: create job, add steps, set a schedule, run it, then read the history to verify and diagnose.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Attach a schedule that runs every minute for a short test window, then disable it once you have observed a few executions.",
+        "Grant rights or use a proxy",
+        "Configure operator + Database Mail"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Attach a schedule that runs every minute for a short test window, then disable it once you have observed a few executions. Leaving test schedules enabled is a common source of surprise load.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Reassign to a valid service account",
+        "Grant rights or use a proxy",
+        "Configure an operator and set the job to notify on failure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Configure an operator and set the job to notify on failure. Database Mail must be configured for email to work; if mail is unavailable, note the notification configuration even if you cannot send in the lab.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Reassign to a valid service account",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Start service, set Automatic"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "A job is steps plus a schedule plus an owner — all three must be healthy",
     "Job history in msdb is the primary diagnostic record",

@@ -169,6 +169,312 @@ ORDER BY wait_time_ms DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ owns the buffer pool and performs four jobs on behalf of every operation that touches a page:”",
+      "options": [
+        "Steal",
+        "Force",
+        "buffer manager"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The buffer manager owns the buffer pool and performs four jobs on behalf of every operation that touches a page:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every cached page has exactly one _____ — a small structure recording database id, file id, page id, whether the page is dirty, and where its frame lives.”",
+      "options": [
+        "no-force",
+        "buffer descriptor",
+        "Force"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every cached page has exactly one buffer descriptor — a small structure recording database id, file id, page id, whether the page is dirty, and where its frame lives. Descriptors are found through a hash table keyed on (database id, file id, page id), which is why page lookup is constant-time regardless of pool size.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When a page is being read or modified, the engine must guarantee structural consistency — that is a _____ 's job, not a lock's:”",
+      "options": [
+        "latch",
+        "no-force",
+        "Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a page is being read or modified, the engine must guarantee structural consistency — that is a latch 's job, not a lock's:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal and no-force: the buffer manager's contract”?",
+      "options": [
+        "No — no-force",
+        "Allocate and free",
+        "The buffer manager runs SQL Server under two deliberate policy choices:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The buffer manager runs SQL Server under two deliberate policy choices:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring buffer management”?",
+      "options": [
+        "Read",
+        "Two queries cover most buffer-management health checks:",
+        "Allocate and free"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two queries cover most buffer-management health checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The buffer manager's four jobs”?",
+      "options": [
+        "Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand.",
+        "Read",
+        "Find"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand. The buffer pool is exposed as the BUFFERPOOL memory clerk in sys.dm_os_memory_clerks, and it is almost always the largest consumer of memory on the instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Hash table, descriptors, and replacement”?",
+      "options": [
+        "Find",
+        "Flush",
+        "When a page is requested and the hash lookup misses, the buffer manager needs a frame:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a page is requested and the hash lookup misses, the buffer manager needs a frame:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Latches: protection measured in milliseconds”?",
+      "options": [
+        "free list",
+        "The wait type itself tells you where the time went:",
+        "Flush"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The wait type itself tells you where the time went:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because of _____, a commit's durability comes entirely from flushing the log — the data page may still be in memory hours later.”",
+      "options": [
+        "no-force",
+        "Milliseconds, statement or operation scope",
+        "No logging at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because of no-force, a commit's durability comes entirely from flushing the log — the data page may still be in memory hours later. Because of steal, data files can contain changes of transactions that were later rolled back. Both directions are exactly why crash recovery needs both a redo pass (committed work not yet on disk) and an undo pass (uncommitted work already on disk) — and why the write-ahead logging rule is not optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring buffer management”?",
+      "options": [
+        "replace",
+        "Lazy writes/sec",
+        "Interpret them together: high dirty_mb with rising PAGELATCH waits points at write contention on hot pages; high PAGEIOLATCH with low cache residency points at I/O or memory…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Interpret them together: high dirty_mb with rising PAGELATCH waits points at write contention on hot pages; high PAGEIOLATCH with low cache residency points at I/O or memory sizing. On very large pools note that sys.dm_os_buffer_descriptors walks every descriptor — collect it during quiet periods or against a single database with a WHERE database_id =... filter.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ owns the buffer pool and performs four jobs on behalf of every operation that touches a page:”",
+      "options": [
+        "Steal",
+        "Force",
+        "buffer manager"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The buffer manager owns the buffer pool and performs four jobs on behalf of every operation that touches a page:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every cached page has exactly one _____ — a small structure recording database id, file id, page id, whether the page is dirty, and where its frame lives.”",
+      "options": [
+        "no-force",
+        "buffer descriptor",
+        "Force"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every cached page has exactly one buffer descriptor — a small structure recording database id, file id, page id, whether the page is dirty, and where its frame lives. Descriptors are found through a hash table keyed on (database id, file id, page id), which is why page lookup is constant-time regardless of pool size.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When a page is being read or modified, the engine must guarantee structural consistency — that is a _____ 's job, not a lock's:”",
+      "options": [
+        "latch",
+        "no-force",
+        "Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a page is being read or modified, the engine must guarantee structural consistency — that is a latch 's job, not a lock's:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal and no-force: the buffer manager's contract”?",
+      "options": [
+        "No — no-force",
+        "Allocate and free",
+        "The buffer manager runs SQL Server under two deliberate policy choices:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The buffer manager runs SQL Server under two deliberate policy choices:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring buffer management”?",
+      "options": [
+        "Read",
+        "Two queries cover most buffer-management health checks:",
+        "Allocate and free"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two queries cover most buffer-management health checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The buffer manager's four jobs”?",
+      "options": [
+        "Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand.",
+        "Read",
+        "Find"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand. The buffer pool is exposed as the BUFFERPOOL memory clerk in sys.dm_os_memory_clerks, and it is almost always the largest consumer of memory on the instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Hash table, descriptors, and replacement”?",
+      "options": [
+        "Find",
+        "Flush",
+        "When a page is requested and the hash lookup misses, the buffer manager needs a frame:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a page is requested and the hash lookup misses, the buffer manager needs a frame:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Latches: protection measured in milliseconds”?",
+      "options": [
+        "free list",
+        "The wait type itself tells you where the time went:",
+        "Flush"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The wait type itself tells you where the time went:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because of _____, a commit's durability comes entirely from flushing the log — the data page may still be in memory hours later.”",
+      "options": [
+        "no-force",
+        "Milliseconds, statement or operation scope",
+        "No logging at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because of no-force, a commit's durability comes entirely from flushing the log — the data page may still be in memory hours later. Because of steal, data files can contain changes of transactions that were later rolled back. Both directions are exactly why crash recovery needs both a redo pass (committed work not yet on disk) and an undo pass (uncommitted work already on disk) — and why the write-ahead logging rule is not optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring buffer management”?",
+      "options": [
+        "replace",
+        "Lazy writes/sec",
+        "Interpret them together: high dirty_mb with rising PAGELATCH waits points at write contention on hot pages; high PAGEIOLATCH with low cache residency points at I/O or memory…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Interpret them together: high dirty_mb with rising PAGELATCH waits points at write contention on hot pages; high PAGEIOLATCH with low cache residency points at I/O or memory sizing. On very large pools note that sys.dm_os_buffer_descriptors walks every descriptor — collect it during quiet periods or against a single database with a WHERE database_id =... filter.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ owns the buffer pool and performs four jobs on behalf of every operation that touches a page:”",
+      "options": [
+        "Steal",
+        "Force",
+        "buffer manager"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The buffer manager owns the buffer pool and performs four jobs on behalf of every operation that touches a page:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every cached page has exactly one _____ — a small structure recording database id, file id, page id, whether the page is dirty, and where its frame lives.”",
+      "options": [
+        "no-force",
+        "buffer descriptor",
+        "Force"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every cached page has exactly one buffer descriptor — a small structure recording database id, file id, page id, whether the page is dirty, and where its frame lives. Descriptors are found through a hash table keyed on (database id, file id, page id), which is why page lookup is constant-time regardless of pool size.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When a page is being read or modified, the engine must guarantee structural consistency — that is a _____ 's job, not a lock's:”",
+      "options": [
+        "latch",
+        "no-force",
+        "Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When a page is being read or modified, the engine must guarantee structural consistency — that is a latch 's job, not a lock's:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal and no-force: the buffer manager's contract”?",
+      "options": [
+        "No — no-force",
+        "Allocate and free",
+        "The buffer manager runs SQL Server under two deliberate policy choices:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The buffer manager runs SQL Server under two deliberate policy choices:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring buffer management”?",
+      "options": [
+        "Read",
+        "Two queries cover most buffer-management health checks:",
+        "Allocate and free"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two queries cover most buffer-management health checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The buffer manager's four jobs”?",
+      "options": [
+        "Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand.",
+        "Read",
+        "Find"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Everything above it — the access methods, locking, latch managers — assumes the buffer manager can produce a page on demand. The buffer pool is exposed as the BUFFERPOOL memory clerk in sys.dm_os_memory_clerks, and it is almost always the largest consumer of memory on the instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Hash table, descriptors, and replacement”?",
+      "options": [
+        "Find",
+        "Flush",
+        "When a page is requested and the hash lookup misses, the buffer manager needs a frame:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a page is requested and the hash lookup misses, the buffer manager needs a frame:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Latches: protection measured in milliseconds”?",
+      "options": [
+        "free list",
+        "The wait type itself tells you where the time went:",
+        "Flush"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The wait type itself tells you where the time went:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Because of _____, a commit's durability comes entirely from flushing the log — the data page may still be in memory hours later.”",
+      "options": [
+        "no-force",
+        "Milliseconds, statement or operation scope",
+        "No logging at all"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because of no-force, a commit's durability comes entirely from flushing the log — the data page may still be in memory hours later. Because of steal, data files can contain changes of transactions that were later rolled back. Both directions are exactly why crash recovery needs both a redo pass (committed work not yet on disk) and an undo pass (uncommitted work already on disk) — and why the write-ahead logging rule is not optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring buffer management”?",
+      "options": [
+        "replace",
+        "Lazy writes/sec",
+        "Interpret them together: high dirty_mb with rising PAGELATCH waits points at write contention on hot pages; high PAGEIOLATCH with low cache residency points at I/O or memory…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Interpret them together: high dirty_mb with rising PAGELATCH waits points at write contention on hot pages; high PAGEIOLATCH with low cache residency points at I/O or memory sizing. On very large pools note that sys.dm_os_buffer_descriptors walks every descriptor — collect it during quiet periods or against a single database with a WHERE database_id =... filter.”"
+    }
+  ],
   takeaways: [
     "The buffer manager allocates frames, reads pages, resolves them via a hash table, and flushes dirty ones",
     "Buffer descriptors map (database, file, page) to a frame in constant time; free lists keep misses cheap",

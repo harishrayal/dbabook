@@ -188,6 +188,312 @@ Uptime, database states, last successful backups, failed jobs, volume and log fr
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Falling rapidly",
+        "Wait Statistics",
+        "With Wait Statistics, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Wait Statistics within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Wait Statistics fits”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Approaching 90%",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Wait Statistics in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Finds the bottleneck",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Wait Statistics”?",
+      "options": [
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Theory becomes useful when you can apply it.",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Wait Statistics. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Wait Statistics"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Wait Statistics with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Wait Statistics means”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Wait Statistics is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Wait Statistics fits”?",
+      "options": [
+        "The diagram below places Wait Statistics alongside the core concepts of database monitoring and alerting.",
+        "Wait Statistics",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Wait Statistics alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Wait Statistics in practice”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The following comparison captures the distinctions that matter most when working with Wait Statistics:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Wait Statistics:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Wait Statistics”?",
+      "options": [
+        "Wait Statistics is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The first example establishes the relevant state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Falling rapidly",
+        "Wait Statistics",
+        "With Wait Statistics, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Wait Statistics within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Wait Statistics fits”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Approaching 90%",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Wait Statistics in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Finds the bottleneck",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Wait Statistics”?",
+      "options": [
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Theory becomes useful when you can apply it.",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Wait Statistics. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Wait Statistics"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Wait Statistics with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Wait Statistics means”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Wait Statistics is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Wait Statistics fits”?",
+      "options": [
+        "The diagram below places Wait Statistics alongside the core concepts of database monitoring and alerting.",
+        "Wait Statistics",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Wait Statistics alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Wait Statistics in practice”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The following comparison captures the distinctions that matter most when working with Wait Statistics:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Wait Statistics:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Wait Statistics”?",
+      "options": [
+        "Wait Statistics is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The first example establishes the relevant state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Falling rapidly",
+        "Wait Statistics",
+        "With Wait Statistics, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Wait Statistics within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Wait Statistics fits”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Approaching 90%",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Wait Statistics in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Finds the bottleneck",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Wait Statistics”?",
+      "options": [
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Theory becomes useful when you can apply it.",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Wait Statistics. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Wait Statistics.",
+        "Wait Statistics"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Wait Statistics with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Wait Statistics means”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Wait Statistics is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Wait Statistics fits”?",
+      "options": [
+        "The diagram below places Wait Statistics alongside the core concepts of database monitoring and alerting.",
+        "Wait Statistics",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Wait Statistics alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Wait Statistics in practice”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "The following comparison captures the distinctions that matter most when working with Wait Statistics:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Wait Statistics:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Wait Statistics”?",
+      "options": [
+        "Wait Statistics is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The first example establishes the relevant state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Wait Statistics is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -178,6 +178,312 @@ DENY overrides GRANT at any scope — a deny on a schema blocks access even if S
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server-Level Permissions",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server-Level Permissions within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server-Level Permissions fits”?",
+      "options": [
+        "Neutral",
+        "Server-Level Permissions sits inside a larger system.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server-Level Permissions in practice”?",
+      "options": [
+        "Authenticate to the instance",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Server-Level Permissions:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server-Level Permissions”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Server-Level Permissions.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server-Level Permissions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "With Server-Level Permissions, prefer measured, reversible changes.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Server-Level Permissions",
+        "Use the following as a starting point when investigating Server-Level Permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server-Level Permissions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server-Level Permissions means”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server-Level Permissions fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Roles simplify permission management.",
+        "The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server-Level Permissions in practice”?",
+      "options": [
+        "Server-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Server-Level Permissions:",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server-Level Permissions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server-Level Permissions”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server-Level Permissions",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server-Level Permissions within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server-Level Permissions fits”?",
+      "options": [
+        "Neutral",
+        "Server-Level Permissions sits inside a larger system.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server-Level Permissions in practice”?",
+      "options": [
+        "Authenticate to the instance",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Server-Level Permissions:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server-Level Permissions”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Server-Level Permissions.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server-Level Permissions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "With Server-Level Permissions, prefer measured, reversible changes.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Server-Level Permissions",
+        "Use the following as a starting point when investigating Server-Level Permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server-Level Permissions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server-Level Permissions means”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server-Level Permissions fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Roles simplify permission management.",
+        "The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server-Level Permissions in practice”?",
+      "options": [
+        "Server-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Server-Level Permissions:",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server-Level Permissions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server-Level Permissions”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server-Level Permissions",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server-Level Permissions within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server-Level Permissions fits”?",
+      "options": [
+        "Neutral",
+        "Server-Level Permissions sits inside a larger system.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server-Level Permissions in practice”?",
+      "options": [
+        "Authenticate to the instance",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Server-Level Permissions:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server-Level Permissions”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Server-Level Permissions.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server-Level Permissions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "With Server-Level Permissions, prefer measured, reversible changes.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Server-Level Permissions",
+        "Use the following as a starting point when investigating Server-Level Permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server-Level Permissions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server-Level Permissions means”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server-Level Permissions fits”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Roles simplify permission management.",
+        "The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server-Level Permissions alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server-Level Permissions in practice”?",
+      "options": [
+        "Server-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Server-Level Permissions:",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server-Level Permissions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server-Level Permissions”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server-Level Permissions is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Server-Level Permissions is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

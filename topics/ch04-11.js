@@ -220,6 +220,312 @@ ORDER  BY a.total_pages DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is 8,192 bytes — 8 KB of which 96 bytes are header and the remainder holds rows, slot offsets, and free space.”",
+      "options": [
+        "logical",
+        "page",
+        "Fragmentation breaks the sequence"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A page is 8,192 bytes — 8 KB of which 96 bytes are header and the remainder holds rows, slot offsets, and free space. Every read, latch, and modification operates at page granularity: there is no 1 KB read and no 512-byte write in SQL Server's data path.”"
+    },
+    {
+      "question": "Complete the lesson statement: “An _____ is eight contiguous pages — exactly 64 KB.”",
+      "options": [
+        "extent",
+        "logical",
+        "physical"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “An extent is eight contiguous pages — exactly 64 KB. Extents are the unit of allocation: SQL Server never allocates a single page from the file, it allocates extents and then hands out pages within them. Two allocation strategies reduce waste for small objects:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allocation pages: how SQL Server finds free space”?",
+      "options": [
+        "dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:",
+        "The gap between total_mb and used_mb reveals empty space from deletes and page splits — money paid for in file size and read amplification.",
+        "Allocation metadata lives in special pages scattered through the data files, each with a defined coverage interval:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Allocation metadata lives in special pages scattered through the data files, each with a defined coverage interval:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How extents drive I/O”?",
+      "options": [
+        "A small object needs its first pages",
+        "Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads.",
+        "SQL Server needs a new extent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads. Two design consequences:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring fragmentation and allocation”?",
+      "options": [
+        "dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:",
+        "A small object needs its first pages",
+        "A scan walks all pages of an object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “sys.dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fragmentation response: rebuild, reorganise, or ignore”?",
+      "options": [
+        "A scan walks all pages of an object",
+        "Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads.",
+        "Not every fragmented index deserves work."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Not every fragmented index deserves work. The decision matrix used in practice:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The full header layout belongs to the next topic (ch04-12); the point here is the _____: when a query reads one row, the storage engine reads a whole page, and when it reads a range, it reads pages — then extents.”",
+      "options": [
+        "SQL Server can combine adjacent pages into larger folio reads",
+        "granularity",
+        "Row location = page + slot, not byte offset"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The full header layout belongs to the next topic (ch04-12); the point here is the granularity: when a query reads one row, the storage engine reads a whole page, and when it reads a range, it reads pages — then extents.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extents: eight pages at a time”?",
+      "options": [
+        "Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its…",
+        "allocation",
+        "Ignore — the cost of rebuilding exceeds the benefit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its data file. With them, growth is gradual until the object proves it needs dedicated extents — and scans of that object become contiguous 64 KB reads rather than scattered page-at-a-time fetches.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When many sessions contend on one allocation page you see PAGELATCH_UP waits _____ — the classic tempdb allocation signature during ad-hoc query storms.”",
+      "options": [
+        "Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its…",
+        "First eight pages of a new table or index (small objects)",
+        "with no blocking session"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This is also why allocation can become a bottleneck: every concurrent insert hits the same PFS/GAM pages for its file region, taking brief latches. When many sessions contend on one allocation page you see PAGELATCH_UP waits with no blocking session — the classic tempdb allocation signature during ad-hoc query storms.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Fragmentation has two flavours: _____ (page chain order ≠ key order — affects scans and range seeks) and physical (file-level spread across the volume — affects raw device latency).”",
+      "options": [
+        "Once an object passes eight pages",
+        "logical",
+        "First eight pages of a new table or index (small objects)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Fragmentation has two flavours: logical (page chain order ≠ key order — affects scans and range seeks) and physical (file-level spread across the volume — affects raw device latency). Logical fragmentation above ~30% on a large, read-heavy index is where tuning attention usually begins.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is 8,192 bytes — 8 KB of which 96 bytes are header and the remainder holds rows, slot offsets, and free space.”",
+      "options": [
+        "logical",
+        "page",
+        "Fragmentation breaks the sequence"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A page is 8,192 bytes — 8 KB of which 96 bytes are header and the remainder holds rows, slot offsets, and free space. Every read, latch, and modification operates at page granularity: there is no 1 KB read and no 512-byte write in SQL Server's data path.”"
+    },
+    {
+      "question": "Complete the lesson statement: “An _____ is eight contiguous pages — exactly 64 KB.”",
+      "options": [
+        "extent",
+        "logical",
+        "physical"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “An extent is eight contiguous pages — exactly 64 KB. Extents are the unit of allocation: SQL Server never allocates a single page from the file, it allocates extents and then hands out pages within them. Two allocation strategies reduce waste for small objects:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allocation pages: how SQL Server finds free space”?",
+      "options": [
+        "dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:",
+        "The gap between total_mb and used_mb reveals empty space from deletes and page splits — money paid for in file size and read amplification.",
+        "Allocation metadata lives in special pages scattered through the data files, each with a defined coverage interval:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Allocation metadata lives in special pages scattered through the data files, each with a defined coverage interval:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How extents drive I/O”?",
+      "options": [
+        "A small object needs its first pages",
+        "Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads.",
+        "SQL Server needs a new extent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads. Two design consequences:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring fragmentation and allocation”?",
+      "options": [
+        "dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:",
+        "A small object needs its first pages",
+        "A scan walks all pages of an object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “sys.dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fragmentation response: rebuild, reorganise, or ignore”?",
+      "options": [
+        "A scan walks all pages of an object",
+        "Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads.",
+        "Not every fragmented index deserves work."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Not every fragmented index deserves work. The decision matrix used in practice:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The full header layout belongs to the next topic (ch04-12); the point here is the _____: when a query reads one row, the storage engine reads a whole page, and when it reads a range, it reads pages — then extents.”",
+      "options": [
+        "SQL Server can combine adjacent pages into larger folio reads",
+        "granularity",
+        "Row location = page + slot, not byte offset"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The full header layout belongs to the next topic (ch04-12); the point here is the granularity: when a query reads one row, the storage engine reads a whole page, and when it reads a range, it reads pages — then extents.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extents: eight pages at a time”?",
+      "options": [
+        "Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its…",
+        "allocation",
+        "Ignore — the cost of rebuilding exceeds the benefit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its data file. With them, growth is gradual until the object proves it needs dedicated extents — and scans of that object become contiguous 64 KB reads rather than scattered page-at-a-time fetches.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When many sessions contend on one allocation page you see PAGELATCH_UP waits _____ — the classic tempdb allocation signature during ad-hoc query storms.”",
+      "options": [
+        "Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its…",
+        "First eight pages of a new table or index (small objects)",
+        "with no blocking session"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This is also why allocation can become a bottleneck: every concurrent insert hits the same PFS/GAM pages for its file region, taking brief latches. When many sessions contend on one allocation page you see PAGELATCH_UP waits with no blocking session — the classic tempdb allocation signature during ad-hoc query storms.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Fragmentation has two flavours: _____ (page chain order ≠ key order — affects scans and range seeks) and physical (file-level spread across the volume — affects raw device latency).”",
+      "options": [
+        "Once an object passes eight pages",
+        "logical",
+        "First eight pages of a new table or index (small objects)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Fragmentation has two flavours: logical (page chain order ≠ key order — affects scans and range seeks) and physical (file-level spread across the volume — affects raw device latency). Logical fragmentation above ~30% on a large, read-heavy index is where tuning attention usually begins.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is 8,192 bytes — 8 KB of which 96 bytes are header and the remainder holds rows, slot offsets, and free space.”",
+      "options": [
+        "logical",
+        "page",
+        "Fragmentation breaks the sequence"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A page is 8,192 bytes — 8 KB of which 96 bytes are header and the remainder holds rows, slot offsets, and free space. Every read, latch, and modification operates at page granularity: there is no 1 KB read and no 512-byte write in SQL Server's data path.”"
+    },
+    {
+      "question": "Complete the lesson statement: “An _____ is eight contiguous pages — exactly 64 KB.”",
+      "options": [
+        "extent",
+        "logical",
+        "physical"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “An extent is eight contiguous pages — exactly 64 KB. Extents are the unit of allocation: SQL Server never allocates a single page from the file, it allocates extents and then hands out pages within them. Two allocation strategies reduce waste for small objects:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Allocation pages: how SQL Server finds free space”?",
+      "options": [
+        "dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:",
+        "The gap between total_mb and used_mb reveals empty space from deletes and page splits — money paid for in file size and read amplification.",
+        "Allocation metadata lives in special pages scattered through the data files, each with a defined coverage interval:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Allocation metadata lives in special pages scattered through the data files, each with a defined coverage interval:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How extents drive I/O”?",
+      "options": [
+        "A small object needs its first pages",
+        "Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads.",
+        "SQL Server needs a new extent"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads. Two design consequences:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring fragmentation and allocation”?",
+      "options": [
+        "dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:",
+        "A small object needs its first pages",
+        "A scan walks all pages of an object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “sys.dm_db_index_physical_stats walks the page chain (limited mode scans only the tree's skeleton, keeping cost low) and reports how scattered the pages are:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fragmentation response: rebuild, reorganise, or ignore”?",
+      "options": [
+        "A scan walks all pages of an object",
+        "Because extents are contiguous, SQL Server can read them as a single larger request (folio reads), which is far more efficient than eight separate 8 KB reads.",
+        "Not every fragmented index deserves work."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Not every fragmented index deserves work. The decision matrix used in practice:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The full header layout belongs to the next topic (ch04-12); the point here is the _____: when a query reads one row, the storage engine reads a whole page, and when it reads a range, it reads pages — then extents.”",
+      "options": [
+        "SQL Server can combine adjacent pages into larger folio reads",
+        "granularity",
+        "Row location = page + slot, not byte offset"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The full header layout belongs to the next topic (ch04-12); the point here is the granularity: when a query reads one row, the storage engine reads a whole page, and when it reads a range, it reads pages — then extents.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Extents: eight pages at a time”?",
+      "options": [
+        "Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its…",
+        "allocation",
+        "Ignore — the cost of rebuilding exceeds the benefit"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its data file. With them, growth is gradual until the object proves it needs dedicated extents — and scans of that object become contiguous 64 KB reads rather than scattered page-at-a-time fetches.”"
+    },
+    {
+      "question": "Complete the lesson statement: “When many sessions contend on one allocation page you see PAGELATCH_UP waits _____ — the classic tempdb allocation signature during ad-hoc query storms.”",
+      "options": [
+        "Why the split matters: without mixed extents, a brand-new table with one page would still consume 64 KB, and an instance with thousands of small tables would waste most of its…",
+        "First eight pages of a new table or index (small objects)",
+        "with no blocking session"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This is also why allocation can become a bottleneck: every concurrent insert hits the same PFS/GAM pages for its file region, taking brief latches. When many sessions contend on one allocation page you see PAGELATCH_UP waits with no blocking session — the classic tempdb allocation signature during ad-hoc query storms.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Fragmentation has two flavours: _____ (page chain order ≠ key order — affects scans and range seeks) and physical (file-level spread across the volume — affects raw device latency).”",
+      "options": [
+        "Once an object passes eight pages",
+        "logical",
+        "First eight pages of a new table or index (small objects)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Fragmentation has two flavours: logical (page chain order ≠ key order — affects scans and range seeks) and physical (file-level spread across the volume — affects raw device latency). Logical fragmentation above ~30% on a large, read-heavy index is where tuning attention usually begins.”"
+    }
+  ],
   takeaways: [
     "Pages are 8 KB (the I/O unit); extents are 8 pages / 64 KB (the allocation unit)",
     "Mixed extents let small objects share 64 KB; uniform extents give a large object contiguous, streamable space",

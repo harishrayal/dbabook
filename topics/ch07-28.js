@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backup Failure Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Failure Troubleshooting within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Failure Troubleshooting fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Failure Troubleshooting in practice”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Failure Troubleshooting”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Failure Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The full backup",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Failure Troubleshooting",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Failure Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Failure Troubleshooting means”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Backups are the only true protection against data loss.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Failure Troubleshooting fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Failure Troubleshooting in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:",
+        "With Backup Failure Troubleshooting, prefer measured, reversible changes.",
+        "No"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Failure Troubleshooting”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "With Backup Failure Troubleshooting, prefer measured, reversible changes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backup Failure Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Failure Troubleshooting within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Failure Troubleshooting fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Failure Troubleshooting in practice”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Failure Troubleshooting”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Failure Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The full backup",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Failure Troubleshooting",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Failure Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Failure Troubleshooting means”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Backups are the only true protection against data loss.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Failure Troubleshooting fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Failure Troubleshooting in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:",
+        "With Backup Failure Troubleshooting, prefer measured, reversible changes.",
+        "No"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Failure Troubleshooting”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "With Backup Failure Troubleshooting, prefer measured, reversible changes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Backup Failure Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Backup Failure Troubleshooting within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Failure Troubleshooting fits”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Failure Troubleshooting in practice”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Failure Troubleshooting”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Failure Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The full backup",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Backup Failure Troubleshooting",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Backup Failure Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Failure Troubleshooting means”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Backups are the only true protection against data loss.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Failure Troubleshooting fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Backup Failure Troubleshooting alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Failure Troubleshooting in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:",
+        "With Backup Failure Troubleshooting, prefer measured, reversible changes.",
+        "No"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Failure Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Failure Troubleshooting”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "With Backup Failure Troubleshooting, prefer measured, reversible changes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Failure Troubleshooting is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

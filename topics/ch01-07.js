@@ -160,6 +160,312 @@ ORDER  BY minutes_since_backup DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the proportion of time a service is usable by its consumers, usually expressed as an uptime percentage.”",
+      "options": [
+        "HA mistaken for backup",
+        "Failover never tested",
+        "Availability"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Availability is the proportion of time a service is usable by its consumers, usually expressed as an uptime percentage. Reliability is the probability that the service performs correctly over time — no corruption, no wrong answers, no silent data loss. A database can be available and unreliable (up, but returning stale or wrong data), or reliable and unavailable (correct, but not answering).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring what you promised: RPO and RTO”?",
+      "options": [
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…",
+        "Two objectives turn a vague promise into engineering requirements:",
+        "failover clustering"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two objectives turn a vague promise into engineering requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where availability actually comes from”?",
+      "options": [
+        "Availability is built from redundancy at every layer that can fail — and a chain is only as strong as its weakest single point:",
+        "The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now.",
+        "A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability is built from redundancy at every layer that can fail — and a chain is only as strong as its weakest single point:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Is the RPO real? Measure it”?",
+      "options": [
+        "failover clustering",
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…",
+        "The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now. For a database in FULL recovery, that is bounded by the time since the last usable backup (or replication position):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing for failure — and the pitfalls”?",
+      "options": [
+        "Corruption, bad change",
+        "Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:",
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Two words that are not synonyms”?",
+      "options": [
+        "Availability is arithmetic.",
+        "the objective is only real if a monitor can see it.",
+        "Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability is arithmetic. The table below shows what each “nine” actually costs you in allowed downtime per year — it is the language DBAs use to translate an uptime target into a maintenance budget:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring what you promised: RPO and RTO”?",
+      "options": [
+        "WAN partition, split brain",
+        "Untrained recovery — backups without drills",
+        "The DBA's practical job here is to be honest about what current design delivers."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The DBA's practical job here is to be honest about what current design delivers. If log backups run every 15 minutes, the RPO is 15 minutes regardless of what the slide deck says. Measure it, publish it, and let the business decide whether that is acceptable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The two most common database-level designs in SQL Server are _____ (one instance, multiple nodes, shared or replicated storage) and availability groups (multiple databases replicated to secondary replicas with synchronous or asynchronous commit).”",
+      "options": [
+        "test the recovery, on a schedule, with a stopwatch",
+        "failover clustering",
+        "RPO/RTO set by hope"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The two most common database-level designs in SQL Server are failover clustering (one instance, multiple nodes, shared or replicated storage) and availability groups (multiple databases replicated to secondary replicas with synchronous or asynchronous commit). The choice is driven by the RPO: synchronous commit protects against data loss at the cost of write latency; asynchronous commit keeps latency low but the secondary can lag, and that lag is your exposure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Is the RPO real? Measure it”?",
+      "options": [
+        "A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that…",
+        "WAN partition, split brain",
+        "Untrained recovery — backups without drills"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that turns into a post-incident finding. Run it, alert on it, and treat the number as the real RPO until something proves otherwise.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The discipline that catches all six is the same: _____.”",
+      "options": [
+        "Availability is arithmetic.",
+        "Internal tools",
+        "test the recovery, on a schedule, with a stopwatch"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The discipline that catches all six is the same: test the recovery, on a schedule, with a stopwatch. A database that has never been restored under time pressure has an assumed RPO and an assumed RTO — and assumptions do not appear in status reports until they fail.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the proportion of time a service is usable by its consumers, usually expressed as an uptime percentage.”",
+      "options": [
+        "HA mistaken for backup",
+        "Failover never tested",
+        "Availability"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Availability is the proportion of time a service is usable by its consumers, usually expressed as an uptime percentage. Reliability is the probability that the service performs correctly over time — no corruption, no wrong answers, no silent data loss. A database can be available and unreliable (up, but returning stale or wrong data), or reliable and unavailable (correct, but not answering).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring what you promised: RPO and RTO”?",
+      "options": [
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…",
+        "Two objectives turn a vague promise into engineering requirements:",
+        "failover clustering"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two objectives turn a vague promise into engineering requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where availability actually comes from”?",
+      "options": [
+        "Availability is built from redundancy at every layer that can fail — and a chain is only as strong as its weakest single point:",
+        "The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now.",
+        "A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability is built from redundancy at every layer that can fail — and a chain is only as strong as its weakest single point:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Is the RPO real? Measure it”?",
+      "options": [
+        "failover clustering",
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…",
+        "The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now. For a database in FULL recovery, that is bounded by the time since the last usable backup (or replication position):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing for failure — and the pitfalls”?",
+      "options": [
+        "Corruption, bad change",
+        "Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:",
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Two words that are not synonyms”?",
+      "options": [
+        "Availability is arithmetic.",
+        "the objective is only real if a monitor can see it.",
+        "Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability is arithmetic. The table below shows what each “nine” actually costs you in allowed downtime per year — it is the language DBAs use to translate an uptime target into a maintenance budget:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring what you promised: RPO and RTO”?",
+      "options": [
+        "WAN partition, split brain",
+        "Untrained recovery — backups without drills",
+        "The DBA's practical job here is to be honest about what current design delivers."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The DBA's practical job here is to be honest about what current design delivers. If log backups run every 15 minutes, the RPO is 15 minutes regardless of what the slide deck says. Measure it, publish it, and let the business decide whether that is acceptable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The two most common database-level designs in SQL Server are _____ (one instance, multiple nodes, shared or replicated storage) and availability groups (multiple databases replicated to secondary replicas with synchronous or asynchronous commit).”",
+      "options": [
+        "test the recovery, on a schedule, with a stopwatch",
+        "failover clustering",
+        "RPO/RTO set by hope"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The two most common database-level designs in SQL Server are failover clustering (one instance, multiple nodes, shared or replicated storage) and availability groups (multiple databases replicated to secondary replicas with synchronous or asynchronous commit). The choice is driven by the RPO: synchronous commit protects against data loss at the cost of write latency; asynchronous commit keeps latency low but the secondary can lag, and that lag is your exposure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Is the RPO real? Measure it”?",
+      "options": [
+        "A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that…",
+        "WAN partition, split brain",
+        "Untrained recovery — backups without drills"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that turns into a post-incident finding. Run it, alert on it, and treat the number as the real RPO until something proves otherwise.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The discipline that catches all six is the same: _____.”",
+      "options": [
+        "Availability is arithmetic.",
+        "Internal tools",
+        "test the recovery, on a schedule, with a stopwatch"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The discipline that catches all six is the same: test the recovery, on a schedule, with a stopwatch. A database that has never been restored under time pressure has an assumed RPO and an assumed RTO — and assumptions do not appear in status reports until they fail.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the proportion of time a service is usable by its consumers, usually expressed as an uptime percentage.”",
+      "options": [
+        "HA mistaken for backup",
+        "Failover never tested",
+        "Availability"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Availability is the proportion of time a service is usable by its consumers, usually expressed as an uptime percentage. Reliability is the probability that the service performs correctly over time — no corruption, no wrong answers, no silent data loss. A database can be available and unreliable (up, but returning stale or wrong data), or reliable and unavailable (correct, but not answering).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring what you promised: RPO and RTO”?",
+      "options": [
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…",
+        "Two objectives turn a vague promise into engineering requirements:",
+        "failover clustering"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two objectives turn a vague promise into engineering requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where availability actually comes from”?",
+      "options": [
+        "Availability is built from redundancy at every layer that can fail — and a chain is only as strong as its weakest single point:",
+        "The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now.",
+        "A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability is built from redundancy at every layer that can fail — and a chain is only as strong as its weakest single point:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Is the RPO real? Measure it”?",
+      "options": [
+        "failover clustering",
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…",
+        "The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now. For a database in FULL recovery, that is bounded by the time since the last usable backup (or replication position):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Designing for failure — and the pitfalls”?",
+      "options": [
+        "Corruption, bad change",
+        "Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:",
+        "Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Two words that are not synonyms”?",
+      "options": [
+        "Availability is arithmetic.",
+        "the objective is only real if a monitor can see it.",
+        "Availability engineering has a well-worn set of failure modes, and almost all of them are organisational rather than technical:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Availability is arithmetic. The table below shows what each “nine” actually costs you in allowed downtime per year — it is the language DBAs use to translate an uptime target into a maintenance budget:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Measuring what you promised: RPO and RTO”?",
+      "options": [
+        "WAN partition, split brain",
+        "Untrained recovery — backups without drills",
+        "The DBA's practical job here is to be honest about what current design delivers."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The DBA's practical job here is to be honest about what current design delivers. If log backups run every 15 minutes, the RPO is 15 minutes regardless of what the slide deck says. Measure it, publish it, and let the business decide whether that is acceptable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The two most common database-level designs in SQL Server are _____ (one instance, multiple nodes, shared or replicated storage) and availability groups (multiple databases replicated to secondary replicas with synchronous or asynchronous commit).”",
+      "options": [
+        "test the recovery, on a schedule, with a stopwatch",
+        "failover clustering",
+        "RPO/RTO set by hope"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The two most common database-level designs in SQL Server are failover clustering (one instance, multiple nodes, shared or replicated storage) and availability groups (multiple databases replicated to secondary replicas with synchronous or asynchronous commit). The choice is driven by the RPO: synchronous commit protects against data loss at the cost of write latency; asynchronous commit keeps latency low but the secondary can lag, and that lag is your exposure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Is the RPO real? Measure it”?",
+      "options": [
+        "A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that…",
+        "WAN partition, split brain",
+        "Untrained recovery — backups without drills"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that turns into a post-incident finding. Run it, alert on it, and treat the number as the real RPO until something proves otherwise.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The discipline that catches all six is the same: _____.”",
+      "options": [
+        "Availability is arithmetic.",
+        "Internal tools",
+        "test the recovery, on a schedule, with a stopwatch"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The discipline that catches all six is the same: test the recovery, on a schedule, with a stopwatch. A database that has never been restored under time pressure has an assumed RPO and an assumed RTO — and assumptions do not appear in status reports until they fail.”"
+    }
+  ],
   takeaways: [
     "Availability is uptime; reliability is correct operation — measure both, they fail differently",
     "Every uptime target implies a design, and every extra nine costs disproportionately more",

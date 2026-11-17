@@ -179,6 +179,312 @@ NORECOVERY keeps the database in a restoring state so more backups can be applie
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Lowest",
+        "Database Compatibility After Restoration",
+        "With Database Compatibility After Restoration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Compatibility After Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Compatibility After Restoration fits”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Medium",
+        "Highest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Compatibility After Restoration in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "More backups to apply",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Compatibility After Restoration”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Compatibility After Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "Database Compatibility After Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Compatibility After Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Compatibility After Restoration means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Database Compatibility After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Compatibility After Restoration fits”?",
+      "options": [
+        "The diagram below places Database Compatibility After Restoration alongside the core concepts of restore and disaster recovery.",
+        "Database Compatibility After Restoration",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Compatibility After Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Compatibility After Restoration in practice”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "The following comparison captures the distinctions that matter most when working with Database Compatibility After Restoration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Compatibility After Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Compatibility After Restoration”?",
+      "options": [
+        "Database Compatibility After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "The first example establishes the relevant state.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Lowest",
+        "Database Compatibility After Restoration",
+        "With Database Compatibility After Restoration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Compatibility After Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Compatibility After Restoration fits”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Medium",
+        "Highest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Compatibility After Restoration in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "More backups to apply",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Compatibility After Restoration”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Compatibility After Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "Database Compatibility After Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Compatibility After Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Compatibility After Restoration means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Database Compatibility After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Compatibility After Restoration fits”?",
+      "options": [
+        "The diagram below places Database Compatibility After Restoration alongside the core concepts of restore and disaster recovery.",
+        "Database Compatibility After Restoration",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Compatibility After Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Compatibility After Restoration in practice”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "The following comparison captures the distinctions that matter most when working with Database Compatibility After Restoration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Compatibility After Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Compatibility After Restoration”?",
+      "options": [
+        "Database Compatibility After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "The first example establishes the relevant state.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Lowest",
+        "Database Compatibility After Restoration",
+        "With Database Compatibility After Restoration, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Compatibility After Restoration within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Compatibility After Restoration fits”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Medium",
+        "Highest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Compatibility After Restoration in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "More backups to apply",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Compatibility After Restoration”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "Theory becomes useful when you can apply it.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Compatibility After Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Lowest",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Compatibility After Restoration.",
+        "Database Compatibility After Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Compatibility After Restoration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Compatibility After Restoration means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Database Compatibility After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment. Each step must be ordered correctly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Compatibility After Restoration fits”?",
+      "options": [
+        "The diagram below places Database Compatibility After Restoration alongside the core concepts of restore and disaster recovery.",
+        "Database Compatibility After Restoration",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Compatibility After Restoration alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Compatibility After Restoration in practice”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "The following comparison captures the distinctions that matter most when working with Database Compatibility After Restoration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Compatibility After Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Compatibility After Restoration”?",
+      "options": [
+        "Database Compatibility After Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole…",
+        "The first example establishes the relevant state.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Compatibility After Restoration is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

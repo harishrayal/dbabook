@@ -185,6 +185,312 @@ DBCC CHECKDB ([Orders]) WITH NO_INFOMSGS;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ copy a single data file, which matters in three situations:”",
+      "options": [
+        "File backups",
+        "read-only",
+        "the end of the log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A database with several data files (.mdf /.ndf ) does not have to be protected as one indivisible object. File backups copy a single data file, which matters in three situations:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking a file backup”?",
+      "options": [
+        "One filegroup, then log replay",
+        "Piecemeal: read-write parts first",
+        "Syntax is the normal BACKUP DATABASE with FILE = 'logical_file_name'."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Syntax is the normal BACKUP DATABASE with FILE = 'logical_file_name'. The logical name comes from sys.database_files, not the physical path:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring a file into a consistent database”?",
+      "options": [
+        "The whole database, one shot",
+        "Restoring a single file follows the same discipline as a full restore: NORECOVERY while the sequence continues, log backups replayed to the common point, then RECOVERY.",
+        "Piecemeal: read-write parts first"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring a single file follows the same discipline as a full restore: NORECOVERY while the sequence continues, log backups replayed to the common point, then RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “File, filegroup, or partial?”?",
+      "options": [
+        "Three backup types reduce scope in different ways — choosing wrong produces a strategy that is hard to reason about during an incident:",
+        "The whole database, one shot",
+        "Enormous databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three backup types reduce scope in different ways — choosing wrong produces a strategy that is hard to reason about during an incident:”"
+    },
+    {
+      "question": "Complete the lesson statement: “File restores must therefore be _____ until the restored file reaches the same point in time as the rest of the database.”",
+      "options": [
+        "Filegroup",
+        "Partial",
+        "replayed with log backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The catch is consistency: restoring an old version of one file into a database whose other files are newer produces a database that cannot be opened. File restores must therefore be replayed with log backups until the restored file reaches the same point in time as the rest of the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “File, filegroup, or partial?”?",
+      "options": [
+        "Storage layout",
+        "Signs that file-level backups belong in your strategy:",
+        "Selective recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Signs that file-level backups belong in your strategy:”"
+    },
+    {
+      "question": "Complete the lesson statement: “If none of those hold, a plain full + differential + log schedule is simpler and just as safe — _____.”",
+      "options": [
+        "complexity in a backup strategy is a cost, not a feature",
+        "Partial",
+        "Full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “If none of those hold, a plain full + differential + log schedule is simpler and just as safe — complexity in a backup strategy is a cost, not a feature.”"
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “File” under “Restore granularity”?",
+      "options": [
+        "scope",
+        "between full database backups",
+        "One file, then log replay"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “File” as “One file, then log replay”."
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “Filegroup” under “Restore granularity”?",
+      "options": [
+        "read-only",
+        "One filegroup, then log replay",
+        "between full database backups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Filegroup” as “One filegroup, then log replay”."
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “Partial” under “Restore granularity”?",
+      "options": [
+        "Piecemeal: read-write parts first",
+        "read-only",
+        "the end of the log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Partial” as “Piecemeal: read-write parts first”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ copy a single data file, which matters in three situations:”",
+      "options": [
+        "File backups",
+        "read-only",
+        "the end of the log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A database with several data files (.mdf /.ndf ) does not have to be protected as one indivisible object. File backups copy a single data file, which matters in three situations:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking a file backup”?",
+      "options": [
+        "One filegroup, then log replay",
+        "Piecemeal: read-write parts first",
+        "Syntax is the normal BACKUP DATABASE with FILE = 'logical_file_name'."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Syntax is the normal BACKUP DATABASE with FILE = 'logical_file_name'. The logical name comes from sys.database_files, not the physical path:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring a file into a consistent database”?",
+      "options": [
+        "The whole database, one shot",
+        "Restoring a single file follows the same discipline as a full restore: NORECOVERY while the sequence continues, log backups replayed to the common point, then RECOVERY.",
+        "Piecemeal: read-write parts first"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring a single file follows the same discipline as a full restore: NORECOVERY while the sequence continues, log backups replayed to the common point, then RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “File, filegroup, or partial?”?",
+      "options": [
+        "Three backup types reduce scope in different ways — choosing wrong produces a strategy that is hard to reason about during an incident:",
+        "The whole database, one shot",
+        "Enormous databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three backup types reduce scope in different ways — choosing wrong produces a strategy that is hard to reason about during an incident:”"
+    },
+    {
+      "question": "Complete the lesson statement: “File restores must therefore be _____ until the restored file reaches the same point in time as the rest of the database.”",
+      "options": [
+        "Filegroup",
+        "Partial",
+        "replayed with log backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The catch is consistency: restoring an old version of one file into a database whose other files are newer produces a database that cannot be opened. File restores must therefore be replayed with log backups until the restored file reaches the same point in time as the rest of the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “File, filegroup, or partial?”?",
+      "options": [
+        "Storage layout",
+        "Signs that file-level backups belong in your strategy:",
+        "Selective recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Signs that file-level backups belong in your strategy:”"
+    },
+    {
+      "question": "Complete the lesson statement: “If none of those hold, a plain full + differential + log schedule is simpler and just as safe — _____.”",
+      "options": [
+        "complexity in a backup strategy is a cost, not a feature",
+        "Partial",
+        "Full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “If none of those hold, a plain full + differential + log schedule is simpler and just as safe — complexity in a backup strategy is a cost, not a feature.”"
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “File” under “Restore granularity”?",
+      "options": [
+        "scope",
+        "between full database backups",
+        "One file, then log replay"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “File” as “One file, then log replay”."
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “Filegroup” under “Restore granularity”?",
+      "options": [
+        "read-only",
+        "One filegroup, then log replay",
+        "between full database backups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Filegroup” as “One filegroup, then log replay”."
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “Partial” under “Restore granularity”?",
+      "options": [
+        "Piecemeal: read-write parts first",
+        "read-only",
+        "the end of the log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Partial” as “Piecemeal: read-write parts first”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ copy a single data file, which matters in three situations:”",
+      "options": [
+        "File backups",
+        "read-only",
+        "the end of the log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A database with several data files (.mdf /.ndf ) does not have to be protected as one indivisible object. File backups copy a single data file, which matters in three situations:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Taking a file backup”?",
+      "options": [
+        "One filegroup, then log replay",
+        "Piecemeal: read-write parts first",
+        "Syntax is the normal BACKUP DATABASE with FILE = 'logical_file_name'."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Syntax is the normal BACKUP DATABASE with FILE = 'logical_file_name'. The logical name comes from sys.database_files, not the physical path:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring a file into a consistent database”?",
+      "options": [
+        "The whole database, one shot",
+        "Restoring a single file follows the same discipline as a full restore: NORECOVERY while the sequence continues, log backups replayed to the common point, then RECOVERY.",
+        "Piecemeal: read-write parts first"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring a single file follows the same discipline as a full restore: NORECOVERY while the sequence continues, log backups replayed to the common point, then RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “File, filegroup, or partial?”?",
+      "options": [
+        "Three backup types reduce scope in different ways — choosing wrong produces a strategy that is hard to reason about during an incident:",
+        "The whole database, one shot",
+        "Enormous databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three backup types reduce scope in different ways — choosing wrong produces a strategy that is hard to reason about during an incident:”"
+    },
+    {
+      "question": "Complete the lesson statement: “File restores must therefore be _____ until the restored file reaches the same point in time as the rest of the database.”",
+      "options": [
+        "Filegroup",
+        "Partial",
+        "replayed with log backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The catch is consistency: restoring an old version of one file into a database whose other files are newer produces a database that cannot be opened. File restores must therefore be replayed with log backups until the restored file reaches the same point in time as the rest of the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “File, filegroup, or partial?”?",
+      "options": [
+        "Storage layout",
+        "Signs that file-level backups belong in your strategy:",
+        "Selective recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Signs that file-level backups belong in your strategy:”"
+    },
+    {
+      "question": "Complete the lesson statement: “If none of those hold, a plain full + differential + log schedule is simpler and just as safe — _____.”",
+      "options": [
+        "complexity in a backup strategy is a cost, not a feature",
+        "Partial",
+        "Full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “If none of those hold, a plain full + differential + log schedule is simpler and just as safe — complexity in a backup strategy is a cost, not a feature.”"
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “File” under “Restore granularity”?",
+      "options": [
+        "scope",
+        "between full database backups",
+        "One file, then log replay"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “File” as “One file, then log replay”."
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “Filegroup” under “Restore granularity”?",
+      "options": [
+        "read-only",
+        "One filegroup, then log replay",
+        "between full database backups"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Filegroup” as “One filegroup, then log replay”."
+    },
+    {
+      "question": "In the “File, filegroup, or partial?” table, what is listed for “Partial” under “Restore granularity”?",
+      "options": [
+        "Piecemeal: read-write parts first",
+        "read-only",
+        "the end of the log"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Partial” as “Piecemeal: read-write parts first”."
+    }
+  ],
   takeaways: [
     "File backups copy one data file — the tool for huge or selectively risky databases",
     "They are taken between full backups and identified by logical file name from sys.database_files",

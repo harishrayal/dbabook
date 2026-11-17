@@ -186,6 +186,312 @@ Because the increment grows with the file, causing increasingly large and unpred
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:",
+        "PRIMARY Filegroup",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine PRIMARY Filegroup within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PRIMARY Filegroup fits”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "System objects, boot information"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PRIMARY Filegroup in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PRIMARY Filegroup”?",
+      "options": [
+        "System objects, boot information",
+        "Theory becomes useful when you can apply it.",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PRIMARY Filegroup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it.",
+        "PRIMARY Filegroup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates PRIMARY Filegroup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PRIMARY Filegroup means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PRIMARY Filegroup fits”?",
+      "options": [
+        "The diagram below places PRIMARY Filegroup alongside the core concepts of database storage and file management.",
+        "Next, verify the result and capture a baseline.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places PRIMARY Filegroup alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PRIMARY Filegroup in practice”?",
+      "options": [
+        "Preferred — predictable",
+        "Avoid on large files",
+        "The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PRIMARY Filegroup”?",
+      "options": [
+        "Preferred — predictable",
+        "The first example establishes the relevant state.",
+        "With PRIMARY Filegroup, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:",
+        "PRIMARY Filegroup",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine PRIMARY Filegroup within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PRIMARY Filegroup fits”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "System objects, boot information"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PRIMARY Filegroup in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PRIMARY Filegroup”?",
+      "options": [
+        "System objects, boot information",
+        "Theory becomes useful when you can apply it.",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PRIMARY Filegroup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it.",
+        "PRIMARY Filegroup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates PRIMARY Filegroup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PRIMARY Filegroup means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PRIMARY Filegroup fits”?",
+      "options": [
+        "The diagram below places PRIMARY Filegroup alongside the core concepts of database storage and file management.",
+        "Next, verify the result and capture a baseline.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places PRIMARY Filegroup alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PRIMARY Filegroup in practice”?",
+      "options": [
+        "Preferred — predictable",
+        "Avoid on large files",
+        "The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PRIMARY Filegroup”?",
+      "options": [
+        "Preferred — predictable",
+        "The first example establishes the relevant state.",
+        "With PRIMARY Filegroup, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:",
+        "PRIMARY Filegroup",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine PRIMARY Filegroup within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PRIMARY Filegroup fits”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "System objects, boot information"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PRIMARY Filegroup in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PRIMARY Filegroup”?",
+      "options": [
+        "System objects, boot information",
+        "Theory becomes useful when you can apply it.",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to PRIMARY Filegroup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it.",
+        "PRIMARY Filegroup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates PRIMARY Filegroup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What PRIMARY Filegroup means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where PRIMARY Filegroup fits”?",
+      "options": [
+        "The diagram below places PRIMARY Filegroup alongside the core concepts of database storage and file management.",
+        "Next, verify the result and capture a baseline.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places PRIMARY Filegroup alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “PRIMARY Filegroup in practice”?",
+      "options": [
+        "Preferred — predictable",
+        "Avoid on large files",
+        "The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with PRIMARY Filegroup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with PRIMARY Filegroup”?",
+      "options": [
+        "Preferred — predictable",
+        "The first example establishes the relevant state.",
+        "With PRIMARY Filegroup, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "PRIMARY Filegroup is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

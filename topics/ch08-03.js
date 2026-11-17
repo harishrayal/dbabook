@@ -184,6 +184,312 @@ DBCC CHECKDB (N'ERP') WITH NO_INFOMSGS;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The canonical order”?",
+      "options": [
+        "SQL Server rebuilds a database by replaying backups in the order they were taken.",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server rebuilds a database by replaying backups in the order they were taken. The rule is fixed by how the media is written:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The single most important habit in restore work is tracking the _____ after each step.”",
+      "options": [
+        "ahead",
+        "SQL Server rebuilds a database by replaying backups in the order they were taken.",
+        "state"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The single most important habit in restore work is tracking the state after each step. Every restore except the last leaves the database in RESTORING — that is what allows the next file to be applied.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the states from the catalogue”?",
+      "options": [
+        "Restore the chain again from the full with NORECOVERY",
+        "You can confirm where a restore stands without guessing:",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “You can confirm where a restore stands without guessing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A complete sequence script”?",
+      "options": [
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Restore the chain again from the full with NORECOVERY",
+        "Restore the full (and differential) first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Common sequence mistakes”?",
+      "options": [
+        "Restore the chain again from the full with NORECOVERY",
+        "Restore the full (and differential) first",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “You can never skip _____ — a gap in the LSN chain aborts the restore with an error such as “The log backup … is not allowed to overwrite an earlier log backup”.”",
+      "options": [
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…",
+        "ahead",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Skipping is allowed only in one direction: if you have a recent full and its differentials, you can skip older logs entirely. You can never skip ahead — a gap in the LSN chain aborts the restore with an error such as “The log backup … is not allowed to overwrite an earlier log backup”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the states from the catalogue”?",
+      "options": [
+        "state_desc = RESTORING is the signature of a chain in progress — expected during a planned restore, alarming if it persists after one, because the database is unusable until…",
+        "Finish with RECOVERY, then delete the undo file",
+        "Check FILELISTONLY and prepare WITH MOVE first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “state_desc = RESTORING is the signature of a chain in progress — expected during a planned restore, alarming if it persists after one, because the database is unusable until recovery completes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A complete sequence script”?",
+      "options": [
+        "Check FILELISTONLY and prepare WITH MOVE first",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the catalogue, never ignored.”"
+    },
+    {
+      "question": "In the “Common sequence mistakes” table, what is listed for “Recovering after the full, then applying a log” under “Fix”?",
+      "options": [
+        "Full backup first",
+        "Restore the chain again from the full with NORECOVERY",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Recovering after the full, then applying a log” as “Restore the chain again from the full with NORECOVERY”."
+    },
+    {
+      "question": "In the “Common sequence mistakes” table, what is listed for “Applying a log before its base” under “Fix”?",
+      "options": [
+        "Restore the full (and differential) first",
+        "Full backup first",
+        "Differential next"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Applying a log before its base” as “Restore the full (and differential) first”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The canonical order”?",
+      "options": [
+        "SQL Server rebuilds a database by replaying backups in the order they were taken.",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server rebuilds a database by replaying backups in the order they were taken. The rule is fixed by how the media is written:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The single most important habit in restore work is tracking the _____ after each step.”",
+      "options": [
+        "ahead",
+        "SQL Server rebuilds a database by replaying backups in the order they were taken.",
+        "state"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The single most important habit in restore work is tracking the state after each step. Every restore except the last leaves the database in RESTORING — that is what allows the next file to be applied.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the states from the catalogue”?",
+      "options": [
+        "Restore the chain again from the full with NORECOVERY",
+        "You can confirm where a restore stands without guessing:",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “You can confirm where a restore stands without guessing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A complete sequence script”?",
+      "options": [
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Restore the chain again from the full with NORECOVERY",
+        "Restore the full (and differential) first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Common sequence mistakes”?",
+      "options": [
+        "Restore the chain again from the full with NORECOVERY",
+        "Restore the full (and differential) first",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “You can never skip _____ — a gap in the LSN chain aborts the restore with an error such as “The log backup … is not allowed to overwrite an earlier log backup”.”",
+      "options": [
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…",
+        "ahead",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Skipping is allowed only in one direction: if you have a recent full and its differentials, you can skip older logs entirely. You can never skip ahead — a gap in the LSN chain aborts the restore with an error such as “The log backup … is not allowed to overwrite an earlier log backup”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the states from the catalogue”?",
+      "options": [
+        "state_desc = RESTORING is the signature of a chain in progress — expected during a planned restore, alarming if it persists after one, because the database is unusable until…",
+        "Finish with RECOVERY, then delete the undo file",
+        "Check FILELISTONLY and prepare WITH MOVE first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “state_desc = RESTORING is the signature of a chain in progress — expected during a planned restore, alarming if it persists after one, because the database is unusable until recovery completes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A complete sequence script”?",
+      "options": [
+        "Check FILELISTONLY and prepare WITH MOVE first",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the catalogue, never ignored.”"
+    },
+    {
+      "question": "In the “Common sequence mistakes” table, what is listed for “Recovering after the full, then applying a log” under “Fix”?",
+      "options": [
+        "Full backup first",
+        "Restore the chain again from the full with NORECOVERY",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Recovering after the full, then applying a log” as “Restore the chain again from the full with NORECOVERY”."
+    },
+    {
+      "question": "In the “Common sequence mistakes” table, what is listed for “Applying a log before its base” under “Fix”?",
+      "options": [
+        "Restore the full (and differential) first",
+        "Full backup first",
+        "Differential next"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Applying a log before its base” as “Restore the full (and differential) first”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The canonical order”?",
+      "options": [
+        "SQL Server rebuilds a database by replaying backups in the order they were taken.",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server rebuilds a database by replaying backups in the order they were taken. The rule is fixed by how the media is written:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The single most important habit in restore work is tracking the _____ after each step.”",
+      "options": [
+        "ahead",
+        "SQL Server rebuilds a database by replaying backups in the order they were taken.",
+        "state"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The single most important habit in restore work is tracking the state after each step. Every restore except the last leaves the database in RESTORING — that is what allows the next file to be applied.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the states from the catalogue”?",
+      "options": [
+        "Restore the chain again from the full with NORECOVERY",
+        "You can confirm where a restore stands without guessing:",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “You can confirm where a restore stands without guessing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A complete sequence script”?",
+      "options": [
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Restore the chain again from the full with NORECOVERY",
+        "Restore the full (and differential) first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Common sequence mistakes”?",
+      "options": [
+        "Restore the chain again from the full with NORECOVERY",
+        "Restore the full (and differential) first",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs.”"
+    },
+    {
+      "question": "Complete the lesson statement: “You can never skip _____ — a gap in the LSN chain aborts the restore with an error such as “The log backup … is not allowed to overwrite an earlier log backup”.”",
+      "options": [
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…",
+        "ahead",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Skipping is allowed only in one direction: if you have a recent full and its differentials, you can skip older logs entirely. You can never skip ahead — a gap in the LSN chain aborts the restore with an error such as “The log backup … is not allowed to overwrite an earlier log backup”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the states from the catalogue”?",
+      "options": [
+        "state_desc = RESTORING is the signature of a chain in progress — expected during a planned restore, alarming if it persists after one, because the database is unusable until…",
+        "Finish with RECOVERY, then delete the undo file",
+        "Check FILELISTONLY and prepare WITH MOVE first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “state_desc = RESTORING is the signature of a chain in progress — expected during a planned restore, alarming if it persists after one, because the database is unusable until recovery completes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A complete sequence script”?",
+      "options": [
+        "Check FILELISTONLY and prepare WITH MOVE first",
+        "The pattern below is what a real restore runbook looks like: every intermediate step is explicit, and recovery happens exactly once, at the end.",
+        "Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each statement is idempotent only in the sense that you can re-run a step after fixing its cause; a partially applied step should be diagnosed with the error message and the catalogue, never ignored.”"
+    },
+    {
+      "question": "In the “Common sequence mistakes” table, what is listed for “Recovering after the full, then applying a log” under “Fix”?",
+      "options": [
+        "Full backup first",
+        "Restore the chain again from the full with NORECOVERY",
+        "Sequence discipline is what separates a calm restore from an improvised one: one base, ordered logs, one recovery, and a written record of every file applied with its LSNs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Recovering after the full, then applying a log” as “Restore the chain again from the full with NORECOVERY”."
+    },
+    {
+      "question": "In the “Common sequence mistakes” table, what is listed for “Applying a log before its base” under “Fix”?",
+      "options": [
+        "Restore the full (and differential) first",
+        "Full backup first",
+        "Differential next"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Applying a log before its base” as “Restore the full (and differential) first”."
+    }
+  ],
   takeaways: [
     "Canonical order: full → differential → log backups in LSN order → one final RECOVERY",
     "Every intermediate restore uses NORECOVERY to keep the chain open",

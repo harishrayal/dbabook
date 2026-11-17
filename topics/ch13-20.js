@@ -191,6 +191,312 @@ Blocking is one session waiting for a lock held by another — it resolves when 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Row versioning",
+        "Deadlock Graphs",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Graphs within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Graphs fits”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Deadlock Graphs sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Graphs in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Graphs”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Graphs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "With Deadlock Graphs, prefer measured, reversible changes.",
+        "Deadlock Graphs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock Graphs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Deadlock Graphs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Graphs means”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Isolation levels define how transactions are protected from one another.",
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Graphs fits”?",
+      "options": [
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock Graphs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Graphs in practice”?",
+      "options": [
+        "Deadlock Graphs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Graphs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Graphs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Graphs”?",
+      "options": [
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks.",
+        "The first example establishes the relevant state.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Row versioning",
+        "Deadlock Graphs",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Graphs within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Graphs fits”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Deadlock Graphs sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Graphs in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Graphs”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Graphs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "With Deadlock Graphs, prefer measured, reversible changes.",
+        "Deadlock Graphs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock Graphs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Deadlock Graphs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Graphs means”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Isolation levels define how transactions are protected from one another.",
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Graphs fits”?",
+      "options": [
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock Graphs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Graphs in practice”?",
+      "options": [
+        "Deadlock Graphs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Graphs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Graphs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Graphs”?",
+      "options": [
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks.",
+        "The first example establishes the relevant state.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Row versioning",
+        "Deadlock Graphs",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Deadlock Graphs within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Graphs fits”?",
+      "options": [
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Deadlock Graphs sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Graphs in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Graphs”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Deadlock Graphs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "With Deadlock Graphs, prefer measured, reversible changes.",
+        "Deadlock Graphs"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock Graphs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Deadlock Graphs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Deadlock Graphs means”?",
+      "options": [
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Isolation levels define how transactions are protected from one another.",
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Deadlock Graphs fits”?",
+      "options": [
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Deadlock Graphs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deadlock Graphs in practice”?",
+      "options": [
+        "Deadlock Graphs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "The following comparison captures the distinctions that matter most when working with Deadlock Graphs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Deadlock Graphs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Deadlock Graphs”?",
+      "options": [
+        "The diagram below places Deadlock Graphs alongside the core concepts of blocking and deadlocks.",
+        "The first example establishes the relevant state.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Deadlock Graphs is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -183,6 +183,312 @@ A proxy maps a job step to a credential so the step can run under a different, a
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Credentials",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Credentials within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Credentials fits”?",
+      "options": [
+        "Notification set on job",
+        "Credentials sits inside a larger system.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Credentials in practice”?",
+      "options": [
+        "Job never runs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The following comparison captures the distinctions that matter most when working with Credentials:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Credentials”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Credentials.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Credentials. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "With Credentials, prefer measured, reversible changes.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Credentials",
+        "Use the following as a starting point when investigating Credentials."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Credentials with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Credentials means”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Credentials fits”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Credentials in practice”?",
+      "options": [
+        "Credentials is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Credentials:",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Credentials:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Credentials”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Credentials is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Credentials",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Credentials within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Credentials fits”?",
+      "options": [
+        "Notification set on job",
+        "Credentials sits inside a larger system.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Credentials in practice”?",
+      "options": [
+        "Job never runs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The following comparison captures the distinctions that matter most when working with Credentials:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Credentials”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Credentials.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Credentials. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "With Credentials, prefer measured, reversible changes.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Credentials",
+        "Use the following as a starting point when investigating Credentials."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Credentials with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Credentials means”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Credentials fits”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Credentials in practice”?",
+      "options": [
+        "Credentials is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Credentials:",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Credentials:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Credentials”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Credentials is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Credentials",
+        "Database Mail configured",
+        "Enabled alert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Credentials within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Credentials fits”?",
+      "options": [
+        "Notification set on job",
+        "Credentials sits inside a larger system.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Credentials in practice”?",
+      "options": [
+        "Job never runs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The following comparison captures the distinctions that matter most when working with Credentials:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Credentials”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Credentials.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Credentials. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "With Credentials, prefer measured, reversible changes.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Credentials",
+        "Use the following as a starting point when investigating Credentials."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Credentials with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Credentials means”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Credentials fits”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Credentials alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Credentials in practice”?",
+      "options": [
+        "Credentials is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Credentials:",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Credentials:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Credentials”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Credentials is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Credentials is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

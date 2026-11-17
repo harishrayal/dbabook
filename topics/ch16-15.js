@@ -186,6 +186,312 @@ Because only synchronous commit guarantees the secondary has hardened the same t
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Manual Failover",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Manual Failover within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Manual Failover fits”?",
+      "options": [
+        "With Manual Failover, prefer measured, reversible changes.",
+        "Higher (wait for secondary)",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Manual Failover in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Manual Failover.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Manual Failover”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Manual Failover. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "With Manual Failover, prefer measured, reversible changes.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Manual Failover",
+        "Manual Failover sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Manual Failover with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Manual Failover means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Manual Failover is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Manual Failover fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Manual Failover",
+        "The diagram below places Manual Failover alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Manual Failover alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Manual Failover in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "The following comparison captures the distinctions that matter most when working with Manual Failover:",
+        "Manual Failover"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Manual Failover:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Manual Failover”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Manual Failover",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Manual Failover within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Manual Failover fits”?",
+      "options": [
+        "With Manual Failover, prefer measured, reversible changes.",
+        "Higher (wait for secondary)",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Manual Failover in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Manual Failover.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Manual Failover”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Manual Failover. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "With Manual Failover, prefer measured, reversible changes.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Manual Failover",
+        "Manual Failover sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Manual Failover with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Manual Failover means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Manual Failover is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Manual Failover fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Manual Failover",
+        "The diagram below places Manual Failover alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Manual Failover alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Manual Failover in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "The following comparison captures the distinctions that matter most when working with Manual Failover:",
+        "Manual Failover"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Manual Failover:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Manual Failover”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Manual Failover",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Manual Failover within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Manual Failover fits”?",
+      "options": [
+        "With Manual Failover, prefer measured, reversible changes.",
+        "Higher (wait for secondary)",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Manual Failover in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Manual Failover.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Manual Failover”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Manual Failover. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "With Manual Failover, prefer measured, reversible changes.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Manual Failover",
+        "Manual Failover sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Manual Failover with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Manual Failover means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Manual Failover is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Manual Failover fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Manual Failover",
+        "The diagram below places Manual Failover alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Manual Failover alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Manual Failover in practice”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "The following comparison captures the distinctions that matter most when working with Manual Failover:",
+        "Manual Failover"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Manual Failover:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Manual Failover”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Manual Failover is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

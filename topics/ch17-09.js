@@ -180,6 +180,312 @@ Transactional replication streams changes one-way from publisher to subscribers 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log Shipping Troubleshooting",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping Troubleshooting within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Troubleshooting fits”?",
+      "options": [
+        "Minutes",
+        "Theory becomes useful when you can apply it.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Troubleshooting in practice”?",
+      "options": [
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "Replication moves data via publication and subscription.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Troubleshooting”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Minutes",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Log Shipping Troubleshooting",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Log Shipping Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping Troubleshooting means”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Troubleshooting fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "The diagram below places Log Shipping Troubleshooting alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Log Shipping Troubleshooting alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Troubleshooting in practice”?",
+      "options": [
+        "Log Shipping Troubleshooting sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Troubleshooting:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Disconnected sites",
+        "Log Shipping Troubleshooting sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log Shipping Troubleshooting",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping Troubleshooting within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Troubleshooting fits”?",
+      "options": [
+        "Minutes",
+        "Theory becomes useful when you can apply it.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Troubleshooting in practice”?",
+      "options": [
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "Replication moves data via publication and subscription.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Troubleshooting”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Minutes",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Log Shipping Troubleshooting",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Log Shipping Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping Troubleshooting means”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Troubleshooting fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "The diagram below places Log Shipping Troubleshooting alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Log Shipping Troubleshooting alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Troubleshooting in practice”?",
+      "options": [
+        "Log Shipping Troubleshooting sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Troubleshooting:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Disconnected sites",
+        "Log Shipping Troubleshooting sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Log Shipping Troubleshooting",
+        "Log shipping",
+        "Medium"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Log Shipping Troubleshooting within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Troubleshooting fits”?",
+      "options": [
+        "Minutes",
+        "Theory becomes useful when you can apply it.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY. A monitor server can centralise status. Failover is manual and must be rehearsed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Troubleshooting in practice”?",
+      "options": [
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "Replication moves data via publication and subscription.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Troubleshooting”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Minutes",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Log Shipping Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A DR runbook documents the exact steps, contacts, decisions and validation for a disaster. Without it, even good technology fails under the stress of a real incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Log Shipping Troubleshooting",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Log Shipping Troubleshooting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Log Shipping Troubleshooting means”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Log Shipping Troubleshooting fits”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "With Log Shipping Troubleshooting, prefer measured, reversible changes.",
+        "The diagram below places Log Shipping Troubleshooting alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Log Shipping Troubleshooting alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Log Shipping Troubleshooting in practice”?",
+      "options": [
+        "Log Shipping Troubleshooting sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Log Shipping Troubleshooting:",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Log Shipping Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Log Shipping Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Disconnected sites",
+        "Log Shipping Troubleshooting sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Log Shipping Troubleshooting is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

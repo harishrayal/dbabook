@@ -186,6 +186,312 @@ Because configuration drifts, paths change and jobs fail silently; only a timed 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Database Mirroring Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Mirroring Concepts within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Mirroring Concepts fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Replication moves data via publication and subscription.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Mirroring Concepts in practice”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "With Database Mirroring Concepts, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Mirroring Concepts”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disaster recovery protects against site or region loss.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Mirroring Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Mirroring Concepts",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Mirroring Concepts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Mirroring Concepts means”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Mirroring Concepts fits”?",
+      "options": [
+        "Small / static data",
+        "The diagram below places Database Mirroring Concepts alongside the core concepts of disaster recovery technologies.",
+        "With Database Mirroring Concepts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Mirroring Concepts alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Mirroring Concepts in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Mirroring Concepts:",
+        "Database Mirroring Concepts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Mirroring Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Mirroring Concepts”?",
+      "options": [
+        "Database Mirroring Concepts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Database Mirroring Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Mirroring Concepts within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Mirroring Concepts fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Replication moves data via publication and subscription.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Mirroring Concepts in practice”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "With Database Mirroring Concepts, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Mirroring Concepts”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disaster recovery protects against site or region loss.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Mirroring Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Mirroring Concepts",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Mirroring Concepts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Mirroring Concepts means”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Mirroring Concepts fits”?",
+      "options": [
+        "Small / static data",
+        "The diagram below places Database Mirroring Concepts alongside the core concepts of disaster recovery technologies.",
+        "With Database Mirroring Concepts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Mirroring Concepts alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Mirroring Concepts in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Mirroring Concepts:",
+        "Database Mirroring Concepts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Mirroring Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Mirroring Concepts”?",
+      "options": [
+        "Database Mirroring Concepts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Medium",
+        "Minutes",
+        "Database Mirroring Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Mirroring Concepts within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Mirroring Concepts fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Replication moves data via publication and subscription.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Mirroring Concepts in practice”?",
+      "options": [
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "With Database Mirroring Concepts, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Mirroring Concepts”?",
+      "options": [
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Disaster recovery protects against site or region loss.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Mirroring Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Mirroring Concepts",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Mirroring Concepts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Mirroring Concepts means”?",
+      "options": [
+        "Small / static data",
+        "Reporting / distribution",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Mirroring Concepts fits”?",
+      "options": [
+        "Small / static data",
+        "The diagram below places Database Mirroring Concepts alongside the core concepts of disaster recovery technologies.",
+        "With Database Mirroring Concepts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Mirroring Concepts alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Mirroring Concepts in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Mirroring Concepts:",
+        "Database Mirroring Concepts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Mirroring Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Mirroring Concepts”?",
+      "options": [
+        "Database Mirroring Concepts sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Mirroring Concepts is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

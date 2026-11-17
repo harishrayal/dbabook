@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Database Inventory Management",
+        "Patching and upgrades are planned programmes.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Inventory Management within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Inventory Management fits”?",
+      "options": [
+        "With Database Inventory Management, prefer measured, reversible changes.",
+        "Scheduled",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Inventory Management in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Database Inventory Management sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Inventory Management”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Inventory Management sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Inventory Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "With Database Inventory Management, prefer measured, reversible changes.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Inventory Management sits inside a larger system.",
+        "Database Inventory Management",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Inventory Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Inventory Management means”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Use the following as a starting point when investigating Database Inventory Management.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Inventory Management fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Inventory Management.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The diagram below places Database Inventory Management alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Inventory Management alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Inventory Management in practice”?",
+      "options": [
+        "Database Inventory Management",
+        "The following comparison captures the distinctions that matter most when working with Database Inventory Management:",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Inventory Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Inventory Management”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Inventory Management",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Database Inventory Management",
+        "Patching and upgrades are planned programmes.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Inventory Management within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Inventory Management fits”?",
+      "options": [
+        "With Database Inventory Management, prefer measured, reversible changes.",
+        "Scheduled",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Inventory Management in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Database Inventory Management sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Inventory Management”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Inventory Management sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Inventory Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "With Database Inventory Management, prefer measured, reversible changes.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Inventory Management sits inside a larger system.",
+        "Database Inventory Management",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Inventory Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Inventory Management means”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Use the following as a starting point when investigating Database Inventory Management.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Inventory Management fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Inventory Management.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The diagram below places Database Inventory Management alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Inventory Management alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Inventory Management in practice”?",
+      "options": [
+        "Database Inventory Management",
+        "The following comparison captures the distinctions that matter most when working with Database Inventory Management:",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Inventory Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Inventory Management”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Inventory Management",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Database Inventory Management",
+        "Patching and upgrades are planned programmes.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Inventory Management within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Inventory Management fits”?",
+      "options": [
+        "With Database Inventory Management, prefer measured, reversible changes.",
+        "Scheduled",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Inventory Management in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Database Inventory Management sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Inventory Management”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Inventory Management sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Inventory Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "With Database Inventory Management, prefer measured, reversible changes.",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Inventory Management sits inside a larger system.",
+        "Database Inventory Management",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Inventory Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Inventory Management means”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Use the following as a starting point when investigating Database Inventory Management.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Inventory Management fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Inventory Management.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "The diagram below places Database Inventory Management alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Inventory Management alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Inventory Management in practice”?",
+      "options": [
+        "Database Inventory Management",
+        "The following comparison captures the distinctions that matter most when working with Database Inventory Management:",
+        "Growth trend"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Inventory Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Inventory Management”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Inventory Management",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Inventory Management is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

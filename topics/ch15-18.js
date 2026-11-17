@@ -185,6 +185,312 @@ Reorganize lightly fragmented indexes (roughly 10-30%) online with low impact; r
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Database Maintenance Windows",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Windows within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Windows fits”?",
+      "options": [
+        "Rebuild structure and stats",
+        "Database Maintenance Windows sits inside a larger system.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Windows in practice”?",
+      "options": [
+        "Bulk loads",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Windows”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Database Maintenance Windows.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Windows. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "With Database Maintenance Windows, prefer measured, reversible changes.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Database Maintenance Windows",
+        "Use the following as a starting point when investigating Database Maintenance Windows."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Windows with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Windows means”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Windows fits”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Windows in practice”?",
+      "options": [
+        "Database Maintenance Windows is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Windows”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Maintenance Windows is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Database Maintenance Windows",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Windows within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Windows fits”?",
+      "options": [
+        "Rebuild structure and stats",
+        "Database Maintenance Windows sits inside a larger system.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Windows in practice”?",
+      "options": [
+        "Bulk loads",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Windows”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Database Maintenance Windows.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Windows. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "With Database Maintenance Windows, prefer measured, reversible changes.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Database Maintenance Windows",
+        "Use the following as a starting point when investigating Database Maintenance Windows."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Windows with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Windows means”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Windows fits”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Windows in practice”?",
+      "options": [
+        "Database Maintenance Windows is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Windows”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Maintenance Windows is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Database Maintenance Windows",
+        "No benefit",
+        "Online, low impact"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Maintenance Windows within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Windows fits”?",
+      "options": [
+        "Rebuild structure and stats",
+        "Database Maintenance Windows sits inside a larger system.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping. Each task has a window, a duration and an impact.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Windows in practice”?",
+      "options": [
+        "Bulk loads",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Windows”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Database Maintenance Windows.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Maintenance Windows. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "With Database Maintenance Windows, prefer measured, reversible changes.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Database Maintenance Windows",
+        "Use the following as a starting point when investigating Database Maintenance Windows."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Maintenance Windows with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Maintenance Windows means”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping.",
+        "The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Maintenance Windows fits”?",
+      "options": [
+        "Data and log capacity are planned separately.",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Maintenance Windows alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Maintenance Windows in practice”?",
+      "options": [
+        "Database Maintenance Windows is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:",
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Maintenance Windows:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Maintenance Windows”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Maintenance Windows is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A maintenance plan covers the recurring work that keeps a database healthy: integrity checks, index and statistics maintenance, backup retention cleanup and housekeeping."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Maintenance Windows is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

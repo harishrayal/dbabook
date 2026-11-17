@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "With Transaction Log Backup Chain, prefer measured, reversible changes.",
+        "Transaction Log Backup Chain"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Backup Chain within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Backup Chain fits”?",
+      "options": [
+        "Yes",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "No"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Backup Chain in practice”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Transaction Log Backup Chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Backup Chain”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Backup Chain. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Limited during bulk ops",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Yes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transaction Log Backup Chain",
+        "Transaction Log Backup Chain sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Backup Chain with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Backup Chain means”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "Transaction Log Backup Chain is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Backup Chain fits”?",
+      "options": [
+        "Transaction Log Backup Chain",
+        "The diagram below places Transaction Log Backup Chain alongside the core concepts of backup and recovery strategy.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Transaction Log Backup Chain alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Backup Chain in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Backup Chain:",
+        "Transaction Log Backup Chain",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Backup Chain:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Backup Chain”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "With Transaction Log Backup Chain, prefer measured, reversible changes.",
+        "Transaction Log Backup Chain"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Backup Chain within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Backup Chain fits”?",
+      "options": [
+        "Yes",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "No"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Backup Chain in practice”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Transaction Log Backup Chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Backup Chain”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Backup Chain. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Limited during bulk ops",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Yes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transaction Log Backup Chain",
+        "Transaction Log Backup Chain sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Backup Chain with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Backup Chain means”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "Transaction Log Backup Chain is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Backup Chain fits”?",
+      "options": [
+        "Transaction Log Backup Chain",
+        "The diagram below places Transaction Log Backup Chain alongside the core concepts of backup and recovery strategy.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Transaction Log Backup Chain alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Backup Chain in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Backup Chain:",
+        "Transaction Log Backup Chain",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Backup Chain:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Backup Chain”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "With Transaction Log Backup Chain, prefer measured, reversible changes.",
+        "Transaction Log Backup Chain"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Backup Chain within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Backup Chain fits”?",
+      "options": [
+        "Yes",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "No"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Backup Chain in practice”?",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Transaction Log Backup Chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Backup Chain”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Backup Chain. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Limited during bulk ops",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Yes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Transaction Log Backup Chain",
+        "Transaction Log Backup Chain sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Transaction Log Backup Chain with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Backup Chain means”?",
+      "options": [
+        "Backups are the only true protection against data loss.",
+        "Transaction Log Backup Chain is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored. Monitoring and regular restore tests are mandatory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Backup Chain fits”?",
+      "options": [
+        "Transaction Log Backup Chain",
+        "The diagram below places Transaction Log Backup Chain alongside the core concepts of backup and recovery strategy.",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Transaction Log Backup Chain alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Backup Chain in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Backup Chain:",
+        "Transaction Log Backup Chain",
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Backup Chain:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Backup Chain”?",
+      "options": [
+        "The most common backup failures are silent: a job that succeeds but writes to a full disk, a broken log chain after a recovery-model change, or media that has never been restored.",
+        "Backups are the only true protection against data loss.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Transaction Log Backup Chain is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

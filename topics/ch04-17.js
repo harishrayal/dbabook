@@ -163,6 +163,312 @@ ORDER BY [Current LSN];</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The consequence is simple to state and profound in effect: _____.”",
+      "options": [
+        "Undo: revert them using the log's undo chain",
+        "the log always leads the data files",
+        "Redo: replay the log to reconstruct them"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The consequence is simple to state and profound in effect: the log always leads the data files. At any instant, the LDF is at least as far forward as the MDF for every page it describes. That one invariant buys three things at once:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a modification flows through the system”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "Steal",
+        "Undo"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Trace one UPDATE through the machinery:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal, no-force, and what WAL buys”?",
+      "options": [
+        "Undo",
+        "WRITELOG",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When log flushes become the bottleneck”?",
+      "options": [
+        "always",
+        "Because commit = log flush, the log's storage path is on the critical path of every transaction.",
+        "WRITELOG"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because commit = log flush, the log's storage path is on the critical path of every transaction. Symptoms of a slow log:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Seeing WAL in the log”?",
+      "options": [
+        "The log itself shows the ordering the rule guarantees — a begin record, the modification records, then the commit:",
+        "always",
+        "the log always leads the data files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The log itself shows the ordering the rule guarantees — a begin record, the modification records, then the commit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The write-ahead rule”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:",
+        "Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log. The engine therefore enforces the rule as an invariant of the storage engine, not a policy that a setting can disable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal, no-force, and what WAL buys”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "Without WAL, SQL Server would have to force every page to disk before commit (destroying commit throughput) or forbid stealing (forcing uncommitted data to pin the buffer pool).",
+        "Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Without WAL, SQL Server would have to force every page to disk before commit (destroying commit throughput) or forbid stealing (forcing uncommitted data to pin the buffer pool). WAL lets commits cost one log flush while recovery remains complete in both directions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When log flushes become the bottleneck”?",
+      "options": [
+        "The fixes are usually physical and organisational: put the LDF on the fastest tier (separate from data files), pre-size it so growth never happens in business hours, use…",
+        "Trace one UPDATE through the machinery:",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The fixes are usually physical and organisational: put the LDF on the fastest tier (separate from data files), pre-size it so growth never happens in business hours, use fixed-megabyte autogrow instead of percentages, and reduce commit frequency where the application can batch work in fewer transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Note what is _____: there is no log record for writing the data page — page writes are inferred from checkpoint records, because the log is the source of truth and the data files are only a cached projection of it.”",
+      "options": [
+        "Write efficiency",
+        "log buffer",
+        "absent"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Note what is absent: there is no log record for writing the data page — page writes are inferred from checkpoint records, because the log is the source of truth and the data files are only a cached projection of it. Reading m_lsn on a page with DBCC PAGE and comparing it to the log is how you verify, page by page, that write-ahead ordering held.”"
+    },
+    {
+      "question": "Complete the lesson statement: “One more subtlety: concurrent commits are amortised — the engine performs _____, letting many transactions share a single log flush.”",
+      "options": [
+        "commit",
+        "group commit",
+        "log buffer"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “One more subtlety: concurrent commits are amortised — the engine performs group commit, letting many transactions share a single log flush. That is why throughput scales even though every commit waits on the log.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The consequence is simple to state and profound in effect: _____.”",
+      "options": [
+        "Undo: revert them using the log's undo chain",
+        "the log always leads the data files",
+        "Redo: replay the log to reconstruct them"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The consequence is simple to state and profound in effect: the log always leads the data files. At any instant, the LDF is at least as far forward as the MDF for every page it describes. That one invariant buys three things at once:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a modification flows through the system”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "Steal",
+        "Undo"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Trace one UPDATE through the machinery:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal, no-force, and what WAL buys”?",
+      "options": [
+        "Undo",
+        "WRITELOG",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When log flushes become the bottleneck”?",
+      "options": [
+        "always",
+        "Because commit = log flush, the log's storage path is on the critical path of every transaction.",
+        "WRITELOG"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because commit = log flush, the log's storage path is on the critical path of every transaction. Symptoms of a slow log:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Seeing WAL in the log”?",
+      "options": [
+        "The log itself shows the ordering the rule guarantees — a begin record, the modification records, then the commit:",
+        "always",
+        "the log always leads the data files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The log itself shows the ordering the rule guarantees — a begin record, the modification records, then the commit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The write-ahead rule”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:",
+        "Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log. The engine therefore enforces the rule as an invariant of the storage engine, not a policy that a setting can disable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal, no-force, and what WAL buys”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "Without WAL, SQL Server would have to force every page to disk before commit (destroying commit throughput) or forbid stealing (forcing uncommitted data to pin the buffer pool).",
+        "Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Without WAL, SQL Server would have to force every page to disk before commit (destroying commit throughput) or forbid stealing (forcing uncommitted data to pin the buffer pool). WAL lets commits cost one log flush while recovery remains complete in both directions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When log flushes become the bottleneck”?",
+      "options": [
+        "The fixes are usually physical and organisational: put the LDF on the fastest tier (separate from data files), pre-size it so growth never happens in business hours, use…",
+        "Trace one UPDATE through the machinery:",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The fixes are usually physical and organisational: put the LDF on the fastest tier (separate from data files), pre-size it so growth never happens in business hours, use fixed-megabyte autogrow instead of percentages, and reduce commit frequency where the application can batch work in fewer transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Note what is _____: there is no log record for writing the data page — page writes are inferred from checkpoint records, because the log is the source of truth and the data files are only a cached projection of it.”",
+      "options": [
+        "Write efficiency",
+        "log buffer",
+        "absent"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Note what is absent: there is no log record for writing the data page — page writes are inferred from checkpoint records, because the log is the source of truth and the data files are only a cached projection of it. Reading m_lsn on a page with DBCC PAGE and comparing it to the log is how you verify, page by page, that write-ahead ordering held.”"
+    },
+    {
+      "question": "Complete the lesson statement: “One more subtlety: concurrent commits are amortised — the engine performs _____, letting many transactions share a single log flush.”",
+      "options": [
+        "commit",
+        "group commit",
+        "log buffer"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “One more subtlety: concurrent commits are amortised — the engine performs group commit, letting many transactions share a single log flush. That is why throughput scales even though every commit waits on the log.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The consequence is simple to state and profound in effect: _____.”",
+      "options": [
+        "Undo: revert them using the log's undo chain",
+        "the log always leads the data files",
+        "Redo: replay the log to reconstruct them"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The consequence is simple to state and profound in effect: the log always leads the data files. At any instant, the LDF is at least as far forward as the MDF for every page it describes. That one invariant buys three things at once:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a modification flows through the system”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "Steal",
+        "Undo"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Trace one UPDATE through the machinery:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal, no-force, and what WAL buys”?",
+      "options": [
+        "Undo",
+        "WRITELOG",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When log flushes become the bottleneck”?",
+      "options": [
+        "always",
+        "Because commit = log flush, the log's storage path is on the critical path of every transaction.",
+        "WRITELOG"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because commit = log flush, the log's storage path is on the critical path of every transaction. Symptoms of a slow log:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Seeing WAL in the log”?",
+      "options": [
+        "The log itself shows the ordering the rule guarantees — a begin record, the modification records, then the commit:",
+        "always",
+        "the log always leads the data files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The log itself shows the ordering the rule guarantees — a begin record, the modification records, then the commit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The write-ahead rule”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:",
+        "Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log. The engine therefore enforces the rule as an invariant of the storage engine, not a policy that a setting can disable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Steal, no-force, and what WAL buys”?",
+      "options": [
+        "Trace one UPDATE through the machinery:",
+        "Without WAL, SQL Server would have to force every page to disk before commit (destroying commit throughput) or forbid stealing (forcing uncommitted data to pin the buffer pool).",
+        "Break the rule once — write a page whose earlier log records are still in memory — and a crash at that moment leaves a data file that cannot be explained or repaired from the log."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Without WAL, SQL Server would have to force every page to disk before commit (destroying commit throughput) or forbid stealing (forcing uncommitted data to pin the buffer pool). WAL lets commits cost one log flush while recovery remains complete in both directions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When log flushes become the bottleneck”?",
+      "options": [
+        "The fixes are usually physical and organisational: put the LDF on the fastest tier (separate from data files), pre-size it so growth never happens in business hours, use…",
+        "Trace one UPDATE through the machinery:",
+        "SQL Server pairs WAL with two buffer policies, and the combination is only safe because of the rule:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The fixes are usually physical and organisational: put the LDF on the fastest tier (separate from data files), pre-size it so growth never happens in business hours, use fixed-megabyte autogrow instead of percentages, and reduce commit frequency where the application can batch work in fewer transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Note what is _____: there is no log record for writing the data page — page writes are inferred from checkpoint records, because the log is the source of truth and the data files are only a cached projection of it.”",
+      "options": [
+        "Write efficiency",
+        "log buffer",
+        "absent"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Note what is absent: there is no log record for writing the data page — page writes are inferred from checkpoint records, because the log is the source of truth and the data files are only a cached projection of it. Reading m_lsn on a page with DBCC PAGE and comparing it to the log is how you verify, page by page, that write-ahead ordering held.”"
+    },
+    {
+      "question": "Complete the lesson statement: “One more subtlety: concurrent commits are amortised — the engine performs _____, letting many transactions share a single log flush.”",
+      "options": [
+        "commit",
+        "group commit",
+        "log buffer"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “One more subtlety: concurrent commits are amortised — the engine performs group commit, letting many transactions share a single log flush. That is why throughput scales even though every commit waits on the log.”"
+    }
+  ],
   takeaways: [
     "WAL: log records for a page must be durable on disk before the page itself is written",
     "Commit costs one log flush (amortised by group commit) — data pages can follow much later",

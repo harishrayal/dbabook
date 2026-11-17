@@ -188,6 +188,312 @@ Uptime, database states, last successful backups, failed jobs, volume and log fr
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "SQL Server Health Checks",
+        "SQL Server Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Health Checks within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Health Checks fits”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "SQL Server Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Health Checks in practice”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Health Checks”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Health Checks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Finds the bottleneck",
+        "SQL Server Health Checks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Health Checks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Health Checks means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Health Checks fits”?",
+      "options": [
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting.",
+        "Prevents disk full",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Health Checks in practice”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Health Checks”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The first example establishes the relevant state.",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "SQL Server Health Checks",
+        "SQL Server Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Health Checks within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Health Checks fits”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "SQL Server Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Health Checks in practice”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Health Checks”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Health Checks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Finds the bottleneck",
+        "SQL Server Health Checks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Health Checks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Health Checks means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Health Checks fits”?",
+      "options": [
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting.",
+        "Prevents disk full",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Health Checks in practice”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Health Checks”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The first example establishes the relevant state.",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "SQL Server Health Checks",
+        "SQL Server Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Health Checks within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Health Checks fits”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "SQL Server Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Health Checks in practice”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Health Checks”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Health Checks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Finds the bottleneck",
+        "SQL Server Health Checks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Health Checks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Health Checks means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Health Checks fits”?",
+      "options": [
+        "The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting.",
+        "Prevents disk full",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Health Checks alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Health Checks in practice”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Health Checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Health Checks”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "The first example establishes the relevant state.",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Health Checks is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

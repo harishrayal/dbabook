@@ -182,6 +182,312 @@ FROM   sys.dm_server_services;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Decide before you click setup”?",
+      "options": [
+        "Sizing is a workload exercise: 16 GB+ for anything production",
+        "Every decision made during a rushed install becomes a migration project later.",
+        "Core count matters more than speed for OLTP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every decision made during a rushed install becomes a migration project later. Settle these first:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Platform requirements”?",
+      "options": [
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:",
+        "Windows-only versus mixed changes how every application connects",
+        "The first SQL logins created during setup must be named, not shared"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts and permissions”?",
+      "options": [
+        "The first SQL logins created during setup must be named, not shared",
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:",
+        "Setup needs enough privilege to create services, write registry keys, and format nothing else — beyond that, everything should be least privilege:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Setup needs enough privilege to create services, write registry keys, and format nothing else — beyond that, everything should be least privilege:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pre-flight checks”?",
+      "options": [
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Run these before the maintenance window, not during it:",
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Run these before the maintenance window, not during it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running the install”?",
+      "options": [
+        "With decisions made and checks passed, the mechanics are straightforward — discipline matters more than technique:",
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Match the OS to the SQL version's support matrix — never guess"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “With decisions made and checks passed, the mechanics are straightforward — discipline matters more than technique:”"
+    },
+    {
+      "question": "In the “Decide before you click setup” table, what is listed for “Version and edition” under “Why it must be early”?",
+      "options": [
+        "Itanium and x86 are long gone",
+        "Disconnected servers need the prerequisites staged offline",
+        "Fixes feature set, limits, and licence cost (see ch05-01, ch05-02)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Version and edition” as “Fixes feature set, limits, and licence cost (see ch05-01, ch05-02)”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Platform requirements”?",
+      "options": [
+        "Job steps that touch the domain need a domain account or a proxy",
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Default virtual account is fine on a single server; use a domain account when accessing domain resources (linked servers, file shares)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service management unless stated otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts and permissions”?",
+      "options": [
+        "Service account passwords are a classic outage: a domain policy forces rotation, the service cannot start on reboot, and the database is offline at boot.",
+        "Disconnected servers need the prerequisites staged offline",
+        "Core count matters more than speed for OLTP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service account passwords are a classic outage: a domain policy forces rotation, the service cannot start on reboot, and the database is offline at boot. Either use managed virtual accounts or integrate with Group Managed Service Accounts (gMSA) where the environment supports them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pre-flight checks”?",
+      "options": [
+        "Core count matters more than speed for OLTP",
+        "Sizing is a workload exercise: 16 GB+ for anything production",
+        "The last line lists instances already installed — the fastest way to avoid a surprise name clash."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The last line lists instances already installed — the fastest way to avoid a surprise name clash. Also confirm: no pending reboot, correct time zone, firewall rules planned, and service accounts created with passwords that do not expire unexpectedly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running the install”?",
+      "options": [
+        "Data, log, tempdb, and backups each need their own capacity plan",
+        "An installation is not finished when setup shows “Succeeded” — it is finished when a remote client connects, a backup restores somewhere else, and the configuration values are…",
+        "Sizing is a workload exercise: 16 GB+ for anything production"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An installation is not finished when setup shows “Succeeded” — it is finished when a remote client connects, a backup restores somewhere else, and the configuration values are recorded.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Decide before you click setup”?",
+      "options": [
+        "Sizing is a workload exercise: 16 GB+ for anything production",
+        "Every decision made during a rushed install becomes a migration project later.",
+        "Core count matters more than speed for OLTP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every decision made during a rushed install becomes a migration project later. Settle these first:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Platform requirements”?",
+      "options": [
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:",
+        "Windows-only versus mixed changes how every application connects",
+        "The first SQL logins created during setup must be named, not shared"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts and permissions”?",
+      "options": [
+        "The first SQL logins created during setup must be named, not shared",
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:",
+        "Setup needs enough privilege to create services, write registry keys, and format nothing else — beyond that, everything should be least privilege:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Setup needs enough privilege to create services, write registry keys, and format nothing else — beyond that, everything should be least privilege:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pre-flight checks”?",
+      "options": [
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Run these before the maintenance window, not during it:",
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Run these before the maintenance window, not during it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running the install”?",
+      "options": [
+        "With decisions made and checks passed, the mechanics are straightforward — discipline matters more than technique:",
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Match the OS to the SQL version's support matrix — never guess"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “With decisions made and checks passed, the mechanics are straightforward — discipline matters more than technique:”"
+    },
+    {
+      "question": "In the “Decide before you click setup” table, what is listed for “Version and edition” under “Why it must be early”?",
+      "options": [
+        "Itanium and x86 are long gone",
+        "Disconnected servers need the prerequisites staged offline",
+        "Fixes feature set, limits, and licence cost (see ch05-01, ch05-02)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Version and edition” as “Fixes feature set, limits, and licence cost (see ch05-01, ch05-02)”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Platform requirements”?",
+      "options": [
+        "Job steps that touch the domain need a domain account or a proxy",
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Default virtual account is fine on a single server; use a domain account when accessing domain resources (linked servers, file shares)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service management unless stated otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts and permissions”?",
+      "options": [
+        "Service account passwords are a classic outage: a domain policy forces rotation, the service cannot start on reboot, and the database is offline at boot.",
+        "Disconnected servers need the prerequisites staged offline",
+        "Core count matters more than speed for OLTP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service account passwords are a classic outage: a domain policy forces rotation, the service cannot start on reboot, and the database is offline at boot. Either use managed virtual accounts or integrate with Group Managed Service Accounts (gMSA) where the environment supports them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pre-flight checks”?",
+      "options": [
+        "Core count matters more than speed for OLTP",
+        "Sizing is a workload exercise: 16 GB+ for anything production",
+        "The last line lists instances already installed — the fastest way to avoid a surprise name clash."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The last line lists instances already installed — the fastest way to avoid a surprise name clash. Also confirm: no pending reboot, correct time zone, firewall rules planned, and service accounts created with passwords that do not expire unexpectedly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running the install”?",
+      "options": [
+        "Data, log, tempdb, and backups each need their own capacity plan",
+        "An installation is not finished when setup shows “Succeeded” — it is finished when a remote client connects, a backup restores somewhere else, and the configuration values are…",
+        "Sizing is a workload exercise: 16 GB+ for anything production"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An installation is not finished when setup shows “Succeeded” — it is finished when a remote client connects, a backup restores somewhere else, and the configuration values are recorded.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Decide before you click setup”?",
+      "options": [
+        "Sizing is a workload exercise: 16 GB+ for anything production",
+        "Every decision made during a rushed install becomes a migration project later.",
+        "Core count matters more than speed for OLTP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every decision made during a rushed install becomes a migration project later. Settle these first:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Platform requirements”?",
+      "options": [
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:",
+        "Windows-only versus mixed changes how every application connects",
+        "The first SQL logins created during setup must be named, not shared"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts and permissions”?",
+      "options": [
+        "The first SQL logins created during setup must be named, not shared",
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:",
+        "Setup needs enough privilege to create services, write registry keys, and format nothing else — beyond that, everything should be least privilege:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Setup needs enough privilege to create services, write registry keys, and format nothing else — beyond that, everything should be least privilege:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pre-flight checks”?",
+      "options": [
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Run these before the maintenance window, not during it:",
+        "Requirements vary by version — always confirm against the official system requirements for the release you are installing — but the shape of them is stable:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Run these before the maintenance window, not during it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running the install”?",
+      "options": [
+        "With decisions made and checks passed, the mechanics are straightforward — discipline matters more than technique:",
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Match the OS to the SQL version's support matrix — never guess"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “With decisions made and checks passed, the mechanics are straightforward — discipline matters more than technique:”"
+    },
+    {
+      "question": "In the “Decide before you click setup” table, what is listed for “Version and edition” under “Why it must be early”?",
+      "options": [
+        "Itanium and x86 are long gone",
+        "Disconnected servers need the prerequisites staged offline",
+        "Fixes feature set, limits, and licence cost (see ch05-01, ch05-02)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Version and edition” as “Fixes feature set, limits, and licence cost (see ch05-01, ch05-02)”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Platform requirements”?",
+      "options": [
+        "Job steps that touch the domain need a domain account or a proxy",
+        "Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service…",
+        "Default virtual account is fine on a single server; use a domain account when accessing domain resources (linked servers, file shares)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Linux is a first-class platform from SQL Server 2017 onwards (RHEL, Ubuntu, SUSE) with the same engine and mostly the same DMVs — but this roadmap assumes Windows service management unless stated otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Accounts and permissions”?",
+      "options": [
+        "Service account passwords are a classic outage: a domain policy forces rotation, the service cannot start on reboot, and the database is offline at boot.",
+        "Disconnected servers need the prerequisites staged offline",
+        "Core count matters more than speed for OLTP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Service account passwords are a classic outage: a domain policy forces rotation, the service cannot start on reboot, and the database is offline at boot. Either use managed virtual accounts or integrate with Group Managed Service Accounts (gMSA) where the environment supports them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pre-flight checks”?",
+      "options": [
+        "Core count matters more than speed for OLTP",
+        "Sizing is a workload exercise: 16 GB+ for anything production",
+        "The last line lists instances already installed — the fastest way to avoid a surprise name clash."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The last line lists instances already installed — the fastest way to avoid a surprise name clash. Also confirm: no pending reboot, correct time zone, firewall rules planned, and service accounts created with passwords that do not expire unexpectedly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running the install”?",
+      "options": [
+        "Data, log, tempdb, and backups each need their own capacity plan",
+        "An installation is not finished when setup shows “Succeeded” — it is finished when a remote client connects, a backup restores somewhere else, and the configuration values are…",
+        "Sizing is a workload exercise: 16 GB+ for anything production"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An installation is not finished when setup shows “Succeeded” — it is finished when a remote client connects, a backup restores somewhere else, and the configuration values are recorded.”"
+    }
+  ],
   takeaways: [
     "Decide edition, instance name, collation, paths, accounts, and auth mode before setup runs",
     "Confirm OS, framework, and hardware against the official requirements for your version",

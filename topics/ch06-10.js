@@ -162,6 +162,312 @@ Use ALTER DATABASE ... MODIFY FILE to change the catalogued path, take the datab
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it.",
+        "Transaction Log Growth"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Growth within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Growth fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Data file growth and log file growth behave differently.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Growth in practice”?",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Growth”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Growth. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Growth means”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Growth fits”?",
+      "options": [
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Preferred — predictable",
+        "The diagram below places Transaction Log Growth alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Growth alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Growth in practice”?",
+      "options": [
+        "System objects, boot information",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Growth:",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Growth:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Growth”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it.",
+        "Transaction Log Growth"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Growth within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Growth fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Data file growth and log file growth behave differently.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Growth in practice”?",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Growth”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Growth. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Growth means”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Growth fits”?",
+      "options": [
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Preferred — predictable",
+        "The diagram below places Transaction Log Growth alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Growth alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Growth in practice”?",
+      "options": [
+        "System objects, boot information",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Growth:",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Growth:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Growth”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it.",
+        "Transaction Log Growth"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Transaction Log Growth within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Growth fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Data file growth and log file growth behave differently.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Growth in practice”?",
+      "options": [
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Preferred — predictable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Growth”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Transaction Log Growth. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Transaction Log Growth means”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Transaction Log Growth fits”?",
+      "options": [
+        "With Transaction Log Growth, prefer measured, reversible changes.",
+        "Preferred — predictable",
+        "The diagram below places Transaction Log Growth alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Transaction Log Growth alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction Log Growth in practice”?",
+      "options": [
+        "System objects, boot information",
+        "The following comparison captures the distinctions that matter most when working with Transaction Log Growth:",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Transaction Log Growth:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Transaction Log Growth”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Avoid on large files",
+        "Only with monitoring",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    }
+  ],
   takeaways: [
     "Transaction Log Growth is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

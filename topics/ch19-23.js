@@ -183,6 +183,312 @@ Restore service first using the safest tested mitigation, communicate status at 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Communication is part of the job.",
+        "Escalation Procedures",
+        "Use the following as a starting point when investigating Escalation Procedures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Escalation Procedures within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Escalation Procedures fits”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Escalation Procedures",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation Procedures in practice”?",
+      "options": [
+        "Communication is part of the job.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Escalation Procedures”?",
+      "options": [
+        "Escalation Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Escalation Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Escalation Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Escalation Procedures alongside the core concepts of production incident management.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Escalation Procedures"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Escalation Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Escalation Procedures means”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Communication is part of the job.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Escalation Procedures fits”?",
+      "options": [
+        "The diagram below places Escalation Procedures alongside the core concepts of production incident management.",
+        "Prioritisation weighs impact and urgency.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Escalation Procedures alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation Procedures in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Escalation Procedures:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Escalation Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Escalation Procedures”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "The first example establishes the relevant state.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Communication is part of the job.",
+        "Escalation Procedures",
+        "Use the following as a starting point when investigating Escalation Procedures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Escalation Procedures within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Escalation Procedures fits”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Escalation Procedures",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation Procedures in practice”?",
+      "options": [
+        "Communication is part of the job.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Escalation Procedures”?",
+      "options": [
+        "Escalation Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Escalation Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Escalation Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Escalation Procedures alongside the core concepts of production incident management.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Escalation Procedures"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Escalation Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Escalation Procedures means”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Communication is part of the job.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Escalation Procedures fits”?",
+      "options": [
+        "The diagram below places Escalation Procedures alongside the core concepts of production incident management.",
+        "Prioritisation weighs impact and urgency.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Escalation Procedures alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation Procedures in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Escalation Procedures:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Escalation Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Escalation Procedures”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "The first example establishes the relevant state.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Communication is part of the job.",
+        "Escalation Procedures",
+        "Use the following as a starting point when investigating Escalation Procedures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Escalation Procedures within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Escalation Procedures fits”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Escalation Procedures",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation Procedures in practice”?",
+      "options": [
+        "Communication is part of the job.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Escalation Procedures”?",
+      "options": [
+        "Escalation Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Theory becomes useful when you can apply it.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Escalation Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Escalation Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Escalation Procedures alongside the core concepts of production incident management.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Escalation Procedures"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Escalation Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Escalation Procedures means”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Communication is part of the job.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Escalation Procedures fits”?",
+      "options": [
+        "The diagram below places Escalation Procedures alongside the core concepts of production incident management.",
+        "Prioritisation weighs impact and urgency.",
+        "Immediate page, continuous updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Escalation Procedures alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Escalation Procedures in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Escalation Procedures:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Escalation Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Escalation Procedures”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "The first example establishes the relevant state.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Escalation Procedures is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

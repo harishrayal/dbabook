@@ -168,6 +168,312 @@ Get-Service MSSQLSERVER, SQLSERVERAGENT | Format-Table Status, StartType, Name</
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The core service family”?",
+      "options": [
+        "A default SQL Server installation registers these Windows services.",
+        "SQLAgent$INST2",
+        "SQLAgent$PROD"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A default SQL Server installation registers these Windows services. Each has a distinct failure mode, and mixing them up wastes hours during an incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server services are _____: a named instance gets its own service names with the instance name embedded, so multiple instances coexist without collision.”",
+      "options": [
+        "SQL Server Analysis/Reporting/Integration",
+        "Agent has no port",
+        "instance-aware"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server services are instance-aware: a named instance gets its own service names with the instance name embedded, so multiple instances coexist without collision.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ports, logs, and dependencies”?",
+      "options": [
+        "Optional BI stack services — never required for the Engine",
+        "Each service leaves evidence in a different place.",
+        "Hosts external language extensions (R/Python) — optional"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each service leaves evidence in a different place. Knowing the map saves you from reading the wrong log under pressure:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server services should be controlled through _____, not the generic Services console.”",
+      "options": [
+        "SQL Server Configuration Manager",
+        "Agent has no port",
+        "Browser only matters for named instances using dynamic ports"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server services should be controlled through SQL Server Configuration Manager, not the generic Services console. Configuration Manager knows about registry paths, firewall exceptions, and the ACLs the Engine needs on its data folders; Services.msc only flips the service state and can leave the rest behind.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing a service that will not start”?",
+      "options": [
+        "instance-aware",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'.",
+        "When a SQL service fails to start, read evidence in this order:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a SQL service fails to start, read evidence in this order:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL services appear when things break”?",
+      "options": [
+        "SQLSERVERAGENT",
+        "Three evidence sources, in the order a DBA should read them:",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three evidence sources, in the order a DBA should read them:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The core service family”?",
+      "options": [
+        "The Engine and Agent are the two that matter at 3 AM: without the Engine nothing connects; without the Agent your backups, log-shipping, and maintenance jobs silently never run —…",
+        "none",
+        "SQL Server Configuration Manager"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The Engine and Agent are the two that matter at 3 AM: without the Engine nothing connects; without the Agent your backups, log-shipping, and maintenance jobs silently never run — which you discover at restore time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance-aware service naming”?",
+      "options": [
+        "MSSQLSERVER",
+        "none",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'. Named instances also default to dynamic ports, which is where the Browser service earns its keep: it listens on UDP 1434 and tells clients which TCP port the instance is currently using.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two operational consequences: the _____ — job failures are never a firewall problem — and the Browser only matters for named instances using dynamic ports; if you fix named…”",
+      "options": [
+        "Service state and error:",
+        "Agent has no port",
+        "Prefer graceful stops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two operational consequences: the Agent has no port — job failures are never a firewall problem — and the Browser only matters for named instances using dynamic ports; if you fix named instances to a static port, Browser can be disabled to shrink the attack surface.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Classic start failures and their signatures: _____ (process terminated — read the SQL error log for the real reason), error 1053 (did not respond in time — often a slow recovery of a large…”",
+      "options": [
+        "error 1067",
+        "Prefer graceful stops",
+        "Service state and error:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Classic start failures and their signatures: error 1067 (process terminated — read the SQL error log for the real reason), error 1053 (did not respond in time — often a slow recovery of a large tempdb), and port already in use (another instance or a stale process holds 1433).”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The core service family”?",
+      "options": [
+        "A default SQL Server installation registers these Windows services.",
+        "SQLAgent$INST2",
+        "SQLAgent$PROD"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A default SQL Server installation registers these Windows services. Each has a distinct failure mode, and mixing them up wastes hours during an incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server services are _____: a named instance gets its own service names with the instance name embedded, so multiple instances coexist without collision.”",
+      "options": [
+        "SQL Server Analysis/Reporting/Integration",
+        "Agent has no port",
+        "instance-aware"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server services are instance-aware: a named instance gets its own service names with the instance name embedded, so multiple instances coexist without collision.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ports, logs, and dependencies”?",
+      "options": [
+        "Optional BI stack services — never required for the Engine",
+        "Each service leaves evidence in a different place.",
+        "Hosts external language extensions (R/Python) — optional"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each service leaves evidence in a different place. Knowing the map saves you from reading the wrong log under pressure:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server services should be controlled through _____, not the generic Services console.”",
+      "options": [
+        "SQL Server Configuration Manager",
+        "Agent has no port",
+        "Browser only matters for named instances using dynamic ports"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server services should be controlled through SQL Server Configuration Manager, not the generic Services console. Configuration Manager knows about registry paths, firewall exceptions, and the ACLs the Engine needs on its data folders; Services.msc only flips the service state and can leave the rest behind.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing a service that will not start”?",
+      "options": [
+        "instance-aware",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'.",
+        "When a SQL service fails to start, read evidence in this order:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a SQL service fails to start, read evidence in this order:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL services appear when things break”?",
+      "options": [
+        "SQLSERVERAGENT",
+        "Three evidence sources, in the order a DBA should read them:",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three evidence sources, in the order a DBA should read them:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The core service family”?",
+      "options": [
+        "The Engine and Agent are the two that matter at 3 AM: without the Engine nothing connects; without the Agent your backups, log-shipping, and maintenance jobs silently never run —…",
+        "none",
+        "SQL Server Configuration Manager"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The Engine and Agent are the two that matter at 3 AM: without the Engine nothing connects; without the Agent your backups, log-shipping, and maintenance jobs silently never run — which you discover at restore time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance-aware service naming”?",
+      "options": [
+        "MSSQLSERVER",
+        "none",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'. Named instances also default to dynamic ports, which is where the Browser service earns its keep: it listens on UDP 1434 and tells clients which TCP port the instance is currently using.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two operational consequences: the _____ — job failures are never a firewall problem — and the Browser only matters for named instances using dynamic ports; if you fix named…”",
+      "options": [
+        "Service state and error:",
+        "Agent has no port",
+        "Prefer graceful stops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two operational consequences: the Agent has no port — job failures are never a firewall problem — and the Browser only matters for named instances using dynamic ports; if you fix named instances to a static port, Browser can be disabled to shrink the attack surface.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Classic start failures and their signatures: _____ (process terminated — read the SQL error log for the real reason), error 1053 (did not respond in time — often a slow recovery of a large…”",
+      "options": [
+        "error 1067",
+        "Prefer graceful stops",
+        "Service state and error:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Classic start failures and their signatures: error 1067 (process terminated — read the SQL error log for the real reason), error 1053 (did not respond in time — often a slow recovery of a large tempdb), and port already in use (another instance or a stale process holds 1433).”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The core service family”?",
+      "options": [
+        "A default SQL Server installation registers these Windows services.",
+        "SQLAgent$INST2",
+        "SQLAgent$PROD"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A default SQL Server installation registers these Windows services. Each has a distinct failure mode, and mixing them up wastes hours during an incident.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server services are _____: a named instance gets its own service names with the instance name embedded, so multiple instances coexist without collision.”",
+      "options": [
+        "SQL Server Analysis/Reporting/Integration",
+        "Agent has no port",
+        "instance-aware"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server services are instance-aware: a named instance gets its own service names with the instance name embedded, so multiple instances coexist without collision.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Ports, logs, and dependencies”?",
+      "options": [
+        "Optional BI stack services — never required for the Engine",
+        "Each service leaves evidence in a different place.",
+        "Hosts external language extensions (R/Python) — optional"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each service leaves evidence in a different place. Knowing the map saves you from reading the wrong log under pressure:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server services should be controlled through _____, not the generic Services console.”",
+      "options": [
+        "SQL Server Configuration Manager",
+        "Agent has no port",
+        "Browser only matters for named instances using dynamic ports"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server services should be controlled through SQL Server Configuration Manager, not the generic Services console. Configuration Manager knows about registry paths, firewall exceptions, and the ACLs the Engine needs on its data folders; Services.msc only flips the service state and can leave the rest behind.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Diagnosing a service that will not start”?",
+      "options": [
+        "instance-aware",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'.",
+        "When a SQL service fails to start, read evidence in this order:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When a SQL service fails to start, read evidence in this order:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL services appear when things break”?",
+      "options": [
+        "SQLSERVERAGENT",
+        "Three evidence sources, in the order a DBA should read them:",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Three evidence sources, in the order a DBA should read them:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The core service family”?",
+      "options": [
+        "The Engine and Agent are the two that matter at 3 AM: without the Engine nothing connects; without the Agent your backups, log-shipping, and maintenance jobs silently never run —…",
+        "none",
+        "SQL Server Configuration Manager"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The Engine and Agent are the two that matter at 3 AM: without the Engine nothing connects; without the Agent your backups, log-shipping, and maintenance jobs silently never run — which you discover at restore time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance-aware service naming”?",
+      "options": [
+        "MSSQLSERVER",
+        "none",
+        "The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The $ is literal in the service name — in PowerShell quote the name: Get-Service 'MSSQL$INST2'. Named instances also default to dynamic ports, which is where the Browser service earns its keep: it listens on UDP 1434 and tells clients which TCP port the instance is currently using.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two operational consequences: the _____ — job failures are never a firewall problem — and the Browser only matters for named instances using dynamic ports; if you fix named…”",
+      "options": [
+        "Service state and error:",
+        "Agent has no port",
+        "Prefer graceful stops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two operational consequences: the Agent has no port — job failures are never a firewall problem — and the Browser only matters for named instances using dynamic ports; if you fix named instances to a static port, Browser can be disabled to shrink the attack surface.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Classic start failures and their signatures: _____ (process terminated — read the SQL error log for the real reason), error 1053 (did not respond in time — often a slow recovery of a large…”",
+      "options": [
+        "error 1067",
+        "Prefer graceful stops",
+        "Service state and error:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Classic start failures and their signatures: error 1067 (process terminated — read the SQL error log for the real reason), error 1053 (did not respond in time — often a slow recovery of a large tempdb), and port already in use (another instance or a stale process holds 1433).”"
+    }
+  ],
   takeaways: [
     "SQL Server is a service family: Engine (connectivity), Agent (jobs), Browser (port lookup), plus optional extras",
     "Services are instance-aware — MSSQL$INST2 / SQLAgent$INST2 for named instances",

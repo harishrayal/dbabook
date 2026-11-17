@@ -171,6 +171,312 @@ ORDER  BY avg_cpu_ticks DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is one running installation of the database engine with its own system databases, logins, configuration, and memory.”",
+      "options": [
+        "SQL Server instance",
+        "what",
+        "how the bytes move"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A SQL Server instance is one running installation of the database engine with its own system databases, logins, configuration, and memory. A server can host several instances side by side; each is an independent little universe. Clients — applications, drivers, SSMS — never touch files directly. They open a connection over TDS (Tabular Data Stream) and speak SQL; the engine does everything else.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when you execute a query”?",
+      "options": [
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Changing it changes all future databases",
+        "Understanding the request lifecycle explains most “why is it slow” conversations:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Understanding the request lifecycle explains most “why is it slow” conversations:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Data is organised into _____ — named buckets of files that tables and indexes are placed into.”",
+      "options": [
+        "Connection",
+        "filegroups",
+        "how the bytes move"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Data is organised into filegroups — named buckets of files that tables and indexes are placed into. Splitting data across filegroups on separate volumes can spread I/O; putting archival tables on their own filegroup lets you back them up independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the DBA monitors at the instance level”?",
+      "options": [
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Changing it changes all future databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding? The DMVs answer these questions in seconds:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance, engine, and client”?",
+      "options": [
+        "Rebuilt empty at every restart; sized and placed deliberately",
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Architecturally the engine splits into two halves that work together on every statement:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Architecturally the engine splits into two halves that work together on every statement:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when you execute a query”?",
+      "options": [
+        "Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.",
+        "A cached plan means the second execution of a query skips parsing and optimisation.",
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A cached plan means the second execution of a query skips parsing and optimisation. That is why parameterised queries beat string-concatenated ones: the same shape hits the cache, instead of filling it with thousands of near-identical plans.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Files, filegroups, and system databases”?",
+      "options": [
+        "Every instance also ships with system databases.",
+        "Changing it changes all future databases",
+        "Back it up — losing it loses your backup schedule and history"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every instance also ships with system databases. Learn these — several recovery scenarios depend on knowing their roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the DBA monitors at the instance level”?",
+      "options": [
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Common pitfalls:",
+        "Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.”"
+    },
+    {
+      "question": "In the “Files, filegroups, and system databases” table, what is listed for “master” under “DBA implication”?",
+      "options": [
+        "TDS",
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “master” as “Back up on every meaningful change; restore before anything else after a failure”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ running every database on the system drive; leaving max server memory at its default on a shared server; installing default instances with…”",
+      "options": [
+        "Common pitfalls:",
+        "master",
+        "model"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: running every database on the system drive; leaving max server memory at its default on a shared server; installing default instances with mixed authentication and a blank sa password; and restarting the service as a “fix” without ever reading the error log for the actual fault.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is one running installation of the database engine with its own system databases, logins, configuration, and memory.”",
+      "options": [
+        "SQL Server instance",
+        "what",
+        "how the bytes move"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A SQL Server instance is one running installation of the database engine with its own system databases, logins, configuration, and memory. A server can host several instances side by side; each is an independent little universe. Clients — applications, drivers, SSMS — never touch files directly. They open a connection over TDS (Tabular Data Stream) and speak SQL; the engine does everything else.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when you execute a query”?",
+      "options": [
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Changing it changes all future databases",
+        "Understanding the request lifecycle explains most “why is it slow” conversations:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Understanding the request lifecycle explains most “why is it slow” conversations:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Data is organised into _____ — named buckets of files that tables and indexes are placed into.”",
+      "options": [
+        "Connection",
+        "filegroups",
+        "how the bytes move"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Data is organised into filegroups — named buckets of files that tables and indexes are placed into. Splitting data across filegroups on separate volumes can spread I/O; putting archival tables on their own filegroup lets you back them up independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the DBA monitors at the instance level”?",
+      "options": [
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Changing it changes all future databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding? The DMVs answer these questions in seconds:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance, engine, and client”?",
+      "options": [
+        "Rebuilt empty at every restart; sized and placed deliberately",
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Architecturally the engine splits into two halves that work together on every statement:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Architecturally the engine splits into two halves that work together on every statement:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when you execute a query”?",
+      "options": [
+        "Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.",
+        "A cached plan means the second execution of a query skips parsing and optimisation.",
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A cached plan means the second execution of a query skips parsing and optimisation. That is why parameterised queries beat string-concatenated ones: the same shape hits the cache, instead of filling it with thousands of near-identical plans.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Files, filegroups, and system databases”?",
+      "options": [
+        "Every instance also ships with system databases.",
+        "Changing it changes all future databases",
+        "Back it up — losing it loses your backup schedule and history"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every instance also ships with system databases. Learn these — several recovery scenarios depend on knowing their roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the DBA monitors at the instance level”?",
+      "options": [
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Common pitfalls:",
+        "Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.”"
+    },
+    {
+      "question": "In the “Files, filegroups, and system databases” table, what is listed for “master” under “DBA implication”?",
+      "options": [
+        "TDS",
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “master” as “Back up on every meaningful change; restore before anything else after a failure”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ running every database on the system drive; leaving max server memory at its default on a shared server; installing default instances with…”",
+      "options": [
+        "Common pitfalls:",
+        "master",
+        "model"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: running every database on the system drive; leaving max server memory at its default on a shared server; installing default instances with mixed authentication and a blank sa password; and restarting the service as a “fix” without ever reading the error log for the actual fault.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is one running installation of the database engine with its own system databases, logins, configuration, and memory.”",
+      "options": [
+        "SQL Server instance",
+        "what",
+        "how the bytes move"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A SQL Server instance is one running installation of the database engine with its own system databases, logins, configuration, and memory. A server can host several instances side by side; each is an independent little universe. Clients — applications, drivers, SSMS — never touch files directly. They open a connection over TDS (Tabular Data Stream) and speak SQL; the engine does everything else.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when you execute a query”?",
+      "options": [
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Changing it changes all future databases",
+        "Understanding the request lifecycle explains most “why is it slow” conversations:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Understanding the request lifecycle explains most “why is it slow” conversations:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Data is organised into _____ — named buckets of files that tables and indexes are placed into.”",
+      "options": [
+        "Connection",
+        "filegroups",
+        "how the bytes move"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Data is organised into filegroups — named buckets of files that tables and indexes are placed into. Splitting data across filegroups on separate volumes can spread I/O; putting archival tables on their own filegroup lets you back them up independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the DBA monitors at the instance level”?",
+      "options": [
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Changing it changes all future databases"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding? The DMVs answer these questions in seconds:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Instance, engine, and client”?",
+      "options": [
+        "Rebuilt empty at every restart; sized and placed deliberately",
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Architecturally the engine splits into two halves that work together on every statement:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Architecturally the engine splits into two halves that work together on every statement:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when you execute a query”?",
+      "options": [
+        "Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.",
+        "A cached plan means the second execution of a query skips parsing and optimisation.",
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A cached plan means the second execution of a query skips parsing and optimisation. That is why parameterised queries beat string-concatenated ones: the same shape hits the cache, instead of filling it with thousands of near-identical plans.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Files, filegroups, and system databases”?",
+      "options": [
+        "Every instance also ships with system databases.",
+        "Changing it changes all future databases",
+        "Back it up — losing it loses your backup schedule and history"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every instance also ships with system databases. Learn these — several recovery scenarios depend on knowing their roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the DBA monitors at the instance level”?",
+      "options": [
+        "Before tuning any single query, the DBA checks the instance: is it running, is memory sane, is the log healthy, are jobs succeeding?",
+        "Common pitfalls:",
+        "Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.”"
+    },
+    {
+      "question": "In the “Files, filegroups, and system databases” table, what is listed for “master” under “DBA implication”?",
+      "options": [
+        "TDS",
+        "Back up on every meaningful change; restore before anything else after a failure",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “master” as “Back up on every meaningful change; restore before anything else after a failure”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ running every database on the system drive; leaving max server memory at its default on a shared server; installing default instances with…”",
+      "options": [
+        "Common pitfalls:",
+        "master",
+        "model"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: running every database on the system drive; leaving max server memory at its default on a shared server; installing default instances with mixed authentication and a blank sa password; and restarting the service as a “fix” without ever reading the error log for the actual fault.”"
+    }
+  ],
   takeaways: [
     "A SQL Server instance is one engine with its own system databases, logins, and memory; clients connect over TDS",
     "The relational engine plans and secures queries; the storage engine moves pages, locks rows, and writes the log",

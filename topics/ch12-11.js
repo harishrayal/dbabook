@@ -191,6 +191,312 @@ A clustered index defines the table's physical row order and there is one per ta
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Fragmentation",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Index Fragmentation within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Fragmentation fits”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Next, verify the result and capture a baseline.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Fragmentation in practice”?",
+      "options": [
+        "Actual plan",
+        "Query stats",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Fragmentation”?",
+      "options": [
+        "Actual plan",
+        "Theory becomes useful when you can apply it.",
+        "With Index Fragmentation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Fragmentation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Missing index suggestions are hints, not commands.",
+        "Index Fragmentation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "With Index Fragmentation, prefer measured, reversible changes.",
+        "Index Fragmentation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Index Fragmentation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Fragmentation means”?",
+      "options": [
+        "Index Fragmentation",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Fragmentation fits”?",
+      "options": [
+        "The diagram below places Index Fragmentation alongside the core concepts of SQL Server performance tuning.",
+        "Query stats",
+        "Page life expectancy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Index Fragmentation alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Fragmentation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Index Fragmentation.",
+        "The following comparison captures the distinctions that matter most when working with Index Fragmentation:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Fragmentation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Fragmentation”?",
+      "options": [
+        "Use the following as a starting point when investigating Index Fragmentation.",
+        "The first example establishes the relevant state.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Fragmentation",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Index Fragmentation within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Fragmentation fits”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Next, verify the result and capture a baseline.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Fragmentation in practice”?",
+      "options": [
+        "Actual plan",
+        "Query stats",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Fragmentation”?",
+      "options": [
+        "Actual plan",
+        "Theory becomes useful when you can apply it.",
+        "With Index Fragmentation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Fragmentation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Missing index suggestions are hints, not commands.",
+        "Index Fragmentation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "With Index Fragmentation, prefer measured, reversible changes.",
+        "Index Fragmentation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Index Fragmentation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Fragmentation means”?",
+      "options": [
+        "Index Fragmentation",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Fragmentation fits”?",
+      "options": [
+        "The diagram below places Index Fragmentation alongside the core concepts of SQL Server performance tuning.",
+        "Query stats",
+        "Page life expectancy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Index Fragmentation alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Fragmentation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Index Fragmentation.",
+        "The following comparison captures the distinctions that matter most when working with Index Fragmentation:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Fragmentation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Fragmentation”?",
+      "options": [
+        "Use the following as a starting point when investigating Index Fragmentation.",
+        "The first example establishes the relevant state.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Index Fragmentation",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Index Fragmentation within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Fragmentation fits”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Next, verify the result and capture a baseline.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Fragmentation in practice”?",
+      "options": [
+        "Actual plan",
+        "Query stats",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness. Options include OPTIMIZE FOR, RECOMPILE or parameterisation strategies, each with trade-offs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Fragmentation”?",
+      "options": [
+        "Actual plan",
+        "Theory becomes useful when you can apply it.",
+        "With Index Fragmentation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Index Fragmentation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Missing index suggestions are hints, not commands.",
+        "Index Fragmentation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "With Index Fragmentation, prefer measured, reversible changes.",
+        "Index Fragmentation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Index Fragmentation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Index Fragmentation means”?",
+      "options": [
+        "Index Fragmentation",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Page life expectancy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Index Fragmentation fits”?",
+      "options": [
+        "The diagram below places Index Fragmentation alongside the core concepts of SQL Server performance tuning.",
+        "Query stats",
+        "Page life expectancy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Index Fragmentation alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index Fragmentation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Index Fragmentation.",
+        "The following comparison captures the distinctions that matter most when working with Index Fragmentation:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Index Fragmentation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Index Fragmentation”?",
+      "options": [
+        "Use the following as a starting point when investigating Index Fragmentation.",
+        "The first example establishes the relevant state.",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Index Fragmentation is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

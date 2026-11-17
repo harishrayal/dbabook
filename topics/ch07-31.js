@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The full backup",
+        "Production Backup Strategy"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Production Backup Strategy within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Backup Strategy fits”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "Backups are the only true protection against data loss.",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Backup Strategy in practice”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Recovery models control log behaviour.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Backup Strategy”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Backup Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Production Backup Strategy",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Production Backup Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Backup Strategy means”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "With Production Backup Strategy, prefer measured, reversible changes.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Backup Strategy fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places Production Backup Strategy alongside the core concepts of backup and recovery strategy.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Production Backup Strategy alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Backup Strategy in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Backup Strategy:",
+        "Limited during bulk ops",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Backup Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Backup Strategy”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The full backup",
+        "Production Backup Strategy"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Production Backup Strategy within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Backup Strategy fits”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "Backups are the only true protection against data loss.",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Backup Strategy in practice”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Recovery models control log behaviour.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Backup Strategy”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Backup Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Production Backup Strategy",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Production Backup Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Backup Strategy means”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "With Production Backup Strategy, prefer measured, reversible changes.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Backup Strategy fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places Production Backup Strategy alongside the core concepts of backup and recovery strategy.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Production Backup Strategy alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Backup Strategy in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Backup Strategy:",
+        "Limited during bulk ops",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Backup Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Backup Strategy”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "The full backup",
+        "Production Backup Strategy"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Production Backup Strategy within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Backup Strategy fits”?",
+      "options": [
+        "Full (+diff) + log chain",
+        "Backups are the only true protection against data loss.",
+        "Base full + latest diff"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Backup Strategy in practice”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Recovery models control log behaviour.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Backup Strategy”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Backup Strategy. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Production Backup Strategy",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Production Backup Strategy with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Backup Strategy means”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "With Production Backup Strategy, prefer measured, reversible changes.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Backup Strategy fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places Production Backup Strategy alongside the core concepts of backup and recovery strategy.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Production Backup Strategy alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Backup Strategy in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Backup Strategy:",
+        "Limited during bulk ops",
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Backup Strategy:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Backup Strategy”?",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Production Backup Strategy is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -178,6 +178,312 @@ It uses row versioning so readers do not take shared locks that block writers an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "This lab makes concurrency visible.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab makes concurrency visible. You will create blocking on purpose, watch sessions queue, then force a deadlock and read the graph SQL Server produces — skills that turn a panicked incident into a calm diagnosis.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Locking protects consistency; blocking is one session waiting on another's lock, and a deadlock is a cycle where each session holds what the other needs.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects consistency; blocking is one session waiting on another's lock, and a deadlock is a cycle where each session holds what the other needs. Short blocks are normal; long blocks and repeated deadlocks are incidents.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Minimal locking, dirty data",
+        "Default; writers can block readers",
+        "Open two query windows."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Open two query windows. In session A, begin a transaction and update a row without committing. In session B, try to update the same row — it will block. Query dm_exec_requests to see B's blocking_session_id pointing at A.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Minimal locking, dirty data",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Create an Extended Events session on xml_deadlock_report to capture the graph, then fix the cause: consistent access order and an index that narrows the locks taken.",
+        "If the output differs, stop and correct it before moving on.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Create an Extended Events session on xml_deadlock_report to capture the graph, then fix the cause: consistent access order and an index that narrows the locks taken. Retry to confirm the deadlocks stop.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Default; writers can block readers",
+        "Row versioning reduces blocking",
+        "Work only on a scratch database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Work only on a scratch database. You will hold transactions open across sessions, so use short timeouts and always clean up with ROLLBACK or KILL of your own test sessions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Row versioning reduces blocking",
+        "The investigation flow below is the one to memorise: detect the block, find the head blocker, inspect its statement and plan, fix the cause, then verify the queue drains.",
+        "Default; writers can block readers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The investigation flow below is the one to memorise: detect the block, find the head blocker, inspect its statement and plan, fix the cause, then verify the queue drains.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Find the head blocker: among blocked sessions, identify the one that is blocking others but is not itself blocked.",
+        "Incompatible with everything",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Find the head blocker: among blocked sessions, identify the one that is blocking others but is not itself blocked. Read its wait_type, wait_resource and statement to understand what it is holding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "This lab makes concurrency visible.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For the deadlock, make two sessions update the same two tables in opposite orders inside transactions. SQL Server detects the cycle and terminates one session with error 1205, the deadlock victim.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Work only on a scratch database.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab makes concurrency visible."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "This lab makes concurrency visible.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab makes concurrency visible. You will create blocking on purpose, watch sessions queue, then force a deadlock and read the graph SQL Server produces — skills that turn a panicked incident into a calm diagnosis.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Locking protects consistency; blocking is one session waiting on another's lock, and a deadlock is a cycle where each session holds what the other needs.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects consistency; blocking is one session waiting on another's lock, and a deadlock is a cycle where each session holds what the other needs. Short blocks are normal; long blocks and repeated deadlocks are incidents.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Minimal locking, dirty data",
+        "Default; writers can block readers",
+        "Open two query windows."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Open two query windows. In session A, begin a transaction and update a row without committing. In session B, try to update the same row — it will block. Query dm_exec_requests to see B's blocking_session_id pointing at A.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Minimal locking, dirty data",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Create an Extended Events session on xml_deadlock_report to capture the graph, then fix the cause: consistent access order and an index that narrows the locks taken.",
+        "If the output differs, stop and correct it before moving on.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Create an Extended Events session on xml_deadlock_report to capture the graph, then fix the cause: consistent access order and an index that narrows the locks taken. Retry to confirm the deadlocks stop.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Default; writers can block readers",
+        "Row versioning reduces blocking",
+        "Work only on a scratch database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Work only on a scratch database. You will hold transactions open across sessions, so use short timeouts and always clean up with ROLLBACK or KILL of your own test sessions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Row versioning reduces blocking",
+        "The investigation flow below is the one to memorise: detect the block, find the head blocker, inspect its statement and plan, fix the cause, then verify the queue drains.",
+        "Default; writers can block readers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The investigation flow below is the one to memorise: detect the block, find the head blocker, inspect its statement and plan, fix the cause, then verify the queue drains.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Find the head blocker: among blocked sessions, identify the one that is blocking others but is not itself blocked.",
+        "Incompatible with everything",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Find the head blocker: among blocked sessions, identify the one that is blocking others but is not itself blocked. Read its wait_type, wait_resource and statement to understand what it is holding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "This lab makes concurrency visible.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For the deadlock, make two sessions update the same two tables in opposite orders inside transactions. SQL Server detects the cycle and terminates one session with error 1205, the deadlock victim.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Work only on a scratch database.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab makes concurrency visible."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "This lab makes concurrency visible.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “This lab makes concurrency visible. You will create blocking on purpose, watch sessions queue, then force a deadlock and read the graph SQL Server produces — skills that turn a panicked incident into a calm diagnosis.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Locking protects consistency; blocking is one session waiting on another's lock, and a deadlock is a cycle where each session holds what the other needs.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects consistency; blocking is one session waiting on another's lock, and a deadlock is a cycle where each session holds what the other needs. Short blocks are normal; long blocks and repeated deadlocks are incidents.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Minimal locking, dirty data",
+        "Default; writers can block readers",
+        "Open two query windows."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Open two query windows. In session A, begin a transaction and update a row without committing. In session B, try to update the same row — it will block. Query dm_exec_requests to see B's blocking_session_id pointing at A.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Minimal locking, dirty data",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Create an Extended Events session on xml_deadlock_report to capture the graph, then fix the cause: consistent access order and an index that narrows the locks taken.",
+        "If the output differs, stop and correct it before moving on.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Create an Extended Events session on xml_deadlock_report to capture the graph, then fix the cause: consistent access order and an index that narrows the locks taken. Retry to confirm the deadlocks stop.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Default; writers can block readers",
+        "Row versioning reduces blocking",
+        "Work only on a scratch database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Work only on a scratch database. You will hold transactions open across sessions, so use short timeouts and always clean up with ROLLBACK or KILL of your own test sessions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Row versioning reduces blocking",
+        "The investigation flow below is the one to memorise: detect the block, find the head blocker, inspect its statement and plan, fix the cause, then verify the queue drains.",
+        "Default; writers can block readers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The investigation flow below is the one to memorise: detect the block, find the head blocker, inspect its statement and plan, fix the cause, then verify the queue drains.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Find the head blocker: among blocked sessions, identify the one that is blocking others but is not itself blocked.",
+        "Incompatible with everything",
+        "Compatible with S"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Find the head blocker: among blocked sessions, identify the one that is blocking others but is not itself blocked. Read its wait_type, wait_resource and statement to understand what it is holding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "This lab makes concurrency visible.",
+        "For the deadlock, make two sessions update the same two tables in opposite orders inside transactions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For the deadlock, make two sessions update the same two tables in opposite orders inside transactions. SQL Server detects the cycle and terminates one session with error 1205, the deadlock victim.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Work only on a scratch database.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab makes concurrency visible."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "Investigate the head blocker, not the queue of blocked sessions",
     "Short blocking is normal; long blocking and repeated deadlocks are incidents",

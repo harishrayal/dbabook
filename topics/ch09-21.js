@@ -178,6 +178,312 @@ DENY overrides GRANT at any scope — a deny on a schema blocks access even if S
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Password Policies",
+        "Password Policies sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Password Policies within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Password Policies fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Password Policies.",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Password Policies in practice”?",
+      "options": [
+        "Password Policies",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Password Policies”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Password Policies",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Password Policies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Password Policies",
+        "Password Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Password Policies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Password Policies means”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Password Policies fits”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Password Policies in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Password Policies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Password Policies”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Password Policies",
+        "Password Policies sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Password Policies within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Password Policies fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Password Policies.",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Password Policies in practice”?",
+      "options": [
+        "Password Policies",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Password Policies”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Password Policies",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Password Policies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Password Policies",
+        "Password Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Password Policies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Password Policies means”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Password Policies fits”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Password Policies in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Password Policies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Password Policies”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Password Policies",
+        "Password Policies sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Password Policies within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Password Policies fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Password Policies.",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Password Policies in practice”?",
+      "options": [
+        "Password Policies",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Password Policies”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Password Policies",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Password Policies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "Password Policies",
+        "Password Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Password Policies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Password Policies means”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Password Policies fits”?",
+      "options": [
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Password Policies in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:",
+        "The diagram below places Password Policies alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Password Policies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Password Policies”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "The following comparison captures the distinctions that matter most when working with Password Policies:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Password Policies is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

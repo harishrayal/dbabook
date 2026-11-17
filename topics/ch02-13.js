@@ -163,6 +163,312 @@ END CATCH;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ groups statements into a single logical unit: either every statement takes effect, or none does.”",
+      "options": [
+        "Set LOCK_TIMEOUT or handle deadlocks",
+        "Keep the log healthy",
+        "transaction"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A transaction groups statements into a single logical unit: either every statement takes effect, or none does. The canonical example is a money transfer — debit one account, credit another. If the second write fails after the first succeeded, money vanished. A transaction makes that outcome impossible: the two writes succeed together or roll back together.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is the summary of what a transaction guarantees.”",
+      "options": [
+        "Blocking chains",
+        "ACID",
+        "Keep the log healthy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “ACID is the summary of what a transaction guarantees. Each letter corresponds to a concrete SQL Server mechanism — knowing which one failed tells you where to look:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Isolation: the cost of sharing”?",
+      "options": [
+        "Isolation levels trade correctness anomalies against concurrency.",
+        "Version store in tempdb; no reader/writer blocking",
+        "Range locks — highest conflict, lowest concurrency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels trade correctness anomalies against concurrency. SQL Server's default, READ COMMITTED, blocks readers briefly rather than showing them uncommitted data; SNAPSHOT versions rows in tempdb so readers never block the writer.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing transactions that behave”?",
+      "options": [
+        "Common pitfalls:",
+        "Consistency",
+        "The production-safe shape of any multi-statement write: abort on error, bound the transaction, verify before committing."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The production-safe shape of any multi-statement write: abort on error, bound the transaction, verify before committing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server's default mode is _____: each statement is its own tiny transaction.”",
+      "options": [
+        "Timeouts that appear only under load",
+        "autocommit",
+        "Deadlocks (error 1205) clustering at the same time daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL Server's default mode is autocommit: each statement is its own tiny transaction. To get atomic behaviour for several statements you must declare the boundary yourself:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ and durability are carried by the log — one mechanism, two guarantees.”",
+      "options": [
+        "Atomicity",
+        "Timeouts that appear only under load",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Atomicity and durability are carried by the log — one mechanism, two guarantees. Consistency is the constraints' job: a statement that violates one fails and (inside a transaction) takes the unit down with it. Isolation is the expensive one, because it is paid continuously while transactions run concurrently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Isolation: the cost of sharing”?",
+      "options": [
+        "Durability",
+        "READ UNCOMMITTED",
+        "Practical guidance: stay at the default until a measured anomaly forces a change; avoid NOLOCK as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) —…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practical guidance: stay at the default until a measured anomaly forces a change; avoid NOLOCK as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) — prefer READ COMMITTED SNAPSHOT if read blocking is a genuine systemic issue; and keep transactions short, because locks are held until commit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing transactions that behave”?",
+      "options": [
+        "READ COMMITTED",
+        "Rules that keep transactions healthy:",
+        "READ UNCOMMITTED"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Rules that keep transactions healthy:”"
+    },
+    {
+      "question": "In the “ACID, one property at a time” table, what is listed for “Atomicity” under “Failure it prevents”?",
+      "options": [
+        "Half-completed transfers",
+        "READ COMMITTED",
+        "REPEATABLE READ"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Atomicity” as “Half-completed transfers”."
+    },
+    {
+      "question": "In the “Isolation: the cost of sharing” table, what is listed for “READ UNCOMMITTED (NOLOCK)” under “Cost profile”?",
+      "options": [
+        "REPEATABLE READ",
+        "SNAPSHOT",
+        "No blocking, uncommitted data visible"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “READ UNCOMMITTED (NOLOCK)” as “No blocking, uncommitted data visible”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ groups statements into a single logical unit: either every statement takes effect, or none does.”",
+      "options": [
+        "Set LOCK_TIMEOUT or handle deadlocks",
+        "Keep the log healthy",
+        "transaction"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A transaction groups statements into a single logical unit: either every statement takes effect, or none does. The canonical example is a money transfer — debit one account, credit another. If the second write fails after the first succeeded, money vanished. A transaction makes that outcome impossible: the two writes succeed together or roll back together.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is the summary of what a transaction guarantees.”",
+      "options": [
+        "Blocking chains",
+        "ACID",
+        "Keep the log healthy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “ACID is the summary of what a transaction guarantees. Each letter corresponds to a concrete SQL Server mechanism — knowing which one failed tells you where to look:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Isolation: the cost of sharing”?",
+      "options": [
+        "Isolation levels trade correctness anomalies against concurrency.",
+        "Version store in tempdb; no reader/writer blocking",
+        "Range locks — highest conflict, lowest concurrency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels trade correctness anomalies against concurrency. SQL Server's default, READ COMMITTED, blocks readers briefly rather than showing them uncommitted data; SNAPSHOT versions rows in tempdb so readers never block the writer.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing transactions that behave”?",
+      "options": [
+        "Common pitfalls:",
+        "Consistency",
+        "The production-safe shape of any multi-statement write: abort on error, bound the transaction, verify before committing."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The production-safe shape of any multi-statement write: abort on error, bound the transaction, verify before committing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server's default mode is _____: each statement is its own tiny transaction.”",
+      "options": [
+        "Timeouts that appear only under load",
+        "autocommit",
+        "Deadlocks (error 1205) clustering at the same time daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL Server's default mode is autocommit: each statement is its own tiny transaction. To get atomic behaviour for several statements you must declare the boundary yourself:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ and durability are carried by the log — one mechanism, two guarantees.”",
+      "options": [
+        "Atomicity",
+        "Timeouts that appear only under load",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Atomicity and durability are carried by the log — one mechanism, two guarantees. Consistency is the constraints' job: a statement that violates one fails and (inside a transaction) takes the unit down with it. Isolation is the expensive one, because it is paid continuously while transactions run concurrently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Isolation: the cost of sharing”?",
+      "options": [
+        "Durability",
+        "READ UNCOMMITTED",
+        "Practical guidance: stay at the default until a measured anomaly forces a change; avoid NOLOCK as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) —…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practical guidance: stay at the default until a measured anomaly forces a change; avoid NOLOCK as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) — prefer READ COMMITTED SNAPSHOT if read blocking is a genuine systemic issue; and keep transactions short, because locks are held until commit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing transactions that behave”?",
+      "options": [
+        "READ COMMITTED",
+        "Rules that keep transactions healthy:",
+        "READ UNCOMMITTED"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Rules that keep transactions healthy:”"
+    },
+    {
+      "question": "In the “ACID, one property at a time” table, what is listed for “Atomicity” under “Failure it prevents”?",
+      "options": [
+        "Half-completed transfers",
+        "READ COMMITTED",
+        "REPEATABLE READ"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Atomicity” as “Half-completed transfers”."
+    },
+    {
+      "question": "In the “Isolation: the cost of sharing” table, what is listed for “READ UNCOMMITTED (NOLOCK)” under “Cost profile”?",
+      "options": [
+        "REPEATABLE READ",
+        "SNAPSHOT",
+        "No blocking, uncommitted data visible"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “READ UNCOMMITTED (NOLOCK)” as “No blocking, uncommitted data visible”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ groups statements into a single logical unit: either every statement takes effect, or none does.”",
+      "options": [
+        "Set LOCK_TIMEOUT or handle deadlocks",
+        "Keep the log healthy",
+        "transaction"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A transaction groups statements into a single logical unit: either every statement takes effect, or none does. The canonical example is a money transfer — debit one account, credit another. If the second write fails after the first succeeded, money vanished. A transaction makes that outcome impossible: the two writes succeed together or roll back together.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ is the summary of what a transaction guarantees.”",
+      "options": [
+        "Blocking chains",
+        "ACID",
+        "Keep the log healthy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “ACID is the summary of what a transaction guarantees. Each letter corresponds to a concrete SQL Server mechanism — knowing which one failed tells you where to look:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Isolation: the cost of sharing”?",
+      "options": [
+        "Isolation levels trade correctness anomalies against concurrency.",
+        "Version store in tempdb; no reader/writer blocking",
+        "Range locks — highest conflict, lowest concurrency"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels trade correctness anomalies against concurrency. SQL Server's default, READ COMMITTED, blocks readers briefly rather than showing them uncommitted data; SNAPSHOT versions rows in tempdb so readers never block the writer.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing transactions that behave”?",
+      "options": [
+        "Common pitfalls:",
+        "Consistency",
+        "The production-safe shape of any multi-statement write: abort on error, bound the transaction, verify before committing."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The production-safe shape of any multi-statement write: abort on error, bound the transaction, verify before committing.”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server's default mode is _____: each statement is its own tiny transaction.”",
+      "options": [
+        "Timeouts that appear only under load",
+        "autocommit",
+        "Deadlocks (error 1205) clustering at the same time daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “SQL Server's default mode is autocommit: each statement is its own tiny transaction. To get atomic behaviour for several statements you must declare the boundary yourself:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ and durability are carried by the log — one mechanism, two guarantees.”",
+      "options": [
+        "Atomicity",
+        "Timeouts that appear only under load",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Atomicity and durability are carried by the log — one mechanism, two guarantees. Consistency is the constraints' job: a statement that violates one fails and (inside a transaction) takes the unit down with it. Isolation is the expensive one, because it is paid continuously while transactions run concurrently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Isolation: the cost of sharing”?",
+      "options": [
+        "Durability",
+        "READ UNCOMMITTED",
+        "Practical guidance: stay at the default until a measured anomaly forces a change; avoid NOLOCK as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) —…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practical guidance: stay at the default until a measured anomaly forces a change; avoid NOLOCK as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) — prefer READ COMMITTED SNAPSHOT if read blocking is a genuine systemic issue; and keep transactions short, because locks are held until commit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing transactions that behave”?",
+      "options": [
+        "READ COMMITTED",
+        "Rules that keep transactions healthy:",
+        "READ UNCOMMITTED"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Rules that keep transactions healthy:”"
+    },
+    {
+      "question": "In the “ACID, one property at a time” table, what is listed for “Atomicity” under “Failure it prevents”?",
+      "options": [
+        "Half-completed transfers",
+        "READ COMMITTED",
+        "REPEATABLE READ"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Atomicity” as “Half-completed transfers”."
+    },
+    {
+      "question": "In the “Isolation: the cost of sharing” table, what is listed for “READ UNCOMMITTED (NOLOCK)” under “Cost profile”?",
+      "options": [
+        "REPEATABLE READ",
+        "SNAPSHOT",
+        "No blocking, uncommitted data visible"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “READ UNCOMMITTED (NOLOCK)” as “No blocking, uncommitted data visible”."
+    }
+  ],
   takeaways: [
     "A transaction is a unit of work that commits entirely or rolls back entirely; autocommit gives you one statement per unit",
     "ACID maps to real mechanisms: log-based atomicity/durability, constraint-based consistency, locking/versioning-based isolation",

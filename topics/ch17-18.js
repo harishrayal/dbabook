@@ -178,6 +178,312 @@ Transactional replication streams changes one-way from publisher to subscribers 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Always On Availability Groups for DR",
+        "With Always On Availability Groups for DR, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Always On Availability Groups for DR within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups for DR fits”?",
+      "options": [
+        "Reporting / distribution",
+        "Disconnected sites",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups for DR in practice”?",
+      "options": [
+        "Hours",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups for DR”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Use the following as a starting point when investigating Always On Availability Groups for DR."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Always On Availability Groups for DR. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Always On Availability Groups for DR.",
+        "Always On Availability Groups for DR",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Always On Availability Groups for DR with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Always On Availability Groups for DR means”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Always On Availability Groups for DR is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups for DR fits”?",
+      "options": [
+        "Always On Availability Groups for DR",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "The diagram below places Always On Availability Groups for DR alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Always On Availability Groups for DR alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups for DR in practice”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups for DR”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Always On Availability Groups for DR is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Always On Availability Groups for DR",
+        "With Always On Availability Groups for DR, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Always On Availability Groups for DR within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups for DR fits”?",
+      "options": [
+        "Reporting / distribution",
+        "Disconnected sites",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups for DR in practice”?",
+      "options": [
+        "Hours",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups for DR”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Use the following as a starting point when investigating Always On Availability Groups for DR."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Always On Availability Groups for DR. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Always On Availability Groups for DR.",
+        "Always On Availability Groups for DR",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Always On Availability Groups for DR with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Always On Availability Groups for DR means”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Always On Availability Groups for DR is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups for DR fits”?",
+      "options": [
+        "Always On Availability Groups for DR",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "The diagram below places Always On Availability Groups for DR alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Always On Availability Groups for DR alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups for DR in practice”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups for DR”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Always On Availability Groups for DR is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "Always On Availability Groups for DR",
+        "With Always On Availability Groups for DR, prefer measured, reversible changes.",
+        "Small / static data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Always On Availability Groups for DR within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups for DR fits”?",
+      "options": [
+        "Reporting / distribution",
+        "Disconnected sites",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups for DR in practice”?",
+      "options": [
+        "Hours",
+        "Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication agents — snapshot, log reader, distribution and merge — do the work, and their history is the primary monitoring surface. Latency, distribution database growth and agent failures are the common operational concerns.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups for DR”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Use the following as a starting point when investigating Always On Availability Groups for DR."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Always On Availability Groups for DR. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disconnected sites",
+        "Disaster recovery protects against site or region loss.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Always On Availability Groups for DR.",
+        "Always On Availability Groups for DR",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Always On Availability Groups for DR with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Always On Availability Groups for DR means”?",
+      "options": [
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Always On Availability Groups for DR is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Replication moves data via publication and subscription."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule. It is simple, robust and well understood, with RTO determined by the restore interval and manual failover steps.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Always On Availability Groups for DR fits”?",
+      "options": [
+        "Always On Availability Groups for DR",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "The diagram below places Always On Availability Groups for DR alongside the core concepts of disaster recovery technologies."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Always On Availability Groups for DR alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Always On Availability Groups for DR in practice”?",
+      "options": [
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Always On Availability Groups for DR:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Always On Availability Groups for DR”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A log-shipping configuration has three jobs per secondary: backup on the primary, copy to the secondary and restore with STANDBY or NORECOVERY.",
+        "Always On Availability Groups for DR is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Always On Availability Groups for DR is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

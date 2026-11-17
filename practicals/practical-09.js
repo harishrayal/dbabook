@@ -174,6 +174,312 @@ When a small number of pages are damaged, you are in FULL recovery with a verifi
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "If the output differs, stop and correct it before moving on.",
+        "Perform a page-level restore of a known page using RESTORE DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab covers database integrity: detecting damage early and responding without making data loss worse. You will use DBCC CHECKDB and practise a page-level restore, the surgical option that minimises downtime.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Perform a page-level restore of a known page using RESTORE DATABASE...",
+        "Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata). Page checksums detect physical damage on read; CHECKDB checks allocation, structure and logical consistency.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Absolute last resort only",
+        "Ensure PAGE_VERIFY is set to CHECKSUM and take a full backup with CHECKSUM.",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Ensure PAGE_VERIFY is set to CHECKSUM and take a full backup with CHECKSUM. Confirm the backup is readable — this is the backup you will restore a page from later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Minor non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Minor non-data issues",
+        "Perform a page-level restore of a known page using RESTORE DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Perform a page-level restore of a known page using RESTORE DATABASE... PAGE from a verified backup, apply the log chain and finish with CHECKDB to prove the database is clean.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "Work on a scratch database and a local instance.",
+        "Absolute last resort only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Work on a scratch database and a local instance. Real corruption is rare and destructive to simulate, so this lab focuses on the detection and restore mechanics using a controlled setup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The response flow below is deliberately cautious: detect, preserve evidence, identify the damaged page, restore from a clean backup, apply logs, then re-run CHECKDB to confirm a…",
+        "Absolute last resort only",
+        "Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response flow below is deliberately cautious: detect, preserve evidence, identify the damaged page, restore from a clean backup, apply logs, then re-run CHECKDB to confirm a clean result.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Check log access and space",
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "Run DBCC CHECKDB and read the output carefully, including the 'repair level' it recommends and the count of errors."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Run DBCC CHECKDB and read the output carefully, including the 'repair level' it recommends and the count of errors. Even on a clean database, understanding the output is the point.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Work on a scratch database and a local instance.",
+        "Review the three repair options.",
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Review the three repair options. REPAIR_FAST and REPAIR_REBUILD are limited; REPAIR_ALLOW_DATA_LOSS can delete rows to achieve consistency and must be a last resort with a copy and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Work on a scratch database and a local instance.",
+        "Environment check"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "If the output differs, stop and correct it before moving on.",
+        "Perform a page-level restore of a known page using RESTORE DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab covers database integrity: detecting damage early and responding without making data loss worse. You will use DBCC CHECKDB and practise a page-level restore, the surgical option that minimises downtime.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Perform a page-level restore of a known page using RESTORE DATABASE...",
+        "Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata). Page checksums detect physical damage on read; CHECKDB checks allocation, structure and logical consistency.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Absolute last resort only",
+        "Ensure PAGE_VERIFY is set to CHECKSUM and take a full backup with CHECKSUM.",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Ensure PAGE_VERIFY is set to CHECKSUM and take a full backup with CHECKSUM. Confirm the backup is readable — this is the backup you will restore a page from later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Minor non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Minor non-data issues",
+        "Perform a page-level restore of a known page using RESTORE DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Perform a page-level restore of a known page using RESTORE DATABASE... PAGE from a verified backup, apply the log chain and finish with CHECKDB to prove the database is clean.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "Work on a scratch database and a local instance.",
+        "Absolute last resort only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Work on a scratch database and a local instance. Real corruption is rare and destructive to simulate, so this lab focuses on the detection and restore mechanics using a controlled setup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The response flow below is deliberately cautious: detect, preserve evidence, identify the damaged page, restore from a clean backup, apply logs, then re-run CHECKDB to confirm a…",
+        "Absolute last resort only",
+        "Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response flow below is deliberately cautious: detect, preserve evidence, identify the damaged page, restore from a clean backup, apply logs, then re-run CHECKDB to confirm a clean result.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Check log access and space",
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "Run DBCC CHECKDB and read the output carefully, including the 'repair level' it recommends and the count of errors."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Run DBCC CHECKDB and read the output carefully, including the 'repair level' it recommends and the count of errors. Even on a clean database, understanding the output is the point.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Work on a scratch database and a local instance.",
+        "Review the three repair options.",
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Review the three repair options. REPAIR_FAST and REPAIR_REBUILD are limited; REPAIR_ALLOW_DATA_LOSS can delete rows to achieve consistency and must be a last resort with a copy and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Work on a scratch database and a local instance.",
+        "Environment check"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "If the output differs, stop and correct it before moving on.",
+        "Perform a page-level restore of a known page using RESTORE DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab covers database integrity: detecting damage early and responding without making data loss worse. You will use DBCC CHECKDB and practise a page-level restore, the surgical option that minimises downtime.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Perform a page-level restore of a known page using RESTORE DATABASE...",
+        "Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata). Page checksums detect physical damage on read; CHECKDB checks allocation, structure and logical consistency.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Absolute last resort only",
+        "Ensure PAGE_VERIFY is set to CHECKSUM and take a full backup with CHECKSUM.",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Ensure PAGE_VERIFY is set to CHECKSUM and take a full backup with CHECKSUM. Confirm the backup is readable — this is the backup you will restore a page from later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Minor non-data issues",
+        "Rebuild indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Minor non-data issues",
+        "Perform a page-level restore of a known page using RESTORE DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Perform a page-level restore of a known page using RESTORE DATABASE... PAGE from a verified backup, apply the log chain and finish with CHECKDB to prove the database is clean.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "Work on a scratch database and a local instance.",
+        "Absolute last resort only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Work on a scratch database and a local instance. Real corruption is rare and destructive to simulate, so this lab focuses on the detection and restore mechanics using a controlled setup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The response flow below is deliberately cautious: detect, preserve evidence, identify the damaged page, restore from a clean backup, apply logs, then re-run CHECKDB to confirm a…",
+        "Absolute last resort only",
+        "Corruption is physical (damaged page bytes or I/O errors) or logical (structurally consistent but wrong metadata)."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response flow below is deliberately cautious: detect, preserve evidence, identify the damaged page, restore from a clean backup, apply logs, then re-run CHECKDB to confirm a clean result.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Check log access and space",
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse.",
+        "Run DBCC CHECKDB and read the output carefully, including the 'repair level' it recommends and the count of errors."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Run DBCC CHECKDB and read the output carefully, including the 'repair level' it recommends and the count of errors. Even on a clean database, understanding the output is the point.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Work on a scratch database and a local instance.",
+        "Review the three repair options.",
+        "This lab covers database integrity: detecting damage early and responding without making data loss worse."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Review the three repair options. REPAIR_FAST and REPAIR_REBUILD are limited; REPAIR_ALLOW_DATA_LOSS can delete rows to achieve consistency and must be a last resort with a copy and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Work on a scratch database and a local instance.",
+        "Environment check"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "Enable page checksums — they catch silent disk corruption on read",
     "DBCC CHECKDB is the definitive integrity check; schedule it and run it after restores",

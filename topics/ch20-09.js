@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Cumulative Updates (CUs)",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cumulative Updates (CUs) within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cumulative Updates (CUs) fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cumulative Updates (CUs) in practice”?",
+      "options": [
+        "With Cumulative Updates (CUs), prefer measured, reversible changes.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cumulative Updates (CUs)”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cumulative Updates (CUs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Cumulative Updates (CUs)",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cumulative Updates (CUs) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cumulative Updates (CUs) means”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cumulative Updates (CUs) fits”?",
+      "options": [
+        "With Cumulative Updates (CUs), prefer measured, reversible changes.",
+        "Scheduled",
+        "The diagram below places Cumulative Updates (CUs) alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cumulative Updates (CUs) alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cumulative Updates (CUs) in practice”?",
+      "options": [
+        "Cumulative Updates (CUs) sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Cumulative Updates (CUs):",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cumulative Updates (CUs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cumulative Updates (CUs)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Cumulative Updates (CUs) sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Cumulative Updates (CUs)",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cumulative Updates (CUs) within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cumulative Updates (CUs) fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cumulative Updates (CUs) in practice”?",
+      "options": [
+        "With Cumulative Updates (CUs), prefer measured, reversible changes.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cumulative Updates (CUs)”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cumulative Updates (CUs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Cumulative Updates (CUs)",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cumulative Updates (CUs) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cumulative Updates (CUs) means”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cumulative Updates (CUs) fits”?",
+      "options": [
+        "With Cumulative Updates (CUs), prefer measured, reversible changes.",
+        "Scheduled",
+        "The diagram below places Cumulative Updates (CUs) alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cumulative Updates (CUs) alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cumulative Updates (CUs) in practice”?",
+      "options": [
+        "Cumulative Updates (CUs) sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Cumulative Updates (CUs):",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cumulative Updates (CUs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cumulative Updates (CUs)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Cumulative Updates (CUs) sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Cumulative Updates (CUs)",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Cumulative Updates (CUs) within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cumulative Updates (CUs) fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cumulative Updates (CUs) in practice”?",
+      "options": [
+        "With Cumulative Updates (CUs), prefer measured, reversible changes.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cumulative Updates (CUs)”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Cumulative Updates (CUs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Cumulative Updates (CUs)",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Cumulative Updates (CUs) with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Cumulative Updates (CUs) means”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Cumulative Updates (CUs) fits”?",
+      "options": [
+        "With Cumulative Updates (CUs), prefer measured, reversible changes.",
+        "Scheduled",
+        "The diagram below places Cumulative Updates (CUs) alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Cumulative Updates (CUs) alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cumulative Updates (CUs) in practice”?",
+      "options": [
+        "Cumulative Updates (CUs) sits inside a larger system.",
+        "The following comparison captures the distinctions that matter most when working with Cumulative Updates (CUs):",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Cumulative Updates (CUs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Cumulative Updates (CUs)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Cumulative Updates (CUs) sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Cumulative Updates (CUs) is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

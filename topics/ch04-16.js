@@ -160,6 +160,312 @@ ORDER BY pages_kb DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “What the lazy writer does”?",
+      "options": [
+        "Discard clean pages",
+        "Return frames to free lists",
+        "The lazy writer is part of the buffer manager."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The lazy writer is part of the buffer manager. When the buffer pool needs a free frame and the free lists are empty, someone has to produce one — that is the lazy writer's job:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checkpoint or lazy writer?”?",
+      "options": [
+        "Purpose",
+        "Both write dirty pages, so the two are often conflated.",
+        "Return frames to free lists"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Both write dirty pages, so the two are often conflated. They differ in every dimension that matters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How pressure is detected”?",
+      "options": [
+        "The lazy writer does not wait for a hard failure — it reacts to graduated signals:",
+        "Purpose",
+        "Trigger"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lazy writer does not wait for a hard failure — it reacts to graduated signals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the counters”?",
+      "options": [
+        "Trigger",
+        "Pages written",
+        "Three counters separate healthy housekeeping from churn:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three counters separate healthy housekeeping from churn:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixing pressure without masking it”?",
+      "options": [
+        "Log records",
+        "The order of operations matters, because every \"fix\" trades one resource for another:",
+        "Pages written"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The order of operations matters, because every \"fix\" trades one resource for another:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the lazy writer does”?",
+      "options": [
+        "The lazy writer never writes log records and never marks a checkpoint.",
+        "Log records",
+        "Expected activity"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lazy writer never writes log records and never marks a checkpoint. It is purely a memory-space recycler, which is why a healthy, well-sized server shows it almost idle.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checkpoint or lazy writer?”?",
+      "options": [
+        "Expected activity",
+        "Internal pressure:",
+        "A server with frequent lazy writes but modest checkpoints is telling you the pool is undersized or memory is contested."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server with frequent lazy writes but modest checkpoints is telling you the pool is undersized or memory is contested. A server with giant checkpoints but idle lazy writes is telling you writes are being throttled or batched — different problem, different fix.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Crucially, if max server memory is set too low, the buffer pool lives under _____ internal pressure: the lazy writer runs continuously even though the server has 64 GB of RAM.”",
+      "options": [
+        "Free lists low or Windows low-memory signal",
+        "permanent",
+        "Produce free buffers under memory pressure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Crucially, if max server memory is set too low, the buffer pool lives under permanent internal pressure: the lazy writer runs continuously even though the server has 64 GB of RAM. That misconfiguration is the single most common cause of lazy-writer churn.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Interpretation: _____ in the hundreds continuously plus rising Free list stalls/sec means frames are being recycled as fast as they arrive; a sawtooth Page life expectancy confirms pages are evicted almost immediately.”",
+      "options": [
+        "Lazy writes/sec",
+        "Free lists low or Windows low-memory signal",
+        "Only as many as needed to reclaim space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Interpretation: Lazy writes/sec in the hundreds continuously plus rising Free list stalls/sec means frames are being recycled as fast as they arrive; a sawtooth Page life expectancy confirms pages are evicted almost immediately. If available_mb is healthy at the same time, the pressure is internal — memory sizing, not the operating system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixing pressure without masking it”?",
+      "options": [
+        "Competition:",
+        "Free list stalls/sec",
+        "Beware of \"fixes\" that hide the signal: capping memory so low that the lazy writer throttles the workload, or increasing the pool without removing the process that is actually…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Beware of \"fixes\" that hide the signal: capping memory so low that the lazy writer throttles the workload, or increasing the pool without removing the process that is actually stealing memory.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “What the lazy writer does”?",
+      "options": [
+        "Discard clean pages",
+        "Return frames to free lists",
+        "The lazy writer is part of the buffer manager."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The lazy writer is part of the buffer manager. When the buffer pool needs a free frame and the free lists are empty, someone has to produce one — that is the lazy writer's job:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checkpoint or lazy writer?”?",
+      "options": [
+        "Purpose",
+        "Both write dirty pages, so the two are often conflated.",
+        "Return frames to free lists"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Both write dirty pages, so the two are often conflated. They differ in every dimension that matters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How pressure is detected”?",
+      "options": [
+        "The lazy writer does not wait for a hard failure — it reacts to graduated signals:",
+        "Purpose",
+        "Trigger"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lazy writer does not wait for a hard failure — it reacts to graduated signals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the counters”?",
+      "options": [
+        "Trigger",
+        "Pages written",
+        "Three counters separate healthy housekeeping from churn:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three counters separate healthy housekeeping from churn:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixing pressure without masking it”?",
+      "options": [
+        "Log records",
+        "The order of operations matters, because every \"fix\" trades one resource for another:",
+        "Pages written"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The order of operations matters, because every \"fix\" trades one resource for another:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the lazy writer does”?",
+      "options": [
+        "The lazy writer never writes log records and never marks a checkpoint.",
+        "Log records",
+        "Expected activity"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lazy writer never writes log records and never marks a checkpoint. It is purely a memory-space recycler, which is why a healthy, well-sized server shows it almost idle.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checkpoint or lazy writer?”?",
+      "options": [
+        "Expected activity",
+        "Internal pressure:",
+        "A server with frequent lazy writes but modest checkpoints is telling you the pool is undersized or memory is contested."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server with frequent lazy writes but modest checkpoints is telling you the pool is undersized or memory is contested. A server with giant checkpoints but idle lazy writes is telling you writes are being throttled or batched — different problem, different fix.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Crucially, if max server memory is set too low, the buffer pool lives under _____ internal pressure: the lazy writer runs continuously even though the server has 64 GB of RAM.”",
+      "options": [
+        "Free lists low or Windows low-memory signal",
+        "permanent",
+        "Produce free buffers under memory pressure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Crucially, if max server memory is set too low, the buffer pool lives under permanent internal pressure: the lazy writer runs continuously even though the server has 64 GB of RAM. That misconfiguration is the single most common cause of lazy-writer churn.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Interpretation: _____ in the hundreds continuously plus rising Free list stalls/sec means frames are being recycled as fast as they arrive; a sawtooth Page life expectancy confirms pages are evicted almost immediately.”",
+      "options": [
+        "Lazy writes/sec",
+        "Free lists low or Windows low-memory signal",
+        "Only as many as needed to reclaim space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Interpretation: Lazy writes/sec in the hundreds continuously plus rising Free list stalls/sec means frames are being recycled as fast as they arrive; a sawtooth Page life expectancy confirms pages are evicted almost immediately. If available_mb is healthy at the same time, the pressure is internal — memory sizing, not the operating system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixing pressure without masking it”?",
+      "options": [
+        "Competition:",
+        "Free list stalls/sec",
+        "Beware of \"fixes\" that hide the signal: capping memory so low that the lazy writer throttles the workload, or increasing the pool without removing the process that is actually…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Beware of \"fixes\" that hide the signal: capping memory so low that the lazy writer throttles the workload, or increasing the pool without removing the process that is actually stealing memory.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “What the lazy writer does”?",
+      "options": [
+        "Discard clean pages",
+        "Return frames to free lists",
+        "The lazy writer is part of the buffer manager."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The lazy writer is part of the buffer manager. When the buffer pool needs a free frame and the free lists are empty, someone has to produce one — that is the lazy writer's job:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checkpoint or lazy writer?”?",
+      "options": [
+        "Purpose",
+        "Both write dirty pages, so the two are often conflated.",
+        "Return frames to free lists"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Both write dirty pages, so the two are often conflated. They differ in every dimension that matters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How pressure is detected”?",
+      "options": [
+        "The lazy writer does not wait for a hard failure — it reacts to graduated signals:",
+        "Purpose",
+        "Trigger"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lazy writer does not wait for a hard failure — it reacts to graduated signals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the counters”?",
+      "options": [
+        "Trigger",
+        "Pages written",
+        "Three counters separate healthy housekeeping from churn:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three counters separate healthy housekeeping from churn:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixing pressure without masking it”?",
+      "options": [
+        "Log records",
+        "The order of operations matters, because every \"fix\" trades one resource for another:",
+        "Pages written"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The order of operations matters, because every \"fix\" trades one resource for another:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the lazy writer does”?",
+      "options": [
+        "The lazy writer never writes log records and never marks a checkpoint.",
+        "Log records",
+        "Expected activity"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The lazy writer never writes log records and never marks a checkpoint. It is purely a memory-space recycler, which is why a healthy, well-sized server shows it almost idle.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checkpoint or lazy writer?”?",
+      "options": [
+        "Expected activity",
+        "Internal pressure:",
+        "A server with frequent lazy writes but modest checkpoints is telling you the pool is undersized or memory is contested."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server with frequent lazy writes but modest checkpoints is telling you the pool is undersized or memory is contested. A server with giant checkpoints but idle lazy writes is telling you writes are being throttled or batched — different problem, different fix.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Crucially, if max server memory is set too low, the buffer pool lives under _____ internal pressure: the lazy writer runs continuously even though the server has 64 GB of RAM.”",
+      "options": [
+        "Free lists low or Windows low-memory signal",
+        "permanent",
+        "Produce free buffers under memory pressure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Crucially, if max server memory is set too low, the buffer pool lives under permanent internal pressure: the lazy writer runs continuously even though the server has 64 GB of RAM. That misconfiguration is the single most common cause of lazy-writer churn.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Interpretation: _____ in the hundreds continuously plus rising Free list stalls/sec means frames are being recycled as fast as they arrive; a sawtooth Page life expectancy confirms pages are evicted almost immediately.”",
+      "options": [
+        "Lazy writes/sec",
+        "Free lists low or Windows low-memory signal",
+        "Only as many as needed to reclaim space"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Interpretation: Lazy writes/sec in the hundreds continuously plus rising Free list stalls/sec means frames are being recycled as fast as they arrive; a sawtooth Page life expectancy confirms pages are evicted almost immediately. If available_mb is healthy at the same time, the pressure is internal — memory sizing, not the operating system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixing pressure without masking it”?",
+      "options": [
+        "Competition:",
+        "Free list stalls/sec",
+        "Beware of \"fixes\" that hide the signal: capping memory so low that the lazy writer throttles the workload, or increasing the pool without removing the process that is actually…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Beware of \"fixes\" that hide the signal: capping memory so low that the lazy writer throttles the workload, or increasing the pool without removing the process that is actually stealing memory.”"
+    }
+  ],
   takeaways: [
     "The lazy writer flushes dirty pages and discards clean ones to keep free buffers available",
     "It writes no log records and creates no checkpoint — that is the checkpoint's job",

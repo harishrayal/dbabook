@@ -161,6 +161,312 @@ A timeline, impact, root cause, contributing factors, what went well and badly, 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management.",
+        "Communication is part of the job.",
+        "Incident Response Lifecycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Incident Response Lifecycle within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Response Lifecycle fits”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Response Lifecycle in practice”?",
+      "options": [
+        "Communication is part of the job.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Response Lifecycle”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Incident Response Lifecycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Incident Response Lifecycle means”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Response Lifecycle fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Response Lifecycle in practice”?",
+      "options": [
+        "With Incident Response Lifecycle, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Response Lifecycle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management.",
+        "Communication is part of the job.",
+        "Incident Response Lifecycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Incident Response Lifecycle within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Response Lifecycle fits”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Response Lifecycle in practice”?",
+      "options": [
+        "Communication is part of the job.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Response Lifecycle”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Incident Response Lifecycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Incident Response Lifecycle means”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Response Lifecycle fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Response Lifecycle in practice”?",
+      "options": [
+        "With Incident Response Lifecycle, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Response Lifecycle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management.",
+        "Communication is part of the job.",
+        "Incident Response Lifecycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Incident Response Lifecycle within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Response Lifecycle fits”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Response Lifecycle in practice”?",
+      "options": [
+        "Communication is part of the job.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Response Lifecycle”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Incident Response Lifecycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Incident Response Lifecycle means”?",
+      "options": [
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Incident Response Lifecycle fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Incident Response Lifecycle alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Incident Response Lifecycle in practice”?",
+      "options": [
+        "With Incident Response Lifecycle, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Incident Response Lifecycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Incident Response Lifecycle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    }
+  ],
   takeaways: [
     "Incident Response Lifecycle is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

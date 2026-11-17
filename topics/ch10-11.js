@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Backup Automation",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Backup Automation within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Backup Automation fits”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Next, verify the result and capture a baseline.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Backup Automation in practice”?",
+      "options": [
+        "Database Mail configured",
+        "Enabled alert",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Backup Automation”?",
+      "options": [
+        "Database Mail configured",
+        "Theory becomes useful when you can apply it.",
+        "With Database Backup Automation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Backup Automation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job history is the diagnostic record.",
+        "Database Backup Automation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "With Database Backup Automation, prefer measured, reversible changes.",
+        "Database Backup Automation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Backup Automation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Backup Automation means”?",
+      "options": [
+        "Database Backup Automation",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Backup Automation fits”?",
+      "options": [
+        "The diagram below places Database Backup Automation alongside the core concepts of SQL Server Agent and automation.",
+        "Enabled alert",
+        "Notification set on job"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Backup Automation alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Backup Automation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Backup Automation.",
+        "The following comparison captures the distinctions that matter most when working with Database Backup Automation:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Backup Automation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Backup Automation”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Backup Automation.",
+        "The first example establishes the relevant state.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Backup Automation",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Backup Automation within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Backup Automation fits”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Next, verify the result and capture a baseline.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Backup Automation in practice”?",
+      "options": [
+        "Database Mail configured",
+        "Enabled alert",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Backup Automation”?",
+      "options": [
+        "Database Mail configured",
+        "Theory becomes useful when you can apply it.",
+        "With Database Backup Automation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Backup Automation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job history is the diagnostic record.",
+        "Database Backup Automation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "With Database Backup Automation, prefer measured, reversible changes.",
+        "Database Backup Automation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Backup Automation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Backup Automation means”?",
+      "options": [
+        "Database Backup Automation",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Backup Automation fits”?",
+      "options": [
+        "The diagram below places Database Backup Automation alongside the core concepts of SQL Server Agent and automation.",
+        "Enabled alert",
+        "Notification set on job"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Backup Automation alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Backup Automation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Backup Automation.",
+        "The following comparison captures the distinctions that matter most when working with Database Backup Automation:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Backup Automation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Backup Automation”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Backup Automation.",
+        "The first example establishes the relevant state.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Backup Automation",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Backup Automation within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Backup Automation fits”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Next, verify the result and capture a baseline.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Backup Automation in practice”?",
+      "options": [
+        "Database Mail configured",
+        "Enabled alert",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Backup Automation”?",
+      "options": [
+        "Database Mail configured",
+        "Theory becomes useful when you can apply it.",
+        "With Database Backup Automation, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Backup Automation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Job history is the diagnostic record.",
+        "Database Backup Automation sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "With Database Backup Automation, prefer measured, reversible changes.",
+        "Database Backup Automation"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Backup Automation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Backup Automation means”?",
+      "options": [
+        "Database Backup Automation",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Backup Automation fits”?",
+      "options": [
+        "The diagram below places Database Backup Automation alongside the core concepts of SQL Server Agent and automation.",
+        "Enabled alert",
+        "Notification set on job"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Backup Automation alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Backup Automation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Backup Automation.",
+        "The following comparison captures the distinctions that matter most when working with Database Backup Automation:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Backup Automation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Backup Automation”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Backup Automation.",
+        "The first example establishes the relevant state.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Backup Automation is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

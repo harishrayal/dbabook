@@ -178,6 +178,312 @@ DENY overrides GRANT at any scope — a deny on a schema blocks access even if S
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server Logins",
+        "The following comparison captures the distinctions that matter most when working with Server Logins:",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server Logins within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Logins fits”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Logins in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Logins”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server Logins. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server Logins",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server Logins with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server Logins means”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Logins fits”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The diagram below places Server Logins alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server Logins alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Logins in practice”?",
+      "options": [
+        "Neutral",
+        "The following comparison captures the distinctions that matter most when working with Server Logins:",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server Logins:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Logins”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server Logins",
+        "The following comparison captures the distinctions that matter most when working with Server Logins:",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server Logins within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Logins fits”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Logins in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Logins”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server Logins. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server Logins",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server Logins with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server Logins means”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Logins fits”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The diagram below places Server Logins alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server Logins alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Logins in practice”?",
+      "options": [
+        "Neutral",
+        "The following comparison captures the distinctions that matter most when working with Server Logins:",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server Logins:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Logins”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Server Logins",
+        "The following comparison captures the distinctions that matter most when working with Server Logins:",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Server Logins within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Logins fits”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Logins in practice”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Logins”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Authenticate to the instance",
+        "Map a login into a database"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Server Logins. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Server Logins",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Server Logins with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Server Logins means”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Server Logins fits”?",
+      "options": [
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The diagram below places Server Logins alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Server Logins alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server Logins in practice”?",
+      "options": [
+        "Neutral",
+        "The following comparison captures the distinctions that matter most when working with Server Logins:",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Server Logins:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Server Logins”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Overridden by DENY",
+        "Overrides GRANT everywhere"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Server Logins is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

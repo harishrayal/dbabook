@@ -186,6 +186,312 @@ With a central inventory, standard configurations, automated health and complian
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Production Access Management",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Access Management within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Access Management fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "With Production Access Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Access Management in practice”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Production Access Management sits inside a larger system.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Access Management”?",
+      "options": [
+        "Production Access Management sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Access Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Use the following as a starting point when investigating Production Access Management.",
+        "Scheduled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Maintenance",
+        "Immediate",
+        "Production Access Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Access Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Access Management means”?",
+      "options": [
+        "Use the following as a starting point when investigating Production Access Management.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Access Management fits”?",
+      "options": [
+        "The diagram below places Production Access Management alongside the core concepts of enterprise DBA operations.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Access Management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Access Management alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Access Management in practice”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "The following comparison captures the distinctions that matter most when working with Production Access Management:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Access Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Access Management”?",
+      "options": [
+        "Production Access Management",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Production Access Management",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Access Management within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Access Management fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "With Production Access Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Access Management in practice”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Production Access Management sits inside a larger system.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Access Management”?",
+      "options": [
+        "Production Access Management sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Access Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Use the following as a starting point when investigating Production Access Management.",
+        "Scheduled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Maintenance",
+        "Immediate",
+        "Production Access Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Access Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Access Management means”?",
+      "options": [
+        "Use the following as a starting point when investigating Production Access Management.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Access Management fits”?",
+      "options": [
+        "The diagram below places Production Access Management alongside the core concepts of enterprise DBA operations.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Access Management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Access Management alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Access Management in practice”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "The following comparison captures the distinctions that matter most when working with Production Access Management:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Access Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Access Management”?",
+      "options": [
+        "Production Access Management",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Production Access Management",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Access Management within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Access Management fits”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Patching and upgrades are planned programmes.",
+        "With Production Access Management, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Access Management in practice”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Production Access Management sits inside a larger system.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Access Management”?",
+      "options": [
+        "Production Access Management sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Immediate"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Access Management. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "Use the following as a starting point when investigating Production Access Management.",
+        "Scheduled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Maintenance",
+        "Immediate",
+        "Production Access Management"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Access Management with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Access Management means”?",
+      "options": [
+        "Use the following as a starting point when investigating Production Access Management.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Access Management fits”?",
+      "options": [
+        "The diagram below places Production Access Management alongside the core concepts of enterprise DBA operations.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Access Management."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Access Management alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Access Management in practice”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "The following comparison captures the distinctions that matter most when working with Production Access Management:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Access Management:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Access Management”?",
+      "options": [
+        "Production Access Management",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Production Access Management is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

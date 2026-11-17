@@ -188,6 +188,312 @@ To ensure every production change is requested, reviewed, approved, scheduled, i
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Backup Compliance Reporting",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Compliance Reporting within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compliance Reporting fits”?",
+      "options": [
+        "Immediate",
+        "Backup Compliance Reporting sits inside a larger system.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compliance Reporting in practice”?",
+      "options": [
+        "Report + exceptions",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compliance Reporting”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Backup Compliance Reporting.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Compliance Reporting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "With Backup Compliance Reporting, prefer measured, reversible changes.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Backup Compliance Reporting",
+        "Use the following as a starting point when investigating Backup Compliance Reporting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Compliance Reporting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Compliance Reporting means”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compliance Reporting fits”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Environments must stay aligned but distinct.",
+        "The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compliance Reporting in practice”?",
+      "options": [
+        "Backup Compliance Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compliance Reporting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Compliance Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Backup Compliance Reporting",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Compliance Reporting within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compliance Reporting fits”?",
+      "options": [
+        "Immediate",
+        "Backup Compliance Reporting sits inside a larger system.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compliance Reporting in practice”?",
+      "options": [
+        "Report + exceptions",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compliance Reporting”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Backup Compliance Reporting.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Compliance Reporting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "With Backup Compliance Reporting, prefer measured, reversible changes.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Backup Compliance Reporting",
+        "Use the following as a starting point when investigating Backup Compliance Reporting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Compliance Reporting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Compliance Reporting means”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compliance Reporting fits”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Environments must stay aligned but distinct.",
+        "The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compliance Reporting in practice”?",
+      "options": [
+        "Backup Compliance Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compliance Reporting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Compliance Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Backup Compliance Reporting",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Backup Compliance Reporting within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compliance Reporting fits”?",
+      "options": [
+        "Immediate",
+        "Backup Compliance Reporting sits inside a larger system.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compliance Reporting in practice”?",
+      "options": [
+        "Report + exceptions",
+        "Patching and upgrades are planned programmes.",
+        "The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compliance Reporting”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Backup Compliance Reporting.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Compliance Reporting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "With Backup Compliance Reporting, prefer measured, reversible changes.",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Backup Compliance Reporting",
+        "Use the following as a starting point when investigating Backup Compliance Reporting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Backup Compliance Reporting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Compliance Reporting means”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies. Without it, you cannot answer basic questions during an audit or incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Compliance Reporting fits”?",
+      "options": [
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "Environments must stay aligned but distinct.",
+        "The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Backup Compliance Reporting alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Compliance Reporting in practice”?",
+      "options": [
+        "Backup Compliance Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:",
+        "Environments must stay aligned but distinct."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Compliance Reporting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Compliance Reporting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Backup Compliance Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Compliance Reporting is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

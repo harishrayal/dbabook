@@ -11,6 +11,7 @@ import { K1 } from "./knowledge-1.mjs";
 import { K2 } from "./knowledge-2.mjs";
 import { K3 } from "./knowledge-3.mjs";
 import { K4 } from "./knowledge-4.mjs";
+import { addQuizToSource } from "./topic-quiz-generator.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const K = { ...K1, ...K2, ...K3, ...K4 };
@@ -271,7 +272,7 @@ ${tableHtml(ch.tables[1])}
   L.push("  ]");
   L.push("};");
 
-  return L.join("\n") + "\n";
+  return addQuizToSource(L.join("\n") + "\n");
 }
 
 /* ---------------- main ---------------- */

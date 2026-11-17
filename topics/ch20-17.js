@@ -186,6 +186,312 @@ With a central inventory, standard configurations, automated health and complian
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Scheduled",
+        "Health-Check Reporting",
+        "With Health-Check Reporting, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Health-Check Reporting within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Health-Check Reporting fits”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Maintenance",
+        "Immediate"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Health-Check Reporting in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Report + exceptions",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Health-Check Reporting”?",
+      "options": [
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Health-Check Reporting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Health-Check Reporting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Health-Check Reporting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Health-Check Reporting means”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Health-Check Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Health-Check Reporting fits”?",
+      "options": [
+        "The diagram below places Health-Check Reporting alongside the core concepts of enterprise DBA operations.",
+        "Health-Check Reporting",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Health-Check Reporting alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Health-Check Reporting in practice”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Health-Check Reporting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Health-Check Reporting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Health-Check Reporting”?",
+      "options": [
+        "Health-Check Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Scheduled",
+        "Health-Check Reporting",
+        "With Health-Check Reporting, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Health-Check Reporting within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Health-Check Reporting fits”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Maintenance",
+        "Immediate"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Health-Check Reporting in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Report + exceptions",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Health-Check Reporting”?",
+      "options": [
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Health-Check Reporting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Health-Check Reporting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Health-Check Reporting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Health-Check Reporting means”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Health-Check Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Health-Check Reporting fits”?",
+      "options": [
+        "The diagram below places Health-Check Reporting alongside the core concepts of enterprise DBA operations.",
+        "Health-Check Reporting",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Health-Check Reporting alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Health-Check Reporting in practice”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Health-Check Reporting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Health-Check Reporting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Health-Check Reporting”?",
+      "options": [
+        "Health-Check Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Scheduled",
+        "Health-Check Reporting",
+        "With Health-Check Reporting, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Health-Check Reporting within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Health-Check Reporting fits”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Maintenance",
+        "Immediate"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Environments must stay aligned but distinct. Refreshing test and UAT from production (sanitised) keeps schemas realistic, while access controls ensure only the right people can reach live data.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Health-Check Reporting in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Report + exceptions",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Health-Check Reporting”?",
+      "options": [
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Theory becomes useful when you can apply it.",
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Health-Check Reporting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "Scheduled",
+        "Maintenance"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Health-Check Reporting.",
+        "Health-Check Reporting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Health-Check Reporting with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Health-Check Reporting means”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Health-Check Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Health-Check Reporting fits”?",
+      "options": [
+        "The diagram below places Health-Check Reporting alongside the core concepts of enterprise DBA operations.",
+        "Health-Check Reporting",
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Health-Check Reporting alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Health-Check Reporting in practice”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies.",
+        "The following comparison captures the distinctions that matter most when working with Health-Check Reporting:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Health-Check Reporting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Health-Check Reporting”?",
+      "options": [
+        "Health-Check Reporting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The first example establishes the relevant state.",
+        "Managing multiple instances requires a central inventory: versions, editions, patch levels, owners, databases, sizes and dependencies."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Health-Check Reporting is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

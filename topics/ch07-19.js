@@ -188,6 +188,312 @@ No — it checks the backup set is readable and checksums pass, but it does not 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "Tail-Log Backup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Tail-Log Backup within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Tail-Log Backup fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Tail-Log Backup sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Tail-Log Backup in practice”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Tail-Log Backup”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Tail-Log Backup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Tail-Log Backup",
+        "Backups are the only true protection against data loss.",
+        "Limited during bulk ops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Tail-Log Backup",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Tail-Log Backup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Tail-Log Backup means”?",
+      "options": [
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Tail-Log Backup fits”?",
+      "options": [
+        "Tail-Log Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Tail-Log Backup in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Tail-Log Backup:",
+        "Tail-Log Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Tail-Log Backup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Tail-Log Backup”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "Tail-Log Backup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Tail-Log Backup within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Tail-Log Backup fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Tail-Log Backup sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Tail-Log Backup in practice”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Tail-Log Backup”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Tail-Log Backup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Tail-Log Backup",
+        "Backups are the only true protection against data loss.",
+        "Limited during bulk ops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Tail-Log Backup",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Tail-Log Backup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Tail-Log Backup means”?",
+      "options": [
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Tail-Log Backup fits”?",
+      "options": [
+        "Tail-Log Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Tail-Log Backup in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Tail-Log Backup:",
+        "Tail-Log Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Tail-Log Backup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Tail-Log Backup”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Yes",
+        "Limited during bulk ops",
+        "Tail-Log Backup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Tail-Log Backup within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Tail-Log Backup fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Tail-Log Backup sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain. They are ideal for one-off copies and tests.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Tail-Log Backup in practice”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Base full + latest diff",
+        "Full (+diff) + log chain"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Tail-Log Backup”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Tail-Log Backup. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Tail-Log Backup",
+        "Backups are the only true protection against data loss.",
+        "Limited during bulk ops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Backups are the only true protection against data loss. A backup strategy must be derived from business requirements — how much data can be lost (RPO) and how quickly the system must return (RTO) — not chosen arbitrarily.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Tail-Log Backup",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Tail-Log Backup with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Tail-Log Backup means”?",
+      "options": [
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Transaction log backups capture log records since the last log backup and allow point-in-time recovery in the FULL and BULK_LOGGED recovery models. Together, full + differential + log backups form a chain.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Tail-Log Backup fits”?",
+      "options": [
+        "Tail-Log Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Tail-Log Backup in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Tail-Log Backup:",
+        "Tail-Log Backup is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Tail-Log Backup:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Tail-Log Backup”?",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "The diagram below places Tail-Log Backup alongside the core concepts of backup and recovery strategy.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Tail-Log Backup is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -181,6 +181,312 @@ Loop over the server list (optionally in parallel), use Invoke-Sqlcmd against ms
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Functions",
+        "The following comparison captures the distinctions that matter most when working with Functions:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Functions within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Functions fits”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions in practice”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Functions”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Functions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Functions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Functions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Functions means”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Functions fits”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The diagram below places Functions alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Functions alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions in practice”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "The following comparison captures the distinctions that matter most when working with Functions:",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Functions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Functions”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Daily",
+        "Functions sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Functions",
+        "The following comparison captures the distinctions that matter most when working with Functions:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Functions within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Functions fits”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions in practice”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Functions”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Functions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Functions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Functions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Functions means”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Functions fits”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The diagram below places Functions alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Functions alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions in practice”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "The following comparison captures the distinctions that matter most when working with Functions:",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Functions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Functions”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Daily",
+        "Functions sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Functions",
+        "The following comparison captures the distinctions that matter most when working with Functions:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Functions within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Functions fits”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions in practice”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Functions”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Functions. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Functions",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Functions with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Functions means”?",
+      "options": [
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Functions fits”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The diagram below places Functions alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Functions alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Functions in practice”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "The following comparison captures the distinctions that matter most when working with Functions:",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Functions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Functions”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Daily",
+        "Functions sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Functions is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

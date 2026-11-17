@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "SQL Server Agent Architecture",
+        "SQL Server Agent Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Architecture within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Architecture fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "SQL Server Agent Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Architecture in practice”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Architecture”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job never runs",
+        "SQL Server Agent Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Architecture means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Architecture fits”?",
+      "options": [
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation.",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Architecture in practice”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Architecture”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "The first example establishes the relevant state.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "SQL Server Agent Architecture",
+        "SQL Server Agent Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Architecture within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Architecture fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "SQL Server Agent Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Architecture in practice”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Architecture”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job never runs",
+        "SQL Server Agent Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Architecture means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Architecture fits”?",
+      "options": [
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation.",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Architecture in practice”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Architecture”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "The first example establishes the relevant state.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "SQL Server Agent Architecture",
+        "SQL Server Agent Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Agent Architecture within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Architecture fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "SQL Server Agent Architecture is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Architecture in practice”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Architecture”?",
+      "options": [
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Agent Architecture. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "Job never runs",
+        "SQL Server Agent Architecture"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates SQL Server Agent Architecture with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Agent Architecture means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Agent Architecture fits”?",
+      "options": [
+        "The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation.",
+        "Missed window",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places SQL Server Agent Architecture alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Agent Architecture in practice”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Agent Architecture:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Agent Architecture”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "The first example establishes the relevant state.",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "SQL Server Agent Architecture is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

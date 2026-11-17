@@ -423,156 +423,87 @@
     return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
 
-  function quizText(value) {
-    var container = document.createElement("div");
-    container.innerHTML = value;
-    return (container.innerText || container.textContent || "").replace(/\s+/g, " ").trim();
-  }
+  function topicQuizHtml(questions) {
+    if (!Array.isArray(questions) || !questions.length) return "";
 
-  function lessonQuiz(topic) {
-    var terms = [];
-    var fallbackTerms = [];
-    var seenTerms = new Set();
-    var seenFallbackTerms = new Set();
-    var source = null;
+    var questionHtml = questions.map(function (question, questionIndex) {
+      var options = question.options.map(function (answer, optionIndex) {
+        var optionId = "topicQuizOption" + questionIndex + "_" + optionIndex;
+        return '<label class="quiz-option" for="' + optionId + '">' +
+          '<input id="' + optionId + '" type="radio" name="topicQuizAnswer' + questionIndex +
+          '" value="' + optionIndex + '">' +
+          "<span>" + esc(answer) + "</span></label>";
+      }).join("");
 
-    function addTerm(value, fallback) {
-      var term = quizText(value);
-      var key = term.toLowerCase();
-      var seen = fallback ? seenFallbackTerms : seenTerms;
-      if (term.length < 3 || term.length > 90 || seen.has(key)) return;
-      seen.add(key);
-      (fallback ? fallbackTerms : terms).push(term);
-    }
-
-    (topic.sections || []).forEach(function (section) {
-      addTerm(section.h, true);
-
-      var content = document.createElement("div");
-      content.innerHTML = section.html || "";
-      content.querySelectorAll("strong").forEach(function (element) {
-        addTerm(element.textContent);
-      });
-      content.querySelectorAll("em").forEach(function (element) {
-        addTerm(element.textContent, true);
-      });
-
-      if (source) return;
-
-      content.querySelectorAll("p").forEach(function (paragraph) {
-        if (source) return;
-        var keyTerm = paragraph.querySelector("strong, em");
-        var statement = quizText(paragraph.innerHTML);
-        var answer = keyTerm ? quizText(keyTerm.textContent) : "";
-        var answerIndex = statement.toLowerCase().indexOf(answer.toLowerCase());
-        if (answer && answerIndex !== -1 && statement.length >= 30) {
-          source = {
-            answer: answer,
-            question: "Complete the lesson statement: “" +
-              statement.slice(0, answerIndex) + "_____" +
-              statement.slice(answerIndex + answer.length) + "”",
-            explanation: "The lesson states: “" + statement + "”"
-          };
-        }
-      });
-
-      content.querySelectorAll("tr").forEach(function (row) {
-        if (source) return;
-        var cells = row.querySelectorAll("th, td");
-        var keyTerm = cells.length > 1 && cells[0].querySelector("strong, em");
-        var answer = keyTerm ? quizText(keyTerm.textContent) : "";
-        var description = cells.length > 1 ? quizText(cells[1].textContent) : "";
-        if (answer && description.length >= 12) {
-          source = {
-            answer: answer,
-            question: "According to the lesson, which concept matches this description? “" +
-              description + "”",
-            explanation: "The lesson links “" + answer + "” with this description: " + description
-          };
-        }
-      });
-    });
-
-    (topic.objectives || []).forEach(function (objective) {
-      addTerm(objective, true);
-    });
-    if (!source) return null;
-
-    var distractors = terms.concat(fallbackTerms).filter(function (term) {
-      return term.toLowerCase() !== source.answer.toLowerCase();
-    });
-    if (distractors.length < 2) return null;
-
-    var suffix = topic.id.match(/\d+$/);
-    var seed = suffix ? parseInt(suffix[0], 10) : 0;
-    var start = seed % distractors.length;
-    var options = [source.answer, distractors[start], distractors[(start + 1) % distractors.length]];
-    var shift = seed % options.length;
-    options = options.slice(shift).concat(options.slice(0, shift));
-
-    return {
-      question: source.question,
-      explanation: source.explanation,
-      options: options,
-      correctIndex: options.indexOf(source.answer)
-    };
-  }
-
-  function topicQuizHtml(quiz) {
-    if (!quiz) return "";
-
-    var options = quiz.options.map(function (answer, index) {
-      return '<label class="quiz-option" for="topicQuizOption' + index + '">' +
-        '<input id="topicQuizOption' + index + '" type="radio" name="topicQuizAnswer" value="' + index + '">' +
-        "<span>" + esc(answer) + "</span></label>";
+      return '<fieldset class="quiz-question" aria-describedby="topicQuizFeedback' + questionIndex + '">' +
+        '<legend><span class="quiz-number">' + String(questionIndex + 1).padStart(2, "0") + "</span>" +
+        esc(question.question) + "</legend>" +
+        '<div class="quiz-options">' + options + "</div>" +
+        '<div class="quiz-feedback" id="topicQuizFeedback' + questionIndex +
+        '" role="status" aria-live="polite" hidden></div></fieldset>';
     }).join("");
 
     return '<section class="topic-quiz" aria-labelledby="topicQuizHeading">' +
       '<div class="quiz-heading"><span class="quiz-kicker">Knowledge check</span>' +
       '<h2 id="topicQuizHeading">Test your understanding</h2>' +
-      '<p>Choose the best answer, then submit to see the explanation.</p></div>' +
-      '<form class="topic-quiz-form" data-correct-index="' + quiz.correctIndex + '">' +
-      '<fieldset><legend>' + esc(quiz.question) + '</legend>' +
-      '<div class="quiz-options">' + options + "</div></fieldset>" +
-      '<div class="quiz-feedback" id="topicQuizFeedback" role="status" aria-live="polite" hidden></div>' +
-      '<button class="btn btn-primary" type="submit">Check answer</button>' +
+      "<p>Answer all " + questions.length + " questions, then submit to see the answers and explanations.</p></div>" +
+      '<form class="topic-quiz-form">' + questionHtml +
+      '<div class="quiz-score" role="status" aria-live="polite" hidden></div>' +
+      '<button class="btn btn-primary" type="submit">Submit quiz</button>' +
       "</form></section>";
   }
 
-  function wireTopicQuiz(quiz) {
+  function wireTopicQuiz(questions) {
     var form = document.querySelector(".topic-quiz-form");
     if (!form) return;
 
-    var feedback = form.querySelector(".quiz-feedback");
-    var correctIndex = Number(form.getAttribute("data-correct-index"));
-
     form.addEventListener("submit", function (event) {
       event.preventDefault();
-      var selected = form.querySelector('input[name="topicQuizAnswer"]:checked');
-      feedback.hidden = false;
+      form.querySelectorAll(".quiz-feedback.is-prompt").forEach(function (feedback) {
+        feedback.hidden = true;
+      });
+      var selectedAnswers = questions.map(function (_, index) {
+        return form.querySelector('input[name="topicQuizAnswer' + index + '"]:checked');
+      });
+      var firstMissing = selectedAnswers.findIndex(function (answer) { return !answer; });
 
-      if (!selected) {
-        feedback.className = "quiz-feedback is-prompt";
-        feedback.textContent = "Select an answer before submitting.";
+      if (firstMissing !== -1) {
+        var missingFeedback = form.querySelector("#topicQuizFeedback" + firstMissing);
+        missingFeedback.hidden = false;
+        missingFeedback.className = "quiz-feedback is-prompt";
+        missingFeedback.textContent = "Choose an answer before submitting the quiz.";
+        form.querySelector(
+          'input[name="topicQuizAnswer' + firstMissing + '"]'
+        ).focus();
         return;
       }
 
-      var selectedIndex = Number(selected.value);
-      var correctText = form.querySelector('label[for="topicQuizOption' + correctIndex + '"] span').textContent;
-      var correct = selectedIndex === correctIndex;
-      feedback.className = "quiz-feedback " + (correct ? "is-correct" : "is-incorrect");
-      feedback.innerHTML = correct
-        ? "<strong>Correct. Why:</strong> " + esc(quiz.explanation)
-        : "<strong>Not quite. Correct answer:</strong> " + esc(correctText) +
-          "<br><strong>Why:</strong> " + esc(quiz.explanation);
+      var score = 0;
+      questions.forEach(function (question, questionIndex) {
+        var selectedIndex = Number(selectedAnswers[questionIndex].value);
+        var correct = selectedIndex === question.answerIndex;
+        var feedback = form.querySelector("#topicQuizFeedback" + questionIndex);
+        var correctText = question.options[question.answerIndex];
+        feedback.hidden = false;
+        feedback.className = "quiz-feedback " + (correct ? "is-correct" : "is-incorrect");
+        feedback.innerHTML = correct
+          ? "<strong>Correct. Why:</strong> " + esc(question.explanation)
+          : "<strong>Not quite. Correct answer:</strong> " + esc(correctText) +
+            "<br><strong>Why:</strong> " + esc(question.explanation);
+        if (correct) score++;
 
-      form.querySelectorAll(".quiz-option").forEach(function (option, index) {
-        if (index === correctIndex) option.classList.add("is-correct");
-        else if (index === selectedIndex) option.classList.add("is-incorrect");
+        form.querySelectorAll(".quiz-question")[questionIndex]
+          .querySelectorAll(".quiz-option").forEach(function (option, optionIndex) {
+            if (optionIndex === question.answerIndex) option.classList.add("is-correct");
+            else if (optionIndex === selectedIndex) option.classList.add("is-incorrect");
+          });
       });
-      form.querySelectorAll('input[name="topicQuizAnswer"]').forEach(function (input) {
+      form.querySelectorAll('input[name^="topicQuizAnswer"]').forEach(function (input) {
         input.disabled = true;
       });
+      var scoreOutput = form.querySelector(".quiz-score");
+      scoreOutput.hidden = false;
+      scoreOutput.textContent = "Your score: " + score + " / " + questions.length;
       form.querySelector('button[type="submit"]').disabled = true;
     });
   }
@@ -581,7 +512,6 @@
     var main = document.getElementById("main");
     if (!main || !topic) return;
 
-    var quiz = lessonQuiz(topic);
     var meta = chapterOf[topic.id];
     var isPractical = topic.id.indexOf("practical") === 0;
     var title = (meta && meta.title) || topic.title;
@@ -658,13 +588,13 @@
         "</ul></section>";
     }
 
-    html += topicQuizHtml(quiz);
+    html += topicQuizHtml(topic.quiz);
     html += pagerHtml(topic.id);
 
     main.innerHTML = html;
     wrapCode(main);
     wireMarkButton(topic.id);
-    wireTopicQuiz(quiz);
+    wireTopicQuiz(topic.quiz);
     whenGlossaryReady(addTopicGlossary);
   }
 

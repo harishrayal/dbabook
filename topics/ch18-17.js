@@ -182,6 +182,312 @@ Passing a hashtable of parameters to a cmdlet with @params instead of a long pos
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Daily",
+        "Email Notifications",
+        "With Email Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Email Notifications within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Email Notifications fits”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Email Notifications sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Email Notifications in practice”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Email Notifications”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Email Notifications. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Daily",
+        "Email Notifications"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Email Notifications"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Email Notifications with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Email Notifications means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Email Notifications fits”?",
+      "options": [
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Email Notifications is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Email Notifications in practice”?",
+      "options": [
+        "Email Notifications is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Email Notifications:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Email Notifications:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Email Notifications”?",
+      "options": [
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs.",
+        "The first example establishes the relevant state.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Daily",
+        "Email Notifications",
+        "With Email Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Email Notifications within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Email Notifications fits”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Email Notifications sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Email Notifications in practice”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Email Notifications”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Email Notifications. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Daily",
+        "Email Notifications"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Email Notifications"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Email Notifications with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Email Notifications means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Email Notifications fits”?",
+      "options": [
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Email Notifications is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Email Notifications in practice”?",
+      "options": [
+        "Email Notifications is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Email Notifications:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Email Notifications:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Email Notifications”?",
+      "options": [
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs.",
+        "The first example establishes the relevant state.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Daily",
+        "Email Notifications",
+        "With Email Notifications, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Email Notifications within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Email Notifications fits”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Email Notifications sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Email Notifications in practice”?",
+      "options": [
+        "Where-Object",
+        "@params",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Email Notifications”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Email Notifications. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Daily",
+        "Email Notifications"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Email Notifications"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Email Notifications with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Email Notifications means”?",
+      "options": [
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Email Notifications fits”?",
+      "options": [
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Email Notifications is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Email Notifications in practice”?",
+      "options": [
+        "Email Notifications is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Email Notifications:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Email Notifications:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Email Notifications”?",
+      "options": [
+        "The diagram below places Email Notifications alongside the core concepts of PowerShell automation for DBAs.",
+        "The first example establishes the relevant state.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Email Notifications is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

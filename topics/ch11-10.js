@@ -165,6 +165,312 @@ Extended Events is far lighter weight, highly filterable and designed for produc
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Prevents disk full",
+        "Theory becomes useful when you can apply it.",
+        "TempDB Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine TempDB Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Monitoring fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Monitoring in practice”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Monitoring”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Monitoring means”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Monitoring fits”?",
+      "options": [
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly",
+        "The diagram below places TempDB Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places TempDB Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Monitoring in practice”?",
+      "options": [
+        "Finds the bottleneck",
+        "The following comparison captures the distinctions that matter most when working with TempDB Monitoring:",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Prevents disk full",
+        "Theory becomes useful when you can apply it.",
+        "TempDB Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine TempDB Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Monitoring fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Monitoring in practice”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Monitoring”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Monitoring means”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Monitoring fits”?",
+      "options": [
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly",
+        "The diagram below places TempDB Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places TempDB Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Monitoring in practice”?",
+      "options": [
+        "Finds the bottleneck",
+        "The following comparison captures the distinctions that matter most when working with TempDB Monitoring:",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Prevents disk full",
+        "Theory becomes useful when you can apply it.",
+        "TempDB Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine TempDB Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Monitoring fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Monitoring in practice”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Monitoring”?",
+      "options": [
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to TempDB Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What TempDB Monitoring means”?",
+      "options": [
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Falling rapidly",
+        "Approaching 90%"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where TempDB Monitoring fits”?",
+      "options": [
+        "With TempDB Monitoring, prefer measured, reversible changes.",
+        "Falling rapidly",
+        "The diagram below places TempDB Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places TempDB Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “TempDB Monitoring in practice”?",
+      "options": [
+        "Finds the bottleneck",
+        "The following comparison captures the distinctions that matter most when working with TempDB Monitoring:",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with TempDB Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with TempDB Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    }
+  ],
   takeaways: [
     "TempDB Monitoring is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -164,6 +164,312 @@ Uptime, backup success and restore-test results, RPO/RTO adherence, patch levels
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "RPO and RTO Compliance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine RPO and RTO Compliance within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Compliance fits”?",
+      "options": [
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Compliance in practice”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Compliance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RPO and RTO Compliance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RPO and RTO Compliance means”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Compliance fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Compliance in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Compliance:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RPO and RTO Compliance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Compliance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "RPO and RTO Compliance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine RPO and RTO Compliance within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Compliance fits”?",
+      "options": [
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Compliance in practice”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Compliance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RPO and RTO Compliance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RPO and RTO Compliance means”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Compliance fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Compliance in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Compliance:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RPO and RTO Compliance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Compliance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within enterprise DBA operations.”",
+      "options": [
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits.",
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "RPO and RTO Compliance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine RPO and RTO Compliance within enterprise DBA operations. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Compliance fits”?",
+      "options": [
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "Reporting is how an enterprise DBA demonstrates control: health-check, backup-compliance, capacity and performance reports provide evidence for SLAs and audits."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations. Daily, weekly and monthly routines keep the estate stable and the evidence current.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Compliance in practice”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "RPO and RTO Compliance is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions. Scale makes standardisation, automation and documentation essential rather than optional.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Compliance”?",
+      "options": [
+        "SLAs, RPO/RTO and compliance requirements translate business expectations into measurable operations.",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to RPO and RTO Compliance. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Enterprise DBA work shifts from single servers to a governed estate of many instances across environments and regions.",
+        "Change management governs every production change: request, review, approval, scheduled window, implementation and verification.",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Change management governs every production change: request, review, approval, scheduled window, implementation and verification. Emergency changes have a fast path but still require recording and retrospective approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What RPO and RTO Compliance means”?",
+      "options": [
+        "Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies.",
+        "Last backup per DB",
+        "Growth trend"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Migrations and database refreshes move data between servers while preserving permissions, jobs and dependencies. Cross-server work must account for logins, linked servers, agent jobs and application connection strings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where RPO and RTO Compliance fits”?",
+      "options": [
+        "Report + exceptions",
+        "Last backup per DB",
+        "The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places RPO and RTO Compliance alongside the core concepts of enterprise DBA operations. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “RPO and RTO Compliance in practice”?",
+      "options": [
+        "Environments must stay aligned but distinct.",
+        "The following comparison captures the distinctions that matter most when working with RPO and RTO Compliance:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with RPO and RTO Compliance:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with RPO and RTO Compliance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Report + exceptions",
+        "Last backup per DB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Last backup per DB",
+        "Growth trend",
+        "Patching and upgrades are planned programmes."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Patching and upgrades are planned programmes. Cumulative updates, service packs and version upgrades need testing in lower environments, a rollback plan, compatibility checks and a maintenance window.”"
+    }
+  ],
   takeaways: [
     "RPO and RTO Compliance is a fundamental concept in enterprise DBA operations",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

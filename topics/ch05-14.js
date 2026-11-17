@@ -179,6 +179,312 @@ ORDER BY pages_kb DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server decides what to take”?",
+      "options": [
+        "host Available MBytes",
+        "SQL Server has no fixed memory allocation.",
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server has no fixed memory allocation. It starts small, grows as the buffer pool, plan cache, and memory grants need space, and shrinks when Windows signals pressure. Within min server memory and max server memory, three numbers describe its state at any moment:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “min server memory and max server memory”?",
+      "options": [
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties.",
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:",
+        "host Available MBytes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties. Their defaults are the source of most production memory incidents:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the cap does not cover”?",
+      "options": [
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:",
+        "host Available MBytes",
+        "An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true. The cap governs the buffer pool and the memory clerks under the Memory Manager. Outside it sit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the number”?",
+      "options": [
+        "OS paging SQL memory — raise the cap discipline, or grant LPIM with an explicit max",
+        "Start from measured reality, not from a blog post.",
+        "SQL capped correctly but the cap was never checked against co-tenants"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Start from measured reality, not from a blog post. For a dedicated single-instance host the field-tested approach is:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the memory DMVs”?",
+      "options": [
+        "Configured values first, then reality:",
+        "host Available MBytes",
+        "max server memory left at default — SQL Server has taken the host"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Configured values first, then reality:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The monitoring pair that catches all of this early: _____ and page life expectancy.”",
+      "options": [
+        "sys.dm_os_process_memory.physical_memory_in_use_kb",
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties.",
+        "host Available MBytes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The monitoring pair that catches all of this early: host Available MBytes and page life expectancy. Alert on the first, graph the second, and review both after any change to max server memory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server decides what to take”?",
+      "options": [
+        "SQL Server has no fixed memory allocation.",
+        "When committed is well below target, SQL Server is being held back (or is idle).",
+        "Uncapped sibling instance hoarding memory — configure both"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When committed is well below target, SQL Server is being held back (or is idle). When physical in use drifts far above the configured cap, something else is going on — an unmanaged allocation, a second process, or a setting you never made.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “min server memory and max server memory”?",
+      "options": [
+        "Setting max too low wastes the hardware you paid for; leaving it at the default lets SQL Server squeeze everything else on the box.",
+        "Uncapped sibling instance hoarding memory — configure both",
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Setting max too low wastes the hardware you paid for; leaving it at the default lets SQL Server squeeze everything else on the box. Both are configuration defects, and both are avoidable in the first ten minutes after install.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the cap does not cover”?",
+      "options": [
+        "Uncapped sibling instance hoarding memory — configure both",
+        "An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true.",
+        "Microsoft's own sizing guidance therefore subtracts thread memory first, then a 25% margin for unmanaged allocations, before arriving at the number you configure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Microsoft's own sizing guidance therefore subtracts thread memory first, then a 25% margin for unmanaged allocations, before arriving at the number you configure. In practice: set the cap, then confirm the real resident size with sys.dm_os_process_memory — if physical in use sits materially above your cap, the unmanaged side is larger than you assumed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the number”?",
+      "options": [
+        "122,880 MB (120 GB)",
+        "On a host running several instances, split the pie deliberately: the sum of every instance's max must stay below physical memory, leaving the OS its share.",
+        "57,344 MB (56 GB)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “On a host running several instances, split the pie deliberately: the sum of every instance's max must stay below physical memory, leaving the OS its share. SQL Server makes no attempt to balance instances — the first one to run claims the most.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server decides what to take”?",
+      "options": [
+        "host Available MBytes",
+        "SQL Server has no fixed memory allocation.",
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server has no fixed memory allocation. It starts small, grows as the buffer pool, plan cache, and memory grants need space, and shrinks when Windows signals pressure. Within min server memory and max server memory, three numbers describe its state at any moment:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “min server memory and max server memory”?",
+      "options": [
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties.",
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:",
+        "host Available MBytes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties. Their defaults are the source of most production memory incidents:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the cap does not cover”?",
+      "options": [
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:",
+        "host Available MBytes",
+        "An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true. The cap governs the buffer pool and the memory clerks under the Memory Manager. Outside it sit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the number”?",
+      "options": [
+        "OS paging SQL memory — raise the cap discipline, or grant LPIM with an explicit max",
+        "Start from measured reality, not from a blog post.",
+        "SQL capped correctly but the cap was never checked against co-tenants"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Start from measured reality, not from a blog post. For a dedicated single-instance host the field-tested approach is:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the memory DMVs”?",
+      "options": [
+        "Configured values first, then reality:",
+        "host Available MBytes",
+        "max server memory left at default — SQL Server has taken the host"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Configured values first, then reality:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The monitoring pair that catches all of this early: _____ and page life expectancy.”",
+      "options": [
+        "sys.dm_os_process_memory.physical_memory_in_use_kb",
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties.",
+        "host Available MBytes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The monitoring pair that catches all of this early: host Available MBytes and page life expectancy. Alert on the first, graph the second, and review both after any change to max server memory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server decides what to take”?",
+      "options": [
+        "SQL Server has no fixed memory allocation.",
+        "When committed is well below target, SQL Server is being held back (or is idle).",
+        "Uncapped sibling instance hoarding memory — configure both"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When committed is well below target, SQL Server is being held back (or is idle). When physical in use drifts far above the configured cap, something else is going on — an unmanaged allocation, a second process, or a setting you never made.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “min server memory and max server memory”?",
+      "options": [
+        "Setting max too low wastes the hardware you paid for; leaving it at the default lets SQL Server squeeze everything else on the box.",
+        "Uncapped sibling instance hoarding memory — configure both",
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Setting max too low wastes the hardware you paid for; leaving it at the default lets SQL Server squeeze everything else on the box. Both are configuration defects, and both are avoidable in the first ten minutes after install.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the cap does not cover”?",
+      "options": [
+        "Uncapped sibling instance hoarding memory — configure both",
+        "An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true.",
+        "Microsoft's own sizing guidance therefore subtracts thread memory first, then a 25% margin for unmanaged allocations, before arriving at the number you configure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Microsoft's own sizing guidance therefore subtracts thread memory first, then a 25% margin for unmanaged allocations, before arriving at the number you configure. In practice: set the cap, then confirm the real resident size with sys.dm_os_process_memory — if physical in use sits materially above your cap, the unmanaged side is larger than you assumed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the number”?",
+      "options": [
+        "122,880 MB (120 GB)",
+        "On a host running several instances, split the pie deliberately: the sum of every instance's max must stay below physical memory, leaving the OS its share.",
+        "57,344 MB (56 GB)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “On a host running several instances, split the pie deliberately: the sum of every instance's max must stay below physical memory, leaving the OS its share. SQL Server makes no attempt to balance instances — the first one to run claims the most.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server decides what to take”?",
+      "options": [
+        "host Available MBytes",
+        "SQL Server has no fixed memory allocation.",
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server has no fixed memory allocation. It starts small, grows as the buffer pool, plan cache, and memory grants need space, and shrinks when Windows signals pressure. Within min server memory and max server memory, three numbers describe its state at any moment:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “min server memory and max server memory”?",
+      "options": [
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties.",
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:",
+        "host Available MBytes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties. Their defaults are the source of most production memory incidents:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the cap does not cover”?",
+      "options": [
+        "And who owns the memory inside the instance — useful when someone claims “SQL Server is using 50 GB” and you need to show which database or clerk is responsible:",
+        "host Available MBytes",
+        "An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true. The cap governs the buffer pool and the memory clerks under the Memory Manager. Outside it sit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the number”?",
+      "options": [
+        "OS paging SQL memory — raise the cap discipline, or grant LPIM with an explicit max",
+        "Start from measured reality, not from a blog post.",
+        "SQL capped correctly but the cap was never checked against co-tenants"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Start from measured reality, not from a blog post. For a dedicated single-instance host the field-tested approach is:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the memory DMVs”?",
+      "options": [
+        "Configured values first, then reality:",
+        "host Available MBytes",
+        "max server memory left at default — SQL Server has taken the host"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Configured values first, then reality:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The monitoring pair that catches all of this early: _____ and page life expectancy.”",
+      "options": [
+        "sys.dm_os_process_memory.physical_memory_in_use_kb",
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties.",
+        "host Available MBytes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The monitoring pair that catches all of this early: host Available MBytes and page life expectancy. Alert on the first, graph the second, and review both after any change to max server memory.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How SQL Server decides what to take”?",
+      "options": [
+        "SQL Server has no fixed memory allocation.",
+        "When committed is well below target, SQL Server is being held back (or is idle).",
+        "Uncapped sibling instance hoarding memory — configure both"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When committed is well below target, SQL Server is being held back (or is idle). When physical in use drifts far above the configured cap, something else is going on — an unmanaged allocation, a second process, or a setting you never made.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “min server memory and max server memory”?",
+      "options": [
+        "Setting max too low wastes the hardware you paid for; leaving it at the default lets SQL Server squeeze everything else on the box.",
+        "Uncapped sibling instance hoarding memory — configure both",
+        "These two options are advanced settings, changed through sp_configure or the Memory page of Server Properties."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Setting max too low wastes the hardware you paid for; leaving it at the default lets SQL Server squeeze everything else on the box. Both are configuration defects, and both are avoidable in the first ten minutes after install.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the cap does not cover”?",
+      "options": [
+        "Uncapped sibling instance hoarding memory — configure both",
+        "An honest description of max server memory matters, because “SQL Server is limited to 56 GB” is not strictly true.",
+        "Microsoft's own sizing guidance therefore subtracts thread memory first, then a 25% margin for unmanaged allocations, before arriving at the number you configure."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Microsoft's own sizing guidance therefore subtracts thread memory first, then a 25% margin for unmanaged allocations, before arriving at the number you configure. In practice: set the cap, then confirm the real resident size with sys.dm_os_process_memory — if physical in use sits materially above your cap, the unmanaged side is larger than you assumed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing the number”?",
+      "options": [
+        "122,880 MB (120 GB)",
+        "On a host running several instances, split the pie deliberately: the sum of every instance's max must stay below physical memory, leaving the OS its share.",
+        "57,344 MB (56 GB)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “On a host running several instances, split the pie deliberately: the sum of every instance's max must stay below physical memory, leaving the OS its share. SQL Server makes no attempt to balance instances — the first one to run claims the most.”"
+    }
+  ],
   takeaways: [
     "SQL Server grows and shrinks dynamically between min and max server memory — the defaults (0 / 2,147,483,647 MB) are not production values",
     "min is a floor reached only under load, never a pre-allocation; max is a ceiling applied immediately on RECONFIGURE",

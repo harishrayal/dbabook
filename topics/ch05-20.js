@@ -176,6 +176,312 @@ A default instance is addressed by server name alone on port 1433; a named insta
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server installation and configuration.”",
+      "options": [
+        "Predictable connectivity",
+        "Post-Installation Configuration",
+        "Central credential control"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Post-Installation Configuration within SQL Server installation and configuration. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Installation Configuration fits”?",
+      "options": [
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall.",
+        "Post-Installation Configuration sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall. Default instances use 1433; named instances use a dynamic port resolved by the Browser service on UDP 1434 unless configured otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Installation Configuration in practice”?",
+      "options": [
+        "Full Enterprise features",
+        "Core HA, limited scale",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling engine for jobs, alerts and maintenance. It must be running and configured to start automatically in production, with an operator for notifications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Installation Configuration”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Post-Installation Configuration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An instance is an installed copy of the Database Engine with its own system databases, configuration and set of user databases.",
+        "With Post-Installation Configuration, prefer measured, reversible changes.",
+        "Post-Installation Configuration"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “An instance is an installed copy of the Database Engine with its own system databases, configuration and set of user databases. A server can host one default instance and multiple named instances, each isolated from the others.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service accounts run the engine and Agent.",
+        "Memory configuration is critical.",
+        "Post-Installation Configuration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Post-Installation Configuration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Post-Installation Configuration means”?",
+      "options": [
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance.",
+        "Service accounts run the engine and Agent.",
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service accounts run the engine and Agent. Use a dedicated low-privilege domain or virtual account, grant only required rights, and never run SQL Server as a local administrator in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Installation Configuration fits”?",
+      "options": [
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration.",
+        "Memory configuration is critical.",
+        "Post-Installation Configuration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Installation Configuration in practice”?",
+      "options": [
+        "Post-Installation Configuration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall.",
+        "The following comparison captures the distinctions that matter most when working with Post-Installation Configuration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Post-Installation Configuration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Installation Configuration”?",
+      "options": [
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration.",
+        "The first example establishes the relevant state.",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server installation and configuration.”",
+      "options": [
+        "Predictable connectivity",
+        "Post-Installation Configuration",
+        "Central credential control"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Post-Installation Configuration within SQL Server installation and configuration. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Installation Configuration fits”?",
+      "options": [
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall.",
+        "Post-Installation Configuration sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall. Default instances use 1433; named instances use a dynamic port resolved by the Browser service on UDP 1434 unless configured otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Installation Configuration in practice”?",
+      "options": [
+        "Full Enterprise features",
+        "Core HA, limited scale",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling engine for jobs, alerts and maintenance. It must be running and configured to start automatically in production, with an operator for notifications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Installation Configuration”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Post-Installation Configuration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An instance is an installed copy of the Database Engine with its own system databases, configuration and set of user databases.",
+        "With Post-Installation Configuration, prefer measured, reversible changes.",
+        "Post-Installation Configuration"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “An instance is an installed copy of the Database Engine with its own system databases, configuration and set of user databases. A server can host one default instance and multiple named instances, each isolated from the others.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service accounts run the engine and Agent.",
+        "Memory configuration is critical.",
+        "Post-Installation Configuration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Post-Installation Configuration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Post-Installation Configuration means”?",
+      "options": [
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance.",
+        "Service accounts run the engine and Agent.",
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service accounts run the engine and Agent. Use a dedicated low-privilege domain or virtual account, grant only required rights, and never run SQL Server as a local administrator in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Installation Configuration fits”?",
+      "options": [
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration.",
+        "Memory configuration is critical.",
+        "Post-Installation Configuration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Installation Configuration in practice”?",
+      "options": [
+        "Post-Installation Configuration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall.",
+        "The following comparison captures the distinctions that matter most when working with Post-Installation Configuration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Post-Installation Configuration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Installation Configuration”?",
+      "options": [
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration.",
+        "The first example establishes the relevant state.",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server installation and configuration.”",
+      "options": [
+        "Predictable connectivity",
+        "Post-Installation Configuration",
+        "Central credential control"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Post-Installation Configuration within SQL Server installation and configuration. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Installation Configuration fits”?",
+      "options": [
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall.",
+        "Post-Installation Configuration sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall. Default instances use 1433; named instances use a dynamic port resolved by the Browser service on UDP 1434 unless configured otherwise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Installation Configuration in practice”?",
+      "options": [
+        "Full Enterprise features",
+        "Core HA, limited scale",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling engine for jobs, alerts and maintenance. It must be running and configured to start automatically in production, with an operator for notifications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Installation Configuration”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Post-Installation Configuration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "An instance is an installed copy of the Database Engine with its own system databases, configuration and set of user databases.",
+        "With Post-Installation Configuration, prefer measured, reversible changes.",
+        "Post-Installation Configuration"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “An instance is an installed copy of the Database Engine with its own system databases, configuration and set of user databases. A server can host one default instance and multiple named instances, each isolated from the others.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Service accounts run the engine and Agent.",
+        "Memory configuration is critical.",
+        "Post-Installation Configuration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Post-Installation Configuration with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Post-Installation Configuration means”?",
+      "options": [
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance.",
+        "Service accounts run the engine and Agent.",
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service accounts run the engine and Agent. Use a dedicated low-privilege domain or virtual account, grant only required rights, and never run SQL Server as a local administrator in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Installation Configuration fits”?",
+      "options": [
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration.",
+        "Memory configuration is critical.",
+        "Post-Installation Configuration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Installation Configuration in practice”?",
+      "options": [
+        "Post-Installation Configuration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall.",
+        "The following comparison captures the distinctions that matter most when working with Post-Installation Configuration:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Post-Installation Configuration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Installation Configuration”?",
+      "options": [
+        "The diagram below places Post-Installation Configuration alongside the core concepts of SQL Server installation and configuration.",
+        "The first example establishes the relevant state.",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Post-Installation Configuration is a fundamental concept in SQL Server installation and configuration",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

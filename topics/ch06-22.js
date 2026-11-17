@@ -162,6 +162,312 @@ Use ALTER DATABASE ... MODIFY FILE to change the catalogued path, take the datab
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Disk-Full Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disk-Full Troubleshooting within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk-Full Troubleshooting fits”?",
+      "options": [
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk-Full Troubleshooting in practice”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk-Full Troubleshooting”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk-Full Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Data file growth and log file growth behave differently.",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk-Full Troubleshooting means”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "User objects across filegroups",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk-Full Troubleshooting fits”?",
+      "options": [
+        "System objects, boot information",
+        "User objects across filegroups",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk-Full Troubleshooting in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "The following comparison captures the distinctions that matter most when working with Disk-Full Troubleshooting:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk-Full Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk-Full Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Disk-Full Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disk-Full Troubleshooting within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk-Full Troubleshooting fits”?",
+      "options": [
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk-Full Troubleshooting in practice”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk-Full Troubleshooting”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk-Full Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Data file growth and log file growth behave differently.",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk-Full Troubleshooting means”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "User objects across filegroups",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk-Full Troubleshooting fits”?",
+      "options": [
+        "System objects, boot information",
+        "User objects across filegroups",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk-Full Troubleshooting in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "The following comparison captures the distinctions that matter most when working with Disk-Full Troubleshooting:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk-Full Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk-Full Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Disk-Full Troubleshooting"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disk-Full Troubleshooting within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk-Full Troubleshooting fits”?",
+      "options": [
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk-Full Troubleshooting in practice”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Disk-Full Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk-Full Troubleshooting”?",
+      "options": [
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk-Full Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Data file growth and log file growth behave differently.",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk-Full Troubleshooting means”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "User objects across filegroups",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk-Full Troubleshooting fits”?",
+      "options": [
+        "System objects, boot information",
+        "User objects across filegroups",
+        "The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Disk-Full Troubleshooting alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk-Full Troubleshooting in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "The following comparison captures the distinctions that matter most when working with Disk-Full Troubleshooting:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk-Full Troubleshooting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk-Full Troubleshooting”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    }
+  ],
   takeaways: [
     "Disk-Full Troubleshooting is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

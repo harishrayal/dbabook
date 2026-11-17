@@ -181,6 +181,312 @@ After a restore to another server, a user's SID may not match any login. Find th
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "This lab makes the login/user distinction concrete."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab makes the login/user distinction concrete. You will create identities at both scopes, grant permissions and then connect as those identities to see the effect first-hand.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Map a login into a database",
+        "Authentication establishes who you are; authorisation decides what you may do.",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Authentication establishes who you are; authorisation decides what you may do. A login authenticates to the server, a user maps that login into a database, and permissions are granted to the user at database scope.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Use roles instead of granting to individuals.",
+        "Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use roles instead of granting to individuals. Fixed database roles such as db_datareader are convenient; custom roles let you assemble a precise least-privilege bundle for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Bundle permissions",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "Map a login into a database"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Work on a scratch database.",
+        "If the output differs, stop and correct it before moving on.",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work on a scratch database. Create a dedicated test login rather than reusing your admin account — the point is to observe exactly what a low-privilege identity can and cannot do.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "The sequence below mirrors a real onboarding: create login, create user, add to a role, grant schema permissions, then connect and test."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The sequence below mirrors a real onboarding: create login, create user, add to a role, grant schema permissions, then connect and test.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Neutral",
+        "DENY overrides GRANT at every scope.",
+        "Beats GRANT at any scope"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DENY overrides GRANT at every scope. You will see this directly: grant SELECT on a schema, then DENY on a table, and confirm the user cannot read that table even though the schema is granted.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login.",
+        "Overridden by DENY",
+        "Beats GRANT at any scope"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login. Query the catalogues to find them and remap with ALTER USER.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "Overridden by DENY",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "This lab makes the login/user distinction concrete."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab makes the login/user distinction concrete. You will create identities at both scopes, grant permissions and then connect as those identities to see the effect first-hand.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Map a login into a database",
+        "Authentication establishes who you are; authorisation decides what you may do.",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Authentication establishes who you are; authorisation decides what you may do. A login authenticates to the server, a user maps that login into a database, and permissions are granted to the user at database scope.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Use roles instead of granting to individuals.",
+        "Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use roles instead of granting to individuals. Fixed database roles such as db_datareader are convenient; custom roles let you assemble a precise least-privilege bundle for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Bundle permissions",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "Map a login into a database"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Work on a scratch database.",
+        "If the output differs, stop and correct it before moving on.",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work on a scratch database. Create a dedicated test login rather than reusing your admin account — the point is to observe exactly what a low-privilege identity can and cannot do.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "The sequence below mirrors a real onboarding: create login, create user, add to a role, grant schema permissions, then connect and test."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The sequence below mirrors a real onboarding: create login, create user, add to a role, grant schema permissions, then connect and test.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Neutral",
+        "DENY overrides GRANT at every scope.",
+        "Beats GRANT at any scope"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DENY overrides GRANT at every scope. You will see this directly: grant SELECT on a schema, then DENY on a table, and confirm the user cannot read that table even though the schema is granted.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login.",
+        "Overridden by DENY",
+        "Beats GRANT at any scope"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login. Query the catalogues to find them and remap with ALTER USER.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "Overridden by DENY",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "This lab makes the login/user distinction concrete."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab makes the login/user distinction concrete. You will create identities at both scopes, grant permissions and then connect as those identities to see the effect first-hand.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Map a login into a database",
+        "Authentication establishes who you are; authorisation decides what you may do.",
+        "Authenticate to the instance"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Authentication establishes who you are; authorisation decides what you may do. A login authenticates to the server, a user maps that login into a database, and permissions are granted to the user at database scope.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Use roles instead of granting to individuals.",
+        "Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use roles instead of granting to individuals. Fixed database roles such as db_datareader are convenient; custom roles let you assemble a precise least-privilege bundle for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Authenticate to the instance",
+        "Map a login into a database",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Bundle permissions",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "Map a login into a database"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Work on a scratch database.",
+        "If the output differs, stop and correct it before moving on.",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work on a scratch database. Create a dedicated test login rather than reusing your admin account — the point is to observe exactly what a low-privilege identity can and cannot do.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "The sequence below mirrors a real onboarding: create login, create user, add to a role, grant schema permissions, then connect and test."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The sequence below mirrors a real onboarding: create login, create user, add to a role, grant schema permissions, then connect and test.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Neutral",
+        "DENY overrides GRANT at every scope.",
+        "Beats GRANT at any scope"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “DENY overrides GRANT at every scope. You will see this directly: grant SELECT on a schema, then DENY on a table, and confirm the user cannot read that table even though the schema is granted.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login.",
+        "Overridden by DENY",
+        "Beats GRANT at any scope"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Orphaned users appear when a database is restored to another server and the user's SID no longer matches any login. Query the catalogues to find them and remap with ALTER USER.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Least privilege is the goal throughout: give each identity only what it needs, avoid sysadmin and db_owner, and review permissions as a recurring task, not a one-off.",
+        "Overridden by DENY",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "Authentication (login) and authorisation (user/permissions) are different layers",
     "Prefer roles and schema-level grants over per-object, per-user grants",

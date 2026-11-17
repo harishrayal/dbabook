@@ -193,6 +193,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Automatic Failover",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Automatic Failover within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automatic Failover fits”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "With Automatic Failover, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automatic Failover in practice”?",
+      "options": [
+        "Automatic Failover sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automatic Failover”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Theory becomes useful when you can apply it.",
+        "Automatic Failover sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Automatic Failover. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Use the following as a starting point when investigating Automatic Failover.",
+        "Higher (wait for secondary)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Lower",
+        "Automatic Failover sits inside a larger system.",
+        "Automatic Failover"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Automatic Failover with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Automatic Failover means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Use the following as a starting point when investigating Automatic Failover."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automatic Failover fits”?",
+      "options": [
+        "The diagram below places Automatic Failover alongside the core concepts of high availability.",
+        "Use the following as a starting point when investigating Automatic Failover.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Automatic Failover alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automatic Failover in practice”?",
+      "options": [
+        "Manual, planned",
+        "Automatic Failover",
+        "The following comparison captures the distinctions that matter most when working with Automatic Failover:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Automatic Failover:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automatic Failover”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The first example establishes the relevant state.",
+        "Automatic Failover"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Automatic Failover",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Automatic Failover within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automatic Failover fits”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "With Automatic Failover, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automatic Failover in practice”?",
+      "options": [
+        "Automatic Failover sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automatic Failover”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Theory becomes useful when you can apply it.",
+        "Automatic Failover sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Automatic Failover. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Use the following as a starting point when investigating Automatic Failover.",
+        "Higher (wait for secondary)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Lower",
+        "Automatic Failover sits inside a larger system.",
+        "Automatic Failover"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Automatic Failover with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Automatic Failover means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Use the following as a starting point when investigating Automatic Failover."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automatic Failover fits”?",
+      "options": [
+        "The diagram below places Automatic Failover alongside the core concepts of high availability.",
+        "Use the following as a starting point when investigating Automatic Failover.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Automatic Failover alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automatic Failover in practice”?",
+      "options": [
+        "Manual, planned",
+        "Automatic Failover",
+        "The following comparison captures the distinctions that matter most when working with Automatic Failover:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Automatic Failover:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automatic Failover”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The first example establishes the relevant state.",
+        "Automatic Failover"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Automatic Failover",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Automatic Failover within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automatic Failover fits”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "With Automatic Failover, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automatic Failover in practice”?",
+      "options": [
+        "Automatic Failover sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automatic Failover”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Theory becomes useful when you can apply it.",
+        "Automatic Failover sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Automatic Failover. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Use the following as a starting point when investigating Automatic Failover.",
+        "Higher (wait for secondary)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Lower",
+        "Automatic Failover sits inside a larger system.",
+        "Automatic Failover"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Automatic Failover with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Automatic Failover means”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Use the following as a starting point when investigating Automatic Failover."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automatic Failover fits”?",
+      "options": [
+        "The diagram below places Automatic Failover alongside the core concepts of high availability.",
+        "Use the following as a starting point when investigating Automatic Failover.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Automatic Failover alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automatic Failover in practice”?",
+      "options": [
+        "Manual, planned",
+        "Automatic Failover",
+        "The following comparison captures the distinctions that matter most when working with Automatic Failover:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Automatic Failover:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automatic Failover”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The first example establishes the relevant state.",
+        "Automatic Failover"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Automatic Failover is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

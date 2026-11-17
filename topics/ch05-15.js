@@ -192,6 +192,312 @@ FROM   sys.dm_os_sys_info;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “max server memory (MB) defaults to _____ — about 2 TB, i.e. “no limit at all”. On a server where SQL Server is the only workload, the result is usually survivable: SQL takes what it needs, Windows keeps a small reserve, and nobody notices.”",
+      "options": [
+        "2,147,483,647 megabytes",
+        "Change it with the buffer pool in mind",
+        "Document the calculation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “max server memory (MB) defaults to 2,147,483,647 megabytes — about 2 TB, i.e. “no limit at all”. On a server where SQL Server is the only workload, the result is usually survivable: SQL takes what it needs, Windows keeps a small reserve, and nobody notices.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Setting the option”?",
+      "options": [
+        "~6 GB by design",
+        "≤ 65,536 MB — within physical memory",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “It is an advanced option, it takes effect immediately, and it requires no restart:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Calculating the number”?",
+      "options": [
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Microsoft's documented method for a single instance:",
+        "Something else is evicting pages — a scan, or memory pressure from outside SQL Server"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Microsoft's documented method for a single instance:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server does _____ balance instances against each other.”",
+      "options": [
+        "not",
+        "Revisit after hardware changes",
+        "Pair it with Lock pages in memory"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server does not balance instances against each other. Whichever instance starts first and receives load first takes the most memory; an idle instance that later becomes busy can only claim what the others release. Divide the budget explicitly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the cap is real”?",
+      "options": [
+        "≤ 65,536 MB — within physical memory",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Configured value, then observed behaviour:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Configured value, then observed behaviour:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Operating it safely”?",
+      "options": [
+        "Remember the cap is a ceiling for growth, not a reservation: an idle instance will not hold 56 GB just because you allowed it to.",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Configured value, then observed behaviour:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “One line of configuration, reviewed whenever the host changes — that is the whole discipline.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the default is a production defect”?",
+      "options": [
+        "The damage appears in three situations, all common:",
+        "Something else is evicting pages — a scan, or memory pressure from outside SQL Server",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The damage appears in three situations, all common:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The equivalent path in SSMS: right-click the instance → _____ → Maximum server memory.”",
+      "options": [
+        "Microsoft's own guidance is to configure it on every version and every install — SQL Server Setup has offered a recommendation for the value since 2019, which tells you how often…",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:",
+        "Properties → Memory"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The equivalent path in SSMS: right-click the instance → Properties → Memory → Maximum server memory. Same setting, same effect; the script version is the one you put in source control.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For day-to-day practice a simpler rule is close enough and easier to defend in a change review: _____, then sanity-check against the real co-tenants on the box.”",
+      "options": [
+        "Microsoft's documented method for a single instance:",
+        "leave 10% (or at least 4 GB) for everything that is not SQL Server",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “For day-to-day practice a simpler rule is close enough and easier to defend in a change review: leave 10% (or at least 4 GB) for everything that is not SQL Server, then sanity-check against the real co-tenants on the box.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Multiple instances on one host”?",
+      "options": [
+        "Two further options when instances must coexist:",
+        "≤ 65,536 MB — within physical memory",
+        "Co-tenants"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two further options when instances must coexist:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “max server memory (MB) defaults to _____ — about 2 TB, i.e. “no limit at all”. On a server where SQL Server is the only workload, the result is usually survivable: SQL takes what it needs, Windows keeps a small reserve, and nobody notices.”",
+      "options": [
+        "2,147,483,647 megabytes",
+        "Change it with the buffer pool in mind",
+        "Document the calculation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “max server memory (MB) defaults to 2,147,483,647 megabytes — about 2 TB, i.e. “no limit at all”. On a server where SQL Server is the only workload, the result is usually survivable: SQL takes what it needs, Windows keeps a small reserve, and nobody notices.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Setting the option”?",
+      "options": [
+        "~6 GB by design",
+        "≤ 65,536 MB — within physical memory",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “It is an advanced option, it takes effect immediately, and it requires no restart:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Calculating the number”?",
+      "options": [
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Microsoft's documented method for a single instance:",
+        "Something else is evicting pages — a scan, or memory pressure from outside SQL Server"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Microsoft's documented method for a single instance:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server does _____ balance instances against each other.”",
+      "options": [
+        "not",
+        "Revisit after hardware changes",
+        "Pair it with Lock pages in memory"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server does not balance instances against each other. Whichever instance starts first and receives load first takes the most memory; an idle instance that later becomes busy can only claim what the others release. Divide the budget explicitly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the cap is real”?",
+      "options": [
+        "≤ 65,536 MB — within physical memory",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Configured value, then observed behaviour:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Configured value, then observed behaviour:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Operating it safely”?",
+      "options": [
+        "Remember the cap is a ceiling for growth, not a reservation: an idle instance will not hold 56 GB just because you allowed it to.",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Configured value, then observed behaviour:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “One line of configuration, reviewed whenever the host changes — that is the whole discipline.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the default is a production defect”?",
+      "options": [
+        "The damage appears in three situations, all common:",
+        "Something else is evicting pages — a scan, or memory pressure from outside SQL Server",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The damage appears in three situations, all common:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The equivalent path in SSMS: right-click the instance → _____ → Maximum server memory.”",
+      "options": [
+        "Microsoft's own guidance is to configure it on every version and every install — SQL Server Setup has offered a recommendation for the value since 2019, which tells you how often…",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:",
+        "Properties → Memory"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The equivalent path in SSMS: right-click the instance → Properties → Memory → Maximum server memory. Same setting, same effect; the script version is the one you put in source control.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For day-to-day practice a simpler rule is close enough and easier to defend in a change review: _____, then sanity-check against the real co-tenants on the box.”",
+      "options": [
+        "Microsoft's documented method for a single instance:",
+        "leave 10% (or at least 4 GB) for everything that is not SQL Server",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “For day-to-day practice a simpler rule is close enough and easier to defend in a change review: leave 10% (or at least 4 GB) for everything that is not SQL Server, then sanity-check against the real co-tenants on the box.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Multiple instances on one host”?",
+      "options": [
+        "Two further options when instances must coexist:",
+        "≤ 65,536 MB — within physical memory",
+        "Co-tenants"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two further options when instances must coexist:”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “max server memory (MB) defaults to _____ — about 2 TB, i.e. “no limit at all”. On a server where SQL Server is the only workload, the result is usually survivable: SQL takes what it needs, Windows keeps a small reserve, and nobody notices.”",
+      "options": [
+        "2,147,483,647 megabytes",
+        "Change it with the buffer pool in mind",
+        "Document the calculation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “max server memory (MB) defaults to 2,147,483,647 megabytes — about 2 TB, i.e. “no limit at all”. On a server where SQL Server is the only workload, the result is usually survivable: SQL takes what it needs, Windows keeps a small reserve, and nobody notices.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Setting the option”?",
+      "options": [
+        "~6 GB by design",
+        "≤ 65,536 MB — within physical memory",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “It is an advanced option, it takes effect immediately, and it requires no restart:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Calculating the number”?",
+      "options": [
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Microsoft's documented method for a single instance:",
+        "Something else is evicting pages — a scan, or memory pressure from outside SQL Server"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Microsoft's documented method for a single instance:”"
+    },
+    {
+      "question": "Complete the lesson statement: “SQL Server does _____ balance instances against each other.”",
+      "options": [
+        "not",
+        "Revisit after hardware changes",
+        "Pair it with Lock pages in memory"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “SQL Server does not balance instances against each other. Whichever instance starts first and receives load first takes the most memory; an idle instance that later becomes busy can only claim what the others release. Divide the budget explicitly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying the cap is real”?",
+      "options": [
+        "≤ 65,536 MB — within physical memory",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Configured value, then observed behaviour:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Configured value, then observed behaviour:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Operating it safely”?",
+      "options": [
+        "Remember the cap is a ceiling for growth, not a reservation: an idle instance will not hold 56 GB just because you allowed it to.",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline.",
+        "Configured value, then observed behaviour:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “One line of configuration, reviewed whenever the host changes — that is the whole discipline.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why the default is a production defect”?",
+      "options": [
+        "The damage appears in three situations, all common:",
+        "Something else is evicting pages — a scan, or memory pressure from outside SQL Server",
+        "One line of configuration, reviewed whenever the host changes — that is the whole discipline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The damage appears in three situations, all common:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The equivalent path in SSMS: right-click the instance → _____ → Maximum server memory.”",
+      "options": [
+        "Microsoft's own guidance is to configure it on every version and every install — SQL Server Setup has offered a recommendation for the value since 2019, which tells you how often…",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:",
+        "Properties → Memory"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The equivalent path in SSMS: right-click the instance → Properties → Memory → Maximum server memory. Same setting, same effect; the script version is the one you put in source control.”"
+    },
+    {
+      "question": "Complete the lesson statement: “For day-to-day practice a simpler rule is close enough and easier to defend in a change review: _____, then sanity-check against the real co-tenants on the box.”",
+      "options": [
+        "Microsoft's documented method for a single instance:",
+        "leave 10% (or at least 4 GB) for everything that is not SQL Server",
+        "It is an advanced option, it takes effect immediately, and it requires no restart:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “For day-to-day practice a simpler rule is close enough and easier to defend in a change review: leave 10% (or at least 4 GB) for everything that is not SQL Server, then sanity-check against the real co-tenants on the box.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Multiple instances on one host”?",
+      "options": [
+        "Two further options when instances must coexist:",
+        "≤ 65,536 MB — within physical memory",
+        "Co-tenants"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two further options when instances must coexist:”"
+    }
+  ],
   takeaways: [
     "The default 2,147,483,647 MB means unlimited — configure max server memory on every instance, every time",
     "Calculate it: total RAM minus OS/co-tenants, thread stacks, and a margin for unmanaged allocations; record it in megabytes with the reasoning",

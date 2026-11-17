@@ -186,6 +186,312 @@ Granting only the minimum permissions required for the minimum scope and time. I
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "Least Privilege Principle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Least Privilege Principle within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Least Privilege Principle fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Least Privilege Principle sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Least Privilege Principle in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Least Privilege Principle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Least Privilege Principle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Least Privilege Principle",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Least Privilege Principle",
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Least Privilege Principle with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Least Privilege Principle means”?",
+      "options": [
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Least Privilege Principle fits”?",
+      "options": [
+        "Least Privilege Principle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Least Privilege Principle in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Least Privilege Principle:",
+        "Least Privilege Principle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Least Privilege Principle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Least Privilege Principle”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "Least Privilege Principle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Least Privilege Principle within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Least Privilege Principle fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Least Privilege Principle sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Least Privilege Principle in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Least Privilege Principle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Least Privilege Principle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Least Privilege Principle",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Least Privilege Principle",
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Least Privilege Principle with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Least Privilege Principle means”?",
+      "options": [
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Least Privilege Principle fits”?",
+      "options": [
+        "Least Privilege Principle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Least Privilege Principle in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Least Privilege Principle:",
+        "Least Privilege Principle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Least Privilege Principle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Least Privilege Principle”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "Least Privilege Principle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Least Privilege Principle within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Least Privilege Principle fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Least Privilege Principle sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Least Privilege Principle in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Map a login into a database",
+        "Bundle permissions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Least Privilege Principle”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Least Privilege Principle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Least Privilege Principle",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Least Privilege Principle",
+        "Roles simplify permission management.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Least Privilege Principle with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Least Privilege Principle means”?",
+      "options": [
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "Roles simplify permission management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Least Privilege Principle fits”?",
+      "options": [
+        "Least Privilege Principle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Least Privilege Principle in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Least Privilege Principle:",
+        "Least Privilege Principle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "GRANT, DENY and REVOKE form the permission vocabulary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Least Privilege Principle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Least Privilege Principle”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "The diagram below places Least Privilege Principle alongside the core concepts of SQL Server security and permissions.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Least Privilege Principle is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

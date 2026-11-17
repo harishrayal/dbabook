@@ -194,6 +194,312 @@ An FCI protects the whole instance using shared storage with one active node; an
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Higher (wait for secondary)",
+        "Listener Concepts",
+        "With Listener Concepts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Listener Concepts within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Listener Concepts fits”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Lower",
+        "Listener Concepts sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Listener Concepts in practice”?",
+      "options": [
+        "Automatic, node-level",
+        "Automatic with sync commit",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Listener Concepts”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Listener Concepts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Listener Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Listener Concepts.",
+        "High availability keeps a database service reachable through failures.",
+        "Listener Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Listener Concepts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Listener Concepts means”?",
+      "options": [
+        "The diagram below places Listener Concepts alongside the core concepts of high availability.",
+        "High availability keeps a database service reachable through failures.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Listener Concepts fits”?",
+      "options": [
+        "The diagram below places Listener Concepts alongside the core concepts of high availability.",
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Listener Concepts alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Listener Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Listener Concepts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Listener Concepts:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Listener Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Listener Concepts”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The first example establishes the relevant state.",
+        "Listener Concepts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Higher (wait for secondary)",
+        "Listener Concepts",
+        "With Listener Concepts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Listener Concepts within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Listener Concepts fits”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Lower",
+        "Listener Concepts sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Listener Concepts in practice”?",
+      "options": [
+        "Automatic, node-level",
+        "Automatic with sync commit",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Listener Concepts”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Listener Concepts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Listener Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Listener Concepts.",
+        "High availability keeps a database service reachable through failures.",
+        "Listener Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Listener Concepts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Listener Concepts means”?",
+      "options": [
+        "The diagram below places Listener Concepts alongside the core concepts of high availability.",
+        "High availability keeps a database service reachable through failures.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Listener Concepts fits”?",
+      "options": [
+        "The diagram below places Listener Concepts alongside the core concepts of high availability.",
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Listener Concepts alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Listener Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Listener Concepts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Listener Concepts:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Listener Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Listener Concepts”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The first example establishes the relevant state.",
+        "Listener Concepts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Higher (wait for secondary)",
+        "Listener Concepts",
+        "With Listener Concepts, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Listener Concepts within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Listener Concepts fits”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Lower",
+        "Listener Concepts sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Listener Concepts in practice”?",
+      "options": [
+        "Automatic, node-level",
+        "Automatic with sync commit",
+        "Always On Availability Groups protect databases rather than the whole instance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Listener Concepts”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Use the following as a starting point when investigating Listener Concepts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Listener Concepts. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Use the following as a starting point when investigating Listener Concepts.",
+        "High availability keeps a database service reachable through failures.",
+        "Listener Concepts"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Listener Concepts with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Listener Concepts means”?",
+      "options": [
+        "The diagram below places Listener Concepts alongside the core concepts of high availability.",
+        "High availability keeps a database service reachable through failures.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Listener Concepts fits”?",
+      "options": [
+        "The diagram below places Listener Concepts alongside the core concepts of high availability.",
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Listener Concepts alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Listener Concepts in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Listener Concepts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The following comparison captures the distinctions that matter most when working with Listener Concepts:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Listener Concepts:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Listener Concepts”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The first example establishes the relevant state.",
+        "Listener Concepts is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Listener Concepts is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

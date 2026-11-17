@@ -168,6 +168,312 @@ DBCC CHECKDB (N'ERP_DR') WITH NO_INFOMSGS;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ reads a live database and writes its pages plus log records to media — a file, tape, or cloud blob.”",
+      "options": [
+        "backups are routine and verified daily; restores are rare and verified almost never.",
+        "backup",
+        "RTO"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A backup reads a live database and writes its pages plus log records to media — a file, tape, or cloud blob. A restore does the opposite: it reads that media and rebuilds a database from it. One creates the evidence; the other spends it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The recovery promise chain”?",
+      "options": [
+        "Between the backup job and the recovered service sits a chain of events, each with its own duration.",
+        "A DBA, usually under pressure",
+        "Only when you attempt it — often during an incident"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Between the backup job and the recovered service sits a chain of events, each with its own duration. RPO lives on the left (how far back the media lets you go), RTO lives on the right (how long the whole trip takes).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why backups succeed and restores fail”?",
+      "options": [
+        "Only when you attempt it — often during an incident",
+        "Restore duration, disk, DBA attention",
+        "Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them. The gap produces a familiar failure list:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The same data, written both ways”?",
+      "options": [
+        "Defines RTO — how long the service is down",
+        "Here is one data set expressed as the pair.",
+        "Restore duration, disk, DBA attention"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Here is one data set expressed as the pair. Notice that the restore carries the extra clauses the backup never needs: target file layout, recovery state, and overwrite rules.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running them as one process”?",
+      "options": [
+        "Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:",
+        "Defines RTO — how long the service is down",
+        "Database online, CHECKDB clean, users working"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The asymmetry in the table is the whole lesson: _____”",
+      "options": [
+        "Path and name mismatches",
+        "Hidden dependencies",
+        "backups are routine and verified daily; restores are rare and verified almost never."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The asymmetry in the table is the whole lesson: backups are routine and verified daily; restores are rare and verified almost never. An organisation can run thousands of successful backups and still have no working recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why backups succeed and restores fail”?",
+      "options": [
+        "Here is one data set expressed as the pair.",
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.",
+        "Between the backup job and the recovered service sits a chain of events, each with its own duration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The same data, written both ways”?",
+      "options": [
+        "The backup command is one line of intent.",
+        "Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them.",
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The backup command is one line of intent. The restore command encodes everything that can go wrong — file placement, naming, and the recovery decision — which is why restore deserves as much automation and rehearsal as the backup itself.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running them as one process”?",
+      "options": [
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.",
+        "Here is one data set expressed as the pair.",
+        "When both sides are measured together, the uncomfortable questions surface early: if a restore takes six hours but the business accepts thirty minutes of downtime, the fix is on…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When both sides are measured together, the uncomfortable questions surface early: if a restore takes six hours but the business accepts thirty minutes of downtime, the fix is on the restore side — faster storage, parallel restores, or a standby — not more backups.”"
+    },
+    {
+      "question": "In the “Two operations, one promise” table, what is listed for “Direction” under “Restore”?",
+      "options": [
+        "Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:",
+        "Media → target database",
+        "The backup command is one line of intent."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Direction” as “Media → target database”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ reads a live database and writes its pages plus log records to media — a file, tape, or cloud blob.”",
+      "options": [
+        "backups are routine and verified daily; restores are rare and verified almost never.",
+        "backup",
+        "RTO"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A backup reads a live database and writes its pages plus log records to media — a file, tape, or cloud blob. A restore does the opposite: it reads that media and rebuilds a database from it. One creates the evidence; the other spends it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The recovery promise chain”?",
+      "options": [
+        "Between the backup job and the recovered service sits a chain of events, each with its own duration.",
+        "A DBA, usually under pressure",
+        "Only when you attempt it — often during an incident"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Between the backup job and the recovered service sits a chain of events, each with its own duration. RPO lives on the left (how far back the media lets you go), RTO lives on the right (how long the whole trip takes).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why backups succeed and restores fail”?",
+      "options": [
+        "Only when you attempt it — often during an incident",
+        "Restore duration, disk, DBA attention",
+        "Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them. The gap produces a familiar failure list:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The same data, written both ways”?",
+      "options": [
+        "Defines RTO — how long the service is down",
+        "Here is one data set expressed as the pair.",
+        "Restore duration, disk, DBA attention"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Here is one data set expressed as the pair. Notice that the restore carries the extra clauses the backup never needs: target file layout, recovery state, and overwrite rules.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running them as one process”?",
+      "options": [
+        "Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:",
+        "Defines RTO — how long the service is down",
+        "Database online, CHECKDB clean, users working"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The asymmetry in the table is the whole lesson: _____”",
+      "options": [
+        "Path and name mismatches",
+        "Hidden dependencies",
+        "backups are routine and verified daily; restores are rare and verified almost never."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The asymmetry in the table is the whole lesson: backups are routine and verified daily; restores are rare and verified almost never. An organisation can run thousands of successful backups and still have no working recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why backups succeed and restores fail”?",
+      "options": [
+        "Here is one data set expressed as the pair.",
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.",
+        "Between the backup job and the recovered service sits a chain of events, each with its own duration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The same data, written both ways”?",
+      "options": [
+        "The backup command is one line of intent.",
+        "Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them.",
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The backup command is one line of intent. The restore command encodes everything that can go wrong — file placement, naming, and the recovery decision — which is why restore deserves as much automation and rehearsal as the backup itself.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running them as one process”?",
+      "options": [
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.",
+        "Here is one data set expressed as the pair.",
+        "When both sides are measured together, the uncomfortable questions surface early: if a restore takes six hours but the business accepts thirty minutes of downtime, the fix is on…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When both sides are measured together, the uncomfortable questions surface early: if a restore takes six hours but the business accepts thirty minutes of downtime, the fix is on the restore side — faster storage, parallel restores, or a standby — not more backups.”"
+    },
+    {
+      "question": "In the “Two operations, one promise” table, what is listed for “Direction” under “Restore”?",
+      "options": [
+        "Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:",
+        "Media → target database",
+        "The backup command is one line of intent."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Direction” as “Media → target database”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ reads a live database and writes its pages plus log records to media — a file, tape, or cloud blob.”",
+      "options": [
+        "backups are routine and verified daily; restores are rare and verified almost never.",
+        "backup",
+        "RTO"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A backup reads a live database and writes its pages plus log records to media — a file, tape, or cloud blob. A restore does the opposite: it reads that media and rebuilds a database from it. One creates the evidence; the other spends it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The recovery promise chain”?",
+      "options": [
+        "Between the backup job and the recovered service sits a chain of events, each with its own duration.",
+        "A DBA, usually under pressure",
+        "Only when you attempt it — often during an incident"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Between the backup job and the recovered service sits a chain of events, each with its own duration. RPO lives on the left (how far back the media lets you go), RTO lives on the right (how long the whole trip takes).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why backups succeed and restores fail”?",
+      "options": [
+        "Only when you attempt it — often during an incident",
+        "Restore duration, disk, DBA attention",
+        "Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them. The gap produces a familiar failure list:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The same data, written both ways”?",
+      "options": [
+        "Defines RTO — how long the service is down",
+        "Here is one data set expressed as the pair.",
+        "Restore duration, disk, DBA attention"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Here is one data set expressed as the pair. Notice that the restore carries the extra clauses the backup never needs: target file layout, recovery state, and overwrite rules.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running them as one process”?",
+      "options": [
+        "Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:",
+        "Defines RTO — how long the service is down",
+        "Database online, CHECKDB clean, users working"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The asymmetry in the table is the whole lesson: _____”",
+      "options": [
+        "Path and name mismatches",
+        "Hidden dependencies",
+        "backups are routine and verified daily; restores are rare and verified almost never."
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The asymmetry in the table is the whole lesson: backups are routine and verified daily; restores are rare and verified almost never. An organisation can run thousands of successful backups and still have no working recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why backups succeed and restores fail”?",
+      "options": [
+        "Here is one data set expressed as the pair.",
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.",
+        "Between the backup job and the recovered service sits a chain of events, each with its own duration."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The same data, written both ways”?",
+      "options": [
+        "The backup command is one line of intent.",
+        "Backups run as a scheduled job on a healthy server with full permissions; restores run by hand, often on a different machine, months after anyone looked at them.",
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The backup command is one line of intent. The restore command encodes everything that can go wrong — file placement, naming, and the recovery decision — which is why restore deserves as much automation and rehearsal as the backup itself.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Running them as one process”?",
+      "options": [
+        "The cure is symmetry: treat restore as a scheduled workload with its own runbook, its own test window, and its own evidence — not as the emergency appendix to the backup job.",
+        "Here is one data set expressed as the pair.",
+        "When both sides are measured together, the uncomfortable questions surface early: if a restore takes six hours but the business accepts thirty minutes of downtime, the fix is on…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “When both sides are measured together, the uncomfortable questions surface early: if a restore takes six hours but the business accepts thirty minutes of downtime, the fix is on the restore side — faster storage, parallel restores, or a standby — not more backups.”"
+    },
+    {
+      "question": "In the “Two operations, one promise” table, what is listed for “Direction” under “Restore”?",
+      "options": [
+        "Mature teams stop treating backup and restore as separate concerns and join them into a single pipeline:",
+        "Media → target database",
+        "The backup command is one line of intent."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Direction” as “Media → target database”."
+    }
+  ],
   takeaways: [
     "Backup copies data forward to media; restore reads media back into a usable database",
     "Backups are automatic and verified daily — restores are manual, rare, and usually unverified",

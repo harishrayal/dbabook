@@ -180,6 +180,312 @@ ORDER BY d.name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is the technical owner of a database system.”",
+      "options": [
+        "stores, protects, and serves",
+        "Build",
+        "Database Administrator (DBA)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A Database Administrator (DBA) is the technical owner of a database system. Where a developer writes the application that uses data, the DBA is accountable for the platform that stores, protects, and serves that data to every application, report, and integration in the organisation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a DBA actually owns”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "Responsibilities fall into six domains.",
+        "The DBA owns the full lifecycle of the database platform:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Responsibilities fall into six domains. In a small company one DBA covers all of them; in an enterprise they may be split across specialised DBA roles (covered in the next topic).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the role differs from a developer's”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "Responsibilities fall into six domains.",
+        "Uptime, failover, recovery, on-call response"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Both roles write SQL, but the incentives differ. A developer optimises for shipping features; a DBA optimises for the database surviving years of feature shipping.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core competencies”?",
+      "options": [
+        "Uptime, failover, recovery, on-call response",
+        "Backup strategy, restore testing, disaster recovery (RPO/RTO)",
+        "A competent production DBA builds skill across four layers:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A competent production DBA builds skill across four layers:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____”",
+      "options": [
+        "Optimise",
+        "What Is a Database Administrator?",
+        "Sustain"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates What Is a Database Administrator? with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining the role”?",
+      "options": [
+        "The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged.",
+        "Monitoring, maintenance jobs, health reports, documentation",
+        "Both roles write SQL, but the incentives differ."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged. The role exists because databases are shared, stateful infrastructure — one misconfigured setting or one missed backup affects every application that depends on it.”"
+    },
+    {
+      "question": "In the “What a DBA actually owns” table, what is listed for “Availability” under “Typical ownership”?",
+      "options": [
+        "The DBA owns the full lifecycle of the database platform:",
+        "Responsibilities fall into six domains.",
+        "Uptime, failover, recovery, on-call response"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Availability” as “Uptime, failover, recovery, on-call response”."
+    },
+    {
+      "question": "Complete the lesson statement: “In practice the two roles work _____: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.”",
+      "options": [
+        "Protection",
+        "together",
+        "Availability"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In practice the two roles work together: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core competencies”?",
+      "options": [
+        "This roadmap builds those layers in order: fundamentals → architecture → operations → performance → availability → enterprise practice.",
+        "Monitoring, maintenance jobs, health reports, documentation",
+        "Both roles write SQL, but the incentives differ."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This roadmap builds those layers in order: fundamentals → architecture → operations → performance → availability → enterprise practice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deeper dive: What Is a Database Administrator?”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "together",
+        "Environments follow a promotion path: development for building, test for functional verification, UAT for business sign-off, and production for live traffic."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments follow a promotion path: development for building, test for functional verification, UAT for business sign-off, and production for live traffic. Each promotion is a gate where schema and configuration changes are reviewed, not copied blindly.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is the technical owner of a database system.”",
+      "options": [
+        "stores, protects, and serves",
+        "Build",
+        "Database Administrator (DBA)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A Database Administrator (DBA) is the technical owner of a database system. Where a developer writes the application that uses data, the DBA is accountable for the platform that stores, protects, and serves that data to every application, report, and integration in the organisation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a DBA actually owns”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "Responsibilities fall into six domains.",
+        "The DBA owns the full lifecycle of the database platform:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Responsibilities fall into six domains. In a small company one DBA covers all of them; in an enterprise they may be split across specialised DBA roles (covered in the next topic).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the role differs from a developer's”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "Responsibilities fall into six domains.",
+        "Uptime, failover, recovery, on-call response"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Both roles write SQL, but the incentives differ. A developer optimises for shipping features; a DBA optimises for the database surviving years of feature shipping.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core competencies”?",
+      "options": [
+        "Uptime, failover, recovery, on-call response",
+        "Backup strategy, restore testing, disaster recovery (RPO/RTO)",
+        "A competent production DBA builds skill across four layers:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A competent production DBA builds skill across four layers:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____”",
+      "options": [
+        "Optimise",
+        "What Is a Database Administrator?",
+        "Sustain"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates What Is a Database Administrator? with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining the role”?",
+      "options": [
+        "The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged.",
+        "Monitoring, maintenance jobs, health reports, documentation",
+        "Both roles write SQL, but the incentives differ."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged. The role exists because databases are shared, stateful infrastructure — one misconfigured setting or one missed backup affects every application that depends on it.”"
+    },
+    {
+      "question": "In the “What a DBA actually owns” table, what is listed for “Availability” under “Typical ownership”?",
+      "options": [
+        "The DBA owns the full lifecycle of the database platform:",
+        "Responsibilities fall into six domains.",
+        "Uptime, failover, recovery, on-call response"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Availability” as “Uptime, failover, recovery, on-call response”."
+    },
+    {
+      "question": "Complete the lesson statement: “In practice the two roles work _____: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.”",
+      "options": [
+        "Protection",
+        "together",
+        "Availability"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In practice the two roles work together: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core competencies”?",
+      "options": [
+        "This roadmap builds those layers in order: fundamentals → architecture → operations → performance → availability → enterprise practice.",
+        "Monitoring, maintenance jobs, health reports, documentation",
+        "Both roles write SQL, but the incentives differ."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This roadmap builds those layers in order: fundamentals → architecture → operations → performance → availability → enterprise practice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deeper dive: What Is a Database Administrator?”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "together",
+        "Environments follow a promotion path: development for building, test for functional verification, UAT for business sign-off, and production for live traffic."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments follow a promotion path: development for building, test for functional verification, UAT for business sign-off, and production for live traffic. Each promotion is a gate where schema and configuration changes are reviewed, not copied blindly.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is the technical owner of a database system.”",
+      "options": [
+        "stores, protects, and serves",
+        "Build",
+        "Database Administrator (DBA)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A Database Administrator (DBA) is the technical owner of a database system. Where a developer writes the application that uses data, the DBA is accountable for the platform that stores, protects, and serves that data to every application, report, and integration in the organisation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a DBA actually owns”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "Responsibilities fall into six domains.",
+        "The DBA owns the full lifecycle of the database platform:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Responsibilities fall into six domains. In a small company one DBA covers all of them; in an enterprise they may be split across specialised DBA roles (covered in the next topic).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the role differs from a developer's”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "Responsibilities fall into six domains.",
+        "Uptime, failover, recovery, on-call response"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Both roles write SQL, but the incentives differ. A developer optimises for shipping features; a DBA optimises for the database surviving years of feature shipping.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core competencies”?",
+      "options": [
+        "Uptime, failover, recovery, on-call response",
+        "Backup strategy, restore testing, disaster recovery (RPO/RTO)",
+        "A competent production DBA builds skill across four layers:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A competent production DBA builds skill across four layers:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____”",
+      "options": [
+        "Optimise",
+        "What Is a Database Administrator?",
+        "Sustain"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates What Is a Database Administrator? with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining the role”?",
+      "options": [
+        "The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged.",
+        "Monitoring, maintenance jobs, health reports, documentation",
+        "Both roles write SQL, but the incentives differ."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged. The role exists because databases are shared, stateful infrastructure — one misconfigured setting or one missed backup affects every application that depends on it.”"
+    },
+    {
+      "question": "In the “What a DBA actually owns” table, what is listed for “Availability” under “Typical ownership”?",
+      "options": [
+        "The DBA owns the full lifecycle of the database platform:",
+        "Responsibilities fall into six domains.",
+        "Uptime, failover, recovery, on-call response"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Availability” as “Uptime, failover, recovery, on-call response”."
+    },
+    {
+      "question": "Complete the lesson statement: “In practice the two roles work _____: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.”",
+      "options": [
+        "Protection",
+        "together",
+        "Availability"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In practice the two roles work together: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core competencies”?",
+      "options": [
+        "This roadmap builds those layers in order: fundamentals → architecture → operations → performance → availability → enterprise practice.",
+        "Monitoring, maintenance jobs, health reports, documentation",
+        "Both roles write SQL, but the incentives differ."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This roadmap builds those layers in order: fundamentals → architecture → operations → performance → availability → enterprise practice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deeper dive: What Is a Database Administrator?”?",
+      "options": [
+        "Both roles write SQL, but the incentives differ.",
+        "together",
+        "Environments follow a promotion path: development for building, test for functional verification, UAT for business sign-off, and production for live traffic."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Environments follow a promotion path: development for building, test for functional verification, UAT for business sign-off, and production for live traffic. Each promotion is a gate where schema and configuration changes are reviewed, not copied blindly.”"
+    }
+  ],
   takeaways: [
     "The DBA is the technical owner of the data platform: build, protect, sustain, optimise, recover",
     "The role spans six domains — availability, protection, security, performance, change, operations",

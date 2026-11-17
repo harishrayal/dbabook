@@ -182,6 +182,312 @@ No. TempDB is recreated on every SQL Server start, so it cannot be backed up or 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Database File Relocation",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database File Relocation within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Relocation fits”?",
+      "options": [
+        "With Database File Relocation, prefer measured, reversible changes.",
+        "Preferred — predictable",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Relocation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Database File Relocation sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Relocation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database File Relocation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database File Relocation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "With Database File Relocation, prefer measured, reversible changes.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database File Relocation sits inside a larger system.",
+        "Database File Relocation",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database File Relocation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database File Relocation means”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Use the following as a starting point when investigating Database File Relocation.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Relocation fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database File Relocation.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The diagram below places Database File Relocation alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database File Relocation alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Relocation in practice”?",
+      "options": [
+        "Database File Relocation",
+        "The following comparison captures the distinctions that matter most when working with Database File Relocation:",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database File Relocation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Relocation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database File Relocation",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Database File Relocation",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database File Relocation within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Relocation fits”?",
+      "options": [
+        "With Database File Relocation, prefer measured, reversible changes.",
+        "Preferred — predictable",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Relocation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Database File Relocation sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Relocation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database File Relocation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database File Relocation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "With Database File Relocation, prefer measured, reversible changes.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database File Relocation sits inside a larger system.",
+        "Database File Relocation",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database File Relocation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database File Relocation means”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Use the following as a starting point when investigating Database File Relocation.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Relocation fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database File Relocation.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The diagram below places Database File Relocation alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database File Relocation alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Relocation in practice”?",
+      "options": [
+        "Database File Relocation",
+        "The following comparison captures the distinctions that matter most when working with Database File Relocation:",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database File Relocation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Relocation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database File Relocation",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Database File Relocation",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database File Relocation within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Relocation fits”?",
+      "options": [
+        "With Database File Relocation, prefer measured, reversible changes.",
+        "Preferred — predictable",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Relocation in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Database File Relocation sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Relocation”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database File Relocation sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database File Relocation. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "With Database File Relocation, prefer measured, reversible changes.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “File relocation is a catalogue operation followed by a physical move: ALTER DATABASE... MODIFY FILE updates the path, then the database is taken offline while the file is moved on disk and brought back online.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database File Relocation sits inside a larger system.",
+        "Database File Relocation",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database File Relocation with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database File Relocation means”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Use the following as a starting point when investigating Database File Relocation.",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database File Relocation fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database File Relocation.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The diagram below places Database File Relocation alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database File Relocation alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database File Relocation in practice”?",
+      "options": [
+        "Database File Relocation",
+        "The following comparison captures the distinctions that matter most when working with Database File Relocation:",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database File Relocation:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database File Relocation”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database File Relocation",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database File Relocation is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -183,6 +183,312 @@ Restore service first using the safest tested mitigation, communicate status at 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Corruption",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Corruption within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Corruption fits”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Next, verify the result and capture a baseline.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Corruption in practice”?",
+      "options": [
+        "Failover / restart",
+        "Log backup / grow",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Corruption”?",
+      "options": [
+        "Failover / restart",
+        "Theory becomes useful when you can apply it.",
+        "With Database Corruption, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Database Corruption sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "With Database Corruption, prefer measured, reversible changes.",
+        "Database Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Corruption with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Corruption means”?",
+      "options": [
+        "Database Corruption",
+        "Prioritisation weighs impact and urgency.",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Corruption fits”?",
+      "options": [
+        "The diagram below places Database Corruption alongside the core concepts of production incident management.",
+        "Log backup / grow",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Corruption alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Corruption in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Corruption.",
+        "The following comparison captures the distinctions that matter most when working with Database Corruption:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Corruption”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Corruption.",
+        "The first example establishes the relevant state.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Corruption",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Corruption within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Corruption fits”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Next, verify the result and capture a baseline.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Corruption in practice”?",
+      "options": [
+        "Failover / restart",
+        "Log backup / grow",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Corruption”?",
+      "options": [
+        "Failover / restart",
+        "Theory becomes useful when you can apply it.",
+        "With Database Corruption, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Database Corruption sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "With Database Corruption, prefer measured, reversible changes.",
+        "Database Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Corruption with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Corruption means”?",
+      "options": [
+        "Database Corruption",
+        "Prioritisation weighs impact and urgency.",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Corruption fits”?",
+      "options": [
+        "The diagram below places Database Corruption alongside the core concepts of production incident management.",
+        "Log backup / grow",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Corruption alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Corruption in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Corruption.",
+        "The following comparison captures the distinctions that matter most when working with Database Corruption:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Corruption”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Corruption.",
+        "The first example establishes the relevant state.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Corruption",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Corruption within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Corruption fits”?",
+      "options": [
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Next, verify the result and capture a baseline.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Corruption in practice”?",
+      "options": [
+        "Failover / restart",
+        "Log backup / grow",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Corruption”?",
+      "options": [
+        "Failover / restart",
+        "Theory becomes useful when you can apply it.",
+        "With Database Corruption, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Corruption. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Database Corruption sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "With Database Corruption, prefer measured, reversible changes.",
+        "Database Corruption"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Corruption with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Corruption means”?",
+      "options": [
+        "Database Corruption",
+        "Prioritisation weighs impact and urgency.",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Corruption fits”?",
+      "options": [
+        "The diagram below places Database Corruption alongside the core concepts of production incident management.",
+        "Log backup / grow",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Corruption alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Corruption in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Corruption.",
+        "The following comparison captures the distinctions that matter most when working with Database Corruption:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Corruption:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Corruption”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Corruption.",
+        "The first example establishes the relevant state.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Corruption is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

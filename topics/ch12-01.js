@@ -165,6 +165,312 @@ Compare its plan and runtime stats in Query Store, check for plan changes and st
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Database Performance Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Performance Fundamentals within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Performance Fundamentals fits”?",
+      "options": [
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Performance Fundamentals in practice”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Performance Fundamentals”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Performance Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Performance Fundamentals means”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Performance Fundamentals fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Performance Fundamentals in practice”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Database Performance Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Performance Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Performance Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Database Performance Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Performance Fundamentals within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Performance Fundamentals fits”?",
+      "options": [
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Performance Fundamentals in practice”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Performance Fundamentals”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Performance Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Performance Fundamentals means”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Performance Fundamentals fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Performance Fundamentals in practice”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Database Performance Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Performance Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Performance Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Database Performance Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Performance Fundamentals within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Performance Fundamentals fits”?",
+      "options": [
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Performance Fundamentals in practice”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Database Performance Fundamentals is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Performance Fundamentals”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Performance Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Performance Fundamentals means”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Performance Fundamentals fits”?",
+      "options": [
+        "Selective lookups",
+        "Small tables / no usable index",
+        "The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Performance Fundamentals alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Performance Fundamentals in practice”?",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "The following comparison captures the distinctions that matter most when working with Database Performance Fundamentals:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Performance Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Performance Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Selective lookups",
+        "Small tables / no usable index"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Small tables / no usable index",
+        "Avoid at scale via covering indexes",
+        "Missing index suggestions are hints, not commands."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    }
+  ],
   takeaways: [
     "Database Performance Fundamentals is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

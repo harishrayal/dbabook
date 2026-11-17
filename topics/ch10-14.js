@@ -185,6 +185,312 @@ Common causes include a disabled or deleted owner, a stopped Agent service, a di
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Database Integrity Check Jobs",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Integrity Check Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Check Jobs fits”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Database Integrity Check Jobs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Check Jobs in practice”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Integrity Check Jobs sits inside a larger system.",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Check Jobs”?",
+      "options": [
+        "Database Integrity Check Jobs sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Integrity Check Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Use the following as a starting point when investigating Database Integrity Check Jobs.",
+        "Database Mail configured"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "Database Integrity Check Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Integrity Check Jobs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Integrity Check Jobs means”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Integrity Check Jobs.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Check Jobs fits”?",
+      "options": [
+        "The diagram below places Database Integrity Check Jobs alongside the core concepts of SQL Server Agent and automation.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Integrity Check Jobs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Integrity Check Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Check Jobs in practice”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "The following comparison captures the distinctions that matter most when working with Database Integrity Check Jobs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Integrity Check Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Check Jobs”?",
+      "options": [
+        "Database Integrity Check Jobs",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Database Integrity Check Jobs",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Integrity Check Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Check Jobs fits”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Database Integrity Check Jobs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Check Jobs in practice”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Integrity Check Jobs sits inside a larger system.",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Check Jobs”?",
+      "options": [
+        "Database Integrity Check Jobs sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Integrity Check Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Use the following as a starting point when investigating Database Integrity Check Jobs.",
+        "Database Mail configured"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "Database Integrity Check Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Integrity Check Jobs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Integrity Check Jobs means”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Integrity Check Jobs.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Check Jobs fits”?",
+      "options": [
+        "The diagram below places Database Integrity Check Jobs alongside the core concepts of SQL Server Agent and automation.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Integrity Check Jobs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Integrity Check Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Check Jobs in practice”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "The following comparison captures the distinctions that matter most when working with Database Integrity Check Jobs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Integrity Check Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Check Jobs”?",
+      "options": [
+        "Database Integrity Check Jobs",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Database Integrity Check Jobs",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Integrity Check Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Check Jobs fits”?",
+      "options": [
+        "Job history is the diagnostic record.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "With Database Integrity Check Jobs, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Check Jobs in practice”?",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Integrity Check Jobs sits inside a larger system.",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Check Jobs”?",
+      "options": [
+        "Database Integrity Check Jobs sits inside a larger system.",
+        "Theory becomes useful when you can apply it.",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Integrity Check Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Use the following as a starting point when investigating Database Integrity Check Jobs.",
+        "Database Mail configured"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Enabled alert",
+        "Notification set on job",
+        "Database Integrity Check Jobs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Integrity Check Jobs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Integrity Check Jobs means”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Integrity Check Jobs.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of proactive monitoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Integrity Check Jobs fits”?",
+      "options": [
+        "The diagram below places Database Integrity Check Jobs alongside the core concepts of SQL Server Agent and automation.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Database Integrity Check Jobs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Integrity Check Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Integrity Check Jobs in practice”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "The following comparison captures the distinctions that matter most when working with Database Integrity Check Jobs:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Integrity Check Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Integrity Check Jobs”?",
+      "options": [
+        "Database Integrity Check Jobs",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Integrity Check Jobs is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

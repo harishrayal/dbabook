@@ -205,6 +205,312 @@ ORDER  BY status, o.name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Microsoft's documentation splits the Database Engine into the _____ (also called the query processor), the storage engine, and the SQLOS services beneath both.”",
+      "options": [
+        "Security",
+        "relational engine",
+        "Metadata"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Microsoft's documentation splits the Database Engine into the relational engine (also called the query processor), the storage engine, and the SQLOS services beneath both. The relational engine's job is everything that is logical rather than physical:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every object in the database is a row in an internal system table. SQL Server exposes those tables as _____ ( sys.* ), which is the supported, stable interface for both tools and DBAs:”",
+      "options": [
+        "catalog views",
+        "Metadata",
+        "Security"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every object in the database is a row in an internal system table. SQL Server exposes those tables as catalog views ( sys.* ), which is the supported, stable interface for both tools and DBAs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security at the relational layer”?",
+      "options": [
+        "Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:",
+        "trusted",
+        "Security is evaluated in a strict order, and understanding it explains most “permission denied” mysteries:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Security is evaluated in a strict order, and understanding it explains most “permission denied” mysteries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Integrity: constraints enforced by the engine”?",
+      "options": [
+        "row requests",
+        "Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:",
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction semantics and the hand-off”?",
+      "options": [
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo.",
+        "trusted",
+        "Statement fails with an error"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo. The lock manager (storage side) enforces the concurrency rules the isolation level implies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Trusting your constraints”?",
+      "options": [
+        "Statement fails with an error",
+        "Statement fails; can be disabled with NOCHECK",
+        "A quick health check every DBA should run after any restore, index surgery, or bulk load with constraints disabled:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A quick health check every DBA should run after any restore, index surgery, or bulk load with constraints disabled:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Metadata: the catalogue that describes everything”?",
+      "options": [
+        "Shared locks held",
+        "The catalog is also where the optimizer gets index definitions and where permission checks resolve securables — which is why a metadata operation (adding a column, disabling an…",
+        "Shared locks per read"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The catalog is also where the optimizer gets index definitions and where permission checks resolve securables — which is why a metadata operation (adding a column, disabling an index) immediately affects plans that reference the object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two operational traps: a foreign key added WITH NOCHECK is _____ only after an ALTER TABLE … WITH CHECK CHECK CONSTRAINT — an untrusted constraint makes the optimizer disable join elimination and suboptimal plans.”",
+      "options": [
+        "trusted",
+        "System functions",
+        "Dynamic management views"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two operational traps: a foreign key added WITH NOCHECK is trusted only after an ALTER TABLE … WITH CHECK CHECK CONSTRAINT — an untrusted constraint makes the optimizer disable join elimination and suboptimal plans. And because SQL Server checks FKs immediately, disabling them during a bulk load is common — forgetting to re-enable them is how orphaned rows reach production.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Across the boundary, a simple contract holds: the relational engine submits _____ (seek, fetch, insert, delete), lock requests, and log records; the storage engine returns rows and status.”",
+      "options": [
+        "Dynamic management views",
+        "Authentication",
+        "row requests"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Across the boundary, a simple contract holds: the relational engine submits row requests (seek, fetch, insert, delete), lock requests, and log records; the storage engine returns rows and status. It never asks for “file 4, offset 917” — physical addressing is the storage engine's private business.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Trusting your constraints”?",
+      "options": [
+        "row requests",
+        "An “enabled but untrusted” foreign key still rejects new violations — but the optimizer no longer trusts it for query simplification, and DBCC CHECKCONSTRAINTS is the only way to…",
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An “enabled but untrusted” foreign key still rejects new violations — but the optimizer no longer trusts it for query simplification, and DBCC CHECKCONSTRAINTS is the only way to prove existing data complies. Treat any non-“ok” row as a data-integrity debt with a scheduled repayment.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Microsoft's documentation splits the Database Engine into the _____ (also called the query processor), the storage engine, and the SQLOS services beneath both.”",
+      "options": [
+        "Security",
+        "relational engine",
+        "Metadata"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Microsoft's documentation splits the Database Engine into the relational engine (also called the query processor), the storage engine, and the SQLOS services beneath both. The relational engine's job is everything that is logical rather than physical:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every object in the database is a row in an internal system table. SQL Server exposes those tables as _____ ( sys.* ), which is the supported, stable interface for both tools and DBAs:”",
+      "options": [
+        "catalog views",
+        "Metadata",
+        "Security"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every object in the database is a row in an internal system table. SQL Server exposes those tables as catalog views ( sys.* ), which is the supported, stable interface for both tools and DBAs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security at the relational layer”?",
+      "options": [
+        "Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:",
+        "trusted",
+        "Security is evaluated in a strict order, and understanding it explains most “permission denied” mysteries:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Security is evaluated in a strict order, and understanding it explains most “permission denied” mysteries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Integrity: constraints enforced by the engine”?",
+      "options": [
+        "row requests",
+        "Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:",
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction semantics and the hand-off”?",
+      "options": [
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo.",
+        "trusted",
+        "Statement fails with an error"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo. The lock manager (storage side) enforces the concurrency rules the isolation level implies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Trusting your constraints”?",
+      "options": [
+        "Statement fails with an error",
+        "Statement fails; can be disabled with NOCHECK",
+        "A quick health check every DBA should run after any restore, index surgery, or bulk load with constraints disabled:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A quick health check every DBA should run after any restore, index surgery, or bulk load with constraints disabled:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Metadata: the catalogue that describes everything”?",
+      "options": [
+        "Shared locks held",
+        "The catalog is also where the optimizer gets index definitions and where permission checks resolve securables — which is why a metadata operation (adding a column, disabling an…",
+        "Shared locks per read"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The catalog is also where the optimizer gets index definitions and where permission checks resolve securables — which is why a metadata operation (adding a column, disabling an index) immediately affects plans that reference the object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two operational traps: a foreign key added WITH NOCHECK is _____ only after an ALTER TABLE … WITH CHECK CHECK CONSTRAINT — an untrusted constraint makes the optimizer disable join elimination and suboptimal plans.”",
+      "options": [
+        "trusted",
+        "System functions",
+        "Dynamic management views"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two operational traps: a foreign key added WITH NOCHECK is trusted only after an ALTER TABLE … WITH CHECK CHECK CONSTRAINT — an untrusted constraint makes the optimizer disable join elimination and suboptimal plans. And because SQL Server checks FKs immediately, disabling them during a bulk load is common — forgetting to re-enable them is how orphaned rows reach production.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Across the boundary, a simple contract holds: the relational engine submits _____ (seek, fetch, insert, delete), lock requests, and log records; the storage engine returns rows and status.”",
+      "options": [
+        "Dynamic management views",
+        "Authentication",
+        "row requests"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Across the boundary, a simple contract holds: the relational engine submits row requests (seek, fetch, insert, delete), lock requests, and log records; the storage engine returns rows and status. It never asks for “file 4, offset 917” — physical addressing is the storage engine's private business.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Trusting your constraints”?",
+      "options": [
+        "row requests",
+        "An “enabled but untrusted” foreign key still rejects new violations — but the optimizer no longer trusts it for query simplification, and DBCC CHECKCONSTRAINTS is the only way to…",
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An “enabled but untrusted” foreign key still rejects new violations — but the optimizer no longer trusts it for query simplification, and DBCC CHECKCONSTRAINTS is the only way to prove existing data complies. Treat any non-“ok” row as a data-integrity debt with a scheduled repayment.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Microsoft's documentation splits the Database Engine into the _____ (also called the query processor), the storage engine, and the SQLOS services beneath both.”",
+      "options": [
+        "Security",
+        "relational engine",
+        "Metadata"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Microsoft's documentation splits the Database Engine into the relational engine (also called the query processor), the storage engine, and the SQLOS services beneath both. The relational engine's job is everything that is logical rather than physical:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every object in the database is a row in an internal system table. SQL Server exposes those tables as _____ ( sys.* ), which is the supported, stable interface for both tools and DBAs:”",
+      "options": [
+        "catalog views",
+        "Metadata",
+        "Security"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Every object in the database is a row in an internal system table. SQL Server exposes those tables as catalog views ( sys.* ), which is the supported, stable interface for both tools and DBAs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Security at the relational layer”?",
+      "options": [
+        "Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:",
+        "trusted",
+        "Security is evaluated in a strict order, and understanding it explains most “permission denied” mysteries:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Security is evaluated in a strict order, and understanding it explains most “permission denied” mysteries:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Integrity: constraints enforced by the engine”?",
+      "options": [
+        "row requests",
+        "Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:",
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Constraints are the relational engine's promise that data arriving through any path — application, SSMS, bulk insert — obeys the same rules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Transaction semantics and the hand-off”?",
+      "options": [
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo.",
+        "trusted",
+        "Statement fails with an error"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo. The lock manager (storage side) enforces the concurrency rules the isolation level implies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Trusting your constraints”?",
+      "options": [
+        "Statement fails with an error",
+        "Statement fails; can be disabled with NOCHECK",
+        "A quick health check every DBA should run after any restore, index surgery, or bulk load with constraints disabled:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A quick health check every DBA should run after any restore, index surgery, or bulk load with constraints disabled:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Metadata: the catalogue that describes everything”?",
+      "options": [
+        "Shared locks held",
+        "The catalog is also where the optimizer gets index definitions and where permission checks resolve securables — which is why a metadata operation (adding a column, disabling an…",
+        "Shared locks per read"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The catalog is also where the optimizer gets index definitions and where permission checks resolve securables — which is why a metadata operation (adding a column, disabling an index) immediately affects plans that reference the object.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two operational traps: a foreign key added WITH NOCHECK is _____ only after an ALTER TABLE … WITH CHECK CHECK CONSTRAINT — an untrusted constraint makes the optimizer disable join elimination and suboptimal plans.”",
+      "options": [
+        "trusted",
+        "System functions",
+        "Dynamic management views"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two operational traps: a foreign key added WITH NOCHECK is trusted only after an ALTER TABLE … WITH CHECK CHECK CONSTRAINT — an untrusted constraint makes the optimizer disable join elimination and suboptimal plans. And because SQL Server checks FKs immediately, disabling them during a bulk load is common — forgetting to re-enable them is how orphaned rows reach production.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Across the boundary, a simple contract holds: the relational engine submits _____ (seek, fetch, insert, delete), lock requests, and log records; the storage engine returns rows and status.”",
+      "options": [
+        "Dynamic management views",
+        "Authentication",
+        "row requests"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Across the boundary, a simple contract holds: the relational engine submits row requests (seek, fetch, insert, delete), lock requests, and log records; the storage engine returns rows and status. It never asks for “file 4, offset 917” — physical addressing is the storage engine's private business.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Trusting your constraints”?",
+      "options": [
+        "row requests",
+        "An “enabled but untrusted” foreign key still rejects new violations — but the optimizer no longer trusts it for query simplification, and DBCC CHECKCONSTRAINTS is the only way to…",
+        "The relational engine implements ACID from the user's point of view: it decides transaction boundaries, isolation levels, and what a rollback must undo."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An “enabled but untrusted” foreign key still rejects new violations — but the optimizer no longer trusts it for query simplification, and DBCC CHECKCONSTRAINTS is the only way to prove existing data complies. Treat any non-“ok” row as a data-integrity debt with a scheduled repayment.”"
+    }
+  ],
   takeaways: [
     "Relational engine = language services, query processor, metadata, security, transactions, integrity — all logical concerns",
     "Catalog views (sys.*) are the supported window into metadata; DMVs show runtime state instead",

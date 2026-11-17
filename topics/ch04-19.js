@@ -162,6 +162,312 @@ Recovery must process every VLF during analysis and redo, so thousands of small 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Evict clean pages",
+        "Log durable before data",
+        "Virtual Log Files (VLFs)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Virtual Log Files (VLFs) within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Virtual Log Files (VLFs) fits”?",
+      "options": [
+        "Virtual Log Files (VLFs)",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Virtual Log Files (VLFs) in practice”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Virtual Log Files (VLFs)",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Virtual Log Files (VLFs)”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Virtual Log Files (VLFs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Virtual Log Files (VLFs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Virtual Log Files (VLFs) means”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Pages in the buffer pool are clean if they match disk, dirty if modified. Checkpoints write dirty pages to disk to bound recovery time; the lazy writer evicts pages under memory pressure, flushing dirty pages first.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Virtual Log Files (VLFs) fits”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Virtual Log Files (VLFs) in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Virtual Log Files (VLFs)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The relational engine parses, compiles and executes queries.",
+        "The buffer pool caches pages in memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Evict clean pages",
+        "Log durable before data",
+        "Virtual Log Files (VLFs)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Virtual Log Files (VLFs) within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Virtual Log Files (VLFs) fits”?",
+      "options": [
+        "Virtual Log Files (VLFs)",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Virtual Log Files (VLFs) in practice”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Virtual Log Files (VLFs)",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Virtual Log Files (VLFs)”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Virtual Log Files (VLFs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Virtual Log Files (VLFs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Virtual Log Files (VLFs) means”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Pages in the buffer pool are clean if they match disk, dirty if modified. Checkpoints write dirty pages to disk to bound recovery time; the lazy writer evicts pages under memory pressure, flushing dirty pages first.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Virtual Log Files (VLFs) fits”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Virtual Log Files (VLFs) in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Virtual Log Files (VLFs)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The relational engine parses, compiles and executes queries.",
+        "The buffer pool caches pages in memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server internal architecture.”",
+      "options": [
+        "Evict clean pages",
+        "Log durable before data",
+        "Virtual Log Files (VLFs)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Virtual Log Files (VLFs) within SQL Server internal architecture. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Virtual Log Files (VLFs) fits”?",
+      "options": [
+        "Virtual Log Files (VLFs)",
+        "The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs).",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The transaction log is a circular sequence of VLFs with log sequence numbers (LSNs). Truncation marks inactive VLFs reusable; it does not shrink the physical file. Frequent small autogrowths create VLF explosion and slow recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Virtual Log Files (VLFs) in practice”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "Virtual Log Files (VLFs)",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones. The database is brought to a consistent state automatically at startup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Virtual Log Files (VLFs)”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Virtual Log Files (VLFs). Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Virtual Log Files (VLFs) is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Write-ahead logging guarantees the log record for a change reaches disk before the data page."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Virtual Log Files (VLFs) means”?",
+      "options": [
+        "Pages in the buffer pool are clean if they match disk, dirty if modified.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The relational engine parses, compiles and executes queries."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Pages in the buffer pool are clean if they match disk, dirty if modified. Checkpoints write dirty pages to disk to bound recovery time; the lazy writer evicts pages under memory pressure, flushing dirty pages first.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Virtual Log Files (VLFs) fits”?",
+      "options": [
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Virtual Log Files (VLFs) in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The diagram below places Virtual Log Files (VLFs) alongside the core concepts of SQL Server internal architecture."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Virtual Log Files (VLFs)”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Crash recovery has three phases: analysis determines the state at the last checkpoint, redo replays committed transactions, and undo rolls back uncommitted ones.",
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Virtual Log Files (VLFs):",
+        "The relational engine parses, compiles and executes queries.",
+        "The buffer pool caches pages in memory."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The buffer pool caches pages in memory. A read that finds a page in the pool is served from RAM in microseconds; a miss requires a physical read milliseconds long. This is why memory sizing dominates performance.”"
+    }
+  ],
   takeaways: [
     "Virtual Log Files (VLFs) is a fundamental concept in SQL Server internal architecture",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

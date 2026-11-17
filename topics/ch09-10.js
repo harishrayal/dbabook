@@ -186,6 +186,312 @@ Granting only the minimum permissions required for the minimum scope and time. I
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it.",
+        "Database Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Roles fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Roles in practice”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "With Database Roles, prefer measured, reversible changes.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Roles”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "With Database Roles, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Roles",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Roles means”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Roles fits”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "The diagram below places Database Roles alongside the core concepts of SQL Server security and permissions.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Roles in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Roles:",
+        "Database Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Roles”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it.",
+        "Database Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Roles fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Roles in practice”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "With Database Roles, prefer measured, reversible changes.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Roles”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "With Database Roles, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Roles",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Roles means”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Roles fits”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "The diagram below places Database Roles alongside the core concepts of SQL Server security and permissions.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Roles in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Roles:",
+        "Database Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Roles”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Bundle permissions",
+        "Theory becomes useful when you can apply it.",
+        "Database Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Database Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Roles fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Roles in practice”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "With Database Roles, prefer measured, reversible changes.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Roles”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "With Database Roles, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “SQL Server Audit and failed-login monitoring provide detection and evidence. Access reviews are a recurring operational task, not a one-time project.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Roles",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Database Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Roles means”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "Neutral",
+        "A server login grants access to the instance; a database user maps that login to a database."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Roles fits”?",
+      "options": [
+        "Overrides GRANT everywhere",
+        "The diagram below places Database Roles alongside the core concepts of SQL Server security and permissions.",
+        "Overridden by DENY"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Database Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Roles in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Database Roles:",
+        "Database Roles sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Roles”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Roles is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

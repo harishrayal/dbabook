@@ -174,6 +174,312 @@ ORDER  BY order_count DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Codd proposed storing data as _____ — mathematical sets of rows — instead of nested records and pointers.”",
+      "options": [
+        "row",
+        "relations",
+        "tuple"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In 1970 Edgar F. Codd proposed storing data as relations — mathematical sets of rows — instead of nested records and pointers. In everyday SQL Server language:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the software product that implements the model.”",
+      "options": [
+        "Relational Database Management System",
+        "tuple",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The Relational Database Management System is the software product that implements the model. SQL Server, PostgreSQL, Oracle, and MySQL are RDBMSs; each provides the same core machinery under different names and engines.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The practical heart of an RDBMS is the _____: a column in one table carrying the primary key of another.”",
+      "options": [
+        "row",
+        "attribute",
+        "foreign key"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The practical heart of an RDBMS is the foreign key: a column in one table carrying the primary key of another. The database itself enforces the relationship, so no application can accidentally create an order for a customer that does not exist.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relational versus non-relational — the honest comparison”?",
+      "options": [
+        "Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define…",
+        "Document, key-value, and graph stores are not inferior; they answer different questions.",
+        "The join is then expressed in SQL, and the optimiser decides how to execute it:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Document, key-value, and graph stores are not inferior; they answer different questions. What matters is knowing which guarantees you are trading away:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why this matters to a DBA”?",
+      "options": [
+        "Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define…",
+        "Document, key-value, and graph stores are not inferior; they answer different questions.",
+        "start relational until you have a measured reason not to"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define what backup and recovery must protect. When a query is slow, you reason about relations and statistics; when data is wrong, you reason about constraints and transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The revolutionary part was not tables — it was that _____.”",
+      "options": [
+        "key",
+        "reference",
+        "relationships are expressed by data, not by structure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The revolutionary part was not tables — it was that relationships are expressed by data, not by structure. A customer's orders are not stored inside a customer record; they are rows in an Orders table that reference the customer's key. Applications find them with a join, and no physical nesting has to be rebuilt when requirements change.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From the model to the RDBMS”?",
+      "options": [
+        "Depends on application code",
+        "What an RDBMS guarantees that a file system does not:",
+        "Often single-document or eventual consistency"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “What an RDBMS guarantees that a file system does not:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relationships are declared, not stored”?",
+      "options": [
+        "The join is then expressed in SQL, and the optimiser decides how to execute it:",
+        "Depends on application code",
+        "Horizontal scale, simple access patterns, semi-structured payloads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The join is then expressed in SQL, and the optimiser decides how to execute it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “For a production DBA the practical rule: _____.”",
+      "options": [
+        "Relational Database Management System",
+        "Declarative access",
+        "start relational until you have a measured reason not to"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “For a production DBA the practical rule: start relational until you have a measured reason not to. Most “scale” problems are solved by indexing, partitioning, or one more read replica long before the relational model itself is the bottleneck.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ disabling foreign keys “just for the import” and never re-enabling them; letting the ORM create its own schema that ignores the model;…”",
+      "options": [
+        "Integrity",
+        "Common pitfalls:",
+        "Declarative access"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: disabling foreign keys “just for the import” and never re-enabling them; letting the ORM create its own schema that ignores the model; assuming a non-relational store will deliver relational guarantees “eventually”; and re-introducing nesting by stuffing JSON blobs into columns that should be related rows — trading the DBMS's integrity engine for application code that nobody tests.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Codd proposed storing data as _____ — mathematical sets of rows — instead of nested records and pointers.”",
+      "options": [
+        "row",
+        "relations",
+        "tuple"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In 1970 Edgar F. Codd proposed storing data as relations — mathematical sets of rows — instead of nested records and pointers. In everyday SQL Server language:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the software product that implements the model.”",
+      "options": [
+        "Relational Database Management System",
+        "tuple",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The Relational Database Management System is the software product that implements the model. SQL Server, PostgreSQL, Oracle, and MySQL are RDBMSs; each provides the same core machinery under different names and engines.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The practical heart of an RDBMS is the _____: a column in one table carrying the primary key of another.”",
+      "options": [
+        "row",
+        "attribute",
+        "foreign key"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The practical heart of an RDBMS is the foreign key: a column in one table carrying the primary key of another. The database itself enforces the relationship, so no application can accidentally create an order for a customer that does not exist.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relational versus non-relational — the honest comparison”?",
+      "options": [
+        "Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define…",
+        "Document, key-value, and graph stores are not inferior; they answer different questions.",
+        "The join is then expressed in SQL, and the optimiser decides how to execute it:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Document, key-value, and graph stores are not inferior; they answer different questions. What matters is knowing which guarantees you are trading away:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why this matters to a DBA”?",
+      "options": [
+        "Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define…",
+        "Document, key-value, and graph stores are not inferior; they answer different questions.",
+        "start relational until you have a measured reason not to"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define what backup and recovery must protect. When a query is slow, you reason about relations and statistics; when data is wrong, you reason about constraints and transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The revolutionary part was not tables — it was that _____.”",
+      "options": [
+        "key",
+        "reference",
+        "relationships are expressed by data, not by structure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The revolutionary part was not tables — it was that relationships are expressed by data, not by structure. A customer's orders are not stored inside a customer record; they are rows in an Orders table that reference the customer's key. Applications find them with a join, and no physical nesting has to be rebuilt when requirements change.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From the model to the RDBMS”?",
+      "options": [
+        "Depends on application code",
+        "What an RDBMS guarantees that a file system does not:",
+        "Often single-document or eventual consistency"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “What an RDBMS guarantees that a file system does not:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relationships are declared, not stored”?",
+      "options": [
+        "The join is then expressed in SQL, and the optimiser decides how to execute it:",
+        "Depends on application code",
+        "Horizontal scale, simple access patterns, semi-structured payloads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The join is then expressed in SQL, and the optimiser decides how to execute it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “For a production DBA the practical rule: _____.”",
+      "options": [
+        "Relational Database Management System",
+        "Declarative access",
+        "start relational until you have a measured reason not to"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “For a production DBA the practical rule: start relational until you have a measured reason not to. Most “scale” problems are solved by indexing, partitioning, or one more read replica long before the relational model itself is the bottleneck.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ disabling foreign keys “just for the import” and never re-enabling them; letting the ORM create its own schema that ignores the model;…”",
+      "options": [
+        "Integrity",
+        "Common pitfalls:",
+        "Declarative access"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: disabling foreign keys “just for the import” and never re-enabling them; letting the ORM create its own schema that ignores the model; assuming a non-relational store will deliver relational guarantees “eventually”; and re-introducing nesting by stuffing JSON blobs into columns that should be related rows — trading the DBMS's integrity engine for application code that nobody tests.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Codd proposed storing data as _____ — mathematical sets of rows — instead of nested records and pointers.”",
+      "options": [
+        "row",
+        "relations",
+        "tuple"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In 1970 Edgar F. Codd proposed storing data as relations — mathematical sets of rows — instead of nested records and pointers. In everyday SQL Server language:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is the software product that implements the model.”",
+      "options": [
+        "Relational Database Management System",
+        "tuple",
+        "row"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The Relational Database Management System is the software product that implements the model. SQL Server, PostgreSQL, Oracle, and MySQL are RDBMSs; each provides the same core machinery under different names and engines.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The practical heart of an RDBMS is the _____: a column in one table carrying the primary key of another.”",
+      "options": [
+        "row",
+        "attribute",
+        "foreign key"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The practical heart of an RDBMS is the foreign key: a column in one table carrying the primary key of another. The database itself enforces the relationship, so no application can accidentally create an order for a customer that does not exist.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relational versus non-relational — the honest comparison”?",
+      "options": [
+        "Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define…",
+        "Document, key-value, and graph stores are not inferior; they answer different questions.",
+        "The join is then expressed in SQL, and the optimiser decides how to execute it:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Document, key-value, and graph stores are not inferior; they answer different questions. What matters is knowing which guarantees you are trading away:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why this matters to a DBA”?",
+      "options": [
+        "Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define…",
+        "Document, key-value, and graph stores are not inferior; they answer different questions.",
+        "start relational until you have a measured reason not to"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every core DBA duty is a consequence of the relational model: keys and constraints define what “correct data” means; joins define which indexes matter; the log and ACID define what backup and recovery must protect. When a query is slow, you reason about relations and statistics; when data is wrong, you reason about constraints and transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The revolutionary part was not tables — it was that _____.”",
+      "options": [
+        "key",
+        "reference",
+        "relationships are expressed by data, not by structure"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The revolutionary part was not tables — it was that relationships are expressed by data, not by structure. A customer's orders are not stored inside a customer record; they are rows in an Orders table that reference the customer's key. Applications find them with a join, and no physical nesting has to be rebuilt when requirements change.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From the model to the RDBMS”?",
+      "options": [
+        "Depends on application code",
+        "What an RDBMS guarantees that a file system does not:",
+        "Often single-document or eventual consistency"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “What an RDBMS guarantees that a file system does not:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relationships are declared, not stored”?",
+      "options": [
+        "The join is then expressed in SQL, and the optimiser decides how to execute it:",
+        "Depends on application code",
+        "Horizontal scale, simple access patterns, semi-structured payloads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The join is then expressed in SQL, and the optimiser decides how to execute it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “For a production DBA the practical rule: _____.”",
+      "options": [
+        "Relational Database Management System",
+        "Declarative access",
+        "start relational until you have a measured reason not to"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “For a production DBA the practical rule: start relational until you have a measured reason not to. Most “scale” problems are solved by indexing, partitioning, or one more read replica long before the relational model itself is the bottleneck.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ disabling foreign keys “just for the import” and never re-enabling them; letting the ORM create its own schema that ignores the model;…”",
+      "options": [
+        "Integrity",
+        "Common pitfalls:",
+        "Declarative access"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: disabling foreign keys “just for the import” and never re-enabling them; letting the ORM create its own schema that ignores the model; assuming a non-relational store will deliver relational guarantees “eventually”; and re-introducing nesting by stuffing JSON blobs into columns that should be related rows — trading the DBMS's integrity engine for application code that nobody tests.”"
+    }
+  ],
   takeaways: [
     "Relations are tables, rows are tuples, columns are attributes — relationships are expressed by key values, not nesting",
     "The RDBMS implements the model: declarative SQL, integrity enforcement, ACID transactions, and storage optimisation",

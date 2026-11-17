@@ -188,6 +188,312 @@ Logins and other server-level objects live in master and are not part of a user 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Disaster Recovery Testing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disaster Recovery Testing within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Testing fits”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Testing in practice”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Testing”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disaster Recovery Testing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "More backups to apply",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster Recovery Testing",
+        "End of the sequence",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Disaster Recovery Testing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disaster Recovery Testing means”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Testing fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Testing in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:",
+        "With Disaster Recovery Testing, prefer measured, reversible changes.",
+        "Lowest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Testing”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "With Disaster Recovery Testing, prefer measured, reversible changes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Disaster Recovery Testing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disaster Recovery Testing within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Testing fits”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Testing in practice”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Testing”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disaster Recovery Testing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "More backups to apply",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster Recovery Testing",
+        "End of the sequence",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Disaster Recovery Testing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disaster Recovery Testing means”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Testing fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Testing in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:",
+        "With Disaster Recovery Testing, prefer measured, reversible changes.",
+        "Lowest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Testing”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "With Disaster Recovery Testing, prefer measured, reversible changes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery.",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Disaster Recovery Testing"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Disaster Recovery Testing within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Testing fits”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Testing in practice”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Testing”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disaster Recovery Testing. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "More backups to apply",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Disaster Recovery Testing",
+        "End of the sequence",
+        "Log shipping with reads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Disaster Recovery Testing with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disaster Recovery Testing means”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A tail-log backup captures log records after the last scheduled backup — essential after a failure so no committed work is lost. If the data files are intact, BACKUP LOG... WITH NORECOVERY captures the tail and leaves the database restoring.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disaster Recovery Testing fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Disaster Recovery Testing alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disaster Recovery Testing in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:",
+        "With Disaster Recovery Testing, prefer measured, reversible changes.",
+        "Lowest"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disaster Recovery Testing:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disaster Recovery Testing”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "With Disaster Recovery Testing, prefer measured, reversible changes.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Disaster Recovery Testing is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -181,6 +181,312 @@ A login authenticates to the server (server scope); a user is the login's mapped
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Service Account Security sits inside a larger system.",
+        "Service Account Security",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Service Account Security within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Service Account Security fits”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Service Account Security."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Service Account Security in practice”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Service Account Security”?",
+      "options": [
+        "Service Account Security",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Service Account Security. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Service Account Security",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Service Account Security is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Service Account Security"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Service Account Security with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Service Account Security means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Service Account Security:",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Service Account Security fits”?",
+      "options": [
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions.",
+        "Service Account Security is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Service Account Security in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions.",
+        "The following comparison captures the distinctions that matter most when working with Service Account Security:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Service Account Security:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Service Account Security”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Service Account Security sits inside a larger system.",
+        "Service Account Security",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Service Account Security within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Service Account Security fits”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Service Account Security."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Service Account Security in practice”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Service Account Security”?",
+      "options": [
+        "Service Account Security",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Service Account Security. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Service Account Security",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Service Account Security is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Service Account Security"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Service Account Security with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Service Account Security means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Service Account Security:",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Service Account Security fits”?",
+      "options": [
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions.",
+        "Service Account Security is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Service Account Security in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions.",
+        "The following comparison captures the distinctions that matter most when working with Service Account Security:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Service Account Security:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Service Account Security”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "Service Account Security sits inside a larger system.",
+        "Service Account Security",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Service Account Security within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Service Account Security fits”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Service Account Security."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Service Account Security in practice”?",
+      "options": [
+        "Map a login into a database",
+        "Bundle permissions",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface. Windows authentication is preferred where available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Service Account Security”?",
+      "options": [
+        "Service Account Security",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Service Account Security. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "Service Account Security",
+        "Schemas are namespaces that group objects and act as a permission boundary."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A server login grants access to the instance; a database user maps that login to a database. The mapping is by SID, which is why restores to other servers produce orphaned users. A login and a user are distinct objects at distinct scopes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Service Account Security is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Service Account Security"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Service Account Security with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Service Account Security means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Service Account Security:",
+        "Schemas are namespaces that group objects and act as a permission boundary.",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schemas are namespaces that group objects and act as a permission boundary. Granting permissions on a schema covers all current and future objects within it, which is more maintainable than granting object by object.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Service Account Security fits”?",
+      "options": [
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions.",
+        "Service Account Security is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Service Account Security in practice”?",
+      "options": [
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly.",
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions.",
+        "The following comparison captures the distinctions that matter most when working with Service Account Security:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Service Account Security:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Service Account Security”?",
+      "options": [
+        "Service account security, strong password policies for SQL authentication and disabling or renaming the sa account reduce the attack surface.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Service Account Security alongside the core concepts of SQL Server security and permissions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Service Account Security is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

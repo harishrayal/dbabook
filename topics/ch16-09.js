@@ -186,6 +186,312 @@ Because only synchronous commit guarantees the secondary has hardened the same t
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Availability Replicas",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Availability Replicas within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Replicas fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Replicas in practice”?",
+      "options": [
+        "With Availability Replicas, prefer measured, reversible changes.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Replicas”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Availability Replicas. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Availability Replicas",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Availability Replicas with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Availability Replicas means”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Replicas fits”?",
+      "options": [
+        "With Availability Replicas, prefer measured, reversible changes.",
+        "Higher (wait for secondary)",
+        "The diagram below places Availability Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Availability Replicas alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Replicas in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with Availability Replicas:",
+        "Availability Replicas sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Availability Replicas:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Replicas”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Availability Replicas",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Availability Replicas within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Replicas fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Replicas in practice”?",
+      "options": [
+        "With Availability Replicas, prefer measured, reversible changes.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Replicas”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Availability Replicas. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Availability Replicas",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Availability Replicas with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Availability Replicas means”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Replicas fits”?",
+      "options": [
+        "With Availability Replicas, prefer measured, reversible changes.",
+        "Higher (wait for secondary)",
+        "The diagram below places Availability Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Availability Replicas alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Replicas in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with Availability Replicas:",
+        "Availability Replicas sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Availability Replicas:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Replicas”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Availability Replicas",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Availability Replicas within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Replicas fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Replicas in practice”?",
+      "options": [
+        "With Availability Replicas, prefer measured, reversible changes.",
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Replicas”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Failover can be automatic, manual or forced.",
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Availability Replicas. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "Availability Replicas",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Availability Replicas with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Availability Replicas means”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Replicas fits”?",
+      "options": [
+        "With Availability Replicas, prefer measured, reversible changes.",
+        "Higher (wait for secondary)",
+        "The diagram below places Availability Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Availability Replicas alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Replicas in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with Availability Replicas:",
+        "Availability Replicas sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Availability Replicas:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Replicas”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Availability Replicas is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

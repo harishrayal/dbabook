@@ -195,6 +195,312 @@ END CATCH;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why the categories matter”?",
+      "options": [
+        "Every SQL statement falls into one of five categories.",
+        "Data Control Language",
+        "roles"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every SQL statement falls into one of five categories. The classification is not academic — it maps directly onto operational reality:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ changes the schema itself: CREATE, ALTER, DROP, TRUNCATE, and RENAME.”",
+      "options": [
+        "INSERT",
+        "UPDATE / DELETE",
+        "Data Definition Language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Data Definition Language changes the schema itself: CREATE, ALTER, DROP, TRUNCATE, and RENAME. DDL modifies catalog metadata and, where relevant, storage structures — which is why DDL statements typically require elevated permissions (the ddl_admin habit of granting db_owner to everyone is a security smell).”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ manipulates rows.”",
+      "options": [
+        "MERGE",
+        "DML",
+        "UPDATE / DELETE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “DML manipulates rows. The safe pattern for anything beyond a trivial change is: measure, wrap, verify.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures.”",
+      "options": [
+        "Data Control Language",
+        "UPDATE / DELETE",
+        "MERGE"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Data Control Language grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures. Three verbs with clear precedence — DENY always beats GRANT, and permissions can be direct or inherited through roles.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ defines the boundary inside which everything else succeeds or fails together.”",
+      "options": [
+        "MERGE",
+        "Data Control Language",
+        "Transaction Control Language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Transaction Control Language defines the boundary inside which everything else succeeds or fails together. Put it together with the other categories into a production-shaped script:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The most expensive misunderstanding in junior SQL is assuming a script is atomic because it _____ like one unit.”",
+      "options": [
+        "DENY",
+        "looks",
+        "GRANT"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The most expensive misunderstanding in junior SQL is assuming a script is atomic because it looks like one unit. In SQL Server, without an explicit transaction, every statement commits on its own — called autocommit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DDL — defining the structure”?",
+      "options": [
+        "Two DDL traps: TRUNCATE TABLE is DML's cousin — it empties a table quickly and is fully transactional, but it requires ALTER permission and fires no row-level triggers; and a…",
+        "What does it change?",
+        "Can it be undone?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two DDL traps: TRUNCATE TABLE is DML's cousin — it empties a table quickly and is fully transactional, but it requires ALTER permission and fires no row-level triggers; and a failed ALTER TABLE … ADD CONSTRAINT that must validate existing data will abort on the first bad row, leaving the constraint un-added while you assumed it was there.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — SELECT — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).”",
+      "options": [
+        "REVOKE",
+        "roles",
+        "DQL"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “DQL — SELECT — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).”"
+    },
+    {
+      "question": "Complete the lesson statement: “Production discipline: grant to _____, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them.”",
+      "options": [
+        "Transaction Control Language",
+        "roles",
+        "REVOKE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Production discipline: grant to roles, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them. The audit question “who can modify this table?” should have a one-query answer from sys.database_permissions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ assuming a script is atomic without BEGIN TRANSACTION (autocommit commits each statement); leaving a transaction open by forgetting COMMIT…”",
+      "options": [
+        "Common pitfalls:",
+        "roles",
+        "Transaction Control Language"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: assuming a script is atomic without BEGIN TRANSACTION (autocommit commits each statement); leaving a transaction open by forgetting COMMIT — which holds locks and blocks others; using SELECT results as if they were validated DML targets; and running DDL in a window with GO batch separators, which ends the batch but does not end your transaction — plan where the boundary sits.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why the categories matter”?",
+      "options": [
+        "Every SQL statement falls into one of five categories.",
+        "Data Control Language",
+        "roles"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every SQL statement falls into one of five categories. The classification is not academic — it maps directly onto operational reality:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ changes the schema itself: CREATE, ALTER, DROP, TRUNCATE, and RENAME.”",
+      "options": [
+        "INSERT",
+        "UPDATE / DELETE",
+        "Data Definition Language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Data Definition Language changes the schema itself: CREATE, ALTER, DROP, TRUNCATE, and RENAME. DDL modifies catalog metadata and, where relevant, storage structures — which is why DDL statements typically require elevated permissions (the ddl_admin habit of granting db_owner to everyone is a security smell).”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ manipulates rows.”",
+      "options": [
+        "MERGE",
+        "DML",
+        "UPDATE / DELETE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “DML manipulates rows. The safe pattern for anything beyond a trivial change is: measure, wrap, verify.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures.”",
+      "options": [
+        "Data Control Language",
+        "UPDATE / DELETE",
+        "MERGE"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Data Control Language grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures. Three verbs with clear precedence — DENY always beats GRANT, and permissions can be direct or inherited through roles.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ defines the boundary inside which everything else succeeds or fails together.”",
+      "options": [
+        "MERGE",
+        "Data Control Language",
+        "Transaction Control Language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Transaction Control Language defines the boundary inside which everything else succeeds or fails together. Put it together with the other categories into a production-shaped script:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The most expensive misunderstanding in junior SQL is assuming a script is atomic because it _____ like one unit.”",
+      "options": [
+        "DENY",
+        "looks",
+        "GRANT"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The most expensive misunderstanding in junior SQL is assuming a script is atomic because it looks like one unit. In SQL Server, without an explicit transaction, every statement commits on its own — called autocommit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DDL — defining the structure”?",
+      "options": [
+        "Two DDL traps: TRUNCATE TABLE is DML's cousin — it empties a table quickly and is fully transactional, but it requires ALTER permission and fires no row-level triggers; and a…",
+        "What does it change?",
+        "Can it be undone?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two DDL traps: TRUNCATE TABLE is DML's cousin — it empties a table quickly and is fully transactional, but it requires ALTER permission and fires no row-level triggers; and a failed ALTER TABLE … ADD CONSTRAINT that must validate existing data will abort on the first bad row, leaving the constraint un-added while you assumed it was there.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — SELECT — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).”",
+      "options": [
+        "REVOKE",
+        "roles",
+        "DQL"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “DQL — SELECT — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).”"
+    },
+    {
+      "question": "Complete the lesson statement: “Production discipline: grant to _____, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them.”",
+      "options": [
+        "Transaction Control Language",
+        "roles",
+        "REVOKE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Production discipline: grant to roles, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them. The audit question “who can modify this table?” should have a one-query answer from sys.database_permissions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ assuming a script is atomic without BEGIN TRANSACTION (autocommit commits each statement); leaving a transaction open by forgetting COMMIT…”",
+      "options": [
+        "Common pitfalls:",
+        "roles",
+        "Transaction Control Language"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: assuming a script is atomic without BEGIN TRANSACTION (autocommit commits each statement); leaving a transaction open by forgetting COMMIT — which holds locks and blocks others; using SELECT results as if they were validated DML targets; and running DDL in a window with GO batch separators, which ends the batch but does not end your transaction — plan where the boundary sits.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Why the categories matter”?",
+      "options": [
+        "Every SQL statement falls into one of five categories.",
+        "Data Control Language",
+        "roles"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Every SQL statement falls into one of five categories. The classification is not academic — it maps directly onto operational reality:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ changes the schema itself: CREATE, ALTER, DROP, TRUNCATE, and RENAME.”",
+      "options": [
+        "INSERT",
+        "UPDATE / DELETE",
+        "Data Definition Language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Data Definition Language changes the schema itself: CREATE, ALTER, DROP, TRUNCATE, and RENAME. DDL modifies catalog metadata and, where relevant, storage structures — which is why DDL statements typically require elevated permissions (the ddl_admin habit of granting db_owner to everyone is a security smell).”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ manipulates rows.”",
+      "options": [
+        "MERGE",
+        "DML",
+        "UPDATE / DELETE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “DML manipulates rows. The safe pattern for anything beyond a trivial change is: measure, wrap, verify.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures.”",
+      "options": [
+        "Data Control Language",
+        "UPDATE / DELETE",
+        "MERGE"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Data Control Language grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures. Three verbs with clear precedence — DENY always beats GRANT, and permissions can be direct or inherited through roles.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ defines the boundary inside which everything else succeeds or fails together.”",
+      "options": [
+        "MERGE",
+        "Data Control Language",
+        "Transaction Control Language"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Transaction Control Language defines the boundary inside which everything else succeeds or fails together. Put it together with the other categories into a production-shaped script:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The most expensive misunderstanding in junior SQL is assuming a script is atomic because it _____ like one unit.”",
+      "options": [
+        "DENY",
+        "looks",
+        "GRANT"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The most expensive misunderstanding in junior SQL is assuming a script is atomic because it looks like one unit. In SQL Server, without an explicit transaction, every statement commits on its own — called autocommit.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DDL — defining the structure”?",
+      "options": [
+        "Two DDL traps: TRUNCATE TABLE is DML's cousin — it empties a table quickly and is fully transactional, but it requires ALTER permission and fires no row-level triggers; and a…",
+        "What does it change?",
+        "Can it be undone?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two DDL traps: TRUNCATE TABLE is DML's cousin — it empties a table quickly and is fully transactional, but it requires ALTER permission and fires no row-level triggers; and a failed ALTER TABLE … ADD CONSTRAINT that must validate existing data will abort on the first bad row, leaving the constraint un-added while you assumed it was there.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — SELECT — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).”",
+      "options": [
+        "REVOKE",
+        "roles",
+        "DQL"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “DQL — SELECT — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).”"
+    },
+    {
+      "question": "Complete the lesson statement: “Production discipline: grant to _____, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them.”",
+      "options": [
+        "Transaction Control Language",
+        "roles",
+        "REVOKE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Production discipline: grant to roles, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them. The audit question “who can modify this table?” should have a one-query answer from sys.database_permissions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ assuming a script is atomic without BEGIN TRANSACTION (autocommit commits each statement); leaving a transaction open by forgetting COMMIT…”",
+      "options": [
+        "Common pitfalls:",
+        "roles",
+        "Transaction Control Language"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: assuming a script is atomic without BEGIN TRANSACTION (autocommit commits each statement); leaving a transaction open by forgetting COMMIT — which holds locks and blocks others; using SELECT results as if they were validated DML targets; and running DDL in a window with GO batch separators, which ends the batch but does not end your transaction — plan where the boundary sits.”"
+    }
+  ],
   takeaways: [
     "DDL defines structure, DML changes rows, DQL reads, DCL controls access, TCL defines boundaries",
     "Without an explicit transaction every statement auto-commits — a failing script leaves earlier statements in place",

@@ -178,6 +178,312 @@ Credentials are managed centrally in Active Directory, support Kerberos and pass
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server installation and configuration.”",
+      "options": [
+        "Production Installation Checklist",
+        "Predictable connectivity",
+        "Production Installation Checklist sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Production Installation Checklist within SQL Server installation and configuration. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Installation Checklist fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Installation Checklist.",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling engine for jobs, alerts and maintenance. It must be running and configured to start automatically in production, with an operator for notifications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Installation Checklist in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "Advanced HA, scale"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and monitoring all recorded before go-live.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Installation Checklist”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "Production Installation Checklist"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Installation Checklist. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Production Installation Checklist",
+        "Memory configuration is critical.",
+        "Authentication can be Windows-only or mixed mode."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Authentication can be Windows-only or mixed mode. Windows authentication is preferred because credentials are managed centrally and never stored in the connection string; SQL authentication is retained for compatibility and requires a strong password policy.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Production Installation Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Production Installation Checklist",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Production Installation Checklist with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Installation Checklist means”?",
+      "options": [
+        "Memory configuration is critical.",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Memory configuration is critical. The default max server memory is effectively unlimited, which can starve the OS and co-hosted services. Set it explicitly, leaving headroom of roughly 1-4 GB for the operating system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Installation Checklist fits”?",
+      "options": [
+        "Production Installation Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Installation Checklist in practice”?",
+      "options": [
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration.",
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Installation Checklist:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Installation Checklist”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration.",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server installation and configuration.”",
+      "options": [
+        "Production Installation Checklist",
+        "Predictable connectivity",
+        "Production Installation Checklist sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Production Installation Checklist within SQL Server installation and configuration. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Installation Checklist fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Installation Checklist.",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling engine for jobs, alerts and maintenance. It must be running and configured to start automatically in production, with an operator for notifications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Installation Checklist in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "Advanced HA, scale"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and monitoring all recorded before go-live.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Installation Checklist”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "Production Installation Checklist"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Installation Checklist. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Production Installation Checklist",
+        "Memory configuration is critical.",
+        "Authentication can be Windows-only or mixed mode."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Authentication can be Windows-only or mixed mode. Windows authentication is preferred because credentials are managed centrally and never stored in the connection string; SQL authentication is retained for compatibility and requires a strong password policy.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Production Installation Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Production Installation Checklist",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Production Installation Checklist with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Installation Checklist means”?",
+      "options": [
+        "Memory configuration is critical.",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Memory configuration is critical. The default max server memory is effectively unlimited, which can starve the OS and co-hosted services. Set it explicitly, leaving headroom of roughly 1-4 GB for the operating system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Installation Checklist fits”?",
+      "options": [
+        "Production Installation Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Installation Checklist in practice”?",
+      "options": [
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration.",
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Installation Checklist:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Installation Checklist”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration.",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server installation and configuration.”",
+      "options": [
+        "Production Installation Checklist",
+        "Predictable connectivity",
+        "Production Installation Checklist sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Production Installation Checklist within SQL Server installation and configuration. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Installation Checklist fits”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Production Installation Checklist.",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling engine for jobs, alerts and maintenance. It must be running and configured to start automatically in production, with an operator for notifications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Installation Checklist in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "Advanced HA, scale"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and monitoring all recorded before go-live.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Installation Checklist”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline.",
+        "Production Installation Checklist"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Installation Checklist. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Production Installation Checklist",
+        "Memory configuration is critical.",
+        "Authentication can be Windows-only or mixed mode."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Authentication can be Windows-only or mixed mode. Windows authentication is preferred because credentials are managed centrally and never stored in the connection string; SQL authentication is retained for compatibility and requires a strong password policy.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Production Installation Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Production Installation Checklist",
+        "Network configuration enables the TCP/IP protocol, fixes the port and opens the firewall."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Production Installation Checklist with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Installation Checklist means”?",
+      "options": [
+        "Memory configuration is critical.",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Memory configuration is critical. The default max server memory is effectively unlimited, which can starve the OS and co-hosted services. Set it explicitly, leaving headroom of roughly 1-4 GB for the operating system.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Installation Checklist fits”?",
+      "options": [
+        "Production Installation Checklist is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…",
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Installation Checklist in practice”?",
+      "options": [
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration.",
+        "The following comparison captures the distinctions that matter most when working with Production Installation Checklist:",
+        "SQL Server Agent is the scheduling engine for jobs, alerts and maintenance."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Installation Checklist:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Installation Checklist”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Production Installation Checklist alongside the core concepts of SQL Server installation and configuration.",
+        "A production installation checklist turns these decisions into a repeatable, auditable process: editions, paths, accounts, memory, ports, firewall, patch level, backups and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Production Installation Checklist is a fundamental concept in SQL Server installation and configuration",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

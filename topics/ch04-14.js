@@ -178,6 +178,312 @@ ORDER BY buffer_mb DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A page in the buffer pool starts _____ — identical to its copy in the data file.”",
+      "options": [
+        "min recovery LSN",
+        "clean",
+        "no-force"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A page in the buffer pool starts clean — identical to its copy in the data file. The moment a transaction modifies it, the page becomes dirty, but the order of operations is strictly prescribed by the write-ahead log (WAL) rule:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is an in-memory, per-database list of pages that are modified but not yet written.”",
+      "options": [
+        "dirty page table (DPT)",
+        "min recovery LSN",
+        "simple recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The dirty page table (DPT) is an in-memory, per-database list of pages that are modified but not yet written. Its design is deliberately simple:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who writes dirty pages, and when”?",
+      "options": [
+        "Evict clean pages",
+        "Log durable before data",
+        "Two background writers drain the DPT, for different reasons:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two background writers drain the DPT, for different reasons:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The transaction log can only be truncated up to the _____ — the oldest change that still exists only in a dirty page.”",
+      "options": [
+        "Database Pages",
+        "min recovery LSN",
+        "full recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The transaction log can only be truncated up to the min recovery LSN — the oldest change that still exists only in a dirty page. As long as one page from an hour ago is unwritten, log records from that hour must stay:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Reading the set together: _____ is the pool's page count, Checkpoint pages/sec shows checkpoint write volume, Lazy writes/sec should stay near zero on a healthy server (it…”",
+      "options": [
+        "Database Pages",
+        "full recovery",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Reading the set together: Database Pages is the pool's page count, Checkpoint pages/sec shows checkpoint write volume, Lazy writes/sec should stay near zero on a healthy server (it rises only under memory pressure), and a growing recovery-percent tells you the log is being held by unwritten pages. There is no counter for \"dirty pages\" itself — this combination is the closest honest approximation.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Pages",
+        "Checkpoint pages/sec",
+        "Dirty Pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Dirty Pages with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From update to dirty”?",
+      "options": [
+        "Evict clean pages",
+        "From this moment, the data file's copy of the page is stale.",
+        "Flush dirty pages, bound recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “From this moment, the data file's copy of the page is stale. Every reader that finds this page in the pool sees the newest version; every process that needs the disk copy — restore, backup file copy, crash recovery — must reason about the gap.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The dirty page table”?",
+      "options": [
+        "That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.",
+        "Evict clean pages",
+        "Log durable before data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Neither writer is triggered by a commit — that is the _____ half of SQL Server's buffer policy.”",
+      "options": [
+        "From this moment, the data file's copy of the page is stale.",
+        "That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.",
+        "no-force"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Neither writer is triggered by a commit — that is the no-force half of SQL Server's buffer policy. A transaction can commit with all its pages still dirty, because the log already contains everything needed to recreate them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why a dirty backlog pins the log”?",
+      "options": [
+        "1. Log first",
+        "The metric that exposes this directly is log_space_in_use_for_recovery_percent — the share of the log held open for recovery rather than reusable.",
+        "min recovery LSN"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The metric that exposes this directly is log_space_in_use_for_recovery_percent — the share of the log held open for recovery rather than reusable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A page in the buffer pool starts _____ — identical to its copy in the data file.”",
+      "options": [
+        "min recovery LSN",
+        "clean",
+        "no-force"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A page in the buffer pool starts clean — identical to its copy in the data file. The moment a transaction modifies it, the page becomes dirty, but the order of operations is strictly prescribed by the write-ahead log (WAL) rule:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is an in-memory, per-database list of pages that are modified but not yet written.”",
+      "options": [
+        "dirty page table (DPT)",
+        "min recovery LSN",
+        "simple recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The dirty page table (DPT) is an in-memory, per-database list of pages that are modified but not yet written. Its design is deliberately simple:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who writes dirty pages, and when”?",
+      "options": [
+        "Evict clean pages",
+        "Log durable before data",
+        "Two background writers drain the DPT, for different reasons:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two background writers drain the DPT, for different reasons:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The transaction log can only be truncated up to the _____ — the oldest change that still exists only in a dirty page.”",
+      "options": [
+        "Database Pages",
+        "min recovery LSN",
+        "full recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The transaction log can only be truncated up to the min recovery LSN — the oldest change that still exists only in a dirty page. As long as one page from an hour ago is unwritten, log records from that hour must stay:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Reading the set together: _____ is the pool's page count, Checkpoint pages/sec shows checkpoint write volume, Lazy writes/sec should stay near zero on a healthy server (it…”",
+      "options": [
+        "Database Pages",
+        "full recovery",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Reading the set together: Database Pages is the pool's page count, Checkpoint pages/sec shows checkpoint write volume, Lazy writes/sec should stay near zero on a healthy server (it rises only under memory pressure), and a growing recovery-percent tells you the log is being held by unwritten pages. There is no counter for \"dirty pages\" itself — this combination is the closest honest approximation.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Pages",
+        "Checkpoint pages/sec",
+        "Dirty Pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Dirty Pages with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From update to dirty”?",
+      "options": [
+        "Evict clean pages",
+        "From this moment, the data file's copy of the page is stale.",
+        "Flush dirty pages, bound recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “From this moment, the data file's copy of the page is stale. Every reader that finds this page in the pool sees the newest version; every process that needs the disk copy — restore, backup file copy, crash recovery — must reason about the gap.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The dirty page table”?",
+      "options": [
+        "That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.",
+        "Evict clean pages",
+        "Log durable before data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Neither writer is triggered by a commit — that is the _____ half of SQL Server's buffer policy.”",
+      "options": [
+        "From this moment, the data file's copy of the page is stale.",
+        "That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.",
+        "no-force"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Neither writer is triggered by a commit — that is the no-force half of SQL Server's buffer policy. A transaction can commit with all its pages still dirty, because the log already contains everything needed to recreate them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why a dirty backlog pins the log”?",
+      "options": [
+        "1. Log first",
+        "The metric that exposes this directly is log_space_in_use_for_recovery_percent — the share of the log held open for recovery rather than reusable.",
+        "min recovery LSN"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The metric that exposes this directly is log_space_in_use_for_recovery_percent — the share of the log held open for recovery rather than reusable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A page in the buffer pool starts _____ — identical to its copy in the data file.”",
+      "options": [
+        "min recovery LSN",
+        "clean",
+        "no-force"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A page in the buffer pool starts clean — identical to its copy in the data file. The moment a transaction modifies it, the page becomes dirty, but the order of operations is strictly prescribed by the write-ahead log (WAL) rule:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The _____ is an in-memory, per-database list of pages that are modified but not yet written.”",
+      "options": [
+        "dirty page table (DPT)",
+        "min recovery LSN",
+        "simple recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The dirty page table (DPT) is an in-memory, per-database list of pages that are modified but not yet written. Its design is deliberately simple:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who writes dirty pages, and when”?",
+      "options": [
+        "Evict clean pages",
+        "Log durable before data",
+        "Two background writers drain the DPT, for different reasons:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two background writers drain the DPT, for different reasons:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The transaction log can only be truncated up to the _____ — the oldest change that still exists only in a dirty page.”",
+      "options": [
+        "Database Pages",
+        "min recovery LSN",
+        "full recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The transaction log can only be truncated up to the min recovery LSN — the oldest change that still exists only in a dirty page. As long as one page from an hour ago is unwritten, log records from that hour must stay:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Reading the set together: _____ is the pool's page count, Checkpoint pages/sec shows checkpoint write volume, Lazy writes/sec should stay near zero on a healthy server (it…”",
+      "options": [
+        "Database Pages",
+        "full recovery",
+        "Checkpoint pages/sec"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Reading the set together: Database Pages is the pool's page count, Checkpoint pages/sec shows checkpoint write volume, Lazy writes/sec should stay near zero on a healthy server (it rises only under memory pressure), and a growing recovery-percent tells you the log is being held by unwritten pages. There is no counter for \"dirty pages\" itself — this combination is the closest honest approximation.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Pages",
+        "Checkpoint pages/sec",
+        "Dirty Pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Dirty Pages with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From update to dirty”?",
+      "options": [
+        "Evict clean pages",
+        "From this moment, the data file's copy of the page is stale.",
+        "Flush dirty pages, bound recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “From this moment, the data file's copy of the page is stale. Every reader that finds this page in the pool sees the newest version; every process that needs the disk copy — restore, backup file copy, crash recovery — must reason about the gap.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The dirty page table”?",
+      "options": [
+        "That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.",
+        "Evict clean pages",
+        "Log durable before data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Neither writer is triggered by a commit — that is the _____ half of SQL Server's buffer policy.”",
+      "options": [
+        "From this moment, the data file's copy of the page is stale.",
+        "That last point is the link between this topic and crash recovery: the DPT is not just a write queue, it is the list recovery will need if the power fails right now.",
+        "no-force"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Neither writer is triggered by a commit — that is the no-force half of SQL Server's buffer policy. A transaction can commit with all its pages still dirty, because the log already contains everything needed to recreate them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why a dirty backlog pins the log”?",
+      "options": [
+        "1. Log first",
+        "The metric that exposes this directly is log_space_in_use_for_recovery_percent — the share of the log held open for recovery rather than reusable.",
+        "min recovery LSN"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The metric that exposes this directly is log_space_in_use_for_recovery_percent — the share of the log held open for recovery rather than reusable.”"
+    }
+  ],
   takeaways: [
     "A page becomes dirty after its log record exists: log first, modify in memory, mark dirty",
     "The dirty page table is added to once per clean-to-dirty transition and drained by checkpoints",

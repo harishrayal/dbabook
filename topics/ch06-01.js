@@ -160,6 +160,312 @@ ORDER BY file_id;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ hosts many databases; each database is a set of operating-system files arranged into filegroups; files are divided into 8 KB pages, and pages are handed out in extents of eight pages.”",
+      "options": [
+        "files",
+        "filegroups",
+        "instance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server organises storage in a strict hierarchy. An instance hosts many databases; each database is a set of operating-system files arranged into filegroups; files are divided into 8 KB pages, and pages are handed out in extents of eight pages. Every storage task a DBA performs — adding a file, placing a table, growing the log — is an operation on exactly one layer of this hierarchy.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pages and extents”?",
+      "options": [
+        "Log records: one per change, plus VLF bookkeeping",
+        "Data files are not written at byte level.",
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data files are not written at byte level. SQL Server allocates and reads in fixed units:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data files and the log are different animals”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "PFS",
+        "The hierarchy only makes sense once you watch a modification move through it:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a write travels through storage”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "Log records: one per change, plus VLF bookkeeping",
+        "The hierarchy only makes sense once you watch a modification move through it:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The hierarchy only makes sense once you watch a modification move through it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the physical layout”?",
+      "options": [
+        "A single sequential stream divided into VLFs",
+        "Before changing anything, read what is actually there.",
+        "Log records: one per change, plus VLF bookkeeping"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Before changing anything, read what is actually there. sys.master_files shows every file on the instance; sys.database_files shows the current database's view of itself:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From instance to extent”?",
+      "options": [
+        "Two details of this diagram matter more than the rest.",
+        "VLFs (virtual log files)",
+        "Transaction log backups in full/bulk-logged recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two details of this diagram matter more than the rest. First, a data file belongs to exactly one filegroup, and every filegroup belongs to exactly one database — there is no cross-database file. Second, the log file has no filegroup at all: it is a single sequential stream that records every change the database makes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Behind the scenes, a handful of allocation pages do the bookkeeping: _____ pages record which pages are free, GAM and SGAM pages record which extents are allocated (and whether they are shared), and DCM/BCM pages drive differential backups.”",
+      "options": [
+        "Extent",
+        "Mixed extent",
+        "PFS"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Behind the scenes, a handful of allocation pages do the bookkeeping: PFS pages record which pages are free, GAM and SGAM pages record which extents are allocated (and whether they are shared), and DCM/BCM pages drive differential backups. When you see latch waits on allocation pages — classically PAGELATCH_UP contention in tempdb — you are looking at contention on these structures, not on user data.”"
+    },
+    {
+      "question": "In the “Data files and the log are different animals” table, what is listed for “Contents” under “Transaction log (LDF)”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "Log records: one per change, plus VLF bookkeeping",
+        "PFS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Contents” as “Log records: one per change, plus VLF bookkeeping”."
+    },
+    {
+      "question": "Complete the lesson statement: “Data file growth is asynchronous background work that users rarely notice, while log growth must complete _____ the transaction that needs the space can proceed — which is why a slow, badly sized, or nearly full log file is felt immediately as timeouts.”",
+      "options": [
+        "before",
+        "Uniform extent",
+        "PFS"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This asymmetry explains most production surprises. Data file growth is asynchronous background work that users rarely notice, while log growth must complete before the transaction that needs the space can proceed — which is why a slow, badly sized, or nearly full log file is felt immediately as timeouts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Both views expose _____ names (used in every T-SQL statement) and physical paths (used by Windows and by attach/detach).”",
+      "options": [
+        "PFS",
+        "GAM",
+        "logical"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both views expose logical names (used in every T-SQL statement) and physical paths (used by Windows and by attach/detach). Keep that distinction sharp: you can change a physical path without renaming the logical file, and you can rename a logical file without moving a byte on disk.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ hosts many databases; each database is a set of operating-system files arranged into filegroups; files are divided into 8 KB pages, and pages are handed out in extents of eight pages.”",
+      "options": [
+        "files",
+        "filegroups",
+        "instance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server organises storage in a strict hierarchy. An instance hosts many databases; each database is a set of operating-system files arranged into filegroups; files are divided into 8 KB pages, and pages are handed out in extents of eight pages. Every storage task a DBA performs — adding a file, placing a table, growing the log — is an operation on exactly one layer of this hierarchy.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pages and extents”?",
+      "options": [
+        "Log records: one per change, plus VLF bookkeeping",
+        "Data files are not written at byte level.",
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data files are not written at byte level. SQL Server allocates and reads in fixed units:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data files and the log are different animals”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "PFS",
+        "The hierarchy only makes sense once you watch a modification move through it:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a write travels through storage”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "Log records: one per change, plus VLF bookkeeping",
+        "The hierarchy only makes sense once you watch a modification move through it:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The hierarchy only makes sense once you watch a modification move through it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the physical layout”?",
+      "options": [
+        "A single sequential stream divided into VLFs",
+        "Before changing anything, read what is actually there.",
+        "Log records: one per change, plus VLF bookkeeping"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Before changing anything, read what is actually there. sys.master_files shows every file on the instance; sys.database_files shows the current database's view of itself:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From instance to extent”?",
+      "options": [
+        "Two details of this diagram matter more than the rest.",
+        "VLFs (virtual log files)",
+        "Transaction log backups in full/bulk-logged recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two details of this diagram matter more than the rest. First, a data file belongs to exactly one filegroup, and every filegroup belongs to exactly one database — there is no cross-database file. Second, the log file has no filegroup at all: it is a single sequential stream that records every change the database makes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Behind the scenes, a handful of allocation pages do the bookkeeping: _____ pages record which pages are free, GAM and SGAM pages record which extents are allocated (and whether they are shared), and DCM/BCM pages drive differential backups.”",
+      "options": [
+        "Extent",
+        "Mixed extent",
+        "PFS"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Behind the scenes, a handful of allocation pages do the bookkeeping: PFS pages record which pages are free, GAM and SGAM pages record which extents are allocated (and whether they are shared), and DCM/BCM pages drive differential backups. When you see latch waits on allocation pages — classically PAGELATCH_UP contention in tempdb — you are looking at contention on these structures, not on user data.”"
+    },
+    {
+      "question": "In the “Data files and the log are different animals” table, what is listed for “Contents” under “Transaction log (LDF)”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "Log records: one per change, plus VLF bookkeeping",
+        "PFS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Contents” as “Log records: one per change, plus VLF bookkeeping”."
+    },
+    {
+      "question": "Complete the lesson statement: “Data file growth is asynchronous background work that users rarely notice, while log growth must complete _____ the transaction that needs the space can proceed — which is why a slow, badly sized, or nearly full log file is felt immediately as timeouts.”",
+      "options": [
+        "before",
+        "Uniform extent",
+        "PFS"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This asymmetry explains most production surprises. Data file growth is asynchronous background work that users rarely notice, while log growth must complete before the transaction that needs the space can proceed — which is why a slow, badly sized, or nearly full log file is felt immediately as timeouts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Both views expose _____ names (used in every T-SQL statement) and physical paths (used by Windows and by attach/detach).”",
+      "options": [
+        "PFS",
+        "GAM",
+        "logical"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both views expose logical names (used in every T-SQL statement) and physical paths (used by Windows and by attach/detach). Keep that distinction sharp: you can change a physical path without renaming the logical file, and you can rename a logical file without moving a byte on disk.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “An _____ hosts many databases; each database is a set of operating-system files arranged into filegroups; files are divided into 8 KB pages, and pages are handed out in extents of eight pages.”",
+      "options": [
+        "files",
+        "filegroups",
+        "instance"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “SQL Server organises storage in a strict hierarchy. An instance hosts many databases; each database is a set of operating-system files arranged into filegroups; files are divided into 8 KB pages, and pages are handed out in extents of eight pages. Every storage task a DBA performs — adding a file, placing a table, growing the log — is an operation on exactly one layer of this hierarchy.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pages and extents”?",
+      "options": [
+        "Log records: one per change, plus VLF bookkeeping",
+        "Data files are not written at byte level.",
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data files are not written at byte level. SQL Server allocates and reads in fixed units:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data files and the log are different animals”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "PFS",
+        "The hierarchy only makes sense once you watch a modification move through it:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a write travels through storage”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "Log records: one per change, plus VLF bookkeeping",
+        "The hierarchy only makes sense once you watch a modification move through it:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The hierarchy only makes sense once you watch a modification move through it:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading the physical layout”?",
+      "options": [
+        "A single sequential stream divided into VLFs",
+        "Before changing anything, read what is actually there.",
+        "Log records: one per change, plus VLF bookkeeping"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Before changing anything, read what is actually there. sys.master_files shows every file on the instance; sys.database_files shows the current database's view of itself:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “From instance to extent”?",
+      "options": [
+        "Two details of this diagram matter more than the rest.",
+        "VLFs (virtual log files)",
+        "Transaction log backups in full/bulk-logged recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two details of this diagram matter more than the rest. First, a data file belongs to exactly one filegroup, and every filegroup belongs to exactly one database — there is no cross-database file. Second, the log file has no filegroup at all: it is a single sequential stream that records every change the database makes.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Behind the scenes, a handful of allocation pages do the bookkeeping: _____ pages record which pages are free, GAM and SGAM pages record which extents are allocated (and whether they are shared), and DCM/BCM pages drive differential backups.”",
+      "options": [
+        "Extent",
+        "Mixed extent",
+        "PFS"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Behind the scenes, a handful of allocation pages do the bookkeeping: PFS pages record which pages are free, GAM and SGAM pages record which extents are allocated (and whether they are shared), and DCM/BCM pages drive differential backups. When you see latch waits on allocation pages — classically PAGELATCH_UP contention in tempdb — you are looking at contention on these structures, not on user data.”"
+    },
+    {
+      "question": "In the “Data files and the log are different animals” table, what is listed for “Contents” under “Transaction log (LDF)”?",
+      "options": [
+        "The two file types exist to serve different access patterns, and most storage mistakes come from treating them the same:",
+        "Log records: one per change, plus VLF bookkeeping",
+        "PFS"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Contents” as “Log records: one per change, plus VLF bookkeeping”."
+    },
+    {
+      "question": "Complete the lesson statement: “Data file growth is asynchronous background work that users rarely notice, while log growth must complete _____ the transaction that needs the space can proceed — which is why a slow, badly sized, or nearly full log file is felt immediately as timeouts.”",
+      "options": [
+        "before",
+        "Uniform extent",
+        "PFS"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This asymmetry explains most production surprises. Data file growth is asynchronous background work that users rarely notice, while log growth must complete before the transaction that needs the space can proceed — which is why a slow, badly sized, or nearly full log file is felt immediately as timeouts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Both views expose _____ names (used in every T-SQL statement) and physical paths (used by Windows and by attach/detach).”",
+      "options": [
+        "PFS",
+        "GAM",
+        "logical"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both views expose logical names (used in every T-SQL statement) and physical paths (used by Windows and by attach/detach). Keep that distinction sharp: you can change a physical path without renaming the logical file, and you can rename a logical file without moving a byte on disk.”"
+    }
+  ],
   takeaways: [
     "Storage layers: instance → database → filegroup → file → 8 KB page → 64 KB extent",
     "Pages are the unit of I/O; extents are the unit of allocation (mixed vs uniform)",

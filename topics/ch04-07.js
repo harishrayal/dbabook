@@ -214,6 +214,312 @@ ORDER  BY cached_pages DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Pool, cache, and the other caches”?",
+      "options": [
+        "Rising: dirty pages blocking reuse — pressure or write burst",
+        "Spike with falling hit ratio: cache misses, not query cost",
+        "The terminology confuses even experienced DBAs, so pin it down:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The terminology confuses even experienced DBAs, so pin it down:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a lookup works”?",
+      "options": [
+        "Below that: working set larger than pool, or cold cache",
+        "When the access method needs page (7, 1, 20433) — database, file, page — the buffer manager hashes that triple and probes the buffer hash table:",
+        "base"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When the access method needs page (7, 1, 20433) — database, file, page — the buffer manager hashes that triple and probes the buffer hash table:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who owns the cache?”?",
+      "options": [
+        "The cache is shared, but it is not evenly divided.",
+        "Below that: working set larger than pool, or cold cache",
+        "Near zero: cache is full, evictions are inevitable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The cache is shared, but it is not evenly divided. Joining the buffer descriptors to the allocation catalogue answers the question every capacity review asks — which objects are holding memory:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The “Buffer cache hit ratio” counter is a ratio counter: its value must be divided by its _____ counter.”",
+      "options": [
+        "stolen",
+        "Fetch",
+        "base"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The “Buffer cache hit ratio” counter is a ratio counter: its value must be divided by its base counter. In sys.dm_os_performance_counters both rows exist, and a DBA who reads the raw value is reading meaningless integers:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold caches: restarts, failovers, restores”?",
+      "options": [
+        "Near zero: cache is full, evictions are inevitable",
+        "The cache is volatile — it starts empty on every instance start, failover, and many restores.",
+        "Below that: working set larger than pool, or cold cache"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The cache is volatile — it starts empty on every instance start, failover, and many restores. A cold cache has a predictable signature:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cache health as a baseline”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Near zero: cache is full, evictions are inevitable",
+        "Rising: dirty pages blocking reuse — pressure or write burst"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Cache metrics are trend metrics: one reading proves nothing, a curve proves everything. Capture them alongside page life expectancy so you can separate “cache too small” from “cache too hot”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pool, cache, and the other caches”?",
+      "options": [
+        "The terminology confuses even experienced DBAs, so pin it down:",
+        "The memory region SQL Server allocates to hold 8-KB data and index pages (largest memory clerk)",
+        "The performance counter named “Buffer cache hit ratio” measures only how often a page request was satisfied from RAM."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The performance counter named “Buffer cache hit ratio” measures only how often a page request was satisfied from RAM. Everything else — plans, locks, temp tables — is outside that ratio, which is why a perfect hit ratio never proves the server is healthy.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a lookup works”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Two consequences you can measure: a cache with many stolen pages is a cache under memory pressure, and a cache whose free list sits at zero with high Lazy writes/sec is recycling…",
+        "expect it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two consequences you can measure: a cache with many stolen pages is a cache under memory pressure, and a cache whose free list sits at zero with high Lazy writes/sec is recycling pages faster than it can serve them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who owns the cache?”?",
+      "options": [
+        "A report table holding 8 GB of descriptors tells you two things: it is crowding out the OLTP working set, and a scan of it will be nearly free the second time and expensive the…",
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Baselining this by hour of day reveals the pattern that matters: if the reporting database's cached pages grow through the morning and never shrink, it is steadily evicting the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A report table holding 8 GB of descriptors tells you two things: it is crowding out the OLTP working set, and a scan of it will be nearly free the second time and expensive the first. Note the filter to in-row/row-overflow allocations — LOB allocations use hobt_id rather than partition_id as their container.”"
+    },
+    {
+      "question": "In the “Cache counters that matter” table, what is listed for “Buffer cache hit ratio” under “Interpretation”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Baselining this by hour of day reveals the pattern that matters: if the reporting database's cached pages grow through the morning and never shrink, it is steadily evicting the…",
+        "Below that: working set larger than pool, or cold cache"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Buffer cache hit ratio” as “Below that: working set larger than pool, or cold cache”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Pool, cache, and the other caches”?",
+      "options": [
+        "Rising: dirty pages blocking reuse — pressure or write burst",
+        "Spike with falling hit ratio: cache misses, not query cost",
+        "The terminology confuses even experienced DBAs, so pin it down:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The terminology confuses even experienced DBAs, so pin it down:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a lookup works”?",
+      "options": [
+        "Below that: working set larger than pool, or cold cache",
+        "When the access method needs page (7, 1, 20433) — database, file, page — the buffer manager hashes that triple and probes the buffer hash table:",
+        "base"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When the access method needs page (7, 1, 20433) — database, file, page — the buffer manager hashes that triple and probes the buffer hash table:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who owns the cache?”?",
+      "options": [
+        "The cache is shared, but it is not evenly divided.",
+        "Below that: working set larger than pool, or cold cache",
+        "Near zero: cache is full, evictions are inevitable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The cache is shared, but it is not evenly divided. Joining the buffer descriptors to the allocation catalogue answers the question every capacity review asks — which objects are holding memory:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The “Buffer cache hit ratio” counter is a ratio counter: its value must be divided by its _____ counter.”",
+      "options": [
+        "stolen",
+        "Fetch",
+        "base"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The “Buffer cache hit ratio” counter is a ratio counter: its value must be divided by its base counter. In sys.dm_os_performance_counters both rows exist, and a DBA who reads the raw value is reading meaningless integers:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold caches: restarts, failovers, restores”?",
+      "options": [
+        "Near zero: cache is full, evictions are inevitable",
+        "The cache is volatile — it starts empty on every instance start, failover, and many restores.",
+        "Below that: working set larger than pool, or cold cache"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The cache is volatile — it starts empty on every instance start, failover, and many restores. A cold cache has a predictable signature:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cache health as a baseline”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Near zero: cache is full, evictions are inevitable",
+        "Rising: dirty pages blocking reuse — pressure or write burst"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Cache metrics are trend metrics: one reading proves nothing, a curve proves everything. Capture them alongside page life expectancy so you can separate “cache too small” from “cache too hot”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pool, cache, and the other caches”?",
+      "options": [
+        "The terminology confuses even experienced DBAs, so pin it down:",
+        "The memory region SQL Server allocates to hold 8-KB data and index pages (largest memory clerk)",
+        "The performance counter named “Buffer cache hit ratio” measures only how often a page request was satisfied from RAM."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The performance counter named “Buffer cache hit ratio” measures only how often a page request was satisfied from RAM. Everything else — plans, locks, temp tables — is outside that ratio, which is why a perfect hit ratio never proves the server is healthy.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a lookup works”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Two consequences you can measure: a cache with many stolen pages is a cache under memory pressure, and a cache whose free list sits at zero with high Lazy writes/sec is recycling…",
+        "expect it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two consequences you can measure: a cache with many stolen pages is a cache under memory pressure, and a cache whose free list sits at zero with high Lazy writes/sec is recycling pages faster than it can serve them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who owns the cache?”?",
+      "options": [
+        "A report table holding 8 GB of descriptors tells you two things: it is crowding out the OLTP working set, and a scan of it will be nearly free the second time and expensive the…",
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Baselining this by hour of day reveals the pattern that matters: if the reporting database's cached pages grow through the morning and never shrink, it is steadily evicting the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A report table holding 8 GB of descriptors tells you two things: it is crowding out the OLTP working set, and a scan of it will be nearly free the second time and expensive the first. Note the filter to in-row/row-overflow allocations — LOB allocations use hobt_id rather than partition_id as their container.”"
+    },
+    {
+      "question": "In the “Cache counters that matter” table, what is listed for “Buffer cache hit ratio” under “Interpretation”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Baselining this by hour of day reveals the pattern that matters: if the reporting database's cached pages grow through the morning and never shrink, it is steadily evicting the…",
+        "Below that: working set larger than pool, or cold cache"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Buffer cache hit ratio” as “Below that: working set larger than pool, or cold cache”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Pool, cache, and the other caches”?",
+      "options": [
+        "Rising: dirty pages blocking reuse — pressure or write burst",
+        "Spike with falling hit ratio: cache misses, not query cost",
+        "The terminology confuses even experienced DBAs, so pin it down:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The terminology confuses even experienced DBAs, so pin it down:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a lookup works”?",
+      "options": [
+        "Below that: working set larger than pool, or cold cache",
+        "When the access method needs page (7, 1, 20433) — database, file, page — the buffer manager hashes that triple and probes the buffer hash table:",
+        "base"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When the access method needs page (7, 1, 20433) — database, file, page — the buffer manager hashes that triple and probes the buffer hash table:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who owns the cache?”?",
+      "options": [
+        "The cache is shared, but it is not evenly divided.",
+        "Below that: working set larger than pool, or cold cache",
+        "Near zero: cache is full, evictions are inevitable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The cache is shared, but it is not evenly divided. Joining the buffer descriptors to the allocation catalogue answers the question every capacity review asks — which objects are holding memory:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The “Buffer cache hit ratio” counter is a ratio counter: its value must be divided by its _____ counter.”",
+      "options": [
+        "stolen",
+        "Fetch",
+        "base"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The “Buffer cache hit ratio” counter is a ratio counter: its value must be divided by its base counter. In sys.dm_os_performance_counters both rows exist, and a DBA who reads the raw value is reading meaningless integers:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cold caches: restarts, failovers, restores”?",
+      "options": [
+        "Near zero: cache is full, evictions are inevitable",
+        "The cache is volatile — it starts empty on every instance start, failover, and many restores.",
+        "Below that: working set larger than pool, or cold cache"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The cache is volatile — it starts empty on every instance start, failover, and many restores. A cold cache has a predictable signature:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Cache health as a baseline”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Near zero: cache is full, evictions are inevitable",
+        "Rising: dirty pages blocking reuse — pressure or write burst"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Cache metrics are trend metrics: one reading proves nothing, a curve proves everything. Capture them alongside page life expectancy so you can separate “cache too small” from “cache too hot”:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pool, cache, and the other caches”?",
+      "options": [
+        "The terminology confuses even experienced DBAs, so pin it down:",
+        "The memory region SQL Server allocates to hold 8-KB data and index pages (largest memory clerk)",
+        "The performance counter named “Buffer cache hit ratio” measures only how often a page request was satisfied from RAM."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The performance counter named “Buffer cache hit ratio” measures only how often a page request was satisfied from RAM. Everything else — plans, locks, temp tables — is outside that ratio, which is why a perfect hit ratio never proves the server is healthy.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How a lookup works”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Two consequences you can measure: a cache with many stolen pages is a cache under memory pressure, and a cache whose free list sits at zero with high Lazy writes/sec is recycling…",
+        "expect it"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Two consequences you can measure: a cache with many stolen pages is a cache under memory pressure, and a cache whose free list sits at zero with high Lazy writes/sec is recycling pages faster than it can serve them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Who owns the cache?”?",
+      "options": [
+        "A report table holding 8 GB of descriptors tells you two things: it is crowding out the OLTP working set, and a scan of it will be nearly free the second time and expensive the…",
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Baselining this by hour of day reveals the pattern that matters: if the reporting database's cached pages grow through the morning and never shrink, it is steadily evicting the…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A report table holding 8 GB of descriptors tells you two things: it is crowding out the OLTP working set, and a scan of it will be nearly free the second time and expensive the first. Note the filter to in-row/row-overflow allocations — LOB allocations use hobt_id rather than partition_id as their container.”"
+    },
+    {
+      "question": "In the “Cache counters that matter” table, what is listed for “Buffer cache hit ratio” under “Interpretation”?",
+      "options": [
+        "Cache metrics are trend metrics: one reading proves nothing, a curve proves everything.",
+        "Baselining this by hour of day reveals the pattern that matters: if the reporting database's cached pages grow through the morning and never shrink, it is steadily evicting the…",
+        "Below that: working set larger than pool, or cold cache"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Buffer cache hit ratio” as “Below that: working set larger than pool, or cold cache”."
+    }
+  ],
   takeaways: [
     "Buffer pool = the memory; buffer cache = the pages in it, managed by hash lookup and replacement lists",
     "A hit touches the descriptor toward hot; a miss allocates from the free list and may have to steal (and flush) a page",

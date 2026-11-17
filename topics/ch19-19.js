@@ -161,6 +161,312 @@ A timeline, impact, root cause, contributing factors, what went well and badly, 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Log backup / grow",
+        "Kill blocker / fix query",
+        "Emergency Database Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Emergency Database Restoration within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Emergency Database Restoration fits”?",
+      "options": [
+        "Emergency Database Restoration",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Emergency Database Restoration in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Emergency Database Restoration",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Emergency Database Restoration”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Emergency Database Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Emergency Database Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Emergency Database Restoration means”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Emergency Database Restoration fits”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Emergency Database Restoration alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Emergency Database Restoration in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Emergency Database Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "Communication is part of the job.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Log backup / grow",
+        "Kill blocker / fix query",
+        "Emergency Database Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Emergency Database Restoration within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Emergency Database Restoration fits”?",
+      "options": [
+        "Emergency Database Restoration",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Emergency Database Restoration in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Emergency Database Restoration",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Emergency Database Restoration”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Emergency Database Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Emergency Database Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Emergency Database Restoration means”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Emergency Database Restoration fits”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Emergency Database Restoration alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Emergency Database Restoration in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Emergency Database Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "Communication is part of the job.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Log backup / grow",
+        "Kill blocker / fix query",
+        "Emergency Database Restoration"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Emergency Database Restoration within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Emergency Database Restoration fits”?",
+      "options": [
+        "Emergency Database Restoration",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Emergency Database Restoration in practice”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Emergency Database Restoration",
+        "Prioritisation weighs impact and urgency."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Emergency Database Restoration”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Emergency Database Restoration. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Emergency Database Restoration is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Emergency Database Restoration means”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Prioritisation weighs impact and urgency. A high-impact, high-urgency incident gets immediate attention; a low-impact cosmetic issue can wait. Clear severity definitions remove debate during stress.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Emergency Database Restoration fits”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Emergency Database Restoration alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Emergency Database Restoration in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "The diagram below places Emergency Database Restoration alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Emergency Database Restoration”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Emergency Database Restoration:",
+        "Communication is part of the job.",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    }
+  ],
   takeaways: [
     "Emergency Database Restoration is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

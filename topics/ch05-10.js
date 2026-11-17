@@ -179,6 +179,312 @@ SELECT sqlserver_start_time FROM sys.dm_os_sys_info;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The service family”?",
+      "options": [
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…",
+        "Every SQL Server host carries a set of services."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every SQL Server host carries a set of services. Know them by name — the display name, the service name, and the job it does:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when the engine service starts”?",
+      "options": [
+        "Optional; align with your organisation's data-handling policy",
+        "exe ) does far more than open a port:",
+        "Disable when Machine Learning Services is not used — reduce attack surface"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The Database Engine service ( sqlservr.exe ) does far more than open a port:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Companion services: Agent, Browser, and the rest”?",
+      "options": [
+        "The pattern: each service you keep must be needed, monitored, and patched; each service you disable shrinks the attack surface.",
+        "Services fail quietly at 3 AM.",
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The pattern: each service you keep must be needed, monitored, and patched; each service you disable shrinks the attack surface. Review the list quarterly against the build document.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing service state”?",
+      "options": [
+        "Disable when Machine Learning Services is not used — reduce attack surface",
+        "Optional; align with your organisation's data-handling policy",
+        "From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring that actually works”?",
+      "options": [
+        "From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:",
+        "Services fail quietly at 3 AM.",
+        "Optional; align with your organisation's data-handling policy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Services fail quietly at 3 AM. Close the loop with three checks:”"
+    },
+    {
+      "question": "In the “The service family” table, what is listed for “SQL Server (MSSQLSERVER)” under “Recommended start mode”?",
+      "options": [
+        "Automatic (Delayed Start)",
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “SQL Server (MSSQLSERVER)” as “Automatic (Delayed Start)”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ for the engine is the production default you should verify, with the Agent set to automatic only if its jobs are required at boot.”",
+      "options": [
+        "Startup-type audit",
+        "Restart awareness",
+        "Automatic (Delayed Start)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This is why startup order and delays matter: on a busy host, setting both engine and Agent to plain “Automatic” can cause a boot-time resource fight. Automatic (Delayed Start) for the engine is the production default you should verify, with the Agent set to automatic only if its jobs are required at boot.”"
+    },
+    {
+      "question": "In the “Companion services: Agent, Browser, and the rest” table, what is listed for “SQL Server Agent” under “Verdict”?",
+      "options": [
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user.",
+        "Required on almost every production instance — see ch05-11",
+        "Services fail quietly at 3 AM."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “SQL Server Agent” as “Required on almost every production instance — see ch05-11”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing service state”?",
+      "options": [
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…",
+        "SQL Server (MSSQLSERVER)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “From the host — what a DBA or infrastructure engineer runs in a maintenance window:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring that actually works”?",
+      "options": [
+        "SQL Server (MSSQLSERVER)",
+        "SQL Server (PROD)",
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The service family”?",
+      "options": [
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…",
+        "Every SQL Server host carries a set of services."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every SQL Server host carries a set of services. Know them by name — the display name, the service name, and the job it does:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when the engine service starts”?",
+      "options": [
+        "Optional; align with your organisation's data-handling policy",
+        "exe ) does far more than open a port:",
+        "Disable when Machine Learning Services is not used — reduce attack surface"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The Database Engine service ( sqlservr.exe ) does far more than open a port:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Companion services: Agent, Browser, and the rest”?",
+      "options": [
+        "The pattern: each service you keep must be needed, monitored, and patched; each service you disable shrinks the attack surface.",
+        "Services fail quietly at 3 AM.",
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The pattern: each service you keep must be needed, monitored, and patched; each service you disable shrinks the attack surface. Review the list quarterly against the build document.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing service state”?",
+      "options": [
+        "Disable when Machine Learning Services is not used — reduce attack surface",
+        "Optional; align with your organisation's data-handling policy",
+        "From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring that actually works”?",
+      "options": [
+        "From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:",
+        "Services fail quietly at 3 AM.",
+        "Optional; align with your organisation's data-handling policy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Services fail quietly at 3 AM. Close the loop with three checks:”"
+    },
+    {
+      "question": "In the “The service family” table, what is listed for “SQL Server (MSSQLSERVER)” under “Recommended start mode”?",
+      "options": [
+        "Automatic (Delayed Start)",
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “SQL Server (MSSQLSERVER)” as “Automatic (Delayed Start)”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ for the engine is the production default you should verify, with the Agent set to automatic only if its jobs are required at boot.”",
+      "options": [
+        "Startup-type audit",
+        "Restart awareness",
+        "Automatic (Delayed Start)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This is why startup order and delays matter: on a busy host, setting both engine and Agent to plain “Automatic” can cause a boot-time resource fight. Automatic (Delayed Start) for the engine is the production default you should verify, with the Agent set to automatic only if its jobs are required at boot.”"
+    },
+    {
+      "question": "In the “Companion services: Agent, Browser, and the rest” table, what is listed for “SQL Server Agent” under “Verdict”?",
+      "options": [
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user.",
+        "Required on almost every production instance — see ch05-11",
+        "Services fail quietly at 3 AM."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “SQL Server Agent” as “Required on almost every production instance — see ch05-11”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing service state”?",
+      "options": [
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…",
+        "SQL Server (MSSQLSERVER)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “From the host — what a DBA or infrastructure engineer runs in a maintenance window:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring that actually works”?",
+      "options": [
+        "SQL Server (MSSQLSERVER)",
+        "SQL Server (PROD)",
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The service family”?",
+      "options": [
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…",
+        "Every SQL Server host carries a set of services."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every SQL Server host carries a set of services. Know them by name — the display name, the service name, and the job it does:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What happens when the engine service starts”?",
+      "options": [
+        "Optional; align with your organisation's data-handling policy",
+        "exe ) does far more than open a port:",
+        "Disable when Machine Learning Services is not used — reduce attack surface"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The Database Engine service ( sqlservr.exe ) does far more than open a port:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Companion services: Agent, Browser, and the rest”?",
+      "options": [
+        "The pattern: each service you keep must be needed, monitored, and patched; each service you disable shrinks the attack surface.",
+        "Services fail quietly at 3 AM.",
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The pattern: each service you keep must be needed, monitored, and patched; each service you disable shrinks the attack surface. Review the list quarterly against the build document.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing service state”?",
+      "options": [
+        "Disable when Machine Learning Services is not used — reduce attack surface",
+        "Optional; align with your organisation's data-handling policy",
+        "From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring that actually works”?",
+      "options": [
+        "From inside the instance — useful for monitoring jobs and for servers where you lack interactive access:",
+        "Services fail quietly at 3 AM.",
+        "Optional; align with your organisation's data-handling policy"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Services fail quietly at 3 AM. Close the loop with three checks:”"
+    },
+    {
+      "question": "In the “The service family” table, what is listed for “SQL Server (MSSQLSERVER)” under “Recommended start mode”?",
+      "options": [
+        "Automatic (Delayed Start)",
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “SQL Server (MSSQLSERVER)” as “Automatic (Delayed Start)”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ for the engine is the production default you should verify, with the Agent set to automatic only if its jobs are required at boot.”",
+      "options": [
+        "Startup-type audit",
+        "Restart awareness",
+        "Automatic (Delayed Start)"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This is why startup order and delays matter: on a busy host, setting both engine and Agent to plain “Automatic” can cause a boot-time resource fight. Automatic (Delayed Start) for the engine is the production default you should verify, with the Agent set to automatic only if its jobs are required at boot.”"
+    },
+    {
+      "question": "In the “Companion services: Agent, Browser, and the rest” table, what is listed for “SQL Server Agent” under “Verdict”?",
+      "options": [
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user.",
+        "Required on almost every production instance — see ch05-11",
+        "Services fail quietly at 3 AM."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “SQL Server Agent” as “Required on almost every production instance — see ch05-11”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing service state”?",
+      "options": [
+        "From the host — what a DBA or infrastructure engineer runs in a maintenance window:",
+        "Note the service-name conventions: the engine on a named instance is MSSQL$INST, the Agent is SQLAgent$INST, and the Browser is SQLBrowser — memorise these; every service incident…",
+        "SQL Server (MSSQLSERVER)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “From the host — what a DBA or infrastructure engineer runs in a maintenance window:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring that actually works”?",
+      "options": [
+        "SQL Server (MSSQLSERVER)",
+        "SQL Server (PROD)",
+        "Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Pair these with host-level alerts (service stopped, unexpected reboot) and you will hear about a stopped service from monitoring — never from a user.”"
+    }
+  ],
   takeaways: [
     "SQL Server is a service family: engine, Agent, Browser, VSS Writer, Launchpad, plus optional companions",
     "Engine starts first and runs crash recovery; Agent follows; Browser only serves named-instance resolution",

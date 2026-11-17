@@ -185,6 +185,312 @@ Reorganize lightly fragmented indexes (roughly 10-30%) online with low impact; r
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Archive Strategies",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Archive Strategies within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Archive Strategies fits”?",
+      "options": [
+        "With Archive Strategies, prefer measured, reversible changes.",
+        "No benefit",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Archive Strategies in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Data and log capacity are planned separately.",
+        "Archive Strategies sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Archive Strategies”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Archive Strategies sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Archive Strategies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "With Archive Strategies, prefer measured, reversible changes.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Archive Strategies sits inside a larger system.",
+        "Archive Strategies",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Archive Strategies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Archive Strategies means”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Use the following as a starting point when investigating Archive Strategies.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Archive Strategies fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Archive Strategies.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "The diagram below places Archive Strategies alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Archive Strategies alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Archive Strategies in practice”?",
+      "options": [
+        "Archive Strategies",
+        "The following comparison captures the distinctions that matter most when working with Archive Strategies:",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Archive Strategies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Archive Strategies”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Archive Strategies",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Archive Strategies",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Archive Strategies within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Archive Strategies fits”?",
+      "options": [
+        "With Archive Strategies, prefer measured, reversible changes.",
+        "No benefit",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Archive Strategies in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Data and log capacity are planned separately.",
+        "Archive Strategies sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Archive Strategies”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Archive Strategies sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Archive Strategies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "With Archive Strategies, prefer measured, reversible changes.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Archive Strategies sits inside a larger system.",
+        "Archive Strategies",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Archive Strategies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Archive Strategies means”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Use the following as a starting point when investigating Archive Strategies.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Archive Strategies fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Archive Strategies.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "The diagram below places Archive Strategies alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Archive Strategies alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Archive Strategies in practice”?",
+      "options": [
+        "Archive Strategies",
+        "The following comparison captures the distinctions that matter most when working with Archive Strategies:",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Archive Strategies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Archive Strategies”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Archive Strategies",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "Archive Strategies",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Statistics maintenance ensures the optimiser has current data distributions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Archive Strategies within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Archive Strategies fits”?",
+      "options": [
+        "With Archive Strategies, prefer measured, reversible changes.",
+        "No benefit",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Capacity planning predicts when resources will run out so you can act on your terms, not during an incident. It combines historical growth trends, known upcoming changes and a safety margin.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Archive Strategies in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Data and log capacity are planned separately.",
+        "Archive Strategies sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Data and log capacity are planned separately. Data grows with retained rows and index size; log growth depends on the recovery model, transaction size and backup frequency. Each needs its own trend and headroom.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Archive Strategies”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Archive Strategies sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Archive Strategies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Statistics maintenance ensures the optimiser has current data distributions.",
+        "With Archive Strategies, prefer measured, reversible changes.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Archive Strategies sits inside a larger system.",
+        "Archive Strategies",
+        "Rebuild structure and stats"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Archive Strategies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Archive Strategies means”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Use the following as a starting point when investigating Archive Strategies.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Archive Strategies fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Archive Strategies.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "The diagram below places Archive Strategies alongside the core concepts of capacity planning and database maintenance."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Archive Strategies alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Archive Strategies in practice”?",
+      "options": [
+        "Archive Strategies",
+        "The following comparison captures the distinctions that matter most when working with Archive Strategies:",
+        "Rebuild needing 1.5x space"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Archive Strategies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Archive Strategies”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Archive Strategies",
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Archive Strategies is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

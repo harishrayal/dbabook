@@ -163,6 +163,312 @@ ORDER  BY impact_score DESC;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ owns the application logic that reads and writes data: the queries, the ORM mappings, the transactions, the feature behaviour.”",
+      "options": [
+        "Applies in the window",
+        "developer",
+        "Approves and maintains"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A developer owns the application logic that reads and writes data: the queries, the ORM mappings, the transactions, the feature behaviour. A DBA owns the platform those operations run on: the instance, the databases, the backups, the security, the performance envelope, and the change process into production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where responsibilities overlap”?",
+      "options": [
+        "Most friction happens in the middle of this table — the activities neither role fully owns by default.",
+        "ORM default plans, missing predicates, N+1 queries, schema shortcuts that only bite at scale",
+        "Change aversion, gatekeeping without alternatives, “no” without a “here's how”"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most friction happens in the middle of this table — the activities neither role fully owns by default. Healthy teams assign each one explicitly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Different incentives, different failure modes”?",
+      "options": [
+        "DBA",
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each role's greatest strength has a matching weakness under pressure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Evidence, not opinion”?",
+      "options": [
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most productive conversations between the two roles start with a plan rather than a complaint. When a developer says “your database is slow”, the DBA's first contribution is the data that turns the complaint into a work item:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When the relationship breaks down”?",
+      "options": [
+        "Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose…",
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "A useful rule of thumb for the boundary: the developer may optimise anything they can measure; the DBA may veto anything that threatens the platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose fault the last outage was; the DBA becomes a rubber stamp or a roadblock instead of a reviewer.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The distinction is best expressed as a boundary of _____:”",
+      "options": [
+        "Define “done” together",
+        "Restore the change gate",
+        "accountability"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The overlap is real — both write SQL, both care about indexes, both get paged when the database is slow. The distinction is best expressed as a boundary of accountability:”"
+    },
+    {
+      "question": "In the “Where responsibilities overlap” table, what is listed for “Application logic and transactions” under “Final say”?",
+      "options": [
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Developer",
+        "Change aversion, gatekeeping without alternatives, “no” without a “here's how”"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Application logic and transactions” as “Developer”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Different incentives, different failure modes”?",
+      "options": [
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "Neither role is senior to the other.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation. Both are rational responses to the wrong incentive — which is why the fix is structural: shared goals (a performance budget, a definition of done that includes query review) rather than asking either side to be more generous.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Evidence, not opinion”?",
+      "options": [
+        "Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose…",
+        "Neither role is senior to the other.",
+        "Notice what this produces: a ranked, evidence-based conversation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice what this produces: a ranked, evidence-based conversation. The developer sees the table and the columns the engine actually wanted; the DBA sees the estimated impact before writing a DDL statement. The same query also illustrates the limit — missing-index DMVs are a hint, not a command, and a DBA still weighs write overhead, duplication, and maintenance cost before creating anything.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When the relationship breaks down”?",
+      "options": [
+        "Practical habits that keep the relationship healthy:",
+        "Neither role is senior to the other.",
+        "Notice what this produces: a ranked, evidence-based conversation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Neither role is senior to the other. They hold different parts of the same risk, and the organisation only gets the benefit when the hand-off between those parts is deliberate.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ owns the application logic that reads and writes data: the queries, the ORM mappings, the transactions, the feature behaviour.”",
+      "options": [
+        "Applies in the window",
+        "developer",
+        "Approves and maintains"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A developer owns the application logic that reads and writes data: the queries, the ORM mappings, the transactions, the feature behaviour. A DBA owns the platform those operations run on: the instance, the databases, the backups, the security, the performance envelope, and the change process into production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where responsibilities overlap”?",
+      "options": [
+        "Most friction happens in the middle of this table — the activities neither role fully owns by default.",
+        "ORM default plans, missing predicates, N+1 queries, schema shortcuts that only bite at scale",
+        "Change aversion, gatekeeping without alternatives, “no” without a “here's how”"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most friction happens in the middle of this table — the activities neither role fully owns by default. Healthy teams assign each one explicitly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Different incentives, different failure modes”?",
+      "options": [
+        "DBA",
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each role's greatest strength has a matching weakness under pressure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Evidence, not opinion”?",
+      "options": [
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most productive conversations between the two roles start with a plan rather than a complaint. When a developer says “your database is slow”, the DBA's first contribution is the data that turns the complaint into a work item:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When the relationship breaks down”?",
+      "options": [
+        "Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose…",
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "A useful rule of thumb for the boundary: the developer may optimise anything they can measure; the DBA may veto anything that threatens the platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose fault the last outage was; the DBA becomes a rubber stamp or a roadblock instead of a reviewer.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The distinction is best expressed as a boundary of _____:”",
+      "options": [
+        "Define “done” together",
+        "Restore the change gate",
+        "accountability"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The overlap is real — both write SQL, both care about indexes, both get paged when the database is slow. The distinction is best expressed as a boundary of accountability:”"
+    },
+    {
+      "question": "In the “Where responsibilities overlap” table, what is listed for “Application logic and transactions” under “Final say”?",
+      "options": [
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Developer",
+        "Change aversion, gatekeeping without alternatives, “no” without a “here's how”"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Application logic and transactions” as “Developer”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Different incentives, different failure modes”?",
+      "options": [
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "Neither role is senior to the other.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation. Both are rational responses to the wrong incentive — which is why the fix is structural: shared goals (a performance budget, a definition of done that includes query review) rather than asking either side to be more generous.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Evidence, not opinion”?",
+      "options": [
+        "Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose…",
+        "Neither role is senior to the other.",
+        "Notice what this produces: a ranked, evidence-based conversation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice what this produces: a ranked, evidence-based conversation. The developer sees the table and the columns the engine actually wanted; the DBA sees the estimated impact before writing a DDL statement. The same query also illustrates the limit — missing-index DMVs are a hint, not a command, and a DBA still weighs write overhead, duplication, and maintenance cost before creating anything.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When the relationship breaks down”?",
+      "options": [
+        "Practical habits that keep the relationship healthy:",
+        "Neither role is senior to the other.",
+        "Notice what this produces: a ranked, evidence-based conversation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Neither role is senior to the other. They hold different parts of the same risk, and the organisation only gets the benefit when the hand-off between those parts is deliberate.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ owns the application logic that reads and writes data: the queries, the ORM mappings, the transactions, the feature behaviour.”",
+      "options": [
+        "Applies in the window",
+        "developer",
+        "Approves and maintains"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A developer owns the application logic that reads and writes data: the queries, the ORM mappings, the transactions, the feature behaviour. A DBA owns the platform those operations run on: the instance, the databases, the backups, the security, the performance envelope, and the change process into production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where responsibilities overlap”?",
+      "options": [
+        "Most friction happens in the middle of this table — the activities neither role fully owns by default.",
+        "ORM default plans, missing predicates, N+1 queries, schema shortcuts that only bite at scale",
+        "Change aversion, gatekeeping without alternatives, “no” without a “here's how”"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Most friction happens in the middle of this table — the activities neither role fully owns by default. Healthy teams assign each one explicitly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Different incentives, different failure modes”?",
+      "options": [
+        "DBA",
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each role's greatest strength has a matching weakness under pressure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Evidence, not opinion”?",
+      "options": [
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most productive conversations between the two roles start with a plan rather than a complaint. When a developer says “your database is slow”, the DBA's first contribution is the data that turns the complaint into a work item:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When the relationship breaks down”?",
+      "options": [
+        "Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose…",
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "A useful rule of thumb for the boundary: the developer may optimise anything they can measure; the DBA may veto anything that threatens the platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose fault the last outage was; the DBA becomes a rubber stamp or a roadblock instead of a reviewer.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The distinction is best expressed as a boundary of _____:”",
+      "options": [
+        "Define “done” together",
+        "Restore the change gate",
+        "accountability"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The overlap is real — both write SQL, both care about indexes, both get paged when the database is slow. The distinction is best expressed as a boundary of accountability:”"
+    },
+    {
+      "question": "In the “Where responsibilities overlap” table, what is listed for “Application logic and transactions” under “Final say”?",
+      "options": [
+        "The most productive conversations between the two roles start with a plan rather than a complaint.",
+        "Developer",
+        "Change aversion, gatekeeping without alternatives, “no” without a “here's how”"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Application logic and transactions” as “Developer”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Different incentives, different failure modes”?",
+      "options": [
+        "The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation.",
+        "Neither role is senior to the other.",
+        "Each role's greatest strength has a matching weakness under pressure:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The developer's failure mode is usually invisible until production load arrives; the DBA's failure mode is visible immediately but can slow the whole organisation. Both are rational responses to the wrong incentive — which is why the fix is structural: shared goals (a performance budget, a definition of done that includes query review) rather than asking either side to be more generous.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Evidence, not opinion”?",
+      "options": [
+        "Warning signs the boundary has failed: developers get production access “just to check”; production changes appear that no one reviewed; tickets turn into arguments about whose…",
+        "Neither role is senior to the other.",
+        "Notice what this produces: a ranked, evidence-based conversation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notice what this produces: a ranked, evidence-based conversation. The developer sees the table and the columns the engine actually wanted; the DBA sees the estimated impact before writing a DDL statement. The same query also illustrates the limit — missing-index DMVs are a hint, not a command, and a DBA still weighs write overhead, duplication, and maintenance cost before creating anything.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When the relationship breaks down”?",
+      "options": [
+        "Practical habits that keep the relationship healthy:",
+        "Neither role is senior to the other.",
+        "Notice what this produces: a ranked, evidence-based conversation."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Neither role is senior to the other. They hold different parts of the same risk, and the organisation only gets the benefit when the hand-off between those parts is deliberate.”"
+    }
+  ],
   takeaways: [
     "Developers own application logic and query behaviour; DBAs own the platform's availability, security, and recovery",
     "The overlap — schema, indexes, tuning, deployments — must be assigned explicitly or it becomes blame territory",

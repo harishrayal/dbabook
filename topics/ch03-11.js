@@ -172,6 +172,312 @@ Service state, then listener/protocol state, then network path (ping, Test-NetCo
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "DNS Fundamentals",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine DNS Fundamentals within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DNS Fundamentals fits”?",
+      "options": [
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DNS Fundamentals in practice”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DNS Fundamentals”?",
+      "options": [
+        "UDP",
+        "Theory becomes useful when you can apply it.",
+        "TCP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DNS Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "DNS Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "With DNS Fundamentals, prefer measured, reversible changes.",
+        "TCP",
+        "DNS Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates DNS Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DNS Fundamentals means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Service accounts are identities with rights.",
+        "DNS Fundamentals sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DNS Fundamentals fits”?",
+      "options": [
+        "The diagram below places DNS Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "DNS Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places DNS Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DNS Fundamentals in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating DNS Fundamentals.",
+        "Automatic",
+        "The following comparison captures the distinctions that matter most when working with DNS Fundamentals:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DNS Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DNS Fundamentals”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "DNS Fundamentals",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine DNS Fundamentals within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DNS Fundamentals fits”?",
+      "options": [
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DNS Fundamentals in practice”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DNS Fundamentals”?",
+      "options": [
+        "UDP",
+        "Theory becomes useful when you can apply it.",
+        "TCP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DNS Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "DNS Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "With DNS Fundamentals, prefer measured, reversible changes.",
+        "TCP",
+        "DNS Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates DNS Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DNS Fundamentals means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Service accounts are identities with rights.",
+        "DNS Fundamentals sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DNS Fundamentals fits”?",
+      "options": [
+        "The diagram below places DNS Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "DNS Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places DNS Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DNS Fundamentals in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating DNS Fundamentals.",
+        "Automatic",
+        "The following comparison captures the distinctions that matter most when working with DNS Fundamentals:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DNS Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DNS Fundamentals”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "DNS Fundamentals",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine DNS Fundamentals within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DNS Fundamentals fits”?",
+      "options": [
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DNS Fundamentals in practice”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DNS Fundamentals”?",
+      "options": [
+        "UDP",
+        "Theory becomes useful when you can apply it.",
+        "TCP"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DNS Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "DNS Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "With DNS Fundamentals, prefer measured, reversible changes.",
+        "TCP",
+        "DNS Fundamentals"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates DNS Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DNS Fundamentals means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Service accounts are identities with rights.",
+        "DNS Fundamentals sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DNS Fundamentals fits”?",
+      "options": [
+        "The diagram below places DNS Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "DNS Fundamentals sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places DNS Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DNS Fundamentals in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating DNS Fundamentals.",
+        "Automatic",
+        "The following comparison captures the distinctions that matter most when working with DNS Fundamentals:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DNS Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DNS Fundamentals”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "DNS Fundamentals is a fundamental concept in Windows Server and infrastructure for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

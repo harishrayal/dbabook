@@ -172,6 +172,312 @@ Service state, then listener/protocol state, then network path (ping, Test-NetCo
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity.",
+        "Event Viewer",
+        "NTFS permissions control who can read or change files."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Event Viewer within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Event Viewer fits”?",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "With Event Viewer, prefer measured, reversible changes.",
+        "TCP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Event Viewer in practice”?",
+      "options": [
+        "Event Viewer sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Event Viewer”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Event Viewer. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "NTFS permissions control who can read or change files.",
+        "TCP",
+        "UDP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Event Viewer sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Event Viewer"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Event Viewer with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Event Viewer means”?",
+      "options": [
+        "Event Viewer is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Event Viewer fits”?",
+      "options": [
+        "The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Event Viewer"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Event Viewer in practice”?",
+      "options": [
+        "Event Viewer",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "The following comparison captures the distinctions that matter most when working with Event Viewer:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Event Viewer:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Event Viewer”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "The first example establishes the relevant state.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity.",
+        "Event Viewer",
+        "NTFS permissions control who can read or change files."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Event Viewer within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Event Viewer fits”?",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "With Event Viewer, prefer measured, reversible changes.",
+        "TCP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Event Viewer in practice”?",
+      "options": [
+        "Event Viewer sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Event Viewer”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Event Viewer. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "NTFS permissions control who can read or change files.",
+        "TCP",
+        "UDP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Event Viewer sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Event Viewer"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Event Viewer with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Event Viewer means”?",
+      "options": [
+        "Event Viewer is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Event Viewer fits”?",
+      "options": [
+        "The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Event Viewer"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Event Viewer in practice”?",
+      "options": [
+        "Event Viewer",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "The following comparison captures the distinctions that matter most when working with Event Viewer:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Event Viewer:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Event Viewer”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "The first example establishes the relevant state.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity.",
+        "Event Viewer",
+        "NTFS permissions control who can read or change files."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Event Viewer within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Event Viewer fits”?",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "With Event Viewer, prefer measured, reversible changes.",
+        "TCP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Event Viewer in practice”?",
+      "options": [
+        "Event Viewer sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "SQL Server runs on Windows, so the operating system is part of the database platform."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Event Viewer”?",
+      "options": [
+        "Service accounts are identities with rights.",
+        "Theory becomes useful when you can apply it.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Event Viewer. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "NTFS permissions control who can read or change files.",
+        "TCP",
+        "UDP"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Event Viewer sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Event Viewer"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Event Viewer with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Event Viewer means”?",
+      "options": [
+        "Event Viewer is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Event Viewer fits”?",
+      "options": [
+        "The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Event Viewer"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Event Viewer in practice”?",
+      "options": [
+        "Event Viewer",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "The following comparison captures the distinctions that matter most when working with Event Viewer:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Event Viewer:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Event Viewer”?",
+      "options": [
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools.",
+        "The first example establishes the relevant state.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Event Viewer is a fundamental concept in Windows Server and infrastructure for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

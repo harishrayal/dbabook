@@ -185,6 +185,312 @@ DBCC CHECKDB ('OrdersDb') WITH PHYSICAL_ONLY, NO_INFOMSGS;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is every recurring task required to keep a database correct, recoverable, and performant as it ages.”",
+      "options": [
+        "Log management",
+        "Database maintenance",
+        "Integrity checks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Database maintenance is every recurring task required to keep a database correct, recoverable, and performant as it ages. Applications change the database constantly — data grows, structures fragment, statistics drift, logs accumulate — and without deliberate upkeep those natural processes eventually produce an outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The maintenance calendar”?",
+      "options": [
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem.",
+        "Tables and backups growing past any usable size",
+        "Known bugs and security vulnerabilities staying in production"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem. The classic rhythm looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index and statistics maintenance”?",
+      "options": [
+        "Known bugs and security vulnerabilities staying in production",
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem.",
+        "Two tasks in that calendar deserve real judgement rather than blanket rules:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two tasks in that calendar deserve real judgement rather than blanket rules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups, integrity, and log management”?",
+      "options": [
+        "heavy work goes in quiet windows",
+        "The rest of the calendar is about proving and protecting data:",
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The rest of the calendar is about proving and protecting data:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automating without flying blind”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "heavy work goes in quiet windows",
+        "Two tasks in that calendar deserve real judgement rather than blanket rules:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the work; it does not remove the responsibility:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What maintenance covers”?",
+      "options": [
+        "Query performance degrading as pages fragment",
+        "Stale cardinality estimates producing wrong query plans",
+        "The core tasks, each mapped to the failure it prevents:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The core tasks, each mapped to the failure it prevents:”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, _____ — a index rebuild at 2 PM on a trading platform is an incident, not maintenance.”",
+      "options": [
+        "Review thresholds annually",
+        "heavy work goes in quiet windows",
+        "Never shrink data files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two scheduling rules matter more than the exact frequencies. First, heavy work goes in quiet windows — a index rebuild at 2 PM on a trading platform is an incident, not maintenance. Second, the schedule must be explicit: if it is not on a calendar with an owner, it is not being done, no matter how often everyone intends to do it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Indexes.",
+        "Review thresholds annually",
+        "The core tasks, each mapped to the failure it prevents:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Indexes. Fragmentation is not automatically a problem — it depends on the index size, the workload, and whether the cost of rebuilding exceeds the cost of the scans. The usual guidance: below 5% do nothing, between 5% and 30% reorganise (online, lighter), above 30% rebuild (heavier, log-intensive). Page count matters as much as percentage: a 90% fragmented index with 40 pages is noise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups, integrity, and log management”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two.",
+        "PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automating without flying blind”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two.",
+        "PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two. Maintenance without monitoring is a schedule, not a strategy.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is every recurring task required to keep a database correct, recoverable, and performant as it ages.”",
+      "options": [
+        "Log management",
+        "Database maintenance",
+        "Integrity checks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Database maintenance is every recurring task required to keep a database correct, recoverable, and performant as it ages. Applications change the database constantly — data grows, structures fragment, statistics drift, logs accumulate — and without deliberate upkeep those natural processes eventually produce an outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The maintenance calendar”?",
+      "options": [
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem.",
+        "Tables and backups growing past any usable size",
+        "Known bugs and security vulnerabilities staying in production"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem. The classic rhythm looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index and statistics maintenance”?",
+      "options": [
+        "Known bugs and security vulnerabilities staying in production",
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem.",
+        "Two tasks in that calendar deserve real judgement rather than blanket rules:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two tasks in that calendar deserve real judgement rather than blanket rules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups, integrity, and log management”?",
+      "options": [
+        "heavy work goes in quiet windows",
+        "The rest of the calendar is about proving and protecting data:",
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The rest of the calendar is about proving and protecting data:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automating without flying blind”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "heavy work goes in quiet windows",
+        "Two tasks in that calendar deserve real judgement rather than blanket rules:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the work; it does not remove the responsibility:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What maintenance covers”?",
+      "options": [
+        "Query performance degrading as pages fragment",
+        "Stale cardinality estimates producing wrong query plans",
+        "The core tasks, each mapped to the failure it prevents:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The core tasks, each mapped to the failure it prevents:”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, _____ — a index rebuild at 2 PM on a trading platform is an incident, not maintenance.”",
+      "options": [
+        "Review thresholds annually",
+        "heavy work goes in quiet windows",
+        "Never shrink data files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two scheduling rules matter more than the exact frequencies. First, heavy work goes in quiet windows — a index rebuild at 2 PM on a trading platform is an incident, not maintenance. Second, the schedule must be explicit: if it is not on a calendar with an owner, it is not being done, no matter how often everyone intends to do it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Indexes.",
+        "Review thresholds annually",
+        "The core tasks, each mapped to the failure it prevents:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Indexes. Fragmentation is not automatically a problem — it depends on the index size, the workload, and whether the cost of rebuilding exceeds the cost of the scans. The usual guidance: below 5% do nothing, between 5% and 30% reorganise (online, lighter), above 30% rebuild (heavier, log-intensive). Page count matters as much as percentage: a 90% fragmented index with 40 pages is noise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups, integrity, and log management”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two.",
+        "PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automating without flying blind”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two.",
+        "PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two. Maintenance without monitoring is a schedule, not a strategy.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is every recurring task required to keep a database correct, recoverable, and performant as it ages.”",
+      "options": [
+        "Log management",
+        "Database maintenance",
+        "Integrity checks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Database maintenance is every recurring task required to keep a database correct, recoverable, and performant as it ages. Applications change the database constantly — data grows, structures fragment, statistics drift, logs accumulate — and without deliberate upkeep those natural processes eventually produce an outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The maintenance calendar”?",
+      "options": [
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem.",
+        "Tables and backups growing past any usable size",
+        "Known bugs and security vulnerabilities staying in production"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem. The classic rhythm looks like this:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Index and statistics maintenance”?",
+      "options": [
+        "Known bugs and security vulnerabilities staying in production",
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem.",
+        "Two tasks in that calendar deserve real judgement rather than blanket rules:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two tasks in that calendar deserve real judgement rather than blanket rules:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups, integrity, and log management”?",
+      "options": [
+        "heavy work goes in quiet windows",
+        "The rest of the calendar is about proving and protecting data:",
+        "Frequency is not arbitrary: it follows how fast each thing degrades and how long you can tolerate discovering the problem."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The rest of the calendar is about proving and protecting data:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automating without flying blind”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "heavy work goes in quiet windows",
+        "Two tasks in that calendar deserve real judgement rather than blanket rules:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the work; it does not remove the responsibility:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What maintenance covers”?",
+      "options": [
+        "Query performance degrading as pages fragment",
+        "Stale cardinality estimates producing wrong query plans",
+        "The core tasks, each mapped to the failure it prevents:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The core tasks, each mapped to the failure it prevents:”"
+    },
+    {
+      "question": "Complete the lesson statement: “First, _____ — a index rebuild at 2 PM on a trading platform is an incident, not maintenance.”",
+      "options": [
+        "Review thresholds annually",
+        "heavy work goes in quiet windows",
+        "Never shrink data files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Two scheduling rules matter more than the exact frequencies. First, heavy work goes in quiet windows — a index rebuild at 2 PM on a trading platform is an incident, not maintenance. Second, the schedule must be explicit: if it is not on a calendar with an owner, it is not being done, no matter how often everyone intends to do it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____”",
+      "options": [
+        "Indexes.",
+        "Review thresholds annually",
+        "The core tasks, each mapped to the failure it prevents:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Indexes. Fragmentation is not automatically a problem — it depends on the index size, the workload, and whether the cost of rebuilding exceeds the cost of the scans. The usual guidance: below 5% do nothing, between 5% and 30% reorganise (online, lighter), above 30% rebuild (heavier, log-intensive). Page count matters as much as percentage: a 90% fragmented index with 40 pages is noise.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backups, integrity, and log management”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two.",
+        "PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automating without flying blind”?",
+      "options": [
+        "Everything above should run as scheduled SQL Agent jobs — most teams use a maintained script suite such as Ola Hallengren's Maintenance Solution — but automation only moves the…",
+        "The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two.",
+        "PHYSICAL_ONLY skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The classic failure is a maintenance suite installed on day one, never read again, whose log backup step silently stopped in year two. Maintenance without monitoring is a schedule, not a strategy.”"
+    }
+  ],
   takeaways: [
     "Maintenance prevents failures that are invisible until catastrophic — no user reports fragmentation",
     "Match each task to a cadence and a maintenance window; schedule it explicitly with an owner",

@@ -178,6 +178,312 @@ Physical corruption is damaged page bytes or I/O errors detected by checksums; l
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Production Data Integrity Procedures",
+        "Use the following as a starting point when investigating Production Data Integrity Procedures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Data Integrity Procedures within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Data Integrity Procedures fits”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Production Data Integrity Procedures",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Data Integrity Procedures in practice”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Data Integrity Procedures”?",
+      "options": [
+        "Production Data Integrity Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Theory becomes useful when you can apply it.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Data Integrity Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Production Data Integrity Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption.",
+        "Page checksums are the primary detection mechanism.",
+        "Production Data Integrity Procedures"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Data Integrity Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Data Integrity Procedures means”?",
+      "options": [
+        "Check log, avoid emergency mode first",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Data Integrity Procedures fits”?",
+      "options": [
+        "The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption.",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Data Integrity Procedures in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Production Data Integrity Procedures:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Data Integrity Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Data Integrity Procedures”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The first example establishes the relevant state.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Production Data Integrity Procedures",
+        "Use the following as a starting point when investigating Production Data Integrity Procedures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Data Integrity Procedures within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Data Integrity Procedures fits”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Production Data Integrity Procedures",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Data Integrity Procedures in practice”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Data Integrity Procedures”?",
+      "options": [
+        "Production Data Integrity Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Theory becomes useful when you can apply it.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Data Integrity Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Production Data Integrity Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption.",
+        "Page checksums are the primary detection mechanism.",
+        "Production Data Integrity Procedures"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Data Integrity Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Data Integrity Procedures means”?",
+      "options": [
+        "Check log, avoid emergency mode first",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Data Integrity Procedures fits”?",
+      "options": [
+        "The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption.",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Data Integrity Procedures in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Production Data Integrity Procedures:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Data Integrity Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Data Integrity Procedures”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The first example establishes the relevant state.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Production Data Integrity Procedures",
+        "Use the following as a starting point when investigating Production Data Integrity Procedures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Production Data Integrity Procedures within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Data Integrity Procedures fits”?",
+      "options": [
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Production Data Integrity Procedures",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Database integrity is about detecting damage before it becomes data loss. Corruption is either physical — damaged pages, torn writes, I/O errors — or logical — inconsistent indexes and metadata that the engine can still read but is wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Data Integrity Procedures in practice”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "A corruption incident is a data-loss event until proven otherwise.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Page checksums are the primary detection mechanism. With CHECKSUM enabled, SQL Server writes a checksum into each page and verifies it on read, catching silent disk corruption that would otherwise go unnoticed until a query fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Data Integrity Procedures”?",
+      "options": [
+        "Production Data Integrity Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Theory becomes useful when you can apply it.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Production Data Integrity Procedures. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Production Data Integrity Procedures is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption.",
+        "Page checksums are the primary detection mechanism.",
+        "Production Data Integrity Procedures"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Production Data Integrity Procedures with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Production Data Integrity Procedures means”?",
+      "options": [
+        "Check log, avoid emergency mode first",
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Production Data Integrity Procedures fits”?",
+      "options": [
+        "The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption.",
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Production Data Integrity Procedures alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Production Data Integrity Procedures in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "The following comparison captures the distinctions that matter most when working with Production Data Integrity Procedures:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Production Data Integrity Procedures:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Production Data Integrity Procedures”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "The first example establishes the relevant state.",
+        "DBCC CHECKDB is the definitive integrity check."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Production Data Integrity Procedures is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

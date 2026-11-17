@@ -188,6 +188,312 @@ Logins and other server-level objects live in master and are not part of a user 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "With Logical Versus Physical File Names, prefer measured, reversible changes.",
+        "Logical Versus Physical File Names"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Logical Versus Physical File Names within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Versus Physical File Names fits”?",
+      "options": [
+        "Medium",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Lowest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Versus Physical File Names in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Logical Versus Physical File Names."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Versus Physical File Names”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Logical Versus Physical File Names. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Highest",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Logical Versus Physical File Names",
+        "Logical Versus Physical File Names sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Logical Versus Physical File Names with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Logical Versus Physical File Names means”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Logical Versus Physical File Names is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Versus Physical File Names fits”?",
+      "options": [
+        "Logical Versus Physical File Names",
+        "The diagram below places Logical Versus Physical File Names alongside the core concepts of restore and disaster recovery.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Logical Versus Physical File Names alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Versus Physical File Names in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Logical Versus Physical File Names:",
+        "Logical Versus Physical File Names",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Logical Versus Physical File Names:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Versus Physical File Names”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "With Logical Versus Physical File Names, prefer measured, reversible changes.",
+        "Logical Versus Physical File Names"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Logical Versus Physical File Names within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Versus Physical File Names fits”?",
+      "options": [
+        "Medium",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Lowest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Versus Physical File Names in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Logical Versus Physical File Names."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Versus Physical File Names”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Logical Versus Physical File Names. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Highest",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Logical Versus Physical File Names",
+        "Logical Versus Physical File Names sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Logical Versus Physical File Names with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Logical Versus Physical File Names means”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Logical Versus Physical File Names is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Versus Physical File Names fits”?",
+      "options": [
+        "Logical Versus Physical File Names",
+        "The diagram below places Logical Versus Physical File Names alongside the core concepts of restore and disaster recovery.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Logical Versus Physical File Names alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Versus Physical File Names in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Logical Versus Physical File Names:",
+        "Logical Versus Physical File Names",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Logical Versus Physical File Names:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Versus Physical File Names”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "With Logical Versus Physical File Names, prefer measured, reversible changes.",
+        "Logical Versus Physical File Names"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Logical Versus Physical File Names within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Versus Physical File Names fits”?",
+      "options": [
+        "Medium",
+        "NORECOVERY leaves the database restoring so further backups can be applied.",
+        "Lowest"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NORECOVERY leaves the database restoring so further backups can be applied. RECOVERY completes the sequence and makes the database usable. STANDBY leaves it read-only while still allowing further restores, useful for log shipping with query access.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Versus Physical File Names in practice”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Logical Versus Physical File Names."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Versus Physical File Names”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Logical Versus Physical File Names. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Highest",
+        "After a restore, users can be orphaned: a database user's SID no longer matches a server login.",
+        "Medium"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “After a restore, users can be orphaned: a database user's SID no longer matches a server login. Mapping logins to users (with ALTER USER or sp_change_users_login) restores access. Server-level objects such as jobs, linked servers and logins are not part of a database backup and must be scripted separately.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Logical Versus Physical File Names",
+        "Logical Versus Physical File Names sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Logical Versus Physical File Names with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Logical Versus Physical File Names means”?",
+      "options": [
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "Logical Versus Physical File Names is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Logical Versus Physical File Names fits”?",
+      "options": [
+        "Logical Versus Physical File Names",
+        "The diagram below places Logical Versus Physical File Names alongside the core concepts of restore and disaster recovery.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places Logical Versus Physical File Names alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Logical Versus Physical File Names in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Logical Versus Physical File Names:",
+        "Logical Versus Physical File Names",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Logical Versus Physical File Names:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Logical Versus Physical File Names”?",
+      "options": [
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Logical Versus Physical File Names is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

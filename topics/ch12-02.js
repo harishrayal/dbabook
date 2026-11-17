@@ -191,6 +191,312 @@ A clustered index defines the table's physical row order and there is one per ta
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Execution Lifecycle",
+        "Query Execution Lifecycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Query Execution Lifecycle within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Query Execution Lifecycle fits”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Execution Lifecycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Query Execution Lifecycle in practice”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Query Execution Lifecycle”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Query Execution Lifecycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Selective lookups",
+        "Query Execution Lifecycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Query Execution Lifecycle with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Query Execution Lifecycle means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Query Execution Lifecycle fits”?",
+      "options": [
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning.",
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Query Execution Lifecycle in practice”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Query Execution Lifecycle”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The first example establishes the relevant state.",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Execution Lifecycle",
+        "Query Execution Lifecycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Query Execution Lifecycle within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Query Execution Lifecycle fits”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Execution Lifecycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Query Execution Lifecycle in practice”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Query Execution Lifecycle”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Query Execution Lifecycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Selective lookups",
+        "Query Execution Lifecycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Query Execution Lifecycle with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Query Execution Lifecycle means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Query Execution Lifecycle fits”?",
+      "options": [
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning.",
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Query Execution Lifecycle in practice”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Query Execution Lifecycle”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The first example establishes the relevant state.",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Execution Lifecycle",
+        "Query Execution Lifecycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Query Execution Lifecycle within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Query Execution Lifecycle fits”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "Query Execution Lifecycle is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Query Execution Lifecycle in practice”?",
+      "options": [
+        "Statistics describe data distribution and drive cardinality estimates.",
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SARGable predicates — simple comparisons against a bare column — allow index seeks. Wrapping a column in a function or applying a leading wildcard forces scans. Rewriting predicates is frequently more effective than adding hardware.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Query Execution Lifecycle”?",
+      "options": [
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "Theory becomes useful when you can apply it.",
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Query Execution Lifecycle. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "SARGable predicates — simple comparisons against a bare column — allow index seeks.",
+        "The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Missing index suggestions are hints, not commands. Validate them against workload, existing indexes and write overhead before implementing — blindly adding every suggested index degrades writes and storage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness.",
+        "Selective lookups",
+        "Query Execution Lifecycle"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Query Execution Lifecycle with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Query Execution Lifecycle means”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “An execution plan is the roadmap the optimiser produces for a query. Reading actual plans reveals join order, access methods (seek versus scan), implicit conversions and expensive operators such as sorts and key lookups.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Query Execution Lifecycle fits”?",
+      "options": [
+        "The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning.",
+        "Avoid at scale via covering indexes",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Query Execution Lifecycle alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Query Execution Lifecycle in practice”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Query Execution Lifecycle:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Query Execution Lifecycle”?",
+      "options": [
+        "Missing index suggestions are hints, not commands.",
+        "The first example establishes the relevant state.",
+        "Avoid at scale via covering indexes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Query Execution Lifecycle is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

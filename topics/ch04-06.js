@@ -168,6 +168,312 @@ FROM   sys.dm_db_log_space_usage;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ is the largest consumer of SQL Server's memory.”",
+      "options": [
+        "buffer pool",
+        "Lazy writer",
+        "the transaction log is written before the data page"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The buffer pool is the largest consumer of SQL Server's memory. It is a cache of 8-KB pages — the same pages that live in the MDF/NDF data files on disk. When a query needs a row, the storage engine checks the buffer pool first:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A page entering the buffer pool is _____ — identical to its copy on disk.”",
+      "options": [
+        "the transaction log is written before the data page",
+        "Target Server Memory",
+        "clean"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A page entering the buffer pool is clean — identical to its copy on disk. When a query modifies it, it becomes dirty: memory now holds a newer version than disk. SQL Server must never lose a dirty page, so two mechanisms handle them:”"
+    },
+    {
+      "question": "Complete the lesson statement: “By default the buffer pool can grow until _____, competing with the OS, antivirus, and other processes — which is why production best practice is to set max server memory explicitly (typically total RAM minus 1–4 GB for the OS).”",
+      "options": [
+        "max server memory",
+        "Target Server Memory",
+        "the transaction log is written before the data page"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “By default the buffer pool can grow until Target Server Memory, competing with the OS, antivirus, and other processes — which is why production best practice is to set max server memory explicitly (typically total RAM minus 1–4 GB for the OS). Symptoms of an undersized pool:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the buffer pool”?",
+      "options": [
+        "Two DMV queries every DBA should have in their toolbox:",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two DMV queries every DBA should have in their toolbox:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "page life expectancy",
+        "ASYNC_IO_COMPLETION / PAGEIOLATCH_*",
+        "Buffer Pool"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Buffer Pool with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the buffer pool is”?",
+      "options": [
+        "Use the following as a starting point when investigating Buffer Pool.",
+        "Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server. Everything above it — query plans, indexes, locking — assumes the data pages are already in memory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Critical rule: _____ (Write-Ahead Logging).”",
+      "options": [
+        "the transaction log is written before the data page",
+        "Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server.",
+        "Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Critical rule: the transaction log is written before the data page (Write-Ahead Logging). A committed transaction's log record reaches the LDF before the modified data page reaches the MDF — which is exactly why crash recovery can replay the log.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing and memory pressure”?",
+      "options": [
+        "Flush dirty pages, bound recovery",
+        "Evict clean pages",
+        "Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything else.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the buffer pool”?",
+      "options": [
+        "Log durable before data",
+        "A PLE that trends downward during business hours means the working set no longer fits in memory — investigate memory sizing or an oversized scan before users file tickets.",
+        "Evict clean pages"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A PLE that trends downward during business hours means the working set no longer fits in memory — investigate memory sizing or an oversized scan before users file tickets.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deeper dive: Buffer Pool”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Evict clean pages",
+        "Log durable before data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ is the largest consumer of SQL Server's memory.”",
+      "options": [
+        "buffer pool",
+        "Lazy writer",
+        "the transaction log is written before the data page"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The buffer pool is the largest consumer of SQL Server's memory. It is a cache of 8-KB pages — the same pages that live in the MDF/NDF data files on disk. When a query needs a row, the storage engine checks the buffer pool first:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A page entering the buffer pool is _____ — identical to its copy on disk.”",
+      "options": [
+        "the transaction log is written before the data page",
+        "Target Server Memory",
+        "clean"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A page entering the buffer pool is clean — identical to its copy on disk. When a query modifies it, it becomes dirty: memory now holds a newer version than disk. SQL Server must never lose a dirty page, so two mechanisms handle them:”"
+    },
+    {
+      "question": "Complete the lesson statement: “By default the buffer pool can grow until _____, competing with the OS, antivirus, and other processes — which is why production best practice is to set max server memory explicitly (typically total RAM minus 1–4 GB for the OS).”",
+      "options": [
+        "max server memory",
+        "Target Server Memory",
+        "the transaction log is written before the data page"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “By default the buffer pool can grow until Target Server Memory, competing with the OS, antivirus, and other processes — which is why production best practice is to set max server memory explicitly (typically total RAM minus 1–4 GB for the OS). Symptoms of an undersized pool:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the buffer pool”?",
+      "options": [
+        "Two DMV queries every DBA should have in their toolbox:",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two DMV queries every DBA should have in their toolbox:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "page life expectancy",
+        "ASYNC_IO_COMPLETION / PAGEIOLATCH_*",
+        "Buffer Pool"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Buffer Pool with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the buffer pool is”?",
+      "options": [
+        "Use the following as a starting point when investigating Buffer Pool.",
+        "Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server. Everything above it — query plans, indexes, locking — assumes the data pages are already in memory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Critical rule: _____ (Write-Ahead Logging).”",
+      "options": [
+        "the transaction log is written before the data page",
+        "Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server.",
+        "Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Critical rule: the transaction log is written before the data page (Write-Ahead Logging). A committed transaction's log record reaches the LDF before the modified data page reaches the MDF — which is exactly why crash recovery can replay the log.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing and memory pressure”?",
+      "options": [
+        "Flush dirty pages, bound recovery",
+        "Evict clean pages",
+        "Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything else.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the buffer pool”?",
+      "options": [
+        "Log durable before data",
+        "A PLE that trends downward during business hours means the working set no longer fits in memory — investigate memory sizing or an oversized scan before users file tickets.",
+        "Evict clean pages"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A PLE that trends downward during business hours means the working set no longer fits in memory — investigate memory sizing or an oversized scan before users file tickets.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deeper dive: Buffer Pool”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Evict clean pages",
+        "Log durable before data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “The _____ is the largest consumer of SQL Server's memory.”",
+      "options": [
+        "buffer pool",
+        "Lazy writer",
+        "the transaction log is written before the data page"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The buffer pool is the largest consumer of SQL Server's memory. It is a cache of 8-KB pages — the same pages that live in the MDF/NDF data files on disk. When a query needs a row, the storage engine checks the buffer pool first:”"
+    },
+    {
+      "question": "Complete the lesson statement: “A page entering the buffer pool is _____ — identical to its copy on disk.”",
+      "options": [
+        "the transaction log is written before the data page",
+        "Target Server Memory",
+        "clean"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A page entering the buffer pool is clean — identical to its copy on disk. When a query modifies it, it becomes dirty: memory now holds a newer version than disk. SQL Server must never lose a dirty page, so two mechanisms handle them:”"
+    },
+    {
+      "question": "Complete the lesson statement: “By default the buffer pool can grow until _____, competing with the OS, antivirus, and other processes — which is why production best practice is to set max server memory explicitly (typically total RAM minus 1–4 GB for the OS).”",
+      "options": [
+        "max server memory",
+        "Target Server Memory",
+        "the transaction log is written before the data page"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “By default the buffer pool can grow until Target Server Memory, competing with the OS, antivirus, and other processes — which is why production best practice is to set max server memory explicitly (typically total RAM minus 1–4 GB for the OS). Symptoms of an undersized pool:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the buffer pool”?",
+      "options": [
+        "Two DMV queries every DBA should have in their toolbox:",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Two DMV queries every DBA should have in their toolbox:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "page life expectancy",
+        "ASYNC_IO_COMPLETION / PAGEIOLATCH_*",
+        "Buffer Pool"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Buffer Pool with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What the buffer pool is”?",
+      "options": [
+        "Use the following as a starting point when investigating Buffer Pool.",
+        "Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server.",
+        "Pages in the buffer pool are clean if they match disk, dirty if modified."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server. Everything above it — query plans, indexes, locking — assumes the data pages are already in memory.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Critical rule: _____ (Write-Ahead Logging).”",
+      "options": [
+        "the transaction log is written before the data page",
+        "Because of this, a well-sized buffer pool is the single biggest performance lever on a SQL Server.",
+        "Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Critical rule: the transaction log is written before the data page (Write-Ahead Logging). A committed transaction's log record reaches the LDF before the modified data page reaches the MDF — which is exactly why crash recovery can replay the log.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Sizing and memory pressure”?",
+      "options": [
+        "Flush dirty pages, bound recovery",
+        "Evict clean pages",
+        "Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Classic mistake: leaving max server memory at the 2,147,483,647 MB default on a server that also runs SSRS, SSIS, or a reporting tool — SQL Server silently squeezes everything else.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Monitoring the buffer pool”?",
+      "options": [
+        "Log durable before data",
+        "A PLE that trends downward during business hours means the working set no longer fits in memory — investigate memory sizing or an oversized scan before users file tickets.",
+        "Evict clean pages"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A PLE that trends downward during business hours means the working set no longer fits in memory — investigate memory sizing or an oversized scan before users file tickets.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Deeper dive: Buffer Pool”?",
+      "options": [
+        "SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O.",
+        "Evict clean pages",
+        "Log durable before data"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server's storage engine manages 8 KB pages, the fundamental unit of I/O. Eight pages form an extent. Data and index pages live in MDF/NDF files; the transaction log is a separate sequential structure of virtual log files.”"
+    }
+  ],
   takeaways: [
     "The buffer pool caches 8-KB pages so queries hit RAM instead of disk — the biggest performance lever",
     "Clean pages match disk; dirty pages are modified in memory and must be flushed (checkpoint / lazy writer)",

@@ -199,6 +199,312 @@ WHERE  name = 'max server memory (MB)';</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “All of them run the same database engine, speak the same T-SQL, and store data in the same page format — what changes is _____.”",
+      "options": [
+        "Developer",
+        "development and test only",
+        "licensing, resource limits, and which features are unlocked"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Microsoft ships SQL Server in several editions. All of them run the same database engine, speak the same T-SQL, and store data in the same page format — what changes is licensing, resource limits, and which features are unlocked.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Limit numbers matter because they fail _____ until the day they do not.”",
+      "options": [
+        "development and test only",
+        "silently",
+        "Developer"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Limit numbers matter because they fail silently until the day they do not. A Standard instance caps memory at 128 GB — the buffer pool simply stops growing, performance degrades, and no error is raised.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing an edition for production”?",
+      "options": [
+        "Opinionated default, honed across many estates:",
+        "The production workhorse. Per-core licence, sensible limits, enough availability for most businesses.",
+        "Maximum scale and availability: full Always On, online operations, in-memory and analytics features."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Opinionated default, honed across many estates:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checking what you are running”?",
+      "options": [
+        "Maximum scale and availability: full Always On, online operations, in-memory and analytics features.",
+        "Legacy hosting (SPLA) edition — rarely chosen for new on-premises builds.",
+        "Never trust an inventory spreadsheet."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never trust an inventory spreadsheet. Ask the server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Licensing realities”?",
+      "options": [
+        "silently",
+        "Technical selection and commercial selection are the same decision — treat them together.",
+        "Legacy hosting (SPLA) edition — rarely chosen for new on-premises builds."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Technical selection and commercial selection are the same decision — treat them together.”"
+    },
+    {
+      "question": "In the “One engine, four editions” table, what is listed for “Express” under “What it is for”?",
+      "options": [
+        "Free entry edition for small apps, embedded workloads, and development laptops. Hard limits on size and memory.",
+        "Developer is not a cheap production licence",
+        "Unlimited"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Express” as “Free entry edition for small apps, embedded workloads, and development laptops. Hard limits on size and memory.”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — running it in production is a licence violation regardless of technical capability.”",
+      "options": [
+        "silently",
+        "Prohibited",
+        "Developer is not a cheap production licence"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two traps live in this table. Developer is not a cheap production licence — running it in production is a licence violation regardless of technical capability. And Basic Availability Groups in Standard are not the Enterprise feature: one database per AG, no readable secondary, no automatic seeding across sites.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The discipline that matters: _____.”",
+      "options": [
+        "Developer is not a cheap production licence",
+        "decide the edition at design time and record it in the build document",
+        "Prohibited"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The discipline that matters: decide the edition at design time and record it in the build document. Migrating Express → Standard later is a reinstall-and-restore; migrating Standard → Enterprise is a licence key and a restart — but only if the workload actually needs it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The second query matters after consolidation: Express and Standard both _____ memory by edition even when max server memory is set higher.”",
+      "options": [
+        "cap",
+        "Developer is not a cheap production licence",
+        "Basic Availability Groups in Standard are not the Enterprise feature"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The second query matters after consolidation: Express and Standard both cap memory by edition even when max server memory is set higher. The effective limit is whichever is lower.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Licensing realities”?",
+      "options": [
+        "128",
+        "Full, multiple secondaries",
+        "Before any purchase, capture: core count (physical, not vCPUs), socket count, number of production instances, and whether readable secondaries are required."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Before any purchase, capture: core count (physical, not vCPUs), socket count, number of production instances, and whether readable secondaries are required. That single paragraph prevents 90 % of licensing surprises.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “All of them run the same database engine, speak the same T-SQL, and store data in the same page format — what changes is _____.”",
+      "options": [
+        "Developer",
+        "development and test only",
+        "licensing, resource limits, and which features are unlocked"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Microsoft ships SQL Server in several editions. All of them run the same database engine, speak the same T-SQL, and store data in the same page format — what changes is licensing, resource limits, and which features are unlocked.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Limit numbers matter because they fail _____ until the day they do not.”",
+      "options": [
+        "development and test only",
+        "silently",
+        "Developer"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Limit numbers matter because they fail silently until the day they do not. A Standard instance caps memory at 128 GB — the buffer pool simply stops growing, performance degrades, and no error is raised.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing an edition for production”?",
+      "options": [
+        "Opinionated default, honed across many estates:",
+        "The production workhorse. Per-core licence, sensible limits, enough availability for most businesses.",
+        "Maximum scale and availability: full Always On, online operations, in-memory and analytics features."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Opinionated default, honed across many estates:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checking what you are running”?",
+      "options": [
+        "Maximum scale and availability: full Always On, online operations, in-memory and analytics features.",
+        "Legacy hosting (SPLA) edition — rarely chosen for new on-premises builds.",
+        "Never trust an inventory spreadsheet."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never trust an inventory spreadsheet. Ask the server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Licensing realities”?",
+      "options": [
+        "silently",
+        "Technical selection and commercial selection are the same decision — treat them together.",
+        "Legacy hosting (SPLA) edition — rarely chosen for new on-premises builds."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Technical selection and commercial selection are the same decision — treat them together.”"
+    },
+    {
+      "question": "In the “One engine, four editions” table, what is listed for “Express” under “What it is for”?",
+      "options": [
+        "Free entry edition for small apps, embedded workloads, and development laptops. Hard limits on size and memory.",
+        "Developer is not a cheap production licence",
+        "Unlimited"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Express” as “Free entry edition for small apps, embedded workloads, and development laptops. Hard limits on size and memory.”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — running it in production is a licence violation regardless of technical capability.”",
+      "options": [
+        "silently",
+        "Prohibited",
+        "Developer is not a cheap production licence"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two traps live in this table. Developer is not a cheap production licence — running it in production is a licence violation regardless of technical capability. And Basic Availability Groups in Standard are not the Enterprise feature: one database per AG, no readable secondary, no automatic seeding across sites.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The discipline that matters: _____.”",
+      "options": [
+        "Developer is not a cheap production licence",
+        "decide the edition at design time and record it in the build document",
+        "Prohibited"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The discipline that matters: decide the edition at design time and record it in the build document. Migrating Express → Standard later is a reinstall-and-restore; migrating Standard → Enterprise is a licence key and a restart — but only if the workload actually needs it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The second query matters after consolidation: Express and Standard both _____ memory by edition even when max server memory is set higher.”",
+      "options": [
+        "cap",
+        "Developer is not a cheap production licence",
+        "Basic Availability Groups in Standard are not the Enterprise feature"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The second query matters after consolidation: Express and Standard both cap memory by edition even when max server memory is set higher. The effective limit is whichever is lower.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Licensing realities”?",
+      "options": [
+        "128",
+        "Full, multiple secondaries",
+        "Before any purchase, capture: core count (physical, not vCPUs), socket count, number of production instances, and whether readable secondaries are required."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Before any purchase, capture: core count (physical, not vCPUs), socket count, number of production instances, and whether readable secondaries are required. That single paragraph prevents 90 % of licensing surprises.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “All of them run the same database engine, speak the same T-SQL, and store data in the same page format — what changes is _____.”",
+      "options": [
+        "Developer",
+        "development and test only",
+        "licensing, resource limits, and which features are unlocked"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Microsoft ships SQL Server in several editions. All of them run the same database engine, speak the same T-SQL, and store data in the same page format — what changes is licensing, resource limits, and which features are unlocked.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Limit numbers matter because they fail _____ until the day they do not.”",
+      "options": [
+        "development and test only",
+        "silently",
+        "Developer"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Limit numbers matter because they fail silently until the day they do not. A Standard instance caps memory at 128 GB — the buffer pool simply stops growing, performance degrades, and no error is raised.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing an edition for production”?",
+      "options": [
+        "Opinionated default, honed across many estates:",
+        "The production workhorse. Per-core licence, sensible limits, enough availability for most businesses.",
+        "Maximum scale and availability: full Always On, online operations, in-memory and analytics features."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Opinionated default, honed across many estates:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Checking what you are running”?",
+      "options": [
+        "Maximum scale and availability: full Always On, online operations, in-memory and analytics features.",
+        "Legacy hosting (SPLA) edition — rarely chosen for new on-premises builds.",
+        "Never trust an inventory spreadsheet."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never trust an inventory spreadsheet. Ask the server:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Licensing realities”?",
+      "options": [
+        "silently",
+        "Technical selection and commercial selection are the same decision — treat them together.",
+        "Legacy hosting (SPLA) edition — rarely chosen for new on-premises builds."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Technical selection and commercial selection are the same decision — treat them together.”"
+    },
+    {
+      "question": "In the “One engine, four editions” table, what is listed for “Express” under “What it is for”?",
+      "options": [
+        "Free entry edition for small apps, embedded workloads, and development laptops. Hard limits on size and memory.",
+        "Developer is not a cheap production licence",
+        "Unlimited"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Express” as “Free entry edition for small apps, embedded workloads, and development laptops. Hard limits on size and memory.”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — running it in production is a licence violation regardless of technical capability.”",
+      "options": [
+        "silently",
+        "Prohibited",
+        "Developer is not a cheap production licence"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two traps live in this table. Developer is not a cheap production licence — running it in production is a licence violation regardless of technical capability. And Basic Availability Groups in Standard are not the Enterprise feature: one database per AG, no readable secondary, no automatic seeding across sites.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The discipline that matters: _____.”",
+      "options": [
+        "Developer is not a cheap production licence",
+        "decide the edition at design time and record it in the build document",
+        "Prohibited"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The discipline that matters: decide the edition at design time and record it in the build document. Migrating Express → Standard later is a reinstall-and-restore; migrating Standard → Enterprise is a licence key and a restart — but only if the workload actually needs it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The second query matters after consolidation: Express and Standard both _____ memory by edition even when max server memory is set higher.”",
+      "options": [
+        "cap",
+        "Developer is not a cheap production licence",
+        "Basic Availability Groups in Standard are not the Enterprise feature"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The second query matters after consolidation: Express and Standard both cap memory by edition even when max server memory is set higher. The effective limit is whichever is lower.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Licensing realities”?",
+      "options": [
+        "128",
+        "Full, multiple secondaries",
+        "Before any purchase, capture: core count (physical, not vCPUs), socket count, number of production instances, and whether readable secondaries are required."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Before any purchase, capture: core count (physical, not vCPUs), socket count, number of production instances, and whether readable secondaries are required. That single paragraph prevents 90 % of licensing surprises.”"
+    }
+  ],
   takeaways: [
     "Express (10 GB, 1 GB RAM, 4 cores), Developer (Enterprise features, no production rights), Standard (128 GB, 24 cores), Enterprise (no ceilings, full availability)",
     "Edition limits fail silently — memory and CPU simply stop scaling, with no error",

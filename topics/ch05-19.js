@@ -204,6 +204,312 @@ Test-NetConnection -ComputerName sql-node-02 -Port 1433 |
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server's Database Engine is a _____: every client outside the host must reach a specific TCP port, and the default posture says no.”",
+      "options": [
+        "Extra precision, at the cost of a rule that must follow the install path",
+        "Rules are read by humans during incidents and audits",
+        "listener"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows Firewall with Advanced Security blocks inbound traffic by default. SQL Server's Database Engine is a listener: every client outside the host must reach a specific TCP port, and the default posture says no. The engine can be running, the port correct, the login valid — and the client still times out.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Anatomy of a good rule”?",
+      "options": [
+        "TDS runs over TCP; Browser is the exception",
+        "Every property has a defensible production value.",
+        "Block rules take precedence; allow only what is needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every property has a defensible production value. Fill this table in your head before you open the console:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating rules with PowerShell”?",
+      "options": [
+        "Scripted rules are reviewable, repeatable, and diffable — the properties belong in a splat so the change request and the change itself are the same document:",
+        "Domain profile enabled on domain-joined hosts",
+        "Otherwise the rule is absent and the service disabled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Scripted rules are reviewable, repeatable, and diffable — the properties belong in a splat so the change request and the change itself are the same document:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Testing the right way”?",
+      "options": [
+        "TcpTestSucceeded: True from a client, not the host",
+        "“It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule.",
+        "Connectivity is proved from the client tier."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Connectivity is proved from the client tier. A test from the database host itself never crosses the firewall and proves nothing at all.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing rules at scale”?",
+      "options": [
+        "Otherwise the rule is absent and the service disabled",
+        "The firewall is configuration like any other: owned, versioned, reviewed, and tested from the client side.",
+        "Domain profile enabled on domain-joined hosts"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is configuration like any other: owned, versioned, reviewed, and tested from the client side.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Rule review checklist”?",
+      "options": [
+        "Six questions, five minutes, and the most common “SQL Server is down” tickets never get opened.",
+        "Otherwise the rule is absent and the service disabled",
+        "Both directions, nodes only"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Six questions, five minutes, and the most common “SQL Server is down” tickets never get opened.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why SQL breaks behind a firewall”?",
+      "options": [
+        "listener",
+        "The failure that generates the most tickets, though, is not “no rule”.",
+        "Three facts shape every rule you will write:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three facts shape every rule you will write:”"
+    },
+    {
+      "question": "In the “Anatomy of a good rule” table, what is listed for “Direction” under “Reason”?",
+      "options": [
+        "The rule is inbound on the SQL host",
+        "Clients initiate connections to SQL Server",
+        "TcpTestSucceeded: True from a client, not the host"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Direction” as “Clients initiate connections to SQL Server”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating rules with PowerShell”?",
+      "options": [
+        "Second block — verify what is actually in force, including the scope, which is where most rules are wrong:",
+        "The rule is inbound on the SQL host",
+        "Profiles matter"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Second block — verify what is actually in force, including the scope, which is where most rules are wrong:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Testing the right way”?",
+      "options": [
+        "Profiles matter",
+        "Scope is the rule",
+        "“It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: ““It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule. Test from a host that shares the application's network path.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server's Database Engine is a _____: every client outside the host must reach a specific TCP port, and the default posture says no.”",
+      "options": [
+        "Extra precision, at the cost of a rule that must follow the install path",
+        "Rules are read by humans during incidents and audits",
+        "listener"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows Firewall with Advanced Security blocks inbound traffic by default. SQL Server's Database Engine is a listener: every client outside the host must reach a specific TCP port, and the default posture says no. The engine can be running, the port correct, the login valid — and the client still times out.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Anatomy of a good rule”?",
+      "options": [
+        "TDS runs over TCP; Browser is the exception",
+        "Every property has a defensible production value.",
+        "Block rules take precedence; allow only what is needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every property has a defensible production value. Fill this table in your head before you open the console:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating rules with PowerShell”?",
+      "options": [
+        "Scripted rules are reviewable, repeatable, and diffable — the properties belong in a splat so the change request and the change itself are the same document:",
+        "Domain profile enabled on domain-joined hosts",
+        "Otherwise the rule is absent and the service disabled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Scripted rules are reviewable, repeatable, and diffable — the properties belong in a splat so the change request and the change itself are the same document:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Testing the right way”?",
+      "options": [
+        "TcpTestSucceeded: True from a client, not the host",
+        "“It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule.",
+        "Connectivity is proved from the client tier."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Connectivity is proved from the client tier. A test from the database host itself never crosses the firewall and proves nothing at all.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing rules at scale”?",
+      "options": [
+        "Otherwise the rule is absent and the service disabled",
+        "The firewall is configuration like any other: owned, versioned, reviewed, and tested from the client side.",
+        "Domain profile enabled on domain-joined hosts"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is configuration like any other: owned, versioned, reviewed, and tested from the client side.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Rule review checklist”?",
+      "options": [
+        "Six questions, five minutes, and the most common “SQL Server is down” tickets never get opened.",
+        "Otherwise the rule is absent and the service disabled",
+        "Both directions, nodes only"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Six questions, five minutes, and the most common “SQL Server is down” tickets never get opened.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why SQL breaks behind a firewall”?",
+      "options": [
+        "listener",
+        "The failure that generates the most tickets, though, is not “no rule”.",
+        "Three facts shape every rule you will write:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three facts shape every rule you will write:”"
+    },
+    {
+      "question": "In the “Anatomy of a good rule” table, what is listed for “Direction” under “Reason”?",
+      "options": [
+        "The rule is inbound on the SQL host",
+        "Clients initiate connections to SQL Server",
+        "TcpTestSucceeded: True from a client, not the host"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Direction” as “Clients initiate connections to SQL Server”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating rules with PowerShell”?",
+      "options": [
+        "Second block — verify what is actually in force, including the scope, which is where most rules are wrong:",
+        "The rule is inbound on the SQL host",
+        "Profiles matter"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Second block — verify what is actually in force, including the scope, which is where most rules are wrong:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Testing the right way”?",
+      "options": [
+        "Profiles matter",
+        "Scope is the rule",
+        "“It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: ““It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule. Test from a host that shares the application's network path.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “SQL Server's Database Engine is a _____: every client outside the host must reach a specific TCP port, and the default posture says no.”",
+      "options": [
+        "Extra precision, at the cost of a rule that must follow the install path",
+        "Rules are read by humans during incidents and audits",
+        "listener"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Windows Firewall with Advanced Security blocks inbound traffic by default. SQL Server's Database Engine is a listener: every client outside the host must reach a specific TCP port, and the default posture says no. The engine can be running, the port correct, the login valid — and the client still times out.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Anatomy of a good rule”?",
+      "options": [
+        "TDS runs over TCP; Browser is the exception",
+        "Every property has a defensible production value.",
+        "Block rules take precedence; allow only what is needed"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Every property has a defensible production value. Fill this table in your head before you open the console:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating rules with PowerShell”?",
+      "options": [
+        "Scripted rules are reviewable, repeatable, and diffable — the properties belong in a splat so the change request and the change itself are the same document:",
+        "Domain profile enabled on domain-joined hosts",
+        "Otherwise the rule is absent and the service disabled"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Scripted rules are reviewable, repeatable, and diffable — the properties belong in a splat so the change request and the change itself are the same document:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Testing the right way”?",
+      "options": [
+        "TcpTestSucceeded: True from a client, not the host",
+        "“It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule.",
+        "Connectivity is proved from the client tier."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Connectivity is proved from the client tier. A test from the database host itself never crosses the firewall and proves nothing at all.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing rules at scale”?",
+      "options": [
+        "Otherwise the rule is absent and the service disabled",
+        "The firewall is configuration like any other: owned, versioned, reviewed, and tested from the client side.",
+        "Domain profile enabled on domain-joined hosts"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The firewall is configuration like any other: owned, versioned, reviewed, and tested from the client side.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Rule review checklist”?",
+      "options": [
+        "Six questions, five minutes, and the most common “SQL Server is down” tickets never get opened.",
+        "Otherwise the rule is absent and the service disabled",
+        "Both directions, nodes only"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Six questions, five minutes, and the most common “SQL Server is down” tickets never get opened.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why SQL breaks behind a firewall”?",
+      "options": [
+        "listener",
+        "The failure that generates the most tickets, though, is not “no rule”.",
+        "Three facts shape every rule you will write:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Three facts shape every rule you will write:”"
+    },
+    {
+      "question": "In the “Anatomy of a good rule” table, what is listed for “Direction” under “Reason”?",
+      "options": [
+        "The rule is inbound on the SQL host",
+        "Clients initiate connections to SQL Server",
+        "TcpTestSucceeded: True from a client, not the host"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Direction” as “Clients initiate connections to SQL Server”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Creating rules with PowerShell”?",
+      "options": [
+        "Second block — verify what is actually in force, including the scope, which is where most rules are wrong:",
+        "The rule is inbound on the SQL host",
+        "Profiles matter"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Second block — verify what is actually in force, including the scope, which is where most rules are wrong:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Testing the right way”?",
+      "options": [
+        "Profiles matter",
+        "Scope is the rule",
+        "“It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: ““It works from my workstation” is not evidence: your workstation is often in a management subnet that has its own allow rule. Test from a host that shares the application's network path.”"
+    }
+  ],
   takeaways: [
     "SQL Server is a listener: inbound rules are required, and the default posture is to block",
     "A rule is direction, action, protocol, port, source scope, and profile — all six must be correct",

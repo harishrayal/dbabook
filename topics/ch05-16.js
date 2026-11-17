@@ -167,6 +167,312 @@ WHERE  session_id = @@SPID;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Where the settings live”?",
+      "options": [
+        "A remote session showing local_net_transport = TCP and a port confirms the whole chain: protocol enabled, listening socket open, firewall allowing the source, client using the…",
+        "Opinionated defaults that hold up under audit and under load:",
+        "Two separate consoles control SQL Server networking, and confusing them is the most common first mistake:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two separate consoles control SQL Server networking, and confusing them is the most common first mistake:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The important production point: _____ — the engine answers on shared memory for local sessions and on nothing for remote ones.”",
+      "options": [
+        "Client protocol order, aliases ( serveralias → host:port), default network library",
+        "if TCP/IP is disabled, the server can be perfectly healthy and completely unreachable",
+        "Enable/disable shared memory, named pipes, TCP/IP; TCP port properties; certificate and Force Encryption"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Local clients negotiate from the client protocol order; remote clients have only TCP/IP as a practical option. The important production point: if TCP/IP is disabled, the server can be perfectly healthy and completely unreachable — the engine answers on shared memory for local sessions and on nothing for remote ones.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A connection only succeeds when _____ ends agree.”",
+      "options": [
+        "both",
+        "Client protocol order, aliases ( serveralias → host:port), default network library",
+        "Which ports are reachable from which addresses — covered separately"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A connection only succeeds when both ends agree. The server must have a protocol enabled and listening; the client must be configured to use it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Encryption is configured on the server's TCP/IP properties, in the _____ tab.”",
+      "options": [
+        "Which ports are reachable from which addresses — covered separately",
+        "Keep enabled for local administration",
+        "Certificate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Encryption is configured on the server's TCP/IP properties, in the Certificate tab. Without Force Encryption, a connection is encrypted only if the client asks for it; with it, the server insists on TLS for every TDS session.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying connectivity”?",
+      "options": [
+        "Local administration stays fast and unaffected by network changes",
+        "Test from the tier that actually connects — the application server, not the database host:",
+        "Whatever you choose, record it: protocol state, port, certificate thumbprint, and the reason."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Test from the tier that actually connects — the application server, not the database host:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A production baseline”?",
+      "options": [
+        "Opinionated defaults that hold up under audit and under load:",
+        "A remote session showing local_net_transport = TCP and a port confirms the whole chain: protocol enabled, listening socket open, firewall allowing the source, client using the…",
+        "Whatever you choose, record it: protocol state, port, certificate thumbprint, and the reason."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Opinionated defaults that hold up under audit and under load:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Changing a protocol requires a _____ for that instance.”",
+      "options": [
+        "Required for any remote workload",
+        "Ignore — it should not exist on your server",
+        "restart of the Database Engine service"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Changing a protocol requires a restart of the Database Engine service for that instance. There is no hot reload — which is why protocol work belongs in a change window, not in an ad-hoc afternoon session.”"
+    },
+    {
+      "question": "In the “The protocols” table, what is listed for “Shared Memory” under “Verdict”?",
+      "options": [
+        "Removes an unnecessary remote path; re-enable only for a named application need",
+        "Keep enabled for local administration",
+        "Local administration stays fast and unaffected by network changes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Shared Memory” as “Keep enabled for local administration”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server side versus client side”?",
+      "options": [
+        "Client-side aliases are useful when connection strings cannot change: an alias maps a friendly name to host, port, and protocol, so a server migration becomes a one-line change on…",
+        "TCP/IP enabled, port 1433 reachable",
+        "Browser running, dynamic/static port reachable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Client-side aliases are useful when connection strings cannot change: an alias maps a friendly name to host, port, and protocol, so a server migration becomes a one-line change on each application host instead of a code release. Keep the alias list documented — it is configuration that lives outside the database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two settings trip up every team once: clients need TrustServerCertificate=True (or the CA chain installed) when a self-signed certificate is used, and Encrypt=True in the connection string only _____ encryption — it does not force the server to provide it.”",
+      "options": [
+        "Local connections on shared memory bypass sockets entirely, which is why testing only from the server itself proves nothing about remote connectivity.",
+        "TCP/IP enabled, port 1433 reachable",
+        "requests"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two settings trip up every team once: clients need TrustServerCertificate=True (or the CA chain installed) when a self-signed certificate is used, and Encrypt=True in the connection string only requests encryption — it does not force the server to provide it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Where the settings live”?",
+      "options": [
+        "A remote session showing local_net_transport = TCP and a port confirms the whole chain: protocol enabled, listening socket open, firewall allowing the source, client using the…",
+        "Opinionated defaults that hold up under audit and under load:",
+        "Two separate consoles control SQL Server networking, and confusing them is the most common first mistake:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two separate consoles control SQL Server networking, and confusing them is the most common first mistake:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The important production point: _____ — the engine answers on shared memory for local sessions and on nothing for remote ones.”",
+      "options": [
+        "Client protocol order, aliases ( serveralias → host:port), default network library",
+        "if TCP/IP is disabled, the server can be perfectly healthy and completely unreachable",
+        "Enable/disable shared memory, named pipes, TCP/IP; TCP port properties; certificate and Force Encryption"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Local clients negotiate from the client protocol order; remote clients have only TCP/IP as a practical option. The important production point: if TCP/IP is disabled, the server can be perfectly healthy and completely unreachable — the engine answers on shared memory for local sessions and on nothing for remote ones.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A connection only succeeds when _____ ends agree.”",
+      "options": [
+        "both",
+        "Client protocol order, aliases ( serveralias → host:port), default network library",
+        "Which ports are reachable from which addresses — covered separately"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A connection only succeeds when both ends agree. The server must have a protocol enabled and listening; the client must be configured to use it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Encryption is configured on the server's TCP/IP properties, in the _____ tab.”",
+      "options": [
+        "Which ports are reachable from which addresses — covered separately",
+        "Keep enabled for local administration",
+        "Certificate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Encryption is configured on the server's TCP/IP properties, in the Certificate tab. Without Force Encryption, a connection is encrypted only if the client asks for it; with it, the server insists on TLS for every TDS session.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying connectivity”?",
+      "options": [
+        "Local administration stays fast and unaffected by network changes",
+        "Test from the tier that actually connects — the application server, not the database host:",
+        "Whatever you choose, record it: protocol state, port, certificate thumbprint, and the reason."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Test from the tier that actually connects — the application server, not the database host:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A production baseline”?",
+      "options": [
+        "Opinionated defaults that hold up under audit and under load:",
+        "A remote session showing local_net_transport = TCP and a port confirms the whole chain: protocol enabled, listening socket open, firewall allowing the source, client using the…",
+        "Whatever you choose, record it: protocol state, port, certificate thumbprint, and the reason."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Opinionated defaults that hold up under audit and under load:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Changing a protocol requires a _____ for that instance.”",
+      "options": [
+        "Required for any remote workload",
+        "Ignore — it should not exist on your server",
+        "restart of the Database Engine service"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Changing a protocol requires a restart of the Database Engine service for that instance. There is no hot reload — which is why protocol work belongs in a change window, not in an ad-hoc afternoon session.”"
+    },
+    {
+      "question": "In the “The protocols” table, what is listed for “Shared Memory” under “Verdict”?",
+      "options": [
+        "Removes an unnecessary remote path; re-enable only for a named application need",
+        "Keep enabled for local administration",
+        "Local administration stays fast and unaffected by network changes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Shared Memory” as “Keep enabled for local administration”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server side versus client side”?",
+      "options": [
+        "Client-side aliases are useful when connection strings cannot change: an alias maps a friendly name to host, port, and protocol, so a server migration becomes a one-line change on…",
+        "TCP/IP enabled, port 1433 reachable",
+        "Browser running, dynamic/static port reachable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Client-side aliases are useful when connection strings cannot change: an alias maps a friendly name to host, port, and protocol, so a server migration becomes a one-line change on each application host instead of a code release. Keep the alias list documented — it is configuration that lives outside the database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two settings trip up every team once: clients need TrustServerCertificate=True (or the CA chain installed) when a self-signed certificate is used, and Encrypt=True in the connection string only _____ encryption — it does not force the server to provide it.”",
+      "options": [
+        "Local connections on shared memory bypass sockets entirely, which is why testing only from the server itself proves nothing about remote connectivity.",
+        "TCP/IP enabled, port 1433 reachable",
+        "requests"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two settings trip up every team once: clients need TrustServerCertificate=True (or the CA chain installed) when a self-signed certificate is used, and Encrypt=True in the connection string only requests encryption — it does not force the server to provide it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Where the settings live”?",
+      "options": [
+        "A remote session showing local_net_transport = TCP and a port confirms the whole chain: protocol enabled, listening socket open, firewall allowing the source, client using the…",
+        "Opinionated defaults that hold up under audit and under load:",
+        "Two separate consoles control SQL Server networking, and confusing them is the most common first mistake:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Two separate consoles control SQL Server networking, and confusing them is the most common first mistake:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The important production point: _____ — the engine answers on shared memory for local sessions and on nothing for remote ones.”",
+      "options": [
+        "Client protocol order, aliases ( serveralias → host:port), default network library",
+        "if TCP/IP is disabled, the server can be perfectly healthy and completely unreachable",
+        "Enable/disable shared memory, named pipes, TCP/IP; TCP port properties; certificate and Force Encryption"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Local clients negotiate from the client protocol order; remote clients have only TCP/IP as a practical option. The important production point: if TCP/IP is disabled, the server can be perfectly healthy and completely unreachable — the engine answers on shared memory for local sessions and on nothing for remote ones.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A connection only succeeds when _____ ends agree.”",
+      "options": [
+        "both",
+        "Client protocol order, aliases ( serveralias → host:port), default network library",
+        "Which ports are reachable from which addresses — covered separately"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A connection only succeeds when both ends agree. The server must have a protocol enabled and listening; the client must be configured to use it.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Encryption is configured on the server's TCP/IP properties, in the _____ tab.”",
+      "options": [
+        "Which ports are reachable from which addresses — covered separately",
+        "Keep enabled for local administration",
+        "Certificate"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Encryption is configured on the server's TCP/IP properties, in the Certificate tab. Without Force Encryption, a connection is encrypted only if the client asks for it; with it, the server insists on TLS for every TDS session.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verifying connectivity”?",
+      "options": [
+        "Local administration stays fast and unaffected by network changes",
+        "Test from the tier that actually connects — the application server, not the database host:",
+        "Whatever you choose, record it: protocol state, port, certificate thumbprint, and the reason."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Test from the tier that actually connects — the application server, not the database host:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A production baseline”?",
+      "options": [
+        "Opinionated defaults that hold up under audit and under load:",
+        "A remote session showing local_net_transport = TCP and a port confirms the whole chain: protocol enabled, listening socket open, firewall allowing the source, client using the…",
+        "Whatever you choose, record it: protocol state, port, certificate thumbprint, and the reason."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Opinionated defaults that hold up under audit and under load:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Changing a protocol requires a _____ for that instance.”",
+      "options": [
+        "Required for any remote workload",
+        "Ignore — it should not exist on your server",
+        "restart of the Database Engine service"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Changing a protocol requires a restart of the Database Engine service for that instance. There is no hot reload — which is why protocol work belongs in a change window, not in an ad-hoc afternoon session.”"
+    },
+    {
+      "question": "In the “The protocols” table, what is listed for “Shared Memory” under “Verdict”?",
+      "options": [
+        "Removes an unnecessary remote path; re-enable only for a named application need",
+        "Keep enabled for local administration",
+        "Local administration stays fast and unaffected by network changes"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Shared Memory” as “Keep enabled for local administration”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Server side versus client side”?",
+      "options": [
+        "Client-side aliases are useful when connection strings cannot change: an alias maps a friendly name to host, port, and protocol, so a server migration becomes a one-line change on…",
+        "TCP/IP enabled, port 1433 reachable",
+        "Browser running, dynamic/static port reachable"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Client-side aliases are useful when connection strings cannot change: an alias maps a friendly name to host, port, and protocol, so a server migration becomes a one-line change on each application host instead of a code release. Keep the alias list documented — it is configuration that lives outside the database.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two settings trip up every team once: clients need TrustServerCertificate=True (or the CA chain installed) when a self-signed certificate is used, and Encrypt=True in the connection string only _____ encryption — it does not force the server to provide it.”",
+      "options": [
+        "Local connections on shared memory bypass sockets entirely, which is why testing only from the server itself proves nothing about remote connectivity.",
+        "TCP/IP enabled, port 1433 reachable",
+        "requests"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Two settings trip up every team once: clients need TrustServerCertificate=True (or the CA chain installed) when a self-signed certificate is used, and Encrypt=True in the connection string only requests encryption — it does not force the server to provide it.”"
+    }
+  ],
   takeaways: [
     "Server-side protocol settings live in SQL Server Network Configuration; client-side order and aliases live in SQL Native Client Configuration",
     "Shared memory for local administration, TCP/IP for everything remote — named pipes only when something specifically needs it",

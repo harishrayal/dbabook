@@ -163,6 +163,312 @@ Query msdb.dbo.sysjobhistory for run_status = 0 and alert on results, or configu
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "What Is SQL Server Agent?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is SQL Server Agent? within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is SQL Server Agent? fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is SQL Server Agent? in practice”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The diagram below places What Is SQL Server Agent?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is SQL Server Agent?”?",
+      "options": [
+        "The diagram below places What Is SQL Server Agent?",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is SQL Server Agent?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is SQL Server Agent? means”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is SQL Server Agent? fits”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "The diagram below places What Is SQL Server Agent?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is SQL Server Agent? alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is SQL Server Agent? in practice”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        ":",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is SQL Server Agent?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is SQL Server Agent?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "What Is SQL Server Agent?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is SQL Server Agent? within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is SQL Server Agent? fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is SQL Server Agent? in practice”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The diagram below places What Is SQL Server Agent?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is SQL Server Agent?”?",
+      "options": [
+        "The diagram below places What Is SQL Server Agent?",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is SQL Server Agent?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is SQL Server Agent? means”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is SQL Server Agent? fits”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "The diagram below places What Is SQL Server Agent?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is SQL Server Agent? alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is SQL Server Agent? in practice”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        ":",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is SQL Server Agent?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is SQL Server Agent?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "What Is SQL Server Agent?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine What Is SQL Server Agent? within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is SQL Server Agent? fits”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly. Multiple schedules can be attached to one job, and one schedule can drive several jobs.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is SQL Server Agent? in practice”?",
+      "options": [
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Schedules define when a job runs: once, on a recurring interval, daily, weekly or monthly.",
+        "The diagram below places What Is SQL Server Agent?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Job ownership matters: a job runs under the security context of its owner (or a proxy). If the owner is disabled or lacks permissions, the job fails — a common cause of 'the backup job suddenly stopped working'.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is SQL Server Agent?”?",
+      "options": [
+        "The diagram below places What Is SQL Server Agent?",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy).",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is SQL Server Agent?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        ":",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Job ownership matters: a job runs under the security context of its owner (or a proxy)."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is SQL Server Agent? means”?",
+      "options": [
+        "SQL Server Agent is the scheduling and automation engine.",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is SQL Server Agent? fits”?",
+      "options": [
+        "Partial completion",
+        "Missed window",
+        "The diagram below places What Is SQL Server Agent?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places What Is SQL Server Agent? alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is SQL Server Agent? in practice”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        ":",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is SQL Server Agent?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is SQL Server Agent?”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Partial completion",
+        "Missed window"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Missed window",
+        "Theory becomes useful when you can apply it.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Job history is the diagnostic record. Reviewing failed steps and their messages is a daily DBA task; automating the review with a query over msdb makes it reliable.”"
+    }
+  ],
   takeaways: [
     "What Is SQL Server Agent? is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -160,6 +160,312 @@ ORDER  BY name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “What a DBA day actually contains”?",
+      "options": [
+        "Nothing in a DBA's day is accidental.",
+        "Discovering an unbackupable database during a recovery",
+        "Log or data file filling during business hours"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Nothing in a DBA's day is accidental. The work falls into five streams, and every experienced DBA learns to run them in parallel:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The recurring core”?",
+      "options": [
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Permission requests deserve special care.",
+        "Underneath the tickets sits a set of checks that should happen at the same time every day."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Underneath the tickets sits a set of checks that should happen at the same time every day. They are cheap, they are boring, and each one maps to a specific class of production failure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The morning health check”?",
+      "options": [
+        "Log or data file filling during business hours",
+        "The single highest-value habit in database operations is a fixed morning check, run before the first meeting.",
+        "Discovering an unbackupable database during a recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The single highest-value habit in database operations is a fixed morning check, run before the first meeting. A compact version covers failed jobs and database state in one pass:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Requests, changes, and triage”?",
+      "options": [
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Log or data file filling during business hours",
+        "Users reporting slowness an hour after it started"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”. A DBA triages every request against three questions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the day repeatable”?",
+      "options": [
+        "Users reporting slowness an hour after it started",
+        "Unreviewed changes reaching production",
+        "Daily work that lives only in someone's head fails the day that person is on holiday."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Daily work that lives only in someone's head fails the day that person is on holiday. The fix is to externalise it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The trap is that the first four are _____ — they fill the day by themselves.”",
+      "options": [
+        "Written checklist",
+        "reactive",
+        "What is the reversible path?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The trap is that the first four are reactive — they fill the day by themselves. Without a deliberate practice of the fifth, the DBA becomes a ticket queue with a keyboard, and every improvement waits for a quiet week that never arrives.”"
+    },
+    {
+      "question": "In the “The recurring core” table, what is listed for “Alert and monitoring review” under “What it prevents”?",
+      "options": [
+        "Silent failures nobody reported yet",
+        "The single highest-value habit in database operations is a fixed morning check, run before the first meeting.",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Alert and monitoring review” as “Silent failures nobody reported yet”."
+    },
+    {
+      "question": "Complete the lesson statement: “Both queries take under a second and answer the questions that matter: _____”",
+      "options": [
+        "Dashboards over log files",
+        "Automate the check, not just the fix",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both queries take under a second and answer the questions that matter: did last night's work succeed, and is anything already in trouble? Running them at the same time daily also builds the pattern-recognition that makes anomalies jump out — a job that “always fails on Tuesdays” is only visible if you look on Tuesdays.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Requests, changes, and triage”?",
+      "options": [
+        "Daily work that lives only in someone's head fails the day that person is on holiday.",
+        "Permission requests deserve special care.",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Permission requests deserve special care. “Grant sysadmin to my account” is almost never the real requirement — the real requirement is a specific action on a specific object. Answering with a narrower grant teaches the requester to ask precisely next time; answering with sysadmin teaches them to ask for everything forever.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the day repeatable”?",
+      "options": [
+        "Common pitfalls: running the checks only when something feels wrong, trusting that “the jobs are probably fine”, never reading job output, and treating documentation as a project…",
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Permission requests deserve special care."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common pitfalls: running the checks only when something feels wrong, trusting that “the jobs are probably fine”, never reading job output, and treating documentation as a project instead of a by-product of every change. The day is only as reliable as the checklist behind it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “What a DBA day actually contains”?",
+      "options": [
+        "Nothing in a DBA's day is accidental.",
+        "Discovering an unbackupable database during a recovery",
+        "Log or data file filling during business hours"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Nothing in a DBA's day is accidental. The work falls into five streams, and every experienced DBA learns to run them in parallel:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The recurring core”?",
+      "options": [
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Permission requests deserve special care.",
+        "Underneath the tickets sits a set of checks that should happen at the same time every day."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Underneath the tickets sits a set of checks that should happen at the same time every day. They are cheap, they are boring, and each one maps to a specific class of production failure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The morning health check”?",
+      "options": [
+        "Log or data file filling during business hours",
+        "The single highest-value habit in database operations is a fixed morning check, run before the first meeting.",
+        "Discovering an unbackupable database during a recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The single highest-value habit in database operations is a fixed morning check, run before the first meeting. A compact version covers failed jobs and database state in one pass:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Requests, changes, and triage”?",
+      "options": [
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Log or data file filling during business hours",
+        "Users reporting slowness an hour after it started"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”. A DBA triages every request against three questions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the day repeatable”?",
+      "options": [
+        "Users reporting slowness an hour after it started",
+        "Unreviewed changes reaching production",
+        "Daily work that lives only in someone's head fails the day that person is on holiday."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Daily work that lives only in someone's head fails the day that person is on holiday. The fix is to externalise it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The trap is that the first four are _____ — they fill the day by themselves.”",
+      "options": [
+        "Written checklist",
+        "reactive",
+        "What is the reversible path?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The trap is that the first four are reactive — they fill the day by themselves. Without a deliberate practice of the fifth, the DBA becomes a ticket queue with a keyboard, and every improvement waits for a quiet week that never arrives.”"
+    },
+    {
+      "question": "In the “The recurring core” table, what is listed for “Alert and monitoring review” under “What it prevents”?",
+      "options": [
+        "Silent failures nobody reported yet",
+        "The single highest-value habit in database operations is a fixed morning check, run before the first meeting.",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Alert and monitoring review” as “Silent failures nobody reported yet”."
+    },
+    {
+      "question": "Complete the lesson statement: “Both queries take under a second and answer the questions that matter: _____”",
+      "options": [
+        "Dashboards over log files",
+        "Automate the check, not just the fix",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both queries take under a second and answer the questions that matter: did last night's work succeed, and is anything already in trouble? Running them at the same time daily also builds the pattern-recognition that makes anomalies jump out — a job that “always fails on Tuesdays” is only visible if you look on Tuesdays.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Requests, changes, and triage”?",
+      "options": [
+        "Daily work that lives only in someone's head fails the day that person is on holiday.",
+        "Permission requests deserve special care.",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Permission requests deserve special care. “Grant sysadmin to my account” is almost never the real requirement — the real requirement is a specific action on a specific object. Answering with a narrower grant teaches the requester to ask precisely next time; answering with sysadmin teaches them to ask for everything forever.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the day repeatable”?",
+      "options": [
+        "Common pitfalls: running the checks only when something feels wrong, trusting that “the jobs are probably fine”, never reading job output, and treating documentation as a project…",
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Permission requests deserve special care."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common pitfalls: running the checks only when something feels wrong, trusting that “the jobs are probably fine”, never reading job output, and treating documentation as a project instead of a by-product of every change. The day is only as reliable as the checklist behind it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “What a DBA day actually contains”?",
+      "options": [
+        "Nothing in a DBA's day is accidental.",
+        "Discovering an unbackupable database during a recovery",
+        "Log or data file filling during business hours"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Nothing in a DBA's day is accidental. The work falls into five streams, and every experienced DBA learns to run them in parallel:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The recurring core”?",
+      "options": [
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Permission requests deserve special care.",
+        "Underneath the tickets sits a set of checks that should happen at the same time every day."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Underneath the tickets sits a set of checks that should happen at the same time every day. They are cheap, they are boring, and each one maps to a specific class of production failure:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The morning health check”?",
+      "options": [
+        "Log or data file filling during business hours",
+        "The single highest-value habit in database operations is a fixed morning check, run before the first meeting.",
+        "Discovering an unbackupable database during a recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The single highest-value habit in database operations is a fixed morning check, run before the first meeting. A compact version covers failed jobs and database state in one pass:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Requests, changes, and triage”?",
+      "options": [
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Log or data file filling during business hours",
+        "Users reporting slowness an hour after it started"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”. A DBA triages every request against three questions:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the day repeatable”?",
+      "options": [
+        "Users reporting slowness an hour after it started",
+        "Unreviewed changes reaching production",
+        "Daily work that lives only in someone's head fails the day that person is on holiday."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Daily work that lives only in someone's head fails the day that person is on holiday. The fix is to externalise it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The trap is that the first four are _____ — they fill the day by themselves.”",
+      "options": [
+        "Written checklist",
+        "reactive",
+        "What is the reversible path?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “The trap is that the first four are reactive — they fill the day by themselves. Without a deliberate practice of the fifth, the DBA becomes a ticket queue with a keyboard, and every improvement waits for a quiet week that never arrives.”"
+    },
+    {
+      "question": "In the “The recurring core” table, what is listed for “Alert and monitoring review” under “What it prevents”?",
+      "options": [
+        "Silent failures nobody reported yet",
+        "The single highest-value habit in database operations is a fixed morning check, run before the first meeting.",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Alert and monitoring review” as “Silent failures nobody reported yet”."
+    },
+    {
+      "question": "Complete the lesson statement: “Both queries take under a second and answer the questions that matter: _____”",
+      "options": [
+        "Dashboards over log files",
+        "Automate the check, not just the fix",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Both queries take under a second and answer the questions that matter: did last night's work succeed, and is anything already in trouble? Running them at the same time daily also builds the pattern-recognition that makes anomalies jump out — a job that “always fails on Tuesdays” is only visible if you look on Tuesdays.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Requests, changes, and triage”?",
+      "options": [
+        "Daily work that lives only in someone's head fails the day that person is on holiday.",
+        "Permission requests deserve special care.",
+        "did last night's work succeed, and is anything already in trouble?"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Permission requests deserve special care. “Grant sysadmin to my account” is almost never the real requirement — the real requirement is a specific action on a specific object. Answering with a narrower grant teaches the requester to ask precisely next time; answering with sysadmin teaches them to ask for everything forever.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Making the day repeatable”?",
+      "options": [
+        "Common pitfalls: running the checks only when something feels wrong, trusting that “the jobs are probably fine”, never reading job output, and treating documentation as a project…",
+        "Incoming work arrives without context: “the report is slow”, “I need sysadmin”, “add 50 GB to the database”.",
+        "Permission requests deserve special care."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Common pitfalls: running the checks only when something feels wrong, trusting that “the jobs are probably fine”, never reading job output, and treating documentation as a project instead of a by-product of every change. The day is only as reliable as the checklist behind it.”"
+    }
+  ],
   takeaways: [
     "DBA work has five streams: observe, respond, change, service, improve — the fifth must be scheduled or it never happens",
     "The recurring core (jobs, backups, disk, blocking, changes, handover) maps directly to classes of preventable failures",

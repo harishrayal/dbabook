@@ -179,6 +179,312 @@ Find sessions with a blocking_session_id, then identify the session that blocks 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "' in a few minutes.",
+        "Prevents disk full",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab builds the daily health check you will use for the rest of your DBA career: a small set of queries that answer 'is the estate healthy?' in a few minutes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Prevents disk full",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? The queries below cover both current state (sessions, blocking) and cumulative signals (waits, space).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Start with wait statistics.",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Start with wait statistics. Aggregate sys.dm_os_wait_stats, filter benign waits, and look at the top wait types — they point to I/O, CPU, locking or logging as the dominant constraint.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Prevents disk full",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage.",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Finally, review the error log and job failures. Combine the queries into a single script you can run each morning, and record a baseline so trends become visible over time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Falling rapidly",
+        "Run these on a local instance first.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Run these on a local instance first. Many DMVs return values since instance start, so a freshly restarted server will show small numbers — note the uptime when interpreting results.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Work through the flow: gather instance state, examine waits, check sessions and blocking, verify space, then review logs and jobs.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work through the flow: gather instance state, examine waits, check sessions and blocking, verify space, then review logs and jobs. Consistency of routine matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Start with wait statistics.",
+        "Finds the bottleneck",
+        "dm_exec_requests for long-running or blocked sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Next inspect sys.dm_exec_requests for long-running or blocked sessions. The head blocker is the session blocking others but not itself blocked; that is where you investigate, not at the queue of victims.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage. Catching a log at 85% is far better than explaining a full-disk outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Above 85 percent",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "' in a few minutes.",
+        "Prevents disk full",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab builds the daily health check you will use for the rest of your DBA career: a small set of queries that answer 'is the estate healthy?' in a few minutes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Prevents disk full",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? The queries below cover both current state (sessions, blocking) and cumulative signals (waits, space).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Start with wait statistics.",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Start with wait statistics. Aggregate sys.dm_os_wait_stats, filter benign waits, and look at the top wait types — they point to I/O, CPU, locking or logging as the dominant constraint.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Prevents disk full",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage.",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Finally, review the error log and job failures. Combine the queries into a single script you can run each morning, and record a baseline so trends become visible over time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Falling rapidly",
+        "Run these on a local instance first.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Run these on a local instance first. Many DMVs return values since instance start, so a freshly restarted server will show small numbers — note the uptime when interpreting results.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Work through the flow: gather instance state, examine waits, check sessions and blocking, verify space, then review logs and jobs.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work through the flow: gather instance state, examine waits, check sessions and blocking, verify space, then review logs and jobs. Consistency of routine matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Start with wait statistics.",
+        "Finds the bottleneck",
+        "dm_exec_requests for long-running or blocked sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Next inspect sys.dm_exec_requests for long-running or blocked sessions. The head blocker is the session blocking others but not itself blocked; that is where you investigate, not at the queue of victims.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage. Catching a log at 85% is far better than explaining a full-disk outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Above 85 percent",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "' in a few minutes.",
+        "Prevents disk full",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab builds the daily health check you will use for the rest of your DBA career: a small set of queries that answer 'is the estate healthy?' in a few minutes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Prevents disk full",
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? The queries below cover both current state (sessions, blocking) and cumulative signals (waits, space).”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Start with wait statistics.",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Start with wait statistics. Aggregate sys.dm_os_wait_stats, filter benign waits, and look at the top wait types — they point to I/O, CPU, locking or logging as the dominant constraint.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Prevents disk full",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage.",
+        "Finally, review the error log and job failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Finally, review the error log and job failures. Combine the queries into a single script you can run each morning, and record a baseline so trends become visible over time.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Falling rapidly",
+        "Run these on a local instance first.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Run these on a local instance first. Many DMVs return values since instance start, so a freshly restarted server will show small numbers — note the uptime when interpreting results.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Work through the flow: gather instance state, examine waits, check sessions and blocking, verify space, then review logs and jobs.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Falling rapidly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work through the flow: gather instance state, examine waits, check sessions and blocking, verify space, then review logs and jobs. Consistency of routine matters more than complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Start with wait statistics.",
+        "Finds the bottleneck",
+        "dm_exec_requests for long-running or blocked sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Next inspect sys.dm_exec_requests for long-running or blocked sessions. The head blocker is the session blocking others but not itself blocked; that is where you investigate, not at the queue of victims.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage.",
+        "Any overnight failure"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Check free space with dm_os_volume_stats and log usage with dm_db_log_space_usage. Catching a log at 85% is far better than explaining a full-disk outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "Above 85 percent",
+        "Any overnight failure"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "A short, consistent daily health check catches problems early",
     "Wait statistics reveal the dominant bottleneck without guesswork",

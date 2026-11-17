@@ -160,6 +160,312 @@ Query sys.dm_exec_requests for sessions with a blocking_session_id, then find th
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Read Committed",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Read Committed within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Committed fits”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Committed in practice”?",
+      "options": [
+        "Held read locks",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Default"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Committed”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "None",
+        "Default"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Read Committed. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "With Read Committed, prefer measured, reversible changes.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Read Committed means”?",
+      "options": [
+        "Row versioning",
+        "Isolation levels define how transactions are protected from one another.",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Committed fits”?",
+      "options": [
+        "The diagram below places Read Committed alongside the core concepts of blocking and deadlocks.",
+        "Default",
+        "Held read locks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Read Committed alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Committed in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "The following comparison captures the distinctions that matter most when working with Read Committed:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Read Committed:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Committed”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Row versioning",
+        "Read Committed"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Read Committed",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Read Committed within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Committed fits”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Committed in practice”?",
+      "options": [
+        "Held read locks",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Default"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Committed”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "None",
+        "Default"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Read Committed. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "With Read Committed, prefer measured, reversible changes.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Read Committed means”?",
+      "options": [
+        "Row versioning",
+        "Isolation levels define how transactions are protected from one another.",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Committed fits”?",
+      "options": [
+        "The diagram below places Read Committed alongside the core concepts of blocking and deadlocks.",
+        "Default",
+        "Held read locks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Read Committed alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Committed in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "The following comparison captures the distinctions that matter most when working with Read Committed:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Read Committed:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Committed”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Row versioning",
+        "Read Committed"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Read Committed",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Read Committed within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Committed fits”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Committed in practice”?",
+      "options": [
+        "Held read locks",
+        "Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.",
+        "Default"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Reader-writer blocking is frequently reduced by enabling READ COMMITTED SNAPSHOT, which versions rows so readers do not block writers, at the cost of tempdb version-store overhead.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Committed”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "None",
+        "Default"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Read Committed. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "With Read Committed, prefer measured, reversible changes.",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Read Committed means”?",
+      "options": [
+        "Row versioning",
+        "Isolation levels define how transactions are protected from one another.",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Read Committed fits”?",
+      "options": [
+        "The diagram below places Read Committed alongside the core concepts of blocking and deadlocks.",
+        "Default",
+        "Held read locks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Read Committed alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Read Committed in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "The following comparison captures the distinctions that matter most when working with Read Committed:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Read Committed:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Read Committed”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Row versioning",
+        "Read Committed"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions. Large unindexed updates are a common trigger.”"
+    }
+  ],
   takeaways: [
     "Read Committed is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

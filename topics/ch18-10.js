@@ -160,6 +160,312 @@ Testing on non-production, defaulting to read-only, explicit destructive switche
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "@params",
+        "Theory becomes useful when you can apply it.",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Connecting to SQL Server Using PowerShell within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Connecting to SQL Server Using PowerShell fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connecting to SQL Server Using PowerShell in practice”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Daily"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Connecting to SQL Server Using PowerShell”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Connecting to SQL Server Using PowerShell. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Connecting to SQL Server Using PowerShell means”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Daily",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Connecting to SQL Server Using PowerShell fits”?",
+      "options": [
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Daily",
+        "The diagram below places Connecting to SQL Server Using PowerShell alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Connecting to SQL Server Using PowerShell alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connecting to SQL Server Using PowerShell in practice”?",
+      "options": [
+        "@params",
+        "The following comparison captures the distinctions that matter most when working with Connecting to SQL Server Using PowerShell:",
+        "Where-Object"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Connecting to SQL Server Using PowerShell:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Connecting to SQL Server Using PowerShell”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Connecting to SQL Server Using PowerShell",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "@params",
+        "Theory becomes useful when you can apply it.",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Connecting to SQL Server Using PowerShell within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Connecting to SQL Server Using PowerShell fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connecting to SQL Server Using PowerShell in practice”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Daily"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Connecting to SQL Server Using PowerShell”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Connecting to SQL Server Using PowerShell. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Connecting to SQL Server Using PowerShell means”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Daily",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Connecting to SQL Server Using PowerShell fits”?",
+      "options": [
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Daily",
+        "The diagram below places Connecting to SQL Server Using PowerShell alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Connecting to SQL Server Using PowerShell alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connecting to SQL Server Using PowerShell in practice”?",
+      "options": [
+        "@params",
+        "The following comparison captures the distinctions that matter most when working with Connecting to SQL Server Using PowerShell:",
+        "Where-Object"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Connecting to SQL Server Using PowerShell:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Connecting to SQL Server Using PowerShell”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Connecting to SQL Server Using PowerShell",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "@params",
+        "Theory becomes useful when you can apply it.",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Connecting to SQL Server Using PowerShell within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Connecting to SQL Server Using PowerShell fits”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Error handling with try/catch/finally and -ErrorAction Stop makes scripts predictable. A script that silently continues after an error is worse than one that fails clearly.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connecting to SQL Server Using PowerShell in practice”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Daily"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Connecting to SQL Server Using PowerShell”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Connecting to SQL Server Using PowerShell. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Connecting to SQL Server Using PowerShell means”?",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Daily",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Connecting to SQL Server Using PowerShell fits”?",
+      "options": [
+        "With Connecting to SQL Server Using PowerShell, prefer measured, reversible changes.",
+        "Daily",
+        "The diagram below places Connecting to SQL Server Using PowerShell alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Connecting to SQL Server Using PowerShell alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Connecting to SQL Server Using PowerShell in practice”?",
+      "options": [
+        "@params",
+        "The following comparison captures the distinctions that matter most when working with Connecting to SQL Server Using PowerShell:",
+        "Where-Object"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Connecting to SQL Server Using PowerShell:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Connecting to SQL Server Using PowerShell”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Connecting to SQL Server Using PowerShell"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Connecting to SQL Server Using PowerShell",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    }
+  ],
   takeaways: [
     "Connecting to SQL Server Using PowerShell is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

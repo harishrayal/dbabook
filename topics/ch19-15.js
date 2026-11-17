@@ -181,6 +181,312 @@ By impact and urgency against defined levels: total outage or data loss is Sev1,
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "High Memory Usage",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine High Memory Usage within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Memory Usage fits”?",
+      "options": [
+        "With High Memory Usage, prefer measured, reversible changes.",
+        "Failover / restart",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Memory Usage in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "High Memory Usage sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Memory Usage”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "High Memory Usage sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to High Memory Usage. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "With High Memory Usage, prefer measured, reversible changes.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "High Memory Usage sits inside a larger system.",
+        "High Memory Usage",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates High Memory Usage with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What High Memory Usage means”?",
+      "options": [
+        "Communication is part of the job.",
+        "Use the following as a starting point when investigating High Memory Usage.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Memory Usage fits”?",
+      "options": [
+        "Use the following as a starting point when investigating High Memory Usage.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The diagram below places High Memory Usage alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places High Memory Usage alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Memory Usage in practice”?",
+      "options": [
+        "High Memory Usage",
+        "The following comparison captures the distinctions that matter most when working with High Memory Usage:",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with High Memory Usage:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Memory Usage”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "High Memory Usage",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "High Memory Usage",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine High Memory Usage within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Memory Usage fits”?",
+      "options": [
+        "With High Memory Usage, prefer measured, reversible changes.",
+        "Failover / restart",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Memory Usage in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "High Memory Usage sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Memory Usage”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "High Memory Usage sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to High Memory Usage. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "With High Memory Usage, prefer measured, reversible changes.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "High Memory Usage sits inside a larger system.",
+        "High Memory Usage",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates High Memory Usage with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What High Memory Usage means”?",
+      "options": [
+        "Communication is part of the job.",
+        "Use the following as a starting point when investigating High Memory Usage.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Memory Usage fits”?",
+      "options": [
+        "Use the following as a starting point when investigating High Memory Usage.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The diagram below places High Memory Usage alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places High Memory Usage alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Memory Usage in practice”?",
+      "options": [
+        "High Memory Usage",
+        "The following comparison captures the distinctions that matter most when working with High Memory Usage:",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with High Memory Usage:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Memory Usage”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "High Memory Usage",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "High Memory Usage",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…",
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine High Memory Usage within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Memory Usage fits”?",
+      "options": [
+        "With High Memory Usage, prefer measured, reversible changes.",
+        "Failover / restart",
+        "A production incident is an unplanned event that degrades or stops service."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Memory Usage in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact.",
+        "High Memory Usage sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Severity levels classify impact: Sev1 is a total outage or critical data loss, Sev2 a major degradation, Sev3 a limited impact. Severity drives response time, who is paged and how often stakeholders are updated.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Memory Usage”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "High Memory Usage sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to High Memory Usage. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "With High Memory Usage, prefer measured, reversible changes.",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "High Memory Usage sits inside a larger system.",
+        "High Memory Usage",
+        "Kill blocker / fix query"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates High Memory Usage with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What High Memory Usage means”?",
+      "options": [
+        "Communication is part of the job.",
+        "Use the following as a starting point when investigating High Memory Usage.",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Communication is part of the job. Regular, honest updates to stakeholders — what is known, what is being done, when the next update is — maintain trust and stop others from interrupting the responder.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where High Memory Usage fits”?",
+      "options": [
+        "Use the following as a starting point when investigating High Memory Usage.",
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The diagram below places High Memory Usage alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places High Memory Usage alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “High Memory Usage in practice”?",
+      "options": [
+        "High Memory Usage",
+        "The following comparison captures the distinctions that matter most when working with High Memory Usage:",
+        "Next business day"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with High Memory Usage:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with High Memory Usage”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "High Memory Usage",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "High Memory Usage is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

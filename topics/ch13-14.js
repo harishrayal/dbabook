@@ -191,6 +191,312 @@ Blocking is one session waiting for a lock held by another — it resolves when 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Repeatable Read",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Repeatable Read within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Repeatable Read fits”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "With Repeatable Read, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Repeatable Read in practice”?",
+      "options": [
+        "Row versioning",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Repeatable Read”?",
+      "options": [
+        "Row versioning",
+        "Theory becomes useful when you can apply it.",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Repeatable Read. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Use the following as a starting point when investigating Repeatable Read.",
+        "None"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Repeatable Read"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Repeatable Read with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Repeatable Read means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Repeatable Read sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Repeatable Read fits”?",
+      "options": [
+        "The diagram below places Repeatable Read alongside the core concepts of blocking and deadlocks.",
+        "Repeatable Read sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Repeatable Read alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Repeatable Read in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "The following comparison captures the distinctions that matter most when working with Repeatable Read:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Repeatable Read:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Repeatable Read”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Repeatable Read",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Repeatable Read within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Repeatable Read fits”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "With Repeatable Read, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Repeatable Read in practice”?",
+      "options": [
+        "Row versioning",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Repeatable Read”?",
+      "options": [
+        "Row versioning",
+        "Theory becomes useful when you can apply it.",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Repeatable Read. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Use the following as a starting point when investigating Repeatable Read.",
+        "None"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Repeatable Read"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Repeatable Read with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Repeatable Read means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Repeatable Read sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Repeatable Read fits”?",
+      "options": [
+        "The diagram below places Repeatable Read alongside the core concepts of blocking and deadlocks.",
+        "Repeatable Read sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Repeatable Read alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Repeatable Read in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "The following comparison captures the distinctions that matter most when working with Repeatable Read:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Repeatable Read:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Repeatable Read”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within blocking and deadlocks.”",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Repeatable Read",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Repeatable Read within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Repeatable Read fits”?",
+      "options": [
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "With Repeatable Read, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Repeatable Read in practice”?",
+      "options": [
+        "Row versioning",
+        "Blocking occurs when one session holds a lock another needs.",
+        "Locking protects data consistency when multiple sessions work concurrently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Repeatable Read”?",
+      "options": [
+        "Row versioning",
+        "Theory becomes useful when you can apply it.",
+        "Held read locks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Repeatable Read. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Isolation levels define how transactions are protected from one another.",
+        "Use the following as a starting point when investigating Repeatable Read.",
+        "None"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Default",
+        "Held read locks",
+        "Repeatable Read"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Repeatable Read with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Repeatable Read means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved.",
+        "Repeatable Read sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Deadlock graphs from Extended Events show the processes, resources and lock modes involved. Reading the graph reveals the conflicting access order — the real fix is usually to make access order consistent or add an index so less data is locked.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Repeatable Read fits”?",
+      "options": [
+        "The diagram below places Repeatable Read alongside the core concepts of blocking and deadlocks.",
+        "Repeatable Read sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Repeatable Read alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Repeatable Read in practice”?",
+      "options": [
+        "Compatible with other S",
+        "Incompatible with all",
+        "The following comparison captures the distinctions that matter most when working with Repeatable Read:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Repeatable Read:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Repeatable Read”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Repeatable Read is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

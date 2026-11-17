@@ -185,6 +185,312 @@ CREATE TABLE sales.OrderLines
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key.”",
+      "options": [
+        "1NF",
+        "Normalisation",
+        "transitive"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Normalisation is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key. Its payoff is not elegance — it is correctness under change. When the same fact is copied into many rows, updates become a hunt, and misses become wrong answers in production.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A table is in _____ when every column holds an atomic value, there are no repeating groups, and each row is distinguishable.”",
+      "options": [
+        "first normal form",
+        "1NF",
+        "2NF"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A table is in first normal form when every column holds an atomic value, there are no repeating groups, and each row is distinguishable. The classic 1NF violation looks convenient at design time:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ applies to tables whose primary key is composite.”",
+      "options": [
+        "2NF",
+        "BCNF",
+        "Second normal form"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Second normal form applies to tables whose primary key is composite. A table is in 2NF when it is in 1NF and every non-key column depends on the entire key — not on a fragment of it. Partial dependency appears whenever a key column pair carries descriptive data:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ adds: no non-key column may depend on another non-key column — no transitive dependency.”",
+      "options": [
+        "denormalisation",
+        "Third normal form",
+        "BCNF"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Third normal form adds: no non-key column may depend on another non-key column — no transitive dependency. The giveaway is a column that functionally determines another: if customer_id → customer_city, then storing city anywhere but the Customers table lets one customer have two cities.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Normalisation optimises for correctness of writes; _____ trades some redundancy for read speed or convenience — and it is legitimate when it is a decision, not an accident.”",
+      "options": [
+        "denormalisation",
+        "BCNF",
+        "Keep the normalised truth"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Normalisation optimises for correctness of writes; denormalisation trades some redundancy for read speed or convenience — and it is legitimate when it is a decision, not an accident. Data warehouses, summary tables, and reporting views routinely repeat facts so that one query answers one dashboard.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The normal forms are stated as a sequence, and in practice reaching _____ is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.”",
+      "options": [
+        "Keep the normalised truth",
+        "One writer",
+        "3NF"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The normal forms are stated as a sequence, and in practice reaching 3NF is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “First normal form (1NF)”?",
+      "options": [
+        "One value per cell is not the same as one word: 2026-01-15 is atomic; '2026-01-15; 2026-02-01' in one column is two facts wearing one hat.",
+        "The fixed “product_1 … product_3” columns cap every order at three items; the proper row-per-line design has no limit, and a query for “who ordered WIDGET-42” becomes a simple…",
+        "first normal form"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The fixed “product_1 … product_3” columns cap every order at three items; the proper row-per-line design has no limit, and a query for “who ordered WIDGET-42” becomes a simple predicate instead of product_1 = … OR product_2 = … OR product_3 = ….”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Second normal form (2NF)”?",
+      "options": [
+        "Partial dependency creates the exact anomalies 1NF cannot fix: every line of an order repeats the order's data, so correcting an order-level fact means finding every line — and…",
+        "Second normal form",
+        "Insert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Partial dependency creates the exact anomalies 1NF cannot fix: every line of an order repeats the order's data, so correcting an order-level fact means finding every line — and missing one leaves the table disagreeing with itself.”"
+    },
+    {
+      "question": "In the “Third normal form (3NF)” table, what is listed for “1NF” under “Removes”?",
+      "options": [
+        "Insert",
+        "Update",
+        "Multi-valued and repeating columns"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “1NF” as “Multi-valued and repeating columns”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ “denormalising” by accident — copying customer city into orders during an import; summary columns maintained by triggers nobody knows…”",
+      "options": [
+        "A customer moves house — 400 order rows still ship to the old address",
+        "Common pitfalls:",
+        "A new customer cannot exist until they place their first order"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: “denormalising” by accident — copying customer city into orders during an import; summary columns maintained by triggers nobody knows about; and skipping 1NF because JSON columns “make repeats convenient”, then wondering why filtering on the data requires string surgery.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key.”",
+      "options": [
+        "1NF",
+        "Normalisation",
+        "transitive"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Normalisation is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key. Its payoff is not elegance — it is correctness under change. When the same fact is copied into many rows, updates become a hunt, and misses become wrong answers in production.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A table is in _____ when every column holds an atomic value, there are no repeating groups, and each row is distinguishable.”",
+      "options": [
+        "first normal form",
+        "1NF",
+        "2NF"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A table is in first normal form when every column holds an atomic value, there are no repeating groups, and each row is distinguishable. The classic 1NF violation looks convenient at design time:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ applies to tables whose primary key is composite.”",
+      "options": [
+        "2NF",
+        "BCNF",
+        "Second normal form"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Second normal form applies to tables whose primary key is composite. A table is in 2NF when it is in 1NF and every non-key column depends on the entire key — not on a fragment of it. Partial dependency appears whenever a key column pair carries descriptive data:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ adds: no non-key column may depend on another non-key column — no transitive dependency.”",
+      "options": [
+        "denormalisation",
+        "Third normal form",
+        "BCNF"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Third normal form adds: no non-key column may depend on another non-key column — no transitive dependency. The giveaway is a column that functionally determines another: if customer_id → customer_city, then storing city anywhere but the Customers table lets one customer have two cities.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Normalisation optimises for correctness of writes; _____ trades some redundancy for read speed or convenience — and it is legitimate when it is a decision, not an accident.”",
+      "options": [
+        "denormalisation",
+        "BCNF",
+        "Keep the normalised truth"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Normalisation optimises for correctness of writes; denormalisation trades some redundancy for read speed or convenience — and it is legitimate when it is a decision, not an accident. Data warehouses, summary tables, and reporting views routinely repeat facts so that one query answers one dashboard.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The normal forms are stated as a sequence, and in practice reaching _____ is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.”",
+      "options": [
+        "Keep the normalised truth",
+        "One writer",
+        "3NF"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The normal forms are stated as a sequence, and in practice reaching 3NF is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “First normal form (1NF)”?",
+      "options": [
+        "One value per cell is not the same as one word: 2026-01-15 is atomic; '2026-01-15; 2026-02-01' in one column is two facts wearing one hat.",
+        "The fixed “product_1 … product_3” columns cap every order at three items; the proper row-per-line design has no limit, and a query for “who ordered WIDGET-42” becomes a simple…",
+        "first normal form"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The fixed “product_1 … product_3” columns cap every order at three items; the proper row-per-line design has no limit, and a query for “who ordered WIDGET-42” becomes a simple predicate instead of product_1 = … OR product_2 = … OR product_3 = ….”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Second normal form (2NF)”?",
+      "options": [
+        "Partial dependency creates the exact anomalies 1NF cannot fix: every line of an order repeats the order's data, so correcting an order-level fact means finding every line — and…",
+        "Second normal form",
+        "Insert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Partial dependency creates the exact anomalies 1NF cannot fix: every line of an order repeats the order's data, so correcting an order-level fact means finding every line — and missing one leaves the table disagreeing with itself.”"
+    },
+    {
+      "question": "In the “Third normal form (3NF)” table, what is listed for “1NF” under “Removes”?",
+      "options": [
+        "Insert",
+        "Update",
+        "Multi-valued and repeating columns"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “1NF” as “Multi-valued and repeating columns”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ “denormalising” by accident — copying customer city into orders during an import; summary columns maintained by triggers nobody knows…”",
+      "options": [
+        "A customer moves house — 400 order rows still ship to the old address",
+        "Common pitfalls:",
+        "A new customer cannot exist until they place their first order"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: “denormalising” by accident — copying customer city into orders during an import; summary columns maintained by triggers nobody knows about; and skipping 1NF because JSON columns “make repeats convenient”, then wondering why filtering on the data requires string surgery.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “_____ is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key.”",
+      "options": [
+        "1NF",
+        "Normalisation",
+        "transitive"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Normalisation is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key. Its payoff is not elegance — it is correctness under change. When the same fact is copied into many rows, updates become a hunt, and misses become wrong answers in production.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A table is in _____ when every column holds an atomic value, there are no repeating groups, and each row is distinguishable.”",
+      "options": [
+        "first normal form",
+        "1NF",
+        "2NF"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A table is in first normal form when every column holds an atomic value, there are no repeating groups, and each row is distinguishable. The classic 1NF violation looks convenient at design time:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ applies to tables whose primary key is composite.”",
+      "options": [
+        "2NF",
+        "BCNF",
+        "Second normal form"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Second normal form applies to tables whose primary key is composite. A table is in 2NF when it is in 1NF and every non-key column depends on the entire key — not on a fragment of it. Partial dependency appears whenever a key column pair carries descriptive data:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ adds: no non-key column may depend on another non-key column — no transitive dependency.”",
+      "options": [
+        "denormalisation",
+        "Third normal form",
+        "BCNF"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Third normal form adds: no non-key column may depend on another non-key column — no transitive dependency. The giveaway is a column that functionally determines another: if customer_id → customer_city, then storing city anywhere but the Customers table lets one customer have two cities.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Normalisation optimises for correctness of writes; _____ trades some redundancy for read speed or convenience — and it is legitimate when it is a decision, not an accident.”",
+      "options": [
+        "denormalisation",
+        "BCNF",
+        "Keep the normalised truth"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Normalisation optimises for correctness of writes; denormalisation trades some redundancy for read speed or convenience — and it is legitimate when it is a decision, not an accident. Data warehouses, summary tables, and reporting views routinely repeat facts so that one query answers one dashboard.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The normal forms are stated as a sequence, and in practice reaching _____ is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.”",
+      "options": [
+        "Keep the normalised truth",
+        "One writer",
+        "3NF"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The normal forms are stated as a sequence, and in practice reaching 3NF is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “First normal form (1NF)”?",
+      "options": [
+        "One value per cell is not the same as one word: 2026-01-15 is atomic; '2026-01-15; 2026-02-01' in one column is two facts wearing one hat.",
+        "The fixed “product_1 … product_3” columns cap every order at three items; the proper row-per-line design has no limit, and a query for “who ordered WIDGET-42” becomes a simple…",
+        "first normal form"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The fixed “product_1 … product_3” columns cap every order at three items; the proper row-per-line design has no limit, and a query for “who ordered WIDGET-42” becomes a simple predicate instead of product_1 = … OR product_2 = … OR product_3 = ….”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Second normal form (2NF)”?",
+      "options": [
+        "Partial dependency creates the exact anomalies 1NF cannot fix: every line of an order repeats the order's data, so correcting an order-level fact means finding every line — and…",
+        "Second normal form",
+        "Insert"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Partial dependency creates the exact anomalies 1NF cannot fix: every line of an order repeats the order's data, so correcting an order-level fact means finding every line — and missing one leaves the table disagreeing with itself.”"
+    },
+    {
+      "question": "In the “Third normal form (3NF)” table, what is listed for “1NF” under “Removes”?",
+      "options": [
+        "Insert",
+        "Update",
+        "Multi-valued and repeating columns"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “1NF” as “Multi-valued and repeating columns”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ “denormalising” by accident — copying customer city into orders during an import; summary columns maintained by triggers nobody knows…”",
+      "options": [
+        "A customer moves house — 400 order rows still ship to the old address",
+        "Common pitfalls:",
+        "A new customer cannot exist until they place their first order"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common pitfalls: “denormalising” by accident — copying customer city into orders during an import; summary columns maintained by triggers nobody knows about; and skipping 1NF because JSON columns “make repeats convenient”, then wondering why filtering on the data requires string surgery.”"
+    }
+  ],
   takeaways: [
     "Redundant facts cause insert, update, and delete anomalies — normalisation stores each fact once",
     "1NF: atomic values and no repeating groups — one value per cell",

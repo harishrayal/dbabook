@@ -178,6 +178,312 @@ Physical corruption is damaged page bytes or I/O errors detected by checksums; l
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Torn Pages:",
+        "Torn Pages",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Torn Pages within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Torn Pages fits”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Torn Pages in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Torn Pages”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Theory becomes useful when you can apply it.",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Torn Pages. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Check log access and space",
+        "Theory becomes useful when you can apply it.",
+        "Torn Pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Torn Pages with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Torn Pages means”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Torn Pages fits”?",
+      "options": [
+        "The diagram below places Torn Pages alongside the core concepts of database integrity and corruption.",
+        "Next, verify the result and capture a baseline.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Torn Pages alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Torn Pages in practice”?",
+      "options": [
+        "Minor, non-data issues",
+        "Rebuild indexes",
+        "The following comparison captures the distinctions that matter most when working with Torn Pages:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Torn Pages:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Torn Pages”?",
+      "options": [
+        "Minor, non-data issues",
+        "The first example establishes the relevant state.",
+        "With Torn Pages, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Torn Pages:",
+        "Torn Pages",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Torn Pages within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Torn Pages fits”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Torn Pages in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Torn Pages”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Theory becomes useful when you can apply it.",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Torn Pages. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Check log access and space",
+        "Theory becomes useful when you can apply it.",
+        "Torn Pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Torn Pages with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Torn Pages means”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Torn Pages fits”?",
+      "options": [
+        "The diagram below places Torn Pages alongside the core concepts of database integrity and corruption.",
+        "Next, verify the result and capture a baseline.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Torn Pages alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Torn Pages in practice”?",
+      "options": [
+        "Minor, non-data issues",
+        "Rebuild indexes",
+        "The following comparison captures the distinctions that matter most when working with Torn Pages:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Torn Pages:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Torn Pages”?",
+      "options": [
+        "Minor, non-data issues",
+        "The first example establishes the relevant state.",
+        "With Torn Pages, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database integrity and corruption.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Torn Pages:",
+        "Torn Pages",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Torn Pages within database integrity and corruption. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Torn Pages fits”?",
+      "options": [
+        "Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and…",
+        "Database integrity is about detecting damage before it becomes data loss.",
+        "Check hardware, run CHECKDB"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Repair options REPAIR_FAST, REPAIR_REBUILD and REPAIR_ALLOW_DATA_LOSS carry increasing risk; the last can delete rows and must be a last resort with a copy of the database and business approval.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Torn Pages in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "A corruption incident is a data-loss event until proven otherwise."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A corruption incident is a data-loss event until proven otherwise. Preserve the original files, determine the root cause — often storage — and replace the failing hardware before returning the database to service.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Torn Pages”?",
+      "options": [
+        "Check hardware, run CHECKDB",
+        "Theory becomes useful when you can apply it.",
+        "Database integrity is about detecting damage before it becomes data loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Torn Pages. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Check hardware, run CHECKDB",
+        "Check log, avoid emergency mode first"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “DBCC CHECKDB is the definitive integrity check. It verifies allocation, structure and logical consistency across the database and reports errors with repair levels and severity. It should be scheduled regularly and after every restore.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Check log access and space",
+        "Theory becomes useful when you can apply it.",
+        "Torn Pages"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Torn Pages with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Torn Pages means”?",
+      "options": [
+        "DBCC CHECKDB is the definitive integrity check.",
+        "Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Physical corruption often surfaces as error 824/825 in the error log, a SUSPECT or RECOVERY_PENDING database state, or a query that fails on a specific page. The response is careful: capture evidence, avoid destructive repair first, and prefer restoring a clean page or database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Torn Pages fits”?",
+      "options": [
+        "The diagram below places Torn Pages alongside the core concepts of database integrity and corruption.",
+        "Next, verify the result and capture a baseline.",
+        "Page checksums are the primary detection mechanism."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Torn Pages alongside the core concepts of database integrity and corruption. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Torn Pages in practice”?",
+      "options": [
+        "Minor, non-data issues",
+        "Rebuild indexes",
+        "The following comparison captures the distinctions that matter most when working with Torn Pages:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Torn Pages:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Torn Pages”?",
+      "options": [
+        "Minor, non-data issues",
+        "The first example establishes the relevant state.",
+        "With Torn Pages, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Torn Pages is a fundamental concept in database integrity and corruption",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

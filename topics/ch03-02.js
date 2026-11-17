@@ -165,6 +165,312 @@ Get-Service MSSQLSERVER, SQLSERVERAGENT | Format-Table Status, StartType, Name</
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is an executable registered with the Service Control Manager (SCM) so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes.”",
+      "options": [
+        "Automatic",
+        "Windows service",
+        "startup type"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A Windows service is an executable registered with the Service Control Manager (SCM) so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes. Services are why your database is available at 4 AM with nobody at a keyboard.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two independent properties describe a service: its current _____ and its configured startup type.”",
+      "options": [
+        "state",
+        "Automatic",
+        "Automatic (Delayed Start)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two independent properties describe a service: its current state and its configured startup type. Confusing them is a classic debugging error — a service set to Automatic can still be Stopped right now.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A service's _____ are services that must be running before it can start.”",
+      "options": [
+        "Automatic",
+        "Automatic (Delayed Start)",
+        "dependencies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A service's dependencies are services that must be running before it can start. The Engine typically depends on RPCSS and HTTP; SQL Agent depends on the Engine. If a dependency is stopped or stuck, your service will not start and the SCM logs a clear event.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing services safely”?",
+      "options": [
+        "SQL Server Browser on some builds",
+        "PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed.",
+        "Reduces boot contention on busy servers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed. The rules for production are simple:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting a service that will not start”?",
+      "options": [
+        "Work in this order — it is the same order the OS uses:",
+        "SQL Server Browser on some builds",
+        "Attack-surface reduction — never for the Engine"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work in this order — it is the same order the OS uses:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every service runs as _____ account, and that account decides what the service can touch.”",
+      "options": [
+        "Disabled",
+        "dependencies",
+        "some"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Every service runs as some account, and that account decides what the service can touch. The Engine's account needs rights on the data and log folders, the ability to log on as a service, and — for instant file initialization — the perform-volume-maintenance privilege. SQL Server Configuration Manager grants these for you; Services.msc does not, which is why account changes belong there and not in the generic console.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a service is”?",
+      "options": [
+        "PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed.",
+        "msc ), a short service name (what scripts and sc use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first.",
+        "sc qc shows the binary path, start type, account, and dependency list — the four facts you need before touching any service."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each service has a display name (what humans see in services.msc ), a short service name (what scripts and sc use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first. The SCM owns all of this configuration in the registry and enforces it at every boot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “States and startup types”?",
+      "options": [
+        "States are Running, Stopped, Paused (the SCM still tracks it, but requests queue), and StartPending / StopPending transitional states you see while a service is coming up or…",
+        "ch03-16",
+        "Default for a default instance — least privilege, no password to manage"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “States are Running, Stopped, Paused (the SCM still tracks it, but requests queue), and StartPending / StopPending transitional states you see while a service is coming up or shutting down — SQL Server can sit in StopPending for minutes while it rolls back transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine.”",
+      "options": [
+        "reboot the machine",
+        "Never stop the Engine to \"try something\"",
+        "Recovery options"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Recovery options define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine. On a database server the sensible default is restart the service with a reset period, never reboot the machine — a reboot turns one service failure into a full outage with failover and recovery time attached.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Common error codes: 5 (access denied — wrong account or permissions), _____ (the service did not respond in time — often a hung start), 1067 (the process terminated unexpectedly — read the service's own log).”",
+      "options": [
+        "Never stop the Engine to \"try something\"",
+        "1053",
+        "reboot the machine"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common error codes: 5 (access denied — wrong account or permissions), 1053 (the service did not respond in time — often a hung start), 1067 (the process terminated unexpectedly — read the service's own log).”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is an executable registered with the Service Control Manager (SCM) so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes.”",
+      "options": [
+        "Automatic",
+        "Windows service",
+        "startup type"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A Windows service is an executable registered with the Service Control Manager (SCM) so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes. Services are why your database is available at 4 AM with nobody at a keyboard.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two independent properties describe a service: its current _____ and its configured startup type.”",
+      "options": [
+        "state",
+        "Automatic",
+        "Automatic (Delayed Start)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two independent properties describe a service: its current state and its configured startup type. Confusing them is a classic debugging error — a service set to Automatic can still be Stopped right now.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A service's _____ are services that must be running before it can start.”",
+      "options": [
+        "Automatic",
+        "Automatic (Delayed Start)",
+        "dependencies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A service's dependencies are services that must be running before it can start. The Engine typically depends on RPCSS and HTTP; SQL Agent depends on the Engine. If a dependency is stopped or stuck, your service will not start and the SCM logs a clear event.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing services safely”?",
+      "options": [
+        "SQL Server Browser on some builds",
+        "PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed.",
+        "Reduces boot contention on busy servers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed. The rules for production are simple:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting a service that will not start”?",
+      "options": [
+        "Work in this order — it is the same order the OS uses:",
+        "SQL Server Browser on some builds",
+        "Attack-surface reduction — never for the Engine"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work in this order — it is the same order the OS uses:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every service runs as _____ account, and that account decides what the service can touch.”",
+      "options": [
+        "Disabled",
+        "dependencies",
+        "some"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Every service runs as some account, and that account decides what the service can touch. The Engine's account needs rights on the data and log folders, the ability to log on as a service, and — for instant file initialization — the perform-volume-maintenance privilege. SQL Server Configuration Manager grants these for you; Services.msc does not, which is why account changes belong there and not in the generic console.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a service is”?",
+      "options": [
+        "PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed.",
+        "msc ), a short service name (what scripts and sc use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first.",
+        "sc qc shows the binary path, start type, account, and dependency list — the four facts you need before touching any service."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each service has a display name (what humans see in services.msc ), a short service name (what scripts and sc use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first. The SCM owns all of this configuration in the registry and enforces it at every boot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “States and startup types”?",
+      "options": [
+        "States are Running, Stopped, Paused (the SCM still tracks it, but requests queue), and StartPending / StopPending transitional states you see while a service is coming up or…",
+        "ch03-16",
+        "Default for a default instance — least privilege, no password to manage"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “States are Running, Stopped, Paused (the SCM still tracks it, but requests queue), and StartPending / StopPending transitional states you see while a service is coming up or shutting down — SQL Server can sit in StopPending for minutes while it rolls back transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine.”",
+      "options": [
+        "reboot the machine",
+        "Never stop the Engine to \"try something\"",
+        "Recovery options"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Recovery options define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine. On a database server the sensible default is restart the service with a reset period, never reboot the machine — a reboot turns one service failure into a full outage with failover and recovery time attached.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Common error codes: 5 (access denied — wrong account or permissions), _____ (the service did not respond in time — often a hung start), 1067 (the process terminated unexpectedly — read the service's own log).”",
+      "options": [
+        "Never stop the Engine to \"try something\"",
+        "1053",
+        "reboot the machine"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common error codes: 5 (access denied — wrong account or permissions), 1053 (the service did not respond in time — often a hung start), 1067 (the process terminated unexpectedly — read the service's own log).”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is an executable registered with the Service Control Manager (SCM) so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes.”",
+      "options": [
+        "Automatic",
+        "Windows service",
+        "startup type"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “A Windows service is an executable registered with the Service Control Manager (SCM) so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes. Services are why your database is available at 4 AM with nobody at a keyboard.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Two independent properties describe a service: its current _____ and its configured startup type.”",
+      "options": [
+        "state",
+        "Automatic",
+        "Automatic (Delayed Start)"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Two independent properties describe a service: its current state and its configured startup type. Confusing them is a classic debugging error — a service set to Automatic can still be Stopped right now.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A service's _____ are services that must be running before it can start.”",
+      "options": [
+        "Automatic",
+        "Automatic (Delayed Start)",
+        "dependencies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A service's dependencies are services that must be running before it can start. The Engine typically depends on RPCSS and HTTP; SQL Agent depends on the Engine. If a dependency is stopped or stuck, your service will not start and the SCM logs a clear event.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Managing services safely”?",
+      "options": [
+        "SQL Server Browser on some builds",
+        "PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed.",
+        "Reduces boot contention on busy servers"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed. The rules for production are simple:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Troubleshooting a service that will not start”?",
+      "options": [
+        "Work in this order — it is the same order the OS uses:",
+        "SQL Server Browser on some builds",
+        "Attack-surface reduction — never for the Engine"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Work in this order — it is the same order the OS uses:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Every service runs as _____ account, and that account decides what the service can touch.”",
+      "options": [
+        "Disabled",
+        "dependencies",
+        "some"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Every service runs as some account, and that account decides what the service can touch. The Engine's account needs rights on the data and log folders, the ability to log on as a service, and — for instant file initialization — the perform-volume-maintenance privilege. SQL Server Configuration Manager grants these for you; Services.msc does not, which is why account changes belong there and not in the generic console.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a service is”?",
+      "options": [
+        "PowerShell is the safe interface: it validates input, works remotely through Invoke-Command, and can be scripted and reviewed.",
+        "msc ), a short service name (what scripts and sc use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first.",
+        "sc qc shows the binary path, start type, account, and dependency list — the four facts you need before touching any service."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Each service has a display name (what humans see in services.msc ), a short service name (what scripts and sc use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first. The SCM owns all of this configuration in the registry and enforces it at every boot.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “States and startup types”?",
+      "options": [
+        "States are Running, Stopped, Paused (the SCM still tracks it, but requests queue), and StartPending / StopPending transitional states you see while a service is coming up or…",
+        "ch03-16",
+        "Default for a default instance — least privilege, no password to manage"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “States are Running, Stopped, Paused (the SCM still tracks it, but requests queue), and StartPending / StopPending transitional states you see while a service is coming up or shutting down — SQL Server can sit in StopPending for minutes while it rolls back transactions.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine.”",
+      "options": [
+        "reboot the machine",
+        "Never stop the Engine to \"try something\"",
+        "Recovery options"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Recovery options define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine. On a database server the sensible default is restart the service with a reset period, never reboot the machine — a reboot turns one service failure into a full outage with failover and recovery time attached.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Common error codes: 5 (access denied — wrong account or permissions), _____ (the service did not respond in time — often a hung start), 1067 (the process terminated unexpectedly — read the service's own log).”",
+      "options": [
+        "Never stop the Engine to \"try something\"",
+        "1053",
+        "reboot the machine"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Common error codes: 5 (access denied — wrong account or permissions), 1053 (the service did not respond in time — often a hung start), 1067 (the process terminated unexpectedly — read the service's own log).”"
+    }
+  ],
   takeaways: [
     "Services run without a logged-in user; the Service Control Manager owns their state, start type, account, and dependencies",
     "State (now) and startup type (next boot) are independent — check both before concluding anything",

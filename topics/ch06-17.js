@@ -186,6 +186,312 @@ Because the increment grows with the file, causing increasingly large and unpred
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Preferred — predictable",
+        "Why Frequent Shrinking Is Harmful",
+        "With Why Frequent Shrinking Is Harmful, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Why Frequent Shrinking Is Harmful within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Frequent Shrinking Is Harmful fits”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Avoid on large files",
+        "Only with monitoring"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Frequent Shrinking Is Harmful in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "System objects, boot information",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Frequent Shrinking Is Harmful”?",
+      "options": [
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "Theory becomes useful when you can apply it.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Why Frequent Shrinking Is Harmful. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "Why Frequent Shrinking Is Harmful"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Why Frequent Shrinking Is Harmful with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Why Frequent Shrinking Is Harmful means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Why Frequent Shrinking Is Harmful is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Frequent Shrinking Is Harmful fits”?",
+      "options": [
+        "The diagram below places Why Frequent Shrinking Is Harmful alongside the core concepts of database storage and file management.",
+        "Why Frequent Shrinking Is Harmful",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Why Frequent Shrinking Is Harmful alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Frequent Shrinking Is Harmful in practice”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The following comparison captures the distinctions that matter most when working with Why Frequent Shrinking Is Harmful:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Why Frequent Shrinking Is Harmful:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Frequent Shrinking Is Harmful”?",
+      "options": [
+        "Why Frequent Shrinking Is Harmful is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "The first example establishes the relevant state.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Preferred — predictable",
+        "Why Frequent Shrinking Is Harmful",
+        "With Why Frequent Shrinking Is Harmful, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Why Frequent Shrinking Is Harmful within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Frequent Shrinking Is Harmful fits”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Avoid on large files",
+        "Only with monitoring"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Frequent Shrinking Is Harmful in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "System objects, boot information",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Frequent Shrinking Is Harmful”?",
+      "options": [
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "Theory becomes useful when you can apply it.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Why Frequent Shrinking Is Harmful. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "Why Frequent Shrinking Is Harmful"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Why Frequent Shrinking Is Harmful with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Why Frequent Shrinking Is Harmful means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Why Frequent Shrinking Is Harmful is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Frequent Shrinking Is Harmful fits”?",
+      "options": [
+        "The diagram below places Why Frequent Shrinking Is Harmful alongside the core concepts of database storage and file management.",
+        "Why Frequent Shrinking Is Harmful",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Why Frequent Shrinking Is Harmful alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Frequent Shrinking Is Harmful in practice”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The following comparison captures the distinctions that matter most when working with Why Frequent Shrinking Is Harmful:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Why Frequent Shrinking Is Harmful:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Frequent Shrinking Is Harmful”?",
+      "options": [
+        "Why Frequent Shrinking Is Harmful is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "The first example establishes the relevant state.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "Preferred — predictable",
+        "Why Frequent Shrinking Is Harmful",
+        "With Why Frequent Shrinking Is Harmful, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Why Frequent Shrinking Is Harmful within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Frequent Shrinking Is Harmful fits”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Avoid on large files",
+        "Only with monitoring"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Frequent Shrinking Is Harmful in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "System objects, boot information",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Frequent Shrinking Is Harmful”?",
+      "options": [
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "Theory becomes useful when you can apply it.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Why Frequent Shrinking Is Harmful. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “TempDB is a shared workspace for sorts, hash joins, temporary objects and version store. It is recreated at startup, so it cannot be backed up, and it is a frequent source of contention when misconfigured.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Why Frequent Shrinking Is Harmful.",
+        "Why Frequent Shrinking Is Harmful"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Why Frequent Shrinking Is Harmful with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Why Frequent Shrinking Is Harmful means”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Why Frequent Shrinking Is Harmful is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Why Frequent Shrinking Is Harmful fits”?",
+      "options": [
+        "The diagram below places Why Frequent Shrinking Is Harmful alongside the core concepts of database storage and file management.",
+        "Why Frequent Shrinking Is Harmful",
+        "A database has logical files (data and log) mapped to physical files on disk."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Why Frequent Shrinking Is Harmful alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why Frequent Shrinking Is Harmful in practice”?",
+      "options": [
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "The following comparison captures the distinctions that matter most when working with Why Frequent Shrinking Is Harmful:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Why Frequent Shrinking Is Harmful:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Why Frequent Shrinking Is Harmful”?",
+      "options": [
+        "Why Frequent Shrinking Is Harmful is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance…",
+        "The first example establishes the relevant state.",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Why Frequent Shrinking Is Harmful is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

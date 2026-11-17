@@ -182,6 +182,312 @@ Passing a hashtable of parameters to a cmdlet with @params instead of a long pos
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Status Reports",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Status Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Status Reports fits”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Next, verify the result and capture a baseline.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Status Reports in practice”?",
+      "options": [
+        "Daily",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Status Reports”?",
+      "options": [
+        "Daily",
+        "Theory becomes useful when you can apply it.",
+        "With Database Status Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Status Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Database Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "With Database Status Reports, prefer measured, reversible changes.",
+        "Database Status Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Status Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Status Reports means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Database Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Status Reports fits”?",
+      "options": [
+        "The diagram below places Database Status Reports alongside the core concepts of PowerShell automation for DBAs.",
+        "Database Status Reports sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Status Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Status Reports in practice”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "The following comparison captures the distinctions that matter most when working with Database Status Reports:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Status Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Status Reports”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Status Reports",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Status Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Status Reports fits”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Next, verify the result and capture a baseline.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Status Reports in practice”?",
+      "options": [
+        "Daily",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Status Reports”?",
+      "options": [
+        "Daily",
+        "Theory becomes useful when you can apply it.",
+        "With Database Status Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Status Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Database Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "With Database Status Reports, prefer measured, reversible changes.",
+        "Database Status Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Status Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Status Reports means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Database Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Status Reports fits”?",
+      "options": [
+        "The diagram below places Database Status Reports alongside the core concepts of PowerShell automation for DBAs.",
+        "Database Status Reports sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Status Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Status Reports in practice”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "The following comparison captures the distinctions that matter most when working with Database Status Reports:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Status Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Status Reports”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Status Reports",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Database Status Reports within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Status Reports fits”?",
+      "options": [
+        "Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions.",
+        "Next, verify the result and capture a baseline.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Automation should be idempotent and safe: check the current state, make the change only if needed, log what happened and fail loudly on unexpected conditions. Never use a script in production that you have not tested against a non-production instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Status Reports in practice”?",
+      "options": [
+        "Daily",
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Status Reports”?",
+      "options": [
+        "Daily",
+        "Theory becomes useful when you can apply it.",
+        "With Database Status Reports, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Status Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Database Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications. It is an essential force multiplier in an enterprise estate.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "With Database Status Reports, prefer measured, reversible changes.",
+        "Database Status Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Database Status Reports with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Status Reports means”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "Database Status Reports sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Status Reports fits”?",
+      "options": [
+        "The diagram below places Database Status Reports alongside the core concepts of PowerShell automation for DBAs.",
+        "Database Status Reports sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Database Status Reports alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Status Reports in practice”?",
+      "options": [
+        "Get-Service",
+        "Where-Object",
+        "The following comparison captures the distinctions that matter most when working with Database Status Reports:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Status Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Status Reports”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Status Reports is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

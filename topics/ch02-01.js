@@ -176,6 +176,312 @@ WHERE  email = N'orders@northwind.example';</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently.”",
+      "options": [
+        "Structure",
+        "Shared access",
+        "database"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A database is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently. The word itself — data base — is accurate: a base in which data is kept in a defined structure rather than scattered across files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why not just use files or spreadsheets?”?",
+      "options": [
+        "logical",
+        "Small teams often start with CSV files or a shared workbook.",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Small teams often start with CSV files or a shared workbook. It works — until two people edit it at once, or someone sorts one column and breaks every row's association, or the file corrupts on a Friday evening. Databases solve each of these problems systematically:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When someone says “the database”, they usually mean both the _____ objects (tables, indexes, procedures) and the physical files that hold them.”",
+      "options": [
+        "logical",
+        "Shared access",
+        "Managed lifecycle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When someone says “the database”, they usually mean both the logical objects (tables, indexes, procedures) and the physical files that hold them. SQL Server separates the two: applications talk to the engine, and the engine decides how the bytes are laid out on disk.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What lives inside the database”?",
+      "options": [
+        "drift",
+        "Transactions isolate users; writes never corrupt each other",
+        "Tables are the headline act, but a production database carries a whole catalog of objects."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Tables are the headline act, but a production database carries a whole catalog of objects. Knowing the inventory matters: each object type has its own backup, permission, and performance implications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a production DBA cares about”?",
+      "options": [
+        "Types, keys, and constraints reject invalid data",
+        "For a DBA, “what is a database” is an operational question, not just a definition.",
+        "Transactions isolate users; writes never corrupt each other"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For a DBA, “what is a database” is an operational question, not just a definition. Every database in the estate carries these attributes, whether anyone tracks them or not:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining a database”?",
+      "options": [
+        "Three properties make something a database rather than a pile of files:",
+        "Logins, roles, row/column-level grants, auditing",
+        "Backups, transaction log, point-in-time restore"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three properties make something a database rather than a pile of files:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The hidden cost of spreadsheets is _____: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting.”",
+      "options": [
+        "physical",
+        "primary data file",
+        "drift"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The hidden cost of spreadsheets is drift: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting. A database makes one copy authoritative by design.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Physically, a SQL Server database is made of at least two files: a _____ (.mdf) holding tables and indexes, and a transaction log file (.ldf) holding an ordered journal of every change. Additional data files…”",
+      "options": [
+        "transaction log file",
+        "primary data file",
+        "physical"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Physically, a SQL Server database is made of at least two files: a primary data file (.mdf) holding tables and indexes, and a transaction log file (.ldf) holding an ordered journal of every change. Additional data files (.ndf) can spread storage across drives. The log is not a duplicate of the data — it is the record that makes recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What lives inside the database”?",
+      "options": [
+        "A minimal but real example — one table, a key, a constraint, and the queries around it:",
+        "Logins, roles, row/column-level grants, auditing",
+        "Backups, transaction log, point-in-time restore"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A minimal but real example — one table, a key, a constraint, and the queries around it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ leaving files on the system drive with autogrowth enabled by default; treating the log as “just another file” until it fills the disk;…”",
+      "options": [
+        "transaction log file",
+        "Tables",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Common pitfalls: leaving files on the system drive with autogrowth enabled by default; treating the log as “just another file” until it fills the disk; naming databases after a project and never documenting their owner; and — the most expensive one — assuming that because the database is up, it is recoverable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently.”",
+      "options": [
+        "Structure",
+        "Shared access",
+        "database"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A database is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently. The word itself — data base — is accurate: a base in which data is kept in a defined structure rather than scattered across files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why not just use files or spreadsheets?”?",
+      "options": [
+        "logical",
+        "Small teams often start with CSV files or a shared workbook.",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Small teams often start with CSV files or a shared workbook. It works — until two people edit it at once, or someone sorts one column and breaks every row's association, or the file corrupts on a Friday evening. Databases solve each of these problems systematically:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When someone says “the database”, they usually mean both the _____ objects (tables, indexes, procedures) and the physical files that hold them.”",
+      "options": [
+        "logical",
+        "Shared access",
+        "Managed lifecycle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When someone says “the database”, they usually mean both the logical objects (tables, indexes, procedures) and the physical files that hold them. SQL Server separates the two: applications talk to the engine, and the engine decides how the bytes are laid out on disk.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What lives inside the database”?",
+      "options": [
+        "drift",
+        "Transactions isolate users; writes never corrupt each other",
+        "Tables are the headline act, but a production database carries a whole catalog of objects."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Tables are the headline act, but a production database carries a whole catalog of objects. Knowing the inventory matters: each object type has its own backup, permission, and performance implications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a production DBA cares about”?",
+      "options": [
+        "Types, keys, and constraints reject invalid data",
+        "For a DBA, “what is a database” is an operational question, not just a definition.",
+        "Transactions isolate users; writes never corrupt each other"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For a DBA, “what is a database” is an operational question, not just a definition. Every database in the estate carries these attributes, whether anyone tracks them or not:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining a database”?",
+      "options": [
+        "Three properties make something a database rather than a pile of files:",
+        "Logins, roles, row/column-level grants, auditing",
+        "Backups, transaction log, point-in-time restore"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three properties make something a database rather than a pile of files:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The hidden cost of spreadsheets is _____: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting.”",
+      "options": [
+        "physical",
+        "primary data file",
+        "drift"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The hidden cost of spreadsheets is drift: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting. A database makes one copy authoritative by design.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Physically, a SQL Server database is made of at least two files: a _____ (.mdf) holding tables and indexes, and a transaction log file (.ldf) holding an ordered journal of every change. Additional data files…”",
+      "options": [
+        "transaction log file",
+        "primary data file",
+        "physical"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Physically, a SQL Server database is made of at least two files: a primary data file (.mdf) holding tables and indexes, and a transaction log file (.ldf) holding an ordered journal of every change. Additional data files (.ndf) can spread storage across drives. The log is not a duplicate of the data — it is the record that makes recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What lives inside the database”?",
+      "options": [
+        "A minimal but real example — one table, a key, a constraint, and the queries around it:",
+        "Logins, roles, row/column-level grants, auditing",
+        "Backups, transaction log, point-in-time restore"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A minimal but real example — one table, a key, a constraint, and the queries around it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ leaving files on the system drive with autogrowth enabled by default; treating the log as “just another file” until it fills the disk;…”",
+      "options": [
+        "transaction log file",
+        "Tables",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Common pitfalls: leaving files on the system drive with autogrowth enabled by default; treating the log as “just another file” until it fills the disk; naming databases after a project and never documenting their owner; and — the most expensive one — assuming that because the database is up, it is recoverable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently.”",
+      "options": [
+        "Structure",
+        "Shared access",
+        "database"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A database is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently. The word itself — data base — is accurate: a base in which data is kept in a defined structure rather than scattered across files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Why not just use files or spreadsheets?”?",
+      "options": [
+        "logical",
+        "Small teams often start with CSV files or a shared workbook.",
+        "not"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Small teams often start with CSV files or a shared workbook. It works — until two people edit it at once, or someone sorts one column and breaks every row's association, or the file corrupts on a Friday evening. Databases solve each of these problems systematically:”"
+    },
+    {
+      "question": "Complete the lesson statement: “When someone says “the database”, they usually mean both the _____ objects (tables, indexes, procedures) and the physical files that hold them.”",
+      "options": [
+        "logical",
+        "Shared access",
+        "Managed lifecycle"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “When someone says “the database”, they usually mean both the logical objects (tables, indexes, procedures) and the physical files that hold them. SQL Server separates the two: applications talk to the engine, and the engine decides how the bytes are laid out on disk.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What lives inside the database”?",
+      "options": [
+        "drift",
+        "Transactions isolate users; writes never corrupt each other",
+        "Tables are the headline act, but a production database carries a whole catalog of objects."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Tables are the headline act, but a production database carries a whole catalog of objects. Knowing the inventory matters: each object type has its own backup, permission, and performance implications.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a production DBA cares about”?",
+      "options": [
+        "Types, keys, and constraints reject invalid data",
+        "For a DBA, “what is a database” is an operational question, not just a definition.",
+        "Transactions isolate users; writes never corrupt each other"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For a DBA, “what is a database” is an operational question, not just a definition. Every database in the estate carries these attributes, whether anyone tracks them or not:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Defining a database”?",
+      "options": [
+        "Three properties make something a database rather than a pile of files:",
+        "Logins, roles, row/column-level grants, auditing",
+        "Backups, transaction log, point-in-time restore"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three properties make something a database rather than a pile of files:”"
+    },
+    {
+      "question": "Complete the lesson statement: “The hidden cost of spreadsheets is _____: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting.”",
+      "options": [
+        "physical",
+        "primary data file",
+        "drift"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The hidden cost of spreadsheets is drift: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting. A database makes one copy authoritative by design.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Physically, a SQL Server database is made of at least two files: a _____ (.mdf) holding tables and indexes, and a transaction log file (.ldf) holding an ordered journal of every change. Additional data files…”",
+      "options": [
+        "transaction log file",
+        "primary data file",
+        "physical"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Physically, a SQL Server database is made of at least two files: a primary data file (.mdf) holding tables and indexes, and a transaction log file (.ldf) holding an ordered journal of every change. Additional data files (.ndf) can spread storage across drives. The log is not a duplicate of the data — it is the record that makes recovery possible.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What lives inside the database”?",
+      "options": [
+        "A minimal but real example — one table, a key, a constraint, and the queries around it:",
+        "Logins, roles, row/column-level grants, auditing",
+        "Backups, transaction log, point-in-time restore"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A minimal but real example — one table, a key, a constraint, and the queries around it:”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ leaving files on the system drive with autogrowth enabled by default; treating the log as “just another file” until it fills the disk;…”",
+      "options": [
+        "transaction log file",
+        "Tables",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Common pitfalls: leaving files on the system drive with autogrowth enabled by default; treating the log as “just another file” until it fills the disk; naming databases after a project and never documenting their owner; and — the most expensive one — assuming that because the database is up, it is recoverable.”"
+    }
+  ],
   takeaways: [
     "A database is structured, shared, managed data — distinct from the application that uses it",
     "The DBMS (database engine) sits between clients and the physical files, enforcing rules and recovery",

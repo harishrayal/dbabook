@@ -160,6 +160,312 @@ Query sys.dm_exec_requests for sessions with a blocking_session_id, then find th
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "What Is a Deadlock?",
+        "Default",
+        "Held read locks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine What Is a Deadlock? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Deadlock? fits”?",
+      "options": [
+        "Row versioning",
+        "The diagram below places What Is a Deadlock?",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Deadlock? in practice”?",
+      "options": [
+        "What Is a Deadlock?",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Deadlock?”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "What Is a Deadlock?",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is a Deadlock?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is a Deadlock? means”?",
+      "options": [
+        ":",
+        "Blocking occurs when one session holds a lock another needs.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Deadlock? fits”?",
+      "options": [
+        "The diagram below places What Is a Deadlock?",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        ":"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places What Is a Deadlock? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Deadlock? in practice”?",
+      "options": [
+        "The diagram below places What Is a Deadlock?",
+        "Theory becomes useful when you can apply it.",
+        ":"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is a Deadlock?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Deadlock?”?",
+      "options": [
+        ":",
+        "The first example establishes the relevant state.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "What Is a Deadlock?",
+        "Default",
+        "Held read locks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine What Is a Deadlock? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Deadlock? fits”?",
+      "options": [
+        "Row versioning",
+        "The diagram below places What Is a Deadlock?",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Deadlock? in practice”?",
+      "options": [
+        "What Is a Deadlock?",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Deadlock?”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "What Is a Deadlock?",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is a Deadlock?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is a Deadlock? means”?",
+      "options": [
+        ":",
+        "Blocking occurs when one session holds a lock another needs.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Deadlock? fits”?",
+      "options": [
+        "The diagram below places What Is a Deadlock?",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        ":"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places What Is a Deadlock? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Deadlock? in practice”?",
+      "options": [
+        "The diagram below places What Is a Deadlock?",
+        "Theory becomes useful when you can apply it.",
+        ":"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is a Deadlock?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Deadlock?”?",
+      "options": [
+        ":",
+        "The first example establishes the relevant state.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____”",
+      "options": [
+        "What Is a Deadlock?",
+        "Default",
+        "Held read locks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine What Is a Deadlock? within blocking and deadlocks. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Deadlock? fits”?",
+      "options": [
+        "Row versioning",
+        "The diagram below places What Is a Deadlock?",
+        "Isolation levels define how transactions are protected from one another."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Isolation levels define how transactions are protected from one another. READ COMMITTED is the default; READ UNCOMMITTED allows dirty reads; REPEATABLE READ and SERIALIZABLE increase protection and blocking; SNAPSHOT and READ COMMITTED SNAPSHOT use row versioning to reduce reader-writer blocking.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Deadlock? in practice”?",
+      "options": [
+        "What Is a Deadlock?",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        "Compatible with S"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs. SQL Server detects the cycle, chooses a victim and rolls it back with error 1205 so the other can proceed.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Deadlock?”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "What Is a Deadlock?",
+        "Blocking occurs when one session holds a lock another needs."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to What Is a Deadlock?. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Blocking occurs when one session holds a lock another needs.",
+        "Lock escalation converts many fine-grained row or page locks into a single table lock to save memory, which can suddenly block many more sessions.",
+        "Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Investigation should be evidence-led: capture the head blocker, the wait resource, the statement and the plan, then fix the root cause — often a missing index or a transaction left open by application code.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What What Is a Deadlock? means”?",
+      "options": [
+        ":",
+        "Blocking occurs when one session holds a lock another needs.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Blocking occurs when one session holds a lock another needs. A short block is normal; a long block is an incident. The session at the root — the head blocker — is the one to investigate, not the dozens of sessions queued behind it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where What Is a Deadlock? fits”?",
+      "options": [
+        "The diagram below places What Is a Deadlock?",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs.",
+        ":"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places What Is a Deadlock? alongside the core concepts of blocking and deadlocks. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Is a Deadlock? in practice”?",
+      "options": [
+        "The diagram below places What Is a Deadlock?",
+        "Theory becomes useful when you can apply it.",
+        ":"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with What Is a Deadlock?:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with What Is a Deadlock?”?",
+      "options": [
+        ":",
+        "The first example establishes the relevant state.",
+        "A deadlock is a cycle: session A holds a resource B needs while B holds a resource A needs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Locking protects data consistency when multiple sessions work concurrently.",
+        ":",
+        "Deadlock graphs from Extended Events show the processes, resources and lock modes involved."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Locking protects data consistency when multiple sessions work concurrently. Shared locks protect reads, exclusive locks protect writes, update and intent locks coordinate the transition and hierarchy. Locks are normal; problems arise when they are held too long or in conflicting order.”"
+    }
+  ],
   takeaways: [
     "What Is a Deadlock? is a fundamental concept in blocking and deadlocks",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

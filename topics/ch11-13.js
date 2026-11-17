@@ -165,6 +165,312 @@ Extended Events is far lighter weight, highly filterable and designed for produc
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Failed Login Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failed Login Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failed Login Monitoring fits”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failed Login Monitoring in practice”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Any overnight failure",
+        "The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failed Login Monitoring”?",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failed Login Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Falling rapidly",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "With Failed Login Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failed Login Monitoring means”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Failed Login Monitoring",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failed Login Monitoring fits”?",
+      "options": [
+        "Any overnight failure",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The diagram below places Failed Login Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failed Login Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failed Login Monitoring in practice”?",
+      "options": [
+        "Failed Login Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failed Login Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failed Login Monitoring",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Failed Login Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failed Login Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failed Login Monitoring fits”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failed Login Monitoring in practice”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Any overnight failure",
+        "The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failed Login Monitoring”?",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failed Login Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Falling rapidly",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "With Failed Login Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failed Login Monitoring means”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Failed Login Monitoring",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failed Login Monitoring fits”?",
+      "options": [
+        "Any overnight failure",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The diagram below places Failed Login Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failed Login Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failed Login Monitoring in practice”?",
+      "options": [
+        "Failed Login Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failed Login Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failed Login Monitoring",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs.",
+        "Failed Login Monitoring"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Failed Login Monitoring within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failed Login Monitoring fits”?",
+      "options": [
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold. Database Mail, Agent alerts and external monitoring systems deliver that signal.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failed Login Monitoring in practice”?",
+      "options": [
+        "Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.",
+        "Any overnight failure",
+        "The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Good monitoring is intentional: choose metrics tied to failure modes, set thresholds from a baseline, avoid alert storms, and keep a daily report that a human actually reads.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failed Login Monitoring”?",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Failed Login Monitoring. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Falling rapidly",
+        "Dynamic management views and functions expose the engine's internal state.",
+        "With Failed Login Monitoring, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Failed Login Monitoring means”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Failed Login Monitoring",
+        "Extended Events is the modern lightweight diagnostics framework."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Failed Login Monitoring fits”?",
+      "options": [
+        "Any overnight failure",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "The diagram below places Failed Login Monitoring alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Failed Login Monitoring alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Failed Login Monitoring in practice”?",
+      "options": [
+        "Failed Login Monitoring",
+        "The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:",
+        "Prevents disk full"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Failed Login Monitoring:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Failed Login Monitoring”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Failed Login Monitoring",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Wait statistics are the most efficient way to find the dominant bottleneck. SQL Server records what each session waited on; aggregating waits points to I/O, CPU, locking or logging as the constraint instead of guessing.”"
+    }
+  ],
   takeaways: [
     "Failed Login Monitoring is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

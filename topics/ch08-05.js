@@ -179,6 +179,312 @@ NORECOVERY keeps the database in a restoring state so more backups can be applie
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:",
+        "Restoring Differential Backups",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Restoring Differential Backups within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Differential Backups fits”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "More backups to apply"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Differential Backups in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Differential Backups”?",
+      "options": [
+        "More backups to apply",
+        "Theory becomes useful when you can apply it.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring Differential Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "More backups to apply",
+        "End of the sequence"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it.",
+        "Restoring Differential Backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Restoring Differential Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring Differential Backups means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Differential Backups fits”?",
+      "options": [
+        "The diagram below places Restoring Differential Backups alongside the core concepts of restore and disaster recovery.",
+        "Next, verify the result and capture a baseline.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Restoring Differential Backups alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Differential Backups in practice”?",
+      "options": [
+        "Lowest",
+        "Medium",
+        "The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Differential Backups”?",
+      "options": [
+        "Lowest",
+        "The first example establishes the relevant state.",
+        "With Restoring Differential Backups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:",
+        "Restoring Differential Backups",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Restoring Differential Backups within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Differential Backups fits”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "More backups to apply"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Differential Backups in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Differential Backups”?",
+      "options": [
+        "More backups to apply",
+        "Theory becomes useful when you can apply it.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring Differential Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "More backups to apply",
+        "End of the sequence"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it.",
+        "Restoring Differential Backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Restoring Differential Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring Differential Backups means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Differential Backups fits”?",
+      "options": [
+        "The diagram below places Restoring Differential Backups alongside the core concepts of restore and disaster recovery.",
+        "Next, verify the result and capture a baseline.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Restoring Differential Backups alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Differential Backups in practice”?",
+      "options": [
+        "Lowest",
+        "Medium",
+        "The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Differential Backups”?",
+      "options": [
+        "Lowest",
+        "The first example establishes the relevant state.",
+        "With Restoring Differential Backups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within restore and disaster recovery.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:",
+        "Restoring Differential Backups",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Restoring Differential Backups within restore and disaster recovery. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Differential Backups fits”?",
+      "options": [
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment.",
+        "More backups to apply"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Differential Backups in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Disaster recovery planning extends beyond restore mechanics: cold, warm and hot standby options trade cost against RTO, and regular DR tests are the only proof the plan works.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Differential Backups”?",
+      "options": [
+        "More backups to apply",
+        "Theory becomes useful when you can apply it.",
+        "Restoration reverses backup: a full backup establishes the base, a differential reduces the log replay needed, and log backups bring the database forward to the desired moment."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Restoring Differential Backups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "More backups to apply",
+        "End of the sequence"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change. It requires a full backup, the relevant differentials and an unbroken log chain covering that time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Log shipping with reads",
+        "Theory becomes useful when you can apply it.",
+        "Restoring Differential Backups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Restoring Differential Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Restoring Differential Backups means”?",
+      "options": [
+        "Point-in-time recovery uses STOPAT in RESTORE LOG to stop at a precise moment just before an accidental change.",
+        "Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring to a different server or database name requires WITH MOVE to redirect logical file names to new physical paths. Logical names come from RESTORE FILELISTONLY; ignoring MOVE overwrites or fails against existing paths.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Restoring Differential Backups fits”?",
+      "options": [
+        "The diagram below places Restoring Differential Backups alongside the core concepts of restore and disaster recovery.",
+        "Next, verify the result and capture a baseline.",
+        "NORECOVERY leaves the database restoring so further backups can be applied."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Restoring Differential Backups alongside the core concepts of restore and disaster recovery. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Restoring Differential Backups in practice”?",
+      "options": [
+        "Lowest",
+        "Medium",
+        "The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Restoring Differential Backups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Restoring Differential Backups”?",
+      "options": [
+        "Lowest",
+        "The first example establishes the relevant state.",
+        "With Restoring Differential Backups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Restoring Differential Backups is a fundamental concept in restore and disaster recovery",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

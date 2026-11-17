@@ -186,6 +186,312 @@ Because configuration drifts, paths change and jobs fail silently; only a timed 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "DR Failback Planning sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "DR Failback Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DR Failback Planning within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Failback Planning fits”?",
+      "options": [
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Use the following as a starting point when investigating DR Failback Planning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Failback Planning in practice”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Minutes",
+        "DR Failback Planning"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Failback Planning”?",
+      "options": [
+        "DR Failback Planning",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DR Failback Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Replication moves data via publication and subscription.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "DR Failback Planning",
+        "DR Failback Planning is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates DR Failback Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DR Failback Planning means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Failback Planning fits”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Failback Planning in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DR Failback Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Failback Planning”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "DR Failback Planning sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "DR Failback Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DR Failback Planning within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Failback Planning fits”?",
+      "options": [
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Use the following as a starting point when investigating DR Failback Planning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Failback Planning in practice”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Minutes",
+        "DR Failback Planning"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Failback Planning”?",
+      "options": [
+        "DR Failback Planning",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DR Failback Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Replication moves data via publication and subscription.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "DR Failback Planning",
+        "DR Failback Planning is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates DR Failback Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DR Failback Planning means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Failback Planning fits”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Failback Planning in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DR Failback Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Failback Planning”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within disaster recovery technologies.”",
+      "options": [
+        "DR Failback Planning sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "DR Failback Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine DR Failback Planning within disaster recovery technologies. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Failback Planning fits”?",
+      "options": [
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…",
+        "Use the following as a starting point when investigating DR Failback Planning."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test, are what make DR real.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Failback Planning in practice”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "Minutes",
+        "DR Failback Planning"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disaster recovery protects against site or region loss. The choice of technology is driven by RPO/RTO and budget: backup-and-restore is cheapest with the slowest RTO, while distributed availability groups or geo-replication give near-real-time protection at higher cost and complexity.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Failback Planning”?",
+      "options": [
+        "DR Failback Planning",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to DR Failback Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A DR runbook documents the exact steps, contacts, decisions and validation for a disaster.",
+        "Replication moves data via publication and subscription.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Replication moves data via publication and subscription. Snapshot replication copies a point-in-time copy; transactional replication streams changes; merge replication reconciles changes from multiple sites. Each has distinct conflict and latency characteristics.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "DR Failback Planning",
+        "DR Failback Planning is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Failback planning and regular DR tests complete the picture: failing over is only half the story — returning to the primary site safely, and proving the whole process in a test,…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates DR Failback Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What DR Failback Planning means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "Log shipping backs up the transaction log on a primary, copies it to one or more secondaries and restores it there on a schedule.",
+        "Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Always On Availability Groups can extend DR across regions with asynchronous replicas in a remote site, giving a warm standby with modern tooling, at the cost of network and licensing considerations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where DR Failback Planning fits”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Disaster recovery protects against site or region loss."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “DR Failback Planning in practice”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The diagram below places DR Failback Planning alongside the core concepts of disaster recovery technologies.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with DR Failback Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with DR Failback Planning”?",
+      "options": [
+        "Disaster recovery protects against site or region loss.",
+        "The following comparison captures the distinctions that matter most when working with DR Failback Planning:",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "DR Failback Planning is a fundamental concept in disaster recovery technologies",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

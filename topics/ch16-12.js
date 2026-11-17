@@ -185,6 +185,312 @@ Because only synchronous commit guarantees the secondary has hardened the same t
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Synchronous Commit",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Synchronous Commit within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Synchronous Commit fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Synchronous Commit in practice”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Failover can be automatic, manual or forced.",
+        "Lower"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Synchronous Commit”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Synchronous Commit. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Higher (wait for secondary)",
+        "Synchronous Commit",
+        "With Synchronous Commit, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Synchronous Commit with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Synchronous Commit means”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Synchronous Commit fits”?",
+      "options": [
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places Synchronous Commit alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Synchronous Commit alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Synchronous Commit in practice”?",
+      "options": [
+        "Automatic with sync commit",
+        "The following comparison captures the distinctions that matter most when working with Synchronous Commit:",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Synchronous Commit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Synchronous Commit”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Synchronous Commit",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Synchronous Commit within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Synchronous Commit fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Synchronous Commit in practice”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Failover can be automatic, manual or forced.",
+        "Lower"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Synchronous Commit”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Synchronous Commit. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Higher (wait for secondary)",
+        "Synchronous Commit",
+        "With Synchronous Commit, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Synchronous Commit with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Synchronous Commit means”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Synchronous Commit fits”?",
+      "options": [
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places Synchronous Commit alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Synchronous Commit alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Synchronous Commit in practice”?",
+      "options": [
+        "Automatic with sync commit",
+        "The following comparison captures the distinctions that matter most when working with Synchronous Commit:",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Synchronous Commit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Synchronous Commit”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Synchronous Commit",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Synchronous Commit within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Synchronous Commit fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Synchronous Commit in practice”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Failover can be automatic, manual or forced.",
+        "Lower"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Synchronous Commit”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Higher (wait for secondary)",
+        "Lower"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Synchronous Commit. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Higher (wait for secondary)",
+        "Synchronous Commit",
+        "With Synchronous Commit, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Synchronous Commit with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Synchronous Commit means”?",
+      "options": [
+        "Always On Availability Groups protect databases rather than the whole instance.",
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Always On Availability Groups protect databases rather than the whole instance. A primary replica sends log records to secondary replicas; readable secondaries can offload read workloads, and a listener provides a single connection point that follows the primary.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Synchronous Commit fits”?",
+      "options": [
+        "Synchronous Commit sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The diagram below places Synchronous Commit alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Synchronous Commit alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Synchronous Commit in practice”?",
+      "options": [
+        "Automatic with sync commit",
+        "The following comparison captures the distinctions that matter most when working with Synchronous Commit:",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Synchronous Commit:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Synchronous Commit”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Synchronous Commit is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

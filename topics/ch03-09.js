@@ -172,6 +172,312 @@ It limits the blast radius if the service is compromised and avoids unnecessary 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Network Fundamentals",
+        "Automatic (named instances)",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Network Fundamentals within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Network Fundamentals fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Service accounts are identities with rights."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Network Fundamentals in practice”?",
+      "options": [
+        "With Network Fundamentals, prefer measured, reversible changes.",
+        "NTFS permissions control who can read or change files.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Network Fundamentals”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "With Network Fundamentals, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Network Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Network Fundamentals",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Network Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Network Fundamentals means”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "UDP",
+        "Network Fundamentals"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Network Fundamentals fits”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "The diagram below places Network Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Network Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Network Fundamentals in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with Network Fundamentals:",
+        "Network Fundamentals sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Network Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Network Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Use the following as a starting point when investigating Network Fundamentals."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Network Fundamentals",
+        "Automatic (named instances)",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Network Fundamentals within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Network Fundamentals fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Service accounts are identities with rights."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Network Fundamentals in practice”?",
+      "options": [
+        "With Network Fundamentals, prefer measured, reversible changes.",
+        "NTFS permissions control who can read or change files.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Network Fundamentals”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "With Network Fundamentals, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Network Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Network Fundamentals",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Network Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Network Fundamentals means”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "UDP",
+        "Network Fundamentals"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Network Fundamentals fits”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "The diagram below places Network Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Network Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Network Fundamentals in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with Network Fundamentals:",
+        "Network Fundamentals sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Network Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Network Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Use the following as a starting point when investigating Network Fundamentals."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within Windows Server and infrastructure for DBAs.”",
+      "options": [
+        "Network Fundamentals",
+        "Automatic (named instances)",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Network Fundamentals within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Network Fundamentals fits”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Service accounts are identities with rights."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Network Fundamentals in practice”?",
+      "options": [
+        "With Network Fundamentals, prefer measured, reversible changes.",
+        "NTFS permissions control who can read or change files.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Network Fundamentals”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "With Network Fundamentals, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Network Fundamentals. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.",
+        "Network Fundamentals",
+        "Event Viewer and Performance Monitor are the Windows-side diagnostic tools."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Network Fundamentals with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Network Fundamentals means”?",
+      "options": [
+        "SQL Server runs on Windows, so the operating system is part of the database platform.",
+        "UDP",
+        "Network Fundamentals"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Network Fundamentals fits”?",
+      "options": [
+        "TCP",
+        "UDP",
+        "The diagram below places Network Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Network Fundamentals alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Network Fundamentals in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "The following comparison captures the distinctions that matter most when working with Network Fundamentals:",
+        "Network Fundamentals sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Network Fundamentals:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Network Fundamentals”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked.",
+        "Use the following as a starting point when investigating Network Fundamentals."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Network Fundamentals is a fundamental concept in Windows Server and infrastructure for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

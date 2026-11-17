@@ -176,6 +176,312 @@ RPO sets how often you must back up (maximum acceptable data loss) and RTO sets 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Backup Retention Policies sits inside a larger system.",
+        "Backup Retention Policies",
+        "Limited during bulk ops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup Retention Policies within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Policies fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Retention Policies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Policies in practice”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Policies”?",
+      "options": [
+        "Backup Retention Policies",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Retention Policies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Retention Policies",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Backup Retention Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backup Retention Policies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup Retention Policies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Retention Policies means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Policies:",
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Policies fits”?",
+      "options": [
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy.",
+        "Backup Retention Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Policies in practice”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy.",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Policies:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Retention Policies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Policies”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Backup Retention Policies sits inside a larger system.",
+        "Backup Retention Policies",
+        "Limited during bulk ops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup Retention Policies within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Policies fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Retention Policies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Policies in practice”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Policies”?",
+      "options": [
+        "Backup Retention Policies",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Retention Policies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Retention Policies",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Backup Retention Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backup Retention Policies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup Retention Policies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Retention Policies means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Policies:",
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Policies fits”?",
+      "options": [
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy.",
+        "Backup Retention Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Policies in practice”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy.",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Policies:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Retention Policies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Policies”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within backup and recovery strategy.”",
+      "options": [
+        "Backup Retention Policies sits inside a larger system.",
+        "Backup Retention Policies",
+        "Limited during bulk ops"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Backup Retention Policies within backup and recovery strategy. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Policies fits”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Backup Retention Policies."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest. RESTORE VERIFYONLY checks readability but does not confirm the database can actually be recovered — only a real restore does.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Policies in practice”?",
+      "options": [
+        "Base full + latest diff",
+        "Full (+diff) + log chain",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site. Modern variants add an immutable/offline copy and a zero-error objective tested by automation.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Policies”?",
+      "options": [
+        "Backup Retention Policies",
+        "Theory becomes useful when you can apply it.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Backup Retention Policies. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A full backup captures the whole database at a point in time and forms the base of a restore sequence.",
+        "Backup Retention Policies",
+        "Recovery models control log behaviour."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A full backup captures the whole database at a point in time and forms the base of a restore sequence. A differential backup captures only changes since the last full backup, so restore needs the base full plus the latest differential.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Copy-only backups are independent of the normal chain — a copy-only full does not reset the differential base and a copy-only log does not break the log chain.",
+        "Backup Retention Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Backup Retention Policies"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Backup Retention Policies with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Backup Retention Policies means”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Policies:",
+        "Recovery models control log behaviour.",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Recovery models control log behaviour. SIMPLE truncates the log automatically and cannot do log backups. FULL retains log records until backed up. BULK_LOGGED minimally logs certain bulk operations at the cost of point-in-time precision within those operations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Backup Retention Policies fits”?",
+      "options": [
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy.",
+        "Backup Retention Policies is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Backup Retention Policies in practice”?",
+      "options": [
+        "Compression reduces backup size and I/O; checksums detect corruption at backup time; encryption protects media at rest.",
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy.",
+        "The following comparison captures the distinctions that matter most when working with Backup Retention Policies:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Backup Retention Policies:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Backup Retention Policies”?",
+      "options": [
+        "Retention and off-site copies follow the 3-2-1 rule: three copies, two different media, one off-site.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Backup Retention Policies alongside the core concepts of backup and recovery strategy."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Backup Retention Policies is a fundamental concept in backup and recovery strategy",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -174,6 +174,312 @@ TO   DISK = N'E:\\Backups\\Orders\\Orders_FGArchive.bak' WITH COMPRESSION, CHECK
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Every backup type answers a different question: _____”",
+      "options": [
+        "File",
+        "how much of the database, since when, and how quickly do you need it back?",
+        "Log"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every backup type answers a different question: how much of the database, since when, and how quickly do you need it back? The types differ in what they read, what prior backup they depend on, and what they do to the transaction log.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the types combine”?",
+      "options": [
+        "A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the…",
+        "Daily, shortens the restore chain",
+        "Every 5–15 min, point-in-time recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the minutes in between.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing the backups in T-SQL”?",
+      "options": [
+        "Every 5–15 min, point-in-time recovery",
+        "Selective restore of a huge file",
+        "Each type has its own command."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each type has its own command. Note the consistent use of WITH COMPRESSION, CHECKSUM and timestamps in the file name so retention tooling can age sets out cleanly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing types by workload”?",
+      "options": [
+        "Piecemeal restore of large databases",
+        "There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:",
+        "Selective restore of a huge file"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The backup type landscape”?",
+      "options": [
+        "Three rules govern how they fit together:",
+        "Fast restores, tight RPO, moderate volume",
+        "Avoids rewriting read-only terabytes nightly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three rules govern how they fit together:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing the backups in T-SQL”?",
+      "options": [
+        "VLDBs with big read-only archives",
+        "Ad-hoc copy without disturbing the schedule",
+        "Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing types by workload”?",
+      "options": [
+        "A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the…",
+        "), and proven by restore — three habits that separate a schedule from a strategy.",
+        "Ad-hoc copy without disturbing the schedule"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Whatever the mix, the strategy must be written down, monitored (did every type run?), and proven by restore — three habits that separate a schedule from a strategy.”"
+    },
+    {
+      "question": "In the “The backup type landscape” table, what is listed for “Full” under “Typical use”?",
+      "options": [
+        "Weekly/daily anchor of the strategy",
+        "Each type has its own command.",
+        "Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Full” as “Weekly/daily anchor of the strategy”."
+    },
+    {
+      "question": "In the “Choosing types by workload” table, what is listed for “Small, low change, tolerant of data loss” under “Why”?",
+      "options": [
+        "Piecemeal restore of large databases",
+        "VLDBs with big read-only archives",
+        "Simplest chain; RPO equals the schedule"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Small, low change, tolerant of data loss” as “Simplest chain; RPO equals the schedule”."
+    },
+    {
+      "question": "In the “The backup type landscape” table, what is listed for “Differential” under “Typical use”?",
+      "options": [
+        "), and proven by restore — three habits that separate a schedule from a strategy.",
+        "Daily, shortens the restore chain",
+        "There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Differential” as “Daily, shortens the restore chain”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Every backup type answers a different question: _____”",
+      "options": [
+        "File",
+        "how much of the database, since when, and how quickly do you need it back?",
+        "Log"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every backup type answers a different question: how much of the database, since when, and how quickly do you need it back? The types differ in what they read, what prior backup they depend on, and what they do to the transaction log.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the types combine”?",
+      "options": [
+        "A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the…",
+        "Daily, shortens the restore chain",
+        "Every 5–15 min, point-in-time recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the minutes in between.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing the backups in T-SQL”?",
+      "options": [
+        "Every 5–15 min, point-in-time recovery",
+        "Selective restore of a huge file",
+        "Each type has its own command."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each type has its own command. Note the consistent use of WITH COMPRESSION, CHECKSUM and timestamps in the file name so retention tooling can age sets out cleanly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing types by workload”?",
+      "options": [
+        "Piecemeal restore of large databases",
+        "There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:",
+        "Selective restore of a huge file"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The backup type landscape”?",
+      "options": [
+        "Three rules govern how they fit together:",
+        "Fast restores, tight RPO, moderate volume",
+        "Avoids rewriting read-only terabytes nightly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three rules govern how they fit together:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing the backups in T-SQL”?",
+      "options": [
+        "VLDBs with big read-only archives",
+        "Ad-hoc copy without disturbing the schedule",
+        "Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing types by workload”?",
+      "options": [
+        "A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the…",
+        "), and proven by restore — three habits that separate a schedule from a strategy.",
+        "Ad-hoc copy without disturbing the schedule"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Whatever the mix, the strategy must be written down, monitored (did every type run?), and proven by restore — three habits that separate a schedule from a strategy.”"
+    },
+    {
+      "question": "In the “The backup type landscape” table, what is listed for “Full” under “Typical use”?",
+      "options": [
+        "Weekly/daily anchor of the strategy",
+        "Each type has its own command.",
+        "Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Full” as “Weekly/daily anchor of the strategy”."
+    },
+    {
+      "question": "In the “Choosing types by workload” table, what is listed for “Small, low change, tolerant of data loss” under “Why”?",
+      "options": [
+        "Piecemeal restore of large databases",
+        "VLDBs with big read-only archives",
+        "Simplest chain; RPO equals the schedule"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Small, low change, tolerant of data loss” as “Simplest chain; RPO equals the schedule”."
+    },
+    {
+      "question": "In the “The backup type landscape” table, what is listed for “Differential” under “Typical use”?",
+      "options": [
+        "), and proven by restore — three habits that separate a schedule from a strategy.",
+        "Daily, shortens the restore chain",
+        "There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Differential” as “Daily, shortens the restore chain”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “Every backup type answers a different question: _____”",
+      "options": [
+        "File",
+        "how much of the database, since when, and how quickly do you need it back?",
+        "Log"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Every backup type answers a different question: how much of the database, since when, and how quickly do you need it back? The types differ in what they read, what prior backup they depend on, and what they do to the transaction log.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How the types combine”?",
+      "options": [
+        "A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the…",
+        "Daily, shortens the restore chain",
+        "Every 5–15 min, point-in-time recovery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the minutes in between.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing the backups in T-SQL”?",
+      "options": [
+        "Every 5–15 min, point-in-time recovery",
+        "Selective restore of a huge file",
+        "Each type has its own command."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Each type has its own command. Note the consistent use of WITH COMPRESSION, CHECKSUM and timestamps in the file name so retention tooling can age sets out cleanly:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing types by workload”?",
+      "options": [
+        "Piecemeal restore of large databases",
+        "There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:",
+        "Selective restore of a huge file"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The backup type landscape”?",
+      "options": [
+        "Three rules govern how they fit together:",
+        "Fast restores, tight RPO, moderate volume",
+        "Avoids rewriting read-only terabytes nightly"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Three rules govern how they fit together:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Writing the backups in T-SQL”?",
+      "options": [
+        "VLDBs with big read-only archives",
+        "Ad-hoc copy without disturbing the schedule",
+        "Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Choosing types by workload”?",
+      "options": [
+        "A typical production schedule mixes the types so that restores are short and the RPO is met: a full to anchor, differentials to shorten the chain, and log backups to cover the…",
+        "), and proven by restore — three habits that separate a schedule from a strategy.",
+        "Ad-hoc copy without disturbing the schedule"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Whatever the mix, the strategy must be written down, monitored (did every type run?), and proven by restore — three habits that separate a schedule from a strategy.”"
+    },
+    {
+      "question": "In the “The backup type landscape” table, what is listed for “Full” under “Typical use”?",
+      "options": [
+        "Weekly/daily anchor of the strategy",
+        "Each type has its own command.",
+        "Restore order follows the dependencies exactly: full → (differential OR file/filegroup) → log backups in sequence → WITH RECOVERY."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Full” as “Weekly/daily anchor of the strategy”."
+    },
+    {
+      "question": "In the “Choosing types by workload” table, what is listed for “Small, low change, tolerant of data loss” under “Why”?",
+      "options": [
+        "Piecemeal restore of large databases",
+        "VLDBs with big read-only archives",
+        "Simplest chain; RPO equals the schedule"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “Small, low change, tolerant of data loss” as “Simplest chain; RPO equals the schedule”."
+    },
+    {
+      "question": "In the “The backup type landscape” table, what is listed for “Differential” under “Typical use”?",
+      "options": [
+        "), and proven by restore — three habits that separate a schedule from a strategy.",
+        "Daily, shortens the restore chain",
+        "There is no single correct combination — the strategy is derived from the database's size, change rate, and recovery objectives:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Differential” as “Daily, shortens the restore chain”."
+    }
+  ],
   takeaways: [
     "Seven backup types exist: full, differential, log, file, filegroup, partial, and copy-only",
     "Full backups anchor the chain; differentials measure against the last full; logs must be contiguous",

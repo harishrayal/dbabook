@@ -184,6 +184,312 @@ FROM   sys.database_files;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The three file types”?",
+      "options": [
+        "SQL Server recognises exactly two kinds of file — data and log — but three familiar extensions describe how they are usually named:",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server recognises exactly two kinds of file — data and log — but three familiar extensions describe how they are usually named:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The primary data file (MDF)”?",
+      "options": [
+        "At least one per database; no filegroup; any additional files are also log files",
+        "NDF files exist for practical reasons, not for tidiness:",
+        "The primary data file is special in three ways:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The primary data file is special in three ways:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary data files (NDF)”?",
+      "options": [
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed.",
+        "NDF files exist for practical reasons, not for tidiness:",
+        "The primary data file is special in three ways:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NDF files exist for practical reasons, not for tidiness:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The log file (LDF)”?",
+      "options": [
+        "The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery.",
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed.",
+        "NDF files exist for practical reasons, not for tidiness:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery. Points that matter in production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Auditing the file set”?",
+      "options": [
+        "NDF files exist for practical reasons, not for tidiness:",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "A ten-second health check for any database — type, size, growth, and where each file physically sits:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A ten-second health check for any database — type, size, growth, and where each file physically sits:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Manageability",
+        "MDF, NDF, and LDF",
+        "Filegroup placement"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates MDF, NDF, and LDF with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The critical insight: _____”",
+      "options": [
+        "the extension is a human convention, not a type.",
+        "at least one",
+        "no filegroup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The critical insight: the extension is a human convention, not a type. SQL Server decides a file's behaviour from the type column in sys.database_files. A file called SalesDB.archive that was created as a log file is a log file, whatever its name says — and scripts that infer type from the extension will get it wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The primary data file (MDF)”?",
+      "options": [
+        "MDF, NDF, and LDF",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “It is created with the database (or copied from model during CREATE DATABASE ) and never removed. Everything else in the PRIMARY filegroup — user tables created without an explicit filegroup — is ordinary data that happens to share the primary file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary data files (NDF)”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required. That behaviour is the whole reason \"add a file\" is the standard remedy for a full filegroup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Auditing the file set”?",
+      "options": [
+        "Run it before a migration, after a restore, and whenever someone reports \"the disk is full\" — it immediately answers which file is growing, where it lives, and how it grows.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "MDF, NDF, and LDF sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Run it before a migration, after a restore, and whenever someone reports \"the disk is full\" — it immediately answers which file is growing, where it lives, and how it grows.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The three file types”?",
+      "options": [
+        "SQL Server recognises exactly two kinds of file — data and log — but three familiar extensions describe how they are usually named:",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server recognises exactly two kinds of file — data and log — but three familiar extensions describe how they are usually named:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The primary data file (MDF)”?",
+      "options": [
+        "At least one per database; no filegroup; any additional files are also log files",
+        "NDF files exist for practical reasons, not for tidiness:",
+        "The primary data file is special in three ways:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The primary data file is special in three ways:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary data files (NDF)”?",
+      "options": [
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed.",
+        "NDF files exist for practical reasons, not for tidiness:",
+        "The primary data file is special in three ways:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NDF files exist for practical reasons, not for tidiness:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The log file (LDF)”?",
+      "options": [
+        "The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery.",
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed.",
+        "NDF files exist for practical reasons, not for tidiness:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery. Points that matter in production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Auditing the file set”?",
+      "options": [
+        "NDF files exist for practical reasons, not for tidiness:",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "A ten-second health check for any database — type, size, growth, and where each file physically sits:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A ten-second health check for any database — type, size, growth, and where each file physically sits:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Manageability",
+        "MDF, NDF, and LDF",
+        "Filegroup placement"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates MDF, NDF, and LDF with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The critical insight: _____”",
+      "options": [
+        "the extension is a human convention, not a type.",
+        "at least one",
+        "no filegroup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The critical insight: the extension is a human convention, not a type. SQL Server decides a file's behaviour from the type column in sys.database_files. A file called SalesDB.archive that was created as a log file is a log file, whatever its name says — and scripts that infer type from the extension will get it wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The primary data file (MDF)”?",
+      "options": [
+        "MDF, NDF, and LDF",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “It is created with the database (or copied from model during CREATE DATABASE ) and never removed. Everything else in the PRIMARY filegroup — user tables created without an explicit filegroup — is ordinary data that happens to share the primary file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary data files (NDF)”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required. That behaviour is the whole reason \"add a file\" is the standard remedy for a full filegroup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Auditing the file set”?",
+      "options": [
+        "Run it before a migration, after a restore, and whenever someone reports \"the disk is full\" — it immediately answers which file is growing, where it lives, and how it grows.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "MDF, NDF, and LDF sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Run it before a migration, after a restore, and whenever someone reports \"the disk is full\" — it immediately answers which file is growing, where it lives, and how it grows.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The three file types”?",
+      "options": [
+        "SQL Server recognises exactly two kinds of file — data and log — but three familiar extensions describe how they are usually named:",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “SQL Server recognises exactly two kinds of file — data and log — but three familiar extensions describe how they are usually named:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The primary data file (MDF)”?",
+      "options": [
+        "At least one per database; no filegroup; any additional files are also log files",
+        "NDF files exist for practical reasons, not for tidiness:",
+        "The primary data file is special in three ways:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The primary data file is special in three ways:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary data files (NDF)”?",
+      "options": [
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed.",
+        "NDF files exist for practical reasons, not for tidiness:",
+        "The primary data file is special in three ways:"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “NDF files exist for practical reasons, not for tidiness:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The log file (LDF)”?",
+      "options": [
+        "The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery.",
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed.",
+        "NDF files exist for practical reasons, not for tidiness:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The log file stores the database's log records: one stream, written sequentially, replayed in order during recovery. Points that matter in production:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Auditing the file set”?",
+      "options": [
+        "NDF files exist for practical reasons, not for tidiness:",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "A ten-second health check for any database — type, size, growth, and where each file physically sits:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A ten-second health check for any database — type, size, growth, and where each file physically sits:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Manageability",
+        "MDF, NDF, and LDF",
+        "Filegroup placement"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates MDF, NDF, and LDF with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Complete the lesson statement: “The critical insight: _____”",
+      "options": [
+        "the extension is a human convention, not a type.",
+        "at least one",
+        "no filegroup"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “The critical insight: the extension is a human convention, not a type. SQL Server decides a file's behaviour from the type column in sys.database_files. A file called SalesDB.archive that was created as a log file is a log file, whatever its name says — and scripts that infer type from the extension will get it wrong.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The primary data file (MDF)”?",
+      "options": [
+        "MDF, NDF, and LDF",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "It is created with the database (or copied from model during CREATE DATABASE ) and never removed."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “It is created with the database (or copied from model during CREATE DATABASE ) and never removed. Everything else in the PRIMARY filegroup — user tables created without an explicit filegroup — is ordinary data that happens to share the primary file.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Secondary data files (NDF)”?",
+      "options": [
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required.",
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Once a filegroup holds several files, SQL Server spreads allocation across them proportionally to free space — no configuration required. That behaviour is the whole reason \"add a file\" is the standard remedy for a full filegroup.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Auditing the file set”?",
+      "options": [
+        "Run it before a migration, after a restore, and whenever someone reports \"the disk is full\" — it immediately answers which file is growing, where it lives, and how it grows.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "MDF, NDF, and LDF sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Run it before a migration, after a restore, and whenever someone reports \"the disk is full\" — it immediately answers which file is growing, where it lives, and how it grows.”"
+    }
+  ],
   takeaways: [
     "MDF = primary data file (one per database), NDF = secondary data files, LDF = log file",
     "Extensions are conventions; the catalogue's type column (data vs log) is what matters",

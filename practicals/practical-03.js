@@ -178,6 +178,312 @@ RESTORE VERIFYONLY checks readability and checksums but does not replay logs or 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab turns backup theory into muscle memory.",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab turns backup theory into muscle memory. You will build a full plus log backup chain, deliberately delete data, then recover it to a moment just before the mistake.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full",
+        "Recovery model controls the chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Recovery model controls the chain. In FULL, log records are retained until backed up, enabling point-in-time restore. In SIMPLE, log backups are not possible. Confirm the model before you start.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "Take a full backup with COMPRESSION and CHECKSUM.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Take a full backup with COMPRESSION and CHECKSUM. Then make some data changes, take a differential, make more changes and take log backups at each stage. Note the timestamps — you will need one for the restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Just the full",
+        "Base full + latest diff",
+        "A common trap is believing RESTORE VERIFYONLY proves recoverability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A common trap is believing RESTORE VERIFYONLY proves recoverability. It only checks readability and checksums; only a real restore proves the data can actually be brought online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Use a scratch database on a local instance.",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Use a scratch database on a local instance. The backup paths must exist and the SQL Server service account needs write permission on them — permission errors are a common lab failure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The chain below is the sequence you will build and then restore: a full backup establishes the base, a differential narrows replay, and log backups carry you to the target moment.",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The chain below is the sequence you will build and then restore: a full backup establishes the base, a differential narrows replay, and log backups carry you to the target moment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Set FULL for critical DBs",
+        "Take a full immediately after",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Set FULL for critical DBs",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For the restore, use a new database name with MOVE so you do not overwrite the source. Apply the full with NORECOVERY, the differential with NORECOVERY, then logs with STOPAT and RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "If the output differs, stop and correct it before moving on.",
+        "A common trap is believing RESTORE VERIFYONLY proves recoverability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab turns backup theory into muscle memory.",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab turns backup theory into muscle memory. You will build a full plus log backup chain, deliberately delete data, then recover it to a moment just before the mistake.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full",
+        "Recovery model controls the chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Recovery model controls the chain. In FULL, log records are retained until backed up, enabling point-in-time restore. In SIMPLE, log backups are not possible. Confirm the model before you start.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "Take a full backup with COMPRESSION and CHECKSUM.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Take a full backup with COMPRESSION and CHECKSUM. Then make some data changes, take a differential, make more changes and take log backups at each stage. Note the timestamps — you will need one for the restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Just the full",
+        "Base full + latest diff",
+        "A common trap is believing RESTORE VERIFYONLY proves recoverability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A common trap is believing RESTORE VERIFYONLY proves recoverability. It only checks readability and checksums; only a real restore proves the data can actually be brought online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Use a scratch database on a local instance.",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Use a scratch database on a local instance. The backup paths must exist and the SQL Server service account needs write permission on them — permission errors are a common lab failure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The chain below is the sequence you will build and then restore: a full backup establishes the base, a differential narrows replay, and log backups carry you to the target moment.",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The chain below is the sequence you will build and then restore: a full backup establishes the base, a differential narrows replay, and log backups carry you to the target moment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Set FULL for critical DBs",
+        "Take a full immediately after",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Set FULL for critical DBs",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For the restore, use a new database name with MOVE so you do not overwrite the source. Apply the full with NORECOVERY, the differential with NORECOVERY, then logs with STOPAT and RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "If the output differs, stop and correct it before moving on.",
+        "A common trap is believing RESTORE VERIFYONLY proves recoverability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "This lab turns backup theory into muscle memory.",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “This lab turns backup theory into muscle memory. You will build a full plus log backup chain, deliberately delete data, then recover it to a moment just before the mistake.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full",
+        "Recovery model controls the chain."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Recovery model controls the chain. In FULL, log records are retained until backed up, enabling point-in-time restore. In SIMPLE, log backups are not possible. Confirm the model before you start.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "Take a full backup with COMPRESSION and CHECKSUM.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Take a full backup with COMPRESSION and CHECKSUM. Then make some data changes, take a differential, make more changes and take log backups at each stage. Note the timestamps — you will need one for the restore.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Never assume a lab step worked — verify against the catalog views and DMVs.",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…",
+        "Just the full"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Just the full",
+        "Base full + latest diff",
+        "A common trap is believing RESTORE VERIFYONLY proves recoverability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A common trap is believing RESTORE VERIFYONLY proves recoverability. It only checks readability and checksums; only a real restore proves the data can actually be brought online.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "If the output differs, stop and correct it before moving on.",
+        "Use a scratch database on a local instance.",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Use a scratch database on a local instance. The backup paths must exist and the SQL Server service account needs write permission on them — permission errors are a common lab failure.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "The chain below is the sequence you will build and then restore: a full backup establishes the base, a differential narrows replay, and log backups carry you to the target moment.",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "If the output differs, stop and correct it before moving on."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The chain below is the sequence you will build and then restore: a full backup establishes the base, a differential narrows replay, and log backups carry you to the target moment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Set FULL for critical DBs",
+        "Take a full immediately after",
+        "Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Test both sides of the differential behaviour: a second differential should be larger than the first because it contains all changes since the last full, not just since the last differential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Set FULL for critical DBs",
+        "For the restore, use a new database name with MOVE so you do not overwrite the source.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For the restore, use a new database name with MOVE so you do not overwrite the source. Apply the full with NORECOVERY, the differential with NORECOVERY, then logs with STOPAT and RECOVERY.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "If the output differs, stop and correct it before moving on.",
+        "A common trap is believing RESTORE VERIFYONLY proves recoverability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "A restore plan needs a full base plus an unbroken log chain for point-in-time recovery",
     "Differentials are cumulative since the last full, not the last differential",

@@ -186,6 +186,312 @@ Because only synchronous commit guarantees the secondary has hardened the same t
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Availability Requirements",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Availability Requirements within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Requirements fits”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Requirements in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Requirements”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Availability Requirements. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Failover can be automatic, manual or forced.",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Automatic with sync commit",
+        "Availability Requirements",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Availability Requirements with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Availability Requirements means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Requirements fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Availability Requirements alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Requirements in practice”?",
+      "options": [
+        "With Availability Requirements, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Availability Requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Requirements”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Availability Requirements",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Availability Requirements within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Requirements fits”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Requirements in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Requirements”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Availability Requirements. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Failover can be automatic, manual or forced.",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Automatic with sync commit",
+        "Availability Requirements",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Availability Requirements with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Availability Requirements means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Requirements fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Availability Requirements alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Requirements in practice”?",
+      "options": [
+        "With Availability Requirements, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Availability Requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Requirements”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Availability Requirements",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Availability Requirements within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Requirements fits”?",
+      "options": [
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous. Automatic failover requires synchronous commit and a healthy WSFC quorum.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Requirements in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Requirements”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Availability Requirements. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Failover can be automatic, manual or forced.",
+        "High availability keeps a database service reachable through failures."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “High availability keeps a database service reachable through failures. It is distinct from disaster recovery: HA handles local failures with near-zero downtime, while DR protects against site-wide loss with a measurable RTO.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Automatic with sync commit",
+        "Availability Requirements",
+        "Automatic, node-level"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Availability Requirements with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Availability Requirements means”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Availability Requirements fits”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state.",
+        "The diagram below places Availability Requirements alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Availability Requirements alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Availability Requirements in practice”?",
+      "options": [
+        "With Availability Requirements, prefer measured, reversible changes.",
+        "The following comparison captures the distinctions that matter most when working with Availability Requirements:",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Availability Requirements:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Availability Requirements”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "High availability keeps a database service reachable through failures.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Availability Requirements is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

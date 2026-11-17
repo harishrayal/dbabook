@@ -191,6 +191,312 @@ A clustered index defines the table's physical row order and there is one per ta
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Actual plan",
+        "Table Scans Versus Index Seeks",
+        "With Table Scans Versus Index Seeks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Table Scans Versus Index Seeks within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Table Scans Versus Index Seeks fits”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Query stats",
+        "Page life expectancy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Table Scans Versus Index Seeks in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Selective lookups",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Table Scans Versus Index Seeks”?",
+      "options": [
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Theory becomes useful when you can apply it.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Table Scans Versus Index Seeks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Table Scans Versus Index Seeks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Table Scans Versus Index Seeks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Table Scans Versus Index Seeks means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Table Scans Versus Index Seeks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Table Scans Versus Index Seeks fits”?",
+      "options": [
+        "The diagram below places Table Scans Versus Index Seeks alongside the core concepts of SQL Server performance tuning.",
+        "Table Scans Versus Index Seeks",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Table Scans Versus Index Seeks alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Table Scans Versus Index Seeks in practice”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The following comparison captures the distinctions that matter most when working with Table Scans Versus Index Seeks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Table Scans Versus Index Seeks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Table Scans Versus Index Seeks”?",
+      "options": [
+        "Table Scans Versus Index Seeks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The first example establishes the relevant state.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Actual plan",
+        "Table Scans Versus Index Seeks",
+        "With Table Scans Versus Index Seeks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Table Scans Versus Index Seeks within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Table Scans Versus Index Seeks fits”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Query stats",
+        "Page life expectancy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Table Scans Versus Index Seeks in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Selective lookups",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Table Scans Versus Index Seeks”?",
+      "options": [
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Theory becomes useful when you can apply it.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Table Scans Versus Index Seeks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Table Scans Versus Index Seeks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Table Scans Versus Index Seeks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Table Scans Versus Index Seeks means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Table Scans Versus Index Seeks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Table Scans Versus Index Seeks fits”?",
+      "options": [
+        "The diagram below places Table Scans Versus Index Seeks alongside the core concepts of SQL Server performance tuning.",
+        "Table Scans Versus Index Seeks",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Table Scans Versus Index Seeks alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Table Scans Versus Index Seeks in practice”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The following comparison captures the distinctions that matter most when working with Table Scans Versus Index Seeks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Table Scans Versus Index Seeks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Table Scans Versus Index Seeks”?",
+      "options": [
+        "Table Scans Versus Index Seeks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The first example establishes the relevant state.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server performance tuning.”",
+      "options": [
+        "Actual plan",
+        "Table Scans Versus Index Seeks",
+        "With Table Scans Versus Index Seeks, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Table Scans Versus Index Seeks within SQL Server performance tuning. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Table Scans Versus Index Seeks fits”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Query stats",
+        "Page life expectancy"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row. Composite indexes order by multiple columns, and included columns can make an index covering so the base table need not be touched.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Table Scans Versus Index Seeks in practice”?",
+      "options": [
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Selective lookups",
+        "Statistics describe data distribution and drive cardinality estimates."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Statistics describe data distribution and drive cardinality estimates. Stale statistics lead to bad plans; updating them is often the cheapest and fastest performance fix available.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Table Scans Versus Index Seeks”?",
+      "options": [
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Theory becomes useful when you can apply it.",
+        "Parameter sniffing occurs when a plan is compiled for one parameter value and reused for others with very different selectivity, causing intermittent slowness."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Table Scans Versus Index Seeks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.",
+        "Actual plan",
+        "Query stats"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Query Store captures query text, plans and runtime statistics over time, making plan regressions visible and allowing a good plan to be forced while the root cause is fixed.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Table Scans Versus Index Seeks.",
+        "Table Scans Versus Index Seeks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Table Scans Versus Index Seeks with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Table Scans Versus Index Seeks means”?",
+      "options": [
+        "Clustered indexes define the physical order of a table; nonclustered indexes are separate ordered structures pointing back to the row.",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "Table Scans Versus Index Seeks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again. Tuning without measurement is guesswork and often makes things worse.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Table Scans Versus Index Seeks fits”?",
+      "options": [
+        "The diagram below places Table Scans Versus Index Seeks alongside the core concepts of SQL Server performance tuning.",
+        "Table Scans Versus Index Seeks",
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Table Scans Versus Index Seeks alongside the core concepts of SQL Server performance tuning. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Table Scans Versus Index Seeks in practice”?",
+      "options": [
+        "Performance tuning is a measurement discipline: establish a baseline, identify the dominant bottleneck, make one change, measure again.",
+        "An execution plan is the roadmap the optimiser produces for a query.",
+        "The following comparison captures the distinctions that matter most when working with Table Scans Versus Index Seeks:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Table Scans Versus Index Seeks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Table Scans Versus Index Seeks”?",
+      "options": [
+        "Table Scans Versus Index Seeks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and…",
+        "The first example establishes the relevant state.",
+        "An execution plan is the roadmap the optimiser produces for a query."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Table Scans Versus Index Seeks is a fundamental concept in SQL Server performance tuning",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

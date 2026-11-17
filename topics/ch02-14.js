@@ -178,6 +178,312 @@ ORDER  BY t.transaction_begin_time;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “COMMIT: making it real”?",
+      "options": [
+        "Truncation eligible",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "Locks released"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “COMMIT TRANSACTION ends the transaction by making its changes permanent. Mechanically, SQL Server flushes the transaction's log records to disk (durability), then releases the locks held by the transaction so other sessions can see the new state. Only after the commit succeeds does the data become visible to everyone else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Locks are released, log records become reusable, and — critically — _____, so there is nothing to “tell the others about”.”",
+      "options": [
+        "the rolled-back work never became visible to other sessions",
+        "Everything commits and becomes durable",
+        "Undoes everything, even outer nesting levels"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “ROLLBACK TRANSACTION undoes every change made since the transaction began, using the log's undo information, and restores the database to the state it had at BEGIN. Locks are released, log records become reusable, and — critically — the rolled-back work never became visible to other sessions, so there is nothing to “tell the others about”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "Can undo",
+        "Cannot undo",
+        "SQL Server has no true nested transactions — there is one transaction, tracked by @@TRANCOUNT, and the rules around it are where well-written code separates from fragile code:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server has no true nested transactions — there is one transaction, tracked by @@TRANCOUNT, and the rules around it are where well-written code separates from fragile code:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Detecting transactions that never end”?",
+      "options": [
+        "Cannot roll back",
+        "The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop.",
+        "Cannot undo"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop. This query is worth having on every DBA's shortlist:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Subtlety worth knowing: _____”",
+      "options": [
+        "COMMIT inside a nested transaction does not really commit.",
+        "The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop.",
+        "Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Subtlety worth knowing: COMMIT inside a nested transaction does not really commit. With @@TRANCOUNT = 2, a COMMIT decrements the count to 1 — the outer transaction still holds everything. Only the COMMIT that returns @@TRANCOUNT to 0 makes the unit durable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "everything",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "This asymmetry is a classic bug: a procedure called inside an application's transaction issues a plain ROLLBACK, silently destroying the outer unit, and the application's later…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This asymmetry is a classic bug: a procedure called inside an application's transaction issues a plain ROLLBACK, silently destroying the outer unit, and the application's later COMMIT fails with error 266 (“mismatching number of BEGIN and COMMIT”). The safe reusable-procedure pattern respects whoever opened the transaction:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Detecting transactions that never end”?",
+      "options": [
+        "COMMIT inside a nested transaction does not really commit.",
+        "Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an…",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an abandoned one. Killing the session rolls it back safely — with the application owner informed first.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "Read XACT_STATE() before deciding: 1 = active and committable, 0 = no active transaction, −1 = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled…",
+        "COMMIT inside a nested transaction does not really commit.",
+        "the rolled-back work never became visible to other sessions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Read XACT_STATE() before deciding: 1 = active and committable, 0 = no active transaction, −1 = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled back, never committed).”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ the nested-ROLLBACK mismatch described above; assuming “it rolled back” when no transaction was open (autocommit had already committed each…”",
+      "options": [
+        "Truncation eligible",
+        "COMMIT inside a nested transaction does not really commit.",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Common pitfalls: the nested-ROLLBACK mismatch described above; assuming “it rolled back” when no transaction was open (autocommit had already committed each statement); checking only @@ROWCOUNT after an UPDATE without an error handler; and building retry loops that commit a doomed transaction — impossible, and the resulting error 3930 masks the original failure.”"
+    },
+    {
+      "question": "In the “Nesting, savepoints, and counting” table, what is listed for “BEGIN TRANSACTION” under “Real effect”?",
+      "options": [
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "1 = real start; higher = nesting marker",
+        "Undoes back to the savepoint; transaction continues"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “BEGIN TRANSACTION” as “1 = real start; higher = nesting marker”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “COMMIT: making it real”?",
+      "options": [
+        "Truncation eligible",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "Locks released"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “COMMIT TRANSACTION ends the transaction by making its changes permanent. Mechanically, SQL Server flushes the transaction's log records to disk (durability), then releases the locks held by the transaction so other sessions can see the new state. Only after the commit succeeds does the data become visible to everyone else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Locks are released, log records become reusable, and — critically — _____, so there is nothing to “tell the others about”.”",
+      "options": [
+        "the rolled-back work never became visible to other sessions",
+        "Everything commits and becomes durable",
+        "Undoes everything, even outer nesting levels"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “ROLLBACK TRANSACTION undoes every change made since the transaction began, using the log's undo information, and restores the database to the state it had at BEGIN. Locks are released, log records become reusable, and — critically — the rolled-back work never became visible to other sessions, so there is nothing to “tell the others about”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "Can undo",
+        "Cannot undo",
+        "SQL Server has no true nested transactions — there is one transaction, tracked by @@TRANCOUNT, and the rules around it are where well-written code separates from fragile code:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server has no true nested transactions — there is one transaction, tracked by @@TRANCOUNT, and the rules around it are where well-written code separates from fragile code:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Detecting transactions that never end”?",
+      "options": [
+        "Cannot roll back",
+        "The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop.",
+        "Cannot undo"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop. This query is worth having on every DBA's shortlist:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Subtlety worth knowing: _____”",
+      "options": [
+        "COMMIT inside a nested transaction does not really commit.",
+        "The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop.",
+        "Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Subtlety worth knowing: COMMIT inside a nested transaction does not really commit. With @@TRANCOUNT = 2, a COMMIT decrements the count to 1 — the outer transaction still holds everything. Only the COMMIT that returns @@TRANCOUNT to 0 makes the unit durable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "everything",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "This asymmetry is a classic bug: a procedure called inside an application's transaction issues a plain ROLLBACK, silently destroying the outer unit, and the application's later…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This asymmetry is a classic bug: a procedure called inside an application's transaction issues a plain ROLLBACK, silently destroying the outer unit, and the application's later COMMIT fails with error 266 (“mismatching number of BEGIN and COMMIT”). The safe reusable-procedure pattern respects whoever opened the transaction:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Detecting transactions that never end”?",
+      "options": [
+        "COMMIT inside a nested transaction does not really commit.",
+        "Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an…",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an abandoned one. Killing the session rolls it back safely — with the application owner informed first.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "Read XACT_STATE() before deciding: 1 = active and committable, 0 = no active transaction, −1 = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled…",
+        "COMMIT inside a nested transaction does not really commit.",
+        "the rolled-back work never became visible to other sessions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Read XACT_STATE() before deciding: 1 = active and committable, 0 = no active transaction, −1 = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled back, never committed).”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ the nested-ROLLBACK mismatch described above; assuming “it rolled back” when no transaction was open (autocommit had already committed each…”",
+      "options": [
+        "Truncation eligible",
+        "COMMIT inside a nested transaction does not really commit.",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Common pitfalls: the nested-ROLLBACK mismatch described above; assuming “it rolled back” when no transaction was open (autocommit had already committed each statement); checking only @@ROWCOUNT after an UPDATE without an error handler; and building retry loops that commit a doomed transaction — impossible, and the resulting error 3930 masks the original failure.”"
+    },
+    {
+      "question": "In the “Nesting, savepoints, and counting” table, what is listed for “BEGIN TRANSACTION” under “Real effect”?",
+      "options": [
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "1 = real start; higher = nesting marker",
+        "Undoes back to the savepoint; transaction continues"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “BEGIN TRANSACTION” as “1 = real start; higher = nesting marker”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “COMMIT: making it real”?",
+      "options": [
+        "Truncation eligible",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "Locks released"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “COMMIT TRANSACTION ends the transaction by making its changes permanent. Mechanically, SQL Server flushes the transaction's log records to disk (durability), then releases the locks held by the transaction so other sessions can see the new state. Only after the commit succeeds does the data become visible to everyone else.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Locks are released, log records become reusable, and — critically — _____, so there is nothing to “tell the others about”.”",
+      "options": [
+        "the rolled-back work never became visible to other sessions",
+        "Everything commits and becomes durable",
+        "Undoes everything, even outer nesting levels"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “ROLLBACK TRANSACTION undoes every change made since the transaction began, using the log's undo information, and restores the database to the state it had at BEGIN. Locks are released, log records become reusable, and — critically — the rolled-back work never became visible to other sessions, so there is nothing to “tell the others about”.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "Can undo",
+        "Cannot undo",
+        "SQL Server has no true nested transactions — there is one transaction, tracked by @@TRANCOUNT, and the rules around it are where well-written code separates from fragile code:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server has no true nested transactions — there is one transaction, tracked by @@TRANCOUNT, and the rules around it are where well-written code separates from fragile code:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Detecting transactions that never end”?",
+      "options": [
+        "Cannot roll back",
+        "The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop.",
+        "Cannot undo"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop. This query is worth having on every DBA's shortlist:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Subtlety worth knowing: _____”",
+      "options": [
+        "COMMIT inside a nested transaction does not really commit.",
+        "The most common production transaction problem is not wrong logic — it is a transaction left open by a client, a forgotten tool session, or a retry loop.",
+        "Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Subtlety worth knowing: COMMIT inside a nested transaction does not really commit. With @@TRANCOUNT = 2, a COMMIT decrements the count to 1 — the outer transaction still holds everything. Only the COMMIT that returns @@TRANCOUNT to 0 makes the unit durable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "everything",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "This asymmetry is a classic bug: a procedure called inside an application's transaction issues a plain ROLLBACK, silently destroying the outer unit, and the application's later…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This asymmetry is a classic bug: a procedure called inside an application's transaction issues a plain ROLLBACK, silently destroying the outer unit, and the application's later COMMIT fails with error 266 (“mismatching number of BEGIN and COMMIT”). The safe reusable-procedure pattern respects whoever opened the transaction:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Detecting transactions that never end”?",
+      "options": [
+        "COMMIT inside a nested transaction does not really commit.",
+        "Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an…",
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Interpretation: open_minutes climbing during business hours is a red flag; a write transaction ( transaction_type = 1 ) with no running request attached to the session is an abandoned one. Killing the session rolls it back safely — with the application owner informed first.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Nesting, savepoints, and counting”?",
+      "options": [
+        "Read XACT_STATE() before deciding: 1 = active and committable, 0 = no active transaction, −1 = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled…",
+        "COMMIT inside a nested transaction does not really commit.",
+        "the rolled-back work never became visible to other sessions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Read XACT_STATE() before deciding: 1 = active and committable, 0 = no active transaction, −1 = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled back, never committed).”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ the nested-ROLLBACK mismatch described above; assuming “it rolled back” when no transaction was open (autocommit had already committed each…”",
+      "options": [
+        "Truncation eligible",
+        "COMMIT inside a nested transaction does not really commit.",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “Common pitfalls: the nested-ROLLBACK mismatch described above; assuming “it rolled back” when no transaction was open (autocommit had already committed each statement); checking only @@ROWCOUNT after an UPDATE without an error handler; and building retry loops that commit a doomed transaction — impossible, and the resulting error 3930 masks the original failure.”"
+    },
+    {
+      "question": "In the “Nesting, savepoints, and counting” table, what is listed for “BEGIN TRANSACTION” under “Real effect”?",
+      "options": [
+        "COMMIT TRANSACTION ends the transaction by making its changes permanent.",
+        "1 = real start; higher = nesting marker",
+        "Undoes back to the savepoint; transaction continues"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “BEGIN TRANSACTION” as “1 = real start; higher = nesting marker”."
+    }
+  ],
   takeaways: [
     "COMMIT flushes the log for durability, releases locks, and — only at nesting level 1 — makes the work permanent",
     "ROLLBACK restores the pre-transaction state and releases locks; rolled-back work was never visible to others",

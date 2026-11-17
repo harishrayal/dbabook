@@ -165,6 +165,312 @@ Extended Events is far lighter weight, highly filterable and designed for produc
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "SQL Server Error Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Error Logs within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "SQL Server Error Logs",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "SQL Server Error Logs",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Error Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Error Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Error Logs means”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "SQL Server Error Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Error Logs within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "SQL Server Error Logs",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "SQL Server Error Logs",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Error Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Error Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Error Logs means”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database monitoring and alerting.”",
+      "options": [
+        "Approaching 90%",
+        "Any overnight failure",
+        "SQL Server Error Logs"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine SQL Server Error Logs within database monitoring and alerting. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "SQL Server Error Logs",
+        "The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues.",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The SQL Server error log and Windows Event Log record failures, restarts, corruption messages and login issues. Reviewing them daily turns cryptic errors into early warnings.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "SQL Server Error Logs",
+        "Dynamic management views and functions expose the engine's internal state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Extended Events is the modern lightweight diagnostics framework. Sessions capture events such as deadlocks, long queries or errors with far less overhead than SQL Trace/Profiler and are safe in production when scoped carefully.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "Wait statistics are the most efficient way to find the dominant bottleneck.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to SQL Server Error Logs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "SQL Server Error Logs is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem?",
+        "Wait statistics are the most efficient way to find the dominant bottleneck."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Monitoring answers two questions: is the system healthy now, and is it drifting toward a problem? Reactive monitoring reports failures; proactive monitoring catches trends — growing log usage, falling page life expectancy, lengthening backups — before users notice.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What SQL Server Error Logs means”?",
+      "options": [
+        "Dynamic management views and functions expose the engine's internal state.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Dynamic management views and functions expose the engine's internal state. sys.dm_os_waiting_tasks, sys.dm_exec_requests, sys.dm_os_performance_counters and sys.dm_db_* views are the DBA's primary diagnostic surface.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where SQL Server Error Logs fits”?",
+      "options": [
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “SQL Server Error Logs in practice”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "The diagram below places SQL Server Error Logs alongside the core concepts of database monitoring and alerting."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with SQL Server Error Logs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Extended Events is the modern lightweight diagnostics framework.",
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with SQL Server Error Logs:",
+        "Alerts and notifications close the loop: a metric is only useful if someone is told when it crosses a threshold.",
+        "A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “A daily health check covers the fundamentals: uptime, database states, last backups, job failures, free space on every volume, log usage, tempdb, blocking and the error logs. Consistency matters more than complexity.”"
+    }
+  ],
   takeaways: [
     "SQL Server Error Logs is a fundamental concept in database monitoring and alerting",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

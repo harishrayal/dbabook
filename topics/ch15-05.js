@@ -181,6 +181,312 @@ Track daily size from sys.dm_io_virtual_file_stats or a snapshot table, compute 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:",
+        "Disk Capacity Planning",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Capacity Planning fits”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Bulk loads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Capacity Planning in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Capacity Planning”?",
+      "options": [
+        "Bulk loads",
+        "Theory becomes useful when you can apply it.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Bulk loads",
+        "Long transactions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it.",
+        "Disk Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Capacity Planning means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Capacity Planning fits”?",
+      "options": [
+        "The diagram below places Disk Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Next, verify the result and capture a baseline.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Capacity Planning in practice”?",
+      "options": [
+        "No benefit",
+        "Online, low impact",
+        "The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Capacity Planning”?",
+      "options": [
+        "No benefit",
+        "The first example establishes the relevant state.",
+        "With Disk Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:",
+        "Disk Capacity Planning",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Capacity Planning fits”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Bulk loads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Capacity Planning in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Capacity Planning”?",
+      "options": [
+        "Bulk loads",
+        "Theory becomes useful when you can apply it.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Bulk loads",
+        "Long transactions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it.",
+        "Disk Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Capacity Planning means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Capacity Planning fits”?",
+      "options": [
+        "The diagram below places Disk Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Next, verify the result and capture a baseline.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Capacity Planning in practice”?",
+      "options": [
+        "No benefit",
+        "Online, low impact",
+        "The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Capacity Planning”?",
+      "options": [
+        "No benefit",
+        "The first example establishes the relevant state.",
+        "With Disk Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within capacity planning and database maintenance.”",
+      "options": [
+        "The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:",
+        "Disk Capacity Planning",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Disk Capacity Planning within capacity planning and database maintenance. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Capacity Planning fits”?",
+      "options": [
+        "Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident.",
+        "Bulk loads"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Retention and archiving control growth at the source: define how long data must stay in the live system, then archive or delete old data on a schedule. Partitioning can make both operations efficient by switching whole partitions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Capacity Planning in practice”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Next, verify the result and capture a baseline.",
+        "Maintenance windows must be negotiated and respected."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Maintenance windows must be negotiated and respected. Every task should have an impact analysis, a rollback plan and monitoring so overruns are detected before business hours.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Capacity Planning”?",
+      "options": [
+        "Bulk loads",
+        "Theory becomes useful when you can apply it.",
+        "Capacity planning predicts when resources will run out so you can act on your terms, not during an incident."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Disk Capacity Planning. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Bulk loads",
+        "Long transactions"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory. A full disk during a rebuild is a self-inflicted outage.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Rebuild needing 1.5x space",
+        "Theory becomes useful when you can apply it.",
+        "Disk Capacity Planning"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Disk Capacity Planning with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Disk Capacity Planning means”?",
+      "options": [
+        "Disk, CPU and memory capacity must account for peak load and for maintenance operations such as index rebuilds, which temporarily need significant free space and memory.",
+        "Index maintenance is nuanced: rebuilding every index weekly is often wasteful.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Index maintenance is nuanced: rebuilding every index weekly is often wasteful. Use fragmentation and page-count thresholds to choose REORGANIZE for lightly fragmented indexes and REBUILD only where justified, and remember that rebuilds update statistics.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Disk Capacity Planning fits”?",
+      "options": [
+        "The diagram below places Disk Capacity Planning alongside the core concepts of capacity planning and database maintenance.",
+        "Next, verify the result and capture a baseline.",
+        "Data and log capacity are planned separately."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Disk Capacity Planning alongside the core concepts of capacity planning and database maintenance. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Disk Capacity Planning in practice”?",
+      "options": [
+        "No benefit",
+        "Online, low impact",
+        "The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Disk Capacity Planning:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Disk Capacity Planning”?",
+      "options": [
+        "No benefit",
+        "The first example establishes the relevant state.",
+        "With Disk Capacity Planning, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Disk Capacity Planning is a fundamental concept in capacity planning and database maintenance",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

@@ -186,6 +186,312 @@ Because the increment grows with the file, causing increasingly large and unpred
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "User objects across filegroups",
+        "Adding Filegroups",
+        "System objects, boot information"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Adding Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Filegroups fits”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Filegroups in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Filegroups”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Theory becomes useful when you can apply it.",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Adding Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Adding Filegroups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Adding Filegroups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Adding Filegroups means”?",
+      "options": [
+        "Preferred — predictable",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "With Adding Filegroups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Filegroups fits”?",
+      "options": [
+        "The diagram below places Adding Filegroups alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "With Adding Filegroups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Adding Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Filegroups in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "The following comparison captures the distinctions that matter most when working with Adding Filegroups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Adding Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Filegroups”?",
+      "options": [
+        "Adding Filegroups sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "User objects across filegroups",
+        "Adding Filegroups",
+        "System objects, boot information"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Adding Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Filegroups fits”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Filegroups in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Filegroups”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Theory becomes useful when you can apply it.",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Adding Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Adding Filegroups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Adding Filegroups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Adding Filegroups means”?",
+      "options": [
+        "Preferred — predictable",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "With Adding Filegroups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Filegroups fits”?",
+      "options": [
+        "The diagram below places Adding Filegroups alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "With Adding Filegroups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Adding Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Filegroups in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "The following comparison captures the distinctions that matter most when working with Adding Filegroups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Adding Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Filegroups”?",
+      "options": [
+        "Adding Filegroups sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "User objects across filegroups",
+        "Adding Filegroups",
+        "System objects, boot information"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Adding Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Filegroups fits”?",
+      "options": [
+        "The PRIMARY filegroup holds system objects and is the default home for user objects.",
+        "Transaction log, recovery",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The PRIMARY filegroup holds system objects and is the default home for user objects. Additional user-defined filegroups let a DBA place large tables or indexes on specific volumes for performance or administration.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Filegroups in practice”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "Autogrowth is a safety net, not a sizing strategy."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Autogrowth is a safety net, not a sizing strategy. Fixed-size growth (for example 512 MB) is predictable; percentage growth becomes increasingly large and wasteful as a file grows. Pre-size files and cap growth deliberately.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Filegroups”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Theory becomes useful when you can apply it.",
+        "Transaction log, recovery"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Adding Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Theory becomes useful when you can apply it.",
+        "The first example establishes the relevant state."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Next, verify the result and capture a baseline.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE...",
+        "Adding Filegroups"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Adding Filegroups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Adding Filegroups means”?",
+      "options": [
+        "Preferred — predictable",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…",
+        "With Adding Filegroups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Adding Filegroups fits”?",
+      "options": [
+        "The diagram below places Adding Filegroups alongside the core concepts of database storage and file management.",
+        "TempDB is a shared workspace for sorts, hash joins, temporary objects and version store.",
+        "With Adding Filegroups, prefer measured, reversible changes."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Adding Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Adding Filegroups in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "The following comparison captures the distinctions that matter most when working with Adding Filegroups:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Adding Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Adding Filegroups”?",
+      "options": [
+        "Adding Filegroups sits inside a larger system.",
+        "The first example establishes the relevant state.",
+        "Only with monitoring"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Adding Filegroups is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

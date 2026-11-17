@@ -184,6 +184,312 @@ ORDER  BY table_name;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a rule about table data that SQL Server stores in metadata and enforces itself, inside the storage engine, on every statement that touches the table.”",
+      "options": [
+        "constraint",
+        "unique key",
+        "many"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A constraint is a rule about table data that SQL Server stores in metadata and enforces itself, inside the storage engine, on every statement that touches the table. Constraints are not suggestions and they are not application logic — they are the definition of what the table accepts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ says “no two rows may share this value” without claiming to be the row's identity.”",
+      "options": [
+        "many",
+        "unique index",
+        "unique key"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A unique key says “no two rows may share this value” without claiming to be the row's identity. That distinction matters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CHECK, DEFAULT, and NOT NULL working together”?",
+      "options": [
+        "Common pitfalls:",
+        "Domain constraints define what a plausible value looks like.",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Domain constraints define what a plausible value looks like. Together with a default, they turn malformed input into either a corrected value or a clear error at write time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How constraints are enforced and audited”?",
+      "options": [
+        "Constraints are metadata in the catalog.",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live.",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Constraints are metadata in the catalog. Two facts matter operationally:”"
+    },
+    {
+      "question": "In the “The constraint family” table, what is listed for “NOT NULL” under “Per table”?",
+      "options": [
+        "Common pitfalls:",
+        "NOT NULL",
+        "Per column"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “NOT NULL” as “Per column”."
+    },
+    {
+      "question": "Complete the lesson statement: “com the same value; a binary _____ does not), trailing spaces are ignored in comparisons for character types, and a unique key over multiple columns allows any row where at…”",
+      "options": [
+        "row by row, atomically with the statement",
+        "collation",
+        "at least one"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Subtleties that bite: uniqueness follows the column's collation (a case-insensitive collation makes Ann@x.com and ann@x.com the same value; a binary collation does not), trailing spaces are ignored in comparisons for character types, and a unique key over multiple columns allows any row where at least one column is NULL — use a filtered index or NOT NULL columns when that matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CHECK, DEFAULT, and NOT NULL working together”?",
+      "options": [
+        "Note the default fills invoice_date and status — an insert that forgets them gets a correct value rather than an error or a NULL.",
+        "DEFAULT",
+        "CHECK"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Note the default fills invoice_date and status — an insert that forgets them gets a correct value rather than an error or a NULL.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How constraints are enforced and audited”?",
+      "options": [
+        "CHECK",
+        "UNIQUE",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live.”"
+    },
+    {
+      "question": "In the “The constraint family” table, what is listed for “DEFAULT” under “Per table”?",
+      "options": [
+        "PRIMARY KEY",
+        "One per column",
+        "UNIQUE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “DEFAULT” as “One per column”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ application-layer validation that “never lets bad data through” (a second writer always appears); CHECK constraints written with…”",
+      "options": [
+        "Common pitfalls:",
+        "Per column",
+        "One per column"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: application-layer validation that “never lets bad data through” (a second writer always appears); CHECK constraints written with non-deterministic functions that cannot be used there; unique keys defined on the wrong column combination; and dropping constraints to “speed up the load” without a scheduled re-enable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a rule about table data that SQL Server stores in metadata and enforces itself, inside the storage engine, on every statement that touches the table.”",
+      "options": [
+        "constraint",
+        "unique key",
+        "many"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A constraint is a rule about table data that SQL Server stores in metadata and enforces itself, inside the storage engine, on every statement that touches the table. Constraints are not suggestions and they are not application logic — they are the definition of what the table accepts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ says “no two rows may share this value” without claiming to be the row's identity.”",
+      "options": [
+        "many",
+        "unique index",
+        "unique key"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A unique key says “no two rows may share this value” without claiming to be the row's identity. That distinction matters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CHECK, DEFAULT, and NOT NULL working together”?",
+      "options": [
+        "Common pitfalls:",
+        "Domain constraints define what a plausible value looks like.",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Domain constraints define what a plausible value looks like. Together with a default, they turn malformed input into either a corrected value or a clear error at write time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How constraints are enforced and audited”?",
+      "options": [
+        "Constraints are metadata in the catalog.",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live.",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Constraints are metadata in the catalog. Two facts matter operationally:”"
+    },
+    {
+      "question": "In the “The constraint family” table, what is listed for “NOT NULL” under “Per table”?",
+      "options": [
+        "Common pitfalls:",
+        "NOT NULL",
+        "Per column"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “NOT NULL” as “Per column”."
+    },
+    {
+      "question": "Complete the lesson statement: “com the same value; a binary _____ does not), trailing spaces are ignored in comparisons for character types, and a unique key over multiple columns allows any row where at…”",
+      "options": [
+        "row by row, atomically with the statement",
+        "collation",
+        "at least one"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Subtleties that bite: uniqueness follows the column's collation (a case-insensitive collation makes Ann@x.com and ann@x.com the same value; a binary collation does not), trailing spaces are ignored in comparisons for character types, and a unique key over multiple columns allows any row where at least one column is NULL — use a filtered index or NOT NULL columns when that matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CHECK, DEFAULT, and NOT NULL working together”?",
+      "options": [
+        "Note the default fills invoice_date and status — an insert that forgets them gets a correct value rather than an error or a NULL.",
+        "DEFAULT",
+        "CHECK"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Note the default fills invoice_date and status — an insert that forgets them gets a correct value rather than an error or a NULL.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How constraints are enforced and audited”?",
+      "options": [
+        "CHECK",
+        "UNIQUE",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live.”"
+    },
+    {
+      "question": "In the “The constraint family” table, what is listed for “DEFAULT” under “Per table”?",
+      "options": [
+        "PRIMARY KEY",
+        "One per column",
+        "UNIQUE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “DEFAULT” as “One per column”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ application-layer validation that “never lets bad data through” (a second writer always appears); CHECK constraints written with…”",
+      "options": [
+        "Common pitfalls:",
+        "Per column",
+        "One per column"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: application-layer validation that “never lets bad data through” (a second writer always appears); CHECK constraints written with non-deterministic functions that cannot be used there; unique keys defined on the wrong column combination; and dropping constraints to “speed up the load” without a scheduled re-enable.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a rule about table data that SQL Server stores in metadata and enforces itself, inside the storage engine, on every statement that touches the table.”",
+      "options": [
+        "constraint",
+        "unique key",
+        "many"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “A constraint is a rule about table data that SQL Server stores in metadata and enforces itself, inside the storage engine, on every statement that touches the table. Constraints are not suggestions and they are not application logic — they are the definition of what the table accepts.”"
+    },
+    {
+      "question": "Complete the lesson statement: “A _____ says “no two rows may share this value” without claiming to be the row's identity.”",
+      "options": [
+        "many",
+        "unique index",
+        "unique key"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A unique key says “no two rows may share this value” without claiming to be the row's identity. That distinction matters:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CHECK, DEFAULT, and NOT NULL working together”?",
+      "options": [
+        "Common pitfalls:",
+        "Domain constraints define what a plausible value looks like.",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Domain constraints define what a plausible value looks like. Together with a default, they turn malformed input into either a corrected value or a clear error at write time:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How constraints are enforced and audited”?",
+      "options": [
+        "Constraints are metadata in the catalog.",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live.",
+        "Common pitfalls:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Constraints are metadata in the catalog. Two facts matter operationally:”"
+    },
+    {
+      "question": "In the “The constraint family” table, what is listed for “NOT NULL” under “Per table”?",
+      "options": [
+        "Common pitfalls:",
+        "NOT NULL",
+        "Per column"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “NOT NULL” as “Per column”."
+    },
+    {
+      "question": "Complete the lesson statement: “com the same value; a binary _____ does not), trailing spaces are ignored in comparisons for character types, and a unique key over multiple columns allows any row where at…”",
+      "options": [
+        "row by row, atomically with the statement",
+        "collation",
+        "at least one"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Subtleties that bite: uniqueness follows the column's collation (a case-insensitive collation makes Ann@x.com and ann@x.com the same value; a binary collation does not), trailing spaces are ignored in comparisons for character types, and a unique key over multiple columns allows any row where at least one column is NULL — use a filtered index or NOT NULL columns when that matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “CHECK, DEFAULT, and NOT NULL working together”?",
+      "options": [
+        "Note the default fills invoice_date and status — an insert that forgets them gets a correct value rather than an error or a NULL.",
+        "DEFAULT",
+        "CHECK"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Note the default fills invoice_date and status — an insert that forgets them gets a correct value rather than an error or a NULL.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “How constraints are enforced and audited”?",
+      "options": [
+        "CHECK",
+        "UNIQUE",
+        "Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Re-establish trust with ALTER TABLE … WITH CHECK CHECK CONSTRAINT … — but fix the data first, or the validation fails and tells you exactly where the bad rows live.”"
+    },
+    {
+      "question": "In the “The constraint family” table, what is listed for “DEFAULT” under “Per table”?",
+      "options": [
+        "PRIMARY KEY",
+        "One per column",
+        "UNIQUE"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “DEFAULT” as “One per column”."
+    },
+    {
+      "question": "Complete the lesson statement: “_____ application-layer validation that “never lets bad data through” (a second writer always appears); CHECK constraints written with…”",
+      "options": [
+        "Common pitfalls:",
+        "Per column",
+        "One per column"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Common pitfalls: application-layer validation that “never lets bad data through” (a second writer always appears); CHECK constraints written with non-deterministic functions that cannot be used there; unique keys defined on the wrong column combination; and dropping constraints to “speed up the load” without a scheduled re-enable.”"
+    }
+  ],
   takeaways: [
     "Constraints are engine-enforced rules on every write — entity (PK/UNIQUE), domain (NOT NULL/CHECK/DEFAULT), referential (FK)",
     "A unique key enforces uniqueness through a unique index, permits one NULL, and allows many per table",

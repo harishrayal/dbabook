@@ -161,6 +161,312 @@ A timeline, impact, root cause, contributing factors, what went well and badly, 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Communication is part of the job.",
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Post-Incident Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Post-Incident Reports within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Incident Reports fits”?",
+      "options": [
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Incident Reports in practice”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Incident Reports”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Post-Incident Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Post-Incident Reports means”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Incident Reports fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Post-Incident Reports alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Incident Reports in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The following comparison captures the distinctions that matter most when working with Post-Incident Reports:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Post-Incident Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Incident Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Communication is part of the job.",
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Post-Incident Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Post-Incident Reports within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Incident Reports fits”?",
+      "options": [
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Incident Reports in practice”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Incident Reports”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Post-Incident Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Post-Incident Reports means”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Incident Reports fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Post-Incident Reports alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Incident Reports in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The following comparison captures the distinctions that matter most when working with Post-Incident Reports:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Post-Incident Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Incident Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within production incident management.”",
+      "options": [
+        "Communication is part of the job.",
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Post-Incident Reports"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Post-Incident Reports within production incident management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Incident Reports fits”?",
+      "options": [
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "Communication is part of the job."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates. Blameless culture surfaces the real causes instead of hiding them.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Incident Reports in practice”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "Post-Incident Reports is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A production incident is an unplanned event that degrades or stops service. The priority is to restore service first, then find the root cause — investigation during an outage extends the outage.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Incident Reports”?",
+      "options": [
+        "Root cause analysis and blameless post-incident reports capture what happened, why, and the concrete prevention actions with owners and dates.",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Post-Incident Reports. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "A production incident is an unplanned event that degrades or stops service.",
+        "The response lifecycle is detect, triage, diagnose, mitigate, resolve and review.",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The response lifecycle is detect, triage, diagnose, mitigate, resolve and review. Triage assigns severity and an owner; mitigation restores service, sometimes with a workaround; the post-incident review prevents recurrence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Post-Incident Reports means”?",
+      "options": [
+        "Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations.",
+        "Same hour, frequent updates",
+        "Next business day"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Each incident type has a runbook: a concise, tested set of diagnostic steps and safe mitigations. Runbooks reduce errors and speed response when adrenaline is high and time is short.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Post-Incident Reports fits”?",
+      "options": [
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates",
+        "The diagram below places Post-Incident Reports alongside the core concepts of production incident management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Post-Incident Reports alongside the core concepts of production incident management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Post-Incident Reports in practice”?",
+      "options": [
+        "Prioritisation weighs impact and urgency.",
+        "The following comparison captures the distinctions that matter most when working with Post-Incident Reports:",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Post-Incident Reports:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Post-Incident Reports”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Immediate page, continuous updates",
+        "Same hour, frequent updates"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Same hour, frequent updates",
+        "Next business day",
+        "Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Common database incidents include server or service down, database offline, disk or log full, backup failure, corruption, slow performance, blocking, high CPU/memory, tempdb full and connection or login failures.”"
+    }
+  ],
   takeaways: [
     "Post-Incident Reports is a fundamental concept in production incident management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

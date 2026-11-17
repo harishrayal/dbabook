@@ -181,6 +181,312 @@ A login authenticates to the server (server scope); a user is the login's mapped
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Fixed Server Roles",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Fixed Server Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Server Roles fits”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Next, verify the result and capture a baseline.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Server Roles in practice”?",
+      "options": [
+        "Overridden by DENY",
+        "Overrides GRANT everywhere",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Server Roles”?",
+      "options": [
+        "Overridden by DENY",
+        "Theory becomes useful when you can apply it.",
+        "With Fixed Server Roles, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Fixed Server Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Fixed Server Roles sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "With Fixed Server Roles, prefer measured, reversible changes.",
+        "Fixed Server Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Fixed Server Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Fixed Server Roles means”?",
+      "options": [
+        "Fixed Server Roles",
+        "Roles simplify permission management.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Server Roles fits”?",
+      "options": [
+        "The diagram below places Fixed Server Roles alongside the core concepts of SQL Server security and permissions.",
+        "Overrides GRANT everywhere",
+        "Neutral"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Fixed Server Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Server Roles in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Fixed Server Roles.",
+        "The following comparison captures the distinctions that matter most when working with Fixed Server Roles:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Fixed Server Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Server Roles”?",
+      "options": [
+        "Use the following as a starting point when investigating Fixed Server Roles.",
+        "The first example establishes the relevant state.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Fixed Server Roles",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Fixed Server Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Server Roles fits”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Next, verify the result and capture a baseline.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Server Roles in practice”?",
+      "options": [
+        "Overridden by DENY",
+        "Overrides GRANT everywhere",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Server Roles”?",
+      "options": [
+        "Overridden by DENY",
+        "Theory becomes useful when you can apply it.",
+        "With Fixed Server Roles, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Fixed Server Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Fixed Server Roles sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "With Fixed Server Roles, prefer measured, reversible changes.",
+        "Fixed Server Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Fixed Server Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Fixed Server Roles means”?",
+      "options": [
+        "Fixed Server Roles",
+        "Roles simplify permission management.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Server Roles fits”?",
+      "options": [
+        "The diagram below places Fixed Server Roles alongside the core concepts of SQL Server security and permissions.",
+        "Overrides GRANT everywhere",
+        "Neutral"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Fixed Server Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Server Roles in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Fixed Server Roles.",
+        "The following comparison captures the distinctions that matter most when working with Fixed Server Roles:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Fixed Server Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Server Roles”?",
+      "options": [
+        "Use the following as a starting point when investigating Fixed Server Roles.",
+        "The first example establishes the relevant state.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server security and permissions.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Fixed Server Roles",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “In this topic we examine Fixed Server Roles within SQL Server security and permissions. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Server Roles fits”?",
+      "options": [
+        "GRANT, DENY and REVOKE form the permission vocabulary.",
+        "Next, verify the result and capture a baseline.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “GRANT, DENY and REVOKE form the permission vocabulary. DENY overrides GRANT at every level, so it must be used sparingly — a DENY at a higher scope can silently block access granted lower down.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Server Roles in practice”?",
+      "options": [
+        "Overridden by DENY",
+        "Overrides GRANT everywhere",
+        "Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Least privilege is the governing principle: give each identity only the permissions it needs, for only the scope it needs, and review them regularly. Avoid sysadmin and db_owner for application accounts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Server Roles”?",
+      "options": [
+        "Overridden by DENY",
+        "Theory becomes useful when you can apply it.",
+        "With Fixed Server Roles, prefer measured, reversible changes."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Fixed Server Roles. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence.",
+        "Fixed Server Roles sits inside a larger system."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Security is layered: authentication establishes identity (who you are), authorization determines what that identity may do. Confusing the two is the root of most permission problems.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "A server login grants access to the instance; a database user maps that login to a database.",
+        "With Fixed Server Roles, prefer measured, reversible changes.",
+        "Fixed Server Roles"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “This section consolidates Fixed Server Roles with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Fixed Server Roles means”?",
+      "options": [
+        "Fixed Server Roles",
+        "Roles simplify permission management.",
+        "Neutral"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Roles simplify permission management. Fixed server roles (sysadmin, serveradmin, securityadmin...) and fixed database roles (db_owner, db_datareader, db_datawriter...) grant predefined sets; user-defined roles let you assemble least-privilege groups for an application.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Fixed Server Roles fits”?",
+      "options": [
+        "The diagram below places Fixed Server Roles alongside the core concepts of SQL Server security and permissions.",
+        "Overrides GRANT everywhere",
+        "Neutral"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The diagram below places Fixed Server Roles alongside the core concepts of SQL Server security and permissions. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Fixed Server Roles in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "Use the following as a starting point when investigating Fixed Server Roles.",
+        "The following comparison captures the distinctions that matter most when working with Fixed Server Roles:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Fixed Server Roles:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Fixed Server Roles”?",
+      "options": [
+        "Use the following as a starting point when investigating Fixed Server Roles.",
+        "The first example establishes the relevant state.",
+        "SQL Server Audit and failed-login monitoring provide detection and evidence."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Fixed Server Roles is a fundamental concept in SQL Server security and permissions",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

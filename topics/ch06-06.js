@@ -182,6 +182,312 @@ No. TempDB is recreated on every SQL Server start, so it cannot be backed up or 
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "User-Defined Filegroups",
+        "The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine User-Defined Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Filegroups fits”?",
+      "options": [
+        "System objects, boot information",
+        "User objects across filegroups",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Filegroups in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Filegroups”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to User-Defined Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "User-Defined Filegroups",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates User-Defined Filegroups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What User-Defined Filegroups means”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Filegroups fits”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "The diagram below places User-Defined Filegroups alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places User-Defined Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Filegroups in practice”?",
+      "options": [
+        "Only with monitoring",
+        "The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:",
+        "Avoid on large files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Filegroups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "User-Defined Filegroups",
+        "The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine User-Defined Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Filegroups fits”?",
+      "options": [
+        "System objects, boot information",
+        "User objects across filegroups",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Filegroups in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Filegroups”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to User-Defined Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "User-Defined Filegroups",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates User-Defined Filegroups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What User-Defined Filegroups means”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Filegroups fits”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "The diagram below places User-Defined Filegroups alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places User-Defined Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Filegroups in practice”?",
+      "options": [
+        "Only with monitoring",
+        "The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:",
+        "Avoid on large files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Filegroups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within database storage and file management.”",
+      "options": [
+        "User-Defined Filegroups",
+        "The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:",
+        "The PRIMARY filegroup holds system objects and is the default home for user objects."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine User-Defined Filegroups within database storage and file management. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Filegroups fits”?",
+      "options": [
+        "System objects, boot information",
+        "User objects across filegroups",
+        "For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics…"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “For TempDB best practice: multiple equally sized data files (one per CPU core up to around eight) on fast storage, pre-sized to avoid growth, with trace flag 1118 semantics standard on modern versions.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Filegroups in practice”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "A database has logical files (data and log) mapped to physical files on disk.",
+        "Next, verify the result and capture a baseline."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A database has logical files (data and log) mapped to physical files on disk. Data files (MDF primary, NDF secondary) are grouped into filegroups; the log file (LDF) is separate and managed independently.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Filegroups”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "System objects, boot information",
+        "User objects across filegroups"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to User-Defined Filegroups. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "User objects across filegroups",
+        "Transaction log, recovery",
+        "Data file growth and log file growth behave differently."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Data file growth and log file growth behave differently. Data can spread across many files in a filegroup; the log is effectively sequential and can only grow by adding VLFs, so uncontrolled growth harms recovery.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "The first example establishes the relevant state.",
+        "User-Defined Filegroups",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates User-Defined Filegroups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What User-Defined Filegroups means”?",
+      "options": [
+        "Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth.",
+        "Data file growth and log file growth behave differently.",
+        "File relocation is a catalogue operation followed by a physical move: ALTER DATABASE..."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Shrinking a file returns space to the OS but causes fragmentation and can trigger immediate regrowth. It is appropriate after a one-off large deletion or before a migration, never as a recurring maintenance task.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where User-Defined Filegroups fits”?",
+      "options": [
+        "Autogrowth is a safety net, not a sizing strategy.",
+        "Data file growth and log file growth behave differently.",
+        "The diagram below places User-Defined Filegroups alongside the core concepts of database storage and file management."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places User-Defined Filegroups alongside the core concepts of database storage and file management. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “User-Defined Filegroups in practice”?",
+      "options": [
+        "Only with monitoring",
+        "The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:",
+        "Avoid on large files"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with User-Defined Filegroups:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with User-Defined Filegroups”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Preferred — predictable",
+        "Avoid on large files"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "User-Defined Filegroups is a fundamental concept in database storage and file management",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

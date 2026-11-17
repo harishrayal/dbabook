@@ -43,6 +43,17 @@ for (const e of expected) {
   if (!t.scenario) missingFields.push("scenario");
   if (!Array.isArray(t.interview) || t.interview.length < 2) missingFields.push("interview");
   if (!Array.isArray(t.takeaways) || t.takeaways.length < 4) missingFields.push("takeaways");
+  if (!Array.isArray(t.quiz) || t.quiz.length < 10) {
+    missingFields.push("quiz (at least 10 questions)");
+  } else {
+    t.quiz.forEach((q, index) => {
+      if (!q.question || !q.explanation || !Array.isArray(q.options) || q.options.length < 3 ||
+          !Number.isInteger(q.answerIndex) || q.answerIndex < 0 || q.answerIndex >= q.options.length ||
+          new Set(q.options).size !== q.options.length) {
+        missingFields.push(`quiz question ${index + 1} (invalid question, options, or answer)`);
+      }
+    });
+  }
   const allHtml = (t.sections || []).map(s => s.html || "").join("") + (t.scenario?.html || "");
   if (!allHtml.includes("<svg")) missingFields.push("svg-figure");
   if (!/<pre><code/.test(allHtml)) missingFields.push("code-block");

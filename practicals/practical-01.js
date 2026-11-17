@@ -164,6 +164,312 @@ FROM   sys.check_constraints;</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "Every table's identity column — unique and never NULL",
+        "You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio. Everything below runs on a local instance — nothing touches production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The schema you will build”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A minimal retail model that exercises every fundamental concept:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Concepts this lab proves”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Every object you created is recorded in the system catalogue."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data type choices are part of design, not an afterthought. They determine storage width, index key size and whether a calculation is correct. Prefer datetime2 over datetime for new work, decimal over float for money, and nvarchar sized to a realistic maximum rather than an arbitrary 255.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data types and the catalogue”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "Every table's identity column — unique and never NULL",
+        "Every object you created is recorded in the system catalogue."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every object you created is recorded in the system catalogue. Learning to read it directly — rather than relying only on SSMS dialogs — is the habit that turns a beginner into a DBA who can answer questions on any instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Orders.OrderDate = SYSDATETIME()",
+        "Create a scratch database sized sanely so you also see file behaviour later in the roadmap:",
+        "OrderItems.Quantity &gt; 0 — business rules close to the data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Create a scratch database sized sanely so you also see file behaviour later in the roadmap:”"
+    },
+    {
+      "question": "In the “Concepts this lab proves” table, what is listed for “Primary key” under “Where you see it”?",
+      "options": [
+        "Every table's identity column — unique and never NULL",
+        "You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio.",
+        "Create a scratch database sized sanely so you also see file behaviour later in the roadmap:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Primary key” as “Every table's identity column — unique and never NULL”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data types and the catalogue”?",
+      "options": [
+        "Customers.Email — duplicate prevention at the storage layer",
+        "OrderItems.Quantity &gt; 0 — business rules close to the data",
+        "SSMS generates its object trees from these same views."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SSMS generates its object trees from these same views. Querying them yourself gives you the same answer, works on any instance, and can be automated across a whole estate — something clicking through dialogs can never do.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — confirm you are on the right instance before any change, a habit that will save you in production:”",
+      "options": [
+        "A stable interface for reports over joined tables",
+        "Environment check",
+        "Orders.OrderDate = SYSDATETIME()"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Environment check — confirm you are on the right instance before any change, a habit that will save you in production:”"
+    },
+    {
+      "question": "In the “Concepts this lab proves” table, what is listed for “Foreign key” under “Where you see it”?",
+      "options": [
+        "Orders.CustomerID → Customers: the database enforces the relationship",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Data type choices are part of design, not an afterthought."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Foreign key” as “Orders.CustomerID → Customers: the database enforces the relationship”."
+    },
+    {
+      "question": "In the “Data types and the catalogue” table, what is listed for “sys.tables” under “Typical use”?",
+      "options": [
+        "Orders.CustomerID → Customers: the database enforces the relationship",
+        "Customers.Email — duplicate prevention at the storage layer",
+        "Inventory the schema"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “sys.tables” as “Inventory the schema”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "Every table's identity column — unique and never NULL",
+        "You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio. Everything below runs on a local instance — nothing touches production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The schema you will build”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A minimal retail model that exercises every fundamental concept:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Concepts this lab proves”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Every object you created is recorded in the system catalogue."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data type choices are part of design, not an afterthought. They determine storage width, index key size and whether a calculation is correct. Prefer datetime2 over datetime for new work, decimal over float for money, and nvarchar sized to a realistic maximum rather than an arbitrary 255.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data types and the catalogue”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "Every table's identity column — unique and never NULL",
+        "Every object you created is recorded in the system catalogue."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every object you created is recorded in the system catalogue. Learning to read it directly — rather than relying only on SSMS dialogs — is the habit that turns a beginner into a DBA who can answer questions on any instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Orders.OrderDate = SYSDATETIME()",
+        "Create a scratch database sized sanely so you also see file behaviour later in the roadmap:",
+        "OrderItems.Quantity > 0 — business rules close to the data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Create a scratch database sized sanely so you also see file behaviour later in the roadmap:”"
+    },
+    {
+      "question": "In the “Concepts this lab proves” table, what is listed for “Primary key” under “Where you see it”?",
+      "options": [
+        "Every table's identity column — unique and never NULL",
+        "You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio.",
+        "Create a scratch database sized sanely so you also see file behaviour later in the roadmap:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Primary key” as “Every table's identity column — unique and never NULL”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data types and the catalogue”?",
+      "options": [
+        "Customers.Email — duplicate prevention at the storage layer",
+        "OrderItems.Quantity > 0 — business rules close to the data",
+        "SSMS generates its object trees from these same views."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SSMS generates its object trees from these same views. Querying them yourself gives you the same answer, works on any instance, and can be automated across a whole estate — something clicking through dialogs can never do.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — confirm you are on the right instance before any change, a habit that will save you in production:”",
+      "options": [
+        "A stable interface for reports over joined tables",
+        "Environment check",
+        "Orders.OrderDate = SYSDATETIME()"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Environment check — confirm you are on the right instance before any change, a habit that will save you in production:”"
+    },
+    {
+      "question": "In the “Concepts this lab proves” table, what is listed for “Foreign key” under “Where you see it”?",
+      "options": [
+        "Orders.CustomerID → Customers: the database enforces the relationship",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Data type choices are part of design, not an afterthought."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Foreign key” as “Orders.CustomerID → Customers: the database enforces the relationship”."
+    },
+    {
+      "question": "In the “Data types and the catalogue” table, what is listed for “sys.tables” under “Typical use”?",
+      "options": [
+        "Orders.CustomerID → Customers: the database enforces the relationship",
+        "Customers.Email — duplicate prevention at the storage layer",
+        "Inventory the schema"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “sys.tables” as “Inventory the schema”."
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "Every table's identity column — unique and never NULL",
+        "You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio. Everything below runs on a local instance — nothing touches production.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The schema you will build”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A minimal retail model that exercises every fundamental concept:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Concepts this lab proves”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Every object you created is recorded in the system catalogue."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Data type choices are part of design, not an afterthought. They determine storage width, index key size and whether a calculation is correct. Prefer datetime2 over datetime for new work, decimal over float for money, and nvarchar sized to a realistic maximum rather than an arbitrary 255.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data types and the catalogue”?",
+      "options": [
+        "Data type choices are part of design, not an afterthought.",
+        "Every table's identity column — unique and never NULL",
+        "Every object you created is recorded in the system catalogue."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Every object you created is recorded in the system catalogue. Learning to read it directly — rather than relying only on SSMS dialogs — is the habit that turns a beginner into a DBA who can answer questions on any instance.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Orders.OrderDate = SYSDATETIME()",
+        "Create a scratch database sized sanely so you also see file behaviour later in the roadmap:",
+        "OrderItems.Quantity > 0 — business rules close to the data"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Create a scratch database sized sanely so you also see file behaviour later in the roadmap:”"
+    },
+    {
+      "question": "In the “Concepts this lab proves” table, what is listed for “Primary key” under “Where you see it”?",
+      "options": [
+        "Every table's identity column — unique and never NULL",
+        "You need a SQL Server instance (Developer or Express edition is fine) and SSMS or Azure Data Studio.",
+        "Create a scratch database sized sanely so you also see file behaviour later in the roadmap:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Primary key” as “Every table's identity column — unique and never NULL”."
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Data types and the catalogue”?",
+      "options": [
+        "Customers.Email — duplicate prevention at the storage layer",
+        "OrderItems.Quantity > 0 — business rules close to the data",
+        "SSMS generates its object trees from these same views."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SSMS generates its object trees from these same views. Querying them yourself gives you the same answer, works on any instance, and can be automated across a whole estate — something clicking through dialogs can never do.”"
+    },
+    {
+      "question": "Complete the lesson statement: “_____ — confirm you are on the right instance before any change, a habit that will save you in production:”",
+      "options": [
+        "A stable interface for reports over joined tables",
+        "Environment check",
+        "Orders.OrderDate = SYSDATETIME()"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Environment check — confirm you are on the right instance before any change, a habit that will save you in production:”"
+    },
+    {
+      "question": "In the “Concepts this lab proves” table, what is listed for “Foreign key” under “Where you see it”?",
+      "options": [
+        "Orders.CustomerID → Customers: the database enforces the relationship",
+        "A minimal retail model that exercises every fundamental concept:",
+        "Data type choices are part of design, not an afterthought."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson’s table lists “Foreign key” as “Orders.CustomerID → Customers: the database enforces the relationship”."
+    },
+    {
+      "question": "In the “Data types and the catalogue” table, what is listed for “sys.tables” under “Typical use”?",
+      "options": [
+        "Orders.CustomerID → Customers: the database enforces the relationship",
+        "Customers.Email — duplicate prevention at the storage layer",
+        "Inventory the schema"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson’s table lists “sys.tables” as “Inventory the schema”."
+    }
+  ],
   takeaways: [
     "Build the schema first: PK → columns/types → constraints → FKs → indexes → programmability",
     "Prove constraints work by deliberately violating them — never assume",

@@ -183,6 +183,312 @@ A proxy maps a job step to a credential so the step can run under a different, a
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Cleanup Jobs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Cleanup Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Cleanup Jobs fits”?",
+      "options": [
+        "With Database Cleanup Jobs, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Cleanup Jobs in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Cleanup Jobs sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Cleanup Jobs”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Cleanup Jobs sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Cleanup Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "With Database Cleanup Jobs, prefer measured, reversible changes.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Cleanup Jobs sits inside a larger system.",
+        "Database Cleanup Jobs",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Cleanup Jobs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Cleanup Jobs means”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Use the following as a starting point when investigating Database Cleanup Jobs.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Cleanup Jobs fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Cleanup Jobs.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "The diagram below places Database Cleanup Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Cleanup Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Cleanup Jobs in practice”?",
+      "options": [
+        "Database Cleanup Jobs",
+        "The following comparison captures the distinctions that matter most when working with Database Cleanup Jobs:",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Cleanup Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Cleanup Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Cleanup Jobs",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Cleanup Jobs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Cleanup Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Cleanup Jobs fits”?",
+      "options": [
+        "With Database Cleanup Jobs, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Cleanup Jobs in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Cleanup Jobs sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Cleanup Jobs”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Cleanup Jobs sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Cleanup Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "With Database Cleanup Jobs, prefer measured, reversible changes.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Cleanup Jobs sits inside a larger system.",
+        "Database Cleanup Jobs",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Cleanup Jobs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Cleanup Jobs means”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Use the following as a starting point when investigating Database Cleanup Jobs.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Cleanup Jobs fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Cleanup Jobs.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "The diagram below places Database Cleanup Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Cleanup Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Cleanup Jobs in practice”?",
+      "options": [
+        "Database Cleanup Jobs",
+        "The following comparison captures the distinctions that matter most when working with Database Cleanup Jobs:",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Cleanup Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Cleanup Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Cleanup Jobs",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within SQL Server Agent and automation.”",
+      "options": [
+        "Database Cleanup Jobs",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions.",
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “In this topic we examine Database Cleanup Jobs within SQL Server Agent and automation. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Cleanup Jobs fits”?",
+      "options": [
+        "With Database Cleanup Jobs, prefer measured, reversible changes.",
+        "Database Mail configured",
+        "SQL Server Agent is the scheduling and automation engine."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQL Server Agent is the scheduling and automation engine. It runs jobs — collections of one or more steps — on schedules, and can raise alerts and notify operators when something fails.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Cleanup Jobs in practice”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "A job step can run T-SQL, PowerShell, SSIS packages or command-line programs.",
+        "Database Cleanup Jobs sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A job step can run T-SQL, PowerShell, SSIS packages or command-line programs. Steps execute in order; the success or failure of each step controls what runs next, which lets you build branching maintenance workflows.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Cleanup Jobs”?",
+      "options": [
+        "Theory becomes useful when you can apply it.",
+        "Database Cleanup Jobs sits inside a larger system.",
+        "The distinctions below are the ones that matter most in day-to-day administration:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Database Cleanup Jobs. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "Alerts respond to SQL Server errors or performance conditions, such as severity 19+ errors or a specific error number, and can execute a job in response — the backbone of…",
+        "With Database Cleanup Jobs, prefer measured, reversible changes.",
+        "Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Notifications go to operators by email, pager or net send, triggered by alerts or job completion conditions. Database Mail must be configured for email notifications to work.”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Database Cleanup Jobs sits inside a larger system.",
+        "Database Cleanup Jobs",
+        "Notification set on job"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “This section consolidates Database Cleanup Jobs with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Database Cleanup Jobs means”?",
+      "options": [
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…",
+        "Use the following as a starting point when investigating Database Cleanup Jobs.",
+        "Job history is the diagnostic record."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file system or network.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Database Cleanup Jobs fits”?",
+      "options": [
+        "Use the following as a starting point when investigating Database Cleanup Jobs.",
+        "SQL Server Agent is the scheduling and automation engine.",
+        "The diagram below places Database Cleanup Jobs alongside the core concepts of SQL Server Agent and automation."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Database Cleanup Jobs alongside the core concepts of SQL Server Agent and automation. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Database Cleanup Jobs in practice”?",
+      "options": [
+        "Database Cleanup Jobs",
+        "The following comparison captures the distinctions that matter most when working with Database Cleanup Jobs:",
+        "Missed window"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Database Cleanup Jobs:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Database Cleanup Jobs”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Database Cleanup Jobs",
+        "Proxies and credentials let a job step run under a different, appropriately privileged account without exposing that account's password, essential for steps that touch the file…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    }
+  ],
   takeaways: [
     "Database Cleanup Jobs is a fundamental concept in SQL Server Agent and automation",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

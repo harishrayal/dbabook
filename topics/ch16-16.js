@@ -165,6 +165,312 @@ Quorum is the majority requirement that decides which nodes may own the cluster;
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "With Readable Secondary Replicas, prefer measured, reversible changes.",
+        "Readable Secondary Replicas"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Readable Secondary Replicas within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Readable Secondary Replicas fits”?",
+      "options": [
+        "Lower",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Higher (wait for secondary)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Readable Secondary Replicas in practice”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Readable Secondary Replicas”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Readable Secondary Replicas",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Readable Secondary Replicas. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Readable Secondary Replicas"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Readable Secondary Replicas means”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Readable Secondary Replicas fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Readable Secondary Replicas is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Readable Secondary Replicas alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Readable Secondary Replicas in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The following comparison captures the distinctions that matter most when working with Readable Secondary Replicas:",
+        "Readable Secondary Replicas is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Readable Secondary Replicas:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Readable Secondary Replicas”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "With Readable Secondary Replicas, prefer measured, reversible changes.",
+        "Readable Secondary Replicas"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Readable Secondary Replicas within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Readable Secondary Replicas fits”?",
+      "options": [
+        "Lower",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Higher (wait for secondary)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Readable Secondary Replicas in practice”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Readable Secondary Replicas”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Readable Secondary Replicas",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Readable Secondary Replicas. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Readable Secondary Replicas"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Readable Secondary Replicas means”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Readable Secondary Replicas fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Readable Secondary Replicas is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Readable Secondary Replicas alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Readable Secondary Replicas in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The following comparison captures the distinctions that matter most when working with Readable Secondary Replicas:",
+        "Readable Secondary Replicas is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Readable Secondary Replicas:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Readable Secondary Replicas”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within high availability.”",
+      "options": [
+        "Failover can be automatic, manual or forced.",
+        "With Readable Secondary Replicas, prefer measured, reversible changes.",
+        "Readable Secondary Replicas"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Readable Secondary Replicas within high availability. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Readable Secondary Replicas fits”?",
+      "options": [
+        "Lower",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "Higher (wait for secondary)"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Requirements must be expressed in RPO and RTO before technology is chosen. Synchronous replication gives RPO = 0 but adds latency; asynchronous gives distance at the cost of possible data loss on failover.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Readable Secondary Replicas in practice”?",
+      "options": [
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Automatic with sync commit",
+        "Manual, planned"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance at a time. Failure moves the instance to another node.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Readable Secondary Replicas”?",
+      "options": [
+        "Availability replicas may be synchronous (the primary waits for the secondary to harden the log) or asynchronous.",
+        "Readable Secondary Replicas",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Readable Secondary Replicas. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership.",
+        "Readable Secondary Replicas"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Quorum is the mechanism that prevents split-brain: a majority of voting members must agree on cluster ownership. Losing quorum stops the cluster to protect data, which is why witness configuration matters.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Readable Secondary Replicas means”?",
+      "options": [
+        "HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum.",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “HA monitoring covers replica health, synchronization state, send/redo queues, failover events and quorum. An untested HA configuration is a belief — regular failover testing is essential.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Readable Secondary Replicas fits”?",
+      "options": [
+        "High availability keeps a database service reachable through failures.",
+        "Readable Secondary Replicas is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Readable Secondary Replicas alongside the core concepts of high availability. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Readable Secondary Replicas in practice”?",
+      "options": [
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The following comparison captures the distinctions that matter most when working with Readable Secondary Replicas:",
+        "Readable Secondary Replicas is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Readable Secondary Replicas:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Readable Secondary Replicas”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "Requirements must be expressed in RPO and RTO before technology is chosen.",
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The diagram below places Readable Secondary Replicas alongside the core concepts of high availability.",
+        "A failover cluster instance (FCI) provides instance-level protection: two or more Windows Server Failover Clustering nodes share storage, and only one owns the SQL Server instance…",
+        "Failover can be automatic, manual or forced."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Failover can be automatic, manual or forced. Automatic is fastest but requires healthy synchronous replication; forced failover risks data loss and is an emergency measure only.”"
+    }
+  ],
   takeaways: [
     "Readable Secondary Replicas is a fundamental concept in high availability",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

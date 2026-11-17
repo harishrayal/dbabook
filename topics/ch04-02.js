@@ -210,6 +210,312 @@ WHERE  wait_type = N'THREADPOOL';</code></pre>
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The component catalogue”?",
+      "options": [
+        "The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:",
+        "Microsoft documents the Database Engine in three groups — the relational engine, the storage engine, and the SQLOS services that support both.",
+        "cost-based"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Microsoft documents the Database Engine in three groups — the relational engine, the storage engine, and the SQLOS services that support both. The practical catalogue a DBA works with looks like this:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Everything entering SQL Server arrives as _____ on one of four transports: shared memory (local tools), TCP/IP (remote, default port 1433), named pipes, or VIA (retired).”",
+      "options": [
+        "TDS",
+        "SQLOS",
+        "Login vs session"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Everything entering SQL Server arrives as TDS on one of four transports: shared memory (local tools), TCP/IP (remote, default port 1433), named pipes, or VIA (retired). The protocol layer validates the login envelope, establishes encryption if configured, and hands a complete batch — SQL text plus RPC parameters — to the relational engine.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relational engine components at work”?",
+      "options": [
+        "Syntax trees, name resolution, type binding",
+        "Cost-based plan selection from statistics",
+        "The relational engine turns text into a plan."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine turns text into a plan. Three sub-components do the heavy lifting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage engine components at work”?",
+      "options": [
+        "Runs the plan row by row (iterators)",
+        "The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:",
+        "Cost-based plan selection from statistics"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading component health from DMVs”?",
+      "options": [
+        "Wait stats are the component-level heartbeat.",
+        "Runs the plan row by row (iterators)",
+        "Catalog views, permissions, constraints"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait stats are the component-level heartbeat. This query ranks them with the signal/resource split — signal time is time spent ready to run but waiting for CPU (SQLOS contention), resource time is time spent blocked on the component itself:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Worker pools: when a component runs out of threads”?",
+      "options": [
+        "Catalog views, permissions, constraints",
+        "Heaps and b-trees: find, insert, delete rows",
+        "SQLOS allocates workers up to the max worker threads setting (0 = auto-configured from CPU count)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQLOS allocates workers up to the max worker threads setting (0 = auto-configured from CPU count). When all workers are busy, new tasks queue and sessions wait on THREADPOOL — the classic “server is idle but nothing runs” signature. Schedulers expose this directly:”"
+    },
+    {
+      "question": "In the “The component catalogue” table, what is listed for “Protocol” under “Responsibility”?",
+      "options": [
+        "Log records, WAL, recovery, log writer",
+        "Listener endpoints, TLS, connection brokering",
+        "Shared/exclusive/updater locks, deadlocks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Protocol” as “Listener endpoints, TLS, connection brokering”."
+    },
+    {
+      "question": "Complete the lesson statement: “Because the optimizer is _____, its choices are only as good as the statistics it reads — which is why stale or missing statistics produce “it was fast on Tuesday” regressions.”",
+      "options": [
+        "cost-based",
+        "Algebrizer (binder)",
+        "Optimizer and executor"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because the optimizer is cost-based, its choices are only as good as the statistics it reads — which is why stale or missing statistics produce “it was fast on Tuesday” regressions. The plan itself is cached and reused by the plan cache component (ch04-08).”"
+    },
+    {
+      "question": "Complete the lesson statement: “The hand-off point is where most tuning happens: the relational side gives you _____; the storage side gives you pages, locks and log.”",
+      "options": [
+        "Optimizer and executor",
+        "cost-based",
+        "plans and indexes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The hand-off point is where most tuning happens: the relational side gives you plans and indexes; the storage side gives you pages, locks and log. A slow query is almost always one of the two, and the wait type tells you which.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Interpretation rules of thumb: a high _____ percentage means the component is healthy but the server lacks CPU; a high resource percentage means you are waiting on that specific component — disk, lock, log, or network.”",
+      "options": [
+        "Access methods",
+        "signal",
+        "cost-based"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Interpretation rules of thumb: a high signal percentage means the component is healthy but the server lacks CPU; a high resource percentage means you are waiting on that specific component — disk, lock, log, or network.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The component catalogue”?",
+      "options": [
+        "The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:",
+        "Microsoft documents the Database Engine in three groups — the relational engine, the storage engine, and the SQLOS services that support both.",
+        "cost-based"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Microsoft documents the Database Engine in three groups — the relational engine, the storage engine, and the SQLOS services that support both. The practical catalogue a DBA works with looks like this:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Everything entering SQL Server arrives as _____ on one of four transports: shared memory (local tools), TCP/IP (remote, default port 1433), named pipes, or VIA (retired).”",
+      "options": [
+        "TDS",
+        "SQLOS",
+        "Login vs session"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Everything entering SQL Server arrives as TDS on one of four transports: shared memory (local tools), TCP/IP (remote, default port 1433), named pipes, or VIA (retired). The protocol layer validates the login envelope, establishes encryption if configured, and hands a complete batch — SQL text plus RPC parameters — to the relational engine.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relational engine components at work”?",
+      "options": [
+        "Syntax trees, name resolution, type binding",
+        "Cost-based plan selection from statistics",
+        "The relational engine turns text into a plan."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine turns text into a plan. Three sub-components do the heavy lifting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage engine components at work”?",
+      "options": [
+        "Runs the plan row by row (iterators)",
+        "The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:",
+        "Cost-based plan selection from statistics"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading component health from DMVs”?",
+      "options": [
+        "Wait stats are the component-level heartbeat.",
+        "Runs the plan row by row (iterators)",
+        "Catalog views, permissions, constraints"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait stats are the component-level heartbeat. This query ranks them with the signal/resource split — signal time is time spent ready to run but waiting for CPU (SQLOS contention), resource time is time spent blocked on the component itself:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Worker pools: when a component runs out of threads”?",
+      "options": [
+        "Catalog views, permissions, constraints",
+        "Heaps and b-trees: find, insert, delete rows",
+        "SQLOS allocates workers up to the max worker threads setting (0 = auto-configured from CPU count)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQLOS allocates workers up to the max worker threads setting (0 = auto-configured from CPU count). When all workers are busy, new tasks queue and sessions wait on THREADPOOL — the classic “server is idle but nothing runs” signature. Schedulers expose this directly:”"
+    },
+    {
+      "question": "In the “The component catalogue” table, what is listed for “Protocol” under “Responsibility”?",
+      "options": [
+        "Log records, WAL, recovery, log writer",
+        "Listener endpoints, TLS, connection brokering",
+        "Shared/exclusive/updater locks, deadlocks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Protocol” as “Listener endpoints, TLS, connection brokering”."
+    },
+    {
+      "question": "Complete the lesson statement: “Because the optimizer is _____, its choices are only as good as the statistics it reads — which is why stale or missing statistics produce “it was fast on Tuesday” regressions.”",
+      "options": [
+        "cost-based",
+        "Algebrizer (binder)",
+        "Optimizer and executor"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because the optimizer is cost-based, its choices are only as good as the statistics it reads — which is why stale or missing statistics produce “it was fast on Tuesday” regressions. The plan itself is cached and reused by the plan cache component (ch04-08).”"
+    },
+    {
+      "question": "Complete the lesson statement: “The hand-off point is where most tuning happens: the relational side gives you _____; the storage side gives you pages, locks and log.”",
+      "options": [
+        "Optimizer and executor",
+        "cost-based",
+        "plans and indexes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The hand-off point is where most tuning happens: the relational side gives you plans and indexes; the storage side gives you pages, locks and log. A slow query is almost always one of the two, and the wait type tells you which.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Interpretation rules of thumb: a high _____ percentage means the component is healthy but the server lacks CPU; a high resource percentage means you are waiting on that specific component — disk, lock, log, or network.”",
+      "options": [
+        "Access methods",
+        "signal",
+        "cost-based"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Interpretation rules of thumb: a high signal percentage means the component is healthy but the server lacks CPU; a high resource percentage means you are waiting on that specific component — disk, lock, log, or network.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “The component catalogue”?",
+      "options": [
+        "The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:",
+        "Microsoft documents the Database Engine in three groups — the relational engine, the storage engine, and the SQLOS services that support both.",
+        "cost-based"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Microsoft documents the Database Engine in three groups — the relational engine, the storage engine, and the SQLOS services that support both. The practical catalogue a DBA works with looks like this:”"
+    },
+    {
+      "question": "Complete the lesson statement: “Everything entering SQL Server arrives as _____ on one of four transports: shared memory (local tools), TCP/IP (remote, default port 1433), named pipes, or VIA (retired).”",
+      "options": [
+        "TDS",
+        "SQLOS",
+        "Login vs session"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Everything entering SQL Server arrives as TDS on one of four transports: shared memory (local tools), TCP/IP (remote, default port 1433), named pipes, or VIA (retired). The protocol layer validates the login envelope, establishes encryption if configured, and hands a complete batch — SQL text plus RPC parameters — to the relational engine.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Relational engine components at work”?",
+      "options": [
+        "Syntax trees, name resolution, type binding",
+        "Cost-based plan selection from statistics",
+        "The relational engine turns text into a plan."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The relational engine turns text into a plan. Three sub-components do the heavy lifting:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Storage engine components at work”?",
+      "options": [
+        "Runs the plan row by row (iterators)",
+        "The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:",
+        "Cost-based plan selection from statistics"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The relational engine never issues file I/O itself; it calls into the storage engine, which owns four components:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Reading component health from DMVs”?",
+      "options": [
+        "Wait stats are the component-level heartbeat.",
+        "Runs the plan row by row (iterators)",
+        "Catalog views, permissions, constraints"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Wait stats are the component-level heartbeat. This query ranks them with the signal/resource split — signal time is time spent ready to run but waiting for CPU (SQLOS contention), resource time is time spent blocked on the component itself:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Worker pools: when a component runs out of threads”?",
+      "options": [
+        "Catalog views, permissions, constraints",
+        "Heaps and b-trees: find, insert, delete rows",
+        "SQLOS allocates workers up to the max worker threads setting (0 = auto-configured from CPU count)."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “SQLOS allocates workers up to the max worker threads setting (0 = auto-configured from CPU count). When all workers are busy, new tasks queue and sessions wait on THREADPOOL — the classic “server is idle but nothing runs” signature. Schedulers expose this directly:”"
+    },
+    {
+      "question": "In the “The component catalogue” table, what is listed for “Protocol” under “Responsibility”?",
+      "options": [
+        "Log records, WAL, recovery, log writer",
+        "Listener endpoints, TLS, connection brokering",
+        "Shared/exclusive/updater locks, deadlocks"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson’s table lists “Protocol” as “Listener endpoints, TLS, connection brokering”."
+    },
+    {
+      "question": "Complete the lesson statement: “Because the optimizer is _____, its choices are only as good as the statistics it reads — which is why stale or missing statistics produce “it was fast on Tuesday” regressions.”",
+      "options": [
+        "cost-based",
+        "Algebrizer (binder)",
+        "Optimizer and executor"
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “Because the optimizer is cost-based, its choices are only as good as the statistics it reads — which is why stale or missing statistics produce “it was fast on Tuesday” regressions. The plan itself is cached and reused by the plan cache component (ch04-08).”"
+    },
+    {
+      "question": "Complete the lesson statement: “The hand-off point is where most tuning happens: the relational side gives you _____; the storage side gives you pages, locks and log.”",
+      "options": [
+        "Optimizer and executor",
+        "cost-based",
+        "plans and indexes"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “The hand-off point is where most tuning happens: the relational side gives you plans and indexes; the storage side gives you pages, locks and log. A slow query is almost always one of the two, and the wait type tells you which.”"
+    },
+    {
+      "question": "Complete the lesson statement: “Interpretation rules of thumb: a high _____ percentage means the component is healthy but the server lacks CPU; a high resource percentage means you are waiting on that specific component — disk, lock, log, or network.”",
+      "options": [
+        "Access methods",
+        "signal",
+        "cost-based"
+      ],
+      "answerIndex": 1,
+      "explanation": "The lesson states: “Interpretation rules of thumb: a high signal percentage means the component is healthy but the server lacks CPU; a high resource percentage means you are waiting on that specific component — disk, lock, log, or network.”"
+    }
+  ],
   takeaways: [
     "The engine is a catalogue of narrow components — protocol, relational, storage, SQLOS — each with its own DMVs and wait types",
     "The relational engine plans; the storage engine touches pages, locks and log; SQLOS supplies CPU, memory and I/O to both",

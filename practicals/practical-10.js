@@ -170,6 +170,312 @@ Testing on non-production, defaulting to read-only, explicit destructive switche
     }
   ],
 
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab turns repetitive checks into a script you can schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab turns repetitive checks into a script you can schedule. You will query several instances from PowerShell, collect results as objects, and email a concise report with exceptions highlighted.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable. Cmdlets do the work; functions and loops let you scale a check from one server to many.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers.",
+        "If the output differs, stop and correct it before moving on.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "This lab turns repetitive checks into a script you can schedule.",
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet.",
+        "Daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet. A report nobody reads has little value — make it short, highlight exceptions, and send it on a schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Use a local instance (or several lab instances) and the SqlServer PowerShell module.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use a local instance (or several lab instances) and the SqlServer PowerShell module. Run scripts read-only first — automation that changes state should be an explicit, tested choice, never the default.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Use a local instance (or several lab instances) and the SqlServer PowerShell module.",
+        "Environment check",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "Wrap each server query in try/catch with -ErrorAction Stop so an unreachable instance produces a clear exception rather than a silent blank row.",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wrap each server query in try/catch with -ErrorAction Stop so an unreachable instance produces a clear exception rather than a silent blank row. Record the failure in the report.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers. Export with Export-Csv or ConvertTo-Html.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors.",
+        "Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab turns repetitive checks into a script you can schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab turns repetitive checks into a script you can schedule. You will query several instances from PowerShell, collect results as objects, and email a concise report with exceptions highlighted.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable. Cmdlets do the work; functions and loops let you scale a check from one server to many.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers.",
+        "If the output differs, stop and correct it before moving on.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "This lab turns repetitive checks into a script you can schedule.",
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet.",
+        "Daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet. A report nobody reads has little value — make it short, highlight exceptions, and send it on a schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Use a local instance (or several lab instances) and the SqlServer PowerShell module.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use a local instance (or several lab instances) and the SqlServer PowerShell module. Run scripts read-only first — automation that changes state should be an explicit, tested choice, never the default.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Use a local instance (or several lab instances) and the SqlServer PowerShell module.",
+        "Environment check",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "Wrap each server query in try/catch with -ErrorAction Stop so an unreachable instance produces a clear exception rather than a silent blank row.",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wrap each server query in try/catch with -ErrorAction Stop so an unreachable instance produces a clear exception rather than a silent blank row. Record the failure in the report.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers. Export with Export-Csv or ConvertTo-Html.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors.",
+        "Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "This lab turns repetitive checks into a script you can schedule."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “This lab turns repetitive checks into a script you can schedule. You will query several instances from PowerShell, collect results as objects, and email a concise report with exceptions highlighted.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable. Cmdlets do the work; functions and loops let you scale a check from one server to many.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.",
+        "Get-Service",
+        "Where-Object"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers.",
+        "If the output differs, stop and correct it before moving on.",
+        "Never assume a lab step worked — verify against the catalog views and DMVs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Never assume a lab step worked — verify against the catalog views and DMVs. The query below reports the state you should expect:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "This lab turns repetitive checks into a script you can schedule.",
+        "Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet.",
+        "Daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Finally, email the summary through Database Mail (sp_send_dbmail) or an SMTP cmdlet. A report nobody reads has little value — make it short, highlight exceptions, and send it on a schedule.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Before you start”?",
+      "options": [
+        "Use a local instance (or several lab instances) and the SqlServer PowerShell module.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Use a local instance (or several lab instances) and the SqlServer PowerShell module. Run scripts read-only first — automation that changes state should be an explicit, tested choice, never the default.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Lab architecture”?",
+      "options": [
+        "Use a local instance (or several lab instances) and the SqlServer PowerShell module.",
+        "Environment check",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Core tasks”?",
+      "options": [
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "Wrap each server query in try/catch with -ErrorAction Stop so an unreachable instance produces a clear exception rather than a silent blank row.",
+        "Environment check"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Wrap each server query in try/catch with -ErrorAction Stop so an unreachable instance produces a clear exception rather than a silent blank row. Record the failure in the report.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Verify your work”?",
+      "options": [
+        "Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers.",
+        "PowerShell passes objects down the pipeline, not text, which makes filtering and formatting reliable.",
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “Scale to a list of servers with foreach, and use Select-Object and calculated properties to add the server name and format numbers. Export with Export-Csv or ConvertTo-Html.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and safe practice”?",
+      "options": [
+        "The flow below is the automation pattern to reuse: gather targets, query each one, collect typed results, format a report, then deliver it and fail loudly on errors.",
+        "Start with a single Invoke-Sqlcmd call using splatting — a hashtable of parameters passed with @params — which keeps long commands readable and avoids fragile line continuations.",
+        "Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Practise the safe version of every task here: test on non-production, keep a rollback path, and record a 'before' state so you can prove the change did what you intended.”"
+    }
+  ],
   takeaways: [
     "Objects in the pipeline make PowerShell reports reliable and composable",
     "Splatting keeps long commands readable and avoids fragile continuations",

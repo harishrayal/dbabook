@@ -160,6 +160,312 @@ Testing on non-production, defaulting to read-only, explicit destructive switche
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "With Automated Health Checks, prefer measured, reversible changes.",
+        "Automated Health Checks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Automated Health Checks within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automated Health Checks fits”?",
+      "options": [
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automated Health Checks in practice”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "@params",
+        "Automated Health Checks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automated Health Checks”?",
+      "options": [
+        "Automated Health Checks",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Automated Health Checks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Automated Health Checks means”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automated Health Checks fits”?",
+      "options": [
+        "Automated Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automated Health Checks in practice”?",
+      "options": [
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Automated Health Checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automated Health Checks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "With Automated Health Checks, prefer measured, reversible changes.",
+        "Automated Health Checks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Automated Health Checks within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automated Health Checks fits”?",
+      "options": [
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automated Health Checks in practice”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "@params",
+        "Automated Health Checks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automated Health Checks”?",
+      "options": [
+        "Automated Health Checks",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Automated Health Checks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Automated Health Checks means”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automated Health Checks fits”?",
+      "options": [
+        "Automated Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automated Health Checks in practice”?",
+      "options": [
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Automated Health Checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automated Health Checks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “In this topic we examine _____ within PowerShell automation for DBAs.”",
+      "options": [
+        "Email notifications close the loop: a report that nobody reads has limited value.",
+        "With Automated Health Checks, prefer measured, reversible changes.",
+        "Automated Health Checks"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “In this topic we examine Automated Health Checks within PowerShell automation for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automated Health Checks fits”?",
+      "options": [
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts.",
+        "Daily"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts. The pipeline passes objects, not text, which makes filtering and formatting powerful and reliable.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automated Health Checks in practice”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "@params",
+        "Automated Health Checks"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model for administration tasks.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automated Health Checks”?",
+      "options": [
+        "Automated Health Checks",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "Theory becomes useful when you can apply it."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Automated Health Checks. Run them first on a non-production instance and adapt paths and names to your environment.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "PowerShell lets a DBA automate repetitive work across many servers: health reports, backup status, service monitoring, job checks and notifications.",
+        "Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions.",
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Common reports include database and backup status, free disk space, service state, failed jobs and long-running sessions. Scheduled with Task Scheduler or Agent, they turn checks into repeatable evidence.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What Automated Health Checks means”?",
+      "options": [
+        "PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “PowerShell examples must avoid backtick line continuations — use splatting and pipelines for readable, robust scripts.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Where Automated Health Checks fits”?",
+      "options": [
+        "Automated Health Checks is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its…",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Automated Health Checks in practice”?",
+      "options": [
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:",
+        "The basics — cmdlets, the pipeline, variables, arrays, loops, conditions and functions — compose into scripts."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “The following comparison captures the distinctions that matter most when working with Automated Health Checks:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Working with Automated Health Checks”?",
+      "options": [
+        "The first example establishes the relevant state.",
+        "The diagram below places Automated Health Checks alongside the core concepts of PowerShell automation for DBAs.",
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Pitfalls and production guidance”?",
+      "options": [
+        "The SqlServer PowerShell module provides commands for querying and managing SQL Server, and beneath them the SQL Server Management Objects (SMO) library offers a full object model…",
+        "The following comparison captures the distinctions that matter most when working with Automated Health Checks:",
+        "Email notifications close the loop: a report that nobody reads has limited value."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Email notifications close the loop: a report that nobody reads has limited value. Database Mail or SMTP from PowerShell can deliver succinct, actionable alerts.”"
+    }
+  ],
   takeaways: [
     "Automated Health Checks is a fundamental concept in PowerShell automation for DBAs",
     "Understanding its mechanics lets you diagnose symptoms instead of guessing",

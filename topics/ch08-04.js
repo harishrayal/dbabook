@@ -188,6 +188,312 @@ WHERE  dp.type IN ('S','U') AND sp.sid IS NULL
     }
   ],
 
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a complete copy of the database at the moment the backup ran — every allocated page, plus enough log to make those pages consistent when restored.”",
+      "options": [
+        "No logs are available",
+        "rebuilding after corruption",
+        "full backup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A full backup is a complete copy of the database at the moment the backup ran — every allocated page, plus enough log to make those pages consistent when restored. Restoring it rebuilds the database exactly as it looked at that point: no earlier, no later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The anatomy of a full restore”?",
+      "options": [
+        "ONLINE — final",
+        "A full restore reads the backup set, writes pages into the target data and log files, rolls the log forward to the backup's end point, then (if not told otherwise) rolls back and…",
+        "Two clauses worth knowing from the start: KEEP_REPLICATION preserves publication settings that a restore would otherwise strip, and KEEP_CDC preserves change data capture history."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full restore reads the backup set, writes pages into the target data and log files, rolls the log forward to the backup's end point, then (if not told otherwise) rolls back and opens the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Standing alone versus starting a chain”?",
+      "options": [
+        "The same command produces two very different outcomes depending on the recovery clause:",
+        "Restoring only the full is appropriate when:",
+        "wrong"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The same command produces two very different outcomes depending on the recovery clause:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A full restore, prepared and executed”?",
+      "options": [
+        "ONLINE — final",
+        "RESTORING — chain open",
+        "Prepare first, restore second."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prepare first, restore second. The file list tells you exactly what layout the backup expects:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When a full restore is the right choice”?",
+      "options": [
+        "STANDBY / read-only — chain open",
+        "Restoring only the full is appropriate when:",
+        "RESTORING — chain open"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring only the full is appropriate when:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Restoring Full Backups",
+        "That single fact drives every decision about a full-restore:",
+        "The rest of the chapter is about moving that answer forward in time — but it always starts here."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Restoring Full Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a full backup restore gives you”?",
+      "options": [
+        "wrong",
+        "Restoring Full Backups",
+        "That single fact drives every decision about a full-restore:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “That single fact drives every decision about a full-restore:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Standing alone versus starting a chain”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "When overwriting an existing database with a full backup of the same name, add WITH REPLACE.",
+        "Restoring Full Backups sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When overwriting an existing database with a full backup of the same name, add WITH REPLACE. Without it, SQL Server refuses if the existing database has a different family GUID or if the target name already exists with mismatched settings — a guard against accidentally destroying the wrong database. REPLACE removes that guard, so confirm the target name in writing before you type it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A full restore, prepared and executed”?",
+      "options": [
+        "If the restore stops mid-way, do not keep re-running it blindly: read the message.",
+        "Restoring Full Backups",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “If the restore stops mid-way, do not keep re-running it blindly: read the message. Directory problems mean the paths are wrong, “cannot create the file” means insufficient space, and an LSN error means you are not applying the media this database expects.”"
+    },
+    {
+      "question": "Complete the lesson statement: “It is the _____ choice when log backups exist covering the incident — restoring a full and stopping there throws away transactions that were safely on disk.”",
+      "options": [
+        "When overwriting an existing database with a full backup of the same name, add WITH REPLACE.",
+        "Two clauses worth knowing from the start: KEEP_REPLICATION preserves publication settings that a restore would otherwise strip, and KEEP_CDC preserves change data capture history.",
+        "wrong"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “It is the wrong choice when log backups exist covering the incident — restoring a full and stopping there throws away transactions that were safely on disk. Always check msdb.dbo.backupset for newer log backups before you commit to a standalone restore, and remember that a full restore is the most I/O-intensive operation the storage subsystem will ever run: measure it, do not estimate it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a complete copy of the database at the moment the backup ran — every allocated page, plus enough log to make those pages consistent when restored.”",
+      "options": [
+        "No logs are available",
+        "rebuilding after corruption",
+        "full backup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A full backup is a complete copy of the database at the moment the backup ran — every allocated page, plus enough log to make those pages consistent when restored. Restoring it rebuilds the database exactly as it looked at that point: no earlier, no later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The anatomy of a full restore”?",
+      "options": [
+        "ONLINE — final",
+        "A full restore reads the backup set, writes pages into the target data and log files, rolls the log forward to the backup's end point, then (if not told otherwise) rolls back and…",
+        "Two clauses worth knowing from the start: KEEP_REPLICATION preserves publication settings that a restore would otherwise strip, and KEEP_CDC preserves change data capture history."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full restore reads the backup set, writes pages into the target data and log files, rolls the log forward to the backup's end point, then (if not told otherwise) rolls back and opens the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Standing alone versus starting a chain”?",
+      "options": [
+        "The same command produces two very different outcomes depending on the recovery clause:",
+        "Restoring only the full is appropriate when:",
+        "wrong"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The same command produces two very different outcomes depending on the recovery clause:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A full restore, prepared and executed”?",
+      "options": [
+        "ONLINE — final",
+        "RESTORING — chain open",
+        "Prepare first, restore second."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prepare first, restore second. The file list tells you exactly what layout the backup expects:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When a full restore is the right choice”?",
+      "options": [
+        "STANDBY / read-only — chain open",
+        "Restoring only the full is appropriate when:",
+        "RESTORING — chain open"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring only the full is appropriate when:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Restoring Full Backups",
+        "That single fact drives every decision about a full-restore:",
+        "The rest of the chapter is about moving that answer forward in time — but it always starts here."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Restoring Full Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a full backup restore gives you”?",
+      "options": [
+        "wrong",
+        "Restoring Full Backups",
+        "That single fact drives every decision about a full-restore:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “That single fact drives every decision about a full-restore:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Standing alone versus starting a chain”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "When overwriting an existing database with a full backup of the same name, add WITH REPLACE.",
+        "Restoring Full Backups sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When overwriting an existing database with a full backup of the same name, add WITH REPLACE. Without it, SQL Server refuses if the existing database has a different family GUID or if the target name already exists with mismatched settings — a guard against accidentally destroying the wrong database. REPLACE removes that guard, so confirm the target name in writing before you type it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A full restore, prepared and executed”?",
+      "options": [
+        "If the restore stops mid-way, do not keep re-running it blindly: read the message.",
+        "Restoring Full Backups",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “If the restore stops mid-way, do not keep re-running it blindly: read the message. Directory problems mean the paths are wrong, “cannot create the file” means insufficient space, and an LSN error means you are not applying the media this database expects.”"
+    },
+    {
+      "question": "Complete the lesson statement: “It is the _____ choice when log backups exist covering the incident — restoring a full and stopping there throws away transactions that were safely on disk.”",
+      "options": [
+        "When overwriting an existing database with a full backup of the same name, add WITH REPLACE.",
+        "Two clauses worth knowing from the start: KEEP_REPLICATION preserves publication settings that a restore would otherwise strip, and KEEP_CDC preserves change data capture history.",
+        "wrong"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “It is the wrong choice when log backups exist covering the incident — restoring a full and stopping there throws away transactions that were safely on disk. Always check msdb.dbo.backupset for newer log backups before you commit to a standalone restore, and remember that a full restore is the most I/O-intensive operation the storage subsystem will ever run: measure it, do not estimate it.”"
+    }
+  ],
+  quiz: [
+    {
+      "question": "Complete the lesson statement: “A _____ is a complete copy of the database at the moment the backup ran — every allocated page, plus enough log to make those pages consistent when restored.”",
+      "options": [
+        "No logs are available",
+        "rebuilding after corruption",
+        "full backup"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “A full backup is a complete copy of the database at the moment the backup ran — every allocated page, plus enough log to make those pages consistent when restored. Restoring it rebuilds the database exactly as it looked at that point: no earlier, no later.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “The anatomy of a full restore”?",
+      "options": [
+        "ONLINE — final",
+        "A full restore reads the backup set, writes pages into the target data and log files, rolls the log forward to the backup's end point, then (if not told otherwise) rolls back and…",
+        "Two clauses worth knowing from the start: KEEP_REPLICATION preserves publication settings that a restore would otherwise strip, and KEEP_CDC preserves change data capture history."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “A full restore reads the backup set, writes pages into the target data and log files, rolls the log forward to the backup's end point, then (if not told otherwise) rolls back and opens the database.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Standing alone versus starting a chain”?",
+      "options": [
+        "The same command produces two very different outcomes depending on the recovery clause:",
+        "Restoring only the full is appropriate when:",
+        "wrong"
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “The same command produces two very different outcomes depending on the recovery clause:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A full restore, prepared and executed”?",
+      "options": [
+        "ONLINE — final",
+        "RESTORING — chain open",
+        "Prepare first, restore second."
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “Prepare first, restore second. The file list tells you exactly what layout the backup expects:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “When a full restore is the right choice”?",
+      "options": [
+        "STANDBY / read-only — chain open",
+        "Restoring only the full is appropriate when:",
+        "RESTORING — chain open"
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “Restoring only the full is appropriate when:”"
+    },
+    {
+      "question": "Complete the lesson statement: “This section consolidates _____ with a closer look at the mechanisms and the operational decisions that surround it.”",
+      "options": [
+        "Restoring Full Backups",
+        "That single fact drives every decision about a full-restore:",
+        "The rest of the chapter is about moving that answer forward in time — but it always starts here."
+      ],
+      "answerIndex": 0,
+      "explanation": "The lesson states: “This section consolidates Restoring Full Backups with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “What a full backup restore gives you”?",
+      "options": [
+        "wrong",
+        "Restoring Full Backups",
+        "That single fact drives every decision about a full-restore:"
+      ],
+      "answerIndex": 2,
+      "explanation": "The section explains: “That single fact drives every decision about a full-restore:”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “Standing alone versus starting a chain”?",
+      "options": [
+        "The distinctions below are the ones that matter most in day-to-day administration:",
+        "When overwriting an existing database with a full backup of the same name, add WITH REPLACE.",
+        "Restoring Full Backups sits inside a larger system."
+      ],
+      "answerIndex": 1,
+      "explanation": "The section explains: “When overwriting an existing database with a full backup of the same name, add WITH REPLACE. Without it, SQL Server refuses if the existing database has a different family GUID or if the target name already exists with mismatched settings — a guard against accidentally destroying the wrong database. REPLACE removes that guard, so confirm the target name in writing before you type it.”"
+    },
+    {
+      "question": "Which fact is covered in the lesson section “A full restore, prepared and executed”?",
+      "options": [
+        "If the restore stops mid-way, do not keep re-running it blindly: read the message.",
+        "Restoring Full Backups",
+        "Post-restore validation includes DBCC CHECKDB, row-count and application smoke tests, permission checks and a compatibility review when moving across versions."
+      ],
+      "answerIndex": 0,
+      "explanation": "The section explains: “If the restore stops mid-way, do not keep re-running it blindly: read the message. Directory problems mean the paths are wrong, “cannot create the file” means insufficient space, and an LSN error means you are not applying the media this database expects.”"
+    },
+    {
+      "question": "Complete the lesson statement: “It is the _____ choice when log backups exist covering the incident — restoring a full and stopping there throws away transactions that were safely on disk.”",
+      "options": [
+        "When overwriting an existing database with a full backup of the same name, add WITH REPLACE.",
+        "Two clauses worth knowing from the start: KEEP_REPLICATION preserves publication settings that a restore would otherwise strip, and KEEP_CDC preserves change data capture history.",
+        "wrong"
+      ],
+      "answerIndex": 2,
+      "explanation": "The lesson states: “It is the wrong choice when log backups exist covering the incident — restoring a full and stopping there throws away transactions that were safely on disk. Always check msdb.dbo.backupset for newer log backups before you commit to a standalone restore, and remember that a full restore is the most I/O-intensive operation the storage subsystem will ever run: measure it, do not estimate it.”"
+    }
+  ],
   takeaways: [
     "A full backup restores the database exactly as of its own moment — no earlier, no later",
     "RECOVERY (default) ends ONLINE; NORECOVERY keeps the chain open for diffs and logs",
