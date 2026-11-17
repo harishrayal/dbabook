@@ -95,8 +95,9 @@
   /* ---------------- sidebar ---------------- */
 
   var expanded = new Set(load(LS.expanded, []));
-  if (!expanded.size && currentChapter && currentChapter.id.indexOf("ch") === 0) {
-    expanded.add(currentChapter.id);
+  if (currentChapter) {
+    expanded.add(currentChapter.id.indexOf("ch") === 0 ? currentChapter.id : "practicals");
+    save(LS.expanded, Array.from(expanded));
   }
 
   function isDone(id) { return progress.has(id); }
@@ -118,7 +119,7 @@
     ROADMAP.chapters.forEach(function (ch) {
       var open = expanded.has(ch.id);
       html += '<div class="nav-chapter' + (open ? "" : " collapsed") + '" data-ch="' + ch.id + '">' +
-        '<button class="nav-ch-title" data-ch="' + ch.id + '">' +
+        '<button class="nav-ch-title" data-ch="' + ch.id + '" aria-expanded="' + open + '">' +
         '<span class="num">' + String(ch.num).padStart(2, "0") + "</span>" +
         "<span>" + ch.title + "</span>" +
         '<span class="caret">▾</span>' +
@@ -127,7 +128,8 @@
 
       ch.topics.forEach(function (t) {
         var cls = "nav-topic" + (t.id === currentId ? " active" : "") + (isDone(t.id) ? " done" : "");
-        html += '<li><a class="' + cls + '" href="../topics/' + t.id + '.html" data-id="' + t.id + '">' +
+        html += '<li><a class="' + cls + '" href="../topics/' + t.id + '.html" data-id="' + t.id + '"' +
+          (t.id === currentId ? ' aria-current="page"' : "") + ">" +
           '<span class="tick">✓</span><span>' + t.title + "</span></a></li>";
       });
 
@@ -137,13 +139,14 @@
     // Practicals group
     var pOpen = expanded.has("practicals");
     html += '<div class="nav-chapter' + (pOpen ? "" : " collapsed") + '" data-ch="practicals">' +
-      '<button class="nav-ch-title" data-ch="practicals">' +
+      '<button class="nav-ch-title" data-ch="practicals" aria-expanded="' + pOpen + '">' +
       '<span class="num">P</span><span>Final Practical Phase</span>' +
       '<span class="caret">▾</span></button><ul class="nav-topics">';
 
     ROADMAP.practicals.forEach(function (p) {
       var cls = "nav-topic" + (p.id === currentId ? " active" : "") + (isDone(p.id) ? " done" : "");
-      html += '<li><a class="' + cls + '" href="../practicals/' + p.id + '.html" data-id="' + p.id + '">' +
+      html += '<li><a class="' + cls + '" href="../practicals/' + p.id + '.html" data-id="' + p.id + '"' +
+        (p.id === currentId ? ' aria-current="page"' : "") + ">" +
         '<span class="tick">✓</span><span>' + p.num + ". " + p.title + "</span></a></li>";
     });
 
@@ -169,11 +172,28 @@
         var id = btn.getAttribute("data-ch");
         var box = sb.querySelector('.nav-chapter[data-ch="' + id + '"]');
         box.classList.toggle("collapsed");
-        if (box.classList.contains("collapsed")) expanded.delete(id);
+        var isOpen = !box.classList.contains("collapsed");
+        btn.setAttribute("aria-expanded", String(isOpen));
+        if (!isOpen) expanded.delete(id);
         else expanded.add(id);
         save(LS.expanded, Array.from(expanded));
       });
     });
+
+    var savedScroll = null;
+    try {
+      savedScroll = sessionStorage.getItem("dba-sidebar-scroll");
+      sessionStorage.removeItem("dba-sidebar-scroll");
+    } catch (e) { /* ignore unavailable session storage */ }
+    if (savedScroll !== null && Number.isFinite(Number(savedScroll))) {
+      sb.scrollTop = Number(savedScroll);
+    } else {
+      var activeLink = sb.querySelector(".nav-topic.active");
+      if (activeLink) {
+        sb.scrollTop += activeLink.getBoundingClientRect().top -
+          sb.getBoundingClientRect().top - 14;
+      }
+    }
   }
 
   /* ---------------- search ---------------- */
@@ -308,6 +328,9 @@
       var destination = new URL(link.href, location.href);
       if (destination.origin !== location.origin || destination.pathname === location.pathname) return;
 
+      try {
+        sessionStorage.setItem("dba-sidebar-scroll", String(sb.scrollTop));
+      } catch (storageError) { /* ignore unavailable session storage */ }
       loader.classList.add("is-visible");
       loader.setAttribute("aria-hidden", "false");
       document.body.setAttribute("aria-busy", "true");
