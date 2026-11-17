@@ -1,0 +1,205 @@
+/* Topic content file — one JS file per topic.
+   Rendered by assets/js/site.js on topics/ch02-09.html */
+
+window.TOPIC = {
+  id: "ch02-09",
+  title: "SQL Command Categories: DDL, DML, DQL, DCL, TCL",
+
+  lead: "SQL is really five languages sharing one syntax — structure, data, reads, permissions, and transactions — and knowing which category a command belongs to tells you who may run it, what it changes, and whether you can undo it.",
+
+  objectives: [
+    "Classify SQL statements into DDL, DML, DQL, DCL, and TCL",
+    "Predict which statements commit automatically and which can roll back",
+    "Write a script that combines all five categories safely",
+    "Apply permissions with GRANT, DENY, and REVOKE deliberately",
+    "Avoid the autocommit traps that leave half-applied changes in production"
+  ],
+
+  sections: [
+    {
+      h: "Why the categories matter",
+      html: `
+<p>Every SQL statement falls into one of five categories. The classification is not academic — it maps directly onto operational reality:</p>
+<ul>
+  <li><strong>Who is allowed to run it?</strong> — DCL decides; a service account should read and write data (DML) but never alter structure (DDL)</li>
+  <li><strong>What does it change?</strong> — DDL touches the catalog (the schema), DML touches rows, DQL touches nothing, TCL touches the transaction state</li>
+  <li><strong>Can it be undone?</strong> — depends on the transaction boundaries, which is exactly what TCL manages</li>
+</ul>
+<p>The most expensive misunderstanding in junior SQL is assuming a script is atomic because it <em>looks</em> like one unit. In SQL Server, without an explicit transaction, <strong>every statement commits on its own</strong> — called autocommit.</p>
+<div class="figure">
+  <svg viewBox="0 0 760 340" role="img" aria-label="Five SQL command categories">
+    <defs>
+      <marker id="cat-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--muted)"/>
+      </marker>
+    </defs>
+
+    <rect x="280" y="135" width="200" height="70" rx="12" fill="var(--accent)"/>
+    <text x="380" y="165" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="700" font-family="Segoe UI, sans-serif">T-SQL script</text>
+    <text x="380" y="188" text-anchor="middle" fill="#dbeafe" font-size="12" font-family="Segoe UI, sans-serif">which category changes what?</text>
+
+    <rect x="30" y="20" width="200" height="60" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="130" y="45" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif">DDL — structure</text>
+    <text x="130" y="66" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">CREATE · ALTER · DROP · TRUNCATE</text>
+
+    <rect x="530" y="20" width="200" height="60" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="630" y="45" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif">DML — data</text>
+    <text x="630" y="66" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">INSERT · UPDATE · DELETE · MERGE</text>
+
+    <rect x="30" y="140" width="200" height="60" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="130" y="165" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif">DQL — reads</text>
+    <text x="130" y="186" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">SELECT</text>
+
+    <rect x="530" y="140" width="200" height="60" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="630" y="165" text-anchor="middle" fill="var(--text)" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif">DCL — access</text>
+    <text x="630" y="186" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">GRANT · DENY · REVOKE</text>
+
+    <rect x="285" y="255" width="190" height="60" rx="10" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.8"/>
+    <text x="380" y="280" text-anchor="middle" fill="var(--accent-strong)" font-size="14" font-weight="700" font-family="Segoe UI, sans-serif">TCL — boundaries</text>
+    <text x="380" y="301" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">BEGIN · COMMIT · ROLLBACK · SAVEPOINT</text>
+
+    <line x1="230" y1="62" x2="284" y2="142" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#cat-arrow)"/>
+    <line x1="530" y1="62" x2="476" y2="142" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#cat-arrow)"/>
+    <line x1="230" y1="170" x2="278" y2="170" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#cat-arrow)"/>
+    <line x1="530" y1="170" x2="482" y2="170" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#cat-arrow)"/>
+    <line x1="380" y1="253" x2="380" y2="208" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#cat-arrow)"/>
+
+    <text x="745" y="335" text-anchor="end" fill="var(--muted)" font-size="11.5" font-style="italic" font-family="Segoe UI, sans-serif">TCL is what makes the other four succeed or fail as one unit.</text>
+  </svg>
+  <div class="figcaption">Figure 1 — The five command categories and the verbs each one owns.</div>
+</div>
+`
+    },
+    {
+      h: "DDL — defining the structure",
+      html: `
+<p><strong>Data Definition Language</strong> changes the schema itself: <code>CREATE</code>, <code>ALTER</code>, <code>DROP</code>, <code>TRUNCATE</code>, and <code>RENAME</code>. DDL modifies catalog metadata and, where relevant, storage structures — which is why DDL statements typically require elevated permissions (the <code>ddl_admin</code> habit of granting <code>db_owner</code> to everyone is a security smell).</p>
+<table>
+  <tr><th>Category</th><th>Verbs</th><th>What it changes</th><th>Rollback?</th><th>Typical owner</th></tr>
+  <tr><td><strong>DDL</strong></td><td>CREATE, ALTER, DROP, TRUNCATE</td><td>Schema objects</td><td>Yes — inside an explicit transaction (SQL Server has transactional DDL)</td><td>DBA / deployment</td></tr>
+  <tr><td><strong>DML</strong></td><td>INSERT, UPDATE, DELETE, MERGE</td><td>Rows of data</td><td>Yes — within a transaction</td><td>Application / ETL / DBA</td></tr>
+  <tr><td><strong>DQL</strong></td><td>SELECT</td><td>Nothing — reads only</td><td>Not applicable</td><td>Everyone with permission</td></tr>
+  <tr><td><strong>DCL</strong></td><td>GRANT, DENY, REVOKE</td><td>Permissions</td><td>Yes — permission changes are transactional</td><td>DBA / security</td></tr>
+  <tr><td><strong>TCL</strong></td><td>BEGIN TRAN, COMMIT, ROLLBACK, SAVEPOINT</td><td>Transaction boundaries</td><td>Defines them</td><td>Application / DBA</td></tr>
+</table>
+<p>Two DDL traps: <code>TRUNCATE TABLE</code> is DML's cousin — it empties a table quickly and is fully transactional, but it requires <code>ALTER</code> permission and fires no row-level triggers; and a failed <code>ALTER TABLE … ADD CONSTRAINT</code> that must validate existing data will abort on the first bad row, leaving the constraint un-added while you assumed it was there.</p>
+`
+    },
+    {
+      h: "DML and DQL — changing and reading data",
+      html: `
+<p><strong>DML</strong> manipulates rows. The safe pattern for anything beyond a trivial change is: measure, wrap, verify.</p>
+<ul>
+  <li><strong>INSERT</strong> — add rows; prefer explicit column lists so table changes do not break scripts</li>
+  <li><strong>UPDATE / DELETE</strong> — always run the same statement first as a <code>SELECT</code> with the identical <code>WHERE</code> clause and count the rows</li>
+  <li><strong>MERGE</strong> — upserts in one statement; powerful, but its concurrency semantics have produced real bugs — test it under concurrent writers before trusting it</li>
+</ul>
+<p><strong>DQL</strong> — <code>SELECT</code> — reads without changing anything, which is why it is the only statement you can run freely against production (with the right permissions and one eye on the plan cost).</p>
+<pre><code class="language-sql">-- DML: prove the target set first — same predicate, read only
+SELECT count(*) AS rows_to_fix
+FROM   sales.Orders
+WHERE  status = 'PENDING'
+  AND  total_amount = 0;
+
+-- Same predicate, wrapped so the whole batch is one unit
+SET XACT_ABORT ON;
+BEGIN TRANSACTION;
+    UPDATE sales.Orders
+    SET    status = 'VOID'
+    WHERE  status = 'PENDING'
+      AND  total_amount = 0;
+
+    -- DQL: verify inside the transaction before committing
+    SELECT count(*) AS remaining
+    FROM   sales.Orders
+    WHERE  status = 'PENDING'
+      AND  total_amount = 0;
+COMMIT TRANSACTION;</code></pre>
+`
+    },
+    {
+      h: "DCL — who is allowed to do what",
+      html: `
+<p><strong>Data Control Language</strong> grants, denies, and revokes permissions on securables: databases, schemas, tables, procedures. Three verbs with clear precedence — <code>DENY</code> always beats <code>GRANT</code>, and permissions can be direct or inherited through roles.</p>
+<ul>
+  <li><strong>GRANT</strong> — allow a permission: <code>GRANT SELECT ON sales.Orders TO [app_readonly]</code></li>
+  <li><strong>DENY</strong> — explicitly block, even if another role grants it (rarely needed; usually role design is enough)</li>
+  <li><strong>REVOKE</strong> — remove a previous grant or deny, leaving inheritance to decide the outcome</li>
+</ul>
+<p>Production discipline: grant to <strong>roles</strong>, add logins to roles, and never grant object-level permissions to individual logins that will outlive the person who requested them. The audit question “who can modify this table?” should have a one-query answer from <code>sys.database_permissions</code>.</p>
+`
+    },
+    {
+      h: "TCL — making a script behave as one unit",
+      html: `
+<p><strong>Transaction Control Language</strong> defines the boundary inside which everything else succeeds or fails together. Put it together with the other categories into a production-shaped script:</p>
+<pre><code class="language-sql">-- All five categories in one guarded script
+CREATE TABLE staging.ImportAudit            -- DDL
+(
+    audit_id int IDENTITY(1,1) NOT NULL,
+    batch_id int NOT NULL,
+    row_count int NOT NULL,
+    created_utc datetime2(3) NOT NULL
+        CONSTRAINT DF_ImportAudit_created DEFAULT (sysutcdatetime()),
+    CONSTRAINT PK_ImportAudit PRIMARY KEY CLUSTERED (audit_id)
+);
+GO
+
+GRANT SELECT, INSERT ON staging.ImportAudit TO [etl_reader];   -- DCL
+
+SET XACT_ABORT ON;
+BEGIN TRY
+    BEGIN TRANSACTION;                                          -- TCL
+        UPDATE staging.StagingOrders                            -- DML
+           SET status = 'READY'
+         WHERE status = 'STAGED'
+           AND batch_id = 20260115;
+
+        INSERT INTO staging.ImportAudit (batch_id, row_count)   -- DML
+        VALUES (20260115, @@ROWCOUNT);
+
+        SELECT status, count(*) AS n                            -- DQL
+          FROM staging.StagingOrders
+         GROUP BY status;
+    COMMIT TRANSACTION;
+END TRY
+BEGIN CATCH
+    IF @@TRANCOUNT &gt; 0 ROLLBACK TRANSACTION;
+    THROW;
+END CATCH;</code></pre>
+<p><strong>Common pitfalls:</strong> assuming a script is atomic without <code>BEGIN TRANSACTION</code> (autocommit commits each statement); leaving a transaction open by forgetting <code>COMMIT</code> — which holds locks and blocks others; using <code>SELECT</code> results as if they were validated DML targets; and running DDL in a window with <code>GO</code> batch separators, which ends the batch but does not end your transaction — plan where the boundary sits.</p>
+`
+    }
+  ],
+
+  scenario: {
+    title: "The 10 PM release script committed half of itself",
+    html: `
+<p>A deployment ran a long T-SQL script: an UPDATE to backfill a new column, then a CREATE INDEX, then a data migration insert, then a validation SELECT. At statement three the insert hit a constraint violation and SQL Management Studio reported an error — the developer stopped and called the DBA, assuming the script had undone itself. It had not: in autocommit mode each statement had committed the moment it succeeded. The table was now backfilled, the index existed, and part of the migration data was loaded while the rest was not.</p>
+<p>The DBA triaged by category: DML damage was bounded (the backfill was idempotent), the partial insert was identified by comparing the migration source count against <code>count(*)</code>, and the remaining rows were loaded with a corrected script inside an explicit transaction with <code>XACT_ABORT ON</code>. The release completed at 11:40 PM. Prevention: every deployment script now opens with <code>SET XACT_ABORT ON</code> and <code>BEGIN TRANSACTION</code> (or is split into documented, idempotent batches), DML targets are proven with a matching <code>SELECT</code> first, and validation lives inside the transaction. <strong>Without a transaction boundary, a script is a queue of independent statements — not a unit of work.</strong></p>
+`
+  },
+
+  interview: [
+    {
+      q: "Name the five SQL command categories and an example of each.",
+      a: "DDL — CREATE TABLE (structure). DML — UPDATE (data). DQL — SELECT (reads). DCL — GRANT SELECT (permissions). TCL — BEGIN TRANSACTION / COMMIT / ROLLBACK (transaction boundaries)."
+    },
+    {
+      q: "If a script fails halfway through, what has been saved?",
+      a: "Whatever was outside an explicit transaction: in autocommit mode every successful statement committed independently, so all earlier statements persist. Only statements inside a transaction that is rolled back are undone — which is why risky scripts open a transaction and set XACT_ABORT ON so any error triggers rollback instead of a half-applied mess."
+    },
+    {
+      q: "Can DDL be rolled back in SQL Server?",
+      a: "Yes — most DDL is transactional here. A CREATE TABLE or TRUNCATE issued inside an explicit transaction disappears on ROLLBACK. That differs from engines where DDL commits immediately, and it means a deployment can wrap structural changes and data changes in the same atomic unit."
+    }
+  ],
+
+  takeaways: [
+    "DDL defines structure, DML changes rows, DQL reads, DCL controls access, TCL defines boundaries",
+    "Without an explicit transaction every statement auto-commits — a failing script leaves earlier statements in place",
+    "SQL Server supports transactional DDL: CREATE, ALTER, and TRUNCATE roll back inside a transaction",
+    "Grant permissions to roles, not individuals; DENY overrides GRANT",
+    "Safe change recipe: prove the target with SELECT, wrap in a transaction, set XACT_ABORT ON, verify before COMMIT"
+  ]
+};
