@@ -18,14 +18,15 @@ window.TOPIC = {
     {
       h: "Why the role specialises",
       html: `
-<p>In a small company one DBA does everything: backups at night, indexes by day, on call at the weekend. Specialisation appears when the estate outgrows one person — multiple instances, several applications, regulated data, and a release train that never stops. At that point the role splits along <strong>timescale</strong>, because the four jobs genuinely run on different clocks:</p>
+<p>In a small company one DBA might cover backups, index maintenance, and on-call work. As an estate grows, teams may divide responsibilities among production, development, infrastructure, and architecture roles. This is one useful model, not a standard taxonomy: titles and boundaries vary, and the same person may cover several areas.</p>
+<p>These areas often have different planning horizons:</p>
 <ul>
   <li><strong>Production DBA</strong> — the clock is <em>now</em>: uptime, incidents, and changes that land in live systems</li>
   <li><strong>Development DBA</strong> — the clock is <em>the release</em>: schema design, query review, test data, migration scripts</li>
   <li><strong>Infrastructure DBA</strong> — the clock is <em>the estate</em>: servers, storage, installs, patching, capacity</li>
   <li><strong>Database Architect</strong> — the clock is <em>years</em>: standards, data models, integration patterns, technology direction</li>
 </ul>
-<p>The specialisations share the same technical foundation — T-SQL, storage, backup, security — but they are optimised for different outcomes. Confusing them is one of the most common organisational mistakes in data teams: a development DBA making an urgent production change is wearing the wrong hat, and production usually notices.</p>
+<p>The specialisations share technical foundations — T-SQL, storage, backup, and security — but focus on different outcomes. Clear change and incident ownership helps prevent work from falling between roles.</p>
 <blockquote>The skills are the same; the accountability is not. Production asks “is it still running?”, development asks “is it ready to ship?”, infrastructure asks “does the platform scale?”, and architecture asks “will this still fit in two years?”</blockquote>
 `
     },
@@ -79,16 +80,25 @@ window.TOPIC = {
 </div>
 <p>All four roles should share one estate view. A simple inventory query keeps everyone honest about what is actually running:</p>
 <pre><code class="language-sql">-- Shared estate view: databases, size, recovery model, last full backup
-SELECT d.name                       AS database_name,
+WITH FileSizes AS (
+    SELECT database_id, SUM(CONVERT(bigint, size)) * 8 / 1024 AS size_mb
+    FROM sys.master_files
+    GROUP BY database_id
+),
+FullBackups AS (
+    SELECT database_name, MAX(backup_finish_date) AS last_full_backup
+    FROM msdb.dbo.backupset
+    WHERE type = 'D'
+    GROUP BY database_name
+)
+SELECT d.name AS database_name,
        d.recovery_model_desc,
-       sum(mf.size) * 8 / 1024      AS size_mb,
-       max(b.backup_finish_date)    AS last_full_backup
+       f.size_mb,
+       b.last_full_backup
 FROM   sys.databases AS d
-JOIN   sys.master_files AS mf ON mf.database_id = d.database_id
-LEFT   JOIN msdb.dbo.backupset AS b
-       ON b.database_name = d.name AND b.type = 'D'
+JOIN   FileSizes AS f ON f.database_id = d.database_id
+LEFT   JOIN FullBackups AS b ON b.database_name = d.name
 WHERE  d.database_id > 4
-GROUP  BY d.name, d.recovery_model_desc
 ORDER  BY size_mb DESC;</code></pre>
 `
     },
@@ -121,7 +131,7 @@ ORDER  BY size_mb DESC;</code></pre>
   <tr><td>Slow query in production</td><td>Production DBA</td><td>Development DBA (code fix)</td></tr>
   <tr><td>New system design</td><td>Architect</td><td>All three, at review</td></tr>
 </table>
-<p>Notice what is missing from that table: <strong>no single role can approve its own change into production</strong>. Separation of duties is the whole point of the split.</p>
+<p>For higher-risk or regulated systems, an independent review or approval can provide separation of duties. The organisation should define the required controls for its risk and compliance obligations.</p>
 `
     },
     {

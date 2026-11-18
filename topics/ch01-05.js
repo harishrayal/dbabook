@@ -107,14 +107,16 @@ SELECT d.statement                                  AS table_name,
        d.equality_columns,
        d.inequality_columns,
        s.user_seeks + s.user_scans                  AS executions,
-       CAST(s.avg_total_user_cost * s.avg_user_impact AS decimal(10,1)) AS impact_score
+       CAST(s.avg_total_user_cost * s.avg_user_impact
+            * (s.user_seeks + s.user_scans) AS decimal(19,1)) AS impact_score
 FROM   sys.dm_db_missing_index_groups AS g
 JOIN   sys.dm_db_missing_index_group_stats AS s
        ON s.group_handle = g.index_group_handle
 JOIN   sys.dm_db_missing_index_details AS d
        ON d.index_handle = g.index_handle
+WHERE  d.database_id = DB_ID()
 ORDER  BY impact_score DESC;</code></pre>
-<p>Notice what this produces: a ranked, evidence-based conversation. The developer sees the table and the columns the engine actually wanted; the DBA sees the estimated impact before writing a DDL statement. The same query also illustrates the limit — missing-index DMVs are a hint, not a command, and a DBA still weighs write overhead, duplication, and maintenance cost before creating anything.</p>
+<p>Run this in the database being investigated. The score is a rough ranking based on optimizer estimates and observed seeks/scans, not a measured performance gain. Missing-index DMV suggestions are transient and incomplete; they don't account for every existing index or the full write and maintenance cost, so review them before creating anything.</p>
 <p>Practical habits that keep the relationship healthy:</p>
 <ul>
   <li><strong>Review schema changes together</strong>, before coding against them — not after the tables exist</li>

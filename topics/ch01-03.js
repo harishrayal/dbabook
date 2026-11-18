@@ -33,7 +33,7 @@ window.TOPIC = {
     {
       h: "The recurring core",
       html: `
-<p>Underneath the tickets sits a set of checks that should happen at the same time every day. They are cheap, they are boring, and each one maps to a specific class of production failure:</p>
+<p>Underneath the tickets sits a set of checks that many teams schedule daily. Their frequency and timing should reflect service risk and operating hours; each check helps surface a class of production failure:</p>
 <table>
   <tr><th>Check</th><th>Frequency</th><th>What it prevents</th></tr>
   <tr><td>Alert and monitoring review</td><td>Start of day</td><td>Silent failures nobody reported yet</td></tr>
@@ -88,24 +88,34 @@ window.TOPIC = {
     {
       h: "The morning health check",
       html: `
-<p>The single highest-value habit in database operations is a fixed morning check, run before the first meeting. A compact version covers failed jobs and database state in one pass:</p>
+<p>A scheduled health check can surface failed jobs and database-state issues early. Here is an example that finds failed job outcomes from the last 24 hours:</p>
 <pre><code class="language-sql">-- Morning check 1: jobs that finished as failed in the last 24 hours
 SELECT j.name                                   AS job_name,
-       h.run_date, h.run_time, h.run_status,
-       left(h.message, 120)                     AS message_head
+       r.run_at,
+       h.run_status,
+       LEFT(h.message, 120)                     AS message_head
 FROM   msdb.dbo.sysjobhistory AS h
 JOIN   msdb.dbo.sysjobs AS j ON j.job_id = h.job_id
+CROSS APPLY (VALUES (DATETIMEFROMPARTS(
+    h.run_date / 10000,
+    h.run_date / 100 % 100,
+    h.run_date % 100,
+    h.run_time / 10000,
+    h.run_time / 100 % 100,
+    h.run_time % 100,
+    0
+))) AS r(run_at)
 WHERE  h.run_status = 0          -- 0 = failed
 AND    h.step_id = 0             -- job outcome rows only
-AND    h.run_date >= CONVERT(char(8), DATEADD(day, -1, GETDATE()), 112)
-ORDER  BY h.run_date DESC, h.run_time DESC;</code></pre>
+AND    r.run_at >= DATEADD(hour, -24, GETDATE())
+ORDER  BY r.run_at DESC;</code></pre>
 <pre><code class="language-sql">-- Morning check 2: anything not online, and log reuse waits
 SELECT name, state_desc, recovery_model_desc, log_reuse_wait_desc
 FROM   sys.databases
 WHERE  state_desc &lt;&gt; 'ONLINE'
 OR     log_reuse_wait_desc &lt;&gt; 'NOTHING'
 ORDER  BY name;</code></pre>
-<p>Both queries take under a second and answer the questions that matter: <em>did last night's work succeed, and is anything already in trouble?</em> Running them at the same time daily also builds the pattern-recognition that makes anomalies jump out — a job that “always fails on Tuesdays” is only visible if you look on Tuesdays.</p>
+<p>These queries help answer whether recent jobs failed and whether a database is offline or waiting to reuse its log. Runtime depends on server and history-table size. Reviewing results regularly also helps reveal recurring patterns, such as a job that fails on a particular day.</p>
 `
     },
     {

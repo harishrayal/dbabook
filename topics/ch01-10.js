@@ -18,13 +18,13 @@ window.TOPIC = {
     {
       h: "Why cadence matters",
       html: `
-<p>Production databases degrade continuously and fail suddenly. Cadence is how a DBA converts continuous degradation into scheduled detection — each cycle catches a different class of problem before it becomes an incident:</p>
+<p>Production databases change over time, and failures can occur suddenly. A documented cadence helps teams detect selected problems; its tasks and frequency should reflect service objectives, risk, and operational requirements:</p>
 <ul>
   <li><strong>Daily</strong> — catch what broke overnight: jobs, backups, space, blocking. Minutes of work, immediate signal</li>
   <li><strong>Weekly</strong> — catch what drifts slowly: fragmentation, statistics, capacity trends, slow queries. An hour of analysis</li>
   <li><strong>Monthly</strong> — catch what only shows over time: recovery capability, patch levels, access hygiene, documentation gaps. A deliberate exercise</li>
 </ul>
-<p>The three cycles also differ in what counts as success. Daily success is <em>nothing to report</em>. Weekly success is <em>a change made based on evidence</em>. Monthly success is <em>a proof obtained</em> — the restore that worked, the failover that met its RTO, the access list that got shorter.</p>
+<p>The daily, weekly, and monthly labels below are an example, not a universal schedule. Define success for each check in terms of evidence—for example, a restore test that meets its agreed recovery target.</p>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="Daily, weekly and monthly cadence cycle">
     <defs>
@@ -63,12 +63,12 @@ window.TOPIC = {
     {
       h: "Daily: keep the lights on",
       html: `
-<p>The daily cycle runs at a fixed time, ideally before the business peaks, and takes fifteen minutes when nothing is wrong. Its outputs are evidence, not vibes:</p>
+<p>A daily review might run before the business peak and can be brief when nothing is wrong. Its outputs should be evidence, not assumptions:</p>
 <table>
   <tr><th>Activity</th><th>Evidence to capture</th></tr>
   <tr><td>Alert and dashboard review</td><td>Zero unacknowledged critical alerts; any new warning noted</td></tr>
   <tr><td>SQL Agent job outcomes</td><td>All scheduled jobs succeeded — especially backups, log backups, and ETL</td></tr>
-  <tr><td>Backup freshness</td><td>Last full, differential, and log backup within the RPO window</td></tr>
+  <tr><td>Backup freshness</td><td>Full, differential, and log backup status checked against the database's recovery policy</td></tr>
   <tr><td>Disk and file growth</td><td>Free space headroom on data, log, and backup volumes</td></tr>
   <tr><td>Blocking and long-running work</td><td>No unexplained sessions running longer than the threshold</td></tr>
   <tr><td>Error log scan</td><td>No new critical entries since yesterday's check</td></tr>
@@ -76,21 +76,22 @@ window.TOPIC = {
   <tr><td>Change window preparation</td><td>Today's approved changes reviewed, rollback known, window confirmed</td></tr>
   <tr><td>On-call handover</td><td>Notes passed: open issues, pending work, anything to watch</td></tr>
 </table>
-<pre><code class="language-sql">-- Daily: databases with no successful backup in the last 24 hours
+<pre><code class="language-sql">-- Example policy check: databases without a full/differential backup in 24 hours
 SELECT d.name                         AS database_name,
        d.recovery_model_desc,
        d.state_desc,
-       max(b.backup_finish_date)      AS last_backup
+       MAX(b.backup_finish_date)      AS last_data_backup
 FROM   sys.databases AS d
 LEFT   JOIN msdb.dbo.backupset AS b
        ON b.database_name = d.name
+      AND b.type IN ('D', 'I')
 WHERE  d.database_id &gt; 4
 AND    d.state = 0
 GROUP  BY d.name, d.recovery_model_desc, d.state_desc
-HAVING max(b.backup_finish_date) IS NULL
-    OR max(b.backup_finish_date) &lt; DATEADD(hour, -24, GETDATE())
-ORDER  BY last_backup;</code></pre>
-<p>The query is deliberately blunt: anything returned needs an answer today. Databases created ad hoc by developers, restored under a new name, or missed by a backup policy all surface here — they are the ones that fail during a recovery nobody expected.</p>
+HAVING MAX(b.backup_finish_date) IS NULL
+    OR MAX(b.backup_finish_date) &lt; DATEADD(hour, -24, GETDATE())
+ORDER  BY last_data_backup;</code></pre>
+<p>The 24-hour limit is illustrative; replace it with each database's backup policy. This query checks full/differential data backups, not log-backup cadence or end-to-end recoverability, so monitor those separately.</p>
 <p>Pair it with the job history check: a backup job that succeeded is only meaningful if its output was verified. The daily cycle closes with both facts recorded, so tomorrow's comparison has a baseline to work from.</p>
 `
     },
@@ -118,7 +119,7 @@ ORDER  BY last_backup;</code></pre>
 <table>
   <tr><th>Activity</th><th>Proof it produces</th></tr>
   <tr><td>Restore test into a scratch instance</td><td>Backups are recoverable, and the restore meets its target time</td></tr>
-  <tr><td>Failover or DR drill (quarterly at minimum)</td><td>Measured RPO and RTO, not assumed ones</td></tr>
+  <tr><td>Failover or DR exercise (on a risk-based schedule)</td><td>Measured recovery results against agreed RPO/RTO</td></tr>
   <tr><td>Patching and updates</td><td>Known defects and vulnerabilities removed on schedule</td></tr>
   <tr><td>Access and permission review</td><td>Roles audited, orphaned users removed, excessive grants withdrawn</td></tr>
   <tr><td>Retention and archival</td><td>Old data and expired backups removed per policy</td></tr>
@@ -146,8 +147,21 @@ ORDER  BY last_backup;</code></pre>
   <tr><td>Change window</td><td>Applying DBA</td><td>Release manager</td></tr>
 </table>
 <p>A quick handover query answers the question the incoming DBA actually has: what has this instance been doing while I was away?</p>
-<pre><code class="language-powershell"># Handover: last outcome of every job, so nothing failed silently during the break
-Invoke-Sqlcmd -ServerInstance 'PROD-SQL01\\INST1' -Query "SELECT j.name, max(h.run_date) AS last_run_date, max(h.run_status) AS last_status FROM msdb.dbo.sysjobhistory AS h JOIN msdb.dbo.sysjobs AS j ON j.job_id = h.job_id WHERE h.step_id = 0 GROUP BY j.name ORDER BY last_run_date DESC" -OutputAs DataRows</code></pre>
+<pre><code class="language-sql">-- Handover: most recent completed outcome for each job
+WITH JobOutcomes AS (
+    SELECT j.name, h.run_date, h.run_time, h.run_status, h.message,
+           ROW_NUMBER() OVER (
+               PARTITION BY j.job_id
+               ORDER BY h.run_date DESC, h.run_time DESC, h.instance_id DESC
+           ) AS rn
+    FROM msdb.dbo.sysjobhistory AS h
+    JOIN msdb.dbo.sysjobs AS j ON j.job_id = h.job_id
+    WHERE h.step_id = 0
+)
+SELECT name, run_date, run_time, run_status, message
+FROM JobOutcomes
+WHERE rn = 1
+ORDER BY name;</code></pre>
 <p>The other half of coverage is the <strong>quiet week</strong>. When alerts are silent and the queue is short, the temptation is to let the cadence lapse — but quiet weeks are precisely when the weekly and monthly cycles are cheapest to run. Treat a quiet period as capacity for prevention: run the restore test early, close the access review, document the change you made last month. The next busy week will arrive regardless, and it will be easier if the quiet one was spent well.</p>
 `
     },

@@ -24,7 +24,7 @@ window.TOPIC = {
   <li><strong>Problem</strong> — the underlying cause of one or more incidents: find it after service is restored</li>
   <li><strong>Change</strong> — a planned modification with review and a window: prevent incidents before they start</li>
 </ul>
-<p>Severity sets the response. Most organisations run a four-level scale, and the DBA needs to know instantly which one they are in:</p>
+<p>Organizations define their own severity levels and response targets. The following four-level scale is an example; use the incident policy for the system you're supporting:</p>
 <table>
   <tr><th>Severity</th><th>Definition</th><th>Response</th><th>Example</th></tr>
   <tr><td><strong>Sev1</strong></td><td>Core service down or data at risk</td><td>Immediate, all hands, executive comms</td><td>Orders database not accepting writes</td></tr>
@@ -32,7 +32,7 @@ window.TOPIC = {
   <tr><td><strong>Sev3</strong></td><td>Partial degradation with a workaround</td><td>Next business day, ticket tracked</td><td>One slow dashboard, data still correct</td></tr>
   <tr><td><strong>Sev4</strong></td><td>Minor issue, cosmetic or informational</td><td>Backlog</td><td>Log noise, minor space warning</td></tr>
 </table>
-<p>The most dangerous misclassification is calling a Sev1 a Sev3: the team “looks into it tomorrow” while data or revenue quietly bleeds. When in doubt, classify higher and downgrade after facts arrive.</p>
+<p>Under-classifying an incident can delay response while impact continues. Follow the organization's escalation policy, and reassess severity as evidence changes.</p>
 `
     },
     {
@@ -97,7 +97,7 @@ window.TOPIC = {
     {
       h: "Triage under pressure",
       html: `
-<p>The first five minutes of an incident are structured fact-gathering. For a database incident, the sequence is almost always the same — one query often answers most of it:</p>
+<p>Early incident triage should establish scope and gather evidence. This query is a starting point for currently executing requests; it won't show every session, such as an idle session holding an open transaction that blocks others:</p>
 <pre><code class="language-sql">-- First query in a database incident: what is running and blocking?
 SELECT r.session_id,
        r.status,
@@ -113,7 +113,7 @@ CROSS  APPLY sys.dm_exec_sql_text(r.sql_handle) AS t
 WHERE  r.session_id &lt;&gt; @@SPID
 AND    (r.blocking_session_id &lt;&gt; 0 OR r.wait_time &gt; 5000)
 ORDER  BY r.blocking_session_id DESC, r.wait_time DESC;</code></pre>
-<p>From there, the standard fact set — collect it before touching anything:</p>
+<p>From there, collect a useful initial fact set before taking action when the incident allows:</p>
 <ol>
   <li><strong>What changed?</strong> — deploy, patch, job run, storage event, statistics update</li>
   <li><strong>What is the scope?</strong> — one database, one instance, or the whole estate? One query or all traffic?</li>

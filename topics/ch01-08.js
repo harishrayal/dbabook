@@ -26,7 +26,7 @@ window.TOPIC = {
   <tr><td>DBCC CHECKDB (integrity check)</td><td>Logical corruption spreading silently for weeks before discovery</td></tr>
   <tr><td>Index rebuild / reorganise</td><td>Query performance degrading as pages fragment</td></tr>
   <tr><td>Statistics updates</td><td>Stale cardinality estimates producing wrong query plans</td></tr>
-  <tr><td>Transaction log management</td><td>Log file growth to 100%, writes rejected, database read-only</td></tr>
+  <tr><td>Transaction log management</td><td>Log file fills and write operations can fail</td></tr>
   <tr><td>Data and log file growth review</td><td>Autogrowth failing when a disk fills mid-write</td></tr>
   <tr><td>Archival and retention</td><td>Tables and backups growing past any usable size</td></tr>
   <tr><td>Patching and updates</td><td>Known bugs and security vulnerabilities staying in production</td></tr>
@@ -112,7 +112,7 @@ window.TOPIC = {
       h: "Index and statistics maintenance",
       html: `
 <p>Two tasks in that calendar deserve real judgement rather than blanket rules:</p>
-<p><strong>Indexes.</strong> Fragmentation is not automatically a problem — it depends on the index size, the workload, and whether the cost of rebuilding exceeds the cost of the scans. The usual guidance: below 5% do nothing, between 5% and 30% reorganise (online, lighter), above 30% rebuild (heavier, log-intensive). Page <em>count</em> matters as much as percentage: a 90% fragmented index with 40 pages is noise.</p>
+<p><strong>Indexes.</strong> Fragmentation isn't automatically a problem; page density, index size, workload, and the cost of maintenance also matter. Don't apply fixed fragmentation percentages as universal rebuild/reorganize thresholds. Use measurements and workload evidence to decide whether maintenance is likely to help; reorganizing is generally less resource-intensive, while rebuilding can require substantially more resources and log space.</p>
 <pre><code class="language-sql">-- Fragmentation triage: only indexes worth acting on
 SELECT t.name                                    AS table_name,
        i.name                                    AS index_name,
@@ -126,7 +126,7 @@ JOIN   sys.tables AS t ON t.object_id = i.object_id
 WHERE  ips.avg_fragmentation_in_percent &gt; 10
 AND    ips.page_count &gt; 1000
 ORDER  BY ips.avg_fragmentation_in_percent DESC;</code></pre>
-<p><strong>Statistics.</strong> The query optimiser trusts cardinality estimates; stale statistics produce plans that were right when the data looked different. Auto-update statistics handles small tables well, but large, heavily-written tables frequently need scheduled updates — full scans on a defined schedule, or incremental statistics on partitioned tables. After a large data load, an explicit update before the next business peak is cheap insurance.</p>
+<p><strong>Statistics.</strong> The optimizer uses statistics to estimate cardinality. Automatic updates are a useful baseline, but a large data change can make statistics less representative before the automatic threshold is reached. Check the workload and statistics-update behavior before scheduling manual updates; full scans and incremental statistics have their own costs and configuration requirements.</p>
 `
     },
     {
@@ -136,13 +136,13 @@ ORDER  BY ips.avg_fragmentation_in_percent DESC;</code></pre>
 <ul>
   <li><strong>Backups</strong> — full, differential, and log schedules matched to the recovery model and RPO; retention aligned to how long a problem can go unnoticed (corruption found in week three needs week-one backups)</li>
   <li><strong>Verification</strong> — a backup job that “succeeded” is not a restore; run <code>RESTORE VERIFYONLY</code> in automation and a real restore into a scratch instance on a schedule</li>
-  <li><strong>Integrity checks</strong> — DBCC CHECKDB on every database, frequency scaled to size (daily for small, every few days or with physical-only for very large), because logical corruption does not announce itself</li>
+  <li><strong>Integrity checks</strong> — schedule full DBCC CHECKDB checks for every database at a cadence that meets recovery and risk requirements. PHYSICAL_ONLY can reduce work between full checks, but it doesn't replace them or perform all logical consistency checks</li>
   <li><strong>Log management</strong> — in FULL recovery the log grows until log backups run; in simple recovery a checkpoint reclaims it. Watch <code>log_reuse_wait_desc</code> rather than waiting for the disk alert</li>
-  <li><strong>Autogrowth</strong> — configure sensible fixed increments, not the default 1 MB or 10%; a log growing in 1 MB steps during peak generates thousands of VLFs and slows recovery</li>
+  <li><strong>Autogrowth</strong> — pre-size files where practical and choose explicit growth increments suited to the workload. Avoid relying on tiny or percentage-based growth settings without measuring their effects; repeated small log growth can create many VLFs</li>
 </ul>
 <pre><code class="language-sql">-- Cheap daily integrity smoke test for very large databases
 DBCC CHECKDB ('OrdersDb') WITH PHYSICAL_ONLY, NO_INFOMSGS;</code></pre>
-<p><code>PHYSICAL_ONLY</code> skips logical checks but runs far faster — a pragmatic trade for databases too large for a full daily check, with full checks scheduled less often.</p>
+<p><code>PHYSICAL_ONLY</code> focuses on physical page and record-header integrity and can run faster, but it doesn't detect all logical consistency errors. Use it only as a supplement to a scheduled full <code>DBCC CHECKDB</code> strategy.</p>
 `
     },
     {
@@ -173,11 +173,11 @@ DBCC CHECKDB ('OrdersDb') WITH PHYSICAL_ONLY, NO_INFOMSGS;</code></pre>
   interview: [
     {
       q: "How often should you run DBCC CHECKDB and why?",
-      a: "Typically daily for small and medium databases, with frequency reduced for very large ones — often using WITH PHYSICAL_ONLY daily and full checks weekly or monthly. The rationale is the rate at which corruption can spread undetected versus the runtime cost; the schedule must be explicit and monitored, because a skipped integrity check is invisible."
+      a: "There isn't one frequency for every database. Set and monitor a full-check cadence based on database criticality, change rate, recovery objectives, and the time/resources available. PHYSICAL_ONLY can supplement full checks but doesn't replace them."
     },
     {
       q: "When do you rebuild versus reorganise an index?",
-      a: "As a starting rule: under 5% fragmentation do nothing; 5% to 30% reorganise, since it is online and incremental; above 30% rebuild, which is heavier and log-intensive but restores the structure. Page count qualifies the decision — a tiny index at 90% fragmentation is not worth a maintenance window — and write-heavy tables need this review more often than read-only ones."
+      a: "Don't use fragmentation percentages as universal thresholds. Consider fragmentation together with page density, index size, workload, and maintenance cost. Reorganizing is generally less resource-intensive; rebuilding can be more expensive and require additional log and disk capacity."
     },
     {
       q: "A developer suggests shrinking data files weekly to reclaim space. What do you say?",

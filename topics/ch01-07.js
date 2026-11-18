@@ -75,7 +75,7 @@ window.TOPIC = {
   </svg>
   <div class="figcaption">Figure 1 — RPO measures data loss backwards from failure; RTO measures recovery forwards.</div>
 </div>
-<p>The DBA's practical job here is to be honest about what current design delivers. If log backups run every 15 minutes, the RPO is 15 minutes regardless of what the slide deck says. Measure it, publish it, and let the business decide whether that is acceptable.</p>
+<p>The DBA's practical job is to measure what the current design can recover and compare it with the agreed objective. Log-backup age is one useful signal in FULL or BULK_LOGGED recovery, but it isn't the complete RPO: an eligible tail-log backup, availability-group data movement, or log-shipping restore position can change the recoverable point. Measure the relevant recovery path and report its limitations.</p>
 `
     },
     {
@@ -90,31 +90,29 @@ window.TOPIC = {
   <tr><td>Data centre</td><td>Synchronous or async replication to a second site</td><td>WAN partition, split brain</td></tr>
   <tr><td>Whole-site loss</td><td>Backup copies off-site plus documented failover</td><td>Untrained recovery — backups without drills</td></tr>
 </table>
-<p>The two most common database-level designs in SQL Server are <strong>failover clustering</strong> (one instance, multiple nodes, shared or replicated storage) and <strong>availability groups</strong> (multiple databases replicated to secondary replicas with synchronous or asynchronous commit). The choice is driven by the RPO: synchronous commit protects against data loss at the cost of write latency; asynchronous commit keeps latency low but the secondary can lag, and that lag <em>is</em> your exposure.</p>
+<p>Two common SQL Server availability designs are <strong>failover clustering</strong> (an instance can move between cluster nodes) and <strong>availability groups</strong> (selected databases are replicated to secondary replicas). With a synchronized synchronous-commit replica, planned failover can avoid data loss, usually at the cost of additional write latency. Asynchronous commit doesn't wait for the secondary to harden each transaction, so forced failover can lose transactions that hadn't reached it. Choose and test the design against the recovery objectives and failure scenarios.</p>
 <p>Backups remain in every design, not as availability but as the last line against everything the redundancy above cannot catch — corruption, ransomware, and the accidental DELETE with no WHERE clause.</p>
 `
     },
     {
       h: "Is the RPO real? Measure it",
       html: `
-<p>The fastest way to check whether an RPO is achievable is to look at how much data would be lost if the server failed right now. For a database in FULL recovery, that is bounded by the time since the last usable backup (or replication position):</p>
-<pre><code class="language-sql">-- RPO exposure right now: time since last backup, per database
+<p>Backup history is one input to recovery planning, not a direct measurement of RPO. This query shows the latest full, differential, and log backup times separately so each can be compared with the database's policy:</p>
+<pre><code class="language-sql">-- Latest backup times by type; compare with the recovery policy
 SELECT d.name                          AS database_name,
        d.recovery_model_desc,
        d.state_desc,
-       max(b.backup_finish_date)       AS last_backup,
-       DATEDIFF(minute,
-                max(b.backup_finish_date),
-                GETUTCDATE())          AS minutes_since_backup
+       MAX(CASE WHEN b.type = 'D' THEN b.backup_finish_date END) AS last_full_backup,
+       MAX(CASE WHEN b.type = 'I' THEN b.backup_finish_date END) AS last_differential_backup,
+       MAX(CASE WHEN b.type = 'L' THEN b.backup_finish_date END) AS last_log_backup
 FROM   sys.databases AS d
 LEFT   JOIN msdb.dbo.backupset AS b
        ON b.database_name = d.name
 WHERE  d.database_id &gt; 4
 AND    d.state = 0
 GROUP  BY d.name, d.recovery_model_desc, d.state_desc
-ORDER  BY minutes_since_backup DESC;</code></pre>
-<p>A database showing hundreds of minutes since its last backup while the business believes its RPO is 15 minutes is a gap between policy and reality — exactly the kind of gap that turns into a post-incident finding. Run it, alert on it, and treat the number as the real RPO until something proves otherwise.</p>
-<p>For availability groups, the equivalent check is replication lag on the secondary; for log shipping, the age of the last copied log file. Same principle: <strong>the objective is only real if a monitor can see it.</strong></p>
+ORDER  BY last_log_backup, last_full_backup;</code></pre>
+<p>For availability groups, inspect the replica's synchronization and send/redo queues; for log shipping, inspect backup, copy, and restore status. These measures reveal gaps and lag, but the effective RPO also depends on which recovery actions remain possible after the failure.</p>
 `
     },
     {
@@ -139,8 +137,8 @@ ORDER  BY minutes_since_backup DESC;</code></pre>
   scenario: {
     title: "The failover that lost twenty minutes of orders",
     html: `
-<p>Wednesday, 2:17 AM: the primary database server stops responding. The application falls over to the secondary replica automatically — but the team discovers at 2:35 AM that the replica was configured with asynchronous commit to protect write latency, and it was eleven minutes behind at the moment of failure. Combined with log backups that ran every twenty minutes, twenty minutes of order records never reached the secondary. The business had been told the RPO was five minutes.</p>
-<p>The DBA's first task was not the failover — it was the accounting: identifying the exact LSN where the secondary diverged, quantifying the missing orders from the application's queue tables, and estimating the replay work. The secondary came online at 2:31 AM; the application was fully served by 2:52 AM — an RTO of thirty-five minutes against a promise of fifteen.</p>
+<p>Wednesday, 2:17 AM: the primary database server stops responding. The team forces failover to an asynchronous-commit secondary and later discovers it was eleven minutes behind, so some recently committed transactions weren't hardened on that replica. Log backups running every twenty minutes provide a separate recovery path if their files and the required log chain are available; they don't determine how far the availability-group secondary had caught up. The business had been told the RPO was five minutes.</p>
+<p>After the forced failover, the DBA compared the secondary's last hardened log position with application records and quantified which orders needed reconciliation. The secondary came online at 2:31 AM; the application was fully served by 2:52 AM — an RTO of thirty-five minutes against a promise of fifteen.</p>
 <p>Prevention came from the review that followed: synchronous commit for the two databases where data loss was unacceptable, asynchronous for the rest with a lag alert at sixty seconds, log backups tightened to five minutes, and — most importantly — <strong>a quarterly timed failover drill</strong> that measures the real RPO and RTO and reports the numbers to the business. The design had never been wrong on paper; it had simply never been tested against the clock.</p>
 `
   },
@@ -152,7 +150,7 @@ ORDER  BY minutes_since_backup DESC;</code></pre>
     },
     {
       q: "Define RPO and RTO with a concrete example.",
-      a: "RPO is the maximum acceptable data loss measured backwards from failure: with log backups every fifteen minutes, a crash can lose up to fifteen minutes of transactions. RTO is the maximum acceptable outage measured forwards: detection, decision, failover, and verification must complete within the budget — say thirty minutes — before the breach becomes a business incident of its own."
+      a: "RPO is the maximum acceptable data loss measured backwards from failure. If the primary is lost and no tail-log backup can be taken, a 15-minute-old last usable log backup can leave up to 15 minutes of transactions unrecoverable from that backup chain. RTO is the maximum acceptable outage measured forwards: detection, decision, failover, and verification all count against it."
     },
     {
       q: "Your availability group secondary is thirty minutes behind. What does that mean?",

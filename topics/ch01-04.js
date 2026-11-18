@@ -75,7 +75,7 @@ window.TOPIC = {
 
     <rect x="150" y="245" width="460" height="54" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
     <text x="380" y="268" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="Segoe UI, sans-serif">Data moves sideways too: refreshes, masking, retention rules</text>
-    <text x="380" y="288" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">only production ever holds unmasked customer data</text>
+    <text x="380" y="288" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">use synthetic or appropriately masked data outside production</text>
 
     <text x="380" y="330" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">The artefact is built once — if it changes between environments, it was never really tested.</text>
   </svg>

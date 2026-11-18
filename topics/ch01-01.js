@@ -5,7 +5,7 @@ window.TOPIC = {
   id: "ch01-01",
   title: "What Is a Database Administrator?",
 
-  lead: "A Database Administrator is the person responsible for keeping an organisation's data available, correct, secure, and performant — the role that owns the database when everything else goes wrong.",
+  lead: "A Database Administrator helps an organisation keep its data available, correct, secure, and performant by operating and protecting the database platform.",
 
   objectives: [
     "Define the DBA role and what it owns",
@@ -18,10 +18,10 @@ window.TOPIC = {
     {
       h: "Defining the role",
       html: `
-<p>A <strong>Database Administrator (DBA)</strong> is the technical owner of a database system. Where a developer writes the application that <em>uses</em> data, the DBA is accountable for the platform that <em>stores, protects, and serves</em> that data to every application, report, and integration in the organisation.</p>
-<p>The simplest way to understand the role: when data is slow, lost, corrupted, leaked, or unavailable, the DBA is the person paged. The role exists because databases are shared, stateful infrastructure — one misconfigured setting or one missed backup affects every application that depends on it.</p>
+<p>A <strong>Database Administrator (DBA)</strong> operates and protects database systems. Where a developer writes the application that <em>uses</em> data, the DBA commonly focuses on the platform that <em>stores, protects, and serves</em> that data. Exact ownership varies by organisation and is often shared with application, infrastructure, and security teams.</p>
+<p>When data is slow, lost, corrupted, exposed, or unavailable, the DBA may be paged as part of the response. Databases are shared, stateful infrastructure, so a change or missed backup can affect every application that depends on them.</p>
 <blockquote>A developer asks “does this query work?”. A DBA asks “will this database still be running, fast, and recoverable in six months at 3× today's load?”</blockquote>
-<p>The DBA owns the full lifecycle of the database platform:</p>
+<p>DBA responsibilities often span the database platform's lifecycle:</p>
 <ul>
   <li><strong>Build</strong> — install, configure, and provision instances and databases</li>
   <li><strong>Protect</strong> — backups, recovery, security, and permissions</li>
@@ -77,7 +77,7 @@ window.TOPIC = {
     <line x1="230" y1="285" x2="300" y2="210" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#arrow)"/>
     <line x1="530" y1="285" x2="460" y2="210" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#arrow)"/>
 
-    <text x="380" y="335" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">Every dependency points back to the DBA — that is why the role is accountable, not advisory.</text>
+    <text x="380" y="335" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">The DBA coordinates with application, infrastructure, security, and recovery teams.</text>
   </svg>
   <div class="figcaption">Figure 1 — The DBA sits at the centre of applications, infrastructure, security, and recovery.</div>
 </div>
@@ -93,7 +93,7 @@ window.TOPIC = {
   <tr><td>Scope</td><td>One application</td><td>Every database on the instance/estate</td></tr>
   <tr><td>Change style</td><td>Frequent deploys</td><td>Governed, reviewed, windowed changes</td></tr>
   <tr><td>Failure response</td><td>Fix the code, redeploy</td><td>Restore, recover, investigate, report</td></tr>
-  <tr><td>Success metric</td><td>Features delivered</td><td>Uptime, RPO/RTO met, zero data loss</td></tr>
+  <tr><td>Success metric</td><td>Features delivered</td><td>Service objectives met; recovery stays within agreed RPO/RTO</td></tr>
 </table>
 <p>In practice the two roles work <em>together</em>: the DBA reviews schema changes and indexes before release, the developer writes efficient queries, and both share ownership of performance in production.</p>
 `
@@ -136,10 +136,10 @@ FROM   sys.dm_server_services;</code></pre>
 <p>The distinctions below are the ones that matter most in day-to-day administration:</p>
 <table>
   <tr><th>Domain</th><th>Typical ownership</th><th>Primary metric</th></tr>
-  <tr><td>Availability</td><td>Uptime, failover, on-call response</td><td>99.9%+ uptime</td></tr>
+  <tr><td>Availability</td><td>Uptime, failover, on-call response</td><td>Availability target defined with the business</td></tr>
   <tr><td>Protection</td><td>Backups, restore testing, DR</td><td>RPO / RTO met</td></tr>
-  <tr><td>Security</td><td>Logins, roles, least privilege, auditing</td><td>Zero unauthorised access</td></tr>
-  <tr><td>Performance</td><td>Plans, indexes, waits, capacity</td><td>Sub-second response</td></tr>
+  <tr><td>Security</td><td>Logins, roles, least privilege, auditing</td><td>Access controls and audit requirements are met</td></tr>
+  <tr><td>Performance</td><td>Plans, indexes, waits, capacity</td><td>Workload-specific latency and throughput targets</td></tr>
 </table>
 <p>Availability and reliability are engineered, not hoped for: redundant hardware, high availability features, monitored health and rehearsed failover all contribute to an uptime figure the business can rely on.</p>
 <p>Use the following as a starting point when investigating What Is a Database Administrator?. Adapt names and paths to your own environment and run it first on a non-production instance:</p>

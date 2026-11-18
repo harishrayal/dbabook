@@ -18,7 +18,7 @@ window.TOPIC = {
     {
       h: "The DBA's role in a release",
       html: `
-<p>When an application deploys, the code ships as binaries but the <strong>data layer changes shape</strong>: tables, indexes, constraints, stored procedures, permissions, and often Agent jobs or configuration. The DBA's job is not to write the feature — it is to guarantee that the data-layer change is <em>correct, safe, and reversible</em> in production.</p>
+<p>When an application deploys, the code ships as binaries but the <strong>data layer may also change</strong>: tables, indexes, constraints, stored procedures, permissions, and sometimes Agent jobs or configuration. The DBA helps review and operate these changes so that their production impact, verification, and recovery path are understood.</p>
 <p>That makes the DBA a gate, but a useful one. The best deployment reviews are not interrogations; they are a short, repeatable conversation with a checklist:</p>
 <ul>
   <li><strong>What is changing?</strong> — objects touched, and whether the change is additive or breaking</li>
@@ -71,7 +71,7 @@ window.TOPIC = {
     <text x="665" y="256" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="Segoe UI, sans-serif">Verification queries</text>
     <text x="665" y="276" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">version · object existence · no blockers</text>
 
-    <text x="380" y="330" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">Ninety per cent of deployment risk is removed at step 2 — while the change is still only text.</text>
+    <text x="380" y="330" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">Review risks before the change reaches the production window.</text>
   </svg>
   <div class="figcaption">Figure 1 — The DBA gate sits before the change window, not inside it.</div>
 </div>
@@ -100,8 +100,8 @@ window.TOPIC = {
       h: "Deployment mechanics",
       html: `
 <p>Whatever the team uses, the DBA should be able to trigger the production step from a reviewed artefact. A typical DACPAC promotion looks like this in one command:</p>
-<pre><code class="language-powershell"># Publish the reviewed DACPAC to production — one artefact, one command
-Publish-SqlDacPackage -DatabaseName 'OrdersDb' -PublishXml '.\\deploy\\OrdersDb.publish.xml' -DatabaseServer 'PROD-SQL01\\INST1' -InputFile '.\\deploy\\OrdersDb.dacpac' -BlockSize 40000 -Timeout 1200</code></pre>
+<pre><code class="language-powershell"># Publish the reviewed DACPAC using a checked-in publish profile
+SqlPackage /Action:Publish /SourceFile:".\\deploy\\OrdersDb.dacpac" /TargetServerName:"PROD-SQL01\\INST1" /TargetDatabaseName:"OrdersDb" /Profile:".\\deploy\\OrdersDb.publish.xml"</code></pre>
 <p>The three main mechanisms, and where each earns its place:</p>
 <ul>
   <li><strong>Migration scripts</strong> — ordered, hand-written, version-controlled. Maximum control, minimum surprise; the DBA reads every line. Best for most organisations</li>
@@ -154,7 +154,7 @@ WHERE blocking_session_id &lt;&gt; 0;</code></pre>
     },
     {
       q: "How do you deploy a change with zero downtime?",
-      a: "Make every step additive and backwards-compatible: add nullable columns or new tables first, deploy code that tolerates both states, backfill in small batches, then apply constraints or cleanup in a later release. Combined with an online-capable index operation and a quiet window for the final step, the application never sees an incompatible schema."
+      a: "Aim to avoid user-visible downtime with additive, backwards-compatible steps: add nullable columns or new tables first, deploy code that tolerates both states, backfill in small batches, then apply constraints or cleanup in a later release. Validate locking and index-operation support for the SQL Server version and edition; zero downtime isn't guaranteed."
     },
     {
       q: "The developer says the change is just one column. How do you respond?",
