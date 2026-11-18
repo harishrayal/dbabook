@@ -111,7 +111,7 @@ window.TOPIC = {
 <ul>
   <li><strong>Data type</strong> — the narrowest type that can never overflow or lose precision (<code>date</code> not <code>datetime2</code> for a calendar date; <code>int</code> not <code>bigint</code> unless growth truly demands it)</li>
   <li><strong>Nullability</strong> — <code>NOT NULL</code> unless the value is genuinely optional; NULL means “unknown”, and it quietly complicates comparisons, indexes, and logic</li>
-  <li><strong>Default</strong> — a default turns “forgot to supply a value” into a correct value instead of an error or a NULL</li>
+  <li><strong>Default</strong> — a default supplies a chosen value when an INSERT omits the column or specifies <code>DEFAULT</code>; it does not replace an explicitly supplied <code>NULL</code></li>
 </ul>
 <p>A worked example that encodes all three, plus a key so rows are identifiable:</p>
 <pre><code class="language-sql">CREATE TABLE sales.OrderLines
@@ -148,13 +148,13 @@ ORDER  BY line_id;</code></pre>
 <p>Physically, rows live in 8-KB pages. A table is stored one of two ways, and the difference affects almost every read in the system:</p>
 <table>
   <tr><th>Aspect</th><th>Heap (no clustered key)</th><th>Clustered table</th></tr>
-  <tr><td>Row order</td><td>Arbitrary — wherever space was free</td><td>Sorted by the clustering key</td></tr>
-  <tr><td>Primary read path</td><td>Full table scans only</td><td>Range seeks: “all orders in January” reads contiguous pages</td></tr>
+  <tr><td>Row order</td><td>No logical ordering guarantee</td><td>Logical key order at the leaf level; physical page order isn't guaranteed</td></tr>
+  <tr><td>Primary read path</td><td>A scan if no useful nonclustered index exists; nonclustered indexes can also locate heap rows</td><td>Clustered-index seeks and scans follow the key's logical order</td></tr>
   <tr><td>Row locator</td><td>RID (file:page:slot)</td><td>Clustering key value — reused by every nonclustered index</td></tr>
   <tr><td>Typical use</td><td>Staging tables, quick bulk loads</td><td>Virtually every user table</td></tr>
 </table>
-<p>A nonclustered index is like an index in a book: it stores the key columns plus a pointer back to the row. In a clustered table that pointer is the clustering key, which is why a narrow, stable clustering key (often an <code>int</code> or <code>bigint</code> identity) keeps every secondary index small — a production concern the day the table reaches tens of millions of rows.</p>
-<p><strong>Common pitfalls:</strong> designing tables with no primary key at all (nothing prevents exact duplicates); choosing a GUID clustering key that fragments as it grows; storing large documents in <code>nvarchar(max)</code> columns that bloat rows and force off-row reads; and using a “misc” table of 60 mostly-NULL columns because “we might need it someday”.</p>
+<p>A nonclustered index is like an index in a book: it stores key columns plus a row locator. In a clustered table that locator includes the clustering key; in a heap it is a RID. A narrow, stable clustering key can therefore keep secondary indexes smaller.</p>
+<p><strong>Common pitfalls:</strong> assuming a table without a primary key cannot have other uniqueness constraints; choosing a random GUID as a clustering key without considering its insert pattern; storing large documents in <code>nvarchar(max)</code> without considering their access and storage characteristics; and using a “misc” table of 60 mostly-NULL columns because “we might need it someday”.</p>
 `
     }
   ],
@@ -174,7 +174,7 @@ ORDER  BY line_id;</code></pre>
     },
     {
       q: "Heap or clustered table — when does it matter?",
-      a: "It matters as soon as you read by predicate or range: a clustered table is physically sorted by its clustering key so range queries read contiguous pages, while a heap only supports full scans. Heaps are fine for short-lived staging tables; user tables should be clustered."
+      a: "A clustered index stores table rows at its leaf level in clustering-key order, which can support range access. The physical page layout isn't guaranteed to be contiguous, and heaps can still have useful nonclustered indexes. Choose the organization based on measured access patterns."
     },
     {
       q: "How do you decide whether a column should allow NULL?",

@@ -5,10 +5,10 @@ window.TOPIC = {
   id: "ch02-10",
   title: "Index Fundamentals",
 
-  lead: "An index is a sorted structure that lets SQL Server find rows without reading the whole table — the single biggest lever on read performance, and a permanent tax on every write, which is why index decisions are trade-offs, not free wins.",
+  lead: "An index can help SQL Server find rows without scanning an entire table, but it adds storage and write costs — index design is a workload-specific trade-off, not a free win.",
 
   objectives: [
-    "Explain how a B-tree index finds rows in a handful of page reads",
+    "Explain how a B-tree index can find rows efficiently",
     "Distinguish clustered from nonclustered indexes",
     "Choose key columns and INCLUDE columns for covering index designs",
     "Read seek, scan, and key lookup in an execution plan",
@@ -19,10 +19,10 @@ window.TOPIC = {
     {
       h: "What an index is",
       html: `
-<p>An <strong>index</strong> is an auxiliary structure built on a table's columns that stores those columns in sorted order, each entry pointing back to its row. Without an index, finding every order for one customer means reading the entire table — a <strong>table scan</strong>. With an index on <code>customer_id</code>, SQL Server reads a handful of index pages — a <strong>seek</strong>.</p>
-<p>The structure is a <strong>B-tree</strong> (balanced tree): a root page fans out to intermediate pages, which fan out to leaf pages. All leaves sit at the same depth, so every lookup costs the same small number of page reads — whether the table holds a thousand rows or a billion.</p>
+<p>An <strong>index</strong> is an auxiliary structure built on a table's columns that stores ordered key values and row locators. Without a useful index, finding every order for one customer might require scanning the table. An index on <code>customer_id</code> can let SQL Server seek to matching keys, though the optimizer may choose a scan when that is cheaper.</p>
+<p>The structure is a balanced <strong>B-tree</strong>: a root page points to intermediate pages, which lead to leaf pages. The tree's depth depends on the index size and page density, and a seek's total work also depends on how many rows qualify and whether additional lookups are needed.</p>
 <ul>
-  <li><strong>Reads collapse</strong> — a seek is typically 2–4 page reads instead of millions</li>
+  <li><strong>Reads can fall</strong> — a selective seek may read far fewer pages than scanning a large table</li>
   <li><strong>Writes pay</strong> — every INSERT, UPDATE, and DELETE must also maintain every index on the table</li>
   <li><strong>Storage pays</strong> — each index duplicates its key columns (and any included columns) on disk</li>
 </ul>
@@ -69,29 +69,29 @@ window.TOPIC = {
     <text x="700" y="74" text-anchor="middle" fill="var(--muted)" font-size="10.5" font-family="Segoe UI, sans-serif">root →</text>
     <text x="700" y="92" text-anchor="middle" fill="var(--muted)" font-size="10.5" font-family="Segoe UI, sans-serif">branch →</text>
     <text x="700" y="110" text-anchor="middle" fill="var(--muted)" font-size="10.5" font-family="Segoe UI, sans-serif">leaf</text>
-    <text x="700" y="134" text-anchor="middle" fill="var(--accent-strong)" font-size="11.5" font-weight="700" font-family="Segoe UI, sans-serif">~3 reads</text>
-    <text x="700" y="152" text-anchor="middle" fill="var(--muted)" font-size="10" font-family="Segoe UI, sans-serif">any table size</text>
+    <text x="700" y="134" text-anchor="middle" fill="var(--accent-strong)" font-size="11.5" font-weight="700" font-family="Segoe UI, sans-serif">few levels*</text>
+    <text x="700" y="152" text-anchor="middle" fill="var(--muted)" font-size="10" font-family="Segoe UI, sans-serif">varies by index</text>
 
-    <text x="380" y="310" text-anchor="middle" fill="var(--text)" font-size="12.5" font-weight="600" font-family="Segoe UI, sans-serif">Clustered leaf: the table rows themselves, sorted by key · Nonclustered leaf: key + pointer to the row</text>
-    <text x="380" y="331" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">Balanced: every path is the same depth — so every seek is predictable.</text>
+    <text x="380" y="310" text-anchor="middle" fill="var(--text)" font-size="12.5" font-weight="600" font-family="Segoe UI, sans-serif">Clustered leaf: table rows in key order · Nonclustered leaf: key + row locator</text>
+    <text x="380" y="331" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">*Tree depth and total work depend on index size and the rows returned.</text>
   </svg>
-  <div class="figcaption">Figure 1 — A seek walks root → branch → leaf in a fixed number of page reads.</div>
+  <div class="figcaption">Figure 1 — A seek navigates the tree from root to the leaf page or pages.</div>
 </div>
 `
     },
     {
       h: "Clustered versus nonclustered",
       html: `
-<p>The <strong>clustered index</strong> <em>is</em> the table: its leaf pages contain the actual rows, stored in the key's order, so there is exactly one per table (by default, the primary key). A <strong>nonclustered index</strong> is a separate structure — sorted key columns plus a pointer back to the row.</p>
+<p>The <strong>clustered index</strong> has the table's data rows at its leaf level, organized in the index's logical key order; physical page order on disk isn't guaranteed. A table can have at most one clustered index, and its primary key is clustered by default only when no clustered index already exists and no alternative is specified. A <strong>nonclustered index</strong> is a separate structure with ordered key columns and a row locator.</p>
 <table>
   <tr><th>Aspect</th><th>Clustered index</th><th>Nonclustered index</th></tr>
   <tr><td>Leaf pages contain</td><td>The table's data rows</td><td>Key columns + row locator</td></tr>
   <tr><td>How many per table</td><td>Exactly one</td><td>Up to 999</td></tr>
   <tr><td>Reads it serves</td><td>Range seeks on the clustering key (“orders in January”)</td><td>Predicates on its key columns</td></tr>
   <tr><td>Extra write cost</td><td>None — it is the table</td><td>One more structure per insert/update/delete</td></tr>
-  <tr><td>Good clustering key</td><td>Narrow, stable, ever-increasing (int/bigint identity)</td><td>—</td></tr>
+  <tr><td>Common clustering-key considerations</td><td>Key width, stability, uniqueness, and insert pattern</td><td>—</td></tr>
 </table>
-<p>A nonclustered index on a clustered table stores the <em>clustering key</em> as its row pointer — another reason a wide clustering key (a 500-character string, or a random GUID) quietly inflates every secondary index in the table.</p>
+<p>A nonclustered index on a clustered table uses the <em>clustering key</em> as its row locator — another reason a wide clustering key can inflate secondary indexes. A random GUID can also cause page splits and fragmentation for some insert patterns; sequential keys or other designs may behave differently.</p>
 `
     },
     {
@@ -99,10 +99,10 @@ window.TOPIC = {
       html: `
 <p>Two kinds of columns make up a nonclustered index:</p>
 <ul>
-  <li><strong>Key columns</strong> — sorted and used for seeking; they appear in the <code>ON</code> clause and are capped at 17 for nonclustered indexes (900 bytes total for older key types)</li>
+  <li><strong>Key columns</strong> — sorted and used for seeking; nonclustered indexes support up to 32 key columns, with a maximum key size of 1,700 bytes on current SQL Server versions (900 bytes on older versions)</li>
   <li><strong>INCLUDE columns</strong> — stored only at the leaf, never sorted; they let a query's output columns live in the index so it never touches the table</li>
 </ul>
-<p>When every column a query touches is in the index, the index is <strong>covering</strong> and the plan has no reason to look at the table — eliminating the extra <strong>key lookup</strong> round-trip per row.</p>
+<p>When every column a query needs is available in the index, it can <strong>cover</strong> the query and avoid fetching those columns from the base table. This can eliminate key lookups, but a wider covering index has additional storage and write costs.</p>
 <pre><code class="language-sql">-- Covering index for the hot order-history path
 CREATE NONCLUSTERED INDEX IX_Orders_customer_date
 ON sales.Orders (customer_id, order_date)      -- key columns: seek + range
@@ -119,7 +119,7 @@ JOIN   sys.indexes  AS i ON i.object_id = s.object_id AND i.index_id = s.index_i
 JOIN   sys.tables   AS t ON t.object_id = s.object_id
 WHERE  s.database_id = db_id()
 ORDER  BY s.user_updates DESC;</code></pre>
-<p>A filtered index only serves queries that carry a matching predicate — the <code>WHERE status &lt;&gt; 'VOID'</code> filter must also appear in the querying SQL, and it drops the void rows from the index entirely, making it smaller and cheaper.</p>
+<p>A filtered index can be considered when the query predicate implies its filter. The query's predicate must be compatible with <code>WHERE status &lt;&gt; 'VOID'</code>; rows for which that expression is UNKNOWN (including NULL statuses) aren't included.</p>
 <p>Terms you will read in every plan: <strong>seek</strong> (targeted key lookup), <strong>scan</strong> (read the whole index or table — fine for covering small ones, costly for large ones), <strong>key lookup</strong> (index found the row, now fetch the rest from the table — the classic sign of a non-covering index).</p>
 `
     },
@@ -129,12 +129,12 @@ ORDER  BY s.user_updates DESC;</code></pre>
 <p>Every index is a maintenance obligation on writes:</p>
 <ul>
   <li><strong>Insert throughput</strong> — each index is another B-tree to update; a write-heavy table with 15 indexes spends real CPU and log volume maintaining them</li>
-  <li><strong>Blocking risk</strong> — wide indexes take wider key-range locks under serialisable isolation, increasing deadlocks</li>
-  <li><strong>Maintenance</strong> — fragmentation from random inserts means rebuilds or reorganises, and each rebuild is I/O and log pressure</li>
-  <li><strong>Plan noise</strong> — too many similar indexes make the optimiser's choice harder and statistics more expensive to keep fresh</li>
+  <li><strong>Locking</strong> — serializable operations can use key-range locks; observed blocking and deadlocks depend on the query and access pattern</li>
+  <li><strong>Maintenance</strong> — index changes and rebuilds consume resources; fragmentation alone doesn't determine whether maintenance is worthwhile</li>
+  <li><strong>Overlap</strong> — redundant indexes add storage, write, and maintenance costs without necessarily improving the workload</li>
 </ul>
-<p>Practical policy: start with the clustered key and one index per distinct read pattern; justify every additional index with <code>sys.dm_db_index_usage_stats</code> (note that these DMVs reset at restart unless collection is persisted); and never let an ORM create the indexes — let workload evidence do it.</p>
-<p><strong>Common pitfalls:</strong> indexing every column “to be safe”; a non-covering index that fixes the scan but adds a lookup per row; forgetting the FK index (foreign keys create none); assuming an index will be used when a function wraps the column (<code>WHERE CONVERT(date, order_date) = …</code> hides the key); and writing maintenance jobs that rebuild every index nightly regardless of usage.</p>
+<p>Practical policy: choose indexes from measured query patterns and actual plans; review <code>sys.dm_db_index_usage_stats</code> alongside Query Store or workload evidence. Usage statistics can reset, so capture a suitable observation window before removing an index; also check whether an index enforces a constraint.</p>
+<p><strong>Common pitfalls:</strong> indexing every column “to be safe”; a non-covering index that fixes a scan but adds many lookups; forgetting to evaluate child-FK indexes for the workload; assuming an index will be used when a function wraps the column (<code>WHERE CONVERT(date, order_date) = …</code> can make a seek less likely); and rebuilding every index nightly regardless of usage.</p>
 `
     }
   ],
@@ -150,15 +150,15 @@ ORDER  BY s.user_updates DESC;</code></pre>
   interview: [
     {
       q: "Clustered vs nonclustered index — what is the core difference?",
-      a: "The clustered index's leaf pages are the table's rows themselves, sorted by its key, so it exists once per table and is the physical order of data. A nonclustered index is a separate B-tree of key columns plus a pointer back to the row; you can have many, and each one must be maintained on every write."
+      a: "The clustered index's leaf pages contain the table's rows in logical key order, and a table can have at most one clustered index. A nonclustered index is a separate B-tree of key columns plus a row locator; a table can have many, and they add maintenance work on writes."
     },
     {
       q: "What is a covering index, and what is a key lookup?",
-      a: "A covering index contains every column the query needs — keys for seeking plus INCLUDE columns for output — so the plan reads only the index. A key lookup means the index found the row but lacked a needed column, forcing a fetch from the clustered index or heap for each matched row; it usually indicates missing INCLUDE columns."
+      a: "A covering index contains every column the query needs — keys for seeking plus possibly INCLUDE columns — so the plan may be able to read only that index. A key lookup fetches missing columns from the clustered index or heap; whether adding INCLUDE columns is worthwhile depends on the query and write/storage cost."
     },
     {
       q: "How do you decide whether an index should exist?",
-      a: "Evidence on both sides: reads served (user_seeks/scans/lookups from dm_db_index_usage_stats, plus the actual query plans it accelerates) against costs (user_updates, storage, rebuild maintenance, and observed write throughput). An index with updates but no reads should be dropped unless it enforces uniqueness or supports a known critical query that runs outside the DMV window."
+      a: "Compare evidence on both sides: reads served (usage statistics and actual plans) against costs (updates, storage, maintenance, and observed write throughput). An index with no recorded reads needs investigation, not automatic removal; it might support a critical query outside the observation window or enforce uniqueness."
     }
   ],
 

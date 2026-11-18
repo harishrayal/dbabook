@@ -5,7 +5,7 @@ window.TOPIC = {
   id: "ch02-11",
   title: "Views and Stored Procedures",
 
-  lead: "Views and stored procedures are SQL Server's two oldest abstraction tools — a view is a named query over tables, a procedure is named, parameterised logic — and together they give applications a stable interface while the schema keeps evolving underneath.",
+  lead: "Views and stored procedures are SQL Server abstraction tools — a view is a named query over tables, a procedure is named, parameterized logic — and they can provide applications a stable interface while the schema evolves underneath.",
 
   objectives: [
     "Define a view and explain what it stores (and does not store)",
@@ -19,12 +19,12 @@ window.TOPIC = {
     {
       h: "Views: a query with a name",
       html: `
-<p>A <strong>view</strong> is a stored <code>SELECT</code> statement registered in the catalog. Query <code>sales.vw_RecentOrders</code> and SQL Server expands it to the underlying query at run time — a view stores no data of its own (with one important exception, covered below). It behaves like a virtual table you can read, and — under conditions — even write through.</p>
+<p>A <strong>view</strong> defines a virtual table with named columns and rows from a query. Unless indexed, it doesn't store its result set; the data is produced from the underlying tables when the view is referenced. Some simple views are updatable, and an <code>INSTEAD OF</code> trigger can support writes through more complex views.</p>
 <p>Why production teams create views:</p>
 <ul>
   <li><strong>Simplification</strong> — a five-table join becomes one object name in reports and applications</li>
   <li><strong>Stability</strong> — the schema can change beneath the view; consumers keep selecting the same column names</li>
-  <li><strong>Security</strong> — grant <code>SELECT</code> on a view that exposes only permitted columns, or filters rows by caller</li>
+  <li><strong>Security</strong> — grant <code>SELECT</code> on a view that exposes selected columns or filters rows when the view is designed to do so</li>
   <li><strong>Consistency</strong> — “revenue” is computed once, in one place, instead of in forty queries</li>
 </ul>
 <blockquote>A view is not a performance feature — it is a contract. It keeps consumers stable while the DBA reshapes the storage.</blockquote>
@@ -76,7 +76,7 @@ window.TOPIC = {
     {
       h: "Views in practice, including the indexed exception",
       html: `
-<p>A view that selects directly from base tables is a simple, expandable text substitute — performance is identical to inlining the query. The exception is the <strong>indexed view</strong> (a view with <code>SCHEMABINDING</code> whose result is materialised as a unique clustered index), which physically stores aggregated results and can accelerate heavy aggregate queries dramatically — but must obey strict rules (deterministic expressions, no outer joins or many built-ins) and is expensive to maintain on hot write tables.</p>
+<p>An ordinary view defines a virtual table whose rows are produced from its underlying query when referenced. SQL Server can optimize a query that uses a view together with its underlying query; the view itself doesn't guarantee a performance improvement. An <strong>indexed view</strong> has a unique clustered index that stores its result, but it must meet specific requirements and adds maintenance work to changes in the underlying tables.</p>
 <pre><code class="language-sql">-- A standard view: contract over live tables
 CREATE OR ALTER VIEW sales.vw_OrderSummary
 AS
@@ -95,19 +95,20 @@ SELECT customer_name, sum(total_amount) AS trailing_12m
 FROM   sales.vw_OrderSummary
 WHERE  status = 'PAID'
 GROUP  BY customer_name;</code></pre>
-<p><code>CREATE OR ALTER</code> keeps scripts idempotent — the same statement works on a fresh environment and an existing one, which is exactly what deployment pipelines need.</p>
+<p><code>CREATE OR ALTER</code> can make a view definition script repeatable for an existing object or create it when absent; the view's dependencies and permissions still need to be managed by the deployment.</p>
 `
     },
     {
       h: "Stored procedures: named, parameterised logic",
       html: `
-<p>A <strong>stored procedure</strong> is a named T-SQL program stored in the database. Unlike a view, it <em>does</em> something: it can run multiple statements, accept input and output parameters, return status values, and be granted <code>EXECUTE</code> without granting anything else.</p>
+<p>A <strong>stored procedure</strong> is a named T-SQL program stored in the database. Unlike a view, it can run multiple statements, accept input and output parameters, and return status values. Granting <code>EXECUTE</code> can avoid direct object permissions when the permission design supports that.</p>
 <ul>
-  <li><strong>Plan reuse</strong> — parameterised calls hit the plan cache instead of compiling a fresh ad-hoc plan per call</li>
-  <li><strong>Security</strong> — grant execution of <code>usp_CreateOrder</code> while withholding direct table rights; the proc runs with its owner's permissions (<code>WITH EXECUTE AS</code>) or the caller's, deliberately chosen</li>
+  <li><strong>Plan reuse</strong> — parameterized calls can reuse cached plans, though reuse and plan quality depend on cache state and parameterization</li>
+  <li><strong>Security</strong> — grant execution of <code>usp_CreateOrder</code> while withholding direct table rights; permissions can flow through ownership chaining, or the module can use an explicit execution context or signing where appropriate</li>
   <li><strong>Network efficiency</strong> — one call replaces a client-side script of statements</li>
   <li><strong>Governed change</strong> — business rules live in one auditable object, not scattered across services</li>
 </ul>
+<p>This example opens and owns a transaction. If a procedure must be composable inside a caller-owned transaction, use an explicit ownership/savepoint pattern and account for uncommittable transaction states.</p>
 <pre><code class="language-sql">CREATE OR ALTER PROCEDURE sales.usp_CreateOrder
     @customer_id int,
     @order_date  date,
@@ -156,11 +157,11 @@ SELECT @new_id AS new_order_id;</code></pre>
   <tr><td>What it is</td><td>A saved SELECT — reads</td><td>A saved program — reads and writes</td></tr>
   <tr><td>Parameters</td><td>None — filtering happens in the caller's WHERE</td><td>Input and output parameters, defaults</td></tr>
   <tr><td>Output</td><td>A result set only</td><td>Result sets, output params, return codes</td></tr>
-  <tr><td>Permission granted</td><td>SELECT (on the view)</td><td>EXECUTE only</td></tr>
+  <tr><td>Permission granted</td><td>SELECT on the view may avoid base-table SELECT grants through ownership chaining</td><td>EXECUTE may be granted without direct table rights when the security design supports it</td></tr>
   <tr><td>Best for</td><td>Stable read shapes, security trimming, reporting</td><td>Multi-step logic, controlled writes, API-style contracts</td></tr>
   <tr><td>Failure mode</td><td>Column changes behind it break consumers</td><td>Cached plan behaves badly for an outlier parameter</td></tr>
 </table>
-<p><strong>Common pitfalls:</strong> deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT <em>and</em> view SELECT “temporarily”; procedures that mix business logic with maintenance tasks; using procedures as the only place logic exists while reports bypass them with raw table access; and creating a view per developer request until the catalog holds 400 near-duplicates.</p>
+<p><strong>Common pitfalls:</strong> deep nesting — views built on views on views, where nobody can trace which columns come from where; granting table SELECT <em>and</em> view SELECT “temporarily”; procedures that mix business logic with maintenance tasks; relying on procedures as the only place logic exists while reports bypass them with raw table access; and creating a view per developer request until the catalog holds 400 near-duplicates.</p>
 `
     }
   ],

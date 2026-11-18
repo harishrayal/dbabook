@@ -20,30 +20,30 @@ window.TOPIC = {
       h: "Defining a database",
       html: `
 <p>A <strong>database</strong> is an organised collection of structured data, stored so that a computer program can read, search, update, and protect it efficiently. The word itself — <em>data base</em> — is accurate: a base in which data is kept in a defined structure rather than scattered across files.</p>
-<p>Three properties make something a database rather than a pile of files:</p>
+<p>Common database capabilities, especially in a relational DBMS, include:</p>
 <ul>
-  <li><strong>Structure</strong> — data lives in tables with named columns, agreed data types, and rules about what may be stored</li>
-  <li><strong>Shared access</strong> — many users and applications read and write the same data safely, at the same time</li>
-  <li><strong>Managed lifecycle</strong> — someone is responsible for backing it up, securing it, recovering it, and keeping it performant</li>
+  <li><strong>Structure</strong> — relational data can live in tables with named columns, data types, and constraints</li>
+  <li><strong>Managed access</strong> — a DBMS can coordinate concurrent reads and writes according to its transaction and isolation settings</li>
+  <li><strong>Operational controls</strong> — security, backup, recovery, and performance practices can be applied; they still need to be configured and maintained</li>
 </ul>
-<p>A database is <em>not</em> the application. The application holds business logic; the database holds the business's facts. The application can be rewritten in a fortnight — the data usually outlives every program ever written against it, which is exactly why the database deserves its own discipline.</p>
-<blockquote>Files store documents. Databases store facts — with rules, structure, and a recovery plan attached.</blockquote>
+<p>A database is distinct from the application that uses it, although business logic can reside in either layer. Data often outlives individual applications, which is why its ownership and operational lifecycle deserve deliberate attention.</p>
+<blockquote>Files and databases can both store data. A DBMS adds query, concurrency, integrity, and recovery features that must be designed and configured for the workload.</blockquote>
 `
     },
     {
       h: "Why not just use files or spreadsheets?",
       html: `
-<p>Small teams often start with CSV files or a shared workbook. It works — until two people edit it at once, or someone sorts one column and breaks every row's association, or the file corrupts on a Friday evening. Databases solve each of these problems systematically:</p>
+<p>Small teams often start with CSV files or a shared workbook. A plain file does not itself coordinate concurrent edits or enforce relational constraints; a database management system can provide those capabilities, subject to its configuration and schema:</p>
 <table>
   <tr><th>Concern</th><th>Flat file / spreadsheet</th><th>Database</th></tr>
-  <tr><td>Concurrent editing</td><td>Last save wins; locks are manual or absent</td><td>Transactions isolate users; writes never corrupt each other</td></tr>
-  <tr><td>Integrity</td><td>Anything can be typed anywhere</td><td>Types, keys, and constraints reject invalid data</td></tr>
-  <tr><td>Consistency</td><td>The same value is copied into many files</td><td>One authoritative row, referenced by everyone else</td></tr>
+  <tr><td>Concurrent editing</td><td>Coordination depends on the file format and sharing tool</td><td>Transactions and isolation settings coordinate concurrent work; they do not prevent every conflict</td></tr>
+  <tr><td>Integrity</td><td>Validation depends on the tools and conventions in use</td><td>Declared types, keys, and constraints can reject invalid data</td></tr>
+  <tr><td>Consistency</td><td>Copies can diverge without a source-of-truth process</td><td>A normalized design can keep one authoritative fact and reference it elsewhere</td></tr>
   <tr><td>Query power</td><td>Manual filtering, fragile formulas</td><td>Set-based SQL across millions of rows</td></tr>
-  <tr><td>Security</td><td>File-share permissions are all-or-nothing</td><td>Logins, roles, row/column-level grants, auditing</td></tr>
-  <tr><td>Recovery</td><td>Undo depends on the user remembering to save a copy</td><td>Backups, transaction log, point-in-time restore</td></tr>
+  <tr><td>Security</td><td>File and sharing tools may provide access controls and auditing</td><td>Logins, roles, object permissions, auditing, and (where configured) row-level security</td></tr>
+  <tr><td>Recovery</td><td>Recovery depends on the file and backup tools in use</td><td>Backup and point-in-time recovery capabilities depend on configuration and the recovery model</td></tr>
 </table>
-<p>The hidden cost of spreadsheets is <strong>drift</strong>: every copy diverges, nobody knows which is authoritative, and reconciliation becomes a monthly meeting. A database makes one copy authoritative by design.</p>
+<p>A common risk with unmanaged copies is <strong>drift</strong>: values diverge and it becomes unclear which copy is authoritative. A database schema and operating process can designate an authoritative source, but that is a design choice rather than an automatic property.</p>
 `
     },
     {
@@ -164,7 +164,7 @@ WHERE  email = N'orders@northwind.example';</code></pre>
   interview: [
     {
       q: "Define a database in one sentence.",
-      a: "An organised, structured collection of data held so that a management system can store, retrieve, secure, and recover it reliably for many concurrent users — not merely a file that contains data."
+      a: "An organised collection of data. A DBMS can add query, integrity, concurrency, security, and recovery capabilities; the specific guarantees depend on the product, schema, and configuration."
     },
     {
       q: "What is the difference between a database and a DBMS?",
@@ -172,7 +172,7 @@ WHERE  email = N'orders@northwind.example';</code></pre>
     },
     {
       q: "A developer asks why they cannot just ship the data as JSON files. What do you say?",
-      a: "JSON files give you no concurrency control, no constraints, no point-in-time recovery, and no efficient querying across millions of rows. A database enforces integrity at write time, journals every change for recovery, and serves set-based reads — the three things files cannot do once more than one person depends on the data."
+      a: "Plain JSON files do not provide database transactions or constraints by themselves. A DBMS may be a better fit when the workload needs coordinated concurrent writes, relational integrity, query capabilities, or a configured recovery strategy; file-based workflows can also add external tools for some of these needs."
     }
   ],
 

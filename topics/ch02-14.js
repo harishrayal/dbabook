@@ -5,7 +5,7 @@ window.TOPIC = {
   id: "ch02-14",
   title: "Commit and Rollback",
 
-  lead: "Commit and rollback are the two endings every transaction must have — commit makes the work durable and releases it to the world; rollback erases it as if it never happened — and knowing exactly what each one does is the difference between a safe change and an incident.",
+  lead: "Commit and rollback end or undo transactional work — understanding their boundaries, durability settings, and savepoint behavior is essential to safe database changes.",
 
   objectives: [
     "State precisely what COMMIT makes permanent and when",
@@ -19,20 +19,20 @@ window.TOPIC = {
     {
       h: "COMMIT: making it real",
       html: `
-<p><code>COMMIT TRANSACTION</code> ends the transaction by making its changes permanent. Mechanically, SQL Server flushes the transaction's log records to disk (durability), then releases the locks held by the transaction so other sessions can see the new state. Only after the commit succeeds does the data become visible to everyone else.</p>
+<p><code>COMMIT TRANSACTION</code> completes the transaction. With the default fully durable setting, SQL Server flushes the transaction's log records to disk before reporting success; delayed durability can change when that flush occurs. Locks are released as the transaction ends, and committed changes become visible according to other sessions' isolation behavior.</p>
 <ul>
-  <li><strong>Log first</strong> — a commit is, at its heart, an I/O guarantee: the log is on disk before the caller is told “done”</li>
+  <li><strong>Log first</strong> — with fully durable commits, the log is on disk before the caller is told “done”</li>
   <li><strong>Locks released</strong> — readers and writers on those rows can proceed</li>
-  <li><strong>Truncation eligible</strong> — once the oldest active transaction commits, log backups can reclaim the log space its records occupied</li>
+  <li><strong>Log reuse may become possible</strong> — log backups can truncate eligible log records, subject to the recovery model and other reuse waits</li>
 </ul>
-<blockquote>Commit is the moment an intention becomes history. Everything before it exists only for your session; everything after it exists for everyone, including your backups.</blockquote>
-<p>Subtlety worth knowing: <strong>COMMIT inside a nested transaction does not really commit.</strong> With <code>@@TRANCOUNT = 2</code>, a COMMIT decrements the count to 1 — the outer transaction still holds everything. Only the COMMIT that returns <code>@@TRANCOUNT</code> to 0 makes the unit durable.</p>
+<blockquote>Commit completes a transaction. Visibility, log reuse, and crash durability depend on the isolation, recovery, and durability settings in effect.</blockquote>
+<p>Subtlety worth knowing: <strong>COMMIT inside a nested transaction does not really commit.</strong> With <code>@@TRANCOUNT = 2</code>, a COMMIT decrements the count to 1 — the outer transaction still holds everything. Only the COMMIT that returns <code>@@TRANCOUNT</code> to 0 completes the unit; crash durability follows the configured commit durability.</p>
 `
     },
     {
       h: "ROLLBACK: erasing the attempt",
       html: `
-<p><code>ROLLBACK TRANSACTION</code> undoes every change made since the transaction began, using the log's undo information, and restores the database to the state it had at BEGIN. Locks are released, log records become reusable, and — critically — <strong>the rolled-back work never became visible to other sessions</strong>, so there is nothing to “tell the others about”.</p>
+<p><code>ROLLBACK TRANSACTION</code> undoes transactional changes made since the transaction began, using the log's undo information. Locks are released as rollback proceeds; log space isn't necessarily reusable immediately. Other sessions using ordinary isolation levels don't read uncommitted changes, but a session using <code>READ UNCOMMITTED</code> can observe uncommitted data before it is rolled back.</p>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="Commit and rollback state transitions">
     <defs>
@@ -51,7 +51,7 @@ window.TOPIC = {
 
     <rect x="470" y="40" width="250" height="70" rx="12" fill="var(--surface-2)" stroke="var(--accent)" stroke-width="1.8"/>
     <text x="595" y="68" text-anchor="middle" fill="var(--accent-strong)" font-size="15" font-weight="700" font-family="Segoe UI, sans-serif">COMMITTED</text>
-    <text x="595" y="90" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">durable · visible · locks released</text>
+    <text x="595" y="90" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">completed · visible per isolation · locks released</text>
 
     <rect x="470" y="230" width="250" height="70" rx="12" fill="var(--surface-2)" stroke="var(--amber)" stroke-width="1.8"/>
     <text x="595" y="258" text-anchor="middle" fill="var(--text)" font-size="15" font-weight="700" font-family="Segoe UI, sans-serif">ROLLED BACK</text>
@@ -72,7 +72,7 @@ window.TOPIC = {
 <p>What rollback can and cannot do:</p>
 <ul>
   <li><strong>Can undo</strong> — inserts, updates, deletes, and most DDL performed inside the transaction</li>
-  <li><strong>Cannot undo</strong> — external effects: emails sent, files written, calls to linked servers or external modules, and sequences or identity counters (gaps remain)</li>
+  <li><strong>Cannot undo automatically</strong> — external effects not enlisted in the transaction, such as emails or files written by application code; sequence and identity values can also have gaps after rollback</li>
   <li><strong>Cannot roll back</strong> — if the transaction was already committed, or the work ran outside one (autocommit made it permanent on execution)</li>
 </ul>
 `
@@ -117,7 +117,12 @@ BEGIN
             COMMIT TRANSACTION;                -- only the owner commits
     END TRY
     BEGIN CATCH
-        IF XACT_STATE() &lt;&gt; 0
+        IF XACT_STATE() = -1
+        BEGIN
+            IF @TranCount = 0
+                ROLLBACK TRANSACTION;
+        END
+        ELSE IF XACT_STATE() = 1
         BEGIN
             IF @TranCount &gt; 0
                 ROLLBACK TRANSACTION usp_AdjustStock;   -- unwind just our work
@@ -128,7 +133,7 @@ BEGIN
     END CATCH;
 END;
 GO</code></pre>
-<p>Read <code>XACT_STATE()</code> before deciding: <strong>1</strong> = active and committable, <strong>0</strong> = no active transaction, <strong>−1</strong> = active but doomed (an error occurred with XACT_ABORT ON — it can only be rolled back, never committed).</p>
+<p>Read <code>XACT_STATE()</code> before deciding: <strong>1</strong> = active and committable, <strong>0</strong> = no active transaction, <strong>−1</strong> = active but uncommittable. A doomed transaction cannot be rolled back to a savepoint; its owner must roll back the whole transaction.</p>
 `
     },
     {
@@ -166,7 +171,7 @@ ORDER  BY t.transaction_begin_time;</code></pre>
   interview: [
     {
       q: "What exactly happens when you issue COMMIT?",
-      a: "The transaction's log records are flushed to disk (satisfying durability), locks are released, and the changes become visible to other sessions; the transaction ends and its log space becomes eligible for truncation by the next log backup. In nested transactions, COMMIT only decrements the nesting count until it reaches zero."
+      a: "With fully durable commits, the transaction's log records are flushed to disk before success is reported. The transaction ends and its locks are released; log reuse remains subject to recovery settings and other reuse waits. In nested transactions, COMMIT only decrements the nesting count until it reaches zero."
     },
     {
       q: "Can you roll back a committed transaction?",
@@ -485,8 +490,8 @@ ORDER  BY t.transaction_begin_time;</code></pre>
     }
   ],
   takeaways: [
-    "COMMIT flushes the log for durability, releases locks, and — only at nesting level 1 — makes the work permanent",
-    "ROLLBACK restores the pre-transaction state and releases locks; rolled-back work was never visible to others",
+    "With fully durable commits, the log is flushed before success is reported; lock release and log reuse depend on transaction and recovery state",
+    "ROLLBACK undoes transactional work; READ UNCOMMITTED sessions can observe uncommitted changes before rollback",
     "There is no true nesting: one transaction, @@TRANCOUNT as a counter, and plain ROLLBACK ends them all",
     "Savepoints let reusable code unwind only its own work inside a caller's transaction",
     "Read @@TRANCOUNT and XACT_STATE() before acting; only the transaction's owner may commit or roll it back"

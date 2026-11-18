@@ -5,7 +5,7 @@ window.TOPIC = {
   id: "ch02-13",
   title: "Transactions and ACID Properties",
 
-  lead: "A transaction is the database's promise that a unit of work happens completely or not at all — and ACID (atomicity, consistency, isolation, durability) is the vocabulary for exactly what that promise covers.",
+  lead: "A transaction groups database work into a unit with a commit or rollback boundary — and ACID (atomicity, consistency, isolation, durability) describes the properties a transaction design and configuration aim to provide.",
 
   objectives: [
     "Define a transaction as a unit of work with a clear boundary",
@@ -19,11 +19,11 @@ window.TOPIC = {
     {
       h: "What a transaction is",
       html: `
-<p>A <strong>transaction</strong> groups statements into a single logical unit: either every statement takes effect, or none does. The canonical example is a money transfer — debit one account, credit another. If the second write fails after the first succeeded, money vanished. A transaction makes that outcome impossible: the two writes succeed together or roll back together.</p>
+<p>A <strong>transaction</strong> groups statements into a single logical unit. When the transaction is rolled back, its transactional changes are undone; when committed, they become part of the database. A money transfer illustrates why to group related writes: put the debit and credit in the same transaction and handle errors so a failure doesn't leave only one side applied.</p>
 <p>SQL Server's default mode is <strong>autocommit</strong>: each statement is its own tiny transaction. To get atomic behaviour for several statements you must declare the boundary yourself:</p>
 <ul>
   <li><code>BEGIN TRANSACTION</code> — start the unit; from here, changes are provisional</li>
-  <li><code>COMMIT TRANSACTION</code> — make it real; the log is flushed and the changes are durable</li>
+  <li><code>COMMIT TRANSACTION</code> — commit the unit; with fully durable commits (the default), log records are flushed before success is reported</li>
   <li><code>ROLLBACK TRANSACTION</code> — undo everything since BEGIN; the table returns to its prior state</li>
 </ul>
 <blockquote>A transaction is a bet on two moments: that the commit will be fast, and that everything inside it will be. Keep both small.</blockquote>
@@ -67,30 +67,30 @@ window.TOPIC = {
     {
       h: "ACID, one property at a time",
       html: `
-<p><strong>ACID</strong> is the summary of what a transaction guarantees. Each letter corresponds to a concrete SQL Server mechanism — knowing which one failed tells you where to look:</p>
+<p><strong>ACID</strong> summarizes transaction properties. SQL Server provides mechanisms for these properties, while application logic, isolation settings, and durability options affect the guarantees experienced by a workload:</p>
 <table>
   <tr><th>Property</th><th>Promise</th><th>SQL Server mechanism</th><th>Failure it prevents</th></tr>
-  <tr><td><strong>Atomicity</strong></td><td>All statements in the unit apply, or none do</td><td>Transaction log records; ROLLBACK undoes committed work in flight</td><td>Half-completed transfers</td></tr>
-  <tr><td><strong>Consistency</strong></td><td>The database moves from one valid state to another</td><td>Keys, constraints, triggers validated at statement time</td><td>Orphans, negative balances, broken invariants</td></tr>
-  <tr><td><strong>Isolation</strong></td><td>Concurrent transactions do not see each other's incomplete work</td><td>Locking plus row versioning (tempdb version store)</td><td>Dirty reads, lost updates, phantoms</td></tr>
-  <tr><td><strong>Durability</strong></td><td>Once committed, the change survives crashes</td><td>Write-ahead logging: log flushed to disk before the commit returns</td><td>Committed rows lost on power failure</td></tr>
+  <tr><td><strong>Atomicity</strong></td><td>Transactional changes commit or roll back as a unit</td><td>Transaction log records support undo and recovery</td><td>Half-completed transfers</td></tr>
+  <tr><td><strong>Consistency</strong></td><td>Transactions preserve the rules encoded for the database</td><td>Application logic, keys, constraints, and triggers</td><td>Orphans, negative balances, broken invariants</td></tr>
+  <tr><td><strong>Isolation</strong></td><td>Concurrent transactions interact according to the selected isolation level</td><td>Locking and row-versioning options</td><td>Dirty reads, non-repeatable reads, phantoms</td></tr>
+  <tr><td><strong>Durability</strong></td><td>Committed changes survive failures according to the durability setting</td><td>Write-ahead logging; delayed durability is an option</td><td>Committed rows lost on power failure</td></tr>
 </table>
-<p><strong>Atomicity</strong> and <strong>durability</strong> are carried by the log — one mechanism, two guarantees. <strong>Consistency</strong> is the constraints' job: a statement that violates one fails and (inside a transaction) takes the unit down with it. <strong>Isolation</strong> is the expensive one, because it is paid continuously while transactions run concurrently.</p>
+<p><strong>Atomicity</strong> and <strong>durability</strong> rely on transaction logging. <strong>Consistency</strong> depends on the rules the application and database actually encode. A constraint violation can roll back a statement; whether the rest of an explicit transaction also rolls back depends on error handling and settings such as <code>XACT_ABORT</code>. <strong>Isolation</strong> is configured to balance concurrency and anomalies.</p>
 `
     },
     {
       h: "Isolation: the cost of sharing",
       html: `
-<p>Isolation levels trade correctness anomalies against concurrency. SQL Server's default, READ COMMITTED, blocks readers briefly rather than showing them uncommitted data; SNAPSHOT versions rows in tempdb so readers never block the writer.</p>
+<p>Isolation levels trade concurrency against the anomalies a transaction can observe. SQL Server's default, READ COMMITTED, prevents dirty reads; with <code>READ_COMMITTED_SNAPSHOT</code> off it generally uses shared locks for reads, while with that option on it uses row versions. SNAPSHOT reads from a transaction-level versioned view, so readers generally don't block writers, though writers can still conflict.</p>
 <table>
   <tr><th>Isolation level</th><th>Dirty read</th><th>Lost / non-repeatable read</th><th>Phantom rows</th><th>Cost profile</th></tr>
   <tr><td><strong>READ UNCOMMITTED</strong> (NOLOCK)</td><td>Possible</td><td>Possible</td><td>Possible</td><td>No blocking, uncommitted data visible</td></tr>
-  <tr><td><strong>READ COMMITTED</strong> (default)</td><td>No</td><td>Possible</td><td>Possible</td><td>Shared locks held while reading</td></tr>
+  <tr><td><strong>READ COMMITTED</strong> (default)</td><td>No</td><td>Possible</td><td>Possible</td><td>Shared locks or statement-level row versions, depending on database setting</td></tr>
   <tr><td><strong>REPEATABLE READ</strong></td><td>No</td><td>No</td><td>Possible</td><td>Read locks held to transaction end</td></tr>
   <tr><td><strong>SNAPSHOT</strong></td><td>No</td><td>No</td><td>No</td><td>Version store in tempdb; no reader/writer blocking</td></tr>
   <tr><td><strong>SERIALIZABLE</strong></td><td>No</td><td>No</td><td>No</td><td>Range locks — highest conflict, lowest concurrency</td></tr>
 </table>
-<p>Practical guidance: stay at the default until a measured anomaly forces a change; avoid <code>NOLOCK</code> as a blanket fix (it trades blocking for wrong answers and 823/824-style errors) — prefer <code>READ COMMITTED SNAPSHOT</code> if read blocking is a genuine systemic issue; and keep transactions short, because locks are held until commit.</p>
+<p>Practical guidance: stay at the default until measurement justifies a change; avoid <code>NOLOCK</code> as a blanket fix because it can return uncommitted or inconsistent results; consider <code>READ_COMMITTED_SNAPSHOT</code> if read blocking is a systemic issue; and keep transactions short because locks are held until commit.</p>
 `
     },
     {
@@ -125,7 +125,7 @@ END CATCH;</code></pre>
 <ul>
   <li><strong>Never hold a transaction open across user think time</strong> — a web form's transaction must open only when the submit button is pressed</li>
   <li><strong>Order statements consistently</strong> across competing transactions to reduce deadlock probability</li>
-  <li><strong>Set <code>LOCK_TIMEOUT</code> or handle deadlocks</strong> — deadlock victims are chosen by <code>SET DEADLOCK_PRIORITY</code>, and error 1205 is normal in busy systems: retry it</li>
+  <li><strong>Set <code>LOCK_TIMEOUT</code> or handle deadlocks</strong> — <code>SET DEADLOCK_PRIORITY</code> influences victim selection; error 1205 can occur under concurrency, so use safe, bounded retry logic where appropriate</li>
   <li><strong>Keep the log healthy</strong> — long transactions prevent log truncation, so an open transaction can stop your log backups from reclaiming space</li>
 </ul>
 <p>Signs that the problem is a <em>transaction</em>, not a query — worth recognising before you start tuning execution plans:</p>
@@ -135,7 +135,7 @@ END CATCH;</code></pre>
   <li><strong>Deadlocks (error 1205) clustering at the same time daily</strong> — competing jobs taking locks in different orders</li>
   <li><strong>Timeouts that appear only under load</strong> — transactions fine in test serialise badly with concurrency</li>
 </ul>
-<p><strong>Common pitfalls:</strong> committing before validating (constraints throw after the fact anyway — check inside); implicit transactions left on by a driver setting, so every SELECT opens one; bulk operations in one giant transaction that fill the log; and assuming <code>NOLOCK</code> “makes things faster” without noticing the phantom totals in the report.</p>
+<p><strong>Common pitfalls:</strong> assuming every runtime error automatically rolls back the full transaction; implicit transactions left on by a driver setting, so a SELECT can open a transaction; bulk operations in one giant transaction that fill the log; and assuming <code>NOLOCK</code> “makes things faster” without noticing inconsistent report results.</p>
 `
     }
   ],
@@ -151,7 +151,7 @@ END CATCH;</code></pre>
   interview: [
     {
       q: "Explain ACID in terms of SQL Server mechanisms.",
-      a: "Atomicity: the log records every change so ROLLBACK can undo the unit. Consistency: constraints validate each statement, moving the database between valid states. Isolation: locking plus row versioning keep concurrent transactions from seeing each other's unfinished work. Durability: write-ahead logging flushes log records to disk before a commit returns, so a crash cannot lose a committed change."
+      a: "Atomicity: the log supports undoing a transaction. Consistency: application logic and database rules preserve the invariants that were encoded. Isolation: locking and row-versioning behavior depend on the selected level and database settings. Durability: fully durable commits flush log records before success is reported; SQL Server also offers delayed durability."
     },
     {
       q: "What is the difference between dirty read, non-repeatable read, and phantom?",

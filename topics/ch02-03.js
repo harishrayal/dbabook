@@ -25,7 +25,7 @@ window.TOPIC = {
   <li><strong>Relational engine (query processor)</strong> — parses and binds SQL, chooses an execution plan, compiles and caches it, and enforces security</li>
   <li><strong>Storage engine</strong> — turns the plan's logical reads into physical page reads and writes, manages the buffer pool, locking, and the transaction log</li>
 </ul>
-<blockquote>The relational engine decides <em>what</em> to do; the storage engine decides <em>how the bytes move</em>. Every performance problem lives on one side of that line.</blockquote>
+<blockquote>The relational engine plans the work and the storage engine accesses data; performance issues can involve both, as well as workload, configuration, and the operating system.</blockquote>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="SQL Server instance architecture">
     <defs>
@@ -90,13 +90,13 @@ window.TOPIC = {
   <li><strong>Execute</strong> — the storage engine reads pages from the buffer pool (or disk), takes locks per the isolation level, and writes log records</li>
   <li><strong>Return</strong> — rows stream back over TDS to the client</li>
 </ul>
-<p>A cached plan means the second execution of a query skips parsing and optimisation. That is why parameterised queries beat string-concatenated ones: the same shape hits the cache, instead of filling it with thousands of near-identical plans.</p>
+<p>When a reusable cached plan is available, SQL Server can avoid compiling the statement again. Cache reuse is not guaranteed: plans can be evicted, invalidated, or recompiled, and differences in query text or parameterization can affect reuse. Parameterized queries can reduce duplicate ad hoc plans, though plan quality still depends on the workload and parameter values.</p>
 `
     },
     {
       h: "Files, filegroups, and system databases",
       html: `
-<p>Data is organised into <strong>filegroups</strong> — named buckets of files that tables and indexes are placed into. Splitting data across filegroups on separate volumes can spread I/O; putting archival tables on their own filegroup lets you back them up independently.</p>
+<p>Data is organised into <strong>filegroups</strong> — named groups of data files used for allocation and administration. Separating files across storage can affect I/O, depending on the storage system and workload. File or filegroup backups are supported, but their use in a recoverable backup strategy depends on the database state, recovery model, and restore sequence.</p>
 <pre><code class="language-sql">CREATE DATABASE OrderDb
 ON PRIMARY
 ( NAME       = N'OrderDb',
@@ -138,12 +138,14 @@ FROM   sys.dm_os_sys_info;
 SELECT TOP 10
        st.text,
        qs.execution_count,
-       qs.total_worker_time / qs.execution_count AS avg_cpu_ticks
+       CONVERT(decimal(19,2), qs.total_worker_time) / NULLIF(qs.execution_count, 0)
+                                                      AS avg_cpu_microseconds
 FROM   sys.dm_exec_query_stats AS qs
 CROSS  APPLY sys.dm_exec_sql_text(qs.sql_handle) AS st
-ORDER  BY avg_cpu_ticks DESC;</code></pre>
+ORDER  BY avg_cpu_microseconds DESC;</code></pre>
+<p><code>total_worker_time</code> is reported in microseconds, and this DMV summarizes executions for plans that remain in cache; it is not a complete workload history.</p>
 <p>Pair these with the error log, SQL Agent job history, and disk space — the three places instance-level failures announce themselves first.</p>
-<p><strong>Common pitfalls:</strong> running every database on the system drive; leaving <code>max server memory</code> at its default on a shared server; installing default instances with mixed authentication and a blank sa password; and restarting the service as a “fix” without ever reading the error log for the actual fault.</p>
+<p><strong>Common pitfalls:</strong> running every database on the system drive; leaving memory settings unreviewed on a shared server; enabling authentication options without reviewing account configuration; and restarting the service as a “fix” without reading the error log for the actual fault.</p>
 `
     }
   ],
@@ -151,8 +153,8 @@ ORDER  BY avg_cpu_ticks DESC;</code></pre>
   scenario: {
     title: "Every application timed out after a routine failover",
     html: `
-<p>At 2 AM an availability group failed over to the secondary replica. Applications reconnected — and every login began timing out. The engine was running, CPU was idle, and the error log showed nothing fatal. The DBA checked the obvious layer first: <code>sys.dm_os_sys_info</code> showed target server memory of 128 MB — the failover node had been built with the default configuration, <code>max server memory</code> unset while a monitoring agent had claimed most of the RAM, and the plan cache plus buffer pool were thrashing.</p>
-<p>Resolution: set <code>max server memory</code> to leave headroom for the OS and agent, cleared the ad-hoc plan cache, and logins recovered in under two minutes. Prevention: a build checklist now enforces memory settings, data/log file placement, and Agent dependencies on every replica — <strong>the node was healthy as hardware and broken as configuration</strong>, which is exactly the gap an architecture-level view catches.</p>
+<p>At 2 AM an availability group failed over to the secondary replica. Applications reconnected — and every login began timing out. The engine was running, CPU was idle, and the error log showed nothing fatal. Performance Monitor showed SQL Server's target memory below the level expected for the workload while the operating system was under memory pressure; other processes were consuming much of the available RAM.</p>
+<p>Resolution: the team measured SQL Server and operating-system memory use, configured <code>max server memory</code> to leave appropriate headroom for the OS and required agents, and verified the memory counters and workload after the change. Prevention: a build checklist now checks memory configuration, data/log file placement, and Agent dependencies on every replica — <strong>the node was healthy as hardware and broken as configuration</strong>, which is exactly the gap an architecture-level view catches.</p>
 `
   },
 

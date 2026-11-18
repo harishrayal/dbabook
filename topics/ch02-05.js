@@ -24,7 +24,7 @@ window.TOPIC = {
   <li><strong>Uniqueness</strong> — no two rows may carry the same PK value</li>
   <li><strong>NOT NULL</strong> — a row without identity does not exist; PK columns can never be NULL</li>
 </ul>
-<p>Defining a PK also creates a unique index to enforce it, and by default it becomes the table's <strong>clustered index</strong> — meaning the table's rows are physically stored in PK order. That single decision influences read performance for the life of the table, which is why key choice deserves more thought than “make it an int and move on”.</p>
+<p>Defining a PK also creates a unique index to enforce it. SQL Server makes that index clustered by default only when the table does not already have a clustered index and no nonclustered choice is specified. A clustered index stores the table rows in the index's logical key order; it does not guarantee their physical order on disk. Key choice still affects access paths and the row locators in nonclustered indexes.</p>
 <blockquote>A primary key answers “which row is this?” — for every other table that references it, for every update statement, and for every support ticket that says “the system shows the wrong record”.</blockquote>
 <p>Two flavours of PK:</p>
 <ul>
@@ -36,7 +36,7 @@ window.TOPIC = {
     {
       h: "The foreign key: proof of relationship",
       html: `
-<p>A <strong>foreign key (FK)</strong> is a column in one table holding the primary key (or a unique key) of another. It declares “this row belongs to that parent”, and the engine enforces the declaration on <em>every</em> write, from every application:</p>
+<p>A <strong>foreign key (FK)</strong> is a column or set of columns in one table referencing a primary or unique key in another. When enabled, it declares “this row belongs to that parent”, and SQL Server enforces it for ordinary writes:</p>
 <ul>
   <li><strong>Insert/update of a child</strong> — the referenced parent row must exist, or the statement fails</li>
   <li><strong>Delete/update of a parent</strong> — the FK's referential action decides what happens to the children</li>
@@ -79,7 +79,7 @@ window.TOPIC = {
     <line x1="485" y1="170" x2="528" y2="170" stroke="var(--muted)" stroke-width="1.8" marker-end="url(#pk-arrow)"/>
 
     <rect x="60" y="258" width="640" height="34" rx="9" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.6"/>
-    <text x="380" y="280" text-anchor="middle" fill="var(--accent-strong)" font-size="12.5" font-weight="600" font-family="Segoe UI, sans-serif">FK  customer_id  REFERENCES Customers(customer_id)  —  no orphan orders possible</text>
+    <text x="380" y="280" text-anchor="middle" fill="var(--accent-strong)" font-size="12.5" font-weight="600" font-family="Segoe UI, sans-serif">Enabled FK  customer_id REFERENCES Customers(customer_id) — blocks orphan orders</text>
 
     <text x="380" y="322" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">The key travels: every relationship is carried as a value in the child row.</text>
   </svg>
@@ -94,7 +94,6 @@ window.TOPIC = {
 <table>
   <tr><th>Action</th><th>On parent delete / key update</th><th>Typical use</th></tr>
   <tr><td><strong>NO ACTION</strong> (default)</td><td>Fails with an error if children exist</td><td>Safest default — deletion must be deliberate</td></tr>
-  <tr><td><strong>RESTRICT</strong></td><td>Same effect, checked immediately</td><td>Behavioural twin of NO ACTION in SQL Server</td></tr>
   <tr><td><strong>CASCADE</strong></td><td>Deletes the children too</td><td>True dependent children (order lines of a test order)</td></tr>
   <tr><td><strong>SET NULL</strong></td><td>Children's FK set to NULL</td><td>Optional relationships — requires a nullable FK</td></tr>
   <tr><td><strong>SET DEFAULT</strong></td><td>Children's FK set to the column default</td><td>Rare — needs a sensible default parent</td></tr>
@@ -146,10 +145,10 @@ VALUES (999999, '2026-01-15', 10.00);</code></pre>
       h: "Production pitfalls",
       html: `
 <ul>
-  <li><strong>Foreign keys create no index.</strong> The child table's FK column must be indexed for parent lookups and for joins back — otherwise every child insert does a scan of a huge table. Add an index on every FK you create.</li>
-  <li><strong>Disabled or untrusted constraints.</strong> <code>is_disabled = 1</code> or <code>is_not_trusted = 1</code> in <code>sys.foreign_keys</code> means the engine is no longer checking — common after bulk loads with <code>WITH NOCHECK</code>.</li>
+  <li><strong>Foreign keys do not automatically create an index on the child columns.</strong> An index there can help joins and parent deletes or key updates, but whether to add one depends on the workload; child inserts validate the referenced parent key.</li>
+  <li><strong>Disabled or untrusted constraints.</strong> <code>is_disabled = 1</code> means SQL Server does not enforce the FK. <code>is_not_trusted = 1</code> means existing rows have not been verified, so the optimizer cannot assume all rows satisfy it; an enabled but untrusted FK still checks future modifications.</li>
   <li><strong>Adding an FK to an existing table</strong> validates every existing row under <code>WITH CHECK</code>. Orphans from years of disabled constraints make the <code>ALTER TABLE</code> fail — find them first.</li>
-  <li><strong>Hot parent rows.</strong> Millions of children referencing one parent row take key-range locks; a busy parent key can serialize inserts that have nothing to do with each other.</li>
+  <li><strong>Parent-row changes.</strong> Deleting or updating a referenced parent may need to check child rows and can block or be blocked by concurrent work. The exact locks and impact depend on the operation, indexes, and isolation level.</li>
   <li><strong>Deleting “test” parents</strong> in a database where CASCADE rules were chosen hastily.</li>
 </ul>
 <p>A quick trust check every DBA should run after any migration:</p>
@@ -163,7 +162,7 @@ WHERE  is_disabled = 1 OR is_not_trusted = 1;</code></pre>
   scenario: {
     title: "A one-row delete removed 1.4 million order lines",
     html: `
-<p>A developer cleaned up a customer account with <code>DELETE FROM sales.Customers WHERE customer_id = 7</code>. The migration had quietly switched the foreign keys to <code>ON DELETE CASCADE</code> “to make cleanup easier”. Within 30 seconds the delete fanned out through Orders into OrderLines, held key-range locks on the clustered index, and the order-entry application began timing out. The statement was killed after three hours — but 1.4 million order lines were gone and the log had swelled to 480 GB.</p>
+<p>A developer cleaned up a customer account with <code>DELETE FROM sales.Customers WHERE customer_id = 7</code>. The migration had quietly switched the foreign keys to <code>ON DELETE CASCADE</code> “to make cleanup easier”. Within 30 seconds the delete fanned out through Orders into OrderLines, held locks while processing the large change, and the order-entry application began timing out. The statement was killed after three hours — but 1.4 million order lines were gone and the log had swelled to 480 GB.</p>
 <p>The DBA restored the affected tables from the full plus transaction-log backups into a staging database, scripted an <code>INSERT … SELECT</code> to bring the rows back inside a single transaction, and rebuilt the indexes. Prevention: both FKs were rebuilt as <code>ON DELETE NO ACTION</code>, a stored procedure <code>sales.usp_DeleteCustomer</code> became the only sanctioned path (with an explicit child-row count printed before deletion), and the incident became a standing rule — <strong>CASCADE belongs on dependent children, never on financial history</strong>.</p>
 `
   },
@@ -171,7 +170,7 @@ WHERE  is_disabled = 1 OR is_not_trusted = 1;</code></pre>
   interview: [
     {
       q: "Primary key or unique key — what is the difference?",
-      a: "Both enforce uniqueness, but only one primary key is allowed per table, it can never contain NULLs, and it defines the table's clustered index by default. A unique key may be one of several, allows one NULL by default, and is the typical target for foreign keys on non-PK columns."
+      a: "Both enforce uniqueness, but only one primary key is allowed per table, it can never contain NULLs, and its index is clustered by default only if the table has no clustered index and none is specified. A table may have several unique constraints; a single-column unique constraint permits one NULL, and a unique key can be referenced by a foreign key."
     },
     {
       q: "Surrogate or natural key — how do you decide?",
@@ -179,7 +178,7 @@ WHERE  is_disabled = 1 OR is_not_trusted = 1;</code></pre>
     },
     {
       q: "You are adding a foreign key to a 200-million-row table. What do you check first?",
-      a: "That an index exists on the FK column (the constraint will not create one), that every existing child row has a matching parent — query for orphans before running the ALTER — and that the validation scan fits the change window, since WITH CHECK must read and check every row. Prefer building the constraint with WITH NOCHECK only as a documented exception, then fixing data and revalidating."
+      a: "Whether an index on the child FK columns is justified by joins or parent updates/deletes, whether every existing child row has a matching parent, and whether validation fits the change window. Use WITH CHECK to validate existing rows; an enabled but untrusted FK still checks future writes, but isn't trusted for existing data or optimizer assumptions."
     }
   ],
 

@@ -19,12 +19,12 @@ window.TOPIC = {
     {
       h: "What a relationship actually is",
       html: `
-<p>A <strong>relationship</strong> is a declared association between two tables, carried by a foreign key: the child column stores the parent's key value, and the database guarantees the pairing. Two questions define every relationship:</p>
+<p>A <strong>relationship</strong> is a logical association between data in tables. A foreign key can declare and enforce that association in the database; its nullability, uniqueness, and referential actions determine which cases the schema enforces. Two questions guide the design:</p>
 <ul>
   <li><strong>Cardinality</strong> — for one row on side A, how many rows can exist on side B? (1, N, or “many” on both sides)</li>
   <li><strong>Optionality</strong> — is the child row required or optional? (an order must have a customer; a customer may have no orders yet — the FK is still NOT NULL, because a <em>row</em> that exists must name its parent)</li>
 </ul>
-<p>The three cardinalities cover nearly every real schema. Each one has exactly one correct place for the foreign key, and putting it anywhere else produces a design that cannot be enforced by the engine.</p>
+<p>The three cardinalities cover many common schemas. In a one-to-many relationship, the foreign key normally belongs on the many side. For one-to-one relationships, a unique foreign key can be placed on either side depending on optionality and access patterns; a shared primary-key/foreign-key design is one common pattern.</p>
 <blockquote>Cardinality is decided at design time with a whiteboard. Moving it later is a data migration with stakeholders attached.</blockquote>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="One-to-one, one-to-many, and many-to-many relationships">
@@ -54,7 +54,7 @@ window.TOPIC = {
     <text x="396" y="122" fill="var(--muted)" font-size="13" font-weight="700" font-family="Segoe UI, sans-serif">1</text>
     <rect x="280" y="136" width="200" height="50" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
     <text x="380" y="166" text-anchor="middle" fill="var(--text)" font-size="13" font-weight="600" font-family="Segoe UI, sans-serif">UserProfiles</text>
-    <text x="380" y="212" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">Child PK = FK = PK</text>
+    <text x="380" y="212" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">Child PK may also be the FK</text>
     <text x="380" y="232" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">Splits wide or sensitive columns</text>
     <text x="380" y="252" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">Parent row may exist alone</text>
 
@@ -69,11 +69,11 @@ window.TOPIC = {
     <text x="630" y="166" text-anchor="middle" fill="var(--accent-strong)" font-size="13" font-weight="700" font-family="Segoe UI, sans-serif">Enrolments</text>
     <text x="630" y="212" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">Junction table, two FKs</text>
     <text x="630" y="232" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">PK = (student_id, course_id)</text>
-    <text x="630" y="252" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">No duplicates, ever</text>
+    <text x="630" y="252" text-anchor="middle" fill="var(--muted)" font-size="11.5" font-family="Segoe UI, sans-serif">Unique pair when constrained</text>
 
     <line x1="15" y1="278" x2="745" y2="278" stroke="var(--border)" stroke-width="1.4"/>
-    <text x="380" y="308" text-anchor="middle" fill="var(--text)" font-size="12.5" font-weight="600" font-family="Segoe UI, sans-serif">Rule: the foreign key always lives on the side that can hold many — or on both sides of a junction table.</text>
-    <text x="380" y="330" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">A relationship the engine cannot enforce is a comment, not a constraint.</text>
+    <text x="380" y="308" text-anchor="middle" fill="var(--text)" font-size="12.5" font-weight="600" font-family="Segoe UI, sans-serif">Common rule: FK on the many side; a junction table carries both FKs for many-to-many.</text>
+    <text x="380" y="330" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">Use constraints when the relationship must be enforced by the database.</text>
   </svg>
   <div class="figcaption">Figure 1 — The three cardinalities and where their keys live.</div>
 </div>
@@ -82,10 +82,10 @@ window.TOPIC = {
     {
       h: "One-to-many: the workhorse",
       html: `
-<p>In a one-to-many relationship, one parent row is referenced by zero, one, or many child rows. The foreign key goes on the <strong>many</strong> side — always. A customer does not store a list of orders; each order stores the customer's key.</p>
+<p>In a one-to-many relationship, one parent row is referenced by zero, one, or many child rows. The foreign key normally goes on the <strong>many</strong> side. A customer does not store a list of orders; each order stores the customer's key.</p>
 <ul>
   <li>Parent side: the primary key (or a unique key)</li>
-  <li>Child side: a NOT NULL foreign key plus an index on it, so joins and parent lookups stay fast</li>
+  <li>Child side: a NOT NULL foreign key; an index may help joins and parent deletes or key updates, depending on the workload</li>
   <li>Deletion of a parent is governed by the referential action (NO ACTION by default)</li>
 </ul>
 <p>This pattern scales from “one user owns many documents” to “one server hosts many databases”. When you see a repeating group or a comma-separated list inside a parent column, you are looking at a one-to-many relationship that has not been modelled yet.</p>
@@ -94,7 +94,7 @@ window.TOPIC = {
     {
       h: "One-to-one and many-to-many",
       html: `
-<p><strong>One-to-one</strong> is rare and deliberate. The child table's primary key <em>is</em> the foreign key — one profile row per user, at most. Legitimate uses: splitting rarely-updated or heavily-referenced columns out of a hot table, isolating sensitive columns with their own permissions, or holding data that is genuinely optional per parent. Two one-to-one tables sharing only a key often signal a table that should be merged.</p>
+<p><strong>One-to-one</strong> is often modeled with a unique foreign key on the dependent table; making that key the child's primary key is one option that permits at most one child per parent. Legitimate uses can include separating optional or differently secured data. Two one-to-one tables sharing only a key may be candidates for merging, depending on workload and lifecycle.</p>
 <p><strong>Many-to-many</strong> cannot be expressed with a single foreign key — both sides can hold many. The answer is always the same: a <strong>junction</strong> (bridge) table containing both foreign keys, with a composite primary key that makes each pairing appear at most once:</p>
 <pre><code class="language-sql">CREATE TABLE school.Students
 (

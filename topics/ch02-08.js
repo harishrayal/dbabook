@@ -5,7 +5,7 @@ window.TOPIC = {
   id: "ch02-08",
   title: "Normalization: 1NF, 2NF, and 3NF",
 
-  lead: "Normalisation is the discipline of storing each fact exactly once so it can only be true or false in one place — the first, second, and third normal forms are simple rules that eliminate the update anomalies that quietly corrupt production data.",
+  lead: "Normalisation organizes data to reduce redundancy and update anomalies — the first, second, and third normal forms provide a framework for reasoning about dependencies in relational designs.",
 
   objectives: [
     "Explain why redundant data causes insert, update, and delete anomalies",
@@ -19,15 +19,15 @@ window.TOPIC = {
     {
       h: "Why normalise",
       html: `
-<p><strong>Normalisation</strong> is the process of organising tables so that every independent fact is stored in exactly one place, and everything else refers to it by key. Its payoff is not elegance — it is correctness under change. When the same fact is copied into many rows, updates become a hunt, and misses become wrong answers in production.</p>
+<p><strong>Normalisation</strong> is the process of organising tables to reduce undesirable redundancy and update anomalies. It often stores a fact once and refers to it by key, though practical schemas may deliberately duplicate data for historical or performance reasons. Its payoff is simpler maintenance of consistent facts: when the same current fact is copied into many rows, updates can be missed.</p>
 <table>
   <tr><th>Anomaly</th><th>What goes wrong</th><th>Example</th></tr>
   <tr><td><strong>Insert</strong></td><td>You cannot record a fact without unrelated facts</td><td>A new customer cannot exist until they place their first order</td></tr>
   <tr><td><strong>Update</strong></td><td>The same fact is duplicated across rows; one update is missed</td><td>A customer moves house — 400 order rows still ship to the old address</td></tr>
   <tr><td><strong>Delete</strong></td><td>Deleting one row destroys unrelated facts</td><td>Deleting the customer's only order erases their contact details entirely</td></tr>
 </table>
-<p>The normal forms are stated as a sequence, and in practice reaching <strong>3NF</strong> is the goal of most transactional designs: every non-key column depends on the key, the whole key, and nothing but the key.</p>
-<blockquote>“The key, the whole key, and nothing but the key — so help me Codd.” That single sentence is the third normal form.</blockquote>
+<p>The normal forms are stated as a sequence. For many transactional designs, 3NF is a useful target: non-key attributes should depend on candidate keys, the whole key, and nothing but the key. Formal definitions account for candidate keys and prime attributes, so the slogan is a learning aid rather than a complete definition.</p>
+<blockquote>“The key, the whole key, and nothing but the key” is a useful 3NF mnemonic for common designs, not the full formal definition.</blockquote>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="Progression through the normal forms">
     <defs>
@@ -67,7 +67,7 @@ window.TOPIC = {
     {
       h: "First normal form (1NF)",
       html: `
-<p>A table is in <strong>first normal form</strong> when every column holds an atomic value, there are no repeating groups, and each row is distinguishable. The classic 1NF violation looks convenient at design time:</p>
+<p>In the usual introductory formulation, a table is in <strong>first normal form</strong> when each cell holds a single value at the chosen level of modeling, there are no repeating groups, and a key distinguishes rows. What counts as atomic depends on the operations the design needs to perform. The classic repeating-group problem looks convenient at design time:</p>
 <pre><code class="language-sql">-- NOT 1NF: repeating groups stuffed into one row
 CREATE TABLE dbo.CustomerOrdersWide
 (
@@ -97,7 +97,7 @@ CREATE TABLE dbo.OrderLines
     {
       h: "Second normal form (2NF)",
       html: `
-<p><strong>Second normal form</strong> applies to tables whose primary key is composite. A table is in 2NF when it is in 1NF and every non-key column depends on the <strong>entire</strong> key — not on a fragment of it. Partial dependency appears whenever a key column pair carries descriptive data:</p>
+<p><strong>Second normal form</strong> is commonly relevant when a candidate key is composite. A table is in 2NF when it is in 1NF and every non-prime attribute depends on the <strong>entire</strong> candidate key — not on a fragment of it. A single-column candidate key has no partial-key dependency. A partial dependency can appear when a composite key carries descriptive data:</p>
 <ul>
   <li>Key: (order_id, line_no). If a column depends only on <code>order_id</code> — customer_id, order_date — it belongs on the Orders table, not on the line</li>
   <li>Key: (student_id, course_id). A column depending only on <code>student_id</code> — student_name — belongs on Students</li>
@@ -108,7 +108,7 @@ CREATE TABLE dbo.OrderLines
     {
       h: "Third normal form (3NF)",
       html: `
-<p><strong>Third normal form</strong> adds: no non-key column may depend on another non-key column — no <em>transitive</em> dependency. The giveaway is a column that functionally determines another: if <code>customer_id → customer_city</code>, then storing city anywhere but the Customers table lets one customer have two cities.</p>
+<p><strong>Third normal form</strong>, in the common simple-key case, rules out non-key attributes depending transitively on a key through another non-key attribute. The formal definition is more precise: for every nontrivial functional dependency, its determinant must be a superkey or its dependent attribute must be prime. The giveaway in a typical design is a column that functionally determines another: if <code>customer_id → customer_city</code>, storing the current city repeatedly can let one customer have conflicting values.</p>
 <pre><code class="language-sql">-- 3NF target: each fact in exactly one table, referenced by key
 CREATE TABLE sales.Customers
 (
@@ -142,8 +142,8 @@ CREATE TABLE sales.OrderLines
 <table>
   <tr><th>Form</th><th>Requirement</th><th>Removes</th></tr>
   <tr><td><strong>1NF</strong></td><td>Atomic values; no repeating groups; a key identifies each row</td><td>Multi-valued and repeating columns</td></tr>
-  <tr><td><strong>2NF</strong></td><td>1NF + every non-key column depends on the whole key</td><td>Partial dependencies in composite keys</td></tr>
-  <tr><td><strong>3NF</strong></td><td>2NF + no non-key column depends on another non-key column</td><td>Transitive dependencies (facts about facts)</td></tr>
+  <tr><td><strong>2NF</strong></td><td>1NF + each non-prime attribute depends on the whole of every candidate key</td><td>Partial dependencies</td></tr>
+  <tr><td><strong>3NF</strong></td><td>2NF + each nontrivial dependency has a superkey determinant or a prime dependent attribute</td><td>Some transitive dependencies</td></tr>
   <tr><td><strong>BCNF</strong></td><td>Every determinant is a candidate key</td><td>Leftover anomalies in rarer cases</td></tr>
 </table>
 `
@@ -173,11 +173,11 @@ CREATE TABLE sales.OrderLines
   interview: [
     {
       q: "What problem does normalisation solve?",
-      a: "Redundancy — the same fact stored in multiple places — which produces insert, update, and delete anomalies. Normalisation stores each independent fact once, referenced by key, so it can be changed in one place and remain consistent everywhere."
+      a: "Unnecessary redundancy can cause insert, update, and delete anomalies. Normalisation organizes dependencies so facts are less likely to conflict; deliberate historical or performance copies can still be appropriate when their purpose and maintenance are explicit."
     },
     {
       q: "What is the difference between a partial and a transitive dependency?",
-      a: "A partial dependency is a non-key column that depends on only part of a composite primary key (order_date depending on order_id alone). A transitive dependency is a non-key column that depends on another non-key column (city depending on customer_id, which is the key). 2NF removes the first; 3NF removes the second."
+      a: "A partial dependency is a non-prime attribute depending on only part of a composite candidate key. A transitive dependency is a common simple-key example where a non-key attribute depends on another non-key attribute. 2NF addresses partial dependencies; 3NF addresses dependencies that don't meet its formal superkey/prime-attribute condition."
     },
     {
       q: "When do you denormalise in production?",

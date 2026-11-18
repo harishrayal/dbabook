@@ -19,13 +19,14 @@ window.TOPIC = {
     {
       h: "The relational model in plain terms",
       html: `
-<p>In 1970 Edgar F. Codd proposed storing data as <strong>relations</strong> — mathematical sets of rows — instead of nested records and pointers. In everyday SQL Server language:</p>
+<p>In 1970 Edgar F. Codd proposed storing data as <strong>relations</strong> — mathematical sets of tuples — instead of nested records and pointers. In everyday SQL Server language these concepts are often introduced by analogy:</p>
 <ul>
-  <li>A <strong>relation</strong> is a <strong>table</strong></li>
+  <li>A <strong>relation</strong> roughly corresponds to a <strong>table</strong></li>
   <li>A <strong>tuple</strong> is a <strong>row</strong> (one entity, e.g. one customer)</li>
   <li>An <strong>attribute</strong> is a <strong>column</strong> (one property, e.g. customer_name)</li>
   <li>A <strong>key</strong> is the column or columns that uniquely identify a row and link it to related tables</li>
 </ul>
+<p>SQL tables are not exact mathematical relations: SQL permits duplicate rows unless a constraint prevents them, and a query result has no guaranteed order without <code>ORDER BY</code>.</p>
 <p>The revolutionary part was not tables — it was that <strong>relationships are expressed by data, not by structure</strong>. A customer's orders are not stored inside a customer record; they are rows in an Orders table that <em>reference</em> the customer's key. Applications find them with a join, and no physical nesting has to be rebuilt when requirements change.</p>
 <blockquote>Data is related by value, not by position or pointer — that is what “relational” means, and it is why the schema can evolve without rewriting storage.</blockquote>
 `
@@ -88,7 +89,7 @@ window.TOPIC = {
 <ul>
   <li><strong>Declarative access</strong> — you describe the result you want; the optimiser chooses indexes and join strategies</li>
   <li><strong>Integrity</strong> — keys and constraints reject data that breaks the model, for every client equally</li>
-  <li><strong>ACID transactions</strong> — concurrent changes are atomic, consistent, isolated, and durable</li>
+  <li><strong>Transaction support</strong> — SQL Server supports ACID transactions; isolation behavior and some durability options are configurable</li>
   <li><strong>Data independence</strong> — physical storage can change (indexes, partitioning, file placement) without changing application SQL</li>
 </ul>
 `
@@ -96,7 +97,7 @@ window.TOPIC = {
     {
       h: "Relationships are declared, not stored",
       html: `
-<p>The practical heart of an RDBMS is the <strong>foreign key</strong>: a column in one table carrying the primary key of another. The database itself enforces the relationship, so no application can accidentally create an order for a customer that does not exist.</p>
+<p>A <strong>foreign key</strong> declares a relationship between columns in two tables. When the constraint is enabled, SQL Server checks writes against it, so an application cannot insert an orphan through an ordinary write that respects the constraint.</p>
 <pre><code class="language-sql">CREATE TABLE sales.Customers
 (
     customer_id int           IDENTITY(1,1) NOT NULL,
@@ -135,11 +136,11 @@ ORDER  BY order_count DESC;</code></pre>
   <tr><th>Dimension</th><th>Relational (SQL Server)</th><th>Non-relational (document / KV)</th></tr>
   <tr><td>Data shape</td><td>Fixed schema, normalised tables</td><td>Schema-flexible documents, aggregates</td></tr>
   <tr><td>Relationships</td><td>First-class via foreign keys and joins</td><td>Resolved in the application or duplicated</td></tr>
-  <tr><td>Transactions</td><td>Full ACID across statements and rows</td><td>Often single-document or eventual consistency</td></tr>
-  <tr><td>Integrity</td><td>Enforced centrally by the engine</td><td>Depends on application code</td></tr>
-  <tr><td>Best fit</td><td>Transactional systems, reporting, evolving requirements</td><td>Horizontal scale, simple access patterns, semi-structured payloads</td></tr>
+  <tr><td>Transactions</td><td>Supports multi-statement ACID transactions, with configurable isolation and durability options</td><td>Transaction scope and consistency guarantees vary by product and configuration</td></tr>
+  <tr><td>Integrity</td><td>Declared keys and constraints can be enforced by the engine</td><td>May be enforced by the store, application, or both</td></tr>
+  <tr><td>Best fit</td><td>Relational data, joins, and workloads needing declared constraints</td><td>Depends on the product's model and the application's access patterns</td></tr>
 </table>
-<p>For a production DBA the practical rule: <strong>start relational until you have a measured reason not to</strong>. Most “scale” problems are solved by indexing, partitioning, or one more read replica long before the relational model itself is the bottleneck.</p>
+<p>For a production DBA, choose a data model based on the workload's consistency, query, and operational requirements. Measure the bottleneck before changing technologies; indexing or other relational design changes may help, but no single approach solves every scale problem.</p>
 `
     },
     {
