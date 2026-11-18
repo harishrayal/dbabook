@@ -16,160 +16,25 @@ window.TOPIC = {
   ],
 
   sections: [
-    {
-      h: "What Event Viewer means",
-      html: `
-<p>In this topic we examine <strong>Event Viewer</strong> within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.</p>
-<p>The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.</p>
-<p>Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.</p>
-<div class="callout fact">
-  <div class="callout-label">Key idea</div>
-  <p>Event Viewer is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.</p>
-</div>
-      `,
-    },
-    {
-      h: "Where Event Viewer fits",
-      html: `
-<p>Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.</p>
-<p>The diagram below places Event Viewer alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.</p>
-<div class="figure">
-  <svg viewBox="0 0 760 340" role="img" aria-label="Event Viewer flow">
-    <defs>
-      <marker id="ga" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-        <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--muted)"/>
-      </marker>
-    </defs>
-    <rect x="230" y="12" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="39" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">1. Service</text>
-    <rect x="230" y="66" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="93" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">2. Account</text>
-    <rect x="230" y="120" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="147" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">3. Permission</text>
-    <rect x="230" y="174" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="201" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">4. Network</text>
-    <rect x="230" y="228" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="255" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">5. Port</text>
-    <rect x="230" y="282" width="300" height="44" rx="9" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
-    <text x="380" y="309" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">6. Volume</text>
-    <line x1="380" y1="56" x2="380" y2="66" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="110" x2="380" y2="120" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="164" x2="380" y2="174" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="218" x2="380" y2="228" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="272" x2="380" y2="282" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <text x="380" y="332" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">Event Viewer</text>
-  </svg>
-  <div class="figcaption">Figure 1 — Windows Server and infrastructure for DBAs: how Event Viewer relates to the core concepts.</div>
-</div>
-      `,
-    },
-    {
-      h: "Event Viewer in practice",
-      html: `
-<p>SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.</p>
-<p>The following comparison captures the distinctions that matter most when working with Event Viewer:</p>
-<table>
-  <tr><th>Service</th><th>Purpose</th><th>Typical start mode</th></tr>
-  <tr><td>MSSQLSERVER / MSSQL$INST</td><td>Database Engine</td><td>Automatic</td></tr>
-  <tr><td>SQLSERVERAGENT</td><td>Jobs, alerts, schedules</td><td>Automatic</td></tr>
-  <tr><td>SQLBrowser</td><td>Named-instance resolution</td><td>Automatic (named instances)</td></tr>
-</table>
-<p>Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.</p>
-      `,
-    },
-    {
-      h: "Working with Event Viewer",
-      html: `
-<p>Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Event Viewer. Run them first on a non-production instance and adapt paths and names to your environment.</p>
-<pre><code class="language-powershell">-- Event Viewer
-Get-Service -Name 'MSSQL*','SQLSERVERAGENT' |
-  Select-Object Name, DisplayName, Status, StartType |
-  Format-Table -AutoSize</code></pre>
-<p>The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.</p>
-<pre><code class="language-powershell">-- Event Viewer
-Test-NetConnection -ComputerName db01 -Port 1433 |
-  Select-Object ComputerName, RemotePort, TcpTestSucceeded</code></pre>
-<p>Next, verify the result and capture a baseline. Recording the 'before' state lets you prove that a change had the intended effect and gives you a rollback reference.</p>
-<pre><code class="language-powershell">-- Event Viewer
-Get-Volume | Select-Object DriveLetter, FileSystemLabel,
-  @{n='FreeGB';e={[math]::Round($_.SizeRemaining/1GB,1)}},
-  @{n='SizeGB';e={[math]::Round($_.Size/1GB,1)}} |
-  Format-Table -AutoSize</code></pre>
-<p>Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.</p>
-      `,
-    },
-    {
-      h: "Pitfalls and production guidance",
-      html: `
-<p>NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.</p>
-<table>
-  <tr><th>Port</th><th>Used by</th><th>Protocol</th></tr>
-  <tr><td>1433</td><td>Default instance / listener</td><td>TCP</td></tr>
-  <tr><td>1434</td><td>SQL Server Browser</td><td>UDP</td></tr>
-  <tr><td>5022</td><td>Availability group endpoints</td><td>TCP</td></tr>
-</table>
-<p>Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.</p>
-<div class="callout warning">
-  <div class="callout-label">Production caution</div>
-  <p>With Event Viewer, prefer measured, reversible changes. Test on non-production, keep a rollback path, and monitor the effect — a change that looks harmless in isolation can have surprising consequences at scale.</p>
-</div>
-      `,
-    },
-    {
-      h: "Deeper dive: Event Viewer",
-      html: `
-<p>This section consolidates <strong>Event Viewer</strong> with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.</p>
-<p>SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.</p>
-<p>Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.</p>
-<div class="callout fact">
-  <div class="callout-label">Remember</div>
-  <p>Event Viewer sits inside a larger system. Always consider how a change here affects availability, recovery, security and performance elsewhere in the estate.</p>
-</div>
-<p>The distinctions below are the ones that matter most in day-to-day administration:</p>
-<table>
-  <tr><th>Port</th><th>Used by</th><th>Protocol</th></tr>
-  <tr><td>1433</td><td>Default instance / listener</td><td>TCP</td></tr>
-  <tr><td>1434</td><td>SQL Server Browser</td><td>UDP</td></tr>
-  <tr><td>5022</td><td>Availability group endpoints</td><td>TCP</td></tr>
-</table>
-<p>Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.</p>
-<p>Use the following as a starting point when investigating Event Viewer. Adapt names and paths to your own environment and run it first on a non-production instance:</p>
-<pre><code class="language-powershell"># Event Viewer
-Get-Service -Name 'MSSQL*','SQLSERVERAGENT' |
-  Select-Object Name, DisplayName, Status, StartType |
-  Format-Table -AutoSize</code></pre>
-<p>NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.</p>
-      `,
-    }
+    { h: "Evidence flow", html: `<div class="figure"><svg viewBox="0 0 760 160" role="img" aria-label="Troubleshooting evidence flow"><rect x="20" y="40" width="160" height="70" rx="8" fill="var(--surface-2)" stroke="var(--border)"/><text x="100" y="82" text-anchor="middle" fill="var(--text)" font-size="14">Evidence</text><rect x="300" y="40" width="160" height="70" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"/><text x="380" y="82" text-anchor="middle" fill="var(--text)" font-size="14">Diagnosis</text><rect x="580" y="40" width="160" height="70" rx="8" fill="var(--surface-2)" stroke="var(--border)"/><text x="660" y="82" text-anchor="middle" fill="var(--text)" font-size="14">Resolution</text></svg><div class="figcaption">Figure 1 - Separate evidence, diagnosis, and remediation.</div></div>` },
+    { h: "Event channels and evidence", html: `<p>Event Viewer collects records from Windows components and applications. Common channels include System, Application, Security, and component-specific logs under Applications and Services Logs. SQL Server also maintains its own SQL error log and SQL Agent logs.</p>
+<table><tr><th>Source</th><th>Typical use</th></tr><tr><td>System</td><td>SCM, drivers, disk, and OS events</td></tr><tr><td>Application</td><td>Application and SQL Server provider events</td></tr><tr><td>Security</td><td>Audited security events when audit policy is enabled</td></tr><tr><td>SQL ERRORLOG</td><td>Engine startup, recovery, login, and configuration details</td></tr></table>` },
+    { h: "Filter and correlate", html: `<p>Start with a host and time window, then filter by provider, level, or event ID. Event IDs are provider- and log-specific. Correlate timestamps with SQL Server, SQL Agent, application, and change records, accounting for clock synchronization.</p>
+<pre><code class="language-powershell">Get-WinEvent -FilterHashtable @{LogName='System'; StartTime=(Get-Date).AddHours(-2)} |
+  Where-Object ProviderName -EQ 'Service Control Manager' |
+  Select-Object TimeCreated, Id, LevelDisplayName, Message</code></pre>` },
+    { h: "Incident workflow", html: `<ol><li>Capture the symptom, host, exact time, service, and recent change.</li><li>Inspect System and Application logs around the timestamp.</li><li>Open the SQL Server error log and relevant Agent log or job history.</li><li>Compare provider, event ID, message, and surrounding events.</li><li>Preserve evidence and record the resolution.</li></ol><p>An event ID is a search clue, not a complete diagnosis. The full message and related events provide context.</p>` },
+    { h: "Retention and access", html: `<p>Event log retention depends on channel size and policy. Busy servers can overwrite older records. Forward or export relevant evidence without clearing logs during an incident. Security-log access and visibility require the organization's audit and role configuration.</p>` }
   ],
-
   scenario: {
-    title: "Access denied on a restored database",
-    html: `
-A restore succeeded but the service account could not write to the new data folder, producing error 5 on growth. icacls showed the restored folder inherited restrictive rights. Granting the service account modify permission on the data and log folders resolved it; the runbook was updated to include permission checks after every restore path change.
-<p><strong>The Event Viewer lesson:</strong> symptoms rarely point directly at the cause. Disciplined diagnosis — evidence first, mitigation second, prevention third — turns an incident into a documented improvement rather than a repeat event.</p>
-    `,
+    title: 'SCM and SQL logs identify a failed start',
+    html: `<p>A SQL service fails to start after an account change. Event Viewer shows a Service Control Manager event while SQL Server ERRORLOG identifies an access-denied path. The DBA correlates timestamps and restores the account and file rights through the supported SQL Server tool.</p>`
   },
 
   interview: [
-    {
-      q: "Why does the SQL Server service account need least privilege?",
-      a: `
-It limits the blast radius if the service is compromised and avoids unnecessary domain rights; grant only log-on-as-service, file access to data folders and any rights backups or Kerberos genuinely need.
-      `,
-    },
-    {
-      q: "Where do you look for a service that keeps stopping?",
-      a: `
-Windows Event Viewer System and Application logs, SQL Server error log, and the service's dependencies and account — often a password expiry or a failed dependency is the cause.
-      `,
-    },
-    {
-      q: "What order do you check when an app cannot connect?",
-      a: `
-Service state, then listener/protocol state, then network path (ping, Test-NetConnection to the port), then firewall, then SQL-level errors and logins — from outside in.
-      `,
-    }
+    { q: "What evidence must be captured first?", a: "Record the host, client, exact timestamp, error, and recent change. Capture the relevant logs and measurements before changing the suspected layer." },
+    { q: "How do you avoid changing the wrong layer?", a: "Test one confirmed boundary at a time: naming, routing, listener, firewall, authentication, storage, or application behavior. Compare with a known-good baseline where possible." },
+    { q: "What proves a corrective change worked?", a: "Retest the same affected path or workload after the change, preserve before-and-after evidence, and monitor for recurrence under normal load." }
   ],
 
   quiz: [

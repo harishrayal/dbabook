@@ -86,13 +86,13 @@ window.TOPIC = {
 <p>Before touching an ACL, write down who needs what. The matrix is small, and it turns a vague request like "give the app team access" into a specific decision:</p>
 <table>
   <tr><th>Principal</th><th>Data / log folders</th><th>Backup folder</th><th>Dump folder</th><th>Reason</th></tr>
-  <tr><td><strong>SQL service account or per-service group</strong></td><td>Modify</td><td>Modify</td><td>Write</td><td>Engine and Agent create and extend files</td></tr>
+  <tr><td><strong>SQL service identity or setup-managed group</strong></td><td>As required</td><td>As required</td><td>Write where required</td><td>Grant rights to the component that accesses each path</td></tr>
   <tr><td><strong>DBA group</strong></td><td>Full Control</td><td>Full Control</td><td>Read</td><td>Administration and incident recovery</td></tr>
   <tr><td><strong>Monitoring account</strong></td><td>Read</td><td>Read</td><td>Read</td><td>File-level checks without write capability</td></tr>
   <tr><td><strong>Application accounts</strong></td><td>None</td><td>None</td><td>None</td><td>Applications connect through SQL, never to MDF files</td></tr>
   <tr><td><strong>Everyone / Authenticated Users</strong></td><td>None</td><td>None</td><td>None</td><td>Too broad for any database path</td></tr>
 </table>
-<p>Note what is absent: application teams never get direct file access to MDF or LDF files. Bypassing the engine risks corruption that no backup strategy can repair. If a vendor insists on "just one folder", give them a dedicated import/export directory — never the database directory.</p>
+<p>Application clients should normally access data through SQL Server, not by opening MDF or LDF files. Give application teams a dedicated import/export directory when file exchange is required; don't grant direct access to database files.</p>
 <p>A couple of details save future incidents. Grant rights with <code>(OI)(CI)</code> so subfolders and files inherit them, and put the DBA grant on a group rather than individuals. If the server has multiple instances, keep their roots separate so a mistake on one instance cannot touch another.</p>
 `
     },
@@ -120,7 +120,7 @@ foreach ($p in $paths) {
     {
       h: "Backup shares and UNC paths",
       html: `
-<p>Off-host backups usually target a UNC path such as <code>\\\\fileserver\\sqlbackup\\Full\\Sales.bak</code>. Two permission layers apply, and the more restrictive wins: the SMB share ACL and the NTFS ACL on the folder. Keep the share simple and do the detailed authorisation with NTFS:</p>
+<p>Off-host backups often target a UNC path such as <code>\\\\fileserver\\sqlbackup\\Full\\Sales.bak</code>. For an SMB path, both share and NTFS permissions are evaluated; effective access is constrained by both. Align the share and folder ACLs with the identity that performs the backup or restore:</p>
 <pre><code class="language-powershell">New-SmbShare -Name 'SQLBackup' -Path 'E:\SQL\Backup' -FullAccess 'CONTOSO\svc_sqlserver'
 Grant-SmbShareAccess -Name 'SQLBackup' -AccountName 'CONTOSO\SQL_DBAs' -AccessRight Change -Force
 Get-SmbShareAccess -Name 'SQLBackup' | Format-Table AccountName, AccessRight, AccessControlType -AutoSize</code></pre>
@@ -128,9 +128,9 @@ Get-SmbShareAccess -Name 'SQLBackup' | Format-Table AccountName, AccessRight, Ac
   <li><strong>No mapped drives.</strong> The SQL Server service runs in session 0 and does not see your <code>Z:</code> mapping. Always use the UNC path in <code>BACKUP DATABASE</code>.</li>
   <li><strong>Use SMB 3 or better</strong> for backup targets; older SMB versions lose features and throughput.</li>
   <li><strong>Separate share per role.</strong> A share for SQL backups should not double as a general departmental drop box.</li>
-  <li><strong>Verify from the engine.</strong> A successful <code>BACKUP DATABASE</code> followed by <code>RESTORE VERIFYONLY FROM DISK = '\\\\fileserver\\sqlbackup\\...'</code> proves both read and write access.</li>
+  <li><strong>Verify from the engine.</strong> Run a test backup and read it with <code>RESTORE VERIFYONLY</code> to check access and basic backup readability; this doesn't replace a test restore and consistency check.</li>
 </ul>
-<p>Where encryption is required, use SMB encryption or IPsec rather than depending on the physical network. Backups are unencrypted database images by default — leaving them on a share with overly broad access is a data-breach waiting to happen.</p>
+<p>Where encryption is required, use SQL Server backup encryption or an approved transport/storage encryption control. Backup encryption isn't automatic for every backup; protect the share with least-privilege ACLs and the organization's data-protection policy.</p>
 `
     },
     {
@@ -140,7 +140,7 @@ Get-SmbShareAccess -Name 'SQLBackup' | Format-Table AccountName, AccessRight, Ac
   <li><strong>Copy across volumes:</strong> inherits the destination ACL. Always re-check <code>icacls</code> after a storage migration or a file copy from another server.</li>
   <li><strong>Move database files:</strong> the engine needs the path changed with <code>ALTER DATABASE ... MODIFY FILE</code>, an offline database, and a physical move that preserves the service account's access.</li>
   <li><strong>robocopy:</strong> <code>/COPY:DAT</code> copies data, attributes, and timestamps but not ACLs; <code>/COPYALL</code> includes security and ownership. Choose deliberately and test the result.</li>
-  <li><strong>Antivirus exclusions:</strong> scanning database files as they are written can lock them and destroy latency. Exclude data, log, tempdb, backup, and dump directories — in consultation with the security team.</li>
+  <li><strong>Antivirus:</strong> follow Microsoft's current SQL Server antivirus guidance and the security team's policy; exclusions should be specific to supported SQL files, processes, and paths rather than copied as a blanket rule.</li>
   <li><strong>Orphaned ACLs:</strong> restoring from a backup taken on another server can bring in SIDs that do not exist locally. Grant access to the local service group explicitly.</li>
   <li><strong>Long paths:</strong> deeply nested restore folders can exceed the historical 260-character limit. Enable long paths or keep the layout shallow.</li>
 </ul>

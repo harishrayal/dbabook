@@ -36,7 +36,7 @@ Get-LocalUser | Select-Object Name, SID, Enabled, LastLogon, PasswordLastSet | F
     {
       h: "Local accounts versus domain accounts",
       html: `
-<p>A <strong>local account</strong> exists in the server's SAM database and is scoped to that machine. A <strong>domain account</strong> lives in Active Directory, is usable across the estate, and participates in Kerberos authentication. Managed identities in Entra ID extend the same idea to cloud-hosted resources.</p>
+<p>A <strong>local account</strong> exists in the server's SAM database and is scoped to that machine. A <strong>domain account</strong> is managed in Active Directory and can be authenticated across domain-joined systems. Kerberos use depends on the service, SPNs, and domain configuration; cloud-managed identities are a separate option for supported Azure services.</p>
 <table>
   <tr><th>Property</th><th>Local</th><th>Domain</th></tr>
   <tr><td>Scope</td><td>Single server</td><td>All domain-joined machines</td></tr>
@@ -45,7 +45,7 @@ Get-LocalUser | Select-Object Name, SID, Enabled, LastLogon, PasswordLastSet | F
   <tr><td>Lifecycle</td><td>Manual on each host</td><td>Central disable, reset, and audit</td></tr>
   <tr><td>Appropriate use</td><td>Standalone servers, workgroup builds</td><td>Enterprise SQL Server services and DBA groups</td></tr>
 </table>
-<p>For a standalone SQL Server, local groups and virtual accounts are fine. For anything domain-joined, use a dedicated <strong>group Managed Service Account (gMSA)</strong> for the engine and Agent, and a domain security group for the DBAs. Do not use a person's own account for a service: when that person leaves and the account is disabled, the database service dies at the next restart.</p>
+<p>For a standalone SQL Server, a virtual service account is often suitable. For domain resources or multi-server scenarios, evaluate a domain account or <strong>group Managed Service Account (gMSA)</strong> supported by the SQL Server version and topology. Use a separate, managed DBA security group. Don't use a person's account for a service.</p>
 <pre><code class="language-powershell">Get-ADServiceAccount -Identity 'svc_sql$' -Properties * | Select-Object Name, Enabled, HostComputer, DNSHostName
 Test-ADServiceAccount -Identity 'svc_sql$'
 Get-LocalGroupMember -Group 'Administrators' | Select-Object Name, PrincipalSource, ObjectClass</code></pre>
@@ -54,15 +54,15 @@ Get-LocalGroupMember -Group 'Administrators' | Select-Object Name, PrincipalSour
     {
       h: "Service accounts and per-service SIDs",
       html: `
-<p>Modern SQL Server installations default to <strong>virtual accounts</strong> named after the service: <code>NT SERVICE\\MSSQLSERVER</code> for the engine and <code>NT SERVICE\\SQLSERVERAGENT</code> for Agent. They have no password to expire, are scoped to the local machine, and carry a <strong>per-service SID</strong> that can be granted rights on the file system. That is why SQL setup can create <code>SQLServerMSSQLUser$SQL01$MSSQLSERVER</code> and grant it access to the data directory without touching a domain account.</p>
-<p>In a domain, a <strong>gMSA</strong> is usually better: Active Directory manages a long, rotating password automatically, interactive logon is disallowed, and the identity works across multiple servers in an Availability Group. Requirements include a Key Distribution Service root key and a principle group listing the hosts allowed to retrieve the password.</p>
+<p>SQL Server Setup commonly configures <strong>virtual service accounts</strong> such as <code>NT SERVICE\\MSSQLSERVER</code> for the engine and <code>NT SERVICE\\SQLSERVERAGENT</code> for Agent. They don't have a password to manage and have per-service identities that can receive local permissions. When a virtual account accesses network resources, the computer account is typically used; use a domain identity when the workload requires a distinct network identity.</p>
+<p>A <strong>gMSA</strong> can be appropriate when a service needs a domain identity and the SQL Server deployment supports it. Active Directory manages its password; configuration requires the account to be permitted on the relevant hosts and depends on domain prerequisites. Validate support and SPN ownership for the specific topology.</p>
 <ul>
   <li><strong>Managed password</strong> — no expiry incident, no password stored in a configuration file</li>
   <li><strong>Stronger identity</strong> — cannot be used interactively by a human</li>
-  <li><strong>SPN registration</strong> — simpler Kerberos configuration for linked servers and double-hop scenarios</li>
+  <li><strong>Kerberos</strong> — the account can own the service SPN; correct SPN and delegation configuration is still required</li>
   <li><strong>Cost</strong> — AD administration and KDS planning; not worth it for a lab box</li>
 </ul>
-<p>Avoid <em>Network Service</em> and shared local accounts for SQL Server: many services share the identity, so one compromised service effectively inherits every other service's permissions.</p>
+<p>Prefer separate, least-privilege service identities over a shared account. Choose the identity based on required local and network access, and follow SQL Server's supported configuration guidance.</p>
 `
     },
     {
@@ -131,14 +131,14 @@ Get-LocalGroupMember -Group 'SQLServerMSSQLUser$SQL01$MSSQLSERVER' | Select-Obje
   <tr><td>Audit and leaver process</td><td>Disable the AD account once</td><td>Change every application that uses the login</td></tr>
   <tr><td>When to use</td><td>Default for domain applications</td><td>Legacy, workgroup, or mixed-platform constraints</td></tr>
 </table>
-<p>For Kerberos to work, SQL Server must register a <strong>Service Principal Name</strong> under the service account. Without it, connections silently fall back to NTLM — which works locally but breaks a double hop to a linked server or file share. Check with:</p>
+<p>Kerberos connections require a correctly registered <strong>Service Principal Name</strong> for the SQL Server service and a client connection using the corresponding name. Without the right SPN, authentication might use another protocol or fail; delegation for a second hop requires additional configuration. Check the service identity and SPN rather than assuming a fallback:</p>
 <pre><code class="language-powershell">setspn -L CONTOSO\\svc_sql
 Test-NetConnection -ComputerName sql01.contoso.com -Port 1433</code></pre>
 <pre><code class="language-sql">-- Windows group login and SID verification
 CREATE LOGIN [CONTOSO\\SQL_DBAs] FROM WINDOWS;
 SELECT name, type_desc, is_disabled FROM sys.server_principals WHERE type IN ('U', 'G');
 SELECT SUSER_SID('CONTOSO\\SQL_DBAs') AS login_sid;</code></pre>
-<p>If a login shows a SID that no longer matches the directory account, drop and recreate the login from Windows, then remap database users with <code>ALTER USER ... WITH LOGIN</code> — after checking for orphaned users with <code>sp_change_users_login</code> or the modern <code>sys.database_principals</code> query.</p>
+<p>If an account was deleted and recreated, its SID changes. Review server logins and database users by SID and use the supported login/user remapping procedure; <code>sp_change_users_login</code> is deprecated, so prefer catalog views and <code>ALTER USER ... WITH LOGIN</code> where appropriate.</p>
 `
     },
     {
@@ -176,7 +176,7 @@ Get-ADUser -Identity 'svc_sql' -Properties Enabled, PasswordLastSet, AccountLock
     },
     {
       q: "When would you use a gMSA instead of a virtual account for SQL Server?",
-      a: "When the instance is domain-joined, especially in an Availability Group or any scenario needing Kerberos delegation. A gMSA gives a domain identity with an automatically rotated password, no interactive logon, and straightforward SPN registration. Virtual accounts are fine for standalone servers where a local, passwordless identity is enough."
+      a: "When the SQL Server version and topology support it and the service needs a domain identity, such as access to domain resources. A gMSA has an Active Directory-managed password, but SPNs and delegation still need correct configuration. A virtual account is often suitable when the service only needs local resources."
     },
     {
       q: "Why grant SQL permissions through Windows groups?",

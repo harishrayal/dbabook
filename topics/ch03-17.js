@@ -16,160 +16,27 @@ window.TOPIC = {
   ],
 
   sections: [
-    {
-      h: "What Storage and Network Troubleshooting means",
-      html: `
-<p>In this topic we examine <strong>Storage and Network Troubleshooting</strong> within Windows Server and infrastructure for DBAs. It is a concept that rewards careful understanding: decisions made here affect reliability, performance and recoverability across the whole estate.</p>
-<p>SQL Server runs on Windows, so the operating system is part of the database platform. Services, accounts, file permissions, networking and the event log are all things a DBA must understand to diagnose failures that look like database problems but are not.</p>
-<p>Windows services are long-running background processes. The SQL Server service, SQL Server Agent and several auxiliary services run under configured accounts; their start mode, state and dependencies determine whether the database is reachable after a reboot.</p>
-<div class="callout fact">
-  <div class="callout-label">Key idea</div>
-  <p>Storage and Network Troubleshooting is not an isolated feature — it interacts with the wider platform, so changes should always be considered in the context of the whole instance and its workloads.</p>
-</div>
-      `,
-    },
-    {
-      h: "Where Storage and Network Troubleshooting fits",
-      html: `
-<p>Service accounts are identities with rights. The principle of least privilege applies: grant only the permissions the service needs (log on as a service, file access to data folders, perhaps domain rights for backups or Kerberos), no more.</p>
-<p>The diagram below places Storage and Network Troubleshooting alongside the core concepts of Windows Server and infrastructure for DBAs. Seeing the relationships makes it easier to reason about cause and effect during an incident.</p>
-<div class="figure">
-  <svg viewBox="0 0 760 340" role="img" aria-label="Storage and Network Troublesh… flow">
-    <defs>
-      <marker id="ga" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-        <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--muted)"/>
-      </marker>
-    </defs>
-    <rect x="230" y="12" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="39" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">1. Service</text>
-    <rect x="230" y="66" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="93" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">2. Account</text>
-    <rect x="230" y="120" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="147" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">3. Permission</text>
-    <rect x="230" y="174" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="201" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">4. Network</text>
-    <rect x="230" y="228" width="300" height="44" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
-    <text x="380" y="255" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">5. Port</text>
-    <rect x="230" y="282" width="300" height="44" rx="9" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="2"/>
-    <text x="380" y="309" text-anchor="middle" fill="var(--text)" font-size="13.5" font-weight="600" font-family="Segoe UI, sans-serif">6. Volume</text>
-    <line x1="380" y1="56" x2="380" y2="66" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="110" x2="380" y2="120" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="164" x2="380" y2="174" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="218" x2="380" y2="228" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <line x1="380" y1="272" x2="380" y2="282" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#ga)"/>
-    <text x="380" y="332" text-anchor="middle" fill="var(--muted)" font-size="12" font-style="italic" font-family="Segoe UI, sans-serif">Storage and Network Troublesh…</text>
-  </svg>
-  <div class="figcaption">Figure 1 — Windows Server and infrastructure for DBAs: how Storage and Network Troubleshooting relates to the core concepts.</div>
-</div>
-      `,
-    },
-    {
-      h: "Storage and Network Troubleshooting in practice",
-      html: `
-<p>NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.</p>
-<p>The following comparison captures the distinctions that matter most when working with Storage and Network Troubleshooting:</p>
-<table>
-  <tr><th>Service</th><th>Purpose</th><th>Typical start mode</th></tr>
-  <tr><td>MSSQLSERVER / MSSQL$INST</td><td>Database Engine</td><td>Automatic</td></tr>
-  <tr><td>SQLSERVERAGENT</td><td>Jobs, alerts, schedules</td><td>Automatic</td></tr>
-  <tr><td>SQLBrowser</td><td>Named-instance resolution</td><td>Automatic (named instances)</td></tr>
-</table>
-<p>Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.</p>
-      `,
-    },
-    {
-      h: "Working with Storage and Network Troubleshooting",
-      html: `
-<p>Theory becomes useful when you can apply it. These examples show realistic commands and queries connected to Storage and Network Troubleshooting. Run them first on a non-production instance and adapt paths and names to your environment.</p>
-<pre><code class="language-powershell">-- Storage and Network Troubleshooting
-Get-Service -Name 'MSSQL*','SQLSERVERAGENT' |
-  Select-Object Name, DisplayName, Status, StartType |
-  Format-Table -AutoSize</code></pre>
-<p>The first example establishes the relevant state. Always confirm what the server reports before changing anything — assumptions are the source of most production mistakes.</p>
-<pre><code class="language-powershell">-- Storage and Network Troubleshooting
-Test-NetConnection -ComputerName db01 -Port 1433 |
-  Select-Object ComputerName, RemotePort, TcpTestSucceeded</code></pre>
-<p>Next, verify the result and capture a baseline. Recording the 'before' state lets you prove that a change had the intended effect and gives you a rollback reference.</p>
-<pre><code class="language-powershell">-- Storage and Network Troubleshooting
-Get-Volume | Select-Object DriveLetter, FileSystemLabel,
+    { h: "Evidence flow", html: `<div class="figure"><svg viewBox="0 0 760 160" role="img" aria-label="Troubleshooting evidence flow"><rect x="20" y="40" width="160" height="70" rx="8" fill="var(--surface-2)" stroke="var(--border)"/><text x="100" y="82" text-anchor="middle" fill="var(--text)" font-size="14">Evidence</text><rect x="300" y="40" width="160" height="70" rx="8" fill="var(--accent-soft)" stroke="var(--accent)"/><text x="380" y="82" text-anchor="middle" fill="var(--text)" font-size="14">Diagnosis</text><rect x="580" y="40" width="160" height="70" rx="8" fill="var(--surface-2)" stroke="var(--border)"/><text x="660" y="82" text-anchor="middle" fill="var(--text)" font-size="14">Resolution</text></svg><div class="figcaption">Figure 1 - Separate evidence, diagnosis, and remediation.</div></div>` },
+    { h: "Separate network and storage symptoms", html: `<p>A connection failure and a slow query may share a time window but have different causes. Diagnose reachability, SQL protocol/authentication, storage capacity, and I/O latency as separate layers.</p>
+<table><tr><th>Symptom</th><th>First evidence</th></tr><tr><td>TCP timeout</td><td>DNS, listener port, firewall, route</td></tr><tr><td>Login or TLS error</td><td>Client error and SQL ERRORLOG</td></tr><tr><td>I/O wait</td><td>SQL waits and file-I/O deltas</td></tr><tr><td>Full disk or backup failure</td><td>Free space, path, identity, and SQL error log</td></tr></table>` },
+    { h: "Network triage", html: `<p>Start from the affected client. Resolve the server name and test the configured listener port. Distinguish a failed TCP handshake from TLS, authentication, or query failures.</p>
+<pre><code class="language-powershell">Resolve-DnsName sql01.contoso.com
+Test-NetConnection sql01.contoso.com -Port 51433 -InformationLevel Detailed</code></pre><p>If TCP fails, check listener binding, host and network firewalls, routing, and addresses. If TCP succeeds, inspect SQL protocol and authentication evidence.</p>` },
+    { h: "Storage triage", html: `<p>Check free space, SQL file locations, autogrowth, Windows events, and storage counters during the incident interval. SQL Server file-I/O values are cumulative; calculate deltas over a known interval.</p>
+<pre><code class="language-powershell">Get-Volume | Select-Object DriveLetter, FileSystemLabel,
   @{n='FreeGB';e={[math]::Round($_.SizeRemaining/1GB,1)}},
-  @{n='SizeGB';e={[math]::Round($_.Size/1GB,1)}} |
-  Format-Table -AutoSize</code></pre>
-<p>The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.</p>
-      `,
-    },
-    {
-      h: "Pitfalls and production guidance",
-      html: `
-<p>Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.</p>
-<table>
-  <tr><th>Port</th><th>Used by</th><th>Protocol</th></tr>
-  <tr><td>1433</td><td>Default instance / listener</td><td>TCP</td></tr>
-  <tr><td>1434</td><td>SQL Server Browser</td><td>UDP</td></tr>
-  <tr><td>5022</td><td>Availability group endpoints</td><td>TCP</td></tr>
-</table>
-<p>Storage layout matters: data, logs and tempdb on separate volumes reduce I/O contention, and each volume's free space and latency directly affect database behaviour.</p>
-<div class="callout warning">
-  <div class="callout-label">Production caution</div>
-  <p>With Storage and Network Troubleshooting, prefer measured, reversible changes. Test on non-production, keep a rollback path, and monitor the effect — a change that looks harmless in isolation can have surprising consequences at scale.</p>
-</div>
-      `,
-    },
-    {
-      h: "Deeper dive: Storage and Network Troubleshooting",
-      html: `
-<p>This section consolidates <strong>Storage and Network Troubleshooting</strong> with a closer look at the mechanisms and the operational decisions that surround it. Revisiting a concept from a second angle is often what turns recognition into real understanding.</p>
-<p>NTFS permissions control who can read or change files. The service account needs modify rights on data, log and backup folders. Misconfigured permissions surface as errors 5 (access denied) or failures to create backups and files.</p>
-<p>Networking fundamentals — IP addresses, subnets, DNS, ports and firewalls — govern connectivity. The default instance listens on TCP 1433; the Browser service on UDP 1434 resolves named instances; availability groups commonly use 5022.</p>
-<div class="callout fact">
-  <div class="callout-label">Remember</div>
-  <p>Storage and Network Troubleshooting sits inside a larger system. Always consider how a change here affects availability, recovery, security and performance elsewhere in the estate.</p>
-</div>
-<p>The distinctions below are the ones that matter most in day-to-day administration:</p>
-<table>
-  <tr><th>Service</th><th>Purpose</th><th>Typical start mode</th></tr>
-  <tr><td>MSSQLSERVER / MSSQL$INST</td><td>Database Engine</td><td>Automatic</td></tr>
-  <tr><td>SQLSERVERAGENT</td><td>Jobs, alerts, schedules</td><td>Automatic</td></tr>
-  <tr><td>SQLBrowser</td><td>Named-instance resolution</td><td>Automatic (named instances)</td></tr>
-</table>
-<p>The firewall is a common cause of 'SQL Server is down' reports when in fact the service is healthy and traffic is simply blocked. Always verify service state, listener state and network path in that order.</p>
-<p>Use the following as a starting point when investigating Storage and Network Troubleshooting. Adapt names and paths to your own environment and run it first on a non-production instance:</p>
-<pre><code class="language-powershell"># Storage and Network Troubleshooting
-Get-Service -Name 'MSSQL*','SQLSERVERAGENT' |
-  Select-Object Name, DisplayName, Status, StartType |
-  Format-Table -AutoSize</code></pre>
-<p>Event Viewer and Performance Monitor are the Windows-side diagnostic tools. The System and Application logs record service stops, disk errors and driver faults; Performance Monitor counter logs reveal CPU, memory and disk pressure over time.</p>
-      `,
-    }
+  @{n='SizeGB';e={[math]::Round($_.Size/1GB,1)}} | Format-Table -AutoSize</code></pre>` },
+    { h: "Correlate and resolve", html: `<ol><li>Record host, client, database, error, timestamp, and recent changes.</li><li>Test DNS and the actual SQL port.</li><li>Check SQL service state, listener, ERRORLOG, and authentication.</li><li>Map SQL files to volumes and align I/O measurements with waits and storage telemetry.</li><li>Change one confirmed cause and retest the same workload.</li></ol><p>Escalate with endpoint details, volume mappings, timestamps, and measured deltas. Avoid arbitrary thresholds, broad firewall changes, or shrinking files as an emergency shortcut.</p>` }
   ],
-
   scenario: {
-    title: "The application that 'could not connect' after patching",
-    html: `
-After a Windows patch cycle the app reported SQL Server unavailable. The engine was healthy — Get-Service showed it running — but the firewall profile had switched from Domain to Public and blocked TCP 1433. Resetting the profile and scoping the rule to the app subnet restored connectivity. The prevention was a scripted firewall rule bound to the Domain profile.
-<p><strong>The Storage and Network Troubleshooting lesson:</strong> symptoms rarely point directly at the cause. Disciplined diagnosis — evidence first, mitigation second, prevention third — turns an incident into a documented improvement rather than a repeat event.</p>
-    `,
+    title: 'Storage latency is mistaken for network loss',
+    html: `<p>The application reports timeouts. DNS and the configured SQL TCP port succeed from the affected client, ruling out listener and firewall reachability. SQL file-I/O deltas and storage telemetry show log-volume latency during the window. The storage issue is repaired and the workload returns to baseline.</p>`
   },
 
   interview: [
-    {
-      q: "Why does the SQL Server service account need least privilege?",
-      a: `
-It limits the blast radius if the service is compromised and avoids unnecessary domain rights; grant only log-on-as-service, file access to data folders and any rights backups or Kerberos genuinely need.
-      `,
-    },
-    {
-      q: "Where do you look for a service that keeps stopping?",
-      a: `
-Windows Event Viewer System and Application logs, SQL Server error log, and the service's dependencies and account — often a password expiry or a failed dependency is the cause.
-      `,
-    },
-    {
-      q: "What order do you check when an app cannot connect?",
-      a: `
-Service state, then listener/protocol state, then network path (ping, Test-NetConnection to the port), then firewall, then SQL-level errors and logins — from outside in.
-      `,
-    }
+    { q: "What evidence must be captured first?", a: "Record the host, client, exact timestamp, error, and recent change. Capture the relevant logs and measurements before changing the suspected layer." },
+    { q: "How do you avoid changing the wrong layer?", a: "Test one confirmed boundary at a time: naming, routing, listener, firewall, authentication, storage, or application behavior. Compare with a known-good baseline where possible." },
+    { q: "What proves a corrective change worked?", a: "Retest the same affected path or workload after the change, preserve before-and-after evidence, and monitor for recurrence under normal load." }
   ],
 
   quiz: [

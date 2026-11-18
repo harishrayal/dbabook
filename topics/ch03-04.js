@@ -19,15 +19,15 @@ window.TOPIC = {
     {
       h: "CPU: cores, sockets, and schedulers",
       html: `
-<p>The CPU executes instructions; SQL Server's schedulers map one-to-one onto logical processors and each running query task occupies a scheduler slot. What matters for a DBA is not the clock speed on the box label but <strong>how many runnable tasks compete for schedulers</strong>.</p>
+<p>The CPU executes instructions. SQL Server creates schedulers for logical processors available to the Database Engine, subject to configuration and edition limits; worker tasks take turns running on schedulers. For a DBA, sustained runnable-task queues and CPU time are more useful than the processor's advertised clock speed alone.</p>
 <table>
   <tr><th>Term</th><th>What it is</th><th>DBA relevance</th></tr>
   <tr><td><strong>Socket</strong></td><td>Physical CPU package in the socket</td><td>NUMA boundaries — cross-socket memory access is slower</td></tr>
   <tr><td><strong>Core</strong></td><td>Independent execution unit inside a socket</td><td>Where parallel query workers actually run</td></tr>
   <tr><td><strong>Logical processor</strong></td><td>Core × hyperthreading</td><td>What Windows shows and what SQL schedulers count</td></tr>
-  <tr><td><strong>Runnable task</strong></td><td>Query work ready to execute</td><td>Persistent &gt; logical processors = CPU starvation</td></tr>
+  <tr><td><strong>Runnable task</strong></td><td>Work ready for a scheduler</td><td>A persistent queue can indicate CPU pressure; compare it with a baseline</td></tr>
 </table>
-<p>Two SQL settings tie directly to the hardware: <strong>max degree of parallelism (MAXDOP)</strong> caps how many schedulers one query may use, and <strong>cost threshold for parallelism</strong> decides when a plan may go parallel at all. Misconfigured, they turn ordinary OLTP workloads into CPU storms.</p>
+<p><strong>MAXDOP</strong> limits processors used by parallel plan execution; it doesn't guarantee a query will use that many. The cost threshold influences when the optimizer considers parallel plans. Set both using workload evidence and current guidance, not as one-size-fits-all hardware switches.</p>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="CPU, memory, and storage data path">
     <defs>
@@ -59,7 +59,7 @@ window.TOPIC = {
     <line x1="380" y1="220" x2="380" y2="136" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#hw-arrow)"/>
     <line x1="630" y1="220" x2="510" y2="136" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#hw-arrow)"/>
 
-    <text x="380" y="332" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">Each tier is ~1000× faster than the one below — the goal is to keep work in the fastest tier that fits.</text>
+    <text x="380" y="332" text-anchor="middle" fill="var(--muted)" font-size="12.5" font-style="italic" font-family="Segoe UI, sans-serif">Latency varies by hardware and workload; measure the resources that queries actually wait on.</text>
   </svg>
   <div class="figcaption">Figure 1 — The resource path: compute in CPU, pages in RAM, persistence on disk.</div>
 </div>
@@ -68,11 +68,11 @@ window.TOPIC = {
     {
       h: "RAM: the tier SQL Server lives in",
       html: `
-<p>Memory is where the buffer pool caches 8-KB data and index pages, where plan cache stores compiled plans, and where sorts and hash joins spill if they do not fit. A page served from RAM takes microseconds; the same page from disk takes milliseconds — three orders of magnitude, which is why memory sizing beats almost every other tuning step.</p>
-<p>Windows itself competes for RAM: the file system cache, drivers, antivirus, and any other process on the box. If SQL Server is allowed to consume everything (the default <code>max server memory</code> is effectively unlimited), the OS starts paging, and the whole machine degrades — this is the classic "SQL Server installed and the server became slow" story.</p>
+<p>SQL Server uses memory for the buffer pool, plans, execution workspaces, and other features. Memory access is usually faster than storage I/O, but actual latency depends on the system and workload; sorts and hash operations can spill to tempdb when grants are insufficient.</p>
+<p>Windows and other processes also need memory. Configure <code>max server memory</code> to leave appropriate headroom for the OS, drivers, and other workloads. SQL Server Setup has provided a recommendation since SQL Server 2019, but the right value depends on the host and the allocations the setting does not cover.</p>
 <pre><code class="language-powershell">Get-Counter '\\Memory\\Available MBytes', '\\Memory\\Pages/sec', '\\Memory\\Committed Bytes' -SampleInterval 5 -MaxSamples 3
 Get-Counter '\\SQLServer:Buffer Manager\\Page life expectancy', '\\SQLServer:Memory Manager\\Memory Grants Pending' -SampleInterval 5 -MaxSamples 3</code></pre>
-<p>Set <code>max server memory</code> explicitly on every instance: total RAM minus 1–4 GB reserved for the OS and other services. Watch <strong>Available MBytes</strong> (the OS's free memory) and <strong>Page life expectancy</strong> (how long pages survive in the buffer pool) together — one without the other tells half the story.</p>
+<p>Set <code>max server memory</code> deliberately for each instance, accounting for OS needs, other instances, and memory used outside that limit. Interpret <strong>Available MBytes</strong> and buffer-pool indicators such as <strong>Page life expectancy</strong> in context and over time; neither is a standalone diagnosis.</p>
 `
     },
     {
@@ -81,11 +81,11 @@ Get-Counter '\\SQLServer:Buffer Manager\\Page life expectancy', '\\SQLServer:Mem
 <p>Storage is the slowest tier and the most common bottleneck in production. Three properties describe it, and they fail independently. A device can be fast at one and poor at the other two, so always name which property your workload depends on:</p>
 <table>
   <tr><th>Property</th><th>Means</th><th>Healthy (data files)</th><th>Symptom when low</th></tr>
-  <tr><td><strong>Latency</strong></td><td>Time per I/O operation</td><td>&lt; 1–10 ms (SSD/SAN)</td><td>Queries stall on PAGEIOLATCH waits</td></tr>
+  <tr><td><strong>Latency</strong></td><td>Time per I/O operation</td><td>Compare with workload requirements and a healthy baseline</td><td>Queries may wait on PAGEIOLATCH or WRITELOG</td></tr>
   <tr><td><strong>IOPS</strong></td><td>Operations per second</td><td>Depends on device class</td><td>Queue grows, throughput collapses</td></tr>
   <tr><td><strong>Throughput</strong></td><td>Bytes per second</td><td>Hundreds of MB/s+</td><td>Backups and scans crawl</td></tr>
 </table>
-<p>SQL Server feels storage problems as <strong>IO waits</strong>: PAGEIOLATCH_* while reading pages, WRITELOG while flushing the log, and ASYNC_IO_COMPLETION during large scans. The transaction log is particularly sensitive — every commit waits for a log write, so log latency multiplies directly into transaction latency.</p>
+<p>SQL Server can expose storage-related waits such as <strong>PAGEIOLATCH_*</strong> for page reads, <strong>WRITELOG</strong> for log flushes, and <strong>ASYNC_IO_COMPLETION</strong> for some asynchronous I/O. Interpret waits with file latency and workload data; fully durable commits depend on log flushes, while group commit and delayed durability affect the relationship to individual transactions.</p>
 <pre><code class="language-powershell">Get-Counter '\\PhysicalDisk(_Total)\\Avg. Disk sec/Transfer', '\\PhysicalDisk(_Total)\\Avg. Disk Queue Length', '\\PhysicalDisk(_Total)\\Disk Bytes/sec' -SampleInterval 5 -MaxSamples 5</code></pre>
 `
     },
@@ -95,7 +95,7 @@ Get-Counter '\\SQLServer:Buffer Manager\\Page life expectancy', '\\SQLServer:Mem
 <p>When a user says "the server is slow", triage the three resources in this order — it takes about five minutes:</p>
 <table>
   <tr><th>Observed</th><th>Resource</th><th>Next check</th></tr>
-  <tr><td>CPU pegged, short queries queue</td><td><strong>CPU</strong></td><td>Processor queue length, top CPU queries in DMVs, MAXDOP</td></tr>
+  <tr><td>CPU high and runnable queues persist</td><td><strong>CPU</strong></td><td>Processor counters, top CPU queries, scheduler queues, MAXDOP</td></tr>
   <tr><td>CPU idle but everything slow</td><td><strong>Memory</strong></td><td>Available MBytes, page life expectancy, PAGEIOLATCH waits</td></tr>
   <tr><td>Waits dominated by WRITELOG/PAGEIOLATCH</td><td><strong>Storage</strong></td><td>Avg. Disk sec/Transfer per volume, file-level stalls in DMVs</td></tr>
   <tr><td>Intermittent, no resource pegged</td><td><strong>Concurrency</strong></td><td>Blocking, tempdb contention, network latency</td></tr>
@@ -108,12 +108,12 @@ Get-Counter '\\SQLServer:Buffer Manager\\Page life expectancy', '\\SQLServer:Mem
     {
       h: "NUMA, sockets, and locality",
       html: `
-<p>Modern servers group cores and memory into <strong>NUMA nodes</strong> (one per socket). Memory inside a node is fast to reach; memory on the other socket costs extra hops. SQL Server is NUMA-aware: it allocates memory per node and schedules queries locally when it can.</p>
+<p>NUMA hardware groups processors and memory into nodes; their mapping to sockets varies by platform and virtualization. Local memory access is generally lower latency than remote-node access. SQL Server is NUMA-aware, but topology and workload determine whether locality is a bottleneck.</p>
 <p>Why a DBA cares:</p>
 <ul>
   <li><strong>Cross-node memory grants</strong> add latency to large sorts and hash joins</li>
-  <li><strong>Soft-NUMA settings</strong> can split a socket into smaller nodes to reduce latch contention — a deliberate tuning choice, not a default</li>
-  <li><strong>VM vCPU topology</strong> should match the host's NUMA boundaries; crossing them silently taxes every query</li>
+  <li><strong>Soft-NUMA</strong> changes scheduler-node groupings; don't treat it as a general latch-contention fix</li>
+  <li><strong>VM vCPU topology</strong> should be reviewed with the virtualization team when CPU or memory locality is implicated</li>
 </ul>
 <pre><code class="language-powershell">Get-Counter '\\NUMA Node Memory\\Total Mbytes' -SampleInterval 5 -MaxSamples 1
 Get-CimInstance Win32_PerfRawData_Counters_ProcessorInformation | Select-Object -First 4 Name, ProcessorQueueLength</code></pre>
@@ -130,7 +130,7 @@ Get-CimInstance Win32_PerfRawData_Counters_ProcessorInformation | Select-Object 
   <li><strong>Ignoring the log file:</strong> a log on slow storage caps throughput no matter how fast the data files are</li>
   <li><strong>No baseline:</strong> without normal numbers you cannot prove that the new report — or the new hardware — actually changed anything</li>
 </ul>
-<p>Watch for the interaction effects too: slow storage inflates CPU wait times, memory pressure pushes reads onto disk, and a starved CPU delays log flushes. When all three counters look unhealthy, find the first domino rather than "upgrading everything".</p>
+<p>Watch for interactions: memory pressure can increase I/O, CPU pressure can delay work, and storage latency can extend waits. Correlate measurements before assigning a root cause or changing hardware.</p>
 <p>Capacity planning starts with evidence: capture counters for a week under normal load, then project growth from business drivers (row counts, transaction volume) rather than from panic.</p>
 `
     },
@@ -166,19 +166,19 @@ Get-Volume | Select-Object DriveLetter, FileSystemLabel,
   scenario: {
     title: "CPU at 100% for six minutes every hour, then perfectly fine",
     html: `
-<p>An order-processing server shows a clockwork pattern: CPU climbs to 100% at the top of every hour for roughly six minutes, queries time out during the window, and everything recovers. Application teams blame "SQL Server being SQL Server".</p>
-<p>The DBA correlates the timestamps and finds a single stored procedure in the hourly scheduled job with a parallel plan (MAXDOP default = all 8 logical processors) running a wide scan, plus a missing index on a 30-million-row table. Resolution: MAXDOP set to 4 for the instance, cost threshold for parallelism raised from the default 5 to 50, and a covering index added after verifying with the actual execution plan. Prevention: instance-level MAXDOP and cost-threshold defaults documented as part of the build baseline, and an alert on sustained CPU &gt; 90% for five minutes. The hardware was fine; a default configuration was not.</p>
+<p>An order-processing server shows a clockwork CPU spike at the top of every hour, and queries time out during the window. The DBA correlates the timings with SQL Agent history and identifies a reporting job running a large scan at the same time as order processing.</p>
+<p>Before changing MAXDOP or adding an index, the DBA captures query plans, CPU and scheduler data, and the competing workload. The job is rescheduled after review with the application owner; a query/index change is tested against representative data and measured before deployment. Prevention: retain a normal-period baseline and monitor the scheduled workload alongside SQL Server CPU.</p>
 `
   },
 
   interview: [
     {
       q: "How do you tell a CPU-bound server from an I/O-bound one?",
-      a: "CPU-bound: % Processor Time sustained high, processor queue length above logical processors, and queries wait on SOS_SCHEDULER_YIELD. I/O-bound: CPU often idle, waits are PAGEIOLATCH or WRITELOG, and Avg. Disk sec/Transfer is elevated. The wait-type profile is the fastest discriminator — it tells you what queries are actually waiting for."
+      a: "Look at sustained CPU use, scheduler runnable queues, query CPU, relevant wait statistics, and per-volume or per-file latency together. High SOS_SCHEDULER_YIELD can support a CPU-pressure hypothesis; PAGEIOLATCH or WRITELOG can point toward I/O waits, but none proves a cause alone."
     },
     {
       q: "Why does SQL Server need max server memory configured explicitly?",
-      a: "By default SQL Server can grow its buffer pool until the OS itself is starved, causing paging and machine-wide slowdown. Setting max server memory leaves headroom for Windows, antivirus, and other services on the host, and makes memory behaviour predictable and auditable."
+      a: "Configuring max server memory sets an upper bound for memory managed by SQL Server's memory manager and helps leave capacity for Windows and other workloads. The limit doesn't cover every SQL Server allocation, so size it using host and workload requirements."
     },
     {
       q: "What is the difference between latency, IOPS, and throughput?",

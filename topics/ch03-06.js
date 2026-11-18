@@ -37,8 +37,8 @@ window.TOPIC = {
 <p>Windows builds an <strong>access token</strong> at logon containing the user's SID and every group SID, then compares that token with the DACL of the object being opened. The result is the <strong>effective permission</strong>. Four rules govern almost every surprise:</p>
 <ul>
   <li><strong>Allow entries accumulate.</strong> A user in three groups effectively receives the union of all three groups' allows.</li>
-  <li><strong>Deny wins.</strong> An explicit deny for any SID in the token overrides an allow, even one granted more generously elsewhere. This is why a lazy "Deny Everyone" is so destructive.</li>
-  <li><strong>Explicit beats inherited.</strong> Permissions set directly on the folder take precedence over entries inherited from its parent.</li>
+  <li><strong>ACE order matters.</strong> Windows evaluates applicable ACEs in DACL order; canonical ACLs place explicit entries before inherited entries and deny entries before allows at the same level. A deny can block the rights it names, so inspect the effective ACL rather than relying on a slogan.</li>
+  <li><strong>Explicit and inherited entries interact.</strong> Explicit ACEs are ordered before inherited ACEs in a canonical DACL, but evaluate the complete DACL and token to determine effective access.</li>
   <li><strong>Ownership matters.</strong> The owner can always change the DACL, even if the owner cannot read the file — the basis of <code>takeown</code> recovery.</li>
 </ul>
 <div class="figure">
@@ -75,9 +75,9 @@ window.TOPIC = {
     <line x1="330" y1="246" x2="225" y2="276" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#nt-arrow)"/>
     <line x1="430" y1="246" x2="535" y2="276" stroke="var(--muted)" stroke-width="1.6" marker-end="url(#nt-arrow)"/>
   </svg>
-  <div class="figcaption">Figure 1 — The token is matched against the DACL; a single matching deny entry overrides any allow.</div>
+  <div class="figcaption">Figure 1 — Windows evaluates the requesting token against the ordered DACL to determine access.</div>
 </div>
-<p>Prefer allows to denies. Grant the smallest useful set of rights to a dedicated group, and reserve deny entries for genuinely exceptional cases — their precedence makes them hard to reason about at 3 AM.</p>
+<p>Prefer narrowly scoped allow entries and avoid adding deny ACEs as a shortcut. Use Windows' effective-access tools and inspect the ordered ACL when diagnosing unexpected results.</p>
 `
     },
     {
@@ -160,7 +160,7 @@ icacls "E:\\SQL\\Data" /remove:g "BUILTIN\\Users" /T</code></pre>
     },
     {
       q: "Explain explicit deny, inherited allow, and why ordering matters.",
-      a: "Windows evaluates deny ACEs that match the token before allow ACEs, so a deny overrides any allow — even an explicit allow from another group. An explicit entry on the object also takes precedence over an inherited one. That is why I grant narrowly with groups and use deny only in genuinely exceptional cases."
+      a: "Windows checks applicable ACEs in DACL order. Canonical ACLs put explicit ACEs before inherited ones and deny ACEs before allows at the same level, but the requested rights, token, and ACE order all matter. I inspect the effective ACL instead of assuming a deny always wins."
     },
     {
       q: "What is the difference between NTFS and share permissions for a backup target?",

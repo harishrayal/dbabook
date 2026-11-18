@@ -19,7 +19,7 @@ window.TOPIC = {
     {
       h: "What a service is",
       html: `
-<p>A <strong>Windows service</strong> is an executable registered with the <strong>Service Control Manager (SCM)</strong> so it can start automatically at boot, run in its own session without an interactive user, and be started, stopped, paused, and queried by other processes. Services are why your database is available at 4 AM with nobody at a keyboard.</p>
+<p>A <strong>Windows service</strong> is a program managed by the <strong>Service Control Manager (SCM)</strong>. Depending on its configuration, it can start at boot or on demand and run without an interactive user. The SCM tracks service state and handles supported control requests.</p>
 <p>Each service has a display name (what humans see in <code>services.msc</code>), a short service name (what scripts and <code>sc</code> use), a binary path, an account it runs under, and a set of dependencies — other services that must be running first. The SCM owns all of this configuration in the registry and enforces it at every boot.</p>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="Windows service lifecycle managed by the SCM">
@@ -78,18 +78,18 @@ window.TOPIC = {
 <table>
   <tr><th>Startup type</th><th>Behaviour at boot</th><th>Typical use</th></tr>
   <tr><td><strong>Automatic</strong></td><td>Starts during boot, in dependency order</td><td>SQL Server Database Engine, SQL Agent</td></tr>
-  <tr><td><strong>Automatic (Delayed Start)</strong></td><td>Starts ~2 minutes after boot</td><td>Reduces boot contention on busy servers</td></tr>
-  <tr><td><strong>Manual</strong></td><td>Starts only when another service or command requests it</td><td>SQL Server Browser on some builds</td></tr>
+  <tr><td><strong>Automatic (Delayed Start)</strong></td><td>Starts after automatically started services; timing is not a fixed two minutes</td><td>Services that can start later in boot</td></tr>
+  <tr><td><strong>Manual</strong></td><td>Can be started on demand or by a trigger</td><td>Optional services</td></tr>
   <tr><td><strong>Disabled</strong></td><td>Cannot start at all</td><td>Attack-surface reduction — never for the Engine</td></tr>
 </table>
-<p>States are <code>Running</code>, <code>Stopped</code>, <code>Paused</code> (the SCM still tracks it, but requests queue), and <code>StartPending</code>/<code>StopPending</code> transitional states you see while a service is coming up or shutting down — SQL Server can sit in <code>StopPending</code> for minutes while it rolls back transactions.</p>
+<p>Common states include <code>Running</code>, <code>Stopped</code>, <code>Paused</code>, and transitional states such as <code>StartPending</code> or <code>StopPending</code>. A service that takes a long time to stop may be completing work or failing to respond; inspect its logs and dependencies rather than assuming requests are queued.</p>
 `
     },
     {
       h: "Dependencies, accounts, and recovery",
       html: `
-<p>A service's <strong>dependencies</strong> are services that must be running before it can start. The Engine typically depends on RPCSS and HTTP; SQL Agent depends on the Engine. If a dependency is stopped or stuck, your service will not start and the SCM logs a clear event.</p>
-<p><strong>Recovery options</strong> define what happens after the first, second, and subsequent failures: restart the service, run a program, or reboot the machine. On a database server the sensible default is <em>restart the service</em> with a reset period, never <em>reboot the machine</em> — a reboot turns one service failure into a full outage with failover and recovery time attached.</p>
+<p>A service can declare <strong>dependencies</strong> that the SCM must start first. Inspect the actual configuration rather than assuming a dependency list; a stopped dependency can prevent startup and usually produces an SCM event.</p>
+<p><strong>Recovery options</strong> define configured actions after service failures, such as restarting the service or running a program. Review them as part of the service's recovery design; avoid automatic machine reboots unless the host-level recovery plan explicitly requires them.</p>
 <pre><code class="language-powershell">Get-Service SQLSERVERAGENT | Format-List Name, DisplayName, Status, StartType
 Get-Service SQLSERVERAGENT -RequiredServices | Format-Table Status, Name, DisplayName
 sc qc MSSQLSERVER
@@ -100,11 +100,11 @@ sc qdescription MSSQLSERVER</code></pre>
     {
       h: "Managing services safely",
       html: `
-<p>PowerShell is the safe interface: it validates input, works remotely through <code>Invoke-Command</code>, and can be scripted and reviewed. The rules for production are simple:</p>
+<p>Use an approved management tool and change process. SQL Server Configuration Manager is the supported tool for SQL-specific service-account and network configuration; SCM tools can inspect and control service state. For production:</p>
 <ul>
   <li><strong>Never stop the Engine to "try something"</strong> — stopping SQL Server disconnects every client and starts a recovery cycle on restart</li>
   <li><strong>Change startup type deliberately</strong> — <code>Set-Service -StartupType Disabled</code> on the Engine guarantees the next reboot is an outage</li>
-  <li><strong>Use SQL Server Configuration Manager for SQL services</strong> — it also fixes registry and permission state that the plain Services console does not touch</li>
+  <li><strong>Use SQL Server Configuration Manager for SQL-specific configuration</strong> — don't assume a generic service-control tool updates SQL network or account settings</li>
   <li><strong>Restart Agent, not the Engine, for Agent-only problems</strong> — job failures rarely justify taking the database offline</li>
 </ul>
 <pre><code class="language-powershell">Set-Service -Name SQLSERVERAGENT -StartupType Automatic
@@ -124,7 +124,7 @@ Get-Service MSSQLSERVER, SQLSERVERAGENT | Format-Table Status, StartType, Name</
   <li><strong>Check the account</strong>: a domain account with an expired password or a changed password stops the service from logging on</li>
   <li><strong>Check dependencies and ports</strong>: a stopped dependency or a port already held by another process both produce start failures</li>
 </ol>
-<p>Common error codes: <strong>5</strong> (access denied — wrong account or permissions), <strong>1053</strong> (the service did not respond in time — often a hung start), <strong>1067</strong> (the process terminated unexpectedly — read the service's own log).</p>
+<p>Common error codes include <strong>5</strong> (access denied), <strong>1053</strong> (the service didn't respond to the start or control request in time), and <strong>1067</strong> (the process terminated unexpectedly). These codes narrow the investigation; consult the service's own log for the underlying cause.</p>
 `
     },
     {

@@ -19,7 +19,7 @@ window.TOPIC = {
     {
       h: "What Windows Server is",
       html: `
-<p><strong>Windows Server</strong> is Microsoft's server operating system: the platform layer that manages hardware, identity, networking, storage, and security for everything running on the machine — including SQL Server. It shares a kernel with desktop Windows, but it is licensed, configured, and operated differently: no consumer apps, server-grade defaults, and a much heavier emphasis on roles that serve other machines.</p>
+<p><strong>Windows Server</strong> is Microsoft's server operating system. It provides the OS, identity, networking, storage, and security services used by workloads such as SQL Server. It shares much of its Windows codebase with client Windows, but editions, licensing, supported roles, and operational practices differ.</p>
 <p>For a DBA the operating system is the floor of the building. When the database is slow, the cause is frequently below SQL Server: a full volume, a service running under the wrong account, a firewall rule, a failing disk driver, or a patch that rebooted the box at 3 AM. You do not need to become a Windows administrator, but you must be able to read the OS well enough to separate "SQL Server has a problem" from "the server under SQL Server has a problem".</p>
 <div class="figure">
   <svg viewBox="0 0 760 340" role="img" aria-label="Windows Server stack under SQL Server">
@@ -61,11 +61,11 @@ window.TOPIC = {
 <table>
   <tr><th>Concept</th><th>Meaning</th><th>DBA example</th></tr>
   <tr><td><strong>Role</strong></td><td>A major server capability</td><td>Failover Clustering (needed for FCI), DNS, File Services</td></tr>
-  <tr><td><strong>Feature</strong></td><td>A supporting component</td><td>.NET Framework 3.5, which older SQL installers still require</td></tr>
+  <tr><td><strong>Feature</strong></td><td>A supporting component</td><td>Install only when an application or SQL Server version requires it</td></tr>
   <tr><td><strong>Desktop Experience</strong></td><td>Full GUI shell</td><td>Familiar, but heavier patch surface</td></tr>
   <tr><td><strong>Server Core</strong></td><td>Minimal install, no GUI</td><td>Smaller attack surface; managed remotely with PowerShell</td></tr>
 </table>
-<p>Roles are installed with Server Manager or PowerShell's <code>Install-WindowsFeature</code>. A database server typically keeps its role list deliberately short: the fewer features present, the fewer patches, reboots, and surprises.</p>
+<p>On Windows Server, roles and features can be installed with Server Manager or PowerShell's <code>Install-WindowsFeature</code>. Keep the installed components aligned with documented workload requirements; removing unnecessary components can reduce maintenance and attack surface.</p>
 `
     },
     {
@@ -88,17 +88,16 @@ Get-NetIPConfiguration | Format-Table InterfaceAlias, IPv4Address, DefaultGatewa
     {
       h: "Versions, builds, and support lifecycle",
       html: `
-<p>Know which Windows Server you are on before anything else — SQL Server's supported OS matrix is version- and edition-specific, and an unsupported platform is a problem you cannot fix with configuration. Server 2016, 2019, 2022, and 2025 are the modern line; each has a long support phase followed by extended support, during which security patches continue but design changes stop.</p>
+<p>Check the exact Windows Server release, edition, and build before installing SQL Server. Support is version- and edition-specific, and both products have separate lifecycle dates; don't infer compatibility from the year in their names. Recheck Microsoft's current support matrix when planning a deployment or upgrade.</p>
 <table>
   <tr><th>Version</th><th>Typical pairing</th><th>DBA note</th></tr>
-  <tr><td><strong>Server 2016 / 2019</strong></td><td>SQL Server 2016 – 2019</td><td>Still common in production estates; plan upgrades before extended support ends</td></tr>
-  <tr><td><strong>Server 2022</strong></td><td>SQL Server 2022</td><td>Current mainstream target for new builds</td></tr>
-  <tr><td><strong>Server 2025</strong></td><td>SQL Server 2025</td><td>Newest platform — verify feature parity before adopting</td></tr>
+  <tr><td><strong>Windows Server release</strong></td><td>Check SQL Server's published OS requirements</td><td>Compatibility can vary by SQL Server version and edition</td></tr>
+  <tr><td><strong>SQL Server release</strong></td><td>Check Microsoft's lifecycle and servicing policy</td><td>Plan upgrades using both OS and database-engine support dates</td></tr>
 </table>
 <p>Get the exact build with PowerShell — the <code>OsBuildNumber</code> and product type matter when you open a support case:</p>
 <pre><code class="language-powershell">Get-ComputerInfo | Select-Object OsName, OsVersion, OsBuildNumber, WindowsInstallationType
 Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' | Select-Object ProductName, DisplayVersion, CurrentBuild</code></pre>
-<p>Two practical rules: never install SQL Server on an OS version that Microsoft's support matrix does not list for that SQL version, and track the OS support end date alongside the SQL Server end of life — the two dates drive your upgrade roadmap together.</p>
+<p>Use Microsoft's version-specific hardware and software requirements and lifecycle pages as the authority; product names alone aren't a compatibility matrix.</p>
 `
     },
     {
@@ -110,7 +109,7 @@ Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' | Sele
   <tr><td><strong>Services</strong></td><td>Starting the Engine, Agent, and Browser</td><td>Instance won't start after a reboot</td></tr>
   <tr><td><strong>NTFS permissions</strong></td><td>Reading MDF/NDF/LDF files</td><td>"Access is denied" in the error log</td></tr>
   <tr><td><strong>Memory &amp; CPU scheduling</strong></td><td>Buffer pool, schedulers, parallelism</td><td>Starvation, paging, unexpected reboots</td></tr>
-  <tr><td><strong>TCP/IP stack</strong></td><td>Client connections on port 1433</td><td>Timeouts after a firewall or NIC change</td></tr>
+  <tr><td><strong>TCP/IP stack</strong></td><td>Client connections on the configured listener port (1433 is the default instance's default)</td><td>Timeouts after a firewall, protocol, or NIC change</td></tr>
 </table>
 <p>This is why DBAs read Windows logs at all: when SQL Server reports something vague like a start failure or a connectivity timeout, Event Viewer, <code>netstat</code>, and the service configuration usually name the culprit first.</p>
 `
@@ -118,11 +117,11 @@ Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' | Sele
     {
       h: "Pitfalls on production Windows Servers",
       html: `
-<p>Most Windows-layer outages on database servers are self-inflicted:</p>
+<p>Common Windows-layer risks on database servers include:</p>
 <ul>
   <li><strong>Unattended patching</strong> — Windows Update configured to auto-restart outside a maintenance window will reboot your primary at the worst possible moment</li>
   <li><strong>Role creep</strong> — installing IIS or .NET components "for one report" widens the patch and attack surface of a production DB</li>
-  <li><strong>Wrong power plan</strong> — Balanced throttles CPUs; database servers want High Performance so schedulers are never waiting for clock ramp-up</li>
+  <li><strong>Power policy changes</strong> — CPU power settings can affect latency; follow the platform team's supported baseline and measure before changing them</li>
   <li><strong>GUI habits on Core</strong> — relying on Remote Desktop for management means you have no plan for when RDP itself is the broken layer</li>
   <li><strong>Drift</strong> — servers configured by hand and never re-checked; document the build, then verify it with scripts after every change</li>
 </ul>
@@ -132,7 +131,7 @@ Get-ItemProperty 'HKLM:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion' | Sele
     {
       h: "Patch levels and update channels",
       html: `
-<p>Windows Update on a database server is a change-management problem, not a technical one. Patches arrive in categories: security-only updates, cumulative updates, .NET updates, and the optional "preview" releases that are effectively next month's test. On a DBA-managed host you care about three things — what is installed, what is pending, and when the machine will reboot.</p>
+<p>Windows servicing on a database server needs change control. Update types and servicing behavior vary by Windows Server release and policy; review what is installed, what is pending, and whether a restart is required before scheduling maintenance.</p>
 <pre><code class="language-powershell">Get-HotFix | Sort-Object InstalledOn -Descending | Select-Object -First 10 HotFixID, Description, InstalledOn
 Get-ComputerInfo | Select-Object OsBuildNumber, WindowsBuildLabEx
 $session = New-Object -ComObject Microsoft.Update.Session; $searcher = $session.CreateUpdateSearcher(); $searcher.Search('IsInstalled=0').Updates | Select-Object Title, MsrcSeverity</code></pre>
@@ -150,15 +149,15 @@ $session = New-Object -ComObject Microsoft.Update.Session; $searcher = $session.
   scenario: {
     title: "SQL Server installer failed 40 minutes into a new build",
     html: `
-<p>A DBA is asked to stand up a new SQL Server 2022 instance on a freshly built Windows Server VM. The installer aborts at the rule-check stage: ".NET Framework 3.5 feature is not installed." The project deadline is today, the app team is waiting, and the infrastructure team insists the build "follows the standard template".</p>
-<p>The DBA confirms the failure with <code>Get-WindowsFeature NET-Framework-Core</code> (state: Available, not Installed), checks that the offline source for the 3.5 payload is configured, then installs the feature with <code>Install-WindowsFeature NET-Framework-3.5 -IncludeManagementTools</code>. The install proceeds. Prevention: the golden VM template is amended to include the feature, and a pre-flight script now validates OS features, disk free space, and network profile before any SQL installation is attempted — a failed installer rule should never be discovered mid-project.</p>
+<p>A DBA is asked to install SQL Server 2022 on a Windows Server VM. Setup's prerequisite check rejects the operating system, which is an older release than SQL Server 2022 supports. The infrastructure template predates the database version, and the project deadline is today.</p>
+<p>The DBA confirms the OS name and build with <code>Get-ComputerInfo</code>, checks Microsoft's SQL Server 2022 requirements, and stops rather than trying to bypass Setup's rule. The host is rebuilt on a supported Windows Server release, then setup is rerun. Prevention: the build request records both the SQL Server version and a validated OS combination, and preflight checks reject unsupported pairs before installation begins.</p>
 `
   },
 
   interview: [
     {
       q: "How is Windows Server different from desktop Windows?",
-      a: "Same kernel, different mission: it is licensed and configured to serve other machines, with server roles (Active Directory, DNS, clustering, file services), no consumer software, and defaults geared to uptime and remote management. It is often installed as Server Core without a GUI to reduce patch surface, and managed through PowerShell and Server Manager."
+      a: "Windows Server is designed and licensed for server workloads, with roles and features such as AD DS, DNS, clustering, and file services. It can be installed with Desktop Experience or Server Core; the choice affects the local management tools available, not whether the OS can host SQL Server."
     },
     {
       q: "A SQL Server instance will not start after a reboot. Where do you look first?",

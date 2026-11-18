@@ -86,18 +86,18 @@ window.TOPIC = {
     {
       h: "MBR versus GPT: the partition table",
       html: `
-<p>Two partition-table formats exist, and choosing the wrong one silently caps how much of a LUN you can use. <strong>MBR</strong> (Master Boot Record) is the legacy format: a 32-bit sector address, a 2 TiB ceiling, and four primary partition slots. <strong>GPT</strong> (GUID Partition Table) is the modern format: 64-bit addressing, 128 partition entries by default, and a backup copy of the table at the end of the disk.</p>
+<p><strong>MBR</strong> (Master Boot Record) is a legacy partition style with a roughly 2 TiB address limit on disks using 512-byte sectors and at most four primary partition entries. <strong>GPT</strong> (GUID Partition Table) supports larger disks and more partitions, and keeps redundant partition-table metadata.</p>
 <table>
   <tr><th>Property</th><th>MBR</th><th>GPT</th></tr>
-  <tr><td>Maximum disk size</td><td>2 TiB</td><td>9.4 ZB (effectively unlimited)</td></tr>
+  <tr><td>Disk size</td><td>Limited to about 2 TiB with 512-byte sectors</td><td>Supports disks larger than 2 TiB; practical limits depend on Windows and storage</td></tr>
   <tr><td>Partition entries</td><td>4 primary, or 3 primary plus extended</td><td>128 by default</td></tr>
-  <tr><td>Boot requirement</td><td>BIOS or UEFI</td><td>UEFI for the boot disk; data disks work either way</td></tr>
+  <tr><td>Boot requirement</td><td>Commonly used with BIOS boot</td><td>Required for native UEFI boot; data-disk use is separate from boot mode</td></tr>
   <tr><td>Integrity</td><td>No checksum, single table copy</td><td>CRC checksums plus a backup header</td></tr>
   <tr><td>Partition identity</td><td>Byte offsets</td><td>GUIDs — stable across reordering</td></tr>
 </table>
-<p>The classic symptom is a 4 TB LUN that shows up as 2 TB usable in Disk Management. Nothing is broken; the disk was initialised as MBR, so the extra address space simply cannot be described. Converting MBR to GPT destroys data unless you use a tool that performs an in-place conversion — and that tool is a change with its own risk. Check before you build, not after:</p>
+<p>A multi-terabyte LUN that shows only about 2 TiB usable might be using MBR. Check the disk before creating partitions. Initializing or converting a disk can erase data; conversion options differ for boot and data disks, so verify backups and Microsoft's supported procedure before proceeding.</p>
 <pre><code class="language-powershell">Get-Disk | Format-Table Number, FriendlyName, PartitionStyle, @{n='SizeGB';e={[math]::Round($_.Size/1GB,1)}}, OperationalStatus -AutoSize</code></pre>
-<p>Build standard for any new SQL Server volume: GPT, one partition per LUN where possible, and the partition aligned to the storage array's preferred boundary. Windows 10/Server 2016 and later align partitions correctly by default, but old templates and cloned VMs can carry legacy layouts forward.</p>
+<p>For new SQL Server volumes, GPT is the usual choice, especially for disks larger than 2 TiB. Partition count, alignment, and layout should follow the storage platform's supported design; inspect legacy templates and cloned VMs rather than assuming their layout is suitable.</p>
 `
     },
     {
@@ -118,16 +118,16 @@ mountvol</code></pre>
     {
       h: "Allocation unit size and formatting",
       html: `
-<p>NTFS stores files in <strong>clusters</strong>, also called allocation units. The default is 4 KB. SQL Server reads in 8 KB pages and allocates space in 64 KB extents, so a 4 KB cluster means one extent spans sixteen separate clusters — more metadata work and less predictable sequential I/O. Microsoft's storage guidance for SQL Server recommends <strong>64 KB allocation units</strong> on data and log volumes.</p>
+<p>NTFS stores files in <strong>clusters</strong>, also called allocation units; 4 KB is a common default. SQL Server pages are 8 KB and extents are 64 KB. A 64 KB allocation unit is a common SQL Server data-volume recommendation, but it isn't a guarantee of higher performance; follow current Microsoft and storage-vendor guidance for the specific workload and volume.</p>
 <pre><code class="language-powershell">Format-Volume -DriveLetter L -FileSystem NTFS -AllocationUnitSize 65536 -NewFileSystemLabel 'SQLLog' -Confirm:$false</code></pre>
 <p>Allocation unit size is fixed at format time. Changing it later means rebuilding the volume and moving every file, so it belongs in the build checklist alongside the partition style. Other formatting decisions that matter:</p>
 <table>
   <tr><th>Option</th><th>Guidance for SQL Server</th></tr>
-  <tr><td><strong>NTFS compression</strong></td><td>Do not compress data or log files — CPU cost and unsupported behaviour; it also complicates backups and restores</td></tr>
+  <tr><td><strong>NTFS compression</strong></td><td>Don't enable on live database files unless the SQL Server version and workload are explicitly supported; test performance and recovery implications</td></tr>
   <tr><td><strong>EFS encryption</strong></td><td>Not supported for SQL Server database files; use BitLocker at the volume level if encryption is required</td></tr>
   <tr><td><strong>BitLocker</strong></td><td>Supported, but test key escrow, recovery mode, and performance before production</td></tr>
   <tr><td><strong>Deduplication</strong></td><td>Not supported on live database files; fine on backup targets that the backup product understands</td></tr>
-  <tr><td><strong>Quick format</strong></td><td>Writes new metadata only — old blocks remain recoverable; full format or array-level zeroing for sensitive media</td></tr>
+  <tr><td><strong>Quick format</strong></td><td>Doesn't overwrite every data sector; use the organization's approved sanitization process for sensitive media</td></tr>
   <tr><td><strong>Sector size</strong></td><td>Check 512e versus 4Kn with <code>Get-Disk</code>; Windows aligns by default but old arrays may not</td></tr>
 </table>
 `
@@ -141,10 +141,10 @@ mountvol</code></pre>
   <tr><td><strong>C:</strong></td><td>Windows, SQL binaries, memory dumps</td><td>120–200 GB</td><td>Patching and crash dumps must not consume database space</td></tr>
   <tr><td><strong>E:</strong> data</td><td>All user MDF/NDF files</td><td>Grows with data</td><td>Extend or restore without touching the log volume</td></tr>
   <tr><td><strong>L:</strong> log</td><td>LDF files only</td><td>Peak log + headroom</td><td>Sequential, latency-sensitive writes; log growth is independent</td></tr>
-  <tr><td><strong>T:</strong> tempdb</td><td>8 equally sized tempdb files</td><td>Fixed, pre-sized</td><td>Recreated at restart; isolates contention and runaway growth</td></tr>
-  <tr><td><strong>B:</strong> backup</td><td>Full, differential, and log backups</td><td>2–3× database size</td><td>Backup bursts must never fill the data volume</td></tr>
+  <tr><td><strong>T:</strong> tempdb</td><td>tempdb data and log files</td><td>Size and file count based on workload</td><td>Recreated at restart; monitor space and allocation contention</td></tr>
+  <tr><td><strong>B:</strong> backup</td><td>Local staging or backup cache, if needed</td><td>Based on backup sizes and retention</td><td>Keep recoverable copies off-host and monitor free space</td></tr>
 </table>
-<p>Two refinements matter in practice. First, <strong>pre-size</strong> data and log files rather than relying on autogrowth: a 10 percent growth event on a 2 TB file is a 200 GB pause, and log growth cannot use instant file initialisation, so it zeroes every new byte. Second, keep <strong>tempdb</strong> on its own volume even when it is small, because a single runaway query can add tens of gigabytes in minutes.</p>
+<p>Pre-size files for expected workload where practical and choose autogrowth increments based on observed growth; percentage growth can become very large as files grow. Instant file initialization can accelerate data-file growth when enabled. Transaction-log growth is normally zero-initialized, with limited instant initialization support for log autogrowth up to 64 MB in SQL Server 2022 and later. Place tempdb according to measured capacity and I/O needs, and monitor it for growth and contention.</p>
 <p>If the array supports tiers or quality-of-service policies, put the log on the lowest-latency tier. Every commit waits for a log write, so log latency multiplies straight into transaction latency — more so than data-file latency, which the buffer pool can often hide.</p>
 `
     },
@@ -155,15 +155,15 @@ mountvol</code></pre>
 <ul>
   <li><strong>Thin provisioning:</strong> the LUN reports capacity the array does not physically have. Everything looks fine until the pool fills, then every write on every volume fails at once.</li>
   <li><strong>Snapshots and VSS:</strong> snapshot delta files consume array or volume space; a long-running snapshot can exhaust a volume that looks healthy in Windows.</li>
-  <li><strong>Percentage autogrowth:</strong> growth time scales with file size and blocks writes while it happens. Use fixed MB increments of 512–1024 MB for data, and larger, planned increments for logs.</li>
-  <li><strong>Instant file initialisation:</strong> grant the SQL Server service account <em>Perform Volume Maintenance Tasks</em> so data files allocate instantly; the log is deliberately excluded because it must be zeroed.</li>
+  <li><strong>Autogrowth:</strong> growth events can pause work and percentage increments increase with file size. Choose fixed or percentage increments to suit the workload, and pre-size files where practical.</li>
+  <li><strong>Instant file initialization:</strong> the SQL Server service identity needs <em>Perform Volume Maintenance Tasks</em> for supported data-file operations. Log-file support is version- and growth-size-dependent.</li>
   <li><strong>Contiguous space:</strong> Windows can only extend a partition into unallocated space immediately after it. Grow the LUN first, rescan storage, then extend.</li>
 </ul>
 <pre><code class="language-powershell">Update-HostStorageCache
 $max = (Get-PartitionSupportedSize -DriveLetter L).Size.Max
 Resize-Partition -DriveLetter L -Size $max
 Get-Volume -DriveLetter L | Select-Object DriveLetter, Size, SizeRemaining</code></pre>
-<p>On a failover cluster, extend through Failover Cluster Manager or cluster-aware PowerShell so the cluster database learns the new size. Extending a volume is safe online, but it is still a change: record it, verify the free-space alert fires at the new threshold, and confirm the backup still fits.</p>
+<p>On a failover cluster, use a cluster-aware procedure and verify the new capacity on every node. Extending a volume can often be done online, but confirm support for the storage and cluster configuration, record the change, and check monitoring thresholds.</p>
 `
     }
   ],
@@ -184,11 +184,11 @@ Get-Volume -DriveLetter L | Select-Object DriveLetter, Size, SizeRemaining</code
     },
     {
       q: "What allocation unit size do you use for SQL Server data and log volumes, and why?",
-      a: "64 KB. SQL Server allocates in 64 KB extents, so matching the cluster size keeps an extent in one allocation unit, reduces fragmentation, and gives the storage stack cleaner sequential I/O. It must be set at format time — changing it later means rebuilding the volume and moving the files."
+      a: "64 KB is a common recommendation for SQL Server data volumes, but I follow current Microsoft and storage-vendor guidance and validate the workload. Allocation unit size is selected when formatting; changing it later requires reformatting and moving the files."
     },
     {
       q: "A 4 TB LUN shows only 2 TB usable in Disk Management. What is happening?",
-      a: "The disk was initialised with an MBR partition table, which has a 2 TiB address limit. I confirm with Get-Disk looking at PartitionStyle, then plan a conversion to GPT. In-place conversion is a risky change, so the safe route is to back up, repartition, format, and restore — and fix the build template so the next LUN is GPT from the start."
+      a: "An MBR partition style has an approximately 2 TiB limit with 512-byte sectors. I confirm the style and size with Get-Disk, then follow a supported conversion or migration plan with verified backups; the correct method depends on whether it's a boot or data disk."
     }
   ],
 
